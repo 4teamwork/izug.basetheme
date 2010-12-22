@@ -1,0 +1,1397 @@
+/*
+** Plone style sheet - Public-facing Elements
+**
+** Style sheet documentation can be found at http://plone.org/documentation
+**
+** You should preferrably use ploneCustom.css to add your own CSS classes and to
+** customize your portal, as these are the base fundaments of Plone, and will
+** change and be refined in newer versions. Keeping your changes in
+** ploneCustom.css will make it easier to upgrade.
+**
+** Feel free to use whole or parts of this for your own designs, but give credit
+** where credit is due.
+**
+*/
+
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+/* Accessibility elements, applied by JS */
+body.largeText #visual-portal-wrapper { font-size: 120%; }
+body.smallText #visual-portal-wrapper { font-size: 60%; }
+
+/* Padding for the columns */
+
+#portal-column-one .visualPadding {
+    padding: 3.1em 0.5em 1em 0
+}
+#portal-column-two .visualPadding {
+    padding: 2em 0 1em 0.5em;
+}
+
+/* Compensate for the inline editing hover, since we have a 1px border */
+body.kssActive h2.inlineEditable:hover,
+body.kssActive h1.inlineEditable:hover,
+body.kssActive h2.formlibInlineEditable:hover,
+body.kssActive h1.formlibInlineEditable:hover {
+    padding-bottom: 1px;
+}
+
+
+h3, h4, h5, h6 {
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.documentFirstHeading {
+    margin-top: 0;
+    margin-bottom: 0 !important
+}
+
+.documentContent {
+    font-size: 100%;
+    padding: 1em 0em 2em 0em !important;
+    background: &dtml-backgroundColor;;
+}
+.documentContent ul {
+    list-style-image: url(&dtml-portal_url;/bullet.gif);
+    list-style-type: square;
+    margin: 0.5em 0 0 1.5em;
+    font-size: 1em;
+}
+.documentContent ol {
+    margin: 0.5em 0 0 2.5em;
+    font-size: 1.1em;
+}
+.documentContent ol ol {
+    font-size: 1em;
+}
+.documentContent dl {
+    font-size: 1em;
+}
+.documentContent p {
+    font-size: 1.1em;
+}
+
+
+/* Links with differently colored link underlines - only for content */
+.documentContent p a {
+    text-decoration: underline;
+}
+.documentContent p a:visited {
+    color: &dtml-linkVisitedColor;;
+    background-color: transparent;
+}
+.documentContent p a:active {
+    color: &dtml-linkActiveColor;;
+    background-color: transparent;
+}
+
+#content a:target {
+    background-color: #fd7 !important;
+}
+.documentContent li a {
+    text-decoration: none;
+    border-bottom: 1px #cccccc solid;
+}
+.documentContent li a:visited {
+    color: &dtml-linkVisitedColor;;
+}
+.documentContent li a:active {
+    color: &dtml-linkActiveColor;;
+}
+
+.documentContent dd a {
+    text-decoration: none;
+    border-bottom: 1px #cccccc solid;
+}
+.documentContent dd a:visited {
+    color: &dtml-linkVisitedColor;;
+    background-color: transparent;
+}
+.documentContent dd a:active {
+    color: &dtml-linkActiveColor;;
+    background-color: transparent;
+}
+.documentContent a:hover {
+    color: #D52000;
+}
+/* End links */
+
+/* End edit form elements */
+
+#visual-portal-wrapper {
+    margin:0 auto 0 0;
+	padding: 0 1em;
+	min-width: &dtml-portalMinWidth;;
+	max-width: &dtml-portalMaxWidth;;
+}
+
+/* Logo properties */
+#portal-logo img {
+    border: 0;
+    padding: 0;
+    margin: 2.5em 0 1.5em 2em;
+	width: 17em;
+	height: 3.4em;
+}
+
+/* The skin switcher at the top, only shows up if you have multiple skins available */
+#portal-skinswitcher {
+}
+#portal-skinswitcher a {
+    display: block;
+    float: left;
+}
+#portal-top {
+    /* Top section */
+    margin: 0;
+    padding: 0;
+    background-color: &dtml-globalBackgroundColor;;
+    height: 10em;
+}
+
+/* Site-wide action menu - font size, contact, index, sitemap etc */
+#portal-siteactions {
+    background-color: transparent;
+    white-space: nowrap;
+    list-style-image: none;
+    list-style-type: none;
+    margin: 1px 0 0 0;
+    height: auto;
+    line-height: 1em;
+    padding: 1em 0 3px 0;
+    border-top: &dtml-borderWidth; &dtml-borderStyle; #bbbbbb;
+    overflow: hidden;
+}
+#portal-siteactions li {
+    display: inline;
+    float: right;
+	border-right:&dtml-borderWidth; &dtml-borderStyle; &dtml-linkColor;;
+	margin-right: -0.4em;
+	padding: 0 0.3em;
+}
+#portal-siteactions li a {
+    height: auto;
+    font-size: 1.1em;
+    padding: 0.2em 0 0.2em 0.5em;
+    text-decoration: none;
+    border-style: none;
+}
+
+#portal-siteactions li.selected a {
+}
+#portal-siteactions li a:hover {
+    color: #D52000;
+    text-decoration: underline;
+}
+
+/* Searchbox style and positioning */
+
+#portal-searchbox {
+    float: right;
+    clear: right;
+    background-color: transparent;
+margin:2em 0 0;
+padding:0 3.5em 0 0;
+    text-align: right;
+    text-transform: &dtml-textTransform;;
+    white-space: nowrap;
+    z-index: 2;
+}
+#portal-advanced-search {
+    margin-top: 0.2em;
+    clear: both;
+}
+#portal-advanced-search a {
+    color: &dtml-discreetColor;;
+    text-decoration: none;
+    text-transform: &dtml-textTransform;;
+}
+
+/* Search results elements */
+
+dl.searchResults dt {
+    font-size: 140%;
+    font-weight: normal;
+}
+
+form.searchPage {
+    text-align: center;
+}
+
+input.searchPage {
+    font-size: 200% !important;
+}
+
+form.searchPage input.searchButton {
+    background-position:5px 7px;
+    padding:1px 10px 1px 25px;
+}
+
+/* LiveSearch styles */
+.LSRes {
+    font-family:  <dtml-var fontFamily>;
+    visibility: visible;
+    color: &dtml-globalFontColor;;
+    background-color: &dtml-backgroundColor;;
+    vertical-align: middle;
+    display:block;
+    list-style-image: none;
+    list-style-type: none;
+    text-align: left;
+    min-width: 16.5em;
+    text-transform: none;
+    margin-left: 0;
+    line-height: 1.1em;
+}
+
+#LSHighlight, .LSHighlight {
+    background-color: &dtml-highlightColor;;
+    color:&dtml-globalFontColor;;
+}
+.LSTable {
+    margin: 1em 0;
+}
+.LSRow {
+    white-space: normal;
+    padding:0.5em;
+    margin: 0;
+    list-style-image: none;
+    list-style-type: none;
+    font-size:1.1em;
+}
+.LSRow a {
+    text-decoration: none;
+    font-weight:bold;
+    white-space:nowrap
+}
+.LSRow .discreet {
+    display: none;
+}
+.LSDescr {
+    color: &dtml-discreetColor;;
+    font-size: &dtml-fontSmallSize;;
+    font-weight: normal;
+    margin-left: 2.5em;
+}
+.LSResult {
+    position: relative;
+    display: block;
+    text-align: right;
+    padding-top: 5px;
+    margin: 0;
+    left: -40px;
+    z-index: 3;
+}
+.LSShadow {
+    position: relative;
+    text-align: right;
+}
+.livesearchContainer {
+    background-color: &dtml-backgroundColor;;
+    margin-top: 0;
+    padding: 0 !important;
+    position: absolute;
+    right: 0px;
+    /* Currently exposes a rendering bug in Mozilla */
+    top: 0;
+    white-space: normal;
+    font-family:  <dtml-var fontFamily>;
+    visibility: visible;
+    text-align: left;
+    color: &dtml-globalFontColor;;
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    width: 30em;
+    text-transform: none;
+}
+* html .livesearchContainer {
+    padding: &dtml-borderWidth; !important;
+    padding-top: 0 !important;
+    background-color: &dtml-globalBorderColor;;
+    border: 0;
+}
+#livesearchLegend {
+    line-height: 1em;
+    margin-top: -2em;
+    margin-left: -0.1em;
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    border-bottom: 0;
+}
+* html #livesearchLegend {
+    margin-top: -1.9em;
+    margin-left: -8px;
+    position: relative;
+}
+
+/* Workaround for Internet Explorer's broken z-index implementation */
+.LSIEFix {
+    background-color: &dtml-backgroundColor;;
+    padding: 0em !important;
+    z-index: 20;
+}
+.LSBox {
+    clear: left;
+    float: left;
+    text-align: right;
+    padding-right: 1px;
+    display:block;
+}
+#LSNothingFound {
+    text-align: center;
+    padding: 2px;
+}
+.LSBox label {
+    font-weight: normal;
+}
+
+/* The global section tabs. */
+#portal-globalnav {
+    background-color: transparent;
+    padding: 0em 0em 0em 2em;
+    white-space: nowrap;
+    list-style: none;
+    margin: 0;
+    height: auto;
+    line-height: normal;
+}
+#portal-globalnav li {
+    display: block;
+    float: left;
+    height: 3em;
+    border-color: &dtml-backgroundColor;;
+    border-width: &dtml-borderWidth;;
+    border-style: &dtml-borderStyle; &dtml-borderStyle; none &dtml-borderStyle;;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+#portal-globalnav li a {
+    /* The normal, unselected tabs. They are all links */
+    background-color: &dtml-inputBackgroundColor;;
+    color: &dtml-backgroundColor;;
+    height: auto;
+    padding: 0 0.7em 0.2em;
+    text-decoration: none;
+	line-height: 2em;
+	display:block;
+	font-size: 1.1em;
+}
+#portal-globalnav li a:hover {
+    text-decoration: underline;
+}
+#portal-globalnav li.selected {
+    /* The selected tab. There's only one of this */
+    background-color: &dtml-inputBackgroundColor;;
+}
+
+#portal-personaltools-wrapper {
+    width: 50%;
+    float: right;
+	text-align: right;
+	margin: 3em 0 0 0;
+}
+
+#portal-personaltools {
+    /* Bar with personalized menu (user preferences, favorites etc) */
+    margin: 0;
+    list-style: none;
+    display:inline;
+    float: left;
+    width: 75%;
+    overflow: hidden;
+    padding-top: 0.2em;
+
+}
+#portal-personaltools .portalUser {
+    background: transparent url(&dtml-portal_url;/user.gif) center left no-repeat;
+    padding-left: 18px;
+}
+#portal-personaltools .portalNotLoggedIn {
+    /* Used on all descriptions relevant to those not logged in */
+    padding: 0;
+    background: transparent;
+    background-image: none;
+}
+#portal-personaltools li {
+    display: inline;
+}
+#portal-personaltools li a {
+    color: &dtml-backgroundColor;;
+    border-right: 1px solid &dtml-backgroundColor;;;
+    display:inline-block;
+    font-size:1.1em;
+    line-height:1em;
+    margin-right:-1px;
+    padding-left:0.2em;
+    padding-right:0.4em;
+    text-decoration:none;
+}
+
+#portal-personaltools li a#user-name {
+    border-right-style: none;
+    padding-right: 0;
+}
+
+#portal-personaltools .visualIconPadding {
+    padding-left: 10px;
+}
+.visualCaseSensitive {
+    text-transform: none;
+}
+#portal-languageselector {
+    margin: 0 1em 0 1em;
+    float:right;
+}
+#portal-languageselector li {
+    display: inline;
+}
+#portal-breadcrumbs {
+    /* The path bar, including breadcrumbs and add to favorites */
+    line-height: 1.6em;
+    margin-top: 0.5em;
+}
+#portal-breadcrumbs a {
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+.breadcrumbSeparator {
+    font-size: 120%;
+}
+.addFavorite {
+    vertical-align: bottom;
+}
+.documentEditable {
+/*    padding: 0em 1em 1em 1em !important;
+    margin: 0 -1em;*/
+}
+#content-news h1 {
+    margin-bottom: 1em;
+}
+
+/* Only h5/h6 headlines in the content area should have the discreet color */
+#content h5,
+#content h6 {
+    color: &dtml-discreetColor;;
+}
+.newsItem {
+    margin-bottom: 1em;
+    border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+}
+.newsImage {
+    border: 1px solid #ccc;
+}
+.newsImageContainer {
+    float:right;
+    margin: 0 0 0.5em 1em;
+    width: 202px;
+}
+.newsContent {
+    padding: 0 1em 1em 1em;
+}
+.newsContent ul,
+.newsContent li {
+    display: block;
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+.newsAbout {
+    display: block;
+    color: &dtml-discreetColor;;
+    font-size: &dtml-fontSmallSize;;
+    padding: 0;
+    margin-top: 0;
+    list-style: none;
+    list-style-image: none;
+    float: right;
+    text-align: right;
+}
+.newsAbout li {
+    display: inline;
+}
+.newsFooter {
+
+}
+.newsFooter li {
+    display: inline;
+    margin: 0 1em 0 0;
+}
+.documentActions {
+    margin: -2.5em 1em 1em;
+    padding: 0;
+    text-align: right;
+    float: right;
+    background-color: transparent;
+}
+.documentActions ul {
+    margin: 0;
+    display: block;
+    list-style-type: none;
+    list-style-image: none;
+}
+.documentActions li {
+    display: inline;
+    margin: 0 0.5em;
+    float: right;
+}
+.documentActions a {
+    border: none !important;
+    text-decoration: none;
+}
+
+/* Status messages */
+
+dl.portalMessage {
+    font-size: &dtml-fontSmallSize;;
+    background-color: white;
+    border: 1px solid #74AE0B;
+    margin:0;
+}
+dl.portalMessage a {
+    color: black;
+    border: none;
+    text-decoration: underline;
+}
+dl.portalMessage dt {
+    background-color: #74AE0B;
+    font-weight: bold;
+    float: left;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+    color: White;
+    line-height: 1.25em;
+}
+dl.portalMessage dd {
+    padding: 0.5em 0.5em;
+    margin: 0;
+    line-height: 1.25em;
+}
+dl.warning {
+    border-color: #d80;
+}
+dl.warning dt {
+    background-color: #d80;
+}
+dl.error {
+    border-color: #d00;
+}
+dl.error dt {
+    background-color: #d00;
+}
+dl.warning {
+    border-color: #d80;
+}
+dl.warning dd {
+    background-color: white;
+}
+dl.error {
+    border:1px solid red;
+}
+dl.error dd {
+    background-color:white;
+    color:red;
+}
+
+.documentDescription {
+    /* The summary text describing the document */
+    font-weight: bold;
+    display: block;
+    margin: 0em 0em 0.5em 0em;
+    line-height: 1.5em;
+}
+div.documentByLine {
+    background-color: &dtml-globalBackgroundColor;;
+    font-size: &dtml-fontSmallSize;;
+    font-weight: normal;
+    color: &dtml-backgroundColor;;
+    padding: 0 1em 0.5em;
+}
+div.documentByLine a {
+    color: &dtml-backgroundColor;;
+}
+div.documentByLine span:first-child {
+    border-left-style: none;
+    padding-left: 0;
+}
+div.documentByLine span {
+    border-left: 1px solid white;
+    padding-left: 0.4em;
+}
+dl.searchResults span.documentByLine {
+    display: block;
+}
+.discussion {
+    margin-top: 1em;
+}
+.visualHighlight {
+    background-color: #ffc;
+}
+.discreet {
+    color: &dtml-discreetColor;;
+    font-size: &dtml-fontSmallSize;;
+    font-weight: normal;
+}
+.pullquote {
+    padding: 0 1em 0 1em;
+    margin: 0 0 1em 1em;
+    font-weight: bold;
+    color: #CC9933;
+    float: right;
+    width: 35%;
+    clear: right;
+    background-color: &dtml-backgroundColor;;
+    border-left: 4px solid &dtml-globalBorderColor;;
+}
+.callout {
+    font-weight: bold;
+    color: #CC9933;
+    padding: 0px 1em;
+}
+
+.notify,
+.documentEditable * .notify {
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-notifyBorderColor;;
+}
+.card {
+    background-color: &dtml-globalBackgroundColor;;
+    border-color: &dtml-globalBorderColor;;
+    border-width: &dtml-borderWidth;;
+    border-style: &dtml-borderStyle;;
+    float: left;
+    margin: 1em;
+    text-align: center;
+    width: 110px;
+    padding: 1em 0;
+}
+.card a {
+    text-decoration: none;
+}
+.portrait {
+    background-color: &dtml-globalBackgroundColor;;
+    border-color: &dtml-globalBorderColor;;
+    border-width: &dtml-borderWidth;;
+    border-style: &dtml-borderStyle;;
+    font-size: &dtml-fontSmallSize;;
+    margin: 0.5em;
+    padding: 1em 0 0.5em 0;
+    text-align: center;
+    width: 100px;
+}
+.portraitPhoto {
+    border: 1px solid black;
+}
+
+/* The table used for listings - horizontal and vertical variants */
+table.listing,
+table.journal-listing,
+.stx table {
+    /* The default table for document listings. Contains name, document types, modification times etc in a file-browser-like fashion */
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    font-size: 1.1em;
+    margin: 1em 0em 1em 0em;
+}
+table.listing th,
+table.journal-listing th,
+.stx table th,
+table.listingPrevious th {
+    font-weight: bold;
+    padding: 0.5em 0em 0.5em 0.5em;
+    text-align:left;
+}
+table.listing .top,
+table.journal-listing .top {
+    border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-backgroundColor;;
+    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-backgroundColor; ! important;
+    border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-backgroundColor; ! important;
+    text-align: right ! important;
+    padding: 0em 0em 1em 0em;
+}
+table.listing .listingCheckbox,
+table.journal-listing .listingCheckbox {
+    text-align: center;
+}
+table.listing td,
+table.journal-listing td,
+.stx table td {
+    padding: 0.5em 1.5em 0.5em 0.5em;
+}
+table.listing a,
+table.journal-listing a {
+    text-decoration: none;
+}
+table.listing a:hover,
+table.journal-listing a:hover {
+    text-decoration: underline;
+}
+table.listing img,
+table.journal-listing img {
+    vertical-align: middle;
+    padding-right: 0.5em;
+}
+table.listing td a label,
+table.journal-listing td a label
+.stx table td a label {
+    cursor: pointer;
+}
+
+/* Vertical addition class */
+table.vertical {
+    background-color: &dtml-backgroundColor;;
+}
+table.vertical th {
+    padding: 0.5em;
+}
+table.vertical td {
+    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    padding: 0.5em;
+}
+
+/* grid addition class */
+
+table.grid td {
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    padding: 0.5em;
+}
+
+/* plain table class with light gray borders */
+
+table.plain,
+table.plain td,
+table.plain th {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    border-collapse: collapse;
+}
+
+/* Batch selector */
+.listingBar {
+    padding: 0em 1em;
+    text-align: center;
+    text-transform: &dtml-textTransform;;
+    vertical-align: top;
+    margin: 1em 0em;
+    font-size: 94%;
+    clear: both;
+}
+.listingBar span.previous,
+.listingPrevious {
+    text-align: left;
+    float: left;
+    margin-right: 1em;
+}
+.listingBar span.next,
+.listingNext {
+    text-align: right;
+    float: right;
+    margin-left: 1em;
+}
+.listingBar img {
+    vertical-align: middle;
+}
+.listingBar a {
+    text-decoration: none;
+}
+.tileItem {
+    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    padding-top: 0.5em;
+    margin-top: 0.5em;
+}
+.tileHeadline {
+    border: none;
+    font-size: 110%;
+    font-weight: bold;
+}
+.tileHeadline a {
+    text-decoration: none;
+}
+.tileBody {
+    margin-bottom: 0.5em;
+}
+.tileImage {
+    float: right;
+    margin: 0 0 0.5em 0.5em;
+    border: 1px solid black;
+}
+.eventDetails {
+    float: right;
+    clear: right;
+    margin: 0 0 0.5em 1em;
+}
+
+/* Useful deviations from regular style on elements */
+
+/* List classes without markers */
+ul.visualNoMarker,
+ol.visualNoMarker {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0.5em 0 0 0;
+    line-height: 1em;
+}
+
+ul.discreet {
+    list-style-image: none;
+    list-style-type: disc;
+}
+
+textarea.proportional {
+    font: 100% <dtml-var fontFamily>;
+}
+.productCredits {
+    text-align: right;
+    font-size: &dtml-fontSmallSize;;
+    clear: both;
+    font-weight: normal;
+    color: &dtml-discreetColor;;
+}
+#portal-footer {
+    background-color: &dtml-globalBackgroundColor;;
+    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    float: none;
+    line-height: 1.2em;
+    margin: 2em 0em 1em 0em;
+    padding: 0.5em 0em 1em 0em;
+    text-align: center;
+}
+#portal-footer p {
+    margin: 0.25em 0;
+}
+#portal-footer a {
+    text-decoration: none;
+    color: &dtml-linkColor;;
+    border: none;
+}
+#portal-footer a:visited {
+    color: &dtml-linkColor;;
+}
+#portal-footer a:hover {
+    text-decoration: underline;
+}
+#portal-colophon {
+    float: none;
+    margin: 0 0 1em 0;
+    padding: 0 0 1em 0;
+    text-align: center;
+    color: #666;
+}
+#portal-colophon ul {
+    list-style-image: none;
+    list-style-type: none;
+}
+#portal-colophon ul li {
+    display: inline !important;
+    font-size: &dtml-fontSmallSize;;
+    padding: 0 0.75em;
+}
+#portal-colophon ul li a {
+    text-decoration: none;
+    border-bottom: 1px #ccc solid;
+    color: #666;
+}
+
+.feedButton {
+    display: block;
+    float: right;
+    margin-top: 1px;
+}
+.poweredBy {
+    display: block;
+    clear: both;
+    font-size: &dtml-fontSmallSize;;
+    font-weight: normal;
+    color: &dtml-discreetColor;;
+    text-align: right;
+}
+
+/* Sitemap styles */
+#portal-sitemap {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    border: none;
+}
+#portal-sitemap a {
+/*    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-backgroundColor;;*/
+line-height: 1.5em;
+border-style: none;
+}
+#portal-sitemap a:hover {
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+border-style: none;
+}
+#portal-sitemap ul {
+margin: 0;
+}
+#portal-sitemap .navTreeLevel2Level1 {
+    padding-left: 1em;
+    border-left: 0.5em solid &dtml-globalBorderColor;;
+    margin: 0 0 0 0.5em;
+}
+/*#portal-sitemap .navTreeLevel2 {
+    padding-left: 1em;
+    border-left: 0.5em solid &dtml-globalBackgroundColor;;
+    margin: 0 0 0 0.6em;
+}*/
+
+/* Album view classes */
+.photoAlbumEntry {
+    float: left;
+    position:relative;
+    overflow: hidden;
+    height: 185px;
+    width: 143px;
+    margin: 0em;
+    padding: 0px 6px 0px 9px;
+    text-align: center;
+    background-image: url('&dtml-portal_url;/polaroid-single.png');
+    background-repeat: no-repeat;
+}
+.photoAlbumEntry img {
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+}
+.photoAlbumEntryWrapper {
+    /*display: block;*/
+    height: 130px;
+    width: 128px;
+    margin-bottom: 7px;
+}
+.photoAlbumEntry a {
+    display: block;
+    text-decoration: none;
+    font-size: &dtml-fontSmallSize;;
+    height: 169px;
+    width: 130px;
+    margin: 16px auto 0px;
+}
+.photoAlbumFolder {
+    background-image: url('&dtml-portal_url;/polaroid-multi.png');
+    background-repeat: no-repeat;
+}
+.photoAlbumEntryTitle {
+    color: &dtml-discreetColor;;
+    display: block;
+    width: 128px;
+    height: 3.6em;
+}
+
+/* Link types */
+a.link-parent {
+    display: block;
+    background: transparent url(&dtml-portal_url;/arrowUp.gif) 4px 5px no-repeat;
+    padding: 1px 0px 10px 16px;
+    font-size: &dtml-fontSmallSize;;
+    text-decoration: none;
+}
+#content .link-category {
+    color: #74ae0b !important;
+}
+#content .link-user {
+    background: transparent url(&dtml-portal_url;/user.gif) 0 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content .link-comment {
+    background: transparent url(&dtml-portal_url;/discussionitem_icon.gif) center left no-repeat;
+    padding: 1px 0px 1px 16px !important; /* value:  */
+}
+#content .link-anchor {
+    color: &dtml-discreetColor;;
+    text-decoration: none;
+    font-weight: normal;
+}
+#content .link-presentation {
+    font-size: 90%;
+    text-align: center;
+}
+
+#content .link-wiki-add {
+    color: red;
+}
+
+
+/* Handling external links */
+#content span.link-external a {
+    background: transparent url(&dtml-portal_url;/link_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content span.link-https a {
+    background: transparent url(&dtml-portal_url;/lock_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+
+/* Protocol-specific links */
+#content span.link-mailto  a {
+    background: transparent url(&dtml-portal_url;/mail_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content span.link-news a {
+    background: transparent url(&dtml-portal_url;/topic_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content span.link-ftp a {
+    background: transparent url(&dtml-portal_url;/file_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content span.link-irc a {
+    background: transparent url(&dtml-portal_url;/discussionitem_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content span.link-callto a {
+    background: transparent url(&dtml-portal_url;/phone_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content span.link-webcal a {
+    background: transparent url(&dtml-portal_url;/event_icon.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content span.link-feed a {
+    background: transparent url(&dtml-portal_url;/rss.gif) 0px 1px no-repeat;
+    padding: 1px 0px 1px 18px;
+}
+
+#content .link-plain {
+    background-image: none !important;
+    padding: 0 !important;
+}
+
+/* For ghosted elements */
+.visualGhosted {
+    opacity: 0.2;
+}
+
+/* Fullscreen
+**
+** Fullscreen mode is disabled by default. The styles below are used only in case you have it
+** enabled.
+*/
+
+body.fullscreen #portal-logo,
+body.fullscreen #portal-siteactions {
+    display: none;
+}
+body.fullscreen #portal-globalnav {
+    margin-top: 4em;
+}
+body.fullscreen #portal-searchbox {
+    margin: 0.5em 2em 0 0.5em;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+}
+
+
+/* Kupu image alignment classes */
+.image-left {
+   float: left;
+   clear: both;
+   margin: 0.5em 1em 0.5em 0;
+   border: 1px solid Black;
+}
+.image-inline {
+   float: none;
+}
+.image-right {
+   float: right;
+   clear: both;
+   margin: 0.5em;
+   border: 1px solid Black;
+}
+dd.image-caption {
+   text-align:left;
+   padding: 0; margin:0;
+}
+dl.captioned {
+   padding: 10px;
+}
+
+/* Dashboard */
+#dashboard .portletHeader {
+    background-image:url(&dtml-portal_url;/bg_boxheader.jpg);
+    line-height:2em;
+    border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    cursor:move;
+}
+#dashboard .portletPostIt .portletHeader {
+    background-image:url(&dtml-portal_url;/bg_postit.jpg);
+    background-position:left top;
+    background-repeat:repeat-x;
+
+}
+
+#dashboard-info-message {
+    padding-top: 0.5em;
+}
+
+#dashboard {
+    width: 100%;
+}
+
+#dashboard-portlets1,
+#dashboard-portlets2,
+#dashboard-portlets3,
+#dashboard-portlets4 {
+    float:left;
+    width:24%;
+    margin-right: 1%;
+}
+
+
+#dashboard-portlets1 a,
+#dashboard-portlets2 a,
+#dashboard-portlets3 a,
+#dashboard-portlets4 a {
+    border-bottom:medium none;
+}
+
+#dashboard-portlets1 dl.portlet,
+#dashboard-portlets2 dl.portlet,
+#dashboard-portlets3 dl.portlet,
+#dashboard-portlets4 dl.portlet {
+    margin-bottom:1.5em;
+}
+
+div.managedPortlet.portlet {
+    border-bottom:none;
+}
+#dashboard select {
+    width:100%;
+}
+
+.portletAssignments {
+    margin-top:1.5em;
+}
+
+#dashboard-portlets1 div.managedPortlet a,
+#dashboard-portlets2 div.managedPortlet a,
+#dashboard-portlets3 div.managedPortlet a,
+#dashboard-portlets4 div.managedPortlet a {
+    text-decoration: none;
+    color: &dtml-globalFontColor;;
+    border-bottom:1px solid &dtml-globalFontColor;;
+}
+
+#dashboard-portlets1 div.managedPortlet span a,
+#dashboard-portlets2 div.managedPortlet span a,
+#dashboard-portlets3 div.managedPortlet span a,
+#dashboard-portlets4 div.managedPortlet span a{
+    border-bottom:none;
+}
+
+#dashboard-actions {
+    float:right;
+	text-align:right;
+	width:100%;
+	background-color:&dtml-backgroundColor;;
+}
+
+#dashboard-actions ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin-top:0;
+}
+
+#dashboard-actions ul li {
+    display:inline;
+    padding-right:0.7em;
+}
+
+#dashboard-actions ul li.portalUser {
+    padding-left:18px;
+}
+
+/* manage portlets */
+
+.section div {
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+
+.sortable-table{
+width:100%;
+}
+
+/* styling for overlays (popups) */
+
+div.overlay {
+    width: auto;
+    height: auto;
+    /* initially overlay is hidden */
+    display:none;
+    /* some padding to layout nested elements nicely  */
+    margin:1em;
+    font-size: 1em !important;
+}
+
+div.overlay-iframe,
+div.overlay-ajax {
+    width: 60%;
+    min-height: 100px;
+    z-index: 99; /* overlays should be above everything */
+    display: none;
+}
+
+div.overlay-iframe {
+    height: 60%;
+}
+
+/* default close button positioned on upper-left corner */
+    div.overlaybg div.close,
+    div.overlay div.close {
+    background-image: url(&dtml-portal_url;/pb_close.png);
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.pb-ajax {
+    overflow-y: auto;
+}
+
+.pb-ajax, .pb-image {
+    white-space: normal;
+    border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+
+    -moz-box-shadow:0 0 1em #888;
+    -webkit-box-shadow:0 0 1em #888;
+}
+
+.pb-ajax > * {
+    background-color: &dtml-backgroundColor;;
+    padding: 1em;
+    white-space: normal;
+}
+
+.pb-ajax .documentActions {display:none}
+
+div.overlay div.close span {
+    display:block;
+    height:1px;
+    margin:-1px 0 0 -1px;
+    overflow:hidden;
+    padding:0;
+    width:1px;
+}
+
+/* Hide form elements that don't make sense within an overlay. */
+div.overlay .link-parent { display: none; }
+div.overlay #createGroup legend { display: none; }
+div.overlay #createGroup fieldset { border: none; }
+
+/* Core content type sprites */
+
+.icons-on .contenttype-document {
+	background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-event {
+	background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-folder {
+	background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-link {
+	background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-news-item {
+	background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-plone-site {
+	background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-topic {
+	background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
+}
+
+.icons-on .contenttype-document,
+.icons-on .contenttype-event,
+.icons-on .contenttype-folder,
+.icons-on .contenttype-link,
+.icons-on .contenttype-news-item,
+.icons-on .contenttype-plone-site,
+.icons-on .contenttype-topic {
+	line-height: 2em;
+	display: inline-block;
+	padding-left: 20px !important;
+}
+
+/*change widht of textfields */
+.text-widget {
+    width: 100%;
+}
+
+
+/* datepicker hacks */
+.caltrigger {
+  background: transparent url(&dtml-portal_url;/popup_calendar.gif) repeat scroll 0 0;
+}
+
+#calprev {
+	background-image: url(&dtml-portal_url;/datepicker_prev.gif) !important;
+}
+
+#calnext {
+	background-image:url(&dtml-portal_url;/datepicker_next.gif) !important;
+}
+
+/* wizard */
+.wizard {
+
+}
+.wizard .wizardSteps {
+    margin: 1em 0;
+    display: block;
+    overflow: hidden;
+    border-left: 1px solid #111111;
+    background: transparent url(&dtml-portal_url;/wizard_bg.gif) repeat-x top left;
+    padding-right: 3em;
+    border-right: 0.1em solid #bbbbbb;
+}
+.wizard .wizardSteps li {
+    display: block;
+    float: left;
+    font-size: 1.1em;
+    background: url(&dtml-portal_url;/wizard_inactive.gif) no-repeat top right;
+    height: 2em;
+    margin: 0 0 0 0;
+}
+.wizard .wizardSteps li a {
+    line-height: 1.8181em;
+    list-style: inline;
+    border-style: solid none;
+    border-width: 0.1em;
+    border-color: #bbbbbb;
+    margin-right: 1em;
+    padding-left: 1.545em;
+    padding-right: 2em;
+    margin-left: -0.909em;
+    display: block;
+    color: #bbbbbb;
+}
+.wizard .wizardSteps li.selected,
+.wizard .wizardSteps li.visited  {
+    background: url(&dtml-portal_url;/wizard_active.gif) no-repeat top right;
+}
+.wizard .wizardSteps li.selected a,
+.wizard .wizardSteps li.visited a {
+    border-color: #111111;
+    color: #111111;
+}
+.wizard .wizardSteps li.selected a {
+    font-weight: bold;
+}
+.wizard .wizardContent {
+    display: block;
+    clear: both;
+}
+
+
+/* </dtml-with> */

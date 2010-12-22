@@ -1,0 +1,64 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="izug.basetheme">
+
+  <!-- 'iZug Base Theme' Zope 3 browser layer -->
+  <interface
+      interface=".interfaces.IThemeSpecific"
+      type="zope.publisher.interfaces.browser.IBrowserSkinType"
+      name="iZug Base Theme"
+      />
+      
+  <browser:viewlet
+      name="izug.personal_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.PersonalBar"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+      
+  <browser:viewlet
+      name="izug.path_bar"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      class=".viewlets.PathBar"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:viewlet
+      name="izug.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.SearchBox"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:viewlet
+      name="plone.site_actions"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+      class=".viewlets.SiteActions"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"      
+      />
+
+  <browser:viewlet
+      name="plone.abovecontenttitle.documentactions"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      class=".viewlets.DocumentActions"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:viewlet
+      name="plone.belowcontenttitle.documentbyline"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      class=".viewlets.Byline"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+<!-- Viewlets registration -->
+
+  
+</configure>

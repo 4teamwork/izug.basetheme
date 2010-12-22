@@ -1,0 +1,12 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="izug.basetheme">
+
+  <!-- File System Directory Views registration -->
+  <cmf:registerDirectory name="izug_basetheme_images"/>
+  <cmf:registerDirectory name="izug_basetheme_templates"/>
+  <cmf:registerDirectory name="izug_basetheme_styles"/>
+  <cmf:registerDirectory name="izug_basetheme_icons"/>
+
+</configure>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="izug.basetheme.various"
+               version="20091007-01"
+               handler="izug.basetheme.setuphandlers.setupVarious"
+               title="iZug Base Theme: miscellaneous import steps">
+    <dependency step="skins" />
+    Various import steps that are not handled by GS import/export
+    handlers.
+  </import-step>
+</import-steps>

@@ -1,0 +1,231 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-10-29 15:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:33
+msgid "Fontsize large"
+msgstr "Schriftgrösse gross"
+
+#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:38
+msgid "Fontsize medium"
+msgstr "Schriftgrösse mittel"
+
+#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:43
+msgid "Fontsize small"
+msgstr "Schriftgrösse klein"
+
+#. Default: "Logout"
+#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:27
+msgid "Log out"
+msgstr "Logout"
+
+#: ./izug/basetheme/browser/ogds_view.pt:119
+msgid "accesskeys-breadcrumbs"
+msgstr ""
+
+#. Default: "${number} items matching your search terms"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:70
+msgid "batch_x_items_matching_your_criteria"
+msgstr ""
+
+#. Default: "last modified"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:136
+msgid "box_last_modified"
+msgstr ""
+
+#. Default: "There are currently no items in this folder."
+#: ./izug/basetheme/browser/ogds_view.pt:160
+msgid "description_no_items_in_folder"
+msgstr ""
+
+#. Default: "No results were found."
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:88
+msgid "description_no_results_found"
+msgstr ""
+
+#. Default: "An item's status (also called its review state) determines who can see it. Another way to control the visibility of an item is with its <strong>Publishing Date</strong>. An item is not publicly searchable before its publishing date. This will prevent the item from showing up in portlets and folder listings, although the item will still be available if accessed directly via its URL."
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:52
+msgid "description_publishing_process_short"
+msgstr ""
+
+#. Default: "Document Actions"
+#: ./izug/basetheme/browser/viewlets_templates/documentactions.pt:6
+msgid "heading_document_actions"
+msgstr ""
+
+#. Default: "Personal tools"
+#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:4
+msgid "heading_personal_tools"
+msgstr ""
+
+#. Default: "Publishing process"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:49
+msgid "heading_publishing_process"
+msgstr ""
+
+#. Default: "Search results"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:64
+msgid "heading_search_results"
+msgstr ""
+
+#. Default: "Select the new state for the selected items."
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:168
+msgid "help_change_status"
+msgstr ""
+
+#. Default: "The date when the item will be published. If no date is selected the item will be published immediately."
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:100
+msgid "help_effective_date"
+msgstr ""
+
+#. Default: "The date when the item expires. This will automatically make the item invisible for others at the given date. If no date is chosen, it will never expire."
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:124
+msgid "help_expiration_date"
+msgstr ""
+
+#. Default: "If checked, this will attempt to modify the status of all content in any selected folders and their subfolders."
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:90
+msgid "help_include_contained_objects"
+msgstr ""
+
+#. Default: "Will be added to the publishing history. If multiple items are selected, this comment will be attached to all of them."
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:152
+msgid "help_publishing_comments"
+msgstr ""
+
+#. Default: "Advanced Search…"
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:84
+msgid "label_advanced_search"
+msgstr ""
+
+#. Default: "Affected content"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:69
+msgid "label_affected_content"
+msgstr ""
+
+#. Default: "by ${author}"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:123
+msgid "label_by_author"
+msgstr ""
+
+#. Default: "Cancel"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:241
+msgid "label_cancel"
+msgstr ""
+
+#. Default: "Change State"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:167
+msgid "label_change_status"
+msgstr ""
+
+#. Default: "Comments"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:149
+msgid "label_comments"
+msgstr ""
+
+#. Default: "Publishing Date"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:99
+msgid "label_effective_date"
+msgstr ""
+
+#. Default: "Expiration Date"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:123
+msgid "label_expiration_date"
+msgstr ""
+
+#. Default: "filed under:"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:148
+msgid "label_filed_under"
+msgstr ""
+
+#. Default: "Include contained items"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:86
+msgid "label_include_contained_objects"
+msgstr ""
+
+#. Default: "No change"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:199
+msgid "label_no_change"
+msgstr ""
+
+#. Default: "No matching results found."
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:83
+msgid "label_no_results_found"
+msgstr ""
+
+#. Default: "Relevance: ${percentage}%"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:165
+msgid "label_relevance_percentage"
+msgstr ""
+
+#. Default: "Save"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:229
+msgid "label_save"
+msgstr ""
+
+#. Default: "Search"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:45
+msgid "label_search"
+msgstr ""
+
+#. Default: "Show all…"
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:85
+msgid "label_show_all"
+msgstr ""
+
+#. Default: "LiveSearch &#8595;"
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:82
+msgid "legend_livesearch"
+msgstr ""
+
+#. Default: "Titel"
+#: ./izug/basetheme/browser/ogds_view.pt:68
+msgid "listingheader_title"
+msgstr ""
+
+#. Default: "Did you not find what you were looking for? Try the ${advanced_search} to refine your search."
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:53
+msgid "search_results_advanced"
+msgstr ""
+
+#. Default: "Advanced Search"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:54
+msgid "search_results_advanced_link"
+msgstr ""
+
+#. Default: "Affected content"
+#: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:71
+msgid "summary_affected_content"
+msgstr ""
+
+#. Default: "Content listing"
+#: ./izug/basetheme/browser/ogds_view.pt:62
+msgid "summary_content_listing"
+msgstr ""
+
+#. Default: "Home"
+#: ./izug/basetheme/browser/viewlets_templates/pathbar.pt:4
+msgid "tabs_home"
+msgstr ""
+
+#. Default: "Subscribe to an always-updated feed of these search terms"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:78
+msgid "title_rss_feed"
+msgstr ""
+
+#. Default: "Search Site"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:37
+msgid "title_search_title"
+msgstr ""
+
+

@@ -1,0 +1,48 @@
+<div id="portal-personaltools-wrapper"
+     i18n:domain="plone">
+     
+<h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>
+<ul id="portal-personaltools"
+    tal:condition="python:view.user_actions or not view.anonymous"
+    class="visualInline">
+
+    <tal:actions tal:repeat="action view/user_actions">
+        <li>
+            <a href=""
+               tal:attributes="href action/url"
+            ><tal:actionname i18n:translate="" 
+                             tal:content="action/title">dummy</tal:actionname
+            ></a>
+        </li>
+    </tal:actions>
+
+   <tal:block condition="not: view/anonymous">
+       <li><a 
+           id="user-name"
+           tal:attributes="href string:${view/portal_url}/logout"
+          ><span class="visualCaseSensitive"
+                 tal:content="view/user_name">
+                John
+           </span
+       > <span i18n:translate="Log out" tal:omit-tag="">Logout</span></a></li>
+   </tal:block>
+</ul>
+
+<ul id="portal-fontsize">
+    <li>
+        <a href="#" onclick="setBaseFontSize('largeText',1);" i18n:attributes="title" title="Fontsize large">
+            <img class="font-sizing-a" tal:attributes="src string: ${here/portal_url}/font_sizing_a.gif"/>
+        </a>
+    </li>
+    <li>
+        <a href="#" onclick="setBaseFontSize('normalText',1);" i18n:attributes="title" title="Fontsize medium" title="Schriftgr&ouml;sse mittel">
+            <img class="font-sizing-b" tal:attributes="src string: ${here/portal_url}/font_sizing_b.gif"/>
+        </a>
+    </li>
+    <li>
+        <a href="#" onclick="setBaseFontSize('smallText',1);" i18n:attributes="title" title="Fontsize small" title="Schriftgr&ouml;sse klein">
+            <img class="font-sizing-c" tal:attributes="src string: ${here/portal_url}/font_sizing_c.gif"/>
+        </a>
+    </li>
+</ul>
+</div>

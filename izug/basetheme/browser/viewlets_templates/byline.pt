@@ -1,0 +1,18 @@
+<div class="documentByLine"
+     id="plone-document-byline"
+     i18n:domain="izug.basetheme"
+     tal:condition="view/show">
+
+  <span id="lock-icon"
+        tal:define="lock_icon view/locked_icon"
+        tal:condition="lock_icon">
+    <img tal:replace="structure lock_icon" />
+  </span>
+
+  <span class="created" i18n:translate="byline_created">
+    Created:
+    <tal:date tal:replace="python:view.toLocalizedTime(here.CreationDate(), long_format=1)"
+              i18n:name="date" />
+  </span>
+
+</div>

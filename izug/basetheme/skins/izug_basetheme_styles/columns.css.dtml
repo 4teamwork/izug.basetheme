@@ -1,0 +1,67 @@
+/*
+** Table-based column layout for all browsers.
+**
+** There's a table-less column layout alternative in the plone_tableless
+** skin layer, if you prefer layouts without tables.
+*/
+
+/* <dtml-with base_properties> */
+div#portal-columns {
+  width: 100%;
+  float: left;
+  display: block;
+  position: relative;
+  min-height:40em;
+}
+div#portal-column-one,
+div#portal-column-content,
+div#portal-column-two {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+  left: 100%;
+}
+div#portal-column-one {
+  width: <dtml-var getLeftColumnWidth>;
+  margin-left: -100%;
+}
+div#portal-column-content {
+  margin-left: -100%;
+  width: 100%;
+}
+div#portal-column-content.sl {
+  margin-left: -<dtml-var getContentColumnWidth>;
+  width: <dtml-var getContentColumnWidth>;
+}
+div#portal-column-two {
+  margin-left: -20%;
+  width: 20%;
+}
+/* resize */
+div#portal-column-one .visualPadding {
+  margin-right: 15px;
+}
+div#portal-column-one div.ui-resizable-e {
+  width: 0.5em;
+  margin-right: 0.5em;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display:block;
+  background-color: &dtml-contentViewBackgroundColor;;
+  cursor:col-resize;
+}
+
+/* fullscreen */
+body.fullscreen #portal-column-one,
+body.fullscreen #portal-column-two {
+  display: none;
+}
+body.fullscreen #portal-column-content {
+  margin: 0;
+  padding: 0;
+}
+
+/* </dtml-with> */

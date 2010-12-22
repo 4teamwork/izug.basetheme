@@ -1,0 +1,47 @@
+<div class="visualClear"><!-- --></div>
+<div i18n:domain="plone"
+     class="documentActions"
+     tal:condition="view/actions">
+
+    <span class="hiddenStructure" i18n:translate="heading_document_actions">Document Actions</span>
+
+    <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
+    <tal:actions repeat="daction view/actions">
+        <li tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
+            <a href=""
+               tal:attributes="href daction/url;
+                               title daction/title;">
+				<img src="" alt=""
+					 tal:attributes="src python: daction.has_key('icon') and daction['icon'] or '';
+					 				 alt daction/title" /></a>
+        </li>
+    </tal:actions>
+
+    </ul>
+
+    <div tal:replace="structure provider:plone.documentactions" />
+
+</div>
+<!--div i18n:domain="plone"
+     class="documentActions">
+    <tal:docactions tal:condition="view/actions">
+
+    <h5 class="hiddenStructure" i18n:translate="heading_document_actions">Document Actions</h5>
+
+    <ul tal:define="normalizeString nocall: context/@@plone/normalizeString">
+    <tal:actions repeat="daction view/actions">
+        <li tal:attributes="id python:'document-action-' + normalizeString(daction['id'])">
+            <a href=""
+               tal:attributes="href daction/url;
+                               title daction/description"
+               tal:content="daction/title">
+            </a>
+        </li>
+    </tal:actions>
+
+    </ul>
+    </tal:docactions>
+
+    <div tal:replace="structure provider:plone.documentactions" />
+
+</div-->

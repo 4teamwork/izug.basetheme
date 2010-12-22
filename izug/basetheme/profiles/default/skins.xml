@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="iZug Base Theme">
+
+ <object name="izug_basetheme_images"
+    meta_type="Filesystem Directory View"
+    directory="izug.basetheme:skins/izug_basetheme_images"/>
+ <object name="izug_basetheme_templates"
+    meta_type="Filesystem Directory View"
+    directory="izug.basetheme:skins/izug_basetheme_templates"/>
+ <object name="izug_basetheme_styles"
+    meta_type="Filesystem Directory View"
+    directory="izug.basetheme:skins/izug_basetheme_styles"/>
+ <object name="izug_basetheme_icons"
+    meta_type="Filesystem Directory View"
+    directory="izug.basetheme:skins/izug_basetheme_icons"/>
+
+ <skin-path name="iZug Base Theme" based-on="Plone Classic Theme">
+  <layer name="izug_basetheme_images"
+     insert-after="custom"/>
+  <layer name="izug_basetheme_templates"
+     insert-after="izug_basetheme_images"/>
+  <layer name="izug_basetheme_styles"
+     insert-after="izug_basetheme_templates"/>
+  <layer name="izug_basetheme_icons"
+     insert-after="izug_basetheme_styles"/>
+ </skin-path>
+
+</object>

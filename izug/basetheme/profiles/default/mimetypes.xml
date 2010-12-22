@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<object name="mimetypes_registry" meta_type="MimeTypes Registry">
+ <mimetype mimetypes="image/gif" 
+           icon_path="icon_dokument_bilddatei.gif" />
+ <mimetype mimetypes="image/jpeg
+                      image/pjpeg" 
+           icon_path="icon_dokument_bilddatei.gif" />
+ <mimetype mimetypes="image/png" 
+           icon_path="icon_dokument_bilddatei.gif" />
+ <mimetype mimetypes="image/bmp
+                      image/x-bmp
+                      image/x-MS-bmp"
+           icon_path="icon_dokument_bilddatei.gif" />
+ <mimetype mimetypes="message/rfc822" 
+           icon_path="icon_dokument_email.gif" />
+ <mimetype mimetypes="application/vnd.ms-excel
+                      application/msexcel
+                      application/x-msexcel" 
+           icon_path="icon_dokument_excel.gif" />
+ <mimetype mimetypes="application/pdf
+                      application/x-pdf
+                      image/pdf"
+           icon_path="icon_dokument_pdf.gif" />
+ <mimetype mimetypes="application/vnd.ms-powerpoint
+                      application/powerpoint
+                      application/mspowerpoint
+                      application/x-mspowerpoint" 
+           icon_path="icon_dokument_powerpoint.gif" />
+ <mimetype mimetypes="text/plain" 
+           icon_path="icon_dokument_text.gif" />
+ <mimetype mimetypes="application/vnd.visio" 
+           icon_path="icon_dokument_visio.gif" />
+ <mimetype mimetypes="text/html" 
+           icon_path="icon_dokument_webdokument.gif" />
+ <mimetype mimetypes="application/msword" 
+           icon_path="icon_dokument_word.gif" />
+ <mimetype mimetypes="application/zip
+                      application/x-zip-compressed" 
+           icon_path="icon_dokument_zip.gif" />
+</object>

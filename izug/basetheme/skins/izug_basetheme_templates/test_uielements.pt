@@ -1,0 +1,650 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+  <metal:css fill-slot="css_slot">
+    <style type="text/css">
+
+    .toc {
+    font-size:90%;
+    margin:0 0 0.5em 0.5em;
+    position:fixed;
+    right:0;
+    width:20em;}
+    </style>
+  </metal:css>
+</head>
+<body>
+<metal:main fill-slot="main">
+<h1 class="documentFirstHeading">Opengever User Interface Elemente</h1>
+
+<div class="documentDescription">
+Auf dieser Seite werden in Opengever verwendete UI-Elemente aufgelistet. Die Seite kann als Referenz genommen werden, wie einzelne
+UI-Elemente umgesetzt werden müssen, damit sie richtig gestyled sind. 
+</div>
+
+<dl style="display: none;" class="portlet toc" id="document-toc">
+  <dt class="portletHeader">Inhaltsverzeichnis</dt>
+  <dd class="portletItem">
+  </dd>
+</dl>
+
+<div id="content-core">
+<h1>Meldungen</h1>
+<dl class="portalMessage info">
+    <dt>
+        Info
+    </dt>
+    <dd>
+        The info class, can also contain <a href="#">links</a> - used to
+        give the user temporary status messages.
+    </dd>
+</dl>
+<br/>
+<dl class="portalMessage warning">
+    <dt>
+        Info
+    </dt>
+    <dd>
+        The warning class, can also contain <a href="#">links</a> - used to
+        give the user temporary status messages.
+    </dd>
+</dl>
+<br/>
+<dl class="portalMessage error">
+    <dt>
+        Info
+    </dt>
+    <dd>
+        The error class, can also contain <a href="#">links</a> - used to
+        give the user temporary status messages.
+    </dd>
+</dl>
+
+<h1>Inhaltselemente</h1>
+
+
+<div class="documentDescription">
+The document description
+</div>
+
+<p>
+Normal document body text, 
+<strong>strong text</strong>,
+<em>emphasised text</em>,
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo. Vestibulum vitae urna et mi volutpat luctus. Nulla auctor, lacus ut consectetuer sagittis, erat odio vulputate sapien, eu placerat diam mauris id turpis. Aenean quis ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque rutrum. Sed mattis turpis sit amet ipsum viverra pharetra. Nunc facilisis, augue non dapibus gravida, risus quam vulputate quam, non venenatis dui massa in leo. Maecenas scelerisque dapibus libero. Suspendisse potenti.
+example <a href="#">Normal internal site link</a> inside a paragraph,
+example <a href="http://plone.org">External link to plone.org</a>,
+example <a href="https://plone.org">Secure (HTTPS) link to plone.org</a>,
+example <a href="mailto:some@address">Mailto link</a>,
+example <a href="ftp://some.site">FTP link</a>,
+example <a href="news://some.site">NNTP (news) link</a>,
+example <a href="webcal://some.site">WebCal link</a>,
+example <a href="feed://some.site">RSS feed link</a>,
+example <a href="irc://some.network/#channel">IRC link</a>.
+</p>
+
+<ul>
+    <li>Unordered list element 1
+        <ul>
+            <li>Unordered list subelement 1</li>
+        </ul>
+    </li>
+    <li>Unordered list element 2</li>
+    <li>Unordered list element 3</li>
+</ul>
+
+<ol>
+    <li>Ordered list element 1
+        <ol><li>Ordered list subelement 1</li></ol>
+    </li>
+    <li>Ordered list element 2</li>
+    <li>Ordered list element 3</li>
+</ol>
+
+<dl>
+    <dt>Definition list term</dt>
+    <dd>Definition List description, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo.
+    </dd>
+    <dd>Another Definition List description, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quisque odio sem, aliquam ut, suscipit at, aliquet non, justo.
+    </dd>
+</dl>
+
+
+
+<h1>Tabellen</h1>
+<h2>Table of class listing</h2>
+<table class="listing" id="someid" summary="Sortable table example">
+    <!-- By giving a table an ID, it gets the sortable option. 
+         Use class="nosort" to override on a table or column basis. -->
+    <thead>
+        <tr>
+            <th>Table heading</th>
+            <th>Another heading (sortable, click to sort)</th>
+            <th class="nosort">Fixed column (not sortable)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 1</td>
+            <td>Another item</td>
+        </tr>
+        <tr class="even">
+            <td>Even table item</td>
+            <td>Item 2</td>
+            <td>Yet another item</td>
+        </tr>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 3</td>
+            <td>And one more item</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>
+Table of class vertical listing
+</h2>
+
+<table class="vertical listing" summary="Vertical listing example">
+    <tbody>
+        <tr>
+            <th>Table heading</th>
+            <td>Odd table item</td>
+        </tr>
+        <tr>
+            <th>Another heading</th>
+            <td>Even table item</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Table of class invisible</h2>
+<table class="invisible" id="someid" summary="Sortable table example">
+    <!-- By giving a table an ID, it gets the sortable option. 
+         Use class="nosort" to override on a table or column basis. -->
+    <thead>
+        <tr>
+            <th>Table heading</th>
+            <th>Another heading (sortable, click to sort)</th>
+            <th class="nosort">Fixed column (not sortable)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 1</td>
+            <td>Another item</td>
+        </tr>
+        <tr class="even">
+            <td>Even table item</td>
+            <td>Item 2</td>
+            <td>Yet another item</td>
+        </tr>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 3</td>
+            <td>And one more item</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Table of class grid listing</h2>
+<table class="grid listing" id="someid" summary="Sortable table example">
+    <!-- By giving a table an ID, it gets the sortable option. 
+         Use class="nosort" to override on a table or column basis. -->
+    <thead>
+        <tr>
+            <th>Table heading</th>
+            <th>Another heading (sortable, click to sort)</th>
+            <th class="nosort">Fixed column (not sortable)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 1</td>
+            <td>Another item</td>
+        </tr>
+        <tr class="even">
+            <td>Even table item</td>
+            <td>Item 2</td>
+            <td>Yet another item</td>
+        </tr>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 3</td>
+            <td>And one more item</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Table of class plain</h2>
+<table class="plain" id="someid" summary="Sortable table example">
+    <!-- By giving a table an ID, it gets the sortable option. 
+         Use class="nosort" to override on a table or column basis. -->
+    <thead>
+        <tr>
+            <th>Table heading</th>
+            <th>Another heading (sortable, click to sort)</th>
+            <th class="nosort">Fixed column (not sortable)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 1</td>
+            <td>Another item</td>
+        </tr>
+        <tr class="even">
+            <td>Even table item</td>
+            <td>Item 2</td>
+            <td>Yet another item</td>
+        </tr>
+        <tr class="odd">
+            <td>Odd table item</td>
+            <td>Item 3</td>
+            <td>And one more item</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>Table with form elements</h2>
+
+<form>
+    <table id="sortable"
+         class="listing"
+         summary="Content listing"
+         cellpadding="0" cellspacing="0">
+        <thead>
+            <tr>
+                <th class="nosort">
+                    <input class="noborder"
+                           type="checkbox"
+                           src="select_all_icon.png"
+                           name="selectButton"
+                           title="Select all items"
+                           onClick="toggleSelect(this,'paths:list');"
+                           tal:attributes="src string:${context/portal_url}/select_all_icon.png"
+                           alt="Select all items"
+                           i18n:attributes="title label_select_all_items; alt label_select_all_items;" />
+                </th>
+                <th>&nbsp;Title&nbsp;</th>
+                <th>&nbsp;Stuff&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td>
+                   <input type="checkbox"
+                          class="noborder"
+                          name="paths:list" id="#"
+                          value="#" />
+                </td>
+                <td><a href="#">Title</a></td>
+                <td>with class noborder</td>
+            </tr>
+            <tr class="even">
+                <td>
+                   <input type="checkbox"
+                          class="noborder"
+                              name="paths:list" id="#"
+                          value="#" />
+                </td>
+                <td><a href="#">Title</a></td>
+                <td>with class noborder</td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<h1>Forms</h1>
+
+<form>
+    <fieldset>
+        <legend>Fieldset legend</legend>
+
+        <div class="field">
+            <label for="onefield">Text field</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This is the help for this form field. And <a href="#">links are also possible</a>.
+            </div>
+            <input type="text" id="onefield" value="Some content" />
+        </div>
+        <div class="field error">
+            <label for="anotherfield">Text field with error</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This field is just here to demonstrate an error message.
+            </div>
+            <div>This is the error message.</div>
+            <input type="text" id="anotherfield" value="Some content" />
+        </div>
+        <div class="field">
+            <label for="onecheckbox">Checkbox</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This is a checkbox field.
+            </div>
+            <input type="checkbox" id="onecheckbox" />
+        </div>
+        <div class="field error">
+            <label for="anothercheckbox">Checkbox with error</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This checkbox field is just here to demonstrate an error message.
+            </div>
+            <div>This is the error message.</div>
+            <input type="checkbox" id="anothercheckbox" />
+        </div>
+        <div class="field">
+            <label for="onestylishcheckbox">Checkbox without border</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This is a checkbox field.
+            </div>
+            <input type="checkbox"
+                   class="noborder"
+                   id="onestylishcheckbox" />
+        </div>
+        <div class="field error">
+            <label for="anotherstylishcheckbox">
+            Checkbox without border with error</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This checkbox field is just here to demonstrate an error message.
+            </div>
+            <div>This is the error message.</div>
+            <input type="checkbox"
+                   class="noborder"
+                   id="anotherstylishcheckbox" />
+        </div>
+        <div class="field">
+            <label>Radio</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This is a checkbox field.
+            </div>
+            <label>First
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group1" />
+            </label>
+            <br />
+            <label>Second
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group1" />
+            </label>
+            <br />
+            <label>Third
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group1" />
+            </label>
+            <br />
+        </div>
+        <div class="field error">
+            <label>Radio with error</label>
+            <span class="fieldRequired" title="Required"
+                  i18n:attributes="title title_required;"
+                  i18n:translate="label_required">(Required)</span>
+            <div class="formHelp">
+                This checkbox field is just here to demonstrate an error message.
+            </div>
+            <div>This is the error message.</div>
+            <label>First
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group2" />
+            </label>
+            <br />
+            <label>Second
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group2" />
+            </label>
+            <br />
+            <label>Third
+            <input class="noborder"
+                   type="radio"
+                   name="radio_group2" />
+            </label>
+            <br />
+        </div>
+        <div class="formControls">
+            <input class="context"
+                   type="submit"
+                   value="Context submit" />
+            <input class="standalone"
+                   type="submit"
+                   value="Standalone submit" />
+            <input class="destructive"
+                   type="submit"
+                   value="Destructive submit" />
+            <input type="submit"
+                   value="Submit" />
+        </div>
+        <div class="formControls">
+            <input class="context"
+                   type="button"
+                   value="Context button" />
+            <input class="standalone"
+                   type="button"
+                   value="Standalone button" />
+            <input class="destructive"
+                   type="button"
+                   value="Destructive button" />
+            <input type="button"
+                   value="Button" />
+        </div>
+    </fieldset>
+</form>
+
+
+
+<h1>Collapsible section</h1>
+<dl class="collapsible">
+    <dt class="collapsibleHeader">
+        Collapsable section title
+    </dt>
+    <dd class="collapsibleContent">
+        Collapsible section content
+    </dd>
+</dl>
+
+
+<h1>Wizard</h1>
+
+<p>Standard-Struktur für einen Wizard: </p>
+<ul>
+    <li>Wrapper: Block-Element mit Klasse "wizard"</li>
+    <li>Navigation des Wizards als Liste; ul.wizardSteps > li[selected|visited]</li>
+    <li>Inhalt des Wizards: Blockelement mit Klasse "wizardContent"</li>
+</ul>
+<p class="documentDescription">Beispiel:</p>
+<form class="wizard"><!-- kann auch div sein -->
+    <ul class="wizardSteps">
+        <li class="visited">
+            <a href="#">Step 1 (visited)</a>
+        </li>
+        <li class="selected">
+            <a href="#">Step 2 (selected)</a>
+        </li>
+        <li>
+            <a href="#">Step 3</a>
+        </li>
+        <li>
+            <a href="#">Step 4</a>
+        </li>
+    </ul>
+    <div class="wizardContent">
+        Hier kommt der entsprechende Inhalt hin... Hier kommt der entsprechende Inhalt hin... Hier kommt der entsprechende Inhalt hin... 
+        Hier kommt der entsprechende Inhalt hin... Hier kommt der entsprechende Inhalt hin... Hier kommt der entsprechende Inhalt hin... 
+    </div>
+</form>
+
+<h1>Extjs-Tabelle</h1>
+<div class="ftwtable" id="listing_container">
+    <!--iefix-->
+    <div id="ext-comp-1001" class="x-panel x-grid-panel">
+        <div class="x-panel-bwrap" id="ext-gen3">
+            <div class="x-panel-body x-panel-body-noheader" id="ext-gen4" style="height: auto;">
+                <div hidefocus="true" class="x-grid3" id="ext-gen7">
+                    <div class="x-grid3-viewport" id="ext-gen8" style="overflow: auto;">
+                        <div class="x-grid3-header" id="ext-gen9" style="width: 1020px;">
+                            <div class="x-grid3-header-inner" id="ext-gen15">
+                                <div style="width: 1037px;" class="x-grid3-header-offset">
+                                    <table cellspacing="0" cellpadding="0" border="0" style="width: 1020px;">
+                                        <thead>
+                                            <tr class="x-grid3-hd-row">
+                                                <td style="width: 28px;" class="x-grid3-hd x-grid3-cell x-grid3-td-draggable x-grid3-cell-first">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-draggable">
+                                                        <a href="#" class="x-grid3-hd-btn"></a><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 28px;" class="x-grid3-hd x-grid3-cell x-grid3-td-path_checkbox">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-path_checkbox">
+                                                        <a href="#" class="x-grid3-hd-btn"></a><img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 108px;" class="x-grid3-hd x-grid3-cell x-grid3-td-reference">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-reference">
+                                                        <a href="#" class="x-grid3-hd-btn"></a>Aktenzeichen<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 298px;" class="x-grid3-hd x-grid3-cell x-grid3-td-sortable_title">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-sortable_title">
+                                                        <a href="#" class="x-grid3-hd-btn"></a>Titel<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 108px;" class="x-grid3-hd x-grid3-cell x-grid3-td-review_state">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-review_state">
+                                                        <a href="#" class="x-grid3-hd-btn"></a>Status<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 108px;" class="x-grid3-hd x-grid3-cell x-grid3-td-responsible">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-responsible">
+                                                        <a href="#" class="x-grid3-hd-btn"></a>Federführung<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 108px;" class="x-grid3-hd x-grid3-cell x-grid3-td-start">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-start">
+                                                        <a href="#" class="x-grid3-hd-btn"></a>Beginn<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 108px;" class="x-grid3-hd x-grid3-cell x-grid3-td-end">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-end">
+                                                        <a href="#" class="x-grid3-hd-btn"></a>Ende<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                                <td style="width: 108px;" class="x-grid3-hd x-grid3-cell x-grid3-td-filing_no x-grid3-cell-last">
+                                                    <div style="" unselectable="on" class="x-grid3-hd-inner x-grid3-hd-filing_no">
+                                                        <a href="#" class="x-grid3-hd-btn"></a>Ablagenummer<img src="data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="x-grid3-sort-icon">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="x-clear"></div>
+                        </div>
+                        <div class="x-grid3-scroller" id="ext-gen10" style="overflow: visible;">
+                            <div style="width: 1020px;" class="x-grid3-body" id="ext-gen11">
+                                <div style="width: 1020px;" class="x-grid3-row x-grid3-row-first x-grid3-row-last">
+                                    <table cellspacing="0" cellpadding="0" border="0" style="width: 1020px;" class="x-grid3-row-table">
+                                        <tbody>
+                                            <tr>
+                                                <td tabindex="0" style="width: 28px;" class="x-grid3-col x-grid3-cell x-grid3-td-draggable x-grid3-cell-first">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-draggable">
+                                                        <span class="draggable" id="draggable-dossier-1">::</span>
+                                                    </div>
+                                                </td>
+                                                <td tabindex="0" style="width: 28px;" class="x-grid3-col x-grid3-cell x-grid3-td-path_checkbox">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-path_checkbox">
+                                                        <input type="checkbox" title="Select Hugo's Dossier" alt="Select Hugo's Dossier" value="/mandant1/ordnungssystem/fuehrung/kommunikation-und-oeffentlichkeitsarbeit/dossier-1" id="dossier-1" name="paths:list" class="noborder selectable">
+                                                    </div>
+                                                </td>
+                                                <td tabindex="0" style="width: 108px;" class="x-grid3-col x-grid3-cell x-grid3-td-reference">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-reference">
+                                                        OG 1.6 / 1
+                                                    </div>
+                                                </td>
+                                                <td tabindex="0" style="width: 298px;" class="x-grid3-col x-grid3-cell x-grid3-td-sortable_title">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-sortable_title">
+                                                        <span class="linkWrapper"><img src="http://localhost:8080/mandant1/icon_objekt_dossier.gif">&nbsp;<a title="Ordnungssystem &gt; 1. Führung &gt; 1.6. Kommunikation und Öffentlichkeitsarbeit &gt; Hugo's Dossier" href="http://localhost:8080/mandant1/ordnungssystem/fuehrung/kommunikation-und-oeffentlichkeitsarbeit/dossier-1" class="rollover-breadcrumb">Hugo's Dossier</a></span>
+                                                    </div>
+                                                </td>
+                                                <td tabindex="0" style="width: 108px;" class="x-grid3-col x-grid3-cell x-grid3-td-review_state">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-review_state">
+                                                        In Bearbeitung
+                                                    </div>
+                                                </td>
+                                                <td tabindex="0" style="width: 108px;" class="x-grid3-col x-grid3-cell x-grid3-td-responsible">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-responsible">
+                                                        Michel Franz (franz.michel)
+                                                    </div>
+                                                </td>
+                                                <td tabindex="0" style="width: 108px;" class="x-grid3-col x-grid3-cell x-grid3-td-start">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-start">
+                                                        16.11.2010
+                                                    </div>
+                                                </td>
+                                                <td tabindex="0" style="width: 108px;" class="x-grid3-col x-grid3-cell x-grid3-td-end">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-end">
+                                                        &nbsp;
+                                                    </div>
+                                                </td>
+                                                <td tabindex="0" style="width: 108px;" class="x-grid3-col x-grid3-cell x-grid3-td-filing_no x-grid3-cell-last">
+                                                    <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-filing_no">
+                                                        &nbsp;
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div><a tabindex="-1" class="x-grid3-focus" href="#" id="ext-gen12" style="left: 1px; top: 1px;" name="ext-gen12"></a>
+                        </div>
+                    </div>
+                    <div class="x-grid3-resize-marker" id="ext-gen13">
+                        &nbsp;
+                    </div>
+                    <div class="x-grid3-resize-proxy" id="ext-gen14">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</metal:main>
+
+</body>
+</html>
