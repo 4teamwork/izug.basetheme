@@ -417,8 +417,8 @@ form.searchPage input.searchButton {
     display: inline;
 }
 #portal-personaltools li a {
-    color: &dtml-backgroundColor;;
-    border-right: 1px solid &dtml-backgroundColor;;;
+    color: &dtml-globalFontColor;;
+    border-right: 1px solid &dtml-globalFontColor;;;
     display:inline-block;
     font-size:1.1em;
     line-height:1em;
@@ -1340,6 +1340,21 @@ div.overlay #createGroup fieldset { border: none; }
 
 #calnext {
 	background-image:url(&dtml-portal_url;/datepicker_next.gif) !important;
+}
+
+/* fontsize switch */
+ul#portal-fontsize {
+  padding: 0.3em 3em 0 0;
+  margin: -1em 0 0 0;
+  list-style: none;
+}
+ul#portal-fontsize li {
+  display: inline;
+}
+
+#portal-fontsize img {
+  vertical-align: bottom;
+  height: 0.75em;
 }
 
 /* wizard */
