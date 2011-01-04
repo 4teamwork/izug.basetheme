@@ -44,8 +44,10 @@ discreetColor:string=#76797c
 helpBackgroundColor:string=#ffffe1
 
 portalMinWidth:string=96em
-portalMaxWidth:string=140em
 columnOneWidth:string=25em
 columnTwoWidth:string=17em
 
 highlightColor:string=#DEE7EC
+
+# zug colors:
+grey4:string=#454545

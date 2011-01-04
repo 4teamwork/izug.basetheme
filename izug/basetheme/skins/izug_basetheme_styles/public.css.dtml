@@ -121,19 +121,19 @@ h3, h4, h5, h6 {
 /* End edit form elements */
 
 #visual-portal-wrapper {
-    margin:0 auto 0 0;
-	padding: 0 1em;
-	min-width: &dtml-portalMinWidth;;
-	max-width: &dtml-portalMaxWidth;;
+    margin: 0;
+	padding: 0 0.9em;
+	width: &dtml-portalMinWidth;;
 }
 
 /* Logo properties */
+#portal-logo {
+    display: block;
+    height: 4.8em;
+}
 #portal-logo img {
     border: 0;
     padding: 0;
-    margin: 2.5em 0 1.5em 2em;
-	width: 17em;
-	height: 3.4em;
 }
 
 /* The skin switcher at the top, only shows up if you have multiple skins available */
@@ -145,12 +145,15 @@ h3, h4, h5, h6 {
 }
 #portal-top {
     /* Top section */
-    margin: 0;
+    margin: 2.4em 0 4.8em 0;
     padding: 0;
-    /*background-color: &dtml-globalBackgroundColor;;*/
-    height: 10em;
+    height: 8.1em;
+    background-color: &dtml-globalBackgroundColor;;
 }
-
+#portal-header {
+    background-color: white;
+    height:4.9em;   
+}
 /* Site-wide action menu - font size, contact, index, sitemap etc */
 #portal-siteactions {
     background-color: transparent;
@@ -190,10 +193,9 @@ h3, h4, h5, h6 {
 
 #portal-searchbox {
     float: right;
-    clear: right;
     background-color: transparent;
-margin:2em 0 0;
-padding:0 3.5em 0 0;
+    margin: 2.4em 0 0 0;
+    padding:0 1.5em 0 0;
     text-align: right;
     text-transform: &dtml-textTransform;;
     white-space: nowrap;
@@ -279,7 +281,7 @@ form.searchPage input.searchButton {
     position: relative;
     display: block;
     text-align: right;
-    padding-top: 5px;
+    padding-top: 0px;
     margin: 0;
     left: -40px;
     z-index: 3;
@@ -348,48 +350,57 @@ form.searchPage input.searchButton {
 /* The global section tabs. */
 #portal-globalnav {
     background-color: transparent;
-    padding: 0em 0em 0em 2em;
+    padding: 0em 0em 0em 2.5em;
     white-space: nowrap;
     list-style: none;
-    margin: 0;
-    height: auto;
-    line-height: normal;
+    margin: 0.8em 0 0 0;
+    overflow: hidden;
+    float: left;
 }
 #portal-globalnav li {
     display: block;
     float: left;
-    height: 3em;
     border-color: &dtml-backgroundColor;;
     border-width: &dtml-borderWidth;;
     border-style: &dtml-borderStyle; &dtml-borderStyle; none &dtml-borderStyle;;
-    margin-left: -1px;
-    margin-top: -1px;
+    height: 2.3em;
+    margin-left: -0.1em;
+    padding: 0 1em;
+    background-color: &dtml-inputBackgroundColor;;
+    background: -moz-linear-gradient(top ,&dtml-inputBackgroundColor;, #003559);
+    background: -webkit-gradient(linear, left top, left bottom, from(&dtml-inputBackgroundColor;), to(#003559));
 }
 
 #portal-globalnav li a {
     /* The normal, unselected tabs. They are all links */
-    background-color: &dtml-inputBackgroundColor;;
     color: &dtml-backgroundColor;;
-    height: auto;
-    padding: 0 0.7em 0.2em;
     text-decoration: none;
-	line-height: 2em;
 	display:block;
 	font-size: 1.1em;
+	padding: 0.3em 0 0;
+}
+#portal-globalnav li:hover {
+    background-color: #C91E00;
+    background: -moz-linear-gradient(top ,#C91E00, #991601);
+    background: -webkit-gradient(linear, left top, left bottom, from(#C91E00), to(#991601));
 }
 #portal-globalnav li a:hover {
     text-decoration: underline;
 }
 #portal-globalnav li.selected {
-    /* The selected tab. There's only one of this */
-    background-color: &dtml-inputBackgroundColor;;
+    background-color: white;
+    background: -moz-linear-gradient(top ,#EFEFEF, #ffffff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#ffffff));;
 }
-
+#portal-globalnav li.selected a {
+    color: &dtml-grey4;;
+}
 #portal-personaltools-wrapper {
-    width: 50%;
+    width: 70%;
     float: right;
 	text-align: right;
-	margin: 3em 0 0 0;
+	margin: 0 0 0 0;
+	height: 2.4em;
 }
 
 #portal-personaltools {
@@ -397,11 +408,11 @@ form.searchPage input.searchButton {
     margin: 0;
     list-style: none;
     display:inline;
-    float: left;
     width: 75%;
     overflow: hidden;
-    padding-top: 0.2em;
-
+    float: right;
+    whitespace:nowrap;
+    padding-top: 1.1em;
 }
 #portal-personaltools .portalUser {
     background: transparent url(&dtml-portal_url;/user.gif) center left no-repeat;
@@ -419,7 +430,7 @@ form.searchPage input.searchButton {
 #portal-personaltools li a {
     color: &dtml-globalFontColor;;
     border-right: 1px solid &dtml-globalFontColor;;;
-    display:inline-block;
+    display:inline;
     font-size:1.1em;
     line-height:1em;
     margin-right:-1px;
@@ -1344,8 +1355,9 @@ div.overlay #createGroup fieldset { border: none; }
 
 /* fontsize switch */
 ul#portal-fontsize {
-  padding: 0.3em 3em 0 0;
-  margin: -1em 0 0 0;
+  padding: 0.8em 2.4em 0 1.2em;
+  margin: 0;
+  float: right;
   list-style: none;
 }
 ul#portal-fontsize li {

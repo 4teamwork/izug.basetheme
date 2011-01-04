@@ -19,7 +19,7 @@
 
 body {
     font: &dtml-fontBaseSize; <dtml-var fontFamily>;
-    background-color: &dtml-backgroundColor;;
+    background: &dtml-backgroundColor; url(raster.gif) repeat-x top left;
     color: &dtml-fontColor;;
     margin: 0;
     padding: 0;

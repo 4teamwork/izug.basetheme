@@ -4,10 +4,36 @@
 
 /* <dtml-with base_properties> */
 
-* html #visual-portal-wrapper {
-    width: 96em;
+/* workaround for internet explorers faulty fontsize implementation */
+html {
+    font-size: 625%;
+}
+body {
+    font-size: 10% !important;
+}
+/* fix for strange 1px anomaly */
+#portal-top {
+    height: 8em;
+}
+#portal-header {
+    height: 4.8em;
+}
+/* main navigation gradients */
+
+#portal-globalnav li {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=&dtml-inputBackgroundColor;, endColorstr=#003559);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=&dtml-inputBackgroundColor;, endColorstr=#003559)";
 }
 
+}
+#portal-globalnav li:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#C91E00, endColorstr=#991601);    
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#C91E00, endColorstr=#991601)";
+}
+#portal-globalnav li.selected {
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#EFEFEF, endColorstr=#ffffff);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#EFEFEF, endColorstr=#ffffff)";
+}
 * html #portal-columns {
   width: 100%;
 }
@@ -42,10 +68,7 @@ textarea {
   border-bottom: &dtml-borderWidth; dotted &dtml-fontColor;;
 }
 
-/* Fix bottom margin on tabs in IE */
-#portal-globalnav li.selected a {
-  position: relative;
-}
+
 #portal-colophon .colophonIcon {
   height: 0px !important;
   height /**/: 15px;
@@ -75,20 +98,6 @@ textarea {
   position: absolute;
 }
 
-/* These work in IE only, changes the look of the scrollbar + textareas
-   We disabled these in Plone 3.0, but if you want them back, uncomment
-*/
-/*
-body {
-    scrollbar-base-color: &dtml-globalBackgroundColor;;
-    scrollbar-highlight-color: &dtml-globalBackgroundColor;;
-    scrollbar-track-color: &dtml-evenRowBackgroundColor;;
-    scrollbar-darkshadow-color: &dtml-evenRowBackgroundColor;;
-    scrollbar-3dlight-color: &dtml-globalBorderColor;;
-    scrollbar-shadow-color: &dtml-globalBorderColor;;
-    scrollbar-arrow-color: &dtml-globalFontColor;;
-}
-*/
 
 /* Holly hack to kill the Peekaboo bug in IE - details at
    http://www.positioniseverything.net/explorer/peekaboo.html
