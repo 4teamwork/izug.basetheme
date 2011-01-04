@@ -4,19 +4,8 @@ from plone.app.layout.viewlets import common, content
 from plone.memoize.instance import memoize
 from zope.component import getMultiAdapter
 
-class PersonalBar(common.PersonalBarViewlet):
-    """A custom version of the path bar (breadcrumbs) viewlet, which
-    uses slightly different markup.
-    """
-    index = ViewPageTemplateFile('viewlets_templates/personalbar.pt')
-
-
 class PathBar(common.PathBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/pathbar.pt')
-
-
-class SearchBox(common.SearchBoxViewlet):
-    index = ViewPageTemplateFile('viewlets_templates/searchbox.pt')
 
 
 class SiteActions(common.SiteActionsViewlet):

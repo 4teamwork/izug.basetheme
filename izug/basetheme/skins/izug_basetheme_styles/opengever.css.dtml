@@ -12,6 +12,7 @@ ul#portal-fontsize li {
 
 #portal-fontsize img {
   vertical-align: bottom;
+  height: 0.75em;
 }
 
 

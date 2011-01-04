@@ -30,6 +30,7 @@ setup(name='izug.basetheme',
       install_requires=[
           'setuptools',
           'ftw.contentmenu',
+          'z3c.jbot',
           'collective.mtrsetup',
           #'opengever.ogds.base',
           # -*- Extra requirements: -*-

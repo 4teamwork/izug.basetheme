@@ -1,5 +1,0 @@
-<div id="client_title">
-  <span class="seperator">/</span>
-  <span class="title" tal:content="view/get_title" />
-  <span class="debug" tal:content="structure view/get_debug_information" />
-</div>

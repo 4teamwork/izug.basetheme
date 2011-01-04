@@ -1,35 +1,26 @@
 <?xml version="1.0"?>
 <object>
-
     <!-- portal header -->
-
     <order manager="plone.portalheader" skinname="Plone Default">
         <viewlet name="plone.skip_links"/>
         <viewlet name="plone.site_actions"/>
-        <viewlet name="izug.personal_bar"/>
-        <viewlet name="plone.searchbox"/>
+        <viewlet name="plone.personal_bar"/>
         <viewlet name="plone.logo"/>
         <viewlet name="plone.global_sections"/>
     </order>
-
     <hidden manager="plone.portalheader" skinname="iZug Base Theme">
-        <viewlet name="plone.personal_bar"/>
+        <viewlet name="plone.searchbox"/>
     </hidden>
 
-
     <!--- above content -->
-
     <order manager="plone.abovecontent" skinname="iZug Base Theme">
         <viewlet name="izug.path_bar"/>
     </order>
-
     <hidden manager="plone.abovecontent" skinname="iZug Base Theme">
         <viewlet name="plone.path_bar"/>
     </hidden>
 
-
     <!-- below content title -->
-
     <order manager="plone.belowcontenttitle" skinname="iZug Base Theme">
         <viewlet name="plone.abovecontenttitle.documentactions"/>
         <viewlet name="plone.belowcontenttitle.documentbyline"/>
@@ -38,22 +29,17 @@
         <viewlet name="plone.belowcontenttitle.keywords"/>
     </order>
 
-
     <!-- portal top -->
-
     <order manager="plone.portaltop" skinname="iZug Base Theme">
         <viewlet name="plone.header"/>
         <viewlet name="plone.app.i18n.locales.languageselector"/>
     </order>
-
     <hidden manager="plone.portaltop" skinname="iZug Base Theme">
         <viewlet name="plone.path_bar"/>
         <viewlet name="plone.personal_bar"/>
     </hidden>
 
-
     <!-- content views -->
-
     <order manager="plone.contentviews" skinname="iZug Base Theme">
         <viewlet name="plone.contentviews"/>
         <viewlet name="plone.contentactions"/>
@@ -65,20 +51,15 @@
         <viewlet name="plone.site_actions"/>
     </order>
 
-
     <!-- below content body -->
-
     <hidden manager="plone.belowcontentbody" skinname="iZug Base Theme">
         <viewlet name="plone.abovecontenttitle.documentactions"/>
     </hidden>
 
-
     <!-- portal footer -->
-
     <hidden manager="plone.portalfooter" skinname="iZug Base Theme">
         <viewlet name="plone.footer"/>
         <viewlet name="plone.colophon"/>
         <viewlet name="plone.site_actions"/>
     </hidden>
-
 </object>

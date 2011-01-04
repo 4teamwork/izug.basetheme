@@ -9,6 +9,8 @@
 
   <i18n:registerTranslations directory="locales" />
 
+  <include package="z3c.jbot" file="meta.zcml" />
+  
   <include package=".browser" />
   <include file="skins.zcml" />
   <include file="profiles.zcml" />

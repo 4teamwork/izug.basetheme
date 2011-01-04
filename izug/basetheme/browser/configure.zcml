@@ -10,26 +10,15 @@
       name="iZug Base Theme"
       />
       
-  <browser:viewlet
-      name="izug.personal_bar"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".viewlets.PersonalBar"
-      permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
-      />
+  <browser:jbot
+     directory="customized"
+     layer=".interfaces.IThemeSpecific" 
+     />
       
   <browser:viewlet
       name="izug.path_bar"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"
       class=".viewlets.PathBar"
-      permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
-      />
-
-  <browser:viewlet
-      name="izug.searchbox"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".viewlets.SearchBox"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
