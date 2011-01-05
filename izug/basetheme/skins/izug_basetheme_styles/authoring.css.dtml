@@ -416,13 +416,6 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 /* Used on all descriptions relevant to those not logged in */
 .portalNotLoggedIn {} 
 
-#portal-column-content fieldset > * input:focus,
-#portal-column-content fieldset > * textarea:focus,
-#portal-column-content input.text-widget:focus {
-    border-color: &dtml-notifyBorderColor;;
-    border-width: &dtml-borderWidth;;
-}
-
 /* for highlighting of search terms */
 .highlightedSearchTerm {
    background-color: #ffa;

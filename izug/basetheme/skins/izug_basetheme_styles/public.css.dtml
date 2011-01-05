@@ -50,7 +50,7 @@ h3, h4, h5, h6 {
 
 .documentContent {
     font-size: 100%;
-    padding: 1em 0em 2em 0em !important;
+    padding: 0 0em 2em 0em !important;
     background: &dtml-backgroundColor;;
 }
 .documentContent ul {
@@ -145,7 +145,7 @@ h3, h4, h5, h6 {
 }
 #portal-top {
     /* Top section */
-    margin: 2.4em 0 4.8em 0;
+    margin: 2.4em 0 1.2em 0;
     padding: 0;
     height: 8.1em;
     background-color: &dtml-globalBackgroundColor;;
@@ -422,8 +422,8 @@ form.searchPage input.searchButton {
     display: inline;
 }
 #portal-personaltools li a {
-    color: &dtml-globalFontColor;;
-    border-right: 1px solid &dtml-globalFontColor;;;
+    color: &dtml-grey4;;
+    border-right: 1px solid &dtml-grey4;;;
     display:inline;
     font-size:1.1em;
     line-height:1em;
@@ -432,7 +432,10 @@ form.searchPage input.searchButton {
     padding-right:0.4em;
     text-decoration:none;
 }
-
+#portal-personaltools li a:hover {
+    text-decoration: underline;
+    color: &dtml-red;;
+}
 #portal-personaltools li a#user-name {
     border-right-style: none;
     padding-right: 0;
@@ -451,14 +454,20 @@ form.searchPage input.searchButton {
 #portal-languageselector li {
     display: inline;
 }
+
 #portal-breadcrumbs {
-    /* The path bar, including breadcrumbs and add to favorites */
+    height: 2.7em;
     line-height: 1.6em;
-    margin-top: 0.5em;
+    margin-top: 0.9em;
 }
 #portal-breadcrumbs a {
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 1.1em;
+    color: &dtml-grey4;;
+}
+#portal-breadcrumbs a:hover {
+    text-decoration: underline;
+    color: &dtml-red;;
 }
 .breadcrumbSeparator {
     font-size: 120%;
