@@ -50,4 +50,10 @@ columnTwoWidth:string=17em
 highlightColor:string=#DEE7EC
 
 # zug colors:
+
+red:string=#AE1E00
+grey1:string=#EFEFEF
+grey2:string=#DEDEDE
+grey3:string=#BBBBBB
 grey4:string=#454545
+grey5:string=#111111

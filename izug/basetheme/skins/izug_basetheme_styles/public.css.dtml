@@ -194,8 +194,8 @@ h3, h4, h5, h6 {
 #portal-searchbox {
     float: right;
     background-color: transparent;
-    margin: 2.4em 0 0 0;
-    padding:0 1.5em 0 0;
+    margin: 0.5em 0 0 0;
+    padding:0 0.9em 0 0;
     text-align: right;
     text-transform: &dtml-textTransform;;
     white-space: nowrap;
@@ -367,8 +367,6 @@ form.searchPage input.searchButton {
     margin-left: -0.1em;
     padding: 0 1em;
     background-color: &dtml-inputBackgroundColor;;
-    background: -moz-linear-gradient(top ,&dtml-inputBackgroundColor;, #003559);
-    background: -webkit-gradient(linear, left top, left bottom, from(&dtml-inputBackgroundColor;), to(#003559));
 }
 
 #portal-globalnav li a {
@@ -380,17 +378,13 @@ form.searchPage input.searchButton {
 	padding: 0.3em 0 0;
 }
 #portal-globalnav li:hover {
-    background-color: #C91E00;
-    background: -moz-linear-gradient(top ,#C91E00, #991601);
-    background: -webkit-gradient(linear, left top, left bottom, from(#C91E00), to(#991601));
+    background-color: &dtml-red;;
 }
 #portal-globalnav li a:hover {
     text-decoration: underline;
 }
 #portal-globalnav li.selected {
     background-color: white;
-    background: -moz-linear-gradient(top ,#EFEFEF, #ffffff);
-    background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#ffffff));;
 }
 #portal-globalnav li.selected a {
     color: &dtml-grey4;;

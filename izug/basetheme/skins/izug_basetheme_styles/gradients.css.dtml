@@ -1,0 +1,44 @@
+/* <dtml-with base_properties> */
+/* blau */
+#portal-globalnav li,
+.context,
+.formControls .actionButtons .button,
+.documentEditable * .context,
+.formControls .submit-widget {
+    background: -moz-linear-gradient(top ,#00538C, #003559);
+    background: -webkit-gradient(linear, left top, left bottom, from(#00538C), to(#003559));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00538C, endColorstr=#003559);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00538C, endColorstr=#003559)";
+}
+/* hellblau */
+#irgendwas {
+    background: -moz-linear-gradient(top ,#F7FAFD, #E0EEF7);
+    background: -webkit-gradient(linear, left top, left bottom, from(#F7FAFD), to(#E0EEF7));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F7FAFD, endColorstr=#E0EEF7);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F7FAFD, endColorstr=#E0EEF7)";
+}
+/* rot */
+#portal-globalnav li:hover {
+    background: -moz-linear-gradient(top ,#C91E00, #991601);
+    background: -webkit-gradient(linear, left top, left bottom, from(#C91E00), to(#991601));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#C91E00, endColorstr=#991601);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#C91E00, endColorstr=#991601)";
+}
+/* hellgrau */
+#portal-globalnav li.selected {
+    background: -moz-linear-gradient(top ,#DEDEDE, #FFFFFF);
+    background: -webkit-gradient(linear, left top, left bottom, from(#DEDEDE), to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#DEDEDE, endColorstr=#FFFFFF);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#DEDEDE, endColorstr=#FFFFFF)";
+}
+/* weiss-grau */
+button,
+input[type=button],
+input[type=submit] {
+    background: -moz-linear-gradient(top ,#FFFFFF, #EFEFEF);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EFEFEF));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFFFFF, endColorstr=#EFEFEF);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFFFFF, endColorstr=#EFEFEF)";
+}
+    
+/* </dtml-with> */

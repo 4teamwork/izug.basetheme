@@ -60,13 +60,6 @@ input[type=checkbox] {
   background-color: transparent;
 }
 
-
-/*div#portal-searchbox #searchGadget {
-  width: 19.6em;
-  border: &dtml-borderWidth; solid &dtml-globalBorderColor;;
-  margin:-1px 0 0;
-  padding:2px 0;
-  }*/
 #portal-searchbox #searchGadget {
   border: &dtml-borderWidth; solid &dtml-inputBackgroundColor;;
   margin-right:0.4545em;
@@ -75,17 +68,13 @@ input[type=checkbox] {
   font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
 }
 
-button {
-  font-family: <dtml-var fontFamily>;
-  visibility: visible;
-  border: &dtml-borderWidth; solid &dtml-globalBorderColor;;
-  color: &dtml-inputFontColor;;
-  vertical-align: middle;
-  background-color: &dtml-globalBackgroundColor;;
-  padding: 1px;
-  cursor: pointer;
-  font-size: &dtml-fontSmallSize;;
-  text-transform: &dtml-textTransform;;
+button,
+input[type=button],
+input[type=submit] {
+  color: &dtml-grey5;;
+  border-color: &dtml-grey5;;
+  border-width: 0.1em 0.2em 0.2em 0.1em;
+  cursor: pointer
 }
 select {
   vertical-align: top;
@@ -155,7 +144,7 @@ dl.enableFormTabbing dd {
   margin: 0 1em;
 }
 
-.standalone,
+/*.standalone,
 .documentEditable * .standalone {
   color: &dtml-discreetColor;;
   cursor: pointer;
@@ -163,71 +152,22 @@ dl.enableFormTabbing dd {
   padding: 3px;
   text-transform: &dtml-textTransform;;
   border: &dtml-borderWidth; solid &dtml-globalBorderColor;;
-}
+}*/
 
 .context,
 .formControls .actionButtons .button,
 .documentEditable * .context,
 .formControls .submit-widget {
   color: &dtml-backgroundColor;;
-  cursor: pointer;
-  font-size: 1.1em;
-  padding: 3px;
-  text-transform: &dtml-textTransform;;
-  border: &dtml-borderWidth; solid &dtml-globalBorderColor;;
   background-color: &dtml-globalBackgroundColor;;
 }
-
-.tabbedview-tabs .context,
-.tabbedview-tabs .formControls .actionButtons .button,
-.tabbedview-tabs .documentEditable * .context,
-.tabbedview-tabs .formControls .actionButtons .button,
-.tabbedview-tabs .documentEditable * .standalone{
-  text-decoration: underline;
-  color: &dtml-linkColor;;
-  cursor: pointer;
-  font-size: 1.1em;
-  padding: 3px;
-  text-transform: &dtml-textTransform;;
-  border: none;
-  background-color: &dtml-backgroundColor;;
-}
-
-
-
 
 .destructive,
 .documentEditable * .destructive {
-  background: &dtml-notifyBackgroundColor; url(&dtml-portal_url;/linkTransparent.gif) 9px 1px no-repeat;
-  border: &dtml-borderWidth; &dtml-borderStyle; &dtml-notifyBorderColor;;
+  background: &dtml-notifyBackgroundColor;;
   color: &dtml-fontColor;;
-  cursor: pointer;
-  font-size: 1.1em;
-  padding: 3px;
-  text-transform: &dtml-textTransform;;
-  border: &dtml-borderWidth; solid &dtml-globalBorderColor;;
 }
 div#portal-searchbox .LSBox input.searchButton {
-  background-image: none;
-  color: &dtml-backgroundColor;;
-  background-color: &dtml-inputBackgroundColor;;
-  cursor: pointer;
-  padding:0.1818em 0.4545em;
-  border: &dtml-borderWidth; solid white;
-  text-transform: lowercase;
-  font-weight: bold;
-  font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
-}
-input.searchButton {
-  background-image: none;
-  color: &dtml-backgroundColor;;
-  background-color: &dtml-globalBackgroundColor;;
-  cursor: pointer;
-  padding:0.1818em 0.4545em;
-  border: &dtml-borderWidth; solid white;
-  text-transform: lowercase;
-  font-weight: bold;
-  font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
 }
 .searchSection {
   display: none;
