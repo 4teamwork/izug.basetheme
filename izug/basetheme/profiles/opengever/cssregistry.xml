@@ -6,4 +6,7 @@
   <!-- disable caching for columns.css since in opengever the column width 
        is flexible -->
   <stylesheet id="columns.css" cacheable="False"/>
+  <!-- disabling jquery.treeview.css - in the new opengever the tree looks 
+       completely different -->
+  <stylesheet id="jquery.treeview.css" enabled="False"/>
 </object>

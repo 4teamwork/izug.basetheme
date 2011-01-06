@@ -15,11 +15,11 @@ linkColor:string=#00538C
 linkActiveColor:string=#D52000
 linkVisitedColor:string=#00406A
 
-borderWidth:string=1px
+borderWidth:string=0.1em
 borderStyle:string=solid
 borderStyleAnnotations:string=dashed
 
-globalBorderColor:string=#8CACBB
+globalBorderColor:string=#EFEFEF
 globalBackgroundColor:string=#006FBA
 globalFontColor:string=#436976
 

@@ -76,6 +76,7 @@ input[type=submit] {
   border-width: 0.1em 0.2em 0.2em 0.1em;
   cursor: pointer;
   padding: 0.091em 1.363em;
+  margin-bottom: 0.5em;
 }
 
 button:focus,

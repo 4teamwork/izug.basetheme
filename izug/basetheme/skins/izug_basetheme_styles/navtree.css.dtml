@@ -36,36 +36,37 @@
 .navTree {
     list-style: none; 
     list-style-image: none; 
-    margin-top: 1px;
+}
+.navTreeLevel0 {
+    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
 }
 .navTree li {
-    margin-bottom: 1px;
 }
 .navTreeItem {
     display: block;
     padding: 0;
     margin: 0;
 }
-dl.portletNavigationTree .navTreeItem {
-    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
-}
-.navTreeItem a,
+
 dd.portletItem .navTreeItem a {
     display: block;
     text-decoration: none;
-    padding-top: 0.2em;
-    padding-bottom: 0.25em;
+    border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    padding: 0.2em 1em;
+    color: &dtml-grey4;;
+    line-height: 2.2em;
+}
+dd.portletItem .navTreeItem a span {
     font-size: 1.1em;
 }
 .navTreeItem a:hover,
 dd.portletItem .navTreeItem a:hover {
-    color: &dtml-globalFontColor;;
+    color: &dtml-red;;
+    text-decoration: underline;
 }
-.navTreeCurrentItem,
-.treeview a.selected {
-    border-left: 0.5em solid &dtml-globalBackgroundColor;;
-    color: &dtml-globalFontColor;;
-    background-color:#EEEEEE;
+.navTreeItem .navTreeCurrentItem {
+    background: url(&dtml-portal_url;/icon_areanav_active.gif) repeat-y top left;
+    color: &dtml-grey5; !important;
 }
 
 li.navTreeCurrentItem {
@@ -87,11 +88,11 @@ li.navTreeCurrentItem a:hover {
     height: 1.6em;
 }
 
-.navTreeLevel0 a { padding: 0; }
-.navTreeLevel1 a { padding-left: 1em;}
-.navTreeLevel2 a { padding-left: 2em; }
-.navTreeLevel3 a { padding-left: 3em; }
-.navTreeLevel4 a { padding-left: 4em; }
-.navTreeLevel5 a { padding-left: 5em; }
+.navTreeLevel0 { padding: 0; }
+.navTreeLevel1 { padding-left: 1em;}
+.navTreeLevel2 { padding-left: 1em; }
+.navTreeLevel3 { padding-left: 1em; }
+.navTreeLevel4 { padding-left: 1em; }
+.navTreeLevel5 { padding-left: 1em; }
 
 /* </dtml-with> */

@@ -26,10 +26,52 @@ div#portal-column-one div.ui-resizable-e {
   height: 100%;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 3.6em;
   display:block;
   cursor:col-resize;
   background: transparent url(&dtml-portal_url;/slider_bg.gif) no-repeat 50% 50%;
+  border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey3;;
+}
+
+/* treeview */
+.portletTreePortlet {
+    border-style: none;
+}
+.portletTreePortlet .portletHeader {
+    display: none;
+}
+.portletTreePortlet .portletItem {
+    border-style: none;
+}
+.portletTreePortlet .navTreeItem span {
+    border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey3;;
+    font-size: 1em;
+    display: block;
+}
+.portletTreePortlet .navTreeItem span a {
+    font-size: 1.1em;
+    line-height: 2em;
+    padding: 0.1818em 2em;
+    background: transparent url(&dtml-portal_url;/icon_areanav_inactive.gif) repeat-y top left;
+}
+.portletTreePortlet .navTreeItem span a.navTreeCurrentItem {
+    background: transparent url(&dtml-portal_url;/icon_areanav_active.gif) repeat-y top left;
+}
+.portletTreePortlet .navTreeLevel1 { padding-left: 2.4em;}
+.portletTreePortlet .navTreeLevel2 { padding-left: 2.4em; }
+.portletTreePortlet .navTreeLevel3 { padding-left: 2.4em; }
+.portletTreePortlet .navTreeLevel4 { padding-left: 2.4em; }
+.portletTreePortlet .navTreeLevel5 { padding-left: 2.4em; }
+
+.portletTreePortlet .hitarea {
+    width: 1em;
+    height: 2.7em;
+    float: left;
+    margin-left: 1em;
+    background: transparent url(&dtml-portal_url;/icon_closed.gif) no-repeat 50% 50%;
+}
+.portletTreePortlet .collapsable-hitarea {
+    background: transparent url(&dtml-portal_url;/icon_open.gif) no-repeat 50% 50%;
 }
 
 /* base view tablelike layout */
@@ -312,28 +354,6 @@ a.ui-state-highlight {
 }
 #plone-contentmenu-tabbedview-actions.actionMenu.activated .actionMenuHeader a {
     color: &dtml-linkColor; !important;
-}
-
-/* jquery treeview*/
-
-
-.filetree li.expandable span.folder,
-.filetree li.collapsable span.folder,
-.filetree li span.folder {
-  background: none;
-}
-
-.filetree span.folder, .filetree span.file {
-  padding:0px 0 0px 0.5em;
-}
-
-ul.treeview .navTreeItem a {
-  padding:0em;
-  padding-top:0em;
-}
-.filetree .navTreeItem{
-  border:none;
-
 }
 
 /* to top link */

@@ -133,7 +133,7 @@ h3, h4, h5, h6 {
 }
 #portal-logo img {
     border: 0;
-    padding: 0;
+    padding: 0 0 0 2.4em;
 }
 
 /* The skin switcher at the top, only shows up if you have multiple skins available */
