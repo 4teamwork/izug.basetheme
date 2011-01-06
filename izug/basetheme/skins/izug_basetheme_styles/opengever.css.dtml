@@ -1,0 +1,519 @@
+/* <dtml-with base_properties> */
+/* column layout overrides */
+#visual-portal-wrapper {
+    margin: 0 auto;
+	padding: 0 0.9em;
+	min-width: &dtml-portalMinWidth;;
+	width: auto;
+}
+div#portal-column-one {
+  width: <dtml-var getLeftColumnWidth>;
+}
+div#portal-column-content.sl {
+  margin-left: -<dtml-var getContentColumnWidth>;
+  width: <dtml-var getContentColumnWidth>;
+}
+
+/* resize */
+div#portal-column-one .visualPadding {
+  margin-right: 5em;
+  padding-right: 0;
+}
+div#portal-column-one div.ui-resizable-e {
+  font-size: 1em;
+  width: 1.4em;
+  margin-right: 3.6em;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display:block;
+  cursor:col-resize;
+  background: transparent url(&dtml-portal_url;/slider_bg.gif) no-repeat 50% 50%;
+}
+
+/* base view tablelike layout */
+fieldset {
+  clear: both;
+}
+#content-core div.field label {
+  font-size: 1.1em;
+  clear: both;
+  float: left;
+  width: 20%;
+  display:block;
+  padding-bottom: 1em;
+}
+#content div.field br {
+  display: none;
+}
+
+#content-core div.field div {
+  font-size: 1.1em;
+  width: 70%;
+}
+
+#content-core form div.field label {
+  clear: both;
+  float: none;
+  width: auto;
+  display:inline;
+  padding-bottom: 0em;
+}
+#content form div.field br {
+  display: block;
+}
+#content-core form div.field div  {
+  width: auto;
+  font-size: 1em;
+}
+
+
+/* Tabs
+   ----------------------------------*/
+.tabbedview_select {
+  padding: 0.5em 1em;
+}
+.tabbedview_search {
+  display:block;
+  float:left;
+  padding:0 0 0 1em;
+  position:relative;
+  z-index:10;
+}
+
+div.tabbedview-tabs {
+  padding-top: 1em;
+  background:transparent none repeat scroll 0 0;
+  clear: both;
+}
+div.tabbedview-tabs .ui-widget-header {
+  background:transparent none repeat scroll 0 0;
+}
+
+.tabbedview-tabs .listing td,
+.tabbedview-tabs .journal-listing td {
+  empty-cells:show;
+}
+
+.tabbedview-tabs .listing a,
+.tabbedview-tabs .journal-listing a {
+  overflow:hidden;
+}
+
+.tabbedview-tabs.ui-widget-content .ui-state-default {
+  background:#FFF none repeat scroll 0 0;
+}
+
+.tabbedview-tabs .listingBar {
+  background-color: white;
+  border-style: none;
+  padding: 0em;
+  text-align: right;
+  text-transform: &dtml-textTransform;;
+  vertical-align: top;
+  margin: 0em;
+  font-size: 94%;
+  clear: both;
+  float:right;
+}
+
+.tabbedview-tabs .listingBar .previous,.tabbedview-tabs .listingBar .next{
+  display:none;
+}
+
+.listingBar span.previous,
+.listingPrevious {
+  text-align: left;
+  float: left;
+  margin-right: 1em;
+}
+.listingBar span.next,
+.listingNext {
+  text-align: right;
+  float: right;
+  margin-left: 1em;
+}
+.listingBar img {
+  vertical-align: middle;
+}
+.listingBar a {
+  text-decoration: none;
+}
+
+
+
+div.tabbedview-tabs ul.formTabs {
+  padding: 0.5em 0;
+  margin: 0;
+}
+div.tabbedview-tabs ul.formTabs li {
+  display:inline;
+  list-style-image:none;
+  list-style-position:outside;
+  list-style-type:none;
+  margin:0;
+  width:auto;
+  padding:0;
+  font-size: 1.1em;
+  margin-right: -1px
+}
+div.tabbedview-tabs ul.formTabs li a {
+  border-top:1px solid &dtml-contentViewBorderColor;;
+  border-right:1px solid &dtml-contentViewBorderColor;;
+  border-left:1px solid &dtml-contentViewBorderColor; !important;
+  border-bottom:0px solid &dtml-contentViewBorderColor;;
+  color:#000000 ;
+  display:inline;
+  text-decoration:none;
+  padding:0.5em 1em;
+}
+#content div.tabbedview-tabs ul.formTabs li a.selected {
+  background-color:#F3F3F3 !important;
+}
+div.tabbedview_view div#tabbedview-body {
+  padding: 0.5em;
+  display: block;
+  border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;;
+  background: none;
+  margin-top: 1px;
+}
+.ui-tabs .ui-tabs-hide { display: none !important; }
+span.draggable{
+  cursor:move;
+}
+
+.draglocked .draggable{
+  cursor:not-allowed;
+}
+
+a:target {
+  background-color:transparent !important;
+}
+
+.tabbedview-tabs .listing,
+.tabbedview-tabs .journal-listing {
+  border-style: none;
+  position:relative;
+  width:100%;
+  table-layout:fixed;
+}
+
+.tabbedview-tabs .listing th,
+.tabbedview-tabs .journal-listing th {
+  position:relative;
+  background-color:lightgrey;
+  top:0px;
+  left:0px;
+}
+
+.tabbedview-tabs .listing th.sort-selected
+.tabbedview-tabs .journal-listing th.sort-selected {
+  background-color:khaki;
+}
+
+.ui-selectable .ui-selected{
+  background-color:Khaki;
+}
+.ui-selectable .ui-selecting, .ui-selectable .ui-unselecting{
+  background-color:LavenderBlush ;
+}
+
+
+.tabbedview-tabs .ui-resizable-e{
+  border-right:2px dotted grey;
+  display:block;
+  float:right;
+  height:1.5em;
+  width:0.2em;
+  cursor:col-resize;
+}
+
+.ui-resizable-handle{
+  position:relative;
+}
+
+input#tabbedview-searchbox {
+  border:1px solid #6F9CBC;
+  margin:0.5em 0;
+  color:grey;
+  padding-left:1.5em;
+  background: white url(&dtml-portal_url;/search_icon.gif) no-repeat 0% 40%;
+}
+
+.tabbedview-tabs .listing .sortable{
+  cursor:pointer;
+  white-space: nowrap;
+}
+
+.tabbedview-tabs .listing .sortable span {
+  padding-right:14px;
+  display:block;
+  float:left;
+}
+
+.tabbedview-tabs .listing .sortable.sort-asc span {
+  background: transparent url(&dtml-portal_url;/arrowUp.gif) no-repeat scroll center right;
+}
+
+.tabbedview-tabs .listing .sortable.sort-reverse span {
+  background: transparent url(&dtml-portal_url;/arrowDown.gif) no-repeat scroll right center;
+}
+
+.tabbedview-tabs span.linkWrapper {
+  display:block;
+  overflow:hidden;
+}
+
+.tabbedview-tabs .listing td,
+.tabbedview-tabs  .journal-listing td {
+  empty-cells: show;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 2em;
+}
+
+#listing_container a.rollover-breadcrumb {
+  padding-left: 0.2em;
+}
+
+/*XXX*/
+#content a:target {
+  background-color:transparent !important;
+}
+
+a.ui-state-highlight {
+  background-color:Khaki;
+}
+/* tabbedview action menus */
+#plone-contentmenu-tabbedview-actions.activated {
+}
+#plone-contentmenu-tabbedview-actions a {
+    font-size: 1.1em;
+    border-bottom-style: none;
+    padding: 0 0.5em;
+}
+#plone-contentmenu-tabbedview-actions dd.actionMenuContent {
+    top: 1.5em;
+    border: 1px solid &dtml-contentViewBorderColor; !important;
+    right: 0;
+}
+#plone-contentmenu-tabbedview-actions dd.actionMenuContent ul {
+    border: 0px none transparent;
+}
+#plone-contentmenu-tabbedview-actions.actionMenu .actionMenuHeader {
+    font-size: 1.1em;
+}
+#plone-contentmenu-tabbedview-actions.actionMenu.activated .actionMenuHeader {
+    background-color: &dtml-contentViewBackgroundColor; !important;
+    border: 1px solid &dtml-contentViewBorderColor; !important;
+    border-style: solid solid none solid !important;
+    margin-top: 1px;
+}
+#plone-contentmenu-tabbedview-actions.actionMenu.activated .actionMenuHeader a {
+    color: &dtml-linkColor; !important;
+}
+
+/* jquery treeview*/
+
+
+.filetree li.expandable span.folder,
+.filetree li.collapsable span.folder,
+.filetree li span.folder {
+  background: none;
+}
+
+.filetree span.folder, .filetree span.file {
+  padding:0px 0 0px 0.5em;
+}
+
+ul.treeview .navTreeItem a {
+  padding:0em;
+  padding-top:0em;
+}
+.filetree .navTreeItem{
+  border:none;
+
+}
+
+/* to top link */
+
+div.to_top {
+  display: block;
+  border-top:1px solid #BBBBBB;
+  display:block;
+  text-align:right;
+}
+div.to_top a {
+  font-size:1.1em;
+  line-height:2.6em;
+  text-align:right;
+  text-decoration:none;
+}
+div.to_top a:hover {
+  color: #D52000;
+  text-decoration: underline;
+}
+/* dossier summary view */
+div#overview_overview {
+  position: relative;
+  margin: -1px 0 0 0;
+  padding: 0;
+  overflow:hidden;
+}
+div#overview_overview .boxGroup0 {
+  width: 65%;
+  position: relative;
+  left: 100%;
+  margin-left: -100%;
+  float: left;
+  padding-left: 0.5em;
+}
+div#overview_overview .boxGroup1 {
+  width: 34%;
+  position: relative;
+  left: 100%;
+  margin-left: -34%;
+  float: left;
+}
+div#overview_overview .box {
+  font-size: 1.1em;
+}
+
+div#overview_overview .box h2 {
+  font-size: 100%;
+}
+div#overview_overview .boxGroup0 .box {
+  width: 50%;
+  float: left;
+  position: relative;
+}
+
+div#overview_overview ul {
+  list-style-image:none;
+  list-style-type:none;
+  margin-left: 0;
+}
+
+/* autocomplete widget */
+div.querySelectSearch input.text-widget  {
+  width: 30em;
+}
+
+/* task style */
+table.task-listing th {
+  width: 12em;
+}
+
+div.response-info,
+div.issue-attachment {
+  font-size: 1.1em;
+  margin-bottom: 0.75em;
+}
+
+.response-info span.label,
+.issue-attachment span.label {
+  display: block;
+  width: 12em;
+  float:left;
+  clear: both;
+}
+
+
+.response-clarification,
+.response-additional {
+  border: 1px dashed #6F9CBC;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  background-color: #EFEFEF;
+}
+.response-actions {
+  display: block;
+  clear: both;
+  padding-bottom: 1em;
+}
+
+.response-actions form {
+  padding-right: 0.5em;
+  display: inline;
+}
+
+/* tooltip style */
+#tooltip {
+  background-color:&dtml-linkColor;;
+  padding:5px;
+  position:absolute;
+  z-index:3000;
+  width:25em;
+  color:white !important;
+  border-style: none;
+  opacity: 1;
+}
+
+#tooltip h3 {
+  color:white;
+  font-weight:normal;
+}
+
+/* client title viewlet in header */
+#client_title {
+  color: white;
+  display: inline;
+  position: relative;
+  top: 1.2em;
+}
+
+#client_title .seperator {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-size: 300%;
+}
+
+#client_title .title {
+  font-size: 220%;
+}
+
+#client_title .debug a {
+  color: white;
+  text-decoration: none;
+}
+
+.overlay .member_overview {
+    font-size:11px;
+}
+
+.overlay .member_overview h1{
+    font-size:19px;
+}
+
+/* jquery ui widget style */
+.ui-widget {
+    font-family: &dtml-fontFamily;;
+    font-size: 1.1em;
+}
+.ui-widget-content {
+    border: 1px solid &dtml-globalBorderColor;;
+    color: &dtml-fontColor;;
+}
+.ui-state-hover, 
+.ui-widget-content .ui-state-hover, 
+.ui-widget-header .ui-state-hover, 
+.ui-state-focus, 
+.ui-widget-content .ui-state-focus, 
+.ui-widget-header .ui-state-focus {
+    border: 1px solid transparent;
+    font-weight: normal;
+}
+.ui-widget-content a {
+    color: &dtml-linkColor;;
+}
+.ui-widget table {
+    font-size: 1em;
+}
+.ui-corner-all {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+/* </dtml-with> */

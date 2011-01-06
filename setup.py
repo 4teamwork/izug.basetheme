@@ -29,6 +29,7 @@ setup(name='izug.basetheme',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'collective.js.jqueryui',
           'ftw.contentmenu',
           'z3c.jbot',
           'collective.mtrsetup',

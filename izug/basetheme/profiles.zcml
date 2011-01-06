@@ -11,4 +11,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="opengever"
+      title="izug.basetheme for opengever"
+      directory="profiles/opengever"
+      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>

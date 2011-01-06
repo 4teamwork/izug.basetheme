@@ -23,7 +23,7 @@ body.smallText #visual-portal-wrapper { font-size: 60%; }
 /* Padding for the columns */
 
 #portal-column-one .visualPadding {
-    padding: 3.1em 0.5em 1em 0
+    padding: 3.5em 0.5em 1em 0
 }
 #portal-column-two .visualPadding {
     padding: 2em 0 1em 0.5em;
@@ -615,14 +615,15 @@ dl.error dd {
     line-height: 1.5em;
 }
 div.documentByLine {
-    background-color: &dtml-globalBackgroundColor;;
+    background-color: &dtml-grey2;;
     font-size: &dtml-fontSmallSize;;
     font-weight: normal;
-    color: &dtml-backgroundColor;;
+    color: &dtml-grey5;;
     padding: 0 1em 0.5em;
 }
 div.documentByLine a {
-    color: &dtml-backgroundColor;;
+    color: &dtml-grey5;;
+    text-decoration: none;
 }
 div.documentByLine span:first-child {
     border-left-style: none;

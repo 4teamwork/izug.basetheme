@@ -23,7 +23,7 @@ div#portal-column-two {
   left: 100%;
 }
 div#portal-column-one {
-  width: <dtml-var getLeftColumnWidth>;
+  width: &dtml-columnOneWidth;;
   margin-left: -100%;
 }
 div#portal-column-content {
@@ -31,8 +31,8 @@ div#portal-column-content {
   width: 100%;
 }
 div#portal-column-content.sl {
-  margin-left: -<dtml-var getContentColumnWidth>;
-  width: <dtml-var getContentColumnWidth>;
+  margin-left: -71em;
+  width: 71em;
 }
 div#portal-column-two {
   margin-left: -20%;
@@ -40,18 +40,8 @@ div#portal-column-two {
 }
 /* resize */
 div#portal-column-one .visualPadding {
-  margin-right: 15px;
-}
-div#portal-column-one div.ui-resizable-e {
-  width: 0.5em;
-  margin-right: 0.5em;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  display:block;
-  background-color: &dtml-contentViewBackgroundColor;;
-  cursor:col-resize;
+  margin-right: 3.6em;
+  padding-right: 0;
 }
 
 /* fullscreen */

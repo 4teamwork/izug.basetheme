@@ -9,4 +9,7 @@
   <cmf:registerDirectory name="izug_basetheme_styles"/>
   <cmf:registerDirectory name="izug_basetheme_icons"/>
 
+  <!-- site specific skin layers -->
+  <cmf:registerDirectory name="izug_opengever"/>
+  
 </configure>
