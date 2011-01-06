@@ -456,13 +456,12 @@ form.searchPage input.searchButton {
 }
 
 #portal-breadcrumbs {
-    height: 2.7em;
+    height: 2.6em;
     line-height: 1.6em;
-    margin-top: 0.9em;
+    margin-top: 1em;
 }
 #portal-breadcrumbs a {
     text-decoration: none;
-    font-size: 1.1em;
     color: &dtml-grey4;;
 }
 #portal-breadcrumbs a:hover {
