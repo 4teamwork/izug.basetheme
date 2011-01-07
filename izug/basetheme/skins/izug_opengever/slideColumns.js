@@ -15,6 +15,7 @@ jq(document).ready(function() {
         columnOne.resizable({ 
 	      handles: 'e',
           ghost: true,
+          minWidth: 75,
           resize: function(event, ui) {
 	          setColumnOneWidth(ui.size.width);
           },

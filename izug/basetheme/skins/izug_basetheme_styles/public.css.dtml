@@ -614,6 +614,9 @@ div.documentByLine a {
     color: &dtml-grey5;;
     text-decoration: none;
 }
+div.documentByLine a:hover {
+    text-decoration: underline;
+}
 div.documentByLine span:first-child {
     border-left-style: none;
     padding-left: 0;
