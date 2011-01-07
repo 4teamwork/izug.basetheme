@@ -476,20 +476,14 @@ div.issue-attachment {
 
 /* client title viewlet in header */
 #client_title {
-  color: white;
-  display: inline;
-  position: relative;
-  top: 1.2em;
-}
-
-#client_title .seperator {
-  padding-left: 0.2em;
-  padding-right: 0.2em;
-  font-size: 300%;
+    clear: both;
+    color: &dtml-grey5;;
+    padding-top: 2em;
 }
 
 #client_title .title {
-  font-size: 220%;
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 #client_title .debug a {
