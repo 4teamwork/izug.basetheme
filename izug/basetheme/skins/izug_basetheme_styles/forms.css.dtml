@@ -100,7 +100,7 @@ fieldset {
   width: auto;
 }
 
-legend {
+#content legend {
     color: &dtml-zugblue;;
     border-color: &dtml-zugblue;;
     border-style: &dtml-borderStyle; none;

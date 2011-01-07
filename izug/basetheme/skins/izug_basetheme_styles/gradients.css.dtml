@@ -9,21 +9,23 @@
 /* hellgrau */
 button,
 input[type=button],
-input[type=submit] {
+input[type=submit],
+#content div.tabbedview-tabs ul.formTabs li a {
     background: -moz-linear-gradient(top ,#FFFFFF, #DEDEDE);
     background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DEDEDE));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFFFFF, endColorstr=#DEDEDE);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFFFFF, endColorstr=#DEDEDE)";
 }
-/* hellgrau reversed (navigation)*/
+/* grau-weiss*/
 #portal-globalnav li.selected,
 button:focus,
 input[type=button]:focus,
-input[type=submit]:focus {
+input[type=submit]:focus,
+#content div.tabbedview-tabs ul.formTabs li a.selected {
     background: -moz-linear-gradient(top ,#DEDEDE, #FFFFFF);
-    background: -webkit-gradient(linear, left top, left bottom, from(#DEDEDE), to(#FFFFFF));
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#DEDEDE, endColorstr=#FFFFFF);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#DEDEDE, endColorstr=#FFFFFF)";
+    background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#EFEFEF, endColorstr=#FFFFFF);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#EFEFEF, endColorstr=#FFFFFF)";
 }
 /* blau */
 #portal-globalnav li,
@@ -39,7 +41,7 @@ input[type=submit].context {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00538C, endColorstr=#003559)";
 }
 /* hellblau */
-legend {
+#content legend {
     background: -moz-linear-gradient(top ,#F7FAFD, #E0EEF7);
     background: -webkit-gradient(linear, left top, left bottom, from(#F7FAFD), to(#E0EEF7));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F7FAFD, endColorstr=#E0EEF7) !important;

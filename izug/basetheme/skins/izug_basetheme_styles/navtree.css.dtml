@@ -51,7 +51,7 @@
 dd.portletItem .navTreeItem a {
     display: block;
     text-decoration: none;
-    border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey1;;
     padding: 0.2em 1em;
     color: &dtml-grey4;;
     line-height: 2.2em;

@@ -44,7 +44,6 @@ div#portal-column-one div.ui-resizable-e {
     border-style: none;
 }
 .portletTreePortlet .navTreeItem span {
-    border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey3;;
     font-size: 1em;
     display: block;
 }
@@ -110,7 +109,7 @@ fieldset {
 }
 
 
-/* Tabs
+/* Tabbedview
    ----------------------------------*/
 .tabbedview_select {
   padding: 0.5em 1em;
@@ -123,15 +122,6 @@ fieldset {
   z-index:10;
 }
 
-div.tabbedview-tabs {
-  padding-top: 1em;
-  background:transparent none repeat scroll 0 0;
-  clear: both;
-}
-div.tabbedview-tabs .ui-widget-header {
-  background:transparent none repeat scroll 0 0;
-}
-
 .tabbedview-tabs .listing td,
 .tabbedview-tabs .journal-listing td {
   empty-cells:show;
@@ -140,10 +130,6 @@ div.tabbedview-tabs .ui-widget-header {
 .tabbedview-tabs .listing a,
 .tabbedview-tabs .journal-listing a {
   overflow:hidden;
-}
-
-.tabbedview-tabs.ui-widget-content .ui-state-default {
-  background:#FFF none repeat scroll 0 0;
 }
 
 .tabbedview-tabs .listingBar {
@@ -159,7 +145,8 @@ div.tabbedview-tabs .ui-widget-header {
   float:right;
 }
 
-.tabbedview-tabs .listingBar .previous,.tabbedview-tabs .listingBar .next{
+.tabbedview-tabs .listingBar .previous,
+.tabbedview-tabs .listingBar .next {
   display:none;
 }
 
@@ -183,6 +170,11 @@ div.tabbedview-tabs .ui-widget-header {
 }
 
 
+div.tabbedview-tabs {
+  padding-top: 1em;
+  background:transparent none repeat scroll 0 0;
+  clear: both;
+}
 
 div.tabbedview-tabs ul.formTabs {
   padding: 0.5em 0;
@@ -196,27 +188,39 @@ div.tabbedview-tabs ul.formTabs li {
   margin:0;
   width:auto;
   padding:0;
-  margin-right: -1px
 }
 div.tabbedview-tabs ul.formTabs li a {
-  border-top:1px solid &dtml-contentViewBorderColor;;
-  border-right:1px solid &dtml-contentViewBorderColor;;
-  border-left:1px solid &dtml-contentViewBorderColor; !important;
-  border-bottom:0px solid &dtml-contentViewBorderColor;;
-  color:#000000 ;
+  border-top:1px solid &dtml-grey4;;
+  border-right:1px solid &dtml-grey4;;
+  border-left:1px solid &dtml-grey4;;
+  border-bottom:1px solid &dtml-grey4;;
+  color: &dtml-grey4;;
   display:inline;
   text-decoration:none;
-  padding:0.5em 1em;
+  margin-top: 0.272em;
+  padding:0.272em 1.363em;
+  background-color:&dtml-grey2;;
+  margin-right: -1px;
+  float: left;
 }
-#content div.tabbedview-tabs ul.formTabs li a.selected {
-  background-color:#F3F3F3 !important;
+div.tabbedview-tabs ul.formTabs li a.selected {
+  background-color: &dtml-backgroundColor;;
+  color: &dtml-grey5;;
+  padding-top: 0.545em;
+  padding-bottom: 0.545em;
+  margin-top: -0.272em;
+  border-bottom: 1px solid &dtml-backgroundColor;;
+}
+div.tabbedview-tabs ul.formTabs li a:hover {
+  color: &dtml-red;;
+  text-decoration: underline;
 }
 div.tabbedview_view div#tabbedview-body {
   padding: 0.5em;
   display: block;
-  border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;;
+  border: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey4;;
   background: none;
-  margin-top: 1px;
+  margin-top: -1px;
 }
 .ui-tabs .ui-tabs-hide { display: none !important; }
 span.draggable{
