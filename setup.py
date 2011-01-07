@@ -39,6 +39,6 @@ setup(name='izug.basetheme',
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
-      target = izug
+      target = plone
       """,
       )
