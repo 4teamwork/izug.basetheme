@@ -28,4 +28,3 @@ class Byline(content.DocumentBylineViewlet):
             for w in workflows:
                 if w.states.has_key(state):
                     return w.states[state].title or state
-

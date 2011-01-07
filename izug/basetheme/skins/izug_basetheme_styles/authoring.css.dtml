@@ -79,7 +79,6 @@ body.template-manage-dashboard .contentViews li a:hover {
     z-index: 2;
     position:relative;
     height: 1.6em !important;
-    font-size:1.1em;
     border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor; !important;
     border-style: none none solid none !important;
     min-height: 1.6em !important;
@@ -499,7 +498,7 @@ li.formTab a.notify:hover {
 }
 .formPanel {
     padding: 1em 1em 1em 1em; 
-    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-zugblue;;
 }
 .formPanel.hidden {
     display: none;

@@ -26,7 +26,6 @@ textarea {
 }
 input {
   font-family: <dtml-var fontFamily>;
-  font-size: 1.1em;
   visibility: visible;
   border: 1px solid #ddd;
   border-color:#666 #ddd #ddd #666;
@@ -94,16 +93,23 @@ form {
   margin: 0;
 }
 fieldset {
-  border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+  border: &dtml-borderWidth; &dtml-borderStyle; &dtml-zugblue;;
   margin: 1em 0em 1em 0em;
-  padding: 0em 1em 1em 1em;
+  padding: 0em 0 1em 0;
   line-height: 1.5em;
   width: auto;
 }
+
 legend {
-  background: &dtml-backgroundColor;;
-  padding: 0.5em;
-  font-size: 90%;
+    border-color: &dtml-zugblue;;
+    border-style: &dtml-borderStyle; none;
+    border-width: &dtml-borderWidth;;
+    clear: both;
+    display: block !important;
+    margin-left: -1em;
+    margin-right: -1em;
+    margin-top: 1.81em;
+    width: 101.5%;
 }
 label {
   font-weight: bold;

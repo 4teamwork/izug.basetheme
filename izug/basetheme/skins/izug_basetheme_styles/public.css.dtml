@@ -370,6 +370,7 @@ form.searchPage input.searchButton {
 }
 #portal-globalnav li a:hover {
     text-decoration: underline;
+    color: &dtml-backgroundColor; !important;
 }
 #portal-globalnav li.selected {
     background-color: white;
