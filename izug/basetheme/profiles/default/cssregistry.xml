@@ -4,4 +4,7 @@
      conditionalcomment="" cookable="True" enabled="on" expression=""
      id="gradients.css" media="screen" rel="stylesheet" rendering="import"/>
   <stylesheet id="member.css" enabled="False"/>
+  <!-- IE 8 still needs special care -->
+  <stylesheet id="IEFixes.css" conditionalcomment="lt IE 9"/>
 </object>
+

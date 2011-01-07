@@ -65,8 +65,11 @@ input[type=checkbox] {
   padding:0.1818em 0.4545em 0.3636em;
   width:16.8182em;
   font-family: "Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+  font-size: 1.1em;
 }
-
+#portal-searchbox input.searchButton {
+  font-size: 1.1em;
+}
 button,
 input[type=button],
 input[type=submit] {

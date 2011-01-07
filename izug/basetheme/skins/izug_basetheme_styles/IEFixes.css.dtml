@@ -61,7 +61,7 @@ textarea {
   display: inline;
 }
 .actionMenu .actionMenuContent {
-  top: 1.4em;
+  top: 1.7em;
 }
 
 /* Calendar fixes */
@@ -172,12 +172,6 @@ table.ploneCalendar caption {
   margin-right:<dtml-var columnTwoWidth missing="16em">;
 }
 
-#portal-column-one, #portal-column-two {
-  margin-top:2px;
-}
-#portal-column-content .contentViews {
-  margin-top:1px;
-}
 html > body .portalMessage dt {
   position:relative;
 }
@@ -186,8 +180,5 @@ html > body .portalMessage dt {
     white-space:nowrap;
     padding-left: 0 !important;
     left: 1em;
-}
-*+html #tabbedview-body {
-    margin-top: -0.5em !important;
 }
 /* </dtml-with> */

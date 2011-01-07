@@ -1349,12 +1349,17 @@ ul#portal-fontsize {
   padding: 0.8em 2.4em 0 1.2em;
   margin: 0;
   float: right;
-  list-style: none;
+  list-style-image: none;
+  list-style-type: none;
 }
 ul#portal-fontsize li {
   display: inline;
+  list-style-image: none;
+  list-style-type: none;
 }
-
+ul#portal-fontsize li a {
+    text-decoration: none;
+}
 #portal-fontsize img {
   vertical-align: bottom;
   height: 0.75em;
