@@ -175,6 +175,7 @@ input[type=submit].context {
   color: &dtml-fontColor;;
 }
 div#portal-searchbox .LSBox input.searchButton {
+    margin-bottom: 0;
 }
 .searchSection {
   display: none;

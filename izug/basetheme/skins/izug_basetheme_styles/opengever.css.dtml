@@ -69,6 +69,7 @@ div#portal-column-one div.ui-resizable-e {
     float: left;
     margin-left: 1em;
     background: transparent url(&dtml-portal_url;/icon_closed.gif) no-repeat 50% 50%;
+    cursor: pointer;
 }
 .portletTreePortlet .collapsable-hitarea {
     background: transparent url(&dtml-portal_url;/icon_open.gif) no-repeat 50% 50%;
@@ -79,7 +80,6 @@ fieldset {
   clear: both;
 }
 #content-core div.field label {
-  font-size: 1.1em;
   clear: both;
   float: left;
   width: 20%;
@@ -91,7 +91,6 @@ fieldset {
 }
 
 #content-core div.field div {
-  font-size: 1.1em;
   width: 70%;
 }
 
@@ -197,7 +196,6 @@ div.tabbedview-tabs ul.formTabs li {
   margin:0;
   width:auto;
   padding:0;
-  font-size: 1.1em;
   margin-right: -1px
 }
 div.tabbedview-tabs ul.formTabs li a {
@@ -331,7 +329,6 @@ a.ui-state-highlight {
 #plone-contentmenu-tabbedview-actions.activated {
 }
 #plone-contentmenu-tabbedview-actions a {
-    font-size: 1.1em;
     border-bottom-style: none;
     padding: 0 0.5em;
 }
@@ -344,7 +341,6 @@ a.ui-state-highlight {
     border: 0px none transparent;
 }
 #plone-contentmenu-tabbedview-actions.actionMenu .actionMenuHeader {
-    font-size: 1.1em;
 }
 #plone-contentmenu-tabbedview-actions.actionMenu.activated .actionMenuHeader {
     background-color: &dtml-contentViewBackgroundColor; !important;
@@ -397,7 +393,6 @@ div#overview_overview .boxGroup1 {
   float: left;
 }
 div#overview_overview .box {
-  font-size: 1.1em;
 }
 
 div#overview_overview .box h2 {
@@ -509,7 +504,6 @@ div.issue-attachment {
 /* jquery ui widget style */
 .ui-widget {
     font-family: &dtml-fontFamily;;
-    font-size: 1.1em;
 }
 .ui-widget-content {
     border: 1px solid &dtml-globalBorderColor;;

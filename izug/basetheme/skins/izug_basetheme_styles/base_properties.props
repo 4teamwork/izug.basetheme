@@ -25,8 +25,8 @@ globalFontColor:string=#436976
 
 headingFontFamily:string=Verdana,Arial,Helvetica,sans-serif
 
-contentViewBorderColor:string=#6F9CBC
-contentViewBackgroundColor:string=#EFEFEF
+contentViewBorderColor:string=#99BAD1
+contentViewBackgroundColor:string=#DEDEDE
 contentViewFontColor:string=#222222
 
 inputFontColor:string=Black
@@ -50,8 +50,13 @@ columnTwoWidth:string=17em
 highlightColor:string=#DEE7EC
 
 # zug colors:
-
+zugblue:string=#006FBA
+darkblue:string=#00538C
+lightblue:string=#EBF4FA
+borderblue:string=#99BAD1
 red:string=#AE1E00
+green:string=#0E6700
+yellow:string=#FFF0B2
 grey1:string=#EFEFEF
 grey2:string=#DEDEDE
 grey3:string=#BBBBBB

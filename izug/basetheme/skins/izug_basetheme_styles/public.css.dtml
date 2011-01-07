@@ -49,7 +49,7 @@ h3, h4, h5, h6 {
 }
 
 .documentContent {
-    font-size: 100%;
+    font-size: 1.1em;
     padding: 0 0em 2em 0em !important;
     background: &dtml-backgroundColor;;
 }
@@ -57,22 +57,10 @@ h3, h4, h5, h6 {
     list-style-image: url(&dtml-portal_url;/bullet.gif);
     list-style-type: square;
     margin: 0.5em 0 0 1.5em;
-    font-size: 1em;
 }
 .documentContent ol {
     margin: 0.5em 0 0 2.5em;
-    font-size: 1.1em;
 }
-.documentContent ol ol {
-    font-size: 1em;
-}
-.documentContent dl {
-    font-size: 1em;
-}
-.documentContent p {
-    font-size: 1.1em;
-}
-
 
 /* Links with differently colored link underlines - only for content */
 .documentContent p a {
@@ -705,7 +693,6 @@ table.journal-listing,
     border-collapse: collapse;
     border-spacing: 0;
     border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
-    font-size: 1.1em;
     margin: 1em 0em 1em 0em;
 }
 table.listing th,
@@ -1388,7 +1375,6 @@ ul#portal-fontsize li {
 .wizard .wizardSteps li {
     display: block;
     float: left;
-    font-size: 1.1em;
     background: url(&dtml-portal_url;/wizard_inactive.gif) no-repeat top right;
     height: 2em;
     margin: 0 0 0 0;

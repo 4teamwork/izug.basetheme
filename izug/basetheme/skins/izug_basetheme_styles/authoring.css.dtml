@@ -81,7 +81,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     height: 1.6em !important;
     font-size:1.1em;
     border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor; !important;
-    border-top-style: none;
+    border-style: none none solid none !important;
     min-height: 1.6em !important;
 }
 #ftw-edit-bar ul,
@@ -466,7 +466,6 @@ li.formTab a {
     padding:0.3em 0.9091em;
     text-decoration: none;
     color: &dtml-linkColor;;
-    font-size: 1.1em;
 }
 li.formTab a:visited {
     color: &dtml-linkColor;;    
