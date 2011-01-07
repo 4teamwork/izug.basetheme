@@ -152,22 +152,23 @@ h3, h4, h5, h6 {
     height: auto;
     line-height: 1em;
     padding: 1em 0 3px 0;
-    border-top: &dtml-borderWidth; &dtml-borderStyle; #bbbbbb;
+    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey3;;
     overflow: hidden;
 }
 #portal-siteactions li {
     display: inline;
     float: right;
-	border-right:&dtml-borderWidth; &dtml-borderStyle; &dtml-linkColor;;
+	border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey4;;
 	margin-right: -0.4em;
 	padding: 0 0.3em;
+    font-size: 1.1em;
 }
 #portal-siteactions li a {
     height: auto;
-    font-size: 1.1em;
     padding: 0.2em 0 0.2em 0.5em;
     text-decoration: none;
     border-style: none;
+    color: &dtml-grey4;;
 }
 
 #portal-siteactions li.selected a {

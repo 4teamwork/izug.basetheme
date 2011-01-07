@@ -371,6 +371,7 @@ div.to_top a {
   line-height:2.6em;
   text-align:right;
   text-decoration:none;
+  color: &dtml-grey4;;
 }
 div.to_top a:hover {
   color: #D52000;
