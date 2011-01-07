@@ -9,12 +9,12 @@
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
       name="iZug Base Theme"
       />
-      
+
   <browser:jbot
      directory="customized"
-     layer=".interfaces.IThemeSpecific" 
+     layer=".interfaces.IThemeSpecific"
      />
-      
+
   <browser:viewlet
       name="izug.path_bar"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"
@@ -28,7 +28,7 @@
       manager="plone.app.layout.viewlets.interfaces.IBelowContent"
       class=".viewlets.SiteActions"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"      
+      layer=".interfaces.IThemeSpecific"
       />
 
   <browser:viewlet
@@ -47,7 +47,12 @@
       layer=".interfaces.IThemeSpecific"
       />
 
-<!-- Viewlets registration -->
+  <browser:viewlet
+        name="debug-info"
+        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+        class=".viewlets.DebugInfo"
+        permission="zope2.View"
+        layer=".interfaces.IThemeSpecific"
+        />
 
-  
 </configure>

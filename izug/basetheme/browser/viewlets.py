@@ -1,6 +1,9 @@
 from Acquisition import aq_inner
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from izug.basetheme.utils import get_version_and_config
+from pkg_resources import iter_entry_points
 from plone.app.layout.viewlets import common, content
+from plone.memoize import ram
 from plone.memoize.instance import memoize
 from zope.component import getMultiAdapter
 
@@ -10,6 +13,20 @@ class PathBar(common.PathBarViewlet):
 
 class SiteActions(common.SiteActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/siteactions.pt')
+
+    def version(self):
+        package_version_string = None
+        for ep in iter_entry_points('izug.basetheme'):
+            if ep.name == 'version':
+                module = ep.load()
+                package_version_string = getattr(module, 'VERSION', None)
+                break
+
+        if package_version_string:
+            data = get_version_and_config()
+            if len(data):
+                return package_version_string % {'version': data[0]}
+        return ''
 
 
 class DocumentActions(content.DocumentActionsViewlet):
@@ -28,3 +45,28 @@ class Byline(content.DocumentBylineViewlet):
             for w in workflows:
                 if w.states.has_key(state):
                     return w.states[state].title or state
+
+
+class DebugInfo(common.TitleViewlet):
+
+    index = ViewPageTemplateFile('viewlets_templates/debug_info.pt')
+
+    @ram.cache(lambda *a, **kw: True)
+    def get_debug_information(self):
+        # only show debug information if another package requests that
+        # with an entry point. izug.basetheme does not display it by
+        # default.
+        some_package_requests_debug = False
+        for ep in iter_entry_points('izug.basetheme'):
+            if ep.name == 'debug':
+                some_package_requests_debug = True
+                break
+
+        if not some_package_requests_debug:
+            return ''
+
+        data = get_version_and_config()
+        if data:
+            return ', '.join(data)
+        else:
+            return ''

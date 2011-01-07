@@ -1,0 +1,2 @@
+<div id="debug_info"
+     tal:content="structure view/get_debug_information" />

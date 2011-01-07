@@ -22,4 +22,8 @@
                            accesskey accesskey;"
            >Site action</a></li>
 
+    <li tal:define="version view/version"
+        tal:condition="version"
+        tal:content="structure version" />
+
 </ul>
