@@ -6,10 +6,12 @@ maintainer = 'Florian Sprenger'
 
 setup(name='izug.basetheme',
       version=version,
-      description="An installable theme for Plone 4.0 (Maintainer %s)" % maintainer,
+      description="An installable theme for Plone 4.0" + \
+          " (Maintainer %s)" % maintainer,
       long_description=open("README.txt").read() + "\n" + \
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+          open(os.path.join("docs", "HISTORY.txt")).read(),
+      # Get more strings from
+      # http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
         "Framework :: Zope2",
@@ -28,14 +30,14 @@ setup(name='izug.basetheme',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
-          'collective.js.jqueryui',
-          'ftw.contentmenu',
-          'z3c.jbot',
-          'collective.mtrsetup',
-          #'opengever.ogds.base',
-          # -*- Extra requirements: -*-
-      ],
+        'setuptools',
+        'collective.js.jqueryui',
+        'ftw.contentmenu',
+        'z3c.jbot',
+        'collective.mtrsetup',
+        #'opengever.ogds.base',
+        # -*- Extra requirements: -*-
+        ],
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
