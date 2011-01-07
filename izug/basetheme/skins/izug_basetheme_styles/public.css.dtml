@@ -605,10 +605,9 @@ dl.error dd {
 }
 div.documentByLine {
     background-color: &dtml-grey2;;
-    font-size: &dtml-fontSmallSize;;
     font-weight: normal;
     color: &dtml-grey5;;
-    padding: 0 1em 0.5em;
+    padding: 0.25em 1em;
 }
 div.documentByLine a {
     color: &dtml-grey5;;
@@ -618,8 +617,12 @@ div.documentByLine span:first-child {
     border-left-style: none;
     padding-left: 0;
 }
+div.documentByLine span.documentAuthor {
+    padding-left: 1.7em;
+    background: transparent url(&dtml-portal_url;/icon_objekt_ordnungsposition.gif) no-repeat top left; 
+}
 div.documentByLine span {
-    border-left: 1px solid white;
+    border-left: 1px solid &dtml-grey5;;
     padding-left: 0.4em;
 }
 dl.searchResults span.documentByLine {
@@ -1228,7 +1231,7 @@ div.overlay {
     display:none;
     /* some padding to layout nested elements nicely  */
     margin:1em;
-    font-size: 1em !important;
+    font-size: 1.1em !important;
 }
 
 div.overlay-iframe,

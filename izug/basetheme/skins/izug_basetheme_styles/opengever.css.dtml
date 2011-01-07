@@ -31,11 +31,13 @@ div#portal-column-one div.ui-resizable-e {
   cursor:col-resize;
   background: transparent url(&dtml-portal_url;/slider_bg.gif) no-repeat 50% 50%;
   border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey3;;
+  z-index: 1;
 }
 
 /* treeview */
 .portletTreePortlet {
     border-style: none;
+    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey1;;
 }
 .portletTreePortlet .portletHeader {
     display: none;
@@ -478,7 +480,7 @@ div.issue-attachment {
 #client_title {
     clear: both;
     color: &dtml-grey5;;
-    padding-top: 2em;
+    padding-top: 1.7em;
 }
 
 #client_title .title {
