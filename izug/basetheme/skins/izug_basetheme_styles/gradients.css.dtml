@@ -39,7 +39,7 @@ input[type=submit].context {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00538C, endColorstr=#003559)";
 }
 /* hellblau */
-#irgendwas {
+legend {
     background: -moz-linear-gradient(top ,#F7FAFD, #E0EEF7);
     background: -webkit-gradient(linear, left top, left bottom, from(#F7FAFD), to(#E0EEF7));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F7FAFD, endColorstr=#E0EEF7) !important;

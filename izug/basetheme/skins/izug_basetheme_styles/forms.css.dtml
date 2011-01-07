@@ -101,6 +101,7 @@ fieldset {
 }
 
 legend {
+    color: &dtml-zugblue;;
     border-color: &dtml-zugblue;;
     border-style: &dtml-borderStyle; none;
     border-width: &dtml-borderWidth;;
@@ -108,7 +109,7 @@ legend {
     display: block !important;
     margin-left: -1em;
     margin-right: -1em;
-    margin-top: 1.81em;
+    margin-top:1.454em;
     width: 101.5%;
 }
 label {
