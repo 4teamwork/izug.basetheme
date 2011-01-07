@@ -1424,5 +1424,15 @@ ul#portal-fontsize li a {
 #debug_info {
     clear: both;
 }
-
+.collapsibleLegend {
+    float: left;
+    width: 1em;
+    height: 1.5em;
+    margin-right: 1em;
+    background: url("http://localhost:8080/mandant1/icon_open.gif") no-repeat scroll 50% 50% transparent;
+    cursor: pointer;
+}
+.collapsibleLegend.closed {
+    background: url("http://localhost:8080/mandant1/icon_closed.gif") no-repeat scroll 50% 50% transparent;
+}
 /* </dtml-with> */
