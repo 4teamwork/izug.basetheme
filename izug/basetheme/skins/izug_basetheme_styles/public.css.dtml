@@ -1421,6 +1421,8 @@ ul#portal-fontsize li a {
     display: block;
     clear: both;
 }
-
+#debug_info {
+    clear: both;
+}
 
 /* </dtml-with> */
