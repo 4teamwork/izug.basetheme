@@ -182,7 +182,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     background: &dtml-contentViewBackgroundColor;;
     border: &dtml-borderWidth; &dtml-contentViewBorderColor;;
     border-style: none &dtml-borderStyle; &dtml-borderStyle; &dtml-borderStyle;;
-    margin: -2px 0 0 0;
+    margin: -2px 0 0 0 !important;
     padding: 0;
 }
 .actionMenu .actionMenuContent li {
