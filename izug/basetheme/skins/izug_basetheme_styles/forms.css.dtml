@@ -110,10 +110,9 @@ fieldset {
     border-width: &dtml-borderWidth;;
     clear: both;
     display: block !important;
-    margin-left: -1em;
-    margin-right: -1em;
-    margin-top:1.454em;
-    width: 101.5%;
+    padding: 0.3em 1em;
+    margin: 2em -1em -0.1em;
+    width: 99.9%;
 }
 label {
   font-weight: bold;
