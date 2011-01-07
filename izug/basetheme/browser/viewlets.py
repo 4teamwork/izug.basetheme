@@ -14,6 +14,7 @@ class PathBar(common.PathBarViewlet):
 class SiteActions(common.SiteActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/siteactions.pt')
 
+    @ram.cache(lambda *a, **kw: True)
     def version(self):
         package_version_string = None
         for ep in iter_entry_points('izug.basetheme'):
