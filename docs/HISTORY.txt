@@ -5,6 +5,9 @@ Changelog
 1.0a2
 -----
 
+* Fixed debug info viewlet and version in siteactions
+  [jbaumann]
+
 
 1.0a1
 -----

@@ -1,12 +1,10 @@
 from Products.CMFCore.utils import getToolByName
-from plone.memoize import ram
 from zope.app.component.hooks import getSite
 import ConfigParser
 import os
 
 
-@ram.cache(lambda *a, **kw: True)
-def get_version_and_config():
+def get_version_and_config(version_template='%(version)s'):
     infos = []
 
     # find buildout config file
@@ -64,7 +62,9 @@ def get_version_and_config():
         member = mtool.getAuthenticatedMember()
         if 'Manager' in member.getRolesInContext(site):
             infos.append('<a href="%s" target="_blank">%s</a>' % (
-                    kgs_urls[0], version))
+                    kgs_urls[0], version_template % dict(version=version)))
+        else:
+            infos.append(version_template % dict(version=version))
 
     # also include the buildout.cfg effective name if it is a symlink
     try:

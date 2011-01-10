@@ -1,3 +1,4 @@
+from AccessControl import getSecurityManager
 from Acquisition import aq_inner
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from izug.basetheme.utils import get_version_and_config
@@ -7,6 +8,7 @@ from plone.memoize import ram
 from plone.memoize.instance import memoize
 from zope.component import getMultiAdapter
 
+
 class PathBar(common.PathBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/pathbar.pt')
 
@@ -14,7 +16,7 @@ class PathBar(common.PathBarViewlet):
 class SiteActions(common.SiteActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/siteactions.pt')
 
-    @ram.cache(lambda *a, **kw: True)
+    @ram.cache(lambda *a, **kw: getSecurityManager().getUser().getId())
     def version(self):
         package_version_string = None
         for ep in iter_entry_points('izug.basetheme'):
@@ -24,9 +26,9 @@ class SiteActions(common.SiteActionsViewlet):
                 break
 
         if package_version_string:
-            data = get_version_and_config()
+            data = get_version_and_config(version_template=package_version_string)
             if len(data):
-                return package_version_string % {'version': data[0]}
+                return data[0]
         return ''
 
 
@@ -52,7 +54,7 @@ class DebugInfo(common.TitleViewlet):
 
     index = ViewPageTemplateFile('viewlets_templates/debug_info.pt')
 
-    @ram.cache(lambda *a, **kw: True)
+    @ram.cache(lambda *a, **kw: getSecurityManager().getUser().getId())
     def get_debug_information(self):
         # only show debug information if another package requests that
         # with an entry point. izug.basetheme does not display it by
