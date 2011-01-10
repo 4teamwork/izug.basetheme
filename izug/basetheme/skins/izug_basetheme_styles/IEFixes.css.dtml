@@ -51,7 +51,9 @@ textarea {
 * html abbr .explain {
   border-bottom: &dtml-borderWidth; dotted &dtml-fontColor;;
 }
-
+*+html .portletItem ul {
+    margin-left: 0;
+}
 
 #portal-colophon .colophonIcon {
   height: 0px !important;
@@ -185,4 +187,5 @@ html > body .portalMessage dt {
     padding-left: 0 !important;
     left: 1em;
 }
+
 /* </dtml-with> */
