@@ -354,7 +354,7 @@ form.searchPage input.searchButton {
     border-style: &dtml-borderStyle; &dtml-borderStyle; none &dtml-borderStyle;;
     height: 2.3em;
     margin-left: -0.1em;
-    padding: 0 1em;
+    padding: 0;
     background-color: &dtml-inputBackgroundColor;;
 }
 
@@ -364,7 +364,7 @@ form.searchPage input.searchButton {
     text-decoration: none;
 	display:block;
 	font-size: 1.1em;
-	padding: 0.3em 0 0;
+    padding: 0.3em 0.909em 0;
 }
 #portal-globalnav li:hover {
     background-color: &dtml-red;;
@@ -393,7 +393,6 @@ form.searchPage input.searchButton {
     list-style: none;
     display:inline;
     width: 75%;
-    overflow: hidden;
     float: right;
     whitespace:nowrap;
     padding-top: 1.1em;
