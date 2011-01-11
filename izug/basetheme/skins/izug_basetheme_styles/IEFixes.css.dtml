@@ -187,5 +187,7 @@ html > body .portalMessage dt {
     padding-left: 0 !important;
     left: 1em;
 }
-
+div.tabbedview-tabs ul.formTabs li a.selected {
+  border-bottom: 1px solid transparent !important;
+}
 /* </dtml-with> */
