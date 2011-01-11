@@ -211,7 +211,7 @@ div.tabbedview-tabs ul.formTabs li a.selected {
   padding-top: 0.545em;
   padding-bottom: 0.545em;
   margin-top: -0.272em;
-  border-bottom: 1px solid &dtml-backgroundColor;;
+  border-bottom: 1px solid transparent;
 }
 div.tabbedview-tabs ul.formTabs li a:hover {
   color: &dtml-red;;
