@@ -620,10 +620,6 @@ div.documentByLine span:first-child {
     border-left-style: none;
     padding-left: 0;
 }
-div.documentByLine span.documentAuthor {
-    padding-left: 1.7em;
-    background: transparent url(&dtml-portal_url;/icon_objekt_ordnungsposition.gif) no-repeat top left; 
-}
 div.documentByLine span {
     border-left: 1px solid &dtml-grey5;;
     padding-left: 0.4em;

@@ -145,9 +145,6 @@ body.template-manage-dashboard .contentViews li a:hover {
     display: block;
     border-bottom-style: none;
 }
-.arrowDownAlternative {
-    font-size: 0.85em;
-}
 .actionMenu .actionMenuContent {
     display: none;
     z-index: 5;
@@ -184,6 +181,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     border-style: none &dtml-borderStyle; &dtml-borderStyle; &dtml-borderStyle;;
     margin: -2px 0 0 0 !important;
     padding: 0;
+    overflow: hidden;
 }
 .actionMenu .actionMenuContent li {
     float: none;
