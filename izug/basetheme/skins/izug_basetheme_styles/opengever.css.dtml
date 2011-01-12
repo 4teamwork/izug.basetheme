@@ -530,7 +530,7 @@ div.issue-attachment {
 
 /* icons for byline */
 .documentByLine {
-    padding-left: 2.5em !important;
+    padding-left: 3em !important;
     background-repeat: no-repeat;
     background-position: 1em 0.1em;
 }

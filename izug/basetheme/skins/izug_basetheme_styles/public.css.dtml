@@ -267,9 +267,9 @@ form.searchPage input.searchButton {
     position: relative;
     display: block;
     text-align: right;
-    padding-top: 0px;
+    padding-top: 0.4em;
     margin: 0;
-    left: -40px;
+    left: -5.5em;
     z-index: 3;
 }
 .LSShadow {
@@ -300,11 +300,12 @@ form.searchPage input.searchButton {
     border: 0;
 }
 #livesearchLegend {
-    line-height: 1em;
-    margin-top: -2em;
+    line-height: 1.5em;
+    margin-top: -1.8em;
     margin-left: -0.1em;
     border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
     border-bottom: 0;
+    background-color: &dtml-backgroundColor;;
 }
 * html #livesearchLegend {
     margin-top: -1.9em;
