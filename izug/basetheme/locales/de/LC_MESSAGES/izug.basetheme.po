@@ -231,7 +231,7 @@ msgstr "Aufgabe"
 #. Default: "Task type"
 #: ./izug/basetheme/browser/task_search.pt:34
 msgid "label_search_tasktype"
-msgstr "Aufgabentyp"
+msgstr "Auftragstyp"
 
 #. Default: "Title"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:97
