@@ -13,7 +13,13 @@ div#portal-column-content.sl {
   margin-left: -<dtml-var getContentColumnWidth>;
   width: <dtml-var getContentColumnWidth>;
 }
-
+#portal-advanced-search {
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 10.5em;
+    clear: both;
+}
 /* resize */
 div#portal-column-one .visualPadding {
   margin-right: 5em;
