@@ -358,25 +358,6 @@ a.ui-state-highlight {
     color: &dtml-linkColor; !important;
 }
 
-/* to top link */
-
-div.to_top {
-  display: block;
-  border-top:1px solid #BBBBBB;
-  display:block;
-  text-align:right;
-}
-div.to_top a {
-  font-size:1.1em;
-  line-height:2.6em;
-  text-align:right;
-  text-decoration:none;
-  color: &dtml-grey4;;
-}
-div.to_top a:hover {
-  color: #D52000;
-  text-decoration: underline;
-}
 /* dossier summary view */
 div#overview_overview {
   position: relative;
@@ -540,6 +521,8 @@ div.issue-attachment {
     border-bottom: 1px solid &dtml-lightblue;;
     border-color: &dtml-lightblue;;
 }
+
+/* icons for byline */
 .documentByLine {
     padding-left: 2.5em !important;
     background-repeat: no-repeat;
