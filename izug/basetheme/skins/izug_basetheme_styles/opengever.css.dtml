@@ -561,4 +561,26 @@ div.issue-attachment {
 .portaltype-opengever-contact-contact  .documentByLine {
     background-image: url(&dtml-portal_url;/icon_objekt_kontakt.gif);
 }
+
+/* workflow items */
+.wf-task-state-ope.wf-task-state-canceled,
+.wf-task-state-in-progress,
+.wf-task-state-new-successor,
+.wf-task-state-open,
+.wf-task-state-rejected,
+.wf-task-state-resolved,
+.wf-task-state-tested-and-closed {
+    padding-left: 3em !important;
+    background-repeat: no-repeat;
+    background-position: 1em 0.1em;
+}
+
+.wf-task-state-canceled { background-image: url(&dtml-portal_url;/icon_status_zurueckgewiesen.gif); }
+.wf-task-state-in-progress { background-image: url(&dtml-portal_url;/icon_status_in_bearbeitung.gif); }
+.wf-task-state-new-successor { background-image: url(&dtml-portal_url;/icon_status_ueberweisen.gif); }
+.wf-task-state-open { background-image: url(&dtml-portal_url;/icon_status_erledigt.gif); }
+.wf-task-state-rejected { background-image: url(&dtml-portal_url;/icon_status_zurueckgewiesen.gif); }
+.wf-task-state-resolved { background-image: url(&dtml-portal_url;/icon_status_erledigt.gif); }
+.wf-task-state-tested-and-closed { background-image: url(&dtml-portal_url;/icon_status_erledigt.gif); }
+
 /* </dtml-with> */
