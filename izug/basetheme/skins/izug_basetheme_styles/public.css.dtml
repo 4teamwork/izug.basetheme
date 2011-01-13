@@ -1439,6 +1439,8 @@ div.to_top a {
   line-height:2.6em;
   text-decoration:none;
   color: &dtml-grey4;;
+  background: transparent url(&dtml-portal_url;/to_top.gif) no-repeat 100% 50%;
+  padding-right: 1em;
 }
 div.to_top a:hover {
   color: #D52000;
