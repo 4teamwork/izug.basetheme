@@ -9,6 +9,9 @@ Changelog
 1.0a2
 -----
 
+* Fixed translations
+  [jbaumann]
+
 * Made Tree portlet usable in ie
   [fsprenger]
 

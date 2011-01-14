@@ -1,18 +1,16 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-
-"POT-Creation-Date: 2010-10-22 14:36+0000\n"
-"PO-Revision-Date: 2010-10-22 16:37+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2011-01-14 18:20+0100\n"
+"Last-Translator: Jonas Baumann <j.baumann@4teamwork.ch>\n"
+"Language-Team: 4teamwork <info@4teamwork.ch>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: izug.basetheme\n"
-"X-Is-Fallback-For: de-at de-li de-lu de-ch de-de\n"
+"Domain: DOMAIN\n"
 
 #. Default: "last modified"
 #: ./izug/basetheme/browser/viewlets_templates/byline.pt:35
@@ -151,10 +149,6 @@ msgstr "Keine Treffer"
 
 #. Default: "Search"
 #: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:22
-msgid "label_search"
-msgstr "Suchen"
-
-#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:121
 msgid "label_search"
 msgstr "Suchen"
 
