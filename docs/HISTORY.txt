@@ -5,6 +5,12 @@ Changelog
 1.0a2
 -----
 
+* Made Tree portlet usable in ie
+  [fsprenger]
+
+* Fixed tabbedview
+  [fsprenger]
+
 * Fixed debug info viewlet and version in siteactions
   [jbaumann]
 
