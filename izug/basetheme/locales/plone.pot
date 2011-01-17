@@ -233,3 +233,8 @@ msgstr ""
 msgid "title_search_title"
 msgstr ""
 
+#. Default: "Advanced Search"
+#: ./izug/basetheme/browser/customized/plone.app.layout.viewlets.searchbox.pt:51
+msgid "link_advanced_search"
+msgstr ""
+
