@@ -51,7 +51,7 @@ hr {
     margin: 0.5em 0 1em 0;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: &dtml-fontColor;;
+    color: &dtml-grey5;;
     font-family: <dtml-var headingFontFamily>;
     margin: 0.75em 0 0.25em 0;
 }
@@ -68,14 +68,16 @@ h6 a {
     background-color: &dtml-globalBackgroundColor;;
     color: &dtml-backgroundColor;;
     font-size: 1.454em;
-	margin:0 0 0.625em 0;
-	padding:0.25em 1.875em 0.312em 0.937em;
-	font-weight: normal;
-	line-height: 1.125em;
+    margin:0 0 0.625em 0;
+    padding:0.25em 1.875em 0.312em 0.937em;
+    font-weight: normal;
+    line-height: 1.125em;
 }
 h2 {
-    font-size: 130%;
+    font-size: 1.182em;
     font-weight: bold;
+    line-height: 1.154em;
+    margin: 1.538em 0 0.615em 0;
 }
 h3 {
     font-size: 110%;
