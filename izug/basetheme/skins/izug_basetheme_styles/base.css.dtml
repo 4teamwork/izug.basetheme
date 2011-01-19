@@ -67,10 +67,11 @@ h6 a {
 .documentContent h1 {
     background-color: &dtml-globalBackgroundColor;;
     color: &dtml-backgroundColor;;
-    font-size: 160%;
+    font-size: 1.454em;
 	margin:0 0 0.625em 0;
-	padding:0.4688em 1.25em 0.4688em 0.625em;
-	font-weight: bold;
+	padding:0.25em 1.875em 0.312em 0.937em;
+	font-weight: normal;
+	line-height: 1.125em;
 }
 h2 {
     font-size: 130%;
