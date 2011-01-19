@@ -32,7 +32,6 @@ input[type=submit]:focus,
 .context,
 .formControls .actionButtons .button,
 .documentEditable * .context,
-.formControls .submit-widget,
 input[type=button].context,
 input[type=submit].context {
     background: -moz-linear-gradient(top ,#00538C, #003559);
