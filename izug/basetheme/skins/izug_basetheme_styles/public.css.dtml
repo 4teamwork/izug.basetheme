@@ -54,9 +54,13 @@ h3, h4, h5, h6 {
     background: &dtml-backgroundColor;;
 }
 .documentContent ul {
-    list-style-image: url(&dtml-portal_url;/bullet.gif);
+    list-style-image: url(&dtml-portal_url;/icon_list.gif);
     list-style-type: square;
     margin: 0.5em 0 0 1.5em;
+    line-height: 1.454em;
+    margin: 0 0 1.091em 0;
+    color: &dtml-grey5;;
+    padding-left: 1.343em;
 }
 .documentContent ol {
     margin: 0.5em 0 0 2.5em;
