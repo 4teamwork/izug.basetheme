@@ -36,8 +36,9 @@ img {
     vertical-align: middle;
 }
 p {
-    margin: 0 0 0.75em 0;
-    line-height: 1.5em;
+    margin: 0 0 1.091em 0;
+    line-height: 1.455em;
+    color: &dtml-grey5;;
 }
 p img {
     border: none;
@@ -53,7 +54,7 @@ hr {
 h1, h2, h3, h4, h5, h6 {
     color: &dtml-grey5;;
     font-family: <dtml-var headingFontFamily>;
-    margin: 0.75em 0 0.25em 0;
+    margin: 0;
 }
 h1 a,
 h2 a,
@@ -80,9 +81,11 @@ h2 {
     margin: 1.538em 0 0.615em 0;
 }
 h3 {
-    font-size: 110%;
+    font-size: 1em;
     border-bottom: none;
     font-weight: bold;
+    line-height: 1.455em;
+    margin: 0;
 }
 h4 {
     font-size: 1.1em;
