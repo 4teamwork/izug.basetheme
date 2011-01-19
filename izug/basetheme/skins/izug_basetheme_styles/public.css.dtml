@@ -519,7 +519,7 @@ form.searchPage input.searchButton {
     margin: 0 1em 0 0;
 }
 .documentActions {
-    margin: -2.5em 1em 1em;
+    margin: -2.182em 0.272em 0 0;
     padding: 0;
     text-align: right;
     float: right;
