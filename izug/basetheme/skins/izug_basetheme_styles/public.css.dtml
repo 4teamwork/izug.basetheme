@@ -82,8 +82,11 @@ h3, h4, h5, h6 {
     line-height: 1.455em;
     color: &dtml-grey5;;
 }
+.documentContent dl dt {
+    margin: 0 0 0.363em 0;
+}
 .documentContent dl dd {
-    margin: 0 0 0 1.364em;
+    margin: 0 0 0.363em 1.364em;
 }
 /* Links with differently colored link underlines - only for content */
 .documentContent p a {
