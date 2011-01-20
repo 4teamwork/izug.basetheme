@@ -61,7 +61,7 @@ dd.portletItem .navTreeItem a span {
 }
 .navTreeItem a:hover,
 dd.portletItem .navTreeItem a:hover {
-    color: &dtml-red;;
+    color: &dtml-red; !important;
     text-decoration: underline;
 }
 .navTreeItem .navTreeCurrentItem {
