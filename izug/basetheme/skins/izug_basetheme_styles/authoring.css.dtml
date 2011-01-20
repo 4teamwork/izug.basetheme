@@ -91,8 +91,11 @@ body.template-manage-dashboard .contentViews li a:hover {
     font-size:1em !important;
     text-align: left;
     line-height: 2.5em;
+    text-indent: 0;
 }
-
+#ftw-edit-bar dl {
+    line-height: 2.5em;
+}
 #ftw-edit-bar li {
     float: right;
     z-index: 4;

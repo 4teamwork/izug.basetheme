@@ -97,7 +97,7 @@ form {
 }
 fieldset {
   border: &dtml-borderWidth; &dtml-borderStyle; &dtml-zugblue;;
-  margin: 1em 0em 1em 0em;
+  margin: -1em 0em 1em 0em;
   padding: 0em 0.909em 1em;
   line-height: 1.5em;
   width: auto;
