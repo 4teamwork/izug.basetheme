@@ -229,6 +229,7 @@ div.tabbedview_view div#tabbedview-body {
   border: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey4;;
   background: none;
   margin-top: -1px;
+  min-height: 15em;
 }
 .ui-tabs .ui-tabs-hide { display: none !important; }
 span.draggable{
