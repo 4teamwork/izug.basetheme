@@ -190,4 +190,18 @@ html > body .portalMessage dt {
 div.tabbedview-tabs ul.formTabs li a.selected {
   border-bottom: 1px solid transparent !important;
 }
+
+/* IE behaves different with  ol margins */
+.documentContent ol {
+    margin-left: 2.272em;
+    text-indent: -0.454em;
+}
+*+html .documentContent ul {
+    text-indent: 0;
+    list-style-image: url(&dtml-portal_url;/icon_list_ie7.gif);
+}
+*+html .documentContent ol {
+    text-indent: 0;
+}
+}
 /* </dtml-with> */

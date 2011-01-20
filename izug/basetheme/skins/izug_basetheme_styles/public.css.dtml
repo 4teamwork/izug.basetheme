@@ -56,14 +56,26 @@ h3, h4, h5, h6 {
 .documentContent ul {
     list-style-image: url(&dtml-portal_url;/icon_list.gif);
     list-style-type: square;
-    margin: 0.5em 0 0 1.5em;
     line-height: 1.454em;
-    margin: 0 0 1.091em 0;
+    margin: 0 0 1.091em 1.818em;
     color: &dtml-grey5;;
-    padding-left: 1.343em;
+    text-indent: -0.454em;
 }
 .documentContent ol {
-    margin: 0.5em 0 0 2.5em;
+    line-height: 1.454em;
+    margin: 0 0 1.091em 1.818em;
+    color: &dtml-grey5;;
+    text-indent: -0.454em;
+}
+.documentContent ul ul,
+.documentContent ul ol,
+.documentContent ol ul,
+.documentContent ol ol {
+    margin-left: 1.364em;
+}
+.documentContent ul li,
+.documentContent ol li {
+    margin-bottom: 0.363em;
 }
 
 /* Links with differently colored link underlines - only for content */
