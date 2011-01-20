@@ -595,7 +595,7 @@ Table of class vertical listing
                                                 </td>
                                                 <td tabindex="0" style="width: 298px;" class="x-grid3-col x-grid3-cell x-grid3-td-sortable_title">
                                                     <div unselectable="on" class="x-grid3-cell-inner x-grid3-col-sortable_title">
-                                                        <span class="linkWrapper"><img src="http://localhost:8080/mandant1/icon_objekt_dossier.gif">&nbsp;<a title="Ordnungssystem &gt; 1. Führung &gt; 1.6. Kommunikation und Öffentlichkeitsarbeit &gt; Hugo's Dossier" href="http://localhost:8080/mandant1/ordnungssystem/fuehrung/kommunikation-und-oeffentlichkeitsarbeit/dossier-1" class="rollover-breadcrumb">Hugo's Dossier</a></span>
+                                                        <span class="linkWrapper"><img src="icon_objekt_dossier.gif">&nbsp;<a title="Ordnungssystem &gt; 1. Führung &gt; 1.6. Kommunikation und Öffentlichkeitsarbeit &gt; Hugo's Dossier" href="ordnungssystem/fuehrung/kommunikation-und-oeffentlichkeitsarbeit/dossier-1" class="rollover-breadcrumb">Hugo's Dossier</a></span>
                                                     </div>
                                                 </td>
                                                 <td tabindex="0" style="width: 108px;" class="x-grid3-col x-grid3-cell x-grid3-td-review_state">
