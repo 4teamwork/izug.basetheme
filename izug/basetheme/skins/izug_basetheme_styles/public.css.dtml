@@ -77,7 +77,14 @@ h3, h4, h5, h6 {
 .documentContent ol li {
     margin-bottom: 0.363em;
 }
-
+.documentContent dl {
+    margin: 0 0 1.091em 0;
+    line-height: 1.455em;
+    color: &dtml-grey5;;
+}
+.documentContent dl dd {
+    margin: 0 0 0 1.364em;
+}
 /* Links with differently colored link underlines - only for content */
 .documentContent p a {
     text-decoration: underline;
@@ -614,8 +621,9 @@ dl.error dd {
     /* The summary text describing the document */
     font-weight: bold;
     display: block;
-    margin: 0em 0em 0.5em 0em;
-    line-height: 1.5em;
+    margin: 0 0 1.091em 0;
+    line-height: 1.455em;
+    color: &dtml-grey5;;
 }
 div.documentByLine {
     background-color: &dtml-grey2;;
