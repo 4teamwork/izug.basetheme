@@ -5,6 +5,10 @@ Changelog
 1.0a4
 -----
 
+* On personal request of Dr. Pascal Habegger and Mr. Olivier Debenath:
+  Show the borders always!
+  [jbaumann]
+
 
 
 1.0a3

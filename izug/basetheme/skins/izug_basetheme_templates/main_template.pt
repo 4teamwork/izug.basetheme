@@ -20,7 +20,8 @@
                   portal_url portal_state/portal_url;
                   checkPermission nocall: context/portal_membership/checkPermission;
                   site_properties context/portal_properties/site_properties;
-                  ajax_load request/ajax_load | nothing"
+                  ajax_load request/ajax_load | nothing;
+                  foo python: request.set('enable_border', True)"
       tal:attributes="lang lang;
                       xml:lang lang">
 
@@ -97,36 +98,36 @@
                 </div>
                 <tal:comment replace="nothing"> End of the left column </tal:comment>
             </tal:notajax>
-        
+
             <tal:comment replace="nothing"> Start of main content block </tal:comment>
             <div id="portal-column-content"
                  tal:attributes="class python:(sl and sr and 'sl sr') or (sl and 'sl') or (sr and 'sr') or ''">
-        
+
                 <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
-        
+
                     <metal:block define-slot="content">
                         <div metal:define-macro="content"
                              tal:define="show_border context/@@plone/showEditableBorder"
                              tal:attributes="class python:show_border and 'documentEditable documentContent' or 'documentContent'">
-        
+
                         <div id="edit-bar"
                              tal:condition="show_border"
                              tal:content="structure provider:plone.contentviews" />
-        
+
                         <span id="contentTopLeft"></span>
                         <span id="contentTopRight"></span>
-        
+
                         <div metal:use-macro="context/global_statusmessage/macros/portal_message">
                             Portal status message
                         </div>
-        
+
                         <metal:slot define-slot="body">
                             <div id="content">
                                 <metal:header define-slot="header" tal:content="nothing">
                                 Visual Header
                                 </metal:header>
                                 <metal:bodytext define-slot="main">
-        
+
                                 <metal:main define-macro="main">
                                     <div tal:replace="structure provider:plone.abovecontenttitle" />
                                     <metal:title define-slot="content-title">
@@ -139,7 +140,7 @@
                                         </h1>
                                     </metal:title>
                                     <div tal:replace="structure provider:plone.belowcontenttitle" />
-                                
+
                                     <metal:description define-slot="content-description">
                                         <metal:comment tal:content="nothing">
                                             If you write a custom description always use
@@ -149,7 +150,7 @@
                                             Generic KSS Description. Is rendered with class="documentDescription".
                                         </div>
                                     </metal:description>
-                                
+
                                     <div tal:replace="structure provider:plone.abovecontentbody" />
                                     <div id="content-core">
                                         <metal:text define-slot="content-core" tal:content="nothing">
@@ -158,27 +159,27 @@
                                     </div>
                                     <div tal:replace="structure provider:plone.belowcontentbody" />
                                 </metal:main>
-        
+
                             </metal:bodytext>
                         </div>
                     </metal:slot>
-        
+
                     <metal:sub define-slot="sub" tal:content="nothing">
                       This slot is here for backwards-compatibility only.
                       Don't copy it in a custom templates.
                     </metal:sub>
-        
+
                     <span id="contentBottomLeft"></span>
                     <span id="contentBottomRight"></span>
-        
+
                 </div>
                 </metal:block>
-        
+
                 <div id="viewlet-below-content" tal:content="structure provider:plone.belowcontent" />
-        
+
             </div>
             <tal:comment replace="nothing"> End of main content block </tal:comment>
-        
+
             <tal:notajax tal:condition="not:ajax_load">
                 <tal:comment replace="nothing"> Start of right column </tal:comment>
                 <div id="portal-column-two"
