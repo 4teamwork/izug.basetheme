@@ -63,7 +63,7 @@ h3, h4, h5, h6 {
 }
 .documentContent ol {
     line-height: 1.454em;
-    margin: 0 0 1.091em 1.818em;
+    margin: 0 0 1.091em 2.272em;
     color: &dtml-grey5;;
     text-indent: -0.454em;
 }
