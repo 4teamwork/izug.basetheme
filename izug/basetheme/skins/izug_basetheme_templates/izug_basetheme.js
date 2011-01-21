@@ -11,4 +11,6 @@ jq(document).ready(function() {
             jq(this).toggleClass("closed");
         }
     });
+    /* fading out info messages as defined in Design_Fundamentals_1_0_v7.pdf, page 24 */
+    jq("dl.info").delay(5000).fadeOut("slow");
 });
