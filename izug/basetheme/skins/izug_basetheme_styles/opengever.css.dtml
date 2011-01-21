@@ -299,6 +299,7 @@ input#tabbedview-searchbox {
 a.ui-state-highlight {
   background-color:Khaki;
 }
+
 /* tabbedview action menus */
 #plone-contentmenu-tabbedview-actions.activated {
 }
@@ -454,6 +455,7 @@ div.issue-attachment {
 /* jquery ui widget style */
 .ui-widget {
     font-family: &dtml-fontFamily;;
+    font-size: 1.1em;
 }
 .ui-widget-content {
     border: 1px solid &dtml-globalBorderColor;;
@@ -570,4 +572,14 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .wf-task-state-resolved { background-image: url(&dtml-portal_url;/icon_status_erledigt.gif); }
 .wf-task-state-tested-and-closed { background-image: url(&dtml-portal_url;/icon_status_erledigt.gif); }
 
+/* autocomplete menu styles (overriding jquery-ui styles) */
+ul.ui-autocomplete {
+    padding: 0;
+}
+ul.ui-autocomplete li a {
+    color: &dtml-grey5;;
+}
+ul.ui-autocomplete li a.ui-state-hover {
+    background: none &dtml-yellow; !important;
+}
 /* </dtml-with> */
