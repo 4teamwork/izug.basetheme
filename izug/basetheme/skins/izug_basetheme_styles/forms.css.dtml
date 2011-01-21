@@ -96,7 +96,7 @@ form {
   margin: 0;
 }
 fieldset {
-  border: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey1;;
+  border: 0.0919em &dtml-borderStyle; &dtml-grey1;;
   margin: 0em 0em 1em 0em;
   padding: 0.909em;
   line-height: 1.5em;
