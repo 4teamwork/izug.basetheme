@@ -188,7 +188,7 @@ h3, h4, h5, h6 {
 }
 #portal-siteactions li {
     display: inline;
-	border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey4;;
+    background: transparent url(&dtml-portal_url;/action_separator.gif) no-repeat top right;
 	padding: 0;
     font-size: 1.1em;
 }
@@ -441,7 +441,8 @@ form.searchPage input.searchButton {
 }
 #portal-personaltools li a {
     color: &dtml-grey4;;
-    border-right: 1px solid &dtml-grey4;;;
+/*    border-right: 1px solid &dtml-grey4;;;*/
+    background: url(&dtml-portal_url;/action_separator.gif) no-repeat scroll right top transparent;
     display:inline;
     font-size:1.1em;
     line-height:1em;
