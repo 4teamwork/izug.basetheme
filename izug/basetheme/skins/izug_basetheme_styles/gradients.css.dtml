@@ -41,7 +41,6 @@ input[type=submit].context {
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00538C, endColorstr=#003559)";
 }
 /* hellblau */
-#content legend,
 .x-grid3-hd-row td {
     background: -moz-linear-gradient(top ,#F7FAFD, #E0EEF7);
     background: -webkit-gradient(linear, left top, left bottom, from(#F7FAFD), to(#E0EEF7));
