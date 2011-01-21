@@ -3,8 +3,8 @@
 
     <a i18n:translate="tabs_home" tal:attributes="href view/navigation_root_url">Home</a>
     <span tal:condition="view/breadcrumbs" class="breadcrumbSeparator">
-        <tal:ltr condition="not: view/is_rtl">&rsaquo;</tal:ltr>
-        <tal:rtl condition="view/is_rtl">&raquo;</tal:rtl>
+        <tal:ltr condition="not: view/is_rtl">&nbsp;</tal:ltr>
+        <tal:rtl condition="view/is_rtl">&nbsp;</tal:rtl>
     </span>
     <span tal:repeat="crumb view/breadcrumbs"
           tal:attributes="dir python:view.is_rtl and 'rtl' or 'ltr'">
@@ -16,8 +16,8 @@
                 crumb
             </a>
             <span class="breadcrumbSeparator" tal:condition="not: is_last">
-                <tal:ltr condition="not: view/is_rtl">&rsaquo;</tal:ltr>
-                <tal:rtl condition="view/is_rtl">&raquo;</tal:rtl>
+                <tal:ltr condition="not: view/is_rtl">&nbsp;</tal:ltr>
+                <tal:rtl condition="view/is_rtl">&nbsp;</tal:rtl>
             </span>
          </tal:last>
     </span>

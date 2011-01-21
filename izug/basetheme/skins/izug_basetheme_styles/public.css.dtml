@@ -487,7 +487,8 @@ form.searchPage input.searchButton {
     color: &dtml-red;;
 }
 .breadcrumbSeparator {
-    font-size: 120%;
+    background: url(&dtml-portal_url;/breadcrumbs_separator.gif) no-repeat scroll 0 45% transparent;
+    margin: 0 0.3em;
 }
 .addFavorite {
     vertical-align: bottom;
