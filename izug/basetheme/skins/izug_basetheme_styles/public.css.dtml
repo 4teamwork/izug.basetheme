@@ -810,7 +810,7 @@ table.plain th {
     border-width: 0.091em 0.182em 0.182em 0.091em;
     padding: 0 0.182em;
     margin: 0;
-    color: color: &dtml-grey5;;
+    color: &dtml-grey5;;
 }
 .listingBar span {
     display: none;
