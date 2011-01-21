@@ -48,10 +48,15 @@ h3, h4, h5, h6 {
     margin-bottom: 0 !important
 }
 
-.documentContent {
+.documentContent,
+#content-core {
     font-size: 1.1em;
     padding: 0 0em 2em 0em !important;
     background: &dtml-backgroundColor;;
+}
+.documentContent #content-core {
+    font-size: 1em;
+    padding: 0 !important;
 }
 .documentContent ul {
     list-style-image: url(&dtml-portal_url;/icon_list.gif);

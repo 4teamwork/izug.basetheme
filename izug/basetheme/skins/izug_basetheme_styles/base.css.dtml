@@ -65,7 +65,7 @@ h6 a {
     color: &dtml-fontColor; ! important;
     text-decoration: none;
 }
-.documentContent h1 {
+h1 {
     background-color: &dtml-globalBackgroundColor;;
     color: &dtml-backgroundColor;;
     font-size: 1.454em;
