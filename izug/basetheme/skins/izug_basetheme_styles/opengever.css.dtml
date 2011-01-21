@@ -138,46 +138,7 @@ fieldset {
 .tabbedview-tabs .listing a,
 .tabbedview-tabs .journal-listing a {
   overflow:hidden;
-}
-
-.tabbedview-tabs .listingBar {
-  background-color: white;
-  border-style: none;
-  padding: 0em;
-  text-align: right;
-  text-transform: &dtml-textTransform;;
-  vertical-align: top;
-  margin: 0em;
-  font-size: 94%;
-  clear: both;
-  float:right;
-}
-
-.tabbedview-tabs .listingBar .previous,
-.tabbedview-tabs .listingBar .next {
-  display:none;
-}
-
-.listingBar span.previous,
-.listingPrevious {
-  text-align: left;
-  float: left;
-  margin-right: 1em;
-}
-.listingBar span.next,
-.listingNext {
-  text-align: right;
-  float: right;
-  margin-left: 1em;
-}
-.listingBar img {
-  vertical-align: middle;
-}
-.listingBar a {
-  text-decoration: none;
-}
-
-
+}   
 div.tabbedview-tabs {
   padding-top: 1em;
   background:transparent none repeat scroll 0 0;

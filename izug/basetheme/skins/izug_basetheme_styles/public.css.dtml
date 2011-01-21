@@ -795,32 +795,56 @@ table.plain th {
 
 /* Batch selector */
 .listingBar {
-    padding: 0em 1em;
     text-align: center;
-    text-transform: &dtml-textTransform;;
     vertical-align: top;
     margin: 1em 0em;
-    font-size: 94%;
     clear: both;
+    color: &dtml-grey5;;
+    display: inline-block;
+}
+.listingBar a,
+.listingBar>span {
+    text-decoration: none;
+    border-color: &dtml-grey5;;
+    border-style: solid;
+    border-width: 0.091em 0.182em 0.182em 0.091em;
+    padding: 0 0.182em;
+    margin: 0;
+    color: color: &dtml-grey5;;
+}
+.listingBar span {
+    display: none;
+}
+.listingBar span.gap {
+    border-style:none;
+    background: transparent none !important;
+    display: inline;
+}
+.listingBar span.current {
+    background: &dtml-zugblue; none !important;
+    border-color: &dtml-zugblue; !important;
+    color: white;
+    display: inline;
 }
 .listingBar span.previous,
 .listingPrevious {
+    display: block;
     text-align: left;
     float: left;
-    margin-right: 1em;
+    border-style: none;
+    margin-right: 0;
 }
 .listingBar span.next,
 .listingNext {
+    display: block;
     text-align: right;
     float: right;
-    margin-left: 1em;
+    border-style: none;
+    margin-right: 0;
 }
-.listingBar img {
-    vertical-align: middle;
-}
-.listingBar a {
-    text-decoration: none;
-}
+
+
+/* tile items */
 .tileItem {
     border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
     padding-top: 0.5em;
