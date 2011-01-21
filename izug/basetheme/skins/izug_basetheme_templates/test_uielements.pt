@@ -48,7 +48,7 @@ UI-Elemente umgesetzt werden müssen, damit sie richtig gestyled sind.
 <br/>
 <dl class="portalMessage warning">
     <dt>
-        Info
+        Warning
     </dt>
     <dd>
         The warning class, can also contain <a href="#">links</a> - used to
@@ -58,7 +58,7 @@ UI-Elemente umgesetzt werden müssen, damit sie richtig gestyled sind.
 <br/>
 <dl class="portalMessage error">
     <dt>
-        Info
+        Error
     </dt>
     <dd>
         The error class, can also contain <a href="#">links</a> - used to

@@ -570,54 +570,46 @@ form.searchPage input.searchButton {
 /* Status messages */
 
 dl.portalMessage {
-    font-size: &dtml-fontSmallSize;;
     background-color: white;
     border: 1px solid #74AE0B;
     margin:0;
+    line-height: 1em;
 }
 dl.portalMessage a {
     color: black;
     border: none;
     text-decoration: underline;
 }
-dl.portalMessage dt {
-    background-color: #74AE0B;
-    font-weight: bold;
-    float: left;
-    margin: 0 0.5em 0 0;
-    padding: 0.5em 0.75em;
-    color: White;
-    line-height: 1.25em;
-}
+dl.portalMessage dt,
 dl.portalMessage dd {
-    padding: 0.5em 0.5em;
+    line-height: 1em;
     margin: 0;
-    line-height: 1.25em;
+    padding: 0.5em 1em 0.5em 2em;
+}
+dl.info {
+    background: transparent url(&dtml-portal_url;/icon_status_erledigt.gif) no-repeat 0.3em 0.3em;
+    border-color: &dtml-green;; 
+    color: &dtml-green;;
+}
+dl.info dt {
+    display: none;
 }
 dl.warning {
+    /* XXX: warning class is not defined in the design fundamentals */
+    background: transparent url(&dtml-portal_url;/icon_staus_ueberfaellig.gif) no-repeat 0.3em 0.3em;
     border-color: #d80;
+    color: #d80;
 }
 dl.warning dt {
-    background-color: #d80;
+    display: none;
 }
 dl.error {
-    border-color: #d00;
+    background: transparent url(&dtml-portal_url;/icon_staus_ueberfaellig.gif) no-repeat 0.3em 0.3em;
+    border-color: &dtml-red;;
+    color: &dtml-red;;
 }
-dl.error dt {
-    background-color: #d00;
-}
-dl.warning {
-    border-color: #d80;
-}
-dl.warning dd {
-    background-color: white;
-}
-dl.error {
-    border:1px solid red;
-}
-dl.error dd {
-    background-color:white;
-    color:red;
+dl.error dd:before {
+    content: "-";
 }
 
 .documentDescription {
