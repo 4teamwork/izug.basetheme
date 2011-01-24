@@ -145,9 +145,6 @@ dl.enableFormTabbing dd {
   line-height:2em;
   width:10em;
 }
-#login-form input {
-  font-size: 150%;
-}
 
 #forgotten-password {
   float: right;
