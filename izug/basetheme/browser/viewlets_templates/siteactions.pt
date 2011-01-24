@@ -20,7 +20,6 @@
            tal:attributes="href saction/url;
                            title title;
                            accesskey accesskey;"
-		   tal:condition="python: saction['title'] != u'Site Map'"
            >Site action</a>
 		   </li>
 

@@ -188,13 +188,16 @@ h3, h4, h5, h6 {
 }
 #portal-siteactions li {
     display: inline;
-    background: transparent url(&dtml-portal_url;/action_separator.gif) no-repeat top right;
-	padding: 0;
+    padding: 0 0 0 0.454em;
     font-size: 1.1em;
+    background: transparent url(&dtml-portal_url;/action_separator.gif) no-repeat top left;
+}
+#portal-siteactions li:first-child {
+    background: transparent none;
+    padding-left: 0;
 }
 #portal-siteactions li a {
     height: auto;
-    padding: 0.2em 0.5em 0.2em 0;
     text-decoration: none;
     border-style: none;
     color: &dtml-grey4;;
