@@ -696,6 +696,7 @@ dl.searchResults span.documentByLine {
 table.listing {
     background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
     border-collapse: collapse;
+    margin-bottom: 1em;
 }
 table.listing th {
     padding: 1.091em 0 0.909em;
