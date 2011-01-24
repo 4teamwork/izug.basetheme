@@ -27,10 +27,13 @@ textarea {
 input {
   font-family: <dtml-var fontFamily>;
   visibility: visible;
-  border: 1px solid #ddd;
-  border-color:#666 #ddd #ddd #666;
+  border: 1px solid &dtml-inputFontColor;;
   color: &dtml-inputFontColor;;
   vertical-align: middle;
+  padding: 0.182em 0 0.272em;
+  margin-bottom: 0.454em;
+  font-size: inherit;
+  line-height: 1.282;
 }
 input.submit {
   background-color: &dtml-inputBackgroundColor;;
@@ -60,7 +63,6 @@ input[type=checkbox] {
 }
 
 #portal-searchbox #searchGadget {
-  border: &dtml-borderWidth; solid &dtml-inputBackgroundColor;;
   margin-right:0.4545em;
   padding:0.1818em 0.4545em 0.3636em;
   width:16.8182em;
@@ -77,8 +79,8 @@ input[type=submit] {
   border-color: &dtml-grey5;;
   border-width: 0.1em 0.2em 0.2em 0.1em;
   cursor: pointer;
-  padding: 0.091em 1.363em;
-  margin-bottom: 0.5em;
+  padding: 0.091em 1.363em !important;
+  line-height: 1.454em !important;
 }
 
 button:focus,
@@ -176,9 +178,6 @@ input[type=submit].context {
 .documentEditable * .destructive {
   background: &dtml-notifyBackgroundColor;;
   color: &dtml-fontColor;;
-}
-div#portal-searchbox .LSBox input.searchButton {
-    margin-bottom: 0;
 }
 .searchSection {
   display: none;
