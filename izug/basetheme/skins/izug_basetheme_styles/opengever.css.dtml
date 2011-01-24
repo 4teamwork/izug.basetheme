@@ -442,16 +442,8 @@ div.issue-attachment {
 }
 
 #client_title .debug a {
-  color: white;
+  color: white; 
   text-decoration: none;
-}
-
-.overlay .member_overview {
-    font-size:11px;
-}
-
-.overlay .member_overview h1{
-    font-size:19px;
 }
 
 /* jquery ui widget style */
@@ -583,5 +575,12 @@ ul.ui-autocomplete li a {
 }
 ul.ui-autocomplete li a.ui-state-hover {
     background: none &dtml-yellow; !important;
+}
+
+/* overlay content */
+ul.member_listing {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 /* </dtml-with> */

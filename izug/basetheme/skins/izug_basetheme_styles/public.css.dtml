@@ -732,7 +732,9 @@ table.listing td:first-child,
 table.listing th:first-child  {
     border-left-style: none !important;
 }
-
+table.listing td a {
+    text-decoration: none;
+}
 /* The table used for listings - horizontal and vertical variants */
 
 /*
