@@ -718,12 +718,15 @@ table.listing {
     border-collapse: collapse;
 }
 table.listing th {
-    padding-top: 6px;
+    padding: 1.091em 0 0.909em;
+    text-align: left;
 }
 table.listing td {
-    border-left: 3px &dtml-backgroundColor; solid;
+    border-left: 0.272em &dtml-backgroundColor; solid;
     border-bottom: 1px solid &dtml-zugblue;;
     border-top:  1px solid &dtml-zugblue;;
+    padding: 0.272em 0 0.272em;
+    vertical-align: top;
 }
 table.listing td:first-child,
 table.listing th:first-child  {

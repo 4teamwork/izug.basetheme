@@ -170,7 +170,7 @@ table.listing td  {
     border-top-style: none;
 }
 table.listing th {
-    border-left: 3px transparent solid;
+    border-left: 0.272em transparent solid;
     border-bottom: 1px solid &dtml-zugblue;;
 }
 
