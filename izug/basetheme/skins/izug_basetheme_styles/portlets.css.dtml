@@ -23,7 +23,7 @@
 
 /* Main portlet elements */
 .portlet {
-    margin: 1px 0 1em 0;
+    margin: -1px 0 0 0;
     border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
     background-color: &dtml-backgroundColor;;
 }
@@ -67,6 +67,7 @@
     padding: 0.454em 0.818em 0;
     font-size: 1.1em;
     line-height: 1.454em;
+    overflow: auto;
     border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
     border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
 }
