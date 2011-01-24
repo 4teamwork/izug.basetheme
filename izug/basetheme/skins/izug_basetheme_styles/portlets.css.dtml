@@ -51,10 +51,10 @@
 .portletHeader, .managedPortlet .portletHeader {
     border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
     border-bottom-style: none;
-    padding: 0em 1em;
+    padding: 0.454em 0.818em 0;
     font-weight: bold;
-    line-height: 1.6em;
-    padding-top: 0.4em;
+    line-height: 1.454em;
+    font-size: 1.1em;
 }
 .portletHeader a, .managedPortlet .portletHeader a {
     color: &dtml-fontColor;;
@@ -64,7 +64,9 @@
 }
 .portletItem {
     margin: 0;
-    padding: 0;
+    padding: 0.454em 0.818em 0;
+    font-size: 1.1em;
+    line-height: 1.454em;
     border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
     border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
 }
