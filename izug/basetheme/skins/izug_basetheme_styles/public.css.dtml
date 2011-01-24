@@ -712,31 +712,45 @@ dl.searchResults span.documentByLine {
     border: 1px solid black;
 }
 
+/* default table style */
+table.listing {
+    background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
+    border-collapse: collapse;
+}
+table.listing th {
+    padding-top: 6px;
+}
+table.listing td {
+    border-left: 3px &dtml-backgroundColor; solid;
+    border-bottom: 1px solid &dtml-zugblue;;
+    border-top:  1px solid &dtml-zugblue;;
+}
+table.listing td:first-child,
+table.listing th:first-child  {
+    border-left-style: none !important;
+}
+
 /* The table used for listings - horizontal and vertical variants */
+
+/*
 table.listing,
 table.journal-listing,
 .stx table {
-    /* The default table for document listings. Contains name, document types, modification times etc in a file-browser-like fashion */
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
-    margin: 1em 0em 1em 0em;
+    border-collapse: separate;
+    border-spacing: 0.272em;
+    border-top: 0.1828em &dtml-borderStyle; &dtml-zugblue;;
 }
 table.listing th,
 table.journal-listing th,
 .stx table th,
 table.listingPrevious th {
     font-weight: bold;
-    padding: 0.5em 0em 0.5em 0.5em;
     text-align:left;
+    border-bottom: 0.0919em &dtml-borderStyle; &dtml-zugblue;;
 }
 table.listing .top,
 table.journal-listing .top {
-    border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-backgroundColor;;
-    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-backgroundColor; ! important;
-    border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-backgroundColor; ! important;
     text-align: right ! important;
-    padding: 0em 0em 1em 0em;
 }
 table.listing .listingCheckbox,
 table.journal-listing .listingCheckbox {
@@ -745,7 +759,7 @@ table.journal-listing .listingCheckbox {
 table.listing td,
 table.journal-listing td,
 .stx table td {
-    padding: 0.5em 1.5em 0.5em 0.5em;
+    border-bottom: 0.0919em &dtml-borderStyle; &dtml-zugblue;;
 }
 table.listing a,
 table.journal-listing a {
@@ -758,35 +772,25 @@ table.journal-listing a:hover {
 table.listing img,
 table.journal-listing img {
     vertical-align: middle;
-    padding-right: 0.5em;
 }
 table.listing td a label,
 table.journal-listing td a label
 .stx table td a label {
     cursor: pointer;
-}
+}*/
 
 /* Vertical addition class */
-table.vertical {
+/*table.vertical {
     background-color: &dtml-backgroundColor;;
 }
 table.vertical th {
-    padding: 0.5em;
 }
 table.vertical td {
     border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
-    padding: 0.5em;
-}
-
-/* grid addition class */
-
-table.grid td {
-    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
-    padding: 0.5em;
-}
+}*/
 
 /* plain table class with light gray borders */
-
+/*
 table.plain,
 table.plain td,
 table.plain th {
@@ -794,7 +798,7 @@ table.plain th {
     padding: 0.5em;
     border-collapse: collapse;
 }
-
+*/
 /* Batch selector */
 .listingBar {
     text-align: center;

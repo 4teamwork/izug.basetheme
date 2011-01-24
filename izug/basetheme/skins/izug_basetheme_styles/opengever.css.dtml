@@ -50,6 +50,8 @@ div#portal-column-one div.ui-resizable-e {
 }
 .portletTreePortlet .portletItem {
     border-style: none;
+    font-size: 1em;
+    padding: 0;
 }
 .portletTreePortlet .navTreeItem span {
     font-size: 1em;
