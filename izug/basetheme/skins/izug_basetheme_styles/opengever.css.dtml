@@ -187,7 +187,7 @@ div.tabbedview-tabs ul.formTabs li a:hover {
   text-decoration: underline;
 }
 div.tabbedview_view div#tabbedview-body {
-  padding: 0.5em;
+  padding: 1.363em;
   display: block;
   border: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey4;;
   background: none;
@@ -342,7 +342,6 @@ div#overview_overview .boxGroup0 {
   left: 100%;
   margin-left: -100%;
   float: left;
-  padding-left: 0.5em;
 }
 div#overview_overview .boxGroup1 {
   width: 34%;
@@ -367,6 +366,7 @@ div#overview_overview ul {
   list-style-image:none;
   list-style-type:none;
   margin-left: 0;
+  text-indent: 0;
 }
 
 /* autocomplete widget */

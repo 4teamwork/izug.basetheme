@@ -111,7 +111,6 @@ h3, h4, h5, h6 {
 }
 .documentContent li a {
     text-decoration: none;
-    border-bottom: 1px #cccccc solid;
 }
 .documentContent li a:visited {
     color: &dtml-linkVisitedColor;;
