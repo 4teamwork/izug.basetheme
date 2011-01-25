@@ -457,9 +457,9 @@ h3, h4, h5, h6 {
 }
 
 #portal-breadcrumbs {
-    height: 2.6em;
     line-height: 1.6em;
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 #portal-breadcrumbs a {
     text-decoration: none;
