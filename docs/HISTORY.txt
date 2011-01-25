@@ -5,6 +5,10 @@ Changelog
 1.0a4
 -----
 
+* OpenGever task response listing: make label big enough for the longer
+  label texts such as "Responsible client"
+  [jbaumann]
+
 * On personal request of Dr. Pascal Habegger and Mr. Olivier Debenath:
   Show the borders always!
   [jbaumann]

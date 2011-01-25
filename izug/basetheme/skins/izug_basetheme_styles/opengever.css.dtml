@@ -140,7 +140,7 @@ fieldset {
 .tabbedview-tabs .listing a,
 .tabbedview-tabs .journal-listing a {
   overflow:hidden;
-}   
+}
 div.tabbedview-tabs {
   padding-top: 1em;
   background:transparent none repeat scroll 0 0;
@@ -388,7 +388,7 @@ div.issue-attachment {
 .response-info span.label,
 .issue-attachment span.label {
   display: block;
-  width: 12em;
+  width: 18em;
   float:left;
   clear: both;
 }
@@ -442,7 +442,7 @@ div.issue-attachment {
 }
 
 #client_title .debug a {
-  color: white; 
+  color: white;
   text-decoration: none;
 }
 
@@ -455,11 +455,11 @@ div.issue-attachment {
     border: 1px solid &dtml-globalBorderColor;;
     color: &dtml-fontColor;;
 }
-.ui-state-hover, 
-.ui-widget-content .ui-state-hover, 
-.ui-widget-header .ui-state-hover, 
-.ui-state-focus, 
-.ui-widget-content .ui-state-focus, 
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
     border: 1px solid transparent;
     font-weight: normal;
@@ -508,7 +508,7 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .x-menu-item-active a.x-menu-item {
     border-color:  &dtml-yellow;;
     background-color: &dtml-yellow;;
-    
+
 }
 
 /* icons for byline */
