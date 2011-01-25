@@ -480,8 +480,14 @@ div.issue-attachment {
 .x-panel-body {
     border-style: none;
 }
+.x-grid-with-col-lines .x-grid3-row-selected {
+    background-color: &dtml-yellow; !important;
+}
 .x-grid3-row td, .x-grid3-summary-row td {
     line-height: 1.545em;
+}
+.x-grid3-row {
+    border-color: white transparent &dtml-borderblue;
 }
 .x-grid3-hd-row td {
     border-width: 1px;
@@ -495,6 +501,14 @@ td.x-grid3-hd-over, td.sort-desc, td.sort-asc, td.x-grid3-hd-menu-open {
 td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-asc .x-grid3-hd-inner, td.x-grid3-hd-menu-open .x-grid3-hd-inner {
     background-image: none;
     background-color: transparent;
+}
+.x-grid-with-col-lines .x-grid3-row td.x-grid3-cell {
+    border-right-style: none;
+}
+.x-menu-sep {
+    background-color: &dtml-borderblue;;
+    /*border-bottom-color: &dtml-borderblue;;*/
+    border-bottom-style: none;
 }
 /* menu */
 .x-menu-floating {
