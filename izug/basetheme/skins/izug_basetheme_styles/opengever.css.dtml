@@ -480,7 +480,9 @@ div.issue-attachment {
 .x-panel-body {
     border-style: none;
 }
-
+.x-grid3-row td, .x-grid3-summary-row td {
+    line-height: 1.545em;
+}
 .x-grid3-hd-row td {
     border-width: 1px;
     border-style: solid solid solid none;;
