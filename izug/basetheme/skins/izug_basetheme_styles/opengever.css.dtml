@@ -251,7 +251,7 @@ a:target {
 
 input#tabbedview-searchbox {
   border:1px solid #6F9CBC;
-  margin:0.5em 0;
+  margin:0;
   color:grey;
   padding-left:1.5em;
   background: white url(&dtml-portal_url;/search_icon.gif) no-repeat 0% 40%;
