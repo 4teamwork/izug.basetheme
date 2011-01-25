@@ -489,6 +489,9 @@ div.issue-attachment {
 .x-grid3-row {
     border-color: white transparent &dtml-borderblue;
 }
+.x-grid3-row-alt {
+    background-color: transparent;
+}
 .x-grid3-hd-row td {
     border-width: 1px;
     border-style: solid solid solid none;;
