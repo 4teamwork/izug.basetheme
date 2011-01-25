@@ -494,6 +494,7 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
     background-image: none;
     background-color: transparent;
 }
+/* menu */
 .x-menu-floating {
     border-color: &dtml-zugblue;;
 }
@@ -553,9 +554,9 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .wf-task-state-rejected,
 .wf-task-state-resolved,
 .wf-task-state-tested-and-closed {
-    padding-left: 3em !important;
+    padding-left: 2em !important;
     background-repeat: no-repeat;
-    background-position: 1em 0em;
+    background-position: 0 -0.091em;
 }
 
 .wf-task-state-canceled { background-image: url(&dtml-portal_url;/icon_status_zurueckgewiesen.gif); }
