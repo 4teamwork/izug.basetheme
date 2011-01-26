@@ -211,5 +211,9 @@ div.tabbedview-tabs ul.formTabs li a.selected {
 .x-grid3-hd-row td {
     background: url(&dtml-portal_url;/table_bg_ie.gif) repeat-x top left;
 }
+
+.portletTreePortlet ul.treeview {
+    margin-top: 0em;
+}
 }
 /* </dtml-with> */
