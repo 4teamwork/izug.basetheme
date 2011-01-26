@@ -584,7 +584,7 @@ dl.info dt {
 }
 dl.warning {
     /* XXX: warning class is not defined in the design fundamentals */
-    background: transparent url(&dtml-portal_url;/icon_staus_ueberfaellig.gif) no-repeat 0.3em 0.3em;
+    background: transparent url(&dtml-portal_url;/icon_status_ueberfaellig.gif) no-repeat 0.3em 0.3em;
     border-color: #d80;
     color: #d80;
 }
@@ -592,7 +592,7 @@ dl.warning dt {
     display: none;
 }
 dl.error {
-    background: transparent url(&dtml-portal_url;/icon_staus_ueberfaellig.gif) no-repeat 0.3em 0.3em;
+    background: transparent url(&dtml-portal_url;/icon_status_ueberfaellig.gif) no-repeat 0.3em 0.3em;
     border-color: &dtml-red;;
     color: &dtml-red;;
 }
