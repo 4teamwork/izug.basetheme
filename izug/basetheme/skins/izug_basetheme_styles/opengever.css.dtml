@@ -488,6 +488,10 @@ div.issue-attachment {
 .x-panel-body {
     border-style: none;
 }
+.x-grid3-header {
+    background-color: transparent;
+    background-image: none;
+}
 .x-grid-with-col-lines .x-grid3-row-selected {
     background-color: &dtml-yellow; !important;
 }
@@ -502,9 +506,12 @@ div.issue-attachment {
 }
 .x-grid3-hd-row td {
     border-width: 1px;
-    border-style: solid solid solid none;;
+    border-style: solid none solid solid;
     border-color: &dtml-borderblue;;
     font-weight: bold;
+}
+.x-grid3-hd-row td:first-child {
+    border-left-style: none;
 }
 td.x-grid3-hd-over, td.sort-desc, td.sort-asc, td.x-grid3-hd-menu-open {
     border-color: &dtml-borderblue;;
