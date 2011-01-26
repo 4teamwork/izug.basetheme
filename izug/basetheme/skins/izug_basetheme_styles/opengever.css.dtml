@@ -499,19 +499,22 @@ div.issue-attachment {
     line-height: 1.545em;
 }
 .x-grid3-row {
-    border-color: white transparent &dtml-borderblue;
+    border-style:none;
+}
+.x-grid-with-col-lines .x-grid3-row td.x-grid3-cell {
+    border-bottom: 1px solid &dtml-borderblue;;
 }
 .x-grid3-row-alt {
     background-color: transparent;
 }
 .x-grid3-hd-row td {
-    border-width: 1px;
-    border-style: solid none solid solid;
-    border-color: &dtml-borderblue;;
+    border-width: 1px  !important;
+    border-style: solid none solid solid  !important;
+    border-color: &dtml-borderblue; !important;
     font-weight: bold;
 }
 .x-grid3-hd-row td:first-child {
-    border-left-style: none;
+    border-left-style: none !important;
 }
 td.x-grid3-hd-over, td.sort-desc, td.sort-asc, td.x-grid3-hd-menu-open {
     border-color: &dtml-borderblue;;

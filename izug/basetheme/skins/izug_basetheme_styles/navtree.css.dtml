@@ -58,6 +58,9 @@ dd.portletItem .navTreeItem a {
     color: &dtml-grey4;;
     line-height: 2.2em;
 }
+dd.portletItem .navTreeItem a img {
+    display: none;
+}
 dd.portletItem .navTreeItem a span {
     font-size: 1.1em;
 }
