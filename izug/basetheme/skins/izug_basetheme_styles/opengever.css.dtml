@@ -304,21 +304,33 @@ a.ui-state-highlight {
 }
 
 /* tabbedview action menus */
-#plone-contentmenu-tabbedview-actions.activated {
-}
 #plone-contentmenu-tabbedview-actions a {
     border-bottom-style: none;
-    padding: 0 0.5em;
+    padding: 0.454em;
+    color: &dtml-grey5;;
 }
 #plone-contentmenu-tabbedview-actions dd.actionMenuContent {
-    top: 1.5em;
     border: 1px solid &dtml-contentViewBorderColor; !important;
     right: 0;
+    border-top-style: none !important;
 }
 #plone-contentmenu-tabbedview-actions dd.actionMenuContent ul {
     border: 0px none transparent;
+    text-indent: 0;
+    margin-top: -1px !important;
+}
+#plone-contentmenu-tabbedview-actions dd.actionMenuContent ul li a {
+    margin-top: 0px;
+}
+#plone-contentmenu-tabbedview-actions dd.actionMenuContent ul li a:hover {
+    color: &dtml-red; !important;
+}
+#plone-contentmenu-tabbedview-actions dd.actionMenuContent ul li:first-child a {
+    border-top: 1px solid &dtml-contentViewBorderColor; !important;
+    margin-top: 0;
 }
 #plone-contentmenu-tabbedview-actions.actionMenu .actionMenuHeader {
+    border: 1px solid transparent;
 }
 #plone-contentmenu-tabbedview-actions.actionMenu.activated .actionMenuHeader {
     background-color: &dtml-contentViewBackgroundColor; !important;
@@ -326,9 +338,7 @@ a.ui-state-highlight {
     border-style: solid solid none solid !important;
     margin-top: 1px;
 }
-#plone-contentmenu-tabbedview-actions.actionMenu.activated .actionMenuHeader a {
-    color: &dtml-linkColor; !important;
-}
+
 
 /* dossier summary view */
 div#overview_overview {
