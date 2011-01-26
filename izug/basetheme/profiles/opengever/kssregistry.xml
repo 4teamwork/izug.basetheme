@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<object name="portal_kss" meta_type="KSS Registry">
+
+ <kineticstylesheet id="at.kss" enabled="False" />
+ <kineticstylesheet id="plone.kss" enabled="False" />
+
+</object>
