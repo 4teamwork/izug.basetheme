@@ -5,6 +5,13 @@ Changelog
 1.0a4
 -----
 
+* Various improvements for styling in IE
+  [fsprenger]
+
+* Various CSS improvements
+  [fsprenger]
+
+
 * OpenGever task response listing: make label big enough for the longer
   label texts such as "Responsible client"
   [jbaumann]
