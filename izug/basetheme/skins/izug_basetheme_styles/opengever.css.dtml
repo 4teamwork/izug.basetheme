@@ -617,9 +617,9 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 
 /* overdue */
 .overdue {
-    padding: 1px 0 2px 2em !important;
+    padding: 1px 2em 2px 0 !important;
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: top right;
     background-image: url(&dtml-portal_url;/icon_status_ueberfaellig.gif);
 }
 /* autocomplete menu styles (overriding jquery-ui styles) */
