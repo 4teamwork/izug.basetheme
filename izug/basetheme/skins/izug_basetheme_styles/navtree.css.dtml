@@ -54,16 +54,15 @@ dd.portletItem .navTreeItem a {
     display: block;
     text-decoration: none;
     border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey1;;
-    padding: 0.2em 1em;
+    padding: 0.454em 0.909em;
     color: &dtml-grey4;;
-    line-height: 2.2em;
+    line-height: 1.454em;
+    font-size: 1.1em;
 }
 dd.portletItem .navTreeItem a img {
     display: none;
 }
-dd.portletItem .navTreeItem a span {
-    font-size: 1.1em;
-}
+
 .navTreeItem a:hover,
 dd.portletItem .navTreeItem a:hover {
     color: &dtml-red; !important;
