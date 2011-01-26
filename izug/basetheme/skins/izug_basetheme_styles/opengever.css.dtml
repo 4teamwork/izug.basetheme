@@ -634,8 +634,8 @@ ul.member_listing {
     border-bottom: 1px solid &dtml-borderblue;;
     border-right: 1px solid &dtml-borderblue;;
 }
-#ui-datepicker-div table.ui-datepicker-calendar th {
-    border-right: 1px solid &dtml-backgroundColor;;
+#ui-datepicker-div table.ui-datepicker-calendar thead tr {
+    border-right: 1px solid white;
 }
 #ui-datepicker-div table.ui-datepicker-calendar td {
     border: 1px solid &dtml-zugblue;;
