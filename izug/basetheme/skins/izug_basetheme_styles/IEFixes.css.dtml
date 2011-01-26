@@ -206,5 +206,10 @@ div.tabbedview-tabs ul.formTabs li a.selected {
 *+html .documentContent ol {
     text-indent: 0;
 }
+
+/* extjs header background */
+.x-grid3-hd-row td {
+    background: url(&dtml-portal_url;/table_bg_ie.gif) repeat-x top left;
+}
 }
 /* </dtml-with> */
