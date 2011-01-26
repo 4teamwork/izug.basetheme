@@ -621,4 +621,43 @@ ul.member_listing {
     margin: 0;
     padding: 0;
 }
+
+
+/* jquery calendar widget */
+#ui-datepicker-div div.ui-datepicker-header {
+    background-color: white;
+    background-image: none;
+    border-style: none;
+}
+#ui-datepicker-div table.ui-datepicker-calendar {
+    border-top: 2px solid &dtml-zugblue;;
+    border-bottom: 1px solid &dtml-borderblue;;
+    border-right: 1px solid &dtml-borderblue;;
+}
+#ui-datepicker-div table.ui-datepicker-calendar th {
+    border-right: 1px solid &dtml-backgroundColor;;
+}
+#ui-datepicker-div table.ui-datepicker-calendar td {
+    border: 1px solid &dtml-zugblue;;
+    padding: 0;
+}
+#ui-datepicker-div table.ui-datepicker-calendar td.ui-state-disabled {
+    border: 1px solid &dtml-borderblue;;
+    border-style: solid none none solid;
+}
+#ui-datepicker-div table.ui-datepicker-calendar td a.ui-state-default {
+    background-color: &dtml-backgroundColor; !important;
+    background-image: none;
+    color: &dtml-grey5; !important;
+    border-style: none;
+    text-align: center;
+}
+#ui-datepicker-div table.ui-datepicker-calendar td a.ui-state-highlight {
+    background-color: &dtml-zugblue; !important;
+    color: &dtml-backgroundColor; !important;
+}
+#ui-datepicker-div table.ui-datepicker-calendar td a.ui-state-active {
+    background-color: &dtml-yellow; !important;
+    font-weight: bold;
+}
 /* </dtml-with> */
