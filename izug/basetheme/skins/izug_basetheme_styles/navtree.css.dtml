@@ -62,7 +62,10 @@ dd.portletItem .navTreeItem a {
 dd.portletItem .navTreeItem a img {
     display: none;
 }
-
+.navTreeItem a.contenttype-plone-site {
+    background-image: none !important;
+    padding-left: 0 !important;
+}
 .navTreeItem a:hover,
 dd.portletItem .navTreeItem a:hover {
     color: &dtml-red; !important;
