@@ -671,4 +671,11 @@ div.table-checkbox-overlay {
     border: 1px dotted red;
     background-color: transparent;
 }
+
+/* navigation */
+.navTreeItem.section-vorlagen,
+.navTreeItem.section-kontakte,
+.navTreeItem.section-ordnungssystem {
+    display: none !important;
+}
 /* </dtml-with> */
