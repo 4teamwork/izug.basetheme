@@ -735,7 +735,6 @@ table.vertical th {
 }
 
 /* plain table class with light gray borders */
-
 table.plain,
 table.plain td,
 table.plain th {
@@ -756,6 +755,12 @@ table.grid th {
     padding: 0.272em;
 }
 
+/* invisible class - no border */
+table.invisible,
+table.invisible th,
+table.invisible td {
+    border-style: none;
+}
 /* Batch selector */
 .listingBar {
     text-align: center;
