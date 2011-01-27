@@ -501,6 +501,7 @@ div.issue-attachment {
 }
 .x-grid3-row td, .x-grid3-summary-row td {
     line-height: 1.545em;
+    padding: 0;
 }
 .x-grid3-row {
     border-style:none;

@@ -694,15 +694,24 @@ dl.searchResults span.documentByLine {
 }
 
 /* default table style */
-table {
+table.listing,
+table.grid,
+table.invisible,
+table.vertical {
     border-collapse: collapse;
     margin-bottom: 1em;
 }
-table th {
+table.listing th,
+table.grid th,
+table.invisible th,
+table.vertical th {
     padding: 1.091em 0.454em 0.909em 0;
     text-align: left;
 }
-table td {
+table.listing td,
+table.grid td,
+table.invisible td,
+table.vertical td {
     padding: 0.272em 0 0.272em;
     vertical-align: top;
 }
