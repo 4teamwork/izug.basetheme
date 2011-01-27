@@ -560,6 +560,9 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .portaltype-opengever-inbox-inbox .documentByLine {
     background-image: url(&dtml-portal_url;/icon_objekt_eingangskorb.gif);
 }
+.portaltype-opengever-inbox-forwarding .documentByLine {
+    background-image: url(&dtml-portal_url;/icon_objekt_eingangskorb.gif);
+}
 .portaltype-opengever-task-task .documentByLine {
     background-image: url(&dtml-portal_url;/icon_objekt_aufgabe.gif);
 }
