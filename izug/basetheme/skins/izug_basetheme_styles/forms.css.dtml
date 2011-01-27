@@ -167,7 +167,8 @@ dl.enableFormTabbing dd {
 .documentEditable * .context,
 input[type=button].context,
 input[type=submit].context,
-input#form-buttons-button_add {
+input#form-buttons-button_add,
+input#form-buttons-button_search {
   color: &dtml-backgroundColor;;
   background-color: &dtml-globalBackgroundColor;;
 }
