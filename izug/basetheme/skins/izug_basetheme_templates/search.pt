@@ -42,7 +42,7 @@
                i18n:attributes="title title_search_title;"
                tal:attributes="value request/SearchableText|nothing;"
                />
-        <input class="searchPage searchButton"
+        <input class="searchPage searchButton context"
                type="submit"
                value="Search"
                i18n:attributes="value label_search;"/>
