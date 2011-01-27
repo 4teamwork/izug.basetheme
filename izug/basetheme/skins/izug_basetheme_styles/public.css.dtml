@@ -694,99 +694,68 @@ dl.searchResults span.documentByLine {
 }
 
 /* default table style */
-table.listing {
-    background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
+table {
     border-collapse: collapse;
     margin-bottom: 1em;
 }
-table.listing th {
-    padding: 1.091em 0.454em 0.909em;
+table th {
+    padding: 1.091em 0.454em 0.909em 0;
     text-align: left;
+}
+table td {
+    padding: 0.272em 0 0.272em;
+    vertical-align: top;
+}
+table a {
+    text-decoration: none;
+}
+
+/* listing table style - default table with borders */
+table.listing {
+    background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
 }
 table.listing td {
     border-left: 0.272em &dtml-backgroundColor; solid;
     border-bottom: 1px solid &dtml-zugblue;;
     border-top:  1px solid &dtml-zugblue;;
-    padding: 0.272em 0 0.272em;
-    vertical-align: top;
 }
 table.listing td:first-child,
 table.listing th:first-child  {
     border-left-style: none !important;
 }
-table.listing a {
-    text-decoration: none;
-}
-
-/* The table used for listings - horizontal and vertical variants */
-
-/*
-table.listing,
-table.journal-listing,
-.stx table {
-    border-collapse: separate;
-    border-spacing: 0.272em;
-    border-top: 0.1828em &dtml-borderStyle; &dtml-zugblue;;
-}
-table.listing th,
-table.journal-listing th,
-.stx table th,
-table.listingPrevious th {
-    font-weight: bold;
-    text-align:left;
-    border-bottom: 0.0919em &dtml-borderStyle; &dtml-zugblue;;
-}
-table.listing .top,
-table.journal-listing .top {
-    text-align: right ! important;
-}
-table.listing .listingCheckbox,
-table.journal-listing .listingCheckbox {
-    text-align: center;
-}
-table.listing td,
-table.journal-listing td,
-.stx table td {
-    border-bottom: 0.0919em &dtml-borderStyle; &dtml-zugblue;;
-}
-table.listing a,
-table.journal-listing a {
-    text-decoration: none;
-}
-table.listing a:hover,
-table.journal-listing a:hover {
-    text-decoration: underline;
-}
-table.listing img,
-table.journal-listing img {
-    vertical-align: middle;
-}
-table.listing td a label,
-table.journal-listing td a label
-.stx table td a label {
-    cursor: pointer;
-}*/
 
 /* Vertical addition class */
-/*table.vertical {
-    background-color: &dtml-backgroundColor;;
+table.vertical {
+    background-image: none;
 }
 table.vertical th {
+    border-top: 1px solid &dtml-zugblue;;
+    border-bottom: 1px solid &dtml-zugblue;;
+    padding-top: 0.272em;
 }
-table.vertical td {
-    border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
-}*/
 
 /* plain table class with light gray borders */
-/*
+
 table.plain,
 table.plain td,
 table.plain th {
-    border: 1px solid #ccc;
-    padding: 0.5em;
+    border: 1px solid &dtml-grey1;;
+    padding: 0.272em;
     border-collapse: collapse;
 }
-*/
+
+/* grid table - table with borders on all sides */
+table.grid {
+    border: 1px solid &dtml-zugblue;;
+}
+table.grid td,
+table.grid th {
+    border-style: solid solid solid solid;
+    border-color: &dtml-zugblue;;
+    border-width: 1px;
+    padding: 0.272em;
+}
+
 /* Batch selector */
 .listingBar {
     text-align: center;
