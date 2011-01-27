@@ -168,7 +168,8 @@ dl.enableFormTabbing dd {
 input[type=button].context,
 input[type=submit].context,
 input#form-buttons-button_add,
-input#form-buttons-button_search {
+input#form-buttons-button_search,
+input#form-buttons-button_checkin  {
   color: &dtml-backgroundColor;;
   background-color: &dtml-globalBackgroundColor;;
 }
