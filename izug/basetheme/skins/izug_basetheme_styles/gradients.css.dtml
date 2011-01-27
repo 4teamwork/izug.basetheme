@@ -34,7 +34,8 @@ input[type=submit]:focus,
 .formControls .actionButtons .button,
 .documentEditable * .context,
 input[type=button].context,
-input[type=submit].context {
+input[type=submit].context,
+input#form-buttons-button_add {
     background: -moz-linear-gradient(top ,#00538C, #003559);
     background: -webkit-gradient(linear, left top, left bottom, from(#00538C), to(#003559));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#00538C, endColorstr=#003559);

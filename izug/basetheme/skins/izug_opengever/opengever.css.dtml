@@ -380,17 +380,8 @@ div.querySelectSearch input.text-widget  {
 }
 
 /* task style */
-table.task-listing {
-    background-image: none;
-}
 table.task-listing th {
   width: 12em;
-  text-align: left;
-  vertical-align: top;
-  padding-top: 0;
-}
-table.task-listing td {
-  border-style: none;
 }
 div.response-info,
 div.issue-attachment {
