@@ -664,4 +664,8 @@ ul.member_listing {
     background-color: &dtml-yellow; !important;
     font-weight: bold;
 }
+div.table-checkbox-overlay {
+    border: 1px dotted red;
+    background-color: transparent;
+}
 /* </dtml-with> */
