@@ -577,7 +577,9 @@ div.formControls input.hidden {
     padding: 0 0.5em;
     list-style:none outside none;
 }
-
+.tabbedview-action-list>li>a {
+    line-height: 2.545em;
+}
 
 /* @end */
 
