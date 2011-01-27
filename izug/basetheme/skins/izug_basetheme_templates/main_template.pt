@@ -66,7 +66,16 @@
         <tal:comment replace="nothing"> A slot where you can insert javascript in the header from a template </tal:comment>
         <metal:javascriptslot define-slot="javascript_head_slot" />
     </tal:notajax>
-
+    <!-- columns sizes -->
+    <style type="text/css" tal:content="structure string:
+    div#portal-column-one {
+        width: ${context/getLeftColumnWidth};
+    }
+    div#portal-column-content.sl {
+        margin-left: -${context/getContentColumnWidth};
+        width: ${context/getContentColumnWidth};
+    ">
+    </style>
   </head>
 
   <body tal:define="isRTL portal_state/is_rtl;
@@ -76,7 +85,6 @@
         tal:attributes="class body_class;
                         dir python: isRTL and 'rtl' or 'ltr'">
     <div id="visual-portal-wrapper">
-
         <div id="portal-top" i18n:domain="plone">
             <div tal:replace="structure provider:plone.portaltop" tal:condition="not:ajax_load" />
         </div>

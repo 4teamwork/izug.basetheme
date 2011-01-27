@@ -6,13 +6,7 @@
 	min-width: &dtml-portalMinWidth;;
 	width: auto;
 }
-div#portal-column-one {
-  width: <dtml-var getLeftColumnWidth>;
-}
-div#portal-column-content.sl {
-  margin-left: -<dtml-var getContentColumnWidth>;
-  width: <dtml-var getContentColumnWidth>;
-}
+
 #portal-advanced-search {
     display: block;
     clear: both;

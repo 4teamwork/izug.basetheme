@@ -3,9 +3,6 @@
   <stylesheet title="" cacheable="True" compression="safe"
      conditionalcomment="" cookable="True" enabled="on" expression=""
      id="opengever.css" media="screen" rel="stylesheet" rendering="import"/>
-  <!-- disable caching for columns.css since in opengever the column width 
-       is flexible -->
-  <stylesheet id="columns.css" cacheable="False"/>
   <!-- disabling jquery.treeview.css - in the new opengever the tree looks 
        completely different -->
   <stylesheet id="jquery.treeview.css" enabled="False"/>
