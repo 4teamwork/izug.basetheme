@@ -592,7 +592,9 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .wf-task-state-open,
 .wf-task-state-rejected,
 .wf-task-state-resolved,
-.wf-task-state-tested-and-closed {
+.wf-task-state-tested-and-closed,
+.wf-forwarding-state-closed,
+.wf-forwarding-state-open {
     padding: 1px 0 2px 2em !important;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -605,7 +607,8 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .wf-task-state-rejected { background-image: url(&dtml-portal_url;/icon_status_zurueckgewiesen.gif); }
 .wf-task-state-resolved { background-image: url(&dtml-portal_url;/icon_status_erledigt.gif); }
 .wf-task-state-tested-and-closed { background-image: url(&dtml-portal_url;/icon_status_abgeschlossen.gif); }
-
+.wf-forwarding-state-closed { background-image: url(&dtml-portal_url;/icon_status_abgeschlossen.gif); }
+.wf-forwarding-state-open { background-image: url(&dtml-portal_url;/icon_status_bearbeitung_notwendig.gif); }
 
 /* overdue */
 .overdue {

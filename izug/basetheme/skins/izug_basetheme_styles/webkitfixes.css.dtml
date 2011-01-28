@@ -8,6 +8,6 @@ body.largeText div.tabbedview-tabs ul.formTabs li a {
 }
 body.largeText div.tabbedview-tabs ul.formTabs li a.selected {
     margin-top: -0.091em;
-}
+}   
 /* </dtml-with> */
 
