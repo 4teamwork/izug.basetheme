@@ -1,0 +1,13 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+body.largeText #portal-globalnav li {
+    height: 2.42em;
+}
+body.largeText div.tabbedview-tabs ul.formTabs li a {
+    margin-top: 0.545em;
+}
+body.largeText div.tabbedview-tabs ul.formTabs li a.selected {
+    margin-top: -0.091em;
+}
+/* </dtml-with> */
+
