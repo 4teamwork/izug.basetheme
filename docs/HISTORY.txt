@@ -5,6 +5,21 @@ Changelog
 1.0a5
 -----
 
+* several style fixes
+  [fsprenger]
+
+* added icons for several workflowstates
+  [fsprenger]
+
+* enabled caching for column width scripts when used outside of opengever
+  [fsprenger]
+
+* fixed overdue icon
+  [fsprenger]
+
+* fix for ie
+  [fsprenger]
+
 
 1.0a4
 -----
