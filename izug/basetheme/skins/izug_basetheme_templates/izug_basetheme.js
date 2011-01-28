@@ -14,4 +14,9 @@ jq(document).ready(function() {
     
     /* fading out info messages as defined in Design_Fundamentals_1_0_v7.pdf, page 24 */
     jq("dl.info").delay(5000).fadeOut("slow");
+    
+    /* extjs loads a blank image from extjs.com - we want to prevent that */
+    if (window.Ext != undefined) {
+        Ext.BLANK_IMAGE_URL="/s.gif";
+    }
 });
