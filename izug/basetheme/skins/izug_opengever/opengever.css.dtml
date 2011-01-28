@@ -163,7 +163,7 @@ div.tabbedview-tabs ul.formTabs li a {
   color: &dtml-grey4;;
   display:inline;
   text-decoration:none;
-  margin-top: 0.272em;
+  margin-top: 0.455em;
   padding:0.272em 1.363em;
   background-color:&dtml-grey2;;
   margin-right: -1px;
@@ -174,7 +174,7 @@ div.tabbedview-tabs ul.formTabs li a.selected {
   color: &dtml-grey5;;
   padding-top: 0.545em;
   padding-bottom: 0.545em;
-  margin-top: -0.272em;
+  margin-top: -0.091em;
   border-bottom: 1px solid &dtml-backgroundColor;;
 }
 div.tabbedview-tabs ul.formTabs li a:hover {

@@ -15,7 +15,7 @@ linkColor:string=#00538C
 linkActiveColor:string=#D52000
 linkVisitedColor:string=#111111
 
-borderWidth:string=0.1em
+borderWidth:string=1px
 borderStyle:string=solid
 borderStyleAnnotations:string=dashed
 
