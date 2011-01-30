@@ -95,7 +95,7 @@ select {
 }
 form {
   border: none;
-  margin: 0;
+  margin: 0.91em 0 0 0;
 }
 fieldset {
   border: 0.0919em &dtml-borderStyle; &dtml-grey1;;
@@ -170,7 +170,8 @@ input[type=submit].context,
 input#form-buttons-button_add,
 input#form-buttons-button_search,
 input#form-buttons-button_checkin,
-input#form-buttons-save  {
+input#form-buttons-save,
+input#form-buttons-button_submit  {
   color: &dtml-backgroundColor;;
   background-color: &dtml-globalBackgroundColor;;
 }
