@@ -93,7 +93,7 @@ input[type=submit]:focus {
 select {
   vertical-align: top;
 }
-form {
+#content form {
   border: none;
   margin: 0.91em 0 0 0;
 }
