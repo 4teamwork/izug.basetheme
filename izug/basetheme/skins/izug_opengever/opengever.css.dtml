@@ -685,4 +685,8 @@ div.table-checkbox-overlay {
 .navTreeItem.section-ordnungssystem {
     display: none !important;
 }
+#portal-logo img {
+    height: 4em;
+    width: 9.6em;
+}
 /* </dtml-with> */

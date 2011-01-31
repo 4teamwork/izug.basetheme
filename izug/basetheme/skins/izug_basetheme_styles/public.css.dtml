@@ -18,7 +18,7 @@
 
 /* Accessibility elements, applied by JS */
 body.largeText #visual-portal-wrapper { font-size: 120%; }
-body.smallText #visual-portal-wrapper { font-size: 60%; }
+body.smallText #visual-portal-wrapper { font-size: 80%; }
 
 /* Padding for the columns */
 
