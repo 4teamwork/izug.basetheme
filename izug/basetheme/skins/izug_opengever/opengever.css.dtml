@@ -77,6 +77,7 @@ div#portal-column-one div.ui-resizable-e {
     margin-left: 1em;
     background: transparent url(&dtml-portal_url;/icon_closed.gif) no-repeat 50% 50%;
     cursor: pointer;
+    position: absolute;
 }
 .portletTreePortlet .collapsable-hitarea {
     background: transparent url(&dtml-portal_url;/icon_open.gif) no-repeat 50% 50%;
