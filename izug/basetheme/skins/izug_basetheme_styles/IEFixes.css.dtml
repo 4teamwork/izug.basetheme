@@ -63,7 +63,9 @@ textarea {
 *+html #ftw-edit-bar  .actionMenu .actionMenuContent { /* IE7 */
   top: 1.9em;
 }
-
+#menu_container .actionMenu .actionMenuContent {
+    top: 2.3em;
+}
 /* Calendar fixes */
 .ploneCalendar {
   border-collapse:collapse;
