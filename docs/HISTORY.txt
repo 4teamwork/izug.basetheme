@@ -17,7 +17,7 @@ Changelog
 * Added iZug logo
   [fsprenger]
 
-* Issue #873 Anzeige Menuebaum eingerückt angezeigt
+* Issue #873 Anzeige Menuebaum eingerueckt angezeigt
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/873
   [fsprenger]
 
