@@ -171,7 +171,8 @@ input#form-buttons-button_add,
 input#form-buttons-button_search,
 input#form-buttons-button_checkin,
 input#form-buttons-save,
-input#form-buttons-button_submit  {
+input#form-buttons-button_submit,
+input#form-buttons-button_archive  {
   color: &dtml-backgroundColor;;
   background-color: &dtml-globalBackgroundColor;;
 }
