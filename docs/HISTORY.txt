@@ -5,6 +5,30 @@ Changelog
 1.0a7
 -----
 
+* Margin for navigation items
+  [fsprenger]
+
+* Fixed menu position for IE8
+  [fsprenger]
+
+* Bigger small font size
+  [fsprenger]
+
+* Added iZug logo
+  [fsprenger]
+
+* Issue #873 Anzeige Menuebaum eingerückt angezeigt
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/873
+  [fsprenger]
+
+* Fixed searchbox
+  [fsprenger]
+
+* Issue #865 Styling-Anpassen
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/865
+  Added styling for selected button ids.
+  [fsprenger]
+
 
 1.0a6
 -----
