@@ -680,11 +680,11 @@ div.table-checkbox-overlay {
 }
 
 /* navigation */
-li.navTreeItem {
+.portletNavigationTree li.navTreeItem {
     display: none !important;
 }
-li.section-eingangskorb,
-li.section-eingangskorb li {
+.portletNavigationTree li.section-eingangskorb,
+.portletNavigationTree li.section-eingangskorb li {
     display: block !important;
 }
 
