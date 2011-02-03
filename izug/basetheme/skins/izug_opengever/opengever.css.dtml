@@ -54,14 +54,16 @@ div#portal-column-one div.ui-resizable-e {
     font-size: 1em;
     display: block;
 }
-.portletTreePortlet .navTreeItem span a {
+.portletTreePortlet .navTreeItem span a,
+.portletTreePortlet .navTreeItem span span {
     font-size: 1.1em;
     line-height: 2em;
     padding: 0.1818em 2em;
     background: transparent url(&dtml-portal_url;/icon_areanav_inactive.gif) repeat-y top left;
 }
 .portletTreePortlet .navTreeItem span a.navTreeCurrentItem,
-.portletTreePortlet .navTreeItem span a.selected {
+.portletTreePortlet .navTreeItem span a.selected,
+.portletTreePortlet .navTreeItem span span.selected {
     background: transparent url(&dtml-portal_url;/icon_areanav_active.gif) repeat-y top left;
 }
 .portletTreePortlet .navTreeLevel1 { padding-left: 2.4em;}

@@ -50,7 +50,8 @@
     margin: 0;
 }
 
-dd.portletItem .navTreeItem a {
+dd.portletItem .navTreeItem a,
+dd.portletItem .navTreeItem span span {
     display: block;
     text-decoration: none;
     border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey1;;
