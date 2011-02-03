@@ -5,6 +5,9 @@ Changelog
 1.0a8
 -----
 
+* Styling: Added new active button ("assign")
+  [phabegger]
+
 
 1.0a7
 -----

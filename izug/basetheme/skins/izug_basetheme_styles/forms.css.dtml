@@ -168,6 +168,7 @@ dl.enableFormTabbing dd {
 input[type=button].context,
 input[type=submit].context,
 input#form-buttons-button_add,
+input#form-buttons-button_assign,
 input#form-buttons-button_search,
 input#form-buttons-button_checkin,
 input#form-buttons-save,
@@ -242,7 +243,7 @@ input#form-widgets-effective_title,
 input#form-widgets-IDossier-title,
 input#form-widgets-IBasic-title,
 input#form-widgets-title,
-input#form-widgets-IOpenGeverBase-title 
+input#form-widgets-IOpenGeverBase-title
 {
   font-size: 160%;
   font-family: <dtml-var headingFontFamily>;
