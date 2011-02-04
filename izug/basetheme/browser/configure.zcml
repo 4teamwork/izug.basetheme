@@ -15,6 +15,15 @@
      layer=".interfaces.IThemeSpecific"
      />
 
+
+  <browser:page
+     for="Products.CMFCore.interfaces.IContentish"
+     name="breadcrumbs_view"
+     class=".navigation.PhysicalNavigationBreadcrumbs"
+     permission="zope2.View"
+     layer=".interfaces.IThemeSpecific"
+     />
+  
   <browser:viewlet
       name="izug.path_bar"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"

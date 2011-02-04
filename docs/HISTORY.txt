@@ -5,6 +5,10 @@ Changelog
 1.0a8
 -----
 
+* Reactivated the custom code for breadcrumbs; if the current user has no 
+  rights to view an item, it is not clickable
+  [fsprenger]
+  
 * Using the same styles on treeitems without a link as with normal treeitems
   [fsprenger]
   
