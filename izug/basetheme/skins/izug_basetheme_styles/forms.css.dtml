@@ -288,5 +288,9 @@ tr.selected {
   width: 50%;
 }
 
+#form-controls {
+  margin-top: 0.454em;
+}
+
 
 /* </dtml-with> */

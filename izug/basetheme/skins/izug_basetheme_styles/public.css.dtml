@@ -1410,6 +1410,7 @@ ul#portal-fontsize li a {
     background: url(&dtml-portal_url;/wizard_inactive.gif) no-repeat top right;
     height: 2em;
     margin: 0 0 0 0;
+    text-indent: 0;
 }
 .wizard .wizardSteps li a {
     line-height: 1.8181em;
