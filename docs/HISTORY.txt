@@ -5,6 +5,9 @@ Changelog
 1.0a9
 -----
 
+* Hide breadcrubs on login page so it doesn't obstruct site title
+  [lukasg]
+
 
 1.0a8
 -----

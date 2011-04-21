@@ -694,4 +694,10 @@ div.table-checkbox-overlay {
     height: 4em;
     width: 9.6em;
 }
+
+/* Hide breadcrubs on login page so it doesn't obstruct site title */
+body.template-login_form #portal-breadcrumbs {
+    visibility: hidden;
+}
+
 /* </dtml-with> */
