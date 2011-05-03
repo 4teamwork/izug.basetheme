@@ -5,7 +5,12 @@ Changelog
 1.0a9
 -----
 
-* Hide breadcrubs on login page so it doesn't obstruct site title
+* Issue #934 Fehler bei den Falldossiers 1 und 2 BD.ARP
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/934/
+  Added icons for custom dossier portal types
+  [lgraf]
+
+* Hide breadcrumbs on login page so it doesn't obstruct site title
   [lukasg]
 
 

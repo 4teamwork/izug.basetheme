@@ -560,6 +560,18 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .portaltype-opengever-dossier-businesscasedossier .documentByLine {
     background-image: url(&dtml-portal_url;/icon_objekt_dossier.gif);
 }
+
+/* Custom dossier types */
+.portaltype-opengever-zug-bdarp-casedossier1 .documentByLine,
+.portaltype-opengever-zug-bdarp-casedossier2 .documentByLine,
+.portaltype-opengever-zug-bdbds-bdbdscasedossier1 .documentByLine,
+.portaltype-opengever-zug-bdbds-bdbdscasedossier2 .documentByLine,
+.portaltype-opengever-zug-digva-orderdossier .documentByLine,
+.portaltype-opengever-zug-skakr-businesscasedossier .documentByLine {
+    background-image: url(&dtml-portal_url;/icon_objekt_dossier.gif);
+}
+
+
 .portaltype-opengever-document-document .documentByLine {
     background-image: url(&dtml-portal_url;/document_icon.gif);
 }
