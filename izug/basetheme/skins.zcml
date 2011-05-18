@@ -11,5 +11,6 @@
 
   <!-- site specific skin layers -->
   <cmf:registerDirectory name="izug_opengever"/>
+  <cmf:registerDirectory name="izug_plone3"/>
   
 </configure>

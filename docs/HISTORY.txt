@@ -4,7 +4,10 @@ Changelog
 
 1.0a9
 -----
-
+* Compatibility with plone 3; added a new import step for plone 3 sites, a new 
+  skin layer for plone 3 and a customized stylessheet for compatibility
+  [fsprenger]
+  
 * Issue #934 Fehler bei den Falldossiers 1 und 2 BD.ARP
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/934/
   Added icons for custom dossier portal types

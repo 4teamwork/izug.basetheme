@@ -7,7 +7,7 @@
   <!-- IE 8 still needs special care -->
   <stylesheet id="IEFixes.css" conditionalcomment="lt IE 9"/>
   <!-- safari / chrome need some fixes too -->
-  <stylesheet title="" applyPrefix="False" authenticated="False"
+  <stylesheet title=""
      cacheable="True" compression="safe" conditionalcomment="" cookable="True"
      enabled="on" expression="" id="webkitfixes.css"
      media="screen and (-webkit-min-device-pixel-ratio:0)" rel="stylesheet"

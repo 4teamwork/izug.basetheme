@@ -2,6 +2,7 @@
 <metadata>
   <version>0.1</version>
   <dependencies>
+      <dependency>profile-plonetheme.classic:default</dependency>
       <dependency>profile-ftw.contentmenu:default</dependency>
       <dependency>profile-collective.mtrsetup:default</dependency>
   </dependencies>

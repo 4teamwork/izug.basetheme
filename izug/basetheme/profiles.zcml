@@ -19,4 +19,12 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:registerProfile
+      name="plone3"
+      title="izug.basetheme for plone3"
+      directory="profiles/plone3"
+      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
 </configure>

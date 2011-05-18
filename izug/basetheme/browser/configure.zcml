@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="izug.basetheme">
 
   <!-- 'iZug Base Theme' Zope 3 browser layer -->
@@ -14,7 +15,6 @@
      directory="customized"
      layer=".interfaces.IThemeSpecific"
      />
-
 
   <browser:page
      for="Products.CMFCore.interfaces.IContentish"
@@ -32,6 +32,14 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <browser:viewlet
+      name="plone.personal_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.PersonalBar"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+      
   <browser:viewlet
       name="plone.site_actions"
       manager="plone.app.layout.viewlets.interfaces.IBelowContent"
@@ -57,11 +65,21 @@
       />
 
   <browser:viewlet
-        name="debug-info"
-        manager="plone.app.layout.viewlets.interfaces.IPortalTop"
-        class=".viewlets.DebugInfo"
-        permission="zope2.View"
-        layer=".interfaces.IThemeSpecific"
-        />
+      name="debug-info"
+      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      class=".viewlets.DebugInfo"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
+  <!-- for plone 3 only -->
+  <browser:viewlet
+      name="ftw.contentviews"
+	  zcml:condition="not-installed plone.app.upgrade"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      template="viewlets_templates/contentviews.pt"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
 
 </configure>

@@ -12,6 +12,8 @@ from zope.component import getMultiAdapter
 class PathBar(common.PathBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/pathbar.pt')
 
+class PersonalBar(common.PersonalBarViewlet):
+    index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
 class SiteActions(common.SiteActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/siteactions.pt')

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object>
+    <hidden manager="plone.portalheader" skinname="iZug Base Theme">
+        <viewlet name="plone.site_actions"/>
+    </hidden>
+</object>
