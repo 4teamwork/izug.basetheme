@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+  <metal:css fill-slot="css_slot">
+    <style type="text/css">
+
+    </style>
+  </metal:css>
+</head>
+<body>
+<metal:main fill-slot="main">
+<h1 class="documentFirstHeading">Opengever Icons test page</h1>
+
+<div class="documentDescription">
+Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle Icons korrekt sind.
+</div>
+<div id="dashboard-portlets1">
+    <h2>Content Types</h2>
+    <dl tal:define="types view/content_types">
+        <dt tal:repeat="item types">
+            <label tal:attributes="class string:contenttype-${item/extra/id};
+                                   for string:form-field-${item/extra/id};">
+                <img tal:attributes="src item/icon" alt="" />
+                <span tal:replace="item/title">Type title</span>
+            </label>
+            <pre tal:content="string:contenttype-${item/extra/id}"/>
+        </dt>    
+    </dl>
+</div>
+<div id="dashboard-portlets2">
+    <h2>Workflow States</h2>
+</div>
+<div id="dashboard-portlets3">
+    <h2>Mimetype Icons</h2>
+</div>
+<div class="visualClear"><!-- IE Fix --></div>
+</metal:main>
+
+</body>
+</html>

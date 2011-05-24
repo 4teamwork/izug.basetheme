@@ -24,6 +24,14 @@
      layer=".interfaces.IThemeSpecific"
      />
   
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      name="test_icons"
+      class=".testicons.TestIconsView"
+      template="testicons.pt"
+      permission="cmf.ManagePortal"
+      />
+      
   <browser:viewlet
       name="izug.path_bar"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"
