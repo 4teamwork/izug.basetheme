@@ -5,7 +5,6 @@ from zope.component import getMultiAdapter, queryUtility
 from Acquisition import aq_inner, aq_parent
 from Products.CMFCore.Expression import createExprContext
 from Products.CMFCore.utils import getToolByName
-from zope.site.hooks import getSite
 from zope.i18n import translate
 
 
@@ -24,7 +23,7 @@ class TestIconsView(BrowserView):
         context = aq_inner(self.context)
         request = self.request
         portal_state = getMultiAdapter((context, request), name='plone_portal_state')
-        site = getSite()
+        site = portal_state.portal()
         ttool = getToolByName(site, 'portal_types', None)
         idnormalizer = queryUtility(IIDNormalizer)
         expr_context = createExprContext(
@@ -38,9 +37,12 @@ class TestIconsView(BrowserView):
                 typeId = fti.getId()
                 cssId = idnormalizer.normalize(typeId)
                 cssClass = 'contenttype-%s' % cssId
-                icon = fti.getIconExprObject()
-                if icon:
-                    icon = icon(expr_context)
+                try:
+                    icon = fti.getIconExprObject()
+                    if icon:
+                        icon = icon(expr_context)
+                except AttributeError: # we are using plone 3
+                    icon = "%s/%s" % (site.absolute_url(), fti.getIcon())
                 results.append({ 'id'           : typeId,
                                  'title'        : fti.Title(),
                                  'description'  : fti.Description(),
