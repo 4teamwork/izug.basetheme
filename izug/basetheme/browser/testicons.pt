@@ -27,9 +27,10 @@
   <metal:js fill-slot="javascript_head_slot">
     <script type="text/javascript">
     $(document).ready(function() {
-          // initial status: no <img>-icons, icons deactivated, code not shown
+          // initial status: no <img>-icons, icons activated, code not shown
           $("#toggler input[type=checkbox]").selected(false);
-          $("body").removeClass("icons-on");
+          $("#toggler input[name=show_icons]").selected(true)
+
           $("body").addClass("hide-img-icons");
           // toggler checkboxes
           $("#toggler input[type=checkbox]").live("click", function(e) {
