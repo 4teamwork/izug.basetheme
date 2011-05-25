@@ -9,9 +9,29 @@
 <head>
   <metal:css fill-slot="css_slot">
     <style type="text/css">
-
+    code {
+        margin: 0 0 1em;
+        display: none;
+    }
+    p {
+        display: block !important;
+    }
     </style>
   </metal:css>
+  <metal:js fill-slot="javascript_head_slot">
+    <script type="text/javascript">
+    (function($) {
+          $("a#show_code").live("click", function(e) {
+              $("code").slideDown();
+              e.preventDefault();
+          });
+          $("a#hide_code").live("click", function(e){
+              $("code").slideUp();
+              e.preventDefault();
+          }); 
+    })(jQuery);
+    </script>
+  </metal:js>
 </head>
 <body>
 <metal:main fill-slot="main">
@@ -20,21 +40,39 @@
 <div class="documentDescription">
 Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle Icons korrekt sind.
 </div>
+<p>Code <a href="#" id="show_code">Anzeigen</a> <a href="#" id="hide_code">Verstecken</a></p>
 <div id="dashboard-portlets1">
     <h2>Content Types</h2>
-    <dl tal:define="types view/content_types">
-        <dt tal:repeat="item types">
-            <label tal:attributes="class string:contenttype-${item/extra/id};
+    <tal:block define="types view/content_types"
+               repeat="item types">
+            <p tal:attributes="class string:contenttype-${item/extra/id};
                                    for string:form-field-${item/extra/id};">
                 <img tal:attributes="src item/icon" alt="" />
                 <span tal:replace="item/title">Type title</span>
-            </label>
-            <pre tal:content="string:contenttype-${item/extra/id}"/>
-        </dt>    
-    </dl>
+            </p>
+            <code tal:content="string:contenttype-${item/extra/id}"/>  
+    </tal:block>
 </div>
 <div id="dashboard-portlets2">
     <h2>Workflow States</h2>
+    <p class="wf-task-state-cancelled">Abgebrochen</p>
+    <code>wf-task-state-cancelled</code>
+    <p class="wf-task-state-in-progress">In Bearbeitung</p>
+    <code>wf-task-state-in-progress</code>
+    <p class="wf-task-state-new-successor">Überweisen</p>
+    <code>wf-task-state-new-successor</code>
+    <p class="wf-task-state-open">Bearbeitung notwendig</p>
+    <code>wf-task-state-open</code>
+    <p class="wf-task-state-rejected">Zurückgewiesen</p>
+    <code>wf-task-state-rejected</code>
+    <p class="wf-task-state-resolved">Erledigt</p>
+    <code>wf-task-state-resolved</code>
+    <p class="wf-task-state-tested-and-closed">Abgeschlossen</p>
+    <code>wf-task-state-tested-and-closed</code>
+    <p class="wf-forwarding-state-closed">Abgeschlossen</p>
+    <code>wf-forwarding-state-closed</code>
+    <p class="wf-forwarding-state-open">Bearbeitung notwendigt</p>
+    <code>wf-forwarding-state-open</code>
 </div>
 <div id="dashboard-portlets3">
     <h2>Mimetype Icons</h2>
