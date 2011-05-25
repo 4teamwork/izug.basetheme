@@ -154,6 +154,70 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <p class="mimetype-zip"><img src="icon_dokument_zip.gif" width="16" height="16" alt="Icon Dokument Zip"> ZIP</p>
     <code>mimetype-zip</code>
 </div>
+<div id="dashboard-portlets4">
+    <h2>Sonstige Icons</h2>
+
+    
+    <p class="function-add">Hinzufügen</p>
+    <code>function-add</code>
+    <p class="function-arrow-right">Pfeil rechts</p>
+    <code>function-arrow-right</code>
+    <p class="function-basket">Warenkorb</p>
+    <code>function-basket</code>
+    <p class="function-collapsible-closed">Schliessen</p>
+    <code>function-collapsible-closed</code>
+    <p class="function-collapsible-open">Öffnen</p>
+    <code>function-collapsible-open</code>
+    <p class="function-delete">Löscheny</p>
+    <code>function-delete</code>
+    <p class="function-download">Download</p>
+    <code>function-download</code>
+    <p class="function-edit-inverse">Bearbeiten invertiert</p>
+    <code>function-edit-inverse</code>
+    <p class="function-edit">Bearbeiten</p>
+    <code>function-edit</code>
+    <p class="function-export-outlook">Export Outlook</p>
+    <code>function-export-outlook</code>
+    <p class="function-export-pdf-inverse">Export PDF invertiert</p>
+    <code>function-export-pdf-inverse</code>
+    <p class="function-export-pdf">Export PDF</p>
+    <code>function-export-pdf</code>
+    <p class="function-favorites-inverse">Favoriten invertiert</p>
+    <code>function-favorites-inverse</code>
+    <p class="function-favorites">Favoriten</p>
+    <code>function-favorites</code>
+    <p class="function-information">Information</p>
+    <code>function-information</code>
+    <p class="function-internet-inverse">Internet invertiert</p>
+    <code>function-internet-inverse</code>
+    <p class="function-internet">Internet</p>
+    <code>function-internet</code>
+    <p class="function-print-inverse">Drucken invertiert</p>
+    <code>function-print-inverse</code>
+    <p class="function-print">Drucken</p>
+    <code>function-print</code>
+    <p class="function-rss">RSS</p>
+    <code>function-rss</code>
+    <p class="function-settings-inverse">Einstellungen invertiert</p>
+    <code>function-settings-inverse</code>
+    <p class="function-settings">Einstellungen</p>
+    <code>function-settings</code>
+    <p class="function-start">Start</p>
+    <code>function-start</code>
+    <p class="function-subscribe-newsletter">Newsletter abonnieren</p>
+    <code>function-subscribe-newsletter</code>
+    <p class="function-upload">Upload</p>
+    <code>function-upload</code>
+    <p class="function-user">Benutzer</p>
+    <code>function-user</code>
+    <p class="function-watch-inverse">Beobachten invertiert</p>
+    <code>function-watch-inverse</code>
+    <p class="function-watch">Beobachten</p>
+    <code>function-watch</code>
+    <p class="function-watchlist">Merkliste</p>
+    <code>function-watchlist</code>
+    
+</div>
 <div class="visualClear"><!-- IE Fix --></div>
 </metal:main>
 
