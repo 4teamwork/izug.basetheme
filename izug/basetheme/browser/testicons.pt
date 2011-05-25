@@ -76,6 +76,54 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
 </div>
 <div id="dashboard-portlets3">
     <h2>Mimetype Icons</h2>
+    <p class="mimetype-bmp">Bitmap</p>
+    <code>mimetype-bmp</code>
+    <p class="mimetype-gif">Gif</p>
+    <code>mimetype-gif</code>
+    <p class="mimetype-html">HTML</p>
+    <code>mimetype-html</code>
+    <p class="mimetype-jpeg">JPG</p>
+    <code>mimetype-jpeg</code>
+    <p class="mimetype-msexcel">Excel</p>
+    <code>mimetype-msexcel</code>
+    <p class="mimetype-mspowerpoint">Powerpoint</p>
+    <code>mimetype-mspowerpoint</code>
+    <p class="mimetype-msword">Word</p>
+    <code>mimetype-msword</code>
+    <p class="mimetype-pdf">PDF</p>
+    <code>mimetype-pdf</code>
+    <p class="mimetype-plain">Text</p>
+    <code>mimetype-plain</code>
+    <p class="mimetype-png">PNG</p>
+    <code>mimetype-png</code>
+    <p class="mimetype-powerpoint">Powerpoint</p>
+    <code>mimetype-powerpoint</code>
+    <p class="mimetype-rfc822">Email</p>
+    <code>mimetype-rfc822</code>
+    <p class="mimetype-vnd-ms-excel">Excel</p>
+    <code>mimetype-vnd-ms-excel</code>
+    <p class="mimetype-vnd-ms-powerpoint">Powerpoint</p>
+    <code>mimetype-vnd-ms-powerpoint</code>
+    <p class="mimetype-vnd-sun-xml-calc">OO Calc</p>
+    <code>mimetype-vnd-sun-xml-calc</code>
+    <p class="mimetype-vnd-sun-xml-draw">OO Draw</p>
+    <code>mimetype-vnd-sun-xml-draw</code>
+    <p class="mimetype-vnd-sun-xml-impress">OO Presentation</p>
+    <code>mimetype-vnd-sun-xml-impress</code>
+    <p class="mimetype-vnd-sun-xml-writer">OO Writer</p>
+    <code>mimetype-vnd-sun-xml-writer</code>
+    <p class="mimetype-vnd-visio">Visio</p>
+    <code>mimetype-vnd-visio</code>
+    <p class="mimetype-x-msexcel">Excel</p>
+    <code>mimetype-x-msexcel</code>
+    <p class="mimetype-x-mspowerpoint">Powerpoint</p>
+    <code>mimetype-x-mspowerpoint</code>
+    <p class="mimetype-x-pdf">PDF</p>
+    <code>mimetype-x-pdf</code>
+    <p class="mimetype-x-zip-compressed">ZIP</p>
+    <code>mimetype-x-zip-compressed</code>
+    <p class="mimetype-zip">ZIP</p>
+    <code>mimetype-zip</code>
 </div>
 <div class="visualClear"><!-- IE Fix --></div>
 </metal:main>
