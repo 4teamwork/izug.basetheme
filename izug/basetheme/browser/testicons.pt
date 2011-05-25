@@ -16,31 +16,59 @@
     p {
         display: block !important;
     }
+    /* img-tags deaktivieren */
+    .hide-img-icons *[class*=contenttype-] img,
+    .hide-img-icons *[class*=mimetype-] img,
+    .hide-img-icons *[class*=wf-] img {
+    display: none !important;
+    }
     </style>
   </metal:css>
   <metal:js fill-slot="javascript_head_slot">
     <script type="text/javascript">
-    (function($) {
-          $("a#show_code").live("click", function(e) {
-              $("code").slideDown();
-              e.preventDefault();
+    $(document).ready(function() {
+          // initial status: no <img>-icons, icons deactivated, code not shown
+          $("#toggler input[type=checkbox]").selected(false);
+          $("body").removeClass("icons-on");
+          $("body").addClass("hide-img-icons");
+          // toggler checkboxes
+          $("#toggler input[type=checkbox]").live("click", function(e) {
+              if (this.name=='code') {
+                  if (this.checked) {
+                      $("code").slideDown();                      
+                  } else {
+                      $("code").slideUp();
+                  }
+              } else if (this.name=='show_icons') {
+                  if (this.checked) {
+                      $("body").addClass("icons-on");
+                  } else {
+                      $("body").removeClass("icons-on");
+                  }
+              } else if (this.name=='show_img') {
+                  if (this.checked) {
+                      $("body").removeClass("hide-img-icons");                   
+                  } else {
+                      $("body").addClass("hide-img-icons");
+                  }
+              }
           });
-          $("a#hide_code").live("click", function(e){
-              $("code").slideUp();
-              e.preventDefault();
-          }); 
-    })(jQuery);
+    });
     </script>
   </metal:js>
 </head>
 <body>
 <metal:main fill-slot="main">
-<h1 class="documentFirstHeading">Opengever Icons test page</h1>
+<h1 class="documentFirstHeading">Icons test page</h1>
 
 <div class="documentDescription">
 Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle Icons korrekt sind.
 </div>
-<p>Code <a href="#" id="show_code">Anzeigen</a> <a href="#" id="hide_code">Verstecken</a></p>
+<div id="toggler">
+    <p><input type="checkbox" name="code"/>&nbsp;CSS-Klassen anzeigen</p>
+    <p><input type="checkbox" name="show_icons"/>&nbsp;Anzeige von Icons aktivieren (wie in Plone Settings)</p>
+    <p><input type="checkbox" name="show_img"/>&nbsp;&lt;img&gt;-icons aktivieren</p>
+</div>
 <div id="dashboard-portlets1">
     <h2>Content Types</h2>
     <tal:block define="types view/content_types"
@@ -76,53 +104,53 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
 </div>
 <div id="dashboard-portlets3">
     <h2>Mimetype Icons</h2>
-    <p class="mimetype-bmp">Bitmap</p>
+    <p class="mimetype-bmp"><img src="icon_dokument_bilddatei.gif" /> Bitmap</p>
     <code>mimetype-bmp</code>
-    <p class="mimetype-gif">Gif</p>
+    <p class="mimetype-gif"><img src="icon_dokument_bilddatei.gif" /> Gif</p>
     <code>mimetype-gif</code>
-    <p class="mimetype-html">HTML</p>
+    <p class="mimetype-html"><img src="icon_dokument_webdokument.gif" width="16" height="16" alt="Icon Dokument Webdokument"> HTML</p>
     <code>mimetype-html</code>
-    <p class="mimetype-jpeg">JPG</p>
+    <p class="mimetype-jpeg"><img src="icon_dokument_bilddatei.gif" /> JPG</p>
     <code>mimetype-jpeg</code>
-    <p class="mimetype-msexcel">Excel</p>
+    <p class="mimetype-msexcel"><img src="icon_dokument_excel.gif" width="16" height="16" alt="Icon Dokument Excel"> Excel</p>
     <code>mimetype-msexcel</code>
-    <p class="mimetype-mspowerpoint">Powerpoint</p>
+    <p class="mimetype-mspowerpoint"><img src="icon_dokument_powerpoint.gif" width="16" height="16" alt="Icon Dokument Powerpoint"> Powerpoint</p>
     <code>mimetype-mspowerpoint</code>
-    <p class="mimetype-msword">Word</p>
+    <p class="mimetype-msword"><img src="icon_dokument_word.gif" width="16" height="16" alt="Icon Dokument Word"> Word</p>
     <code>mimetype-msword</code>
-    <p class="mimetype-pdf">PDF</p>
+    <p class="mimetype-pdf"><img src="icon_dokument_pdf.gif" width="16" height="16" alt="Icon Dokument Pdf"> PDF</p>
     <code>mimetype-pdf</code>
-    <p class="mimetype-plain">Text</p>
+    <p class="mimetype-plain"><img src="icon_dokument_text.gif" width="16" height="16" alt="Icon Dokument Text"> Text</p>
     <code>mimetype-plain</code>
-    <p class="mimetype-png">PNG</p>
+    <p class="mimetype-png"><img src="icon_dokument_bilddatei.gif" /> PNG</p>
     <code>mimetype-png</code>
-    <p class="mimetype-powerpoint">Powerpoint</p>
+    <p class="mimetype-powerpoint"><img src="icon_dokument_powerpoint.gif" width="16" height="16" alt="Icon Dokument Powerpoint"> Powerpoint</p>
     <code>mimetype-powerpoint</code>
-    <p class="mimetype-rfc822">Email</p>
+    <p class="mimetype-rfc822"><img src="icon_dokument_email.gif" width="16" height="16" alt="Icon Dokument Email"> Email</p>
     <code>mimetype-rfc822</code>
-    <p class="mimetype-vnd-ms-excel">Excel</p>
+    <p class="mimetype-vnd-ms-excel"><img src="icon_dokument_excel.gif" width="16" height="16" alt="Icon Dokument Excel"> Excel</p>
     <code>mimetype-vnd-ms-excel</code>
-    <p class="mimetype-vnd-ms-powerpoint">Powerpoint</p>
+    <p class="mimetype-vnd-ms-powerpoint"><img src="icon_dokument_powerpoint.gif" width="16" height="16" alt="Icon Dokument Powerpoint"> Powerpoint</p>
     <code>mimetype-vnd-ms-powerpoint</code>
-    <p class="mimetype-vnd-sun-xml-calc">OO Calc</p>
+    <p class="mimetype-vnd-sun-xml-calc"><img src="ods.png" width="16" height="16" alt="Ods"> OO Calc</p>
     <code>mimetype-vnd-sun-xml-calc</code>
-    <p class="mimetype-vnd-sun-xml-draw">OO Draw</p>
+    <p class="mimetype-vnd-sun-xml-draw"><img src="odg.png" width="16" height="16" alt="Odg"> OO Draw</p>
     <code>mimetype-vnd-sun-xml-draw</code>
-    <p class="mimetype-vnd-sun-xml-impress">OO Presentation</p>
+    <p class="mimetype-vnd-sun-xml-impress"><img src="odp.png" width="16" height="16" alt="Odp"> OO Presentation</p>
     <code>mimetype-vnd-sun-xml-impress</code>
-    <p class="mimetype-vnd-sun-xml-writer">OO Writer</p>
+    <p class="mimetype-vnd-sun-xml-writer"><img src="odt.png" width="16" height="16" alt="Odt"> OO Writer</p>
     <code>mimetype-vnd-sun-xml-writer</code>
-    <p class="mimetype-vnd-visio">Visio</p>
+    <p class="mimetype-vnd-visio"><img src="icon_dokument_visio.gif" width="16" height="16" alt="Icon Dokument Visio"> Visio</p>
     <code>mimetype-vnd-visio</code>
-    <p class="mimetype-x-msexcel">Excel</p>
+    <p class="mimetype-x-msexcel"><img src="icon_dokument_excel.gif" width="16" height="16" alt="Icon Dokument Excel"> Excel</p>
     <code>mimetype-x-msexcel</code>
-    <p class="mimetype-x-mspowerpoint">Powerpoint</p>
+    <p class="mimetype-x-mspowerpoint"><img src="icon_dokument_powerpoint.gif" width="16" height="16" alt="Icon Dokument Powerpoint"> Powerpoint</p>
     <code>mimetype-x-mspowerpoint</code>
-    <p class="mimetype-x-pdf">PDF</p>
+    <p class="mimetype-x-pdf"><img src="icon_dokument_pdf.gif" width="16" height="16" alt="Icon Dokument Pdf"> PDF</p>
     <code>mimetype-x-pdf</code>
-    <p class="mimetype-x-zip-compressed">ZIP</p>
+    <p class="mimetype-x-zip-compressed"><img src="icon_dokument_zip.gif" width="16" height="16" alt="Icon Dokument Zip"> ZIP</p>
     <code>mimetype-x-zip-compressed</code>
-    <p class="mimetype-zip">ZIP</p>
+    <p class="mimetype-zip"><img src="icon_dokument_zip.gif" width="16" height="16" alt="Icon Dokument Zip"> ZIP</p>
     <code>mimetype-zip</code>
 </div>
 <div class="visualClear"><!-- IE Fix --></div>
