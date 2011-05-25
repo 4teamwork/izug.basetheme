@@ -73,7 +73,7 @@
     }
     div#portal-column-content.sl {
         margin-left: -${context/getContentColumnWidth};
-        width: ${context/getContentColumnWidth};
+        width: ${context/getContentColumnWidth};}
     ">
     </style>
   </head>
