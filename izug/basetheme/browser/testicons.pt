@@ -26,31 +26,34 @@
   </metal:css>
   <metal:js fill-slot="javascript_head_slot">
     <script type="text/javascript">
-    $(document).ready(function() {
+    jq(document).ready(function() {
           // initial status: no <img>-icons, icons activated, code not shown
-          $("#toggler input[type=checkbox]").selected(false);
-          $("#toggler input[name=show_icons]").selected(true)
-
-          $("body").addClass("hide-img-icons");
+          //jq("#toggler input[type=checkbox]").selected(false);
+          //jq("#toggler input[name=show_icons]").selected(true)
+          jq("#toggler input[type=checkbox]")[0].checked=false;
+          jq("#toggler input[type=checkbox]")[1].checked=true;
+          jq("#toggler input[type=checkbox]")[2].checked=false;
+          jq("body").addClass("hide-img-icons");
+          jq("body").addClass("icons-on");
           // toggler checkboxes
-          $("#toggler input[type=checkbox]").live("click", function(e) {
+          jq("#toggler input[type=checkbox]").live("click", function(e) {
               if (this.name=='code') {
                   if (this.checked) {
-                      $("code").slideDown();                      
+                      jq("code").slideDown();                      
                   } else {
-                      $("code").slideUp();
+                      jq("code").slideUp();
                   }
               } else if (this.name=='show_icons') {
                   if (this.checked) {
-                      $("body").addClass("icons-on");
+                      jq("body").addClass("icons-on");
                   } else {
-                      $("body").removeClass("icons-on");
+                      jq("body").removeClass("icons-on");
                   }
               } else if (this.name=='show_img') {
                   if (this.checked) {
-                      $("body").removeClass("hide-img-icons");                   
+                      jq("body").removeClass("hide-img-icons");                   
                   } else {
-                      $("body").addClass("hide-img-icons");
+                      jq("body").addClass("hide-img-icons");
                   }
               }
           });
@@ -71,8 +74,8 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <p><input type="checkbox" name="show_img"/>&nbsp;&lt;img&gt;-icons aktivieren</p>
 </div>
 <div id="helper">
-    alle &lt;img ...&gt;-Icons anzeigen
-    <code>$("img[src*=/icon_]").css("outline", "1px dotted red")</code>
+    <h2>alle &lt;img ...&gt;-Icons anzeigen</h2>
+    <code>jq("[class*=contenttype-] img, [class*=mimetype-] img, [class*=wf-] img, [class*=function-] img").css("outline", "5px dotted green")</code>
 </div>
 <div id="dashboard-portlets1">
     <h2>Content Types</h2>
