@@ -28,8 +28,6 @@
     <script type="text/javascript">
     jq(document).ready(function() {
           // initial status: no <img>-icons, icons activated, code not shown
-          //jq("#toggler input[type=checkbox]").selected(false);
-          //jq("#toggler input[name=show_icons]").selected(true)
           jq("#toggler input[type=checkbox]")[0].checked=false;
           jq("#toggler input[type=checkbox]")[1].checked=true;
           jq("#toggler input[type=checkbox]")[2].checked=false;
@@ -78,7 +76,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <code>jq("[class*=contenttype-] img, [class*=mimetype-] img, [class*=wf-] img, [class*=function-] img").css("outline", "5px dotted green")</code>
 </div>
 <div id="dashboard-portlets1">
-    <h2>Content Types</h2>
+    <h2>Content Types (generated)</h2>
     <tal:block define="types view/content_types"
                repeat="item types">
             <p tal:attributes="class string:contenttype-${item/extra/id};
@@ -90,7 +88,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     </tal:block>
 </div>
 <div id="dashboard-portlets2">
-    <h2>Workflow States</h2>
+    <h2>Workflow States (static)</h2>
     <p class="wf-task-state-cancelled">Abgebrochen</p>
     <code>wf-task-state-cancelled</code>
     <p class="wf-task-state-in-progress">In Bearbeitung</p>
@@ -107,11 +105,11 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <code>wf-task-state-tested-and-closed</code>
     <p class="wf-forwarding-state-closed">Abgeschlossen</p>
     <code>wf-forwarding-state-closed</code>
-    <p class="wf-forwarding-state-open">Bearbeitung notwendigt</p>
+    <p class="wf-forwarding-state-open">Bearbeitung notwendig</p>
     <code>wf-forwarding-state-open</code>
 </div>
 <div id="dashboard-portlets3">
-    <h2>Mimetype Icons</h2>
+    <h2>Mimetype Icons (static)</h2>
     <p class="mimetype-bmp"><img src="icon_dokument_bilddatei.gif" /> Bitmap</p>
     <code>mimetype-bmp</code>
     <p class="mimetype-gif"><img src="icon_dokument_bilddatei.gif" /> Gif</p>
@@ -162,7 +160,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <code>mimetype-zip</code>
 </div>
 <div id="dashboard-portlets4">
-    <h2>Sonstige Icons</h2>
+    <h2>Sonstige Icons (static)</h2>
     <p class="function-add">Hinzufügen</p>
     <code>function-add</code>
     <p class="function-arrow-right">Pfeil rechts</p>
