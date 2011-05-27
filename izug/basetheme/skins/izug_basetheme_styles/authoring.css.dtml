@@ -423,7 +423,7 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
 
 /* for highlighting of search terms */
 .highlightedSearchTerm {
-   background-color: #ffa;
+   background-color: silver;
 }
 
 dl.searchResults .highlightedSearchTerm {
