@@ -15,6 +15,7 @@ from Products.PythonScripts.standard import url_quote
 from Products.PythonScripts.standard import url_quote_plus
 from Products.PythonScripts.standard import html_quote
 
+
 ploneUtils = getToolByName(context, 'plone_utils')
 portal_url = getToolByName(context, 'portal_url')()
 pretty_title_or_id = ploneUtils.pretty_title_or_id
@@ -107,26 +108,20 @@ else:
     write('''<div class="LSIEFix">''')
     write('''<ul class="LSTable">''')
     for result in results[:limit]:
-
-        icon = plone_view.getIcon(result)
         itemUrl = result.getURL()
         if result.portal_type in useViewAction:
             itemUrl += '/view'
         itemUrl = itemUrl + searchterm_query
 
         write('''<li class="LSRow">''')
-        if icon.url is not None and icon.description is not None:
-            write('''<img src="%s" alt="%s" width="%i" height="%i" />''' % (icon.url,
-                                                                            icon.description,
-                                                                            icon.width,
-                                                                            icon.height))
         full_title = safe_unicode(pretty_title_or_id(result))
         if len(full_title) > MAX_TITLE:
             display_title = ''.join((full_title[:MAX_TITLE],'...'))
         else:
             display_title = full_title
         full_title = full_title.replace('"', '&quot;')
-        write('''<a href="%s" title="%s">%s</a>''' % (itemUrl, full_title, display_title))
+        icon_class = 'contenttype-%s' % (ploneUtils.normalizeString(result.portal_type))
+        write('''<a href="%s" class="%s" title="%s">%s</a>''' % (itemUrl, icon_class, full_title, display_title))
         write('''<span class="discreet" dir="%s">[%s%%]</span>''' % (test(portal_state.is_rtl(), 'rtl', 'ltr'), result.data_record_normalized_score_))
         display_description = safe_unicode(result.Description or '')
         if len(display_description) > MAX_DESCRIPTION:
