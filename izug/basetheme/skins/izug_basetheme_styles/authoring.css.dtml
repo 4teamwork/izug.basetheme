@@ -158,11 +158,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     padding: 0;
     margin: 0;
 }
-.actionMenu .actionMenuContent li {
-    float: none !important;
-    padding: 0 !important;
-    border-left-style: none !important;
-}
+
 .actionMenu.activated .actionMenuContent {
     display: block !important;
 }
@@ -187,18 +183,26 @@ body.template-manage-dashboard .contentViews li a:hover {
     overflow: hidden;
 }
 .actionMenu .actionMenuContent li {
-    float: none;
     background-color: transparent;
-    display: inline;
-    padding: 0;
+    display: block !important;
     margin: 0;
     border: 0;
     line-height: 1.6em;
+    float: none !important;
+    padding: 0 !important;
+    border-left-style: none !important;
+    overflow: hidden;
 }
 .actionMenu .actionMenuContent li a {
     display: block;
     white-space: nowrap;
-    margin: 0.2em 0;
+    margin: 0.8em 0;
+    line-height: 1.5em;
+    padding: 0 0 0 2em !important;
+}
+.actionMenu .actionMenuContent li a[class*=contenttype-] {
+    margin: 0.8em 0.4em;
+    padding: 0 0 0 2em !important;
 }
 .actionMenu .actionMenuContent .selected {
     display: block;
@@ -206,6 +210,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     padding: 0 0.5em;
     margin: 0.2em 0;
 }
+.actionMenu .actionMenuContent li:hover,
 .actionMenu .actionMenuContent li a:hover {
     background-color: &dtml-contentViewBorderColor;;
     color: White !important;
@@ -217,7 +222,7 @@ body.template-manage-dashboard .contentViews li a:hover {
 #ftw-edit-bar #contentActionMenus li a:hover {
     color: &dtml-linkActiveColor; !important;
 }
-.actionMenu .actionMenuContent .actionSeparator a {
+.actionMenu .actionMenuContent .actionSeparator {
     padding-top: 0.2em;
     border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;;
 }
