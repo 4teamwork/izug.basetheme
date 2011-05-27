@@ -101,7 +101,6 @@
                             normalizeString nocall: context/plone_utils/normalizeString;
                             isAnon context/@@plone_portal_state/anonymous;"
                 tal:attributes="class python:'contenttype-' + normalizeString(result.portal_type)">
-              <img tal:replace="structure item_icon/html_tag" />
                <a
                  href="#" 
                  tal:attributes="href url;
