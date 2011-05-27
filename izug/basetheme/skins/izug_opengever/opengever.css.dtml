@@ -291,7 +291,7 @@ input#tabbedview-searchbox {
 }
 
 #listing_container a.rollover-breadcrumb {
-  padding-left: 0.2em;
+  padding-left: 2em;
 }
 
 /*XXX*/
@@ -552,6 +552,7 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 }
 
 /* icons for byline */
+/* TODO: spritify */
 .documentByLine {
     padding-left: 3em !important;
     background-repeat: no-repeat;
@@ -570,7 +571,6 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .portaltype-opengever-zug-skakr-businesscasedossier .documentByLine {
     background-image: url(&dtml-portal_url;/icon_objekt_dossier.gif);
 }
-
 
 .portaltype-opengever-document-document .documentByLine {
     background-image: url(&dtml-portal_url;/document_icon.gif);
@@ -600,8 +600,11 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
     background-image: url(&dtml-portal_url;/icon_objekt_kontakt.gif);
 }
 
+
 /* workflow items */
-.wf-task-state-cancelled,
+/* TODO: spritify */
+
+/* .wf-task-state-cancelled,
 .wf-task-state-in-progress,
 .wf-task-state-new-successor,
 .wf-task-state-open,
@@ -624,6 +627,7 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .wf-task-state-tested-and-closed { background-image: url(&dtml-portal_url;/icon_status_abgeschlossen.gif); }
 .wf-forwarding-state-closed { background-image: url(&dtml-portal_url;/icon_status_abgeschlossen.gif); }
 .wf-forwarding-state-open { background-image: url(&dtml-portal_url;/icon_status_bearbeitung_notwendig.gif); }
+*/
 
 /* overdue */
 .overdue {
