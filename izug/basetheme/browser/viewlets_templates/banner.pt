@@ -1,0 +1,7 @@
+<div id="visual"
+     tal:condition="view/available">
+  <img tal:attributes="src string:${view/img_path};
+                       alt view/img_title | string: Willkommen im Kanton Zug"
+                       style="width:96em;height:19em"/>
+
+</div>
