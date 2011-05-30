@@ -1455,35 +1455,35 @@ div.to_top a:hover {
 }
 
 /* generated css */
-.contenttype-arbeitsraum-inverse{ background-position: 0 0;  } 
-.contenttype-arbeitsraum{ background-position: 0 -66px;  } 
-.contenttype-billboardad{ background-position: 0 -132px;  } 
-.contenttype-block, .contenttype-buchblock, .contenttype-zuginhaltsblock{ background-position: 0 -198px;  } 
-.contenttype-blog-entry{ background-position: 0 -264px;  } 
-.contenttype-blog{ background-position: 0 -330px;  } 
-.contenttype-buch{ background-position: 0 -396px;  } 
-.contenttype-content-page, .contenttype-document, .contenttype-zuginhaltsseite{ background-position: 0 -462px;  } 
-.contenttype-course, .contenttype-file, .contenttype-flowplayerblock, .contenttype-formfilefield, .function-download{ background-position: 0 -528px;  } 
-.contenttype-coursecategory, .contenttype-fieldsetfolder, .contenttype-folder, .contenttype-formfolder, .contenttype-kita-folder, .contenttype-large-plone-folder, .contenttype-newsordner, .contenttype-opengever-inbox-yearfolder, .contenttype-stellenordner, .contenttype-vernehmlassungsordner, .contenttype-zugeventfolder, .contenttype-zughomefolder, .contenttype-zugimmofolder, .contenttype-zugkantonsratsvorlagenordner, .contenttype-zugmedienmitteilungsordner, .contenttype-zugstellenordner, .contenttype-zugsubmissionfolder, .contenttype-zugvernehmlassungsordner{ background-position: 0 -594px;  } 
-.contenttype-favorite, .function-favorites{ background-position: 0 -660px;  } 
-.contenttype-ftw-mail-mail{ background-position: 0 -726px;  } 
-.contenttype-image, .contenttype-zugbanner, .mimetype-bmp, .mimetype-gif, .mimetype-jpeg, .mimetype-png{ background-position: 0 -792px;  } 
-.contenttype-kapitel{ background-position: 0 -858px;  } 
-.contenttype-lebenslage, .contenttype-opengever-repository-repositoryfolder{ background-position: 0 -924px;  } 
-.contenttype-link, .function-arrow-right{ background-position: 0 -990px;  } 
-.contenttype-meeting{ background-position: 0 -1056px;  } 
-.contenttype-news-item, .contenttype-zugnews, .contenttype-zugvernehmlassung{ background-position: 0 -1122px;  } 
-.contenttype-news{ background-position: 0 -1188px;  } 
-.contenttype-opengever-contact-contact, .contenttype-zugmitglied, .function-user{ background-position: 0 -1254px;  } 
-.contenttype-opengever-contact-contactfolder{ background-position: 0 -1320px;  } 
-.contenttype-opengever-document-document{ background-position: 0 -1386px;  } 
-.contenttype-opengever-dossier-businesscasedossier, .contenttype-opengever-dossier-projectdossier, .contenttype-opengever-dossier-templatedossier{ background-position: 0 -1452px;  } 
-.contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -1518px;  } 
-.contenttype-opengever-inbox-inbox{ background-position: 0 -1584px;  } 
-.contenttype-opengever-repository-repositoryroot{ background-position: 0 -1650px;  } 
-.contenttype-opengever-task-task-inverse{ background-position: 0 -1716px;  } 
-.contenttype-opengever-task-task, .contenttype-opengever-tasktemplates-tasktemplate{ background-position: 0 -1782px;  } 
-.contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -1848px;  } 
+.actionicon-folder_factories-add_participant, .contenttype-opengever-contact-contact, .contenttype-zugmitglied, .function-user{ background-position: 0 0;  } 
+.actionicon-folder_factories-add_tasktemplate, .contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -66px;  } 
+.actionicon-folder_factories-document_with_docucomposer, .actionicon-folder_factories-document_with_template, .contenttype-content-page, .contenttype-document, .contenttype-zuginhaltsseite{ background-position: 0 -132px;  } 
+.contenttype-arbeitsraum-inverse{ background-position: 0 -198px;  } 
+.contenttype-arbeitsraum{ background-position: 0 -264px;  } 
+.contenttype-billboardad{ background-position: 0 -330px;  } 
+.contenttype-block, .contenttype-buchblock, .contenttype-zuginhaltsblock{ background-position: 0 -396px;  } 
+.contenttype-blog-entry{ background-position: 0 -462px;  } 
+.contenttype-blog{ background-position: 0 -528px;  } 
+.contenttype-buch{ background-position: 0 -594px;  } 
+.contenttype-course, .contenttype-file, .contenttype-flowplayerblock, .contenttype-formfilefield, .function-download{ background-position: 0 -660px;  } 
+.contenttype-coursecategory, .contenttype-fieldsetfolder, .contenttype-folder, .contenttype-formfolder, .contenttype-kita-folder, .contenttype-large-plone-folder, .contenttype-newsordner, .contenttype-opengever-inbox-yearfolder, .contenttype-stellenordner, .contenttype-vernehmlassungsordner, .contenttype-zugeventfolder, .contenttype-zughomefolder, .contenttype-zugimmofolder, .contenttype-zugkantonsratsvorlagenordner, .contenttype-zugmedienmitteilungsordner, .contenttype-zugstellenordner, .contenttype-zugsubmissionfolder, .contenttype-zugvernehmlassungsordner{ background-position: 0 -726px;  } 
+.contenttype-favorite, .function-favorites{ background-position: 0 -792px;  } 
+.contenttype-ftw-mail-mail{ background-position: 0 -858px;  } 
+.contenttype-image, .contenttype-zugbanner, .mimetype-bmp, .mimetype-gif, .mimetype-jpeg, .mimetype-png{ background-position: 0 -924px;  } 
+.contenttype-kapitel{ background-position: 0 -990px;  } 
+.contenttype-lebenslage, .contenttype-opengever-repository-repositoryfolder{ background-position: 0 -1056px;  } 
+.contenttype-link, .function-arrow-right{ background-position: 0 -1122px;  } 
+.contenttype-meeting{ background-position: 0 -1188px;  } 
+.contenttype-news-item, .contenttype-zugnews, .contenttype-zugvernehmlassung{ background-position: 0 -1254px;  } 
+.contenttype-news{ background-position: 0 -1320px;  } 
+.contenttype-opengever-contact-contactfolder{ background-position: 0 -1386px;  } 
+.contenttype-opengever-document-document{ background-position: 0 -1452px;  } 
+.contenttype-opengever-dossier-businesscasedossier, .contenttype-opengever-dossier-projectdossier, .contenttype-opengever-dossier-templatedossier{ background-position: 0 -1518px;  } 
+.contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -1584px;  } 
+.contenttype-opengever-inbox-inbox{ background-position: 0 -1650px;  } 
+.contenttype-opengever-repository-repositoryroot{ background-position: 0 -1716px;  } 
+.contenttype-opengever-task-task-inverse{ background-position: 0 -1782px;  } 
+.contenttype-opengever-task-task, .contenttype-opengever-tasktemplates-tasktemplate{ background-position: 0 -1848px;  } 
 .contenttype-poiissue, .contenttype-poipsctracker, .contenttype-poitracker, .contenttype-ticketbox{ background-position: 0 -1914px;  } 
 .contenttype-remark-inverse{ background-position: 0 -1980px;  } 
 .contenttype-remark{ background-position: 0 -2046px;  } 
