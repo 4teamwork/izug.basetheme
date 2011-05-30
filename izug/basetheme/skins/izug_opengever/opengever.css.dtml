@@ -442,7 +442,7 @@ div.issue-attachment {
 #client_title {
     clear: both;
     color: &dtml-grey5;;
-    padding-top: 5.1em;
+    margin-top: 5.1em;
     position: absolute;
 }
 
