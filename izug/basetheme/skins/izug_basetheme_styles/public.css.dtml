@@ -1458,77 +1458,80 @@ div.to_top a:hover {
 .contenttype-arbeitsraum-inverse{ background-position: 0 0;  } 
 .contenttype-arbeitsraum{ background-position: 0 -66px;  } 
 .contenttype-billboardad{ background-position: 0 -132px;  } 
-.contenttype-blog-entry{ background-position: 0 -198px;  } 
-.contenttype-blog{ background-position: 0 -264px;  } 
-.contenttype-buch{ background-position: 0 -330px;  } 
-.contenttype-buchblock{ background-position: 0 -396px;  } 
-.contenttype-document{ background-position: 0 -462px;  } 
-.contenttype-folder, .contenttype-opengever-inbox-yearfolder{ background-position: 0 -528px;  } 
-.contenttype-ftw-mail-mail{ background-position: 0 -594px;  } 
-.contenttype-kapitel{ background-position: 0 -660px;  } 
-.contenttype-meeting{ background-position: 0 -726px;  } 
-.contenttype-news-item{ background-position: 0 -792px;  } 
-.contenttype-news{ background-position: 0 -858px;  } 
-.contenttype-opengever-contact-contact, .function-user{ background-position: 0 -924px;  } 
-.contenttype-opengever-document-document{ background-position: 0 -990px;  } 
-.contenttype-opengever-dossier-businesscasedossier{ background-position: 0 -1056px;  } 
-.contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -1122px;  } 
-.contenttype-opengever-inbox-inbox{ background-position: 0 -1188px;  } 
-.contenttype-opengever-repository-repositoryfolder{ background-position: 0 -1254px;  } 
-.contenttype-opengever-repository-repositoryroot{ background-position: 0 -1320px;  } 
-.contenttype-opengever-task-task-inverse{ background-position: 0 -1386px;  } 
-.contenttype-opengever-task-task, .contenttype-opengever-tasktemplates-tasktemplate{ background-position: 0 -1452px;  } 
-.contenttype-opengever-tasktemplates-tasktemplatefolderKopie, .contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -1518px;  } 
-.contenttype-table{ background-position: 0 -1584px;  } 
-.contenttype-ticketbox{ background-position: 0 -1650px;  } 
-.function-add{ background-position: 0 -1716px;  } 
-.function-arrow-right{ background-position: 0 -1782px;  } 
-.function-basket{ background-position: 0 -1848px;  } 
-.function-collapsible-closed{ background-position: 0 -1914px;  } 
-.function-collapsible-open{ background-position: 0 -1975px;  } 
-.function-delete{ background-position: 0 -2036px;  } 
-.function-download{ background-position: 0 -2102px;  } 
-.function-edit-inverse{ background-position: 0 -2168px;  } 
-.function-edit{ background-position: 0 -2234px;  } 
-.function-export-outlook{ background-position: 0 -2300px;  } 
-.function-export-pdf-inverse{ background-position: 0 -2366px;  } 
-.function-export-pdf{ background-position: 0 -2432px;  } 
-.function-favorites-inverse{ background-position: 0 -2498px;  } 
-.function-favorites{ background-position: 0 -2564px;  } 
-.function-information{ background-position: 0 -2630px;  } 
-.function-internet-inverse{ background-position: 0 -2696px;  } 
-.function-internet{ background-position: 0 -2762px;  } 
-.function-print-inverse{ background-position: 0 -2828px;  } 
-.function-print{ background-position: 0 -2894px;  } 
-.function-rss{ background-position: 0 -2960px;  } 
-.function-settings-inverse{ background-position: 0 -3026px;  } 
-.function-settings{ background-position: 0 -3092px;  } 
-.function-start{ background-position: 0 -3158px;  } 
-.function-subscribe-newsletter{ background-position: 0 -3224px;  } 
-.function-upload{ background-position: 0 -3290px;  } 
-.function-watch-inverse{ background-position: 0 -3356px;  } 
-.function-watch{ background-position: 0 -3422px;  } 
-.function-watchlist{ background-position: 0 -3488px;  } 
-.mimetype-bmp, .mimetype-gif, .mimetype-jpeg, .mimetype-png{ background-position: 0 -3554px;  } 
-.mimetype-html{ background-position: 0 -3620px;  } 
-.mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel{ background-position: 0 -3686px;  } 
-.mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -3752px;  } 
-.mimetype-msword{ background-position: 0 -3818px;  } 
-.mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -3884px;  } 
-.mimetype-plain{ background-position: 0 -3950px;  } 
-.mimetype-rfc822{ background-position: 0 -4016px;  } 
-.mimetype-vnd-sun-xml-calc{ background-position: 0 -4082px;  } 
-.mimetype-vnd-sun-xml-draw{ background-position: 0 -4148px;  } 
-.mimetype-vnd-sun-xml-impress{ background-position: 0 -4214px;  } 
-.mimetype-vnd-sun-xml-writer{ background-position: 0 -4280px;  } 
-.mimetype-vnd-visio{ background-position: 0 -4346px;  } 
-.mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -4412px;  } 
-.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -4478px;  } 
-.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -4543px;  } 
-.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -4609px;  } 
-.wf-task-state-in-progress{ background-position: 0 -4675px;  } 
-.wf-task-state-new-successor{ background-position: 0 -4741px;  } 
-.wf-task-state-resolved{ background-position: 0 -4807px;  } 
+.contenttype-block, .contenttype-buchblock, .contenttype-zuginhaltsblock{ background-position: 0 -198px;  } 
+.contenttype-blog-entry{ background-position: 0 -264px;  } 
+.contenttype-blog{ background-position: 0 -330px;  } 
+.contenttype-buch{ background-position: 0 -396px;  } 
+.contenttype-content-page, .contenttype-document, .contenttype-zuginhaltsseite{ background-position: 0 -462px;  } 
+.contenttype-course, .contenttype-file, .contenttype-flowplayerblock, .contenttype-formfilefield, .function-download{ background-position: 0 -528px;  } 
+.contenttype-coursecategory, .contenttype-fieldsetfolder, .contenttype-folder, .contenttype-formfolder, .contenttype-kita-folder, .contenttype-large-plone-folder, .contenttype-newsordner, .contenttype-opengever-inbox-yearfolder, .contenttype-stellenordner, .contenttype-vernehmlassungsordner, .contenttype-zugeventfolder, .contenttype-zughomefolder, .contenttype-zugimmofolder, .contenttype-zugkantonsratsvorlagenordner, .contenttype-zugmedienmitteilungsordner, .contenttype-zugstellenordner, .contenttype-zugsubmissionfolder, .contenttype-zugvernehmlassungsordner{ background-position: 0 -594px;  } 
+.contenttype-favorite, .function-favorites{ background-position: 0 -660px;  } 
+.contenttype-ftw-mail-mail{ background-position: 0 -726px;  } 
+.contenttype-kapitel{ background-position: 0 -792px;  } 
+.contenttype-lebenslage, .contenttype-opengever-repository-repositoryfolder{ background-position: 0 -858px;  } 
+.contenttype-meeting{ background-position: 0 -924px;  } 
+.contenttype-news-item, .contenttype-zugnews, .contenttype-zugvernehmlassung{ background-position: 0 -990px;  } 
+.contenttype-news{ background-position: 0 -1056px;  } 
+.contenttype-opengever-contact-contact, .contenttype-zugmitglied, .function-user{ background-position: 0 -1122px;  } 
+.contenttype-opengever-document-document{ background-position: 0 -1188px;  } 
+.contenttype-opengever-dossier-businesscasedossier{ background-position: 0 -1254px;  } 
+.contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -1320px;  } 
+.contenttype-opengever-inbox-inbox{ background-position: 0 -1386px;  } 
+.contenttype-opengever-repository-repositoryroot{ background-position: 0 -1452px;  } 
+.contenttype-opengever-task-task-inverse{ background-position: 0 -1518px;  } 
+.contenttype-opengever-task-task, .contenttype-opengever-tasktemplates-tasktemplate{ background-position: 0 -1584px;  } 
+.contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -1650px;  } 
+.contenttype-poiissue, .contenttype-poipsctracker, .contenttype-poitracker, .contenttype-ticketbox{ background-position: 0 -1716px;  } 
+.contenttype-remark-inverse{ background-position: 0 -1782px;  } 
+.contenttype-remark{ background-position: 0 -1848px;  } 
+.contenttype-table{ background-position: 0 -1914px;  } 
+.contenttype-zugbanner, .mimetype-bmp, .mimetype-gif, .mimetype-jpeg, .mimetype-png{ background-position: 0 -1980px;  } 
+.contenttype-zugmerkliste{ background-position: 0 -2046px;  } 
+.function-add{ background-position: 0 -2112px;  } 
+.function-arrow-right{ background-position: 0 -2178px;  } 
+.function-basket{ background-position: 0 -2244px;  } 
+.function-collapsible-closed{ background-position: 0 -2310px;  } 
+.function-collapsible-open{ background-position: 0 -2371px;  } 
+.function-delete{ background-position: 0 -2432px;  } 
+.function-edit-inverse{ background-position: 0 -2498px;  } 
+.function-edit{ background-position: 0 -2564px;  } 
+.function-export-outlook{ background-position: 0 -2630px;  } 
+.function-export-pdf-inverse{ background-position: 0 -2696px;  } 
+.function-export-pdf{ background-position: 0 -2762px;  } 
+.function-favorites-inverse{ background-position: 0 -2828px;  } 
+.function-information{ background-position: 0 -2894px;  } 
+.function-internet-inverse{ background-position: 0 -2960px;  } 
+.function-internet{ background-position: 0 -3026px;  } 
+.function-print-inverse{ background-position: 0 -3092px;  } 
+.function-print{ background-position: 0 -3158px;  } 
+.function-rss{ background-position: 0 -3224px;  } 
+.function-settings-inverse{ background-position: 0 -3290px;  } 
+.function-settings{ background-position: 0 -3356px;  } 
+.function-start{ background-position: 0 -3422px;  } 
+.function-subscribe-newsletter{ background-position: 0 -3488px;  } 
+.function-upload{ background-position: 0 -3554px;  } 
+.function-watch-inverse{ background-position: 0 -3620px;  } 
+.function-watch{ background-position: 0 -3686px;  } 
+.function-watchlist{ background-position: 0 -3752px;  } 
+.mimetype-html{ background-position: 0 -3818px;  } 
+.mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel{ background-position: 0 -3884px;  } 
+.mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -3950px;  } 
+.mimetype-msword{ background-position: 0 -4016px;  } 
+.mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -4082px;  } 
+.mimetype-plain{ background-position: 0 -4148px;  } 
+.mimetype-rfc822{ background-position: 0 -4214px;  } 
+.mimetype-vnd-sun-xml-calc{ background-position: 0 -4280px;  } 
+.mimetype-vnd-sun-xml-draw{ background-position: 0 -4346px;  } 
+.mimetype-vnd-sun-xml-impress{ background-position: 0 -4412px;  } 
+.mimetype-vnd-sun-xml-writer{ background-position: 0 -4478px;  } 
+.mimetype-vnd-visio{ background-position: 0 -4544px;  } 
+.mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -4610px;  } 
+.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -4676px;  } 
+.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -4741px;  } 
+.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -4807px;  } 
+.wf-task-state-in-progress{ background-position: 0 -4873px;  } 
+.wf-task-state-new-successor{ background-position: 0 -4939px;  } 
+.wf-task-state-resolved{ background-position: 0 -5005px;  } 
 
 
 /* </dtml-with> */
