@@ -8,6 +8,9 @@ body.largeText div.tabbedview-tabs ul.formTabs li a {
 }
 body.largeText div.tabbedview-tabs ul.formTabs li a.selected {
     margin-top: -0.091em;
-}   
+}
+.LSBox {
+    margin-bottom: -0.1em;
+}
 /* </dtml-with> */
 

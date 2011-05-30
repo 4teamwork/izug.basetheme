@@ -80,6 +80,15 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <browser:viewlet
+      name="izug.banner"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.Banner"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      for="*"
+      />
+      
   <!-- for plone 3 only -->
   <browser:viewlet
       name="ftw.contentviews"

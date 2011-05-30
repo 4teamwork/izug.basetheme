@@ -165,12 +165,10 @@ h3, h4, h5, h6 {
     /* Top section */
     margin: 2.4em 0 1.2em 0;
     padding: 0;
-    height: 8.1em;
     background-color: &dtml-globalBackgroundColor;;
 }
 #portal-header {
     background-color: white;
-    height:4.9em;   
 }
 /* Site-wide action menu - font size, contact, index, sitemap etc */
 #portal-siteactions {

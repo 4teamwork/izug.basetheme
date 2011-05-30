@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <object>
     <!-- portal header -->
-    <order manager="plone.portalheader" skinname="Plone Default">
+    <order manager="plone.portalheader" skinname="iZug Base Theme">
         <viewlet name="plone.skip_links"/>
         <viewlet name="plone.site_actions"/>
         <viewlet name="plone.personal_bar"/>
         <viewlet name="plone.logo"/>
+        <viewlet name="izug.banner"/>
         <viewlet name="plone.global_sections"/>
-                <viewlet name="plone.searchbox"/>
+        <viewlet name="plone.searchbox"/>
     </order>
-    <hidden manager="plone.portalheader" skinname="iZug Base Theme">
-
-    </hidden>
+    <!--hidden manager="plone.portalheader" skinname="iZug Base Theme">
+        <viewlet name="izug.banner"/>
+    </hidden-->
 
     <!--- above content -->
     <order manager="plone.abovecontent" skinname="iZug Base Theme">

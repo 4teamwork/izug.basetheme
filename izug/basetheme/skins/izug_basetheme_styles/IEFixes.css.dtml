@@ -12,11 +12,8 @@ body {
     font-size: 10% !important;
 }
 /* fix for strange 1px anomaly */
-#portal-top {
-    height: 8em;
-}
-#portal-header {
-    height: 4.8em;
+.LSBox {
+    margin-bottom: -0.1em;
 }
 * html #portal-columns {
   width: 100%;
@@ -24,9 +21,7 @@ body {
 * html*#portal-columns {
   width: auto;
 }
-/*input {
-  margin-bottom: 1px; /* bug fix */
-}*/
+
 div#portal-columns div#portal-column-one,
 div#portal-columns div#portal-column-two {
   overflow: hidden;
