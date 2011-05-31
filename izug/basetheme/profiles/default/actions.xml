@@ -2,7 +2,7 @@
 <object name="portal_actions">
  <object name="document_actions">
   <object name="print">
-   <property name="icon_expr">string:$portal_url/icon_funktion_drucken_invers.gif</property>
+   <property name="icon_expr"></property>
    <property name="visible">True</property>
   </object>
  </object>

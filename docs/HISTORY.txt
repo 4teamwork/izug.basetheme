@@ -4,6 +4,10 @@ Changelog
 
 1.0a9
 -----
+
+* Removed icon_expr for print action (now done with sprites)
+  [lgraf]
+
 * Added banner image functionality like in zug.ch. Banner is hidden per default
   unless a folder 'bannerbilder' exists in the current location which has to 
   be an INavigationRoot
