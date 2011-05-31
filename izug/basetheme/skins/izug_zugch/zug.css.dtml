@@ -1,3 +1,28 @@
 /* <dtml-with base_properties> */
-
+/* listing pages */
+.listing-column-right, .listing-column-left {
+    width: 24em;
+}
+.listing-column-left {
+    float: left;
+}
+.listing-column-right {
+    float: right;
+    padding-left: 1em;
+}
+ul.subelements-listing {
+text-indent: 0;
+margin-left: 0;
+}
+.subelements-listing li {
+    display: inline;
+    margin: 0 !important;
+}
+.divider {
+    background-image: url(&dtml-portal_url;/icon_list_vertical.gif);
+    background-position: 50% 0.25em;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    padding-right: 0;
+}
 /* </dtml-with> */

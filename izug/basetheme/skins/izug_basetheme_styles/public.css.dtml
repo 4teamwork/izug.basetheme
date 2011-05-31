@@ -1424,6 +1424,7 @@ ul#portal-fontsize li a {
 div.to_top {
   display:block;
   margin-bottom: 1em;
+  clear: both;
 }
 div.to_top a {
   font-size:1.1em;
