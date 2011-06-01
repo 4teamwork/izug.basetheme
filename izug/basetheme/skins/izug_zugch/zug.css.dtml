@@ -33,5 +33,21 @@ ul.subelements-listing {
     left: -999em;
 }
 
+/* search portlet */
+.portletSearch {
+    border-color: &dtml-fontColor;;
+    margin-bottom: 2em;
+}
+.portletSearch .portletItem,
+.portletSearch .portletHeader {
+    border-color: &dtml-fontColor;;
+}
+.portletSearch .portlet-search-gadget {
+    width: 100%;
+}
+.portletSearch .Submit {
+    float: right;
+    margin-right: -0.2em;
+}
 
 /* </dtml-with> */
