@@ -15,6 +15,9 @@ body {
 .LSBox {
     margin-bottom: -0.1em;
 }
+*+html #portal-top {
+    padding-bottom: 0 !important;
+}
 * html #portal-columns {
   width: 100%;
 }
