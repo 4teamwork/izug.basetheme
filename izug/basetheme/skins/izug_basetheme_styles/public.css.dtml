@@ -1407,6 +1407,8 @@ ul#portal-fontsize li a {
 }
 #debug_info {
     clear: both;
+    position: absolute;
+    top: 10.7em;
 }
 .collapsibleLegend {
     float: left;
