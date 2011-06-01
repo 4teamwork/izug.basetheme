@@ -771,6 +771,11 @@ table.invisible th,
 table.invisible td {
     border-style: none;
 }
+table caption {
+    text-align: left;
+    font-weight: bold;
+}
+
 /* Batch selector */
 .listingBar {
     text-align: center;
