@@ -45,7 +45,7 @@ helpBackgroundColor:string=#ffffe1
 
 portalMinWidth:string=96em
 columnOneWidth:string=25em
-columnTwoWidth:string=17em
+columnTwoWidth:string=18em
 
 highlightColor:string=#DEE7EC
 

@@ -26,7 +26,7 @@ body.smallText #visual-portal-wrapper { font-size: 80%; }
     padding: 3.7em 0.5em 1em 0;
 }
 #portal-column-two .visualPadding {
-    padding: 3.7em 0 1em 0.5em;
+    padding: 3.7em 0 1em 1em;
 }
 
 /* Compensate for the inline editing hover, since we have a 1px border */

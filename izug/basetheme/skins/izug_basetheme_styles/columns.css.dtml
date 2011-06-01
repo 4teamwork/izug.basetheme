@@ -41,14 +41,14 @@ div#portal-column-content.sl {
   width: 71em;
 }
 div#portal-column-content.sr {
-  /* right column: 96em - 17em */
+  /* right column: 96em - 18em */
   margin-left: -100%;
-  width: 79em;
+  width: 78em;
 }
 div#portal-column-content.sr.sl {
-  /* right and left column: 96em - 17em -25em */
+  /* right and left column: 96em - 18em - 25em */
   margin-left: -71em;
-  width: 54em;
+  width: 53em;
 }
 /* resize */
 div#portal-column-one .visualPadding {

@@ -1,14 +1,14 @@
 /* <dtml-with base_properties> */
 /* listing pages */
 .listing-column-right, .listing-column-left {
-    width: 24em;
+    width: 23.636em; // 260px
 }
 .listing-column-left {
     float: left;
 }
 .listing-column-right {
     float: right;
-    padding-left: 1em;
+    padding-left: 0.909em; // 10px
 }
 ul.subelements-listing {
 text-indent: 0;
