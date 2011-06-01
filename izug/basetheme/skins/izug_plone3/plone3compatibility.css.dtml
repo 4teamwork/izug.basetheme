@@ -1,3 +1,6 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
 #edit-bar {
     display: none;
 }
@@ -60,3 +63,14 @@ body.template-member-registration #edit-bar {
 #portal-breadcrumbs {
     font-size: 0.909em;
 }
+
+/* in plone 3 the views in control panel lack an #portal-column-left, 
+therefore we have to simulate a left column */
+#portal-columns>.visualPadding {
+    width: 17em;
+    margin-top: 1em;
+    padding-right: 1em;
+    float: left;
+}
+
+/* </dtml-with> */
