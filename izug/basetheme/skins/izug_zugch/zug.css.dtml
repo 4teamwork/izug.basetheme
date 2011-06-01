@@ -50,4 +50,15 @@ ul.subelements-listing {
     margin-right: -0.2em;
 }
 
+/* subsite */
+
+#portal-column-content .portlet, 
+#portal-column-content .portletItem {
+    border-style: none;
+} 
+#portal-column-content .portletHeader {
+    border-width: 0.2em 0 0;
+    border-color: &dtml-globalBorderColor;;
+}
+
 /* </dtml-with> */
