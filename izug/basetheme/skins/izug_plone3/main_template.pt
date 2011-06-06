@@ -79,8 +79,25 @@
     div#portal-column-content.sl {
         margin-left: -${context/getContentColumnWidth};
         width: ${context/getContentColumnWidth};
-    ">
+    }
+    ">-
     </style>
+
+    <tal:isSubsiteCSS define="css python:getattr(here, 'additional_css', None)"
+                      condition="css">
+      <style type="text/css" media="all"
+             tal:content="string:$css">
+      </style>        
+    </tal:isSubsiteCSS>
+    <tal:isSubsiteCSS define="ico python:getattr(here, 'navigation_ico', None)"
+                      condition="ico">
+      <style type="text/css" 
+             media="all" 
+             tal:content="string:.navTreeItem .navTreeCurrentItem {background-image: url(navigation_ico);}">
+      </style>
+    </tal:isSubsiteCSS>
+
+    
   </head>
 
   <body tal:define="template_id python:template.id or path('view/__name__');
@@ -90,7 +107,6 @@
         tal:attributes="class python:class_expr.strip();
                         dir python:test(isRTL, 'rtl', 'ltr')">
     <div id="visual-portal-wrapper">
-
       <div id="portal-top" i18n:domain="plone">
         <div tal:replace="structure provider:plone.portaltop" />
       </div>
