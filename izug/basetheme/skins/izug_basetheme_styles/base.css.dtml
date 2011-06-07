@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6 {
     color: &dtml-grey5;;
     font-family: <dtml-var headingFontFamily>;
     margin: 0;
+    clear: both;
 }
 h1 a,
 h2 a,

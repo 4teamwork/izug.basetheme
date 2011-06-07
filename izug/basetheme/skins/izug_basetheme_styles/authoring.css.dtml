@@ -201,7 +201,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     padding: 0 0 0 2em !important;
 }
 .actionMenu .actionMenuContent li a[class*=contenttype-] {
-    margin: 0.8em 0.4em;
+    margin: 0.5em 0.4em;
     padding: 0 0 0 2em !important;
 }
 .actionMenu .actionMenuContent .selected {
