@@ -546,10 +546,11 @@ h3, h4, h5, h6 {
     display: block;
     list-style-type: none;
     list-style-image: none;
+    text-indent: 0;
 }
 .documentActions li {
     display: inline;
-    margin: 0 0.5em;
+    margin: 0 0.1em;
     float: right;
 }
 .documentActions a {
@@ -1462,151 +1463,85 @@ div.to_top a:hover {
 }
 
 /* generated css */
-.actionicon-folder_factories-add_participant{ background-position: 0 0;  } 
-.actionicon-folder_factories-add_tasktemplate{ background-position: 0 -66px;  } 
-.actionicon-folder_factories-document_with_docucomposer{ background-position: 0 -132px;  } 
-.actionicon-folder_factories-document_with_template{ background-position: 0 -198px;  } 
-.contenttype-arbeitsraum-inverse{ background-position: 0 -264px;  } 
-.contenttype-arbeitsraum{ background-position: 0 -330px;  } 
-.contenttype-billboardad{ background-position: 0 -396px;  } 
-.contenttype-block{ background-position: 0 -462px;  } 
-.contenttype-blog-entry{ background-position: 0 -528px;  } 
-.contenttype-blog{ background-position: 0 -594px;  } 
-.contenttype-buch{ background-position: 0 -660px;  } 
-.contenttype-buchblock{ background-position: 0 -726px;  } 
-.contenttype-content-page{ background-position: 0 -792px;  } 
-.contenttype-course{ background-position: 0 -858px;  } 
-.contenttype-coursecategory{ background-position: 0 -924px;  } 
-.contenttype-document{ background-position: 0 -990px;  } 
-.contenttype-favorite{ background-position: 0 -1056px;  } 
-.contenttype-fieldsetfolder{ background-position: 0 -1122px;  } 
-.contenttype-file{ background-position: 0 -1188px;  } 
-.contenttype-flowplayerblock{ background-position: 0 -1254px;  } 
-.contenttype-folder{ background-position: 0 -1320px;  } 
-.contenttype-formfilefield{ background-position: 0 -1386px;  } 
-.contenttype-formfolder{ background-position: 0 -1452px;  } 
-.contenttype-ftw-mail-mail{ background-position: 0 -1518px;  } 
-.contenttype-image{ background-position: 0 -1584px;  } 
-.contenttype-kapitel{ background-position: 0 -1650px;  } 
-.contenttype-kita-folder{ background-position: 0 -1716px;  } 
-.contenttype-large-plone-folder{ background-position: 0 -1782px;  } 
-.contenttype-lebenslage{ background-position: 0 -1848px;  } 
-.contenttype-link{ background-position: 0 -1914px;  } 
-.contenttype-meeting{ background-position: 0 -1980px;  } 
-.contenttype-news-item{ background-position: 0 -2046px;  } 
-.contenttype-news{ background-position: 0 -2112px;  } 
-.contenttype-newsordner{ background-position: 0 -2178px;  } 
-.contenttype-opengever-contact-contact{ background-position: 0 -2244px;  } 
-.contenttype-opengever-contact-contactfolder{ background-position: 0 -2310px;  } 
-.contenttype-opengever-document-document{ background-position: 0 -2376px;  } 
-.contenttype-opengever-dossier-businesscasedossier{ background-position: 0 -2442px;  } 
-.contenttype-opengever-dossier-projectdossier{ background-position: 0 -2508px;  } 
-.contenttype-opengever-dossier-templatedossier{ background-position: 0 -2574px;  } 
-.contenttype-opengever-inbox-forwarding{ background-position: 0 -2640px;  } 
-.contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -2706px;  } 
-.contenttype-opengever-inbox-inbox{ background-position: 0 -2772px;  } 
-.contenttype-opengever-inbox-yearfolder{ background-position: 0 -2838px;  } 
-.contenttype-opengever-repository-repositoryfolder{ background-position: 0 -2904px;  } 
-.contenttype-opengever-repository-repositoryroot{ background-position: 0 -2970px;  } 
-.contenttype-opengever-task-task-inverse{ background-position: 0 -3036px;  } 
-.contenttype-opengever-task-task{ background-position: 0 -3102px;  } 
-.contenttype-opengever-tasktemplates-tasktemplate{ background-position: 0 -3168px;  } 
-.contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -3234px;  } 
-.contenttype-opengever-zug-bdarp-casedossier1{ background-position: 0 -3300px;  } 
-.contenttype-opengever-zug-bdarp-casedossier2{ background-position: 0 -3366px;  } 
-.contenttype-opengever-zug-bdbds-bdbdscasedossier1{ background-position: 0 -3432px;  } 
-.contenttype-opengever-zug-bdbds-bdbdscasedossier2{ background-position: 0 -3498px;  } 
-.contenttype-opengever-zug-digva-orderdossier{ background-position: 0 -3564px;  } 
-.contenttype-opengever-zug-skakr-businesscasedossier{ background-position: 0 -3630px;  } 
-.contenttype-poiissue{ background-position: 0 -3696px;  } 
-.contenttype-poipsctracker{ background-position: 0 -3762px;  } 
-.contenttype-poitracker{ background-position: 0 -3828px;  } 
-.contenttype-remark-inverse{ background-position: 0 -3894px;  } 
-.contenttype-remark{ background-position: 0 -3960px;  } 
-.contenttype-stellenordner{ background-position: 0 -4026px;  } 
-.contenttype-table{ background-position: 0 -4092px;  } 
-.contenttype-ticketbox{ background-position: 0 -4158px;  } 
-.contenttype-topic{ background-position: 0 -4224px;  } 
-.contenttype-vernehmlassungsordner{ background-position: 0 -4290px;  } 
-.contenttype-zugbanner{ background-position: 0 -4356px;  } 
-.contenttype-zugeventfolder{ background-position: 0 -4422px;  } 
-.contenttype-zughomefolder{ background-position: 0 -4488px;  } 
-.contenttype-zugimmofolder{ background-position: 0 -4554px;  } 
-.contenttype-zuginhaltsblock{ background-position: 0 -4620px;  } 
-.contenttype-zuginhaltsseite{ background-position: 0 -4686px;  } 
-.contenttype-zugkantonsratsvorlagenordner{ background-position: 0 -4752px;  } 
-.contenttype-zugmedienmitteilungsordner{ background-position: 0 -4818px;  } 
-.contenttype-zugmerkliste{ background-position: 0 -4884px;  } 
-.contenttype-zugmitglied{ background-position: 0 -4950px;  } 
-.contenttype-zugnews{ background-position: 0 -5016px;  } 
-.contenttype-zugstellenordner{ background-position: 0 -5082px;  } 
-.contenttype-zugsubmissionfolder{ background-position: 0 -5148px;  } 
-.contenttype-zugvernehmlassung{ background-position: 0 -5214px;  } 
-.contenttype-zugvernehmlassungsordner{ background-position: 0 -5280px;  } 
-.function-add{ background-position: 0 -5346px;  } 
-.function-arrow-right{ background-position: 0 -5412px;  } 
-.function-basket{ background-position: 0 -5478px;  } 
-.function-collapsible-closed{ background-position: 0 -5544px;  } 
-.function-collapsible-open{ background-position: 0 -5605px;  } 
-.function-delete{ background-position: 0 -5666px;  } 
-.function-download{ background-position: 0 -5732px;  } 
-.function-edit-inverse{ background-position: 0 -5798px;  } 
-.function-edit{ background-position: 0 -5864px;  } 
-.function-export-outlook{ background-position: 0 -5930px;  } 
-.function-export-pdf-inverse{ background-position: 0 -5996px;  } 
-.function-export-pdf{ background-position: 0 -6062px;  } 
-.function-favorites-inverse{ background-position: 0 -6128px;  } 
-.function-favorites{ background-position: 0 -6194px;  } 
-.function-information{ background-position: 0 -6260px;  } 
-.function-internet-inverse{ background-position: 0 -6326px;  } 
-.function-internet{ background-position: 0 -6392px;  } 
-.function-ok{ background-position: 0 -6458px;  } 
-.function-print-inverse{ background-position: 0 -6524px;  } 
-.function-print{ background-position: 0 -6590px;  } 
-.function-rss{ background-position: 0 -6656px;  } 
-.function-settings-inverse{ background-position: 0 -6722px;  } 
-.function-settings{ background-position: 0 -6788px;  } 
-.function-site{ background-position: 0 -6854px;  } 
-.function-start{ background-position: 0 -6920px;  } 
-.function-subscribe-newsletter{ background-position: 0 -6986px;  } 
-.function-upload{ background-position: 0 -7052px;  } 
-.function-user{ background-position: 0 -7118px;  } 
-.function-watch-inverse{ background-position: 0 -7184px;  } 
-.function-watch{ background-position: 0 -7250px;  } 
-.function-watchlist{ background-position: 0 -7316px;  } 
-.mimetype-bmp{ background-position: 0 -7382px;  } 
-.mimetype-gif{ background-position: 0 -7448px;  } 
-.mimetype-html{ background-position: 0 -7514px;  } 
-.mimetype-jpeg{ background-position: 0 -7580px;  } 
-.mimetype-msexcel{ background-position: 0 -7646px;  } 
-.mimetype-mspowerpoint{ background-position: 0 -7712px;  } 
-.mimetype-msword{ background-position: 0 -7778px;  } 
-.mimetype-pdf{ background-position: 0 -7844px;  } 
-.mimetype-plain{ background-position: 0 -7910px;  } 
-.mimetype-png{ background-position: 0 -7976px;  } 
-.mimetype-powerpoint{ background-position: 0 -8042px;  } 
-.mimetype-rfc822{ background-position: 0 -8108px;  } 
-.mimetype-vnd-ms-excel{ background-position: 0 -8174px;  } 
-.mimetype-vnd-ms-powerpoint{ background-position: 0 -8240px;  } 
-.mimetype-vnd-sun-xml-calc{ background-position: 0 -8306px;  } 
-.mimetype-vnd-sun-xml-draw{ background-position: 0 -8372px;  } 
-.mimetype-vnd-sun-xml-impress{ background-position: 0 -8438px;  } 
-.mimetype-vnd-sun-xml-writer{ background-position: 0 -8504px;  } 
-.mimetype-vnd-visio{ background-position: 0 -8570px;  } 
-.mimetype-x-msexcel{ background-position: 0 -8636px;  } 
-.mimetype-x-mspowerpoint{ background-position: 0 -8702px;  } 
-.mimetype-x-pdf{ background-position: 0 -8768px;  } 
-.mimetype-x-zip-compressed{ background-position: 0 -8834px;  } 
-.mimetype-zip{ background-position: 0 -8900px;  } 
-.wf-forwarding-state-closed{ background-position: 0 -8966px;  } 
-.wf-forwarding-state-open{ background-position: 0 -9031px;  } 
-.wf-task-state-cancelled{ background-position: 0 -9097px;  } 
-.wf-task-state-in-progress{ background-position: 0 -9163px;  } 
-.wf-task-state-new-successor{ background-position: 0 -9229px;  } 
-.wf-task-state-open{ background-position: 0 -9295px;  } 
-.wf-task-state-rejected{ background-position: 0 -9361px;  } 
-.wf-task-state-resolved{ background-position: 0 -9427px;  } 
-.wf-task-state-tested-and-closed{ background-position: 0 -9493px;  } 
-
+.actionicon-folder_factories-add_participant, .contenttype-opengever-contact-contact, .contenttype-zugmitglied, .function-user{ background-position: 0 0;  } 
+.actionicon-folder_factories-add_tasktemplate, .contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -66px;  } 
+.actionicon-folder_factories-document_with_docucomposer, .actionicon-folder_factories-document_with_template, .contenttype-content-page, .contenttype-document, .contenttype-zuginhaltsseite{ background-position: 0 -132px;  } 
+.contenttype-arbeitsraum-inverse{ background-position: 0 -198px;  } 
+.contenttype-arbeitsraum{ background-position: 0 -264px;  } 
+.contenttype-billboardad{ background-position: 0 -330px;  } 
+.contenttype-block, .contenttype-buchblock, .contenttype-zuginhaltsblock{ background-position: 0 -396px;  } 
+.contenttype-blog-entry{ background-position: 0 -462px;  } 
+.contenttype-blog{ background-position: 0 -528px;  } 
+.contenttype-buch{ background-position: 0 -594px;  } 
+.contenttype-course, .contenttype-file, .contenttype-flowplayerblock, .contenttype-formfilefield, .function-download{ background-position: 0 -660px;  } 
+.contenttype-coursecategory, .contenttype-fieldsetfolder, .contenttype-folder, .contenttype-formfolder, .contenttype-kita-folder, .contenttype-large-plone-folder, .contenttype-newsordner, .contenttype-opengever-dossier-projectdossier, .contenttype-opengever-inbox-yearfolder, .contenttype-stellenordner, .contenttype-topic, .contenttype-vernehmlassungsordner, .contenttype-zugeventfolder, .contenttype-zughomefolder, .contenttype-zugimmofolder, .contenttype-zugkantonsratsvorlagenordner, .contenttype-zugmedienmitteilungsordner, .contenttype-zugstellenordner, .contenttype-zugsubmissionfolder, .contenttype-zugvernehmlassungsordner{ background-position: 0 -726px;  } 
+.contenttype-favorite, .function-favorites{ background-position: 0 -792px;  } 
+.contenttype-ftw-mail-mail{ background-position: 0 -858px;  } 
+.contenttype-image, .contenttype-zugbanner, .mimetype-bmp, .mimetype-gif, .mimetype-jpeg, .mimetype-png{ background-position: 0 -924px;  } 
+.contenttype-kapitel{ background-position: 0 -990px;  } 
+.contenttype-lebenslage, .contenttype-opengever-repository-repositoryfolder{ background-position: 0 -1056px;  } 
+.contenttype-link, .function-arrow-right{ background-position: 0 -1122px;  } 
+.contenttype-meeting{ background-position: 0 -1188px;  } 
+.contenttype-news-item, .contenttype-zugnews, .contenttype-zugvernehmlassung{ background-position: 0 -1254px;  } 
+.contenttype-news{ background-position: 0 -1320px;  } 
+.contenttype-opengever-contact-contactfolder{ background-position: 0 -1386px;  } 
+.contenttype-opengever-document-document{ background-position: 0 -1452px;  } 
+.contenttype-opengever-dossier-businesscasedossier, .contenttype-opengever-dossier-templatedossier, .contenttype-opengever-zug-bdarp-casedossier1, .contenttype-opengever-zug-bdarp-casedossier2, .contenttype-opengever-zug-bdbds-bdbdscasedossier1, .contenttype-opengever-zug-bdbds-bdbdscasedossier2, .contenttype-opengever-zug-digva-orderdossier, .contenttype-opengever-zug-skakr-businesscasedossier{ background-position: 0 -1518px;  } 
+.contenttype-opengever-inbox-forwarding, .contenttype-opengever-inbox-inbox{ background-position: 0 -1584px;  } 
+.contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -1650px;  } 
+.contenttype-opengever-repository-repositoryroot{ background-position: 0 -1716px;  } 
+.contenttype-opengever-task-task-inverse{ background-position: 0 -1782px;  } 
+.contenttype-opengever-task-task, .contenttype-opengever-tasktemplates-tasktemplate{ background-position: 0 -1848px;  } 
+.contenttype-poiissue, .contenttype-poipsctracker, .contenttype-poitracker, .contenttype-ticketbox{ background-position: 0 -1914px;  } 
+.contenttype-remark-inverse{ background-position: 0 -1980px;  } 
+.contenttype-remark{ background-position: 0 -2046px;  } 
+.contenttype-table{ background-position: 0 -2112px;  } 
+.contenttype-zugmerkliste{ background-position: 0 -2178px;  } 
+.function-add{ background-position: 0 -2244px;  } 
+.function-addtofavorites-inverse, .function-favorites-inverse{ background-position: 0 -2310px;  } 
+.function-basket{ background-position: 0 -2376px;  } 
+.function-collapsible-closed{ background-position: 0 -2442px;  } 
+.function-collapsible-open{ background-position: 0 -2503px;  } 
+.function-delete{ background-position: 0 -2564px;  } 
+.function-edit-inverse, .function-extedit-inverse{ background-position: 0 -2630px;  } 
+.function-edit{ background-position: 0 -2696px;  } 
+.function-export-outlook{ background-position: 0 -2762px;  } 
+.function-export-pdf-inverse{ background-position: 0 -2828px;  } 
+.function-export-pdf{ background-position: 0 -2894px;  } 
+.function-information{ background-position: 0 -2960px;  } 
+.function-internet-inverse{ background-position: 0 -3026px;  } 
+.function-internet{ background-position: 0 -3092px;  } 
+.function-ok{ background-position: 0 -3158px;  } 
+.function-print-inverse{ background-position: 0 -3224px;  } 
+.function-print{ background-position: 0 -3290px;  } 
+.function-rss{ background-position: 0 -3356px;  } 
+.function-settings-inverse{ background-position: 0 -3422px;  } 
+.function-settings{ background-position: 0 -3488px;  } 
+.function-site{ background-position: 0 -3554px;  } 
+.function-start{ background-position: 0 -3620px;  } 
+.function-subscribe-newsletter{ background-position: 0 -3686px;  } 
+.function-upload{ background-position: 0 -3752px;  } 
+.function-watch-inverse{ background-position: 0 -3818px;  } 
+.function-watch{ background-position: 0 -3884px;  } 
+.function-watchlist{ background-position: 0 -3950px;  } 
+.mimetype-html{ background-position: 0 -4016px;  } 
+.mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel{ background-position: 0 -4082px;  } 
+.mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -4148px;  } 
+.mimetype-msword{ background-position: 0 -4214px;  } 
+.mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -4280px;  } 
+.mimetype-plain{ background-position: 0 -4346px;  } 
+.mimetype-rfc822{ background-position: 0 -4412px;  } 
+.mimetype-vnd-sun-xml-calc{ background-position: 0 -4478px;  } 
+.mimetype-vnd-sun-xml-draw{ background-position: 0 -4544px;  } 
+.mimetype-vnd-sun-xml-impress{ background-position: 0 -4610px;  } 
+.mimetype-vnd-sun-xml-writer{ background-position: 0 -4676px;  } 
+.mimetype-vnd-visio{ background-position: 0 -4742px;  } 
+.mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -4808px;  } 
+.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -4874px;  } 
+.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -4939px;  } 
+.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -5005px;  } 
+.wf-task-state-in-progress{ background-position: 0 -5071px;  } 
+.wf-task-state-new-successor{ background-position: 0 -5137px;  } 
+.wf-task-state-resolved{ background-position: 0 -5203px;  } 
 
 /* </dtml-with> */
