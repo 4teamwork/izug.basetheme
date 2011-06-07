@@ -103,7 +103,7 @@
   <body tal:define="template_id python:template.id or path('view/__name__');
                     sl python:plone_view.have_portlets('plone.leftcolumn', view);
                     sr python:plone_view.have_portlets('plone.rightcolumn', view);
-                    class_expr string:${context/getSectionFromURL} template-${template_id};"
+                    class_expr string:${context/getSectionFromURL} template-${template_id} icons-on;"
         tal:attributes="class python:class_expr.strip();
                         dir python:test(isRTL, 'rtl', 'ltr')">
     <div id="visual-portal-wrapper">
