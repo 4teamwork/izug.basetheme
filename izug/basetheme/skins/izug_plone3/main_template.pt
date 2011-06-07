@@ -80,7 +80,7 @@
         margin-left: -${context/getContentColumnWidth};
         width: ${context/getContentColumnWidth};
     }
-    ">-
+    ">
     </style>
 
     <tal:isSubsiteCSS define="css python:getattr(here, 'additional_css', None)"
