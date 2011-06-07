@@ -215,5 +215,7 @@ div.tabbedview-tabs ul.formTabs li a.selected {
 .portletTreePortlet ul.treeview {
     margin-top: 0em;
 }
+.documentActions a {
+    padding: 0.1em 0 0.2em 1.7em !important;
 }
 /* </dtml-with> */

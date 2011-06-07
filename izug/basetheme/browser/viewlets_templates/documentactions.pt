@@ -11,7 +11,7 @@
             <a href=""
                tal:attributes="href daction/url;
                                title daction/title;
-                               class python:'function-%s-inverse' % (normalizeString(daction['id']))"></a>
+                               class python:'function-%s-inverse' % (normalizeString(daction['id']))">&nbsp;</a>
         </li>
     </tal:actions>
 

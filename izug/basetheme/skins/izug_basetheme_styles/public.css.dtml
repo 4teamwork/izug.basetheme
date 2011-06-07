@@ -556,6 +556,7 @@ h3, h4, h5, h6 {
 .documentActions a {
     border: none !important;
     text-decoration: none;
+    padding: 0em 0 0.2em 1.7em !important;
 }
 
 /* Status messages */
