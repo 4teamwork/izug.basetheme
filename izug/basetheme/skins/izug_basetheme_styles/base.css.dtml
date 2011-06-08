@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     clear: both;
 }
-h1 a,
+
 h2 a,
 h3 a,
 h4 a,
@@ -74,6 +74,11 @@ h1 {
     padding:0.25em 1.875em 0.312em 0.937em;
     font-weight: normal;
     line-height: 1.125em;
+}
+h1 a {
+    background-color: &dtml-globalBackgroundColor;;
+    color: &dtml-backgroundColor;;
+    text-decoration: none;
 }
 h2 {
     font-size: 1.182em;
