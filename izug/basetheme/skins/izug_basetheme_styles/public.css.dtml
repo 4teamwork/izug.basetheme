@@ -1342,27 +1342,6 @@ div.overlay #createGroup fieldset { border: none; }
 	background-image:url(&dtml-portal_url;/datepicker_next.gif) !important;
 }
 
-/* fontsize switch */
-ul#portal-fontsize {
-  padding: 0.8em 2.4em 0 1.2em;
-  margin: 0;
-  float: right;
-  list-style-image: none;
-  list-style-type: none;
-}
-ul#portal-fontsize li {
-  display: inline;
-  list-style-image: none;
-  list-style-type: none;
-}
-ul#portal-fontsize li a {
-    text-decoration: none;
-}
-#portal-fontsize img {
-  vertical-align: bottom;
-  height: 0.75em;
-}
-
 /* wizard */
 .wizard {
 

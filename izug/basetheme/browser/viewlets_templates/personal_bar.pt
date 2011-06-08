@@ -1,22 +1,5 @@
 <div id="portal-personaltools-wrapper"
      i18n:domain="plone">
-<ul id="portal-fontsize">
-    <li>
-        <a href="#" onclick="setBaseFontSize('largeText',1);" i18n:attributes="title" title="Fontsize large">
-            <img class="font-sizing-a" tal:attributes="src string: ${here/portal_url}/font_sizing_a.png" style="font-size:200%;" alt="Large font size"/>
-        </a>
-    </li>
-    <li>
-        <a href="#" onclick="setBaseFontSize('normalText',1);" i18n:attributes="title" title="Fontsize medium">
-            <img class="font-sizing-b" tal:attributes="src string: ${here/portal_url}/font_sizing_a.png" style="font-size:150%;" alt="Normal font size"/>
-        </a>
-    </li>
-    <li>
-        <a href="#" onclick="setBaseFontSize('smallText',1);" i18n:attributes="title" title="Fontsize small">
-            <img class="font-sizing-c" tal:attributes="src string: ${here/portal_url}/font_sizing_a.png" style="font-size:100%;" alt="Small font size"/>
-        </a>
-    </li>
-</ul>
 <h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>
 <ul id="portal-personaltools"
     tal:condition="python:view.user_actions or not view.anonymous"
