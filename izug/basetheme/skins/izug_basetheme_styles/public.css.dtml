@@ -1052,8 +1052,8 @@ a.link-parent {
 
 /* Handling external links */
 #content span.link-external a {
-    background: transparent url(&dtml-portal_url;/link_icon.gif) 0px 1px no-repeat;
-    padding: 1px 0px 1px 16px;
+    background: transparent url(&dtml-portal_url;/link_icon.gif) 100% 2px no-repeat;
+    padding: 0 16px 0 0;
 }
 #content span.link-https a {
     background: transparent url(&dtml-portal_url;/lock_icon.gif) 0px 1px no-repeat;
