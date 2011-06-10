@@ -148,7 +148,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     display: block;
     border-bottom-style: none;
 }
-.actionMenu .actionMenuContent {
+.actionMenuContent {
     display: none;
     z-index: 5;
     position: absolute;
@@ -200,10 +200,13 @@ body.template-manage-dashboard .contentViews li a:hover {
     line-height: 1.5em;
     padding: 0 0 0 2em !important;
 }
-.actionMenu .actionMenuContent li a[class*=contenttype-] {
+
+.actionMenu .actionMenuContent li a[class*=contenttype-],
+.actionMenu .actionMenuContent li a[class*=actionicon-] {
     margin: 0.5em 0.4em;
     padding: 0 0 0 2em !important;
 }
+
 .actionMenu .actionMenuContent .selected {
     display: block;
     white-space: nowrap;
