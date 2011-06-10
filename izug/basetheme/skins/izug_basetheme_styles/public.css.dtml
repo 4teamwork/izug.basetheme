@@ -1436,7 +1436,8 @@ div.to_top a:hover {
 .icons-on *[class*=contenttype-],
 .icons-on *[class*=mimetype-],
 .icons-on *[class*=wf-],
-.icons-on *[class*=function-] {
+.icons-on *[class*=function-],
+.icons-on *[class*=actionicon-] {
     background-image: url(&dtml-portal_url;/zugsprite.png);
     background-repeat: no-repeat;
     padding: 0.1em 0 0.1em 2em;
