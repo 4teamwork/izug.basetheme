@@ -207,6 +207,22 @@ body.template-manage-dashboard .contentViews li a:hover {
     padding: 0 0 0 2em !important;
 }
 
+
+/* Disable sprite icons for these actions since they don't have an icon */
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-export_pdf,
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-pdf_dossierdetails,
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-properties,
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-local_roles {
+    background-image: none;
+    padding-left: 0.2em !important;
+}
+
+/* Disable icons for dossier workflow states since they don't have icons */
+.icons-on span[class*=wf-dossier-state-] {
+    background-image: none;
+    padding-left: 0.2em !important;
+}
+
 .actionMenu .actionMenuContent .selected {
     display: block;
     white-space: nowrap;
