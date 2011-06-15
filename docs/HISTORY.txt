@@ -4,7 +4,13 @@ Changelog
 
 1.0a9
 -----
+* Disabled locales for plone 3. Plone translation customization break all 
+  translations in the plone domain.
+  [fsprenger]
 
+* Removed font size switch.
+  [fsprenger]
+    
 * Removed icon_expr for print action (now done with sprites)
   [lgraf]
 

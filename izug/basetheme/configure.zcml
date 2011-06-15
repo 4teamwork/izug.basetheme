@@ -2,12 +2,16 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     i18n_domain="izug.basetheme">
 
   <five:registerPackage package="." initialize=".initialize" />
 
-  <i18n:registerTranslations directory="locales" />
+  <!-- for plone 4 only -->
+  <i18n:registerTranslations 
+      zcml:condition="installed plone.app.upgrade"
+      directory="locales" />
 
   <include package="z3c.jbot" file="meta.zcml" />
   

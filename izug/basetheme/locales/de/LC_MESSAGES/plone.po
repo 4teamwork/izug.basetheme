@@ -12,18 +12,6 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:33
-msgid "Fontsize large"
-msgstr "Schriftgrösse gross"
-
-#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:38
-msgid "Fontsize medium"
-msgstr "Schriftgrösse mittel"
-
-#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:43
-msgid "Fontsize small"
-msgstr "Schriftgrösse klein"
-
 #. Default: "Logout"
 #: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:27
 msgid "Log out"
