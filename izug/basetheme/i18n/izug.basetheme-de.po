@@ -1,0 +1,282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2011-01-14 18:20+0100\n"
+"Last-Translator: Jonas Baumann <j.baumann@4teamwork.ch>\n"
+"Language-Team: 4teamwork <info@4teamwork.ch>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: de\n"
+"Language-Name: Deutsch\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: izug.basetheme\n"
+
+#. Default: "last modified"
+#: ./izug/basetheme/browser/viewlets_templates/byline.pt:35
+msgid "box_last_modified"
+msgstr "Von: "
+
+#. Default: "Created: ${date}"
+#: ./izug/basetheme/browser/viewlets_templates/byline.pt:14
+msgid "byline_created"
+msgstr "Erstellt: ${date}"
+
+#. Default: "This search form enables you to find content on the site by specifying one or more search terms. <br /> Remember that you can use the quick search anytime, it's normally good enough, this search form is just if you want to be more specific."
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:60
+msgid "description_advanced_search"
+msgstr ""
+
+#. Default: "Advanced search for content"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:57
+msgid "heading_advanced_search"
+msgstr "Erweitere Suche"
+
+#. Default: "<div> <input id=\"checked_out\" name=\"checked_out\" type=\"text\" /> </div>"
+#: ./izug/basetheme/browser/document_search.pt:66
+msgid "help_search_checked_out"
+msgstr ""
+
+#. Default: "<input id=\"creator\" class=\"responsible_search\" name=\"creator\" type=\"text\" />"
+#: ./izug/basetheme/browser/document_search.pt:57
+msgid "help_search_creator"
+msgstr ""
+
+#. Default: "Give a range for the deadline."
+#: ./izug/basetheme/browser/task_search.pt:24
+msgid "help_search_deadline"
+msgstr "Geben sie einen Datumsbereich an"
+
+#. Default: "Give a range for the deliver date."
+#: ./izug/basetheme/browser/document_search.pt:21
+msgid "help_search_delivery_date"
+msgstr ""
+
+#: ./izug/basetheme/browser/dossier_search.pt:5
+msgid "help_search_description"
+msgstr ""
+
+#. Default: "<input id=\"document_author\" name=\"document_author\" type=\"text\" />"
+#: ./izug/basetheme/browser/document_search.pt:48
+msgid "help_search_document_author"
+msgstr ""
+
+#. Default: "Give a range for the document date."
+#: ./izug/basetheme/browser/document_search.pt:35
+msgid "help_search_document_date"
+msgstr ""
+
+#. Default: "Give a range for the end date."
+#: ./izug/basetheme/browser/dossier_search.pt:33
+msgid "help_search_end"
+msgstr ""
+
+#. Default: "Return the item wiht the expected reference Number"
+#: ./izug/basetheme/browser/dossier_search.pt:71
+msgid "help_search_filing_number"
+msgstr ""
+
+#. Default: "<input id=\"issuer\" class=\"responsible_search\" name=\"issuer\" type=\"text\" />"
+#: ./izug/basetheme/browser/task_search.pt:5
+msgid "help_search_issuer"
+msgstr ""
+
+#. Default: "for the type specific fields, you have to select one ore more."
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:86
+msgid "help_search_portal_type"
+msgstr ""
+
+#. Default: "Give a range for the receipt date."
+#: ./izug/basetheme/browser/document_search.pt:7
+msgid "help_search_receipt_date"
+msgstr ""
+
+#. Default: "Return the item wiht the expected reference Number"
+#: ./izug/basetheme/browser/dossier_search.pt:47
+msgid "help_search_reference_number"
+msgstr ""
+
+#. Default: "<input class=\"responsible_search\" name=\"responsible\" type=\"text\" />"
+#: ./izug/basetheme/browser/dossier_search.pt:82
+#: ./izug/basetheme/browser/task_search.pt:14
+msgid "help_search_responsible"
+msgstr ""
+
+#. Default: "Return the item wiht the expected sequence Number"
+#: ./izug/basetheme/browser/dossier_search.pt:59
+msgid "help_search_sequence_number"
+msgstr ""
+
+#. Default: "Give a range for the start date."
+#: ./izug/basetheme/browser/dossier_search.pt:19
+msgid "help_search_start"
+msgstr ""
+
+#: ./izug/basetheme/browser/dossier_search.pt:89
+msgid "help_search_state"
+msgstr ""
+
+#. Default: "For a simple text search, enter your search term here. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>. The text in this field will be matched with items' contents, title and description."
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:99
+msgid "help_search_title"
+msgstr ""
+
+#. Default: "Advanced Search…"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:47
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:84
+msgid "label_advanced_search"
+msgstr "Erweiterte Suche"
+
+#. Default: "by ${author}"
+#: ./izug/basetheme/browser/viewlets_templates/byline.pt:16
+msgid "label_by_author"
+msgstr "Federführend: ${author}"
+
+#. Default: "All types"
+#: ./izug/basetheme/browser/task_search.pt:40
+msgid "label_all_types"
+msgstr "Alle Typen"
+
+#. Default: "Filing Number"
+#: ./izug/basetheme/browser/dossier_search.pt:67
+msgid "label_filling_number"
+msgstr "Ablagenummer"
+
+#. Default: "No matching results found."
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:83
+msgid "label_no_results_found"
+msgstr "Keine Treffer"
+
+#. Default: "Search"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:22
+msgid "label_search"
+msgstr "Suchen"
+
+#. Default: "Checked out by"
+#: ./izug/basetheme/browser/document_search.pt:63
+msgid "label_search_checked_out"
+msgstr "Ausgecheckt von"
+
+#. Default: "Creator"
+#: ./izug/basetheme/browser/document_search.pt:54
+msgid "label_search_creator"
+msgstr "Ersteller"
+
+#. Default: "Deadline"
+#: ./izug/basetheme/browser/task_search.pt:20
+msgid "label_search_deadline"
+msgstr "Frist"
+
+#. Default: "delivery date"
+#: ./izug/basetheme/browser/document_search.pt:17
+msgid "label_search_delivery_date"
+msgstr "Ausgangsdatum"
+
+#. Default: "Description"
+#: ./izug/basetheme/browser/dossier_search.pt:3
+msgid "label_search_description"
+msgstr "Beschreibung"
+
+#. Default: "Document"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:92
+msgid "label_search_document"
+msgstr "Dokument"
+
+#. Default: "Document author"
+#: ./izug/basetheme/browser/document_search.pt:45
+msgid "label_search_document_author"
+msgstr "Autor"
+
+#. Default: "document date"
+#: ./izug/basetheme/browser/document_search.pt:31
+msgid "label_search_document_date"
+msgstr "Dokumentdatum"
+
+#. Default: "Dossier"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:90
+msgid "label_search_dossier"
+msgstr "Dossier"
+
+#. Default: "End"
+#: ./izug/basetheme/browser/dossier_search.pt:29
+msgid "label_search_end"
+msgstr "Ende"
+
+#. Default: "receipt_date"
+#: ./izug/basetheme/browser/document_search.pt:3
+msgid "label_search_receipt_date"
+msgstr "Eingangsdatum"
+
+#. Default: "Start"
+#: ./izug/basetheme/browser/dossier_search.pt:16
+msgid "label_search_start"
+msgstr "Start"
+
+#. Default: "Review State"
+#: ./izug/basetheme/browser/dossier_search.pt:88
+msgid "label_search_state"
+msgstr "Status"
+
+#. Default: "Task"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:94
+msgid "label_search_task"
+msgstr "Aufgabe"
+
+#. Default: "Task type"
+#: ./izug/basetheme/browser/task_search.pt:34
+msgid "label_search_tasktype"
+msgstr "Auftragstyp"
+
+#. Default: "Title"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:97
+msgid "label_search_title"
+msgstr "Titel"
+
+#. Default: "Also display trashed items"
+#: ./izug/basetheme/browser/document_search.pt:76
+msgid "label_search_trashed"
+msgstr "Papierkorb auch durchsuchen"
+
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:85
+msgid "label_search_type"
+msgstr "Suchen nach:"
+
+#. Default: "only in current section"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:34
+msgid "label_searchbox_currentfolder_only"
+msgstr "nur im momentanen Ordner"
+
+#. Default: "Show all…"
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:85
+msgid "label_show_all"
+msgstr "Alle anzeigen"
+
+#. Default: "zum Seitenanfang"
+#: ./izug/basetheme/browser/viewlets_templates/siteactions.pt:3
+msgid "label_to_top"
+msgstr "zum Seitenanfang"
+
+#. Default: "LiveSearch &#8595;"
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:82
+msgid "legend_livesearch"
+msgstr "LiveSearch &#8595;"
+
+#. Default: "Responsible"
+#: ./izug/basetheme/browser/dossier_search.pt:79
+#: ./izug/basetheme/browser/task_search.pt:11
+msgid "responsible"
+msgstr "Verantwortlich"
+
+#. Default: "Search Site"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:7
+msgid "text_search"
+msgstr "OpenGever durchsuchen"
+
+#. Default: "Search Site"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:11
+msgid "title_search_site"
+msgstr "OpenGever durchsuchen"
+
+

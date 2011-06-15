@@ -1,0 +1,283 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-10-26 07:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: izug.basetheme\n"
+
+#. Default: "last modified"
+#: ./izug/basetheme/browser/viewlets_templates/byline.pt:35
+msgid "box_last_modified"
+msgstr ""
+
+#. Default: "Created: ${date}"
+#: ./izug/basetheme/browser/viewlets_templates/byline.pt:14
+msgid "byline_created"
+msgstr ""
+
+#. Default: "This search form enables you to find content on the site by specifying one or more search terms. <br /> Remember that you can use the quick search anytime, it's normally good enough, this search form is just if you want to be more specific."
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:60
+msgid "description_advanced_search"
+msgstr ""
+
+#. Default: "Advanced search for content"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:57
+msgid "heading_advanced_search"
+msgstr ""
+
+#: ./izug/basetheme/browser/document_search.pt:66
+msgid "help_search_checked_out"
+msgstr ""
+
+#: ./izug/basetheme/browser/document_search.pt:57
+msgid "help_search_creator"
+msgstr ""
+
+#. Default: "Give a range for the deadline."
+#: ./izug/basetheme/browser/task_search.pt:24
+msgid "help_search_deadline"
+msgstr ""
+
+#. Default: "Give a range for the deliver date."
+#: ./izug/basetheme/browser/document_search.pt:21
+msgid "help_search_delivery_date"
+msgstr ""
+
+#: ./izug/basetheme/browser/dossier_search.pt:5
+msgid "help_search_description"
+msgstr ""
+
+#: ./izug/basetheme/browser/document_search.pt:48
+msgid "help_search_document_author"
+msgstr ""
+
+#. Default: "Give a range for the document date."
+#: ./izug/basetheme/browser/document_search.pt:35
+msgid "help_search_document_date"
+msgstr ""
+
+#. Default: "Give a range for the end date."
+#: ./izug/basetheme/browser/dossier_search.pt:33
+msgid "help_search_end"
+msgstr ""
+
+#. Default: "Return the item wiht the expected reference Number"
+#: ./izug/basetheme/browser/dossier_search.pt:71
+msgid "help_search_filing_number"
+msgstr ""
+
+#: ./izug/basetheme/browser/task_search.pt:5
+msgid "help_search_issuer"
+msgstr ""
+
+#. Default: "for the type specific fields, you have to select one ore more."
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:86
+msgid "help_search_portal_type"
+msgstr ""
+
+#. Default: "Give a range for the receipt date."
+#: ./izug/basetheme/browser/document_search.pt:7
+msgid "help_search_receipt_date"
+msgstr ""
+
+#. Default: "Return the item wiht the expected reference Number"
+#: ./izug/basetheme/browser/dossier_search.pt:47
+msgid "help_search_reference_number"
+msgstr ""
+
+#. Default: "<input class=\"responsible_search\" name=\"responsible\" type=\"text\" />"
+#: ./izug/basetheme/browser/dossier_search.pt:82
+#: ./izug/basetheme/browser/task_search.pt:14
+msgid "help_search_responsible"
+msgstr ""
+
+#. Default: "Return the item wiht the expected sequence Number"
+#: ./izug/basetheme/browser/dossier_search.pt:59
+msgid "help_search_sequence_number"
+msgstr ""
+
+#. Default: "Give a range for the start date."
+#: ./izug/basetheme/browser/dossier_search.pt:19
+msgid "help_search_start"
+msgstr ""
+
+#: ./izug/basetheme/browser/dossier_search.pt:89
+msgid "help_search_state"
+msgstr ""
+
+#. Default: "For a simple text search, enter your search term here. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>. The text in this field will be matched with items' contents, title and description."
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:99
+msgid "help_search_title"
+msgstr ""
+
+#. Default: "Advanced Search…"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:47
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:84
+msgid "label_advanced_search"
+msgstr ""
+
+#. Default: "by ${author}"
+#: ./izug/basetheme/browser/viewlets_templates/byline.pt:16
+msgid "label_by_author"
+
+#. Default: "All types"
+#: ./izug/basetheme/browser/task_search.pt:40
+msgid "label_all_types"
+msgstr ""
+
+#. Default: "Filing Number"
+#: ./izug/basetheme/browser/dossier_search.pt:67
+msgid "label_filling_number"
+msgstr ""
+
+#. Default: "No matching results found."
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:83
+msgid "label_no_results_found"
+msgstr ""
+
+#. Default: "Search"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:22
+msgid "label_search"
+msgstr ""
+
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:121
+msgid "label_search"
+msgstr ""
+
+#. Default: "Checked out by"
+#: ./izug/basetheme/browser/document_search.pt:63
+msgid "label_search_checked_out"
+msgstr ""
+
+#. Default: "Creator"
+#: ./izug/basetheme/browser/document_search.pt:54
+msgid "label_search_creator"
+msgstr ""
+
+#. Default: "Deadline"
+#: ./izug/basetheme/browser/task_search.pt:20
+msgid "label_search_deadline"
+msgstr ""
+
+#. Default: "delivery date"
+#: ./izug/basetheme/browser/document_search.pt:17
+msgid "label_search_delivery_date"
+msgstr ""
+
+#. Default: "Description"
+#: ./izug/basetheme/browser/dossier_search.pt:3
+msgid "label_search_description"
+msgstr ""
+
+#. Default: "Document"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:92
+msgid "label_search_document"
+msgstr ""
+
+#. Default: "Document author"
+#: ./izug/basetheme/browser/document_search.pt:45
+msgid "label_search_document_author"
+msgstr ""
+
+#. Default: "document date"
+#: ./izug/basetheme/browser/document_search.pt:31
+msgid "label_search_document_date"
+msgstr ""
+
+#. Default: "Dossier"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:90
+msgid "label_search_dossier"
+msgstr ""
+
+#. Default: "End"
+#: ./izug/basetheme/browser/dossier_search.pt:29
+msgid "label_search_end"
+msgstr ""
+
+#. Default: "receipt_date"
+#: ./izug/basetheme/browser/document_search.pt:3
+msgid "label_search_receipt_date"
+msgstr ""
+
+#. Default: "Start"
+#: ./izug/basetheme/browser/dossier_search.pt:16
+msgid "label_search_start"
+msgstr ""
+
+#. Default: "Review State"
+#: ./izug/basetheme/browser/dossier_search.pt:88
+msgid "label_search_state"
+msgstr ""
+
+#. Default: "Task"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:94
+msgid "label_search_task"
+msgstr ""
+
+#. Default: "Task type"
+#: ./izug/basetheme/browser/task_search.pt:34
+msgid "label_search_tasktype"
+msgstr ""
+
+#. Default: "Title"
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:97
+msgid "label_search_title"
+msgstr ""
+
+#. Default: "Also display trashed items"
+#: ./izug/basetheme/browser/document_search.pt:76
+msgid "label_search_trashed"
+msgstr ""
+
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:85
+msgid "label_search_type"
+msgstr ""
+
+#. Default: "only in current section"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:34
+msgid "label_searchbox_currentfolder_only"
+msgstr ""
+
+#. Default: "Show all…"
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:85
+msgid "label_show_all"
+msgstr ""
+
+#. Default: "zum Seitenanfang"
+#: ./izug/basetheme/browser/viewlets_templates/siteactions.pt:3
+msgid "label_to_top"
+msgstr ""
+
+#. Default: "LiveSearch &#8595;"
+#: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:82
+msgid "legend_livesearch"
+msgstr ""
+
+#. Default: "Responsible"
+#: ./izug/basetheme/browser/dossier_search.pt:79
+#: ./izug/basetheme/browser/task_search.pt:11
+msgid "responsible"
+msgstr ""
+
+#. Default: "Search Site"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:7
+msgid "text_search"
+msgstr ""
+
+#. Default: "Search Site"
+#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:11
+msgid "title_search_site"
+msgstr ""
+
