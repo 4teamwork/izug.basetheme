@@ -4,6 +4,10 @@ Changelog
 
 1.0a9
 -----
+
+* Updated sprite icons for mimetypes
+  [lgraf]
+
 * Disabled locales for plone 3. Plone translation customization break all 
   translations in the plone domain.
   [fsprenger]
