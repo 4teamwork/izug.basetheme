@@ -148,8 +148,9 @@ code, tt {
     font-family: Monaco, "Courier New", Courier, monospace;
     font-size: 120%;
     color: &dtml-fontColor;;
-    background-color: &dtml-globalBackgroundColor;;
+    background-color: &dtml-contentViewBackgroundColor;;
     padding: 0 0.1em;
+    border: 1px dashed &dtml-contentViewFontColor;;
 }
 pre {
     font-family: Monaco, "Courier New", Courier, monospace;

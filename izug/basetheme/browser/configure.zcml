@@ -29,7 +29,7 @@
       name="test_icons"
       class=".testicons.TestIconsView"
       template="testicons.pt"
-      permission="cmf.ManagePortal"
+      permission="zope2.Public"
       />
       
   <browser:viewlet

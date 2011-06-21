@@ -5,6 +5,10 @@ Changelog
 1.0a9
 -----
 
+* Improved markup on test_icon page, made the page public, improved code 
+  listing style
+  [fsprenger]
+  
 * Updated sprite icons for mimetypes
   [lgraf]
 

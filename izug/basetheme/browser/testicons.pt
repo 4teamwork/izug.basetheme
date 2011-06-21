@@ -67,9 +67,9 @@
 Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle Icons korrekt sind.
 </div>
 <div id="toggler">
-    <p><input type="checkbox" name="code"/>&nbsp;CSS-Klassen anzeigen</p>
-    <p><input type="checkbox" name="show_icons"/>&nbsp;Anzeige von Icons aktivieren (wie in Plone Settings)</p>
-    <p><input type="checkbox" name="show_img"/>&nbsp;&lt;img&gt;-icons aktivieren</p>
+    <div class="field"><input type="checkbox" id="code" name="code"/>&nbsp;<label for="code">CSS-Klassen anzeigen</label></div>
+    <div class="field"><input type="checkbox" id="show_icons" name="show_icons"/>&nbsp;<label for="show_icons">Anzeige von Icons aktivieren (wie in Plone Settings)</label></div>
+    <div class="field"><input type="checkbox" id="show_img" name="show_img"/>&nbsp;<label for="show_img">&lt;img&gt;-icons aktivieren</label></div>
 </div>
 <div id="helper">
     <h2>alle &lt;img ...&gt;-Icons anzeigen</h2>
