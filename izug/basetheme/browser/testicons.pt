@@ -163,7 +163,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <h2>Sonstige Icons (static)</h2>
     <p class="function-add">Hinzufügen</p>
     <code>function-add</code>
-    <p class="function-arrow-right">Pfeil rechts</p>
+    <p class="function-arrow-right">Betonter Link</p>
     <code>function-arrow-right</code>
     <p class="function-basket">Warenkorb</p>
     <code>function-basket</code>
