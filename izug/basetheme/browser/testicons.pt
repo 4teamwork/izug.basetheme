@@ -88,6 +88,20 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     </tal:block>
 </div>
 <div id="dashboard-portlets2">
+    <h2>Content types (static)</h2>
+    <tal:block define="types view/other_content_types;
+                       type_ids python:types.keys();
+                       dummy python:type_ids.sort()"
+               repeat="type_id type_ids">
+            <p tal:attributes="class type_id">
+                <span tal:replace="python:types[type_id]">Type title</span>
+            </p>
+            <code tal:content="type_id"/>  
+    
+    </tal:block>
+
+</div>
+<div id="dashboard-portlets3">
     <h2>Workflow States (static)</h2>
     <p class="wf-task-state-cancelled">Abgebrochen</p>
     <code>wf-task-state-cancelled</code>
@@ -107,8 +121,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <code>wf-forwarding-state-closed</code>
     <p class="wf-forwarding-state-open">Bearbeitung notwendig</p>
     <code>wf-forwarding-state-open</code>
-</div>
-<div id="dashboard-portlets3">
+    
     <h2>Mimetype Icons (static)</h2>
     <p class="mimetype-bmp"><img src="icon_dokument_bilddatei.gif" /> Bitmap</p>
     <code>mimetype-bmp</code>
