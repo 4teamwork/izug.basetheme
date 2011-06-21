@@ -220,9 +220,9 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <p class="function-watchlist">Merkliste</p>
     <code>function-watchlist</code>
     <p class="function-site">Site</p>
-    <code>function-watchlist</code>
+    <code>function-site</code>
     <p class="function-ok">Ok</p>
-    <code>function-watchlist</code>
+    <code>function-ok</code>
 </div>
 <div class="visualClear"><!-- IE Fix --></div>
 </metal:main>
