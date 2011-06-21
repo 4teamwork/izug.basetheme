@@ -4,6 +4,10 @@ Changelog
 
 1.0a9
 -----
+
+* Added sprite icon for response action
+  [lgraf]
+
 * Added more icons, changed news icon, added unused content types
   [fsprenger]
 
