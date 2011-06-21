@@ -4,6 +4,8 @@ Changelog
 
 1.0a9
 -----
+* Added more icons, changed news icon
+  [fsprenger]
 
 * Improved markup on test_icon page, made the page public, improved code 
   listing style

@@ -223,6 +223,13 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <code>function-site</code>
     <p class="function-ok">Ok</p>
     <code>function-ok</code>
+    <p class="function-journal">Journal</p>
+    <code>function-journal</code>
+    <p class="function-journal-inverse">Journal invertiert</p>
+    <code>function-journal-inverse</code>
+    <p class="function-todolist">Traktandenliste</p>
+    <code>function-todolist</code>
+    
 </div>
 <div class="visualClear"><!-- IE Fix --></div>
 </metal:main>
