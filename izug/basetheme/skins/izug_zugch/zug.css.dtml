@@ -10,6 +10,10 @@
     float: right;
     padding-left: 0.909em; // 10px
 }
+.listing-block h2 a {
+    text-decoration: none;
+    color: &dtml-grey5;;
+}
 ul.subelements-listing {
     text-indent: 0;
     margin-left: 0;
