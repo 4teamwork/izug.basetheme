@@ -1536,7 +1536,7 @@ div.to_top a:hover {
 .icon-dokument_excel, .mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel{ background-position: 0 -5661px;  } 
 .icon-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -5727px;  } 
 .icon-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -5793px;  } 
-.icon-dokument_text, .mimetype-plain{ background-position: 0 -5859px;  } 
+.icon-dokument_text, .icon-text, .mimetype-plain{ background-position: 0 -5859px;  } 
 .icon-dokument_visio, .mimetype-vnd-visio{ background-position: 0 -5925px;  } 
 .icon-dokument_webdokument, .mimetype-html{ background-position: 0 -5991px;  } 
 .icon-dokument_word, .mimetype-msword{ background-position: 0 -6057px;  } 
@@ -1551,5 +1551,6 @@ div.to_top a:hover {
 .wf-task-state-in-progress{ background-position: 0 -6650px;  } 
 .wf-task-state-new-successor{ background-position: 0 -6716px;  } 
 .wf-task-state-resolved{ background-position: 0 -6782px;  } 
+
 
 /* </dtml-with> */
