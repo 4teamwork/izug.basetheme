@@ -59,6 +59,7 @@ dd.portletItem .navTreeItem span span {
     color: &dtml-grey4;;
     line-height: 1.454em;
     font-size: 1.1em;
+    background-image: none;
 }
 dd.portletItem .navTreeItem a img {
     display: none;
@@ -69,7 +70,7 @@ dd.portletItem .navTreeItem a:hover {
     text-decoration: underline;
 }
 .navTreeItem .navTreeCurrentItem {
-    background: url(&dtml-portal_url;/icon_areanav_active.gif) repeat-y top left;
+    background: url(&dtml-portal_url;/icon_areanav_active.gif) repeat-y top left !important;
     color: &dtml-grey5; !important;
 }
 
