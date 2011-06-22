@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     clear: both;
 }
 
+/* according to df 2.0 p. 36 not used anymore:
 h2 a,
 h3 a,
 h4 a,
@@ -65,7 +66,7 @@ h5 a,
 h6 a {
     color: &dtml-fontColor; ! important;
     text-decoration: none;
-}
+}*/
 h1 {
     background-color: &dtml-globalBackgroundColor;;
     color: &dtml-backgroundColor;;
