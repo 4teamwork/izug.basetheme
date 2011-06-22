@@ -218,4 +218,19 @@ div.tabbedview-tabs ul.formTabs li a.selected {
 .documentActions a {
     padding: 0.1em 0 0.2em 1.7em !important;
 }
+/* fix button size for ie7 */
+*+html button,
+*+html input[type=button],
+*+html input[type=submit] {
+    font-size: 11px !important;
+    padding: 0.091em 0 !important;
+}
+/* fix search portlet for ie7*/
+.portletSearch {
+    margin-top: 0;
+}
+.portletSearch .portletItem {
+    overflow: hidden;
+}
+
 /* </dtml-with> */

@@ -5,6 +5,9 @@ Changelog
 1.0a9
 -----
 
+* Fixed some annoying layout bugs in IE7
+  [fsprenger]
+
 * Added sprite icon for response action
   [lgraf]
 
