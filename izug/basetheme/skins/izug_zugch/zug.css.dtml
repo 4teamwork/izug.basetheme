@@ -65,4 +65,16 @@ ul.subelements-listing {
     border-color: &dtml-globalBorderColor;;
 }
 
+/* kss spinner */
+#kss-spinner {
+    background-position: center center;
+    display: none;
+    height: 20px;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+    position: fixed;
+    top: 50%;
+    width: 20px;
+}
 /* </dtml-with> */
