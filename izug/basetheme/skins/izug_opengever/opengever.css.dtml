@@ -717,4 +717,11 @@ body.template-login_form #portal-breadcrumbs {
     visibility: hidden;
 }
 
+/* group listing on user detail page */
+.template-user-details table.vertical td ul {
+    list-style:none;
+    margin-left: 0;
+    text-indent: 0;
+}
+
 /* </dtml-with> */
