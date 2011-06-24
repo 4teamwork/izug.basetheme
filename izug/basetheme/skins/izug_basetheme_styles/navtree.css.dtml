@@ -40,6 +40,7 @@
     list-style-image: none; 
 }
 .navTreeLevel0 {
+    margin-top: 0;
     border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
 }
 .navTree li {
