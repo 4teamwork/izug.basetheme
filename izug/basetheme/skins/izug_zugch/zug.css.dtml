@@ -106,10 +106,12 @@ ul.subelements-listing {
     border-collapse: collapse;
     margin-bottom: 1em;
     background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
+    width: 100%;
 }
 #content table caption {
     font-weight: normal;
-    padding: 1.091em 0.454em 0.909em 0;
+    font-size: 1.182em;
+    padding: 0.923em 0.385em 0.769em 0;
 }
 #content table th {
     padding: 1.091em 0.454em 0.909em 0;
