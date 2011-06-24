@@ -1,0 +1,206 @@
+<metal:page define-macro="master"><metal:doctype define-slot="doctype"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"></metal:doctype>
+<metal:block define-slot="top_slot" />
+<metal:block use-macro="here/global_defines/macros/defines" />
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      tal:define="lang language"
+      tal:attributes="lang lang;
+                      xml:lang lang">
+                      
+  <tal:cache tal:define="charset site_properties/default_charset|string:utf-8">
+    <metal:cache use-macro="here/global_cache_settings/macros/cacheheaders">
+      Get the global cache headers located in global_cache_settings.
+    </metal:cache>
+  </tal:cache>
+
+  <head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"
+          tal:define="charset site_properties/default_charset|string:utf-8"
+          tal:attributes="content string:text/html;;charset=${charset}" />
+
+    <metal:baseslot define-slot="base">
+      <base tal:attributes="href here/renderBase" /><!--[if lt IE 7]></base><![endif]-->
+    </metal:baseslot>
+<script type="text/javascript" tal:content="python: 'var GB_ROOT_DIR = \'%s%s\'' % (here.portal_url.getPortalObject().absolute_url(), '/++resource++greybox/')">
+    var GB_ROOT_DIR = "http://mydomain.com/greybox/";
+</script>
+    <meta name="generator" content="Plone - http://plone.org" />
+
+    <div tal:replace="structure provider:plone.htmlhead" />
+
+    <meta tal:define="metatags python:putils.listMetaTags(here).items()"
+          tal:condition="metatags"
+          tal:repeat="keyval metatags"
+          tal:attributes="name python:keyval[0];
+                          content python:keyval[1];" />
+
+    <!-- Internet Explorer CSS Fixes -->
+    <tal:iefixstart replace="structure string:&lt;!--[if IE]&gt;" />
+        <style type="text/css" media="all" tal:condition="exists: portal/IEFixes.css"
+               tal:content="string:@import url($portal_url/IEFixes.css);">
+        </style>
+    <tal:iefixend replace="structure string:&lt;![endif]--&gt;" />
+
+    <link tal:replace="structure provider:plone.htmlhead.links" />
+
+    <link rel="alternate" href="" title="RSS 1.0" type="application/rss+xml"
+          tal:condition="python: syntool.isSyndicationAllowed(here)"
+          tal:attributes="href string:$here_url/RSS" />
+
+    <!-- Disable IE6 image toolbar -->
+    <meta http-equiv="imagetoolbar" content="no" />
+    
+    <tal:comment replace="nothing"> A slot where you can insert elements in the header from a template </tal:comment>
+    <metal:headslot define-slot="head_slot" />
+
+    <tal:comment replace="nothing"> A slot where you can insert CSS in the header from a template </tal:comment>
+    <metal:styleslot define-slot="style_slot" />
+
+    <tal:comment replace="nothing"> This is deprecated, please use style_slot instead. </tal:comment>
+    <metal:cssslot define-slot="css_slot" />
+
+    <tal:comment replace="nothing"> A slot where you can insert javascript in the header from a template </tal:comment>
+    <metal:javascriptslot define-slot="javascript_head_slot" />
+
+    <!-- special css loaded on subsite, it overrides some parts of the original zug.ch css -->
+    <tal:isSubsiteCSS define="css python:getattr(here, 'additional_css', None)"
+                      condition="css">
+      <style type="text/css" media="all"
+             tal:content="string:$css">
+      </style>        
+    </tal:isSubsiteCSS>
+
+    <!-- special css loaded on subsite, it overrides the active navigation icon -->
+    <tal:isSubsiteCSS define="ico python:getattr(here, 'navigation_ico', None)"
+                      condition="ico">
+      <style type="text/css" 
+             media="all" 
+             tal:content="string:#areaNav li.selected a {background-image: url(navigation_ico);}">
+      </style>
+    </tal:isSubsiteCSS>
+
+  </head>
+
+ 
+
+<body id="body">
+
+<div id="container">
+	<!-- Kopfbereich Start -->	
+	<div id="header"> 
+
+      <div id="portal-top" i18n:domain="plone">
+        <div tal:replace="structure provider:plone.portaltop" />
+      </div>
+      
+
+
+	</div>
+	<!-- Kopfbereich Ende -->
+	
+	<div id="main">
+		<!-- linke Spalte Start -->
+		<div id="sideBarLeft"
+			 metal:define-slot="column_one_slot">
+             
+        	 <div class="visualPadding" tal:condition="sl">
+            	  <metal:portlets define-slot="portlets_one_slot">
+                  	<tal:block replace="structure provider:plone.leftcolumn" />
+                  </metal:portlets>
+            </div>
+            
+            <span>&nbsp;</span>
+		</div>
+		<!-- linke Spalte Ende -->
+		<!-- mittlere Spalte Start -->
+		
+    <div id="content"> 
+
+               <metal:block define-slot="content">
+                <div metal:define-macro="content"
+                     tal:define="show_border context/@@plone/showEditableBorder"
+                     tal:attributes="class python:test(show_border,'documentEditable','')">
+
+                  <div tal:replace="structure provider:plone.contentviews" />
+              
+
+              <div id="region-content"
+                   class="documentContent">
+
+                <a name="documentContent"></a>
+                
+                <div metal:use-macro="here/global_statusmessage/macros/portal_message">
+                  Portal status message
+                </div>
+                
+                <div tal:replace="structure provider:plone.abovecontent" />
+                
+                <metal:slot metal:define-slot="body">
+                <tal:comment replace="nothing">
+                    The div with ID #content will only show up if we're actually on a content
+                    view, never on edit forms, control panels etc. It's meant to only wrap the
+                    actual content that gets rendered on a page, not the other UI elements.
+                </tal:comment>
+                
+                
+                <div id="contentsdfdf"
+                     tal:omit-tag="not:context/@@plone_context_state/is_view_template">
+                  <metal:header metal:define-slot="header" tal:content="nothing">
+                    Visual Header
+                  </metal:header>
+                  
+                  
+                  <tal:if condition="python: context.isExpired(context) and not member.has_permission('Modify portal content',context)">
+                    <tal:block define="dummy python:context.REQUEST.RESPONSE.redirect(context.portal_url() + '/expired_content')" />
+                  </tal:if>
+                  
+                  <metal:bodytext metal:define-slot="main" tal:content="nothing">
+                    Page body text
+                  </metal:bodytext>
+                </div>
+                </metal:slot>
+
+                <metal:sub metal:define-slot="sub">
+                
+                  <div tal:replace="structure provider:plone.belowcontent" />
+                
+                </metal:sub>
+
+              </div>
+
+            </div>
+
+          </metal:block>
+       </div>
+		<!-- mittlere Spalte Ende -->
+		<!-- rechte Spalte Start -->
+		<div id="sideBarRight"
+             metal:define-slot="column_two_slot"
+             tal:condition="sr">
+        	<div class="visualPadding">
+        	    <h1 i18n:translate="" class="hiddenStructure">Weitere Informationen</h1>
+				<metal:portlets define-slot="portlets_two_slot">
+                	<tal:block replace="structure provider:plone.rightcolumn" />
+                </metal:portlets>
+            </div>
+
+		</div>
+		<!-- rechte Spalte Ende -->
+	<div class="clear">&nbsp;</div>
+	
+	</div><!-- main Ende -->
+
+
+	<div tal:replace="structure provider:plone.portalfooter" />	
+	
+</div><!-- container Ende -->
+
+
+</body>
+</html>
+</metal:page>

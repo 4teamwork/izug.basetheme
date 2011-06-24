@@ -4,7 +4,9 @@ Changelog
 
 1.0a9
 -----
-
+* Added login / join / register templates from ZugSkin
+  [fsprenger]
+  
 * Table styling for zug.ch, person view styling
   [fsprenger]
 

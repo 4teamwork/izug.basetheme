@@ -1,0 +1,305 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+
+    <metal:block fill-slot="column_two_slot" />
+</head>
+
+<body>
+
+<div metal:fill-slot="main" class="join_form"
+     tal:define="errors options/state/getErrors;
+                 mailhost context/MailHost/smtp_host|nothing;
+                 mailfrom context/email_from_address|nothing;
+                 site_properties context/portal_properties/site_properties;
+                 allowEnterPassword not:utool/getPortalObject/validate_email|nothing;
+                 mailpw site_properties/validate_email;
+                 mailconfigured python:allowEnterPassword or (mailhost and mailfrom)">
+
+  <h1 class="documentFirstHeading"
+      i18n:translate="join_form">Registration Form</h1>
+
+  
+  <div tal:condition="not:mailconfigured">
+    <p i18n:translate="no_join_without_configured_mail">
+      This site has not configured its email settings. Until email has
+      been configured it is not possible to create an account.
+    </p>
+  </div>
+  <form action=""
+        class="enableAutoFocus enableUnloadProtection"
+        method="post"
+        tal:condition="mailconfigured"
+        tal:define="allowEnterPassword site_properties/validate_email|nothing;"
+        tal:attributes="action template_id" >
+
+    <fieldset>
+
+  <legend i18n:translate="help_register_form">
+  Felder mit einem <span class="fieldRequired" title="Erforderlich">(Erforderlich)</span>
+  <br /> sind Pflicht-Felder
+  </legend>
+    
+
+      <input type="hidden" name="came_from" value=""
+             tal:condition="request/came_from|nothing"
+             tal:attributes="value request/came_from" />
+      <input type="hidden" name="last_visit:date" value="ZopeTime"
+             tal:attributes="value here/ZopeTime" />
+      <input type="hidden" name="prev_visit:date" value="ZopeTime"
+             tal:attributes="value here/ZopeTime" />
+      <input type="hidden" name="came_from_prefs" value=""
+             tal:attributes="value request/came_from_prefs|nothing" />
+
+
+      <div class="field"
+           tal:define="error errors/form_of_adress| nothing;
+                       form_of_adress request/form_of_adress | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+        <label for="form_of_adress"
+               i18n:translate="label_form_of_adress">Anrede</label>
+
+        <input type="text"
+               name="form_of_adress"
+               id="form_of_adress"
+               size="30"
+               value="form_of_adress"
+               tal:attributes="value form_of_adress"
+               />
+        <div tal:content="error">Validation error output</div>
+      </div>  
+
+      <div class="row"
+           tal:define="error errors/name| nothing;
+                       name request/name | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+        <label for="name"
+               i18n:translate="label_prename">Vorname</label>
+
+        <input type="text"
+               name="name"
+               id="name"
+               size="30"
+               value="name"
+               tal:attributes="value name;"
+               />
+        <div tal:content="error">Validation error output</div>
+      </div>
+      
+      <div class="row"
+           tal:define="error errors/familyname| nothing;
+                       familyname request/familyname | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+        <label for="familyname"
+               i18n:translate="label_family_name">Nachname</label>
+
+        <input type="text"
+               name="familyname"
+               id="familyname"
+               size="30"
+               value="familyname"
+               tal:attributes="value familyname;"
+               />
+
+            <div tal:content="error">Validation error output</div>
+
+      </div>
+
+      <div class="field" tal:condition="python: member and member.has_role('Manager')"
+           tal:define="error errors/username| nothing;
+                       username request/username | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+        <label for="username"
+               i18n:translate="label_user_name">User Name</label>
+
+              <div i18n:translate="help_user_name_creation_casesensitive"
+                   class="formHelp">
+                Enter a user name, usually something like
+                'jsmith'. No spaces or special characters.
+                Usernames and passwords are case sensitive,
+                make sure the caps lock key is not enabled.
+                This is the name used to log in.
+              </div>
+
+              <div tal:content="error">Validation error output</div>
+
+              <input type="text"
+                     name="username"
+                     id="username"
+                     size="30"
+                     value="username"
+                     tal:attributes="value username;"
+                     />
+      </div>
+
+
+
+      <div class="field"
+           tal:define="error python: request.get('username','') == request.get('email','') and errors.get('username','') or errors.get('email','');
+                       email request/email | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+        <label for="email"
+               i18n:translate="label_login_name" i18n:domain="zug">E-mail</label>
+
+              <input type="text"
+                     name="email"
+                     id="email"
+                     size="30"
+                     tal:attributes="value email;"
+                     />
+              <div tal:content="error">Validation error output</div>
+      </div>
+      
+
+      <div class="field"
+           tal:condition="not: allowEnterPassword"
+           tal:define="error errors/password | nothing;
+                       password request/password | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+        <label for="password"
+               i18n:translate="label_password">Password</label>
+
+              <input type="password"
+                     name="password"
+                     id="password"
+                     size="10"
+                     value=""
+                     />
+              <div tal:content="error">Validation error output</div>
+      </div>
+
+      <div class="field"
+           tal:condition="not: allowEnterPassword"
+           tal:define="error errors/password_confirm | nothing;
+                       password_confirm request/password_confirm | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+
+        <label for="password_confirm"
+               i18n:translate="label_confirm_password">Confirm password</label>
+
+              <input type="password"
+                     name="password_confirm"
+                     id="password_confirm"
+                     size="10"
+                     value=""
+                     />
+            <div tal:content="error">Validation error output</div>
+      </div>
+
+      <div class="field"
+           tal:condition="not: allowEnterPassword"
+           tal:define="mail_me request/mail_me|nothing">
+
+        <inpute type="hidden"
+                name="mail_me"
+                id="cb_mailme"
+                value="1" />
+                
+      </div>
+  </fieldset>
+
+  <fieldset>
+       
+    <legend i18n:translate="help_optionale_angaben">Optional</legend>    
+
+      <div class="field"
+           tal:define="error errors/company_name| nothing;
+                       company_name request/company_name | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+        <label for="company_name"
+               i18n:translate="label_company_name">Company name</label>
+
+        <div tal:content="error">Validation error output</div>
+
+        <input type="text"
+               name="company_name"
+               id="company_name"
+               size="30"
+               value="company_name"
+               tal:attributes="value company_name;"
+               />
+
+      </div>      
+
+      <div class="field"
+           tal:define="error errors/street_nr| nothing;
+                       street_nr request/street_nr | nothing;"
+           tal:attributes="class python:test(error, 'field error', 'field')">
+
+        <label for="street_nr"
+               i18n:translate="label_street_nr">Strasse / Nr.</label>
+
+        <div tal:content="error">Validation error output</div>
+
+        <input type="text"
+               name="street_nr"
+               id="street_nr"
+               size="30"
+               value="street_nr"
+               tal:attributes="value street_nr;"
+               />
+
+      </div>      
+
+      <div class="field"
+           tal:define="zip request/zip | nothing;
+                       city request/city | nothing;">
+
+        <label for="zip"
+               i18n:translate="label_city_zip">Ort / PLZ</label>
+
+        <input type="text"
+               name="zip"
+               id="zip"
+               size="4"
+               value="zip"
+               tal:attributes="value zip;"
+               />
+      <input type="text"
+               name="city"
+               id="city"
+               size="22"
+               value="city"
+               tal:attributes="value city;"
+               />
+
+      </div>  
+
+
+
+
+      <div class="formControls">
+        <input class="formSubmit"
+               type="submit"
+               name="form.button.Register"
+               value="Register"
+               i18n:attributes="value label_register;" />
+      </div>
+        
+    </fieldset>
+
+    <input type="hidden" name="form.submitted" value="1" />
+
+  </form>
+  
+  
+</div>
+
+</body>
+</html>
