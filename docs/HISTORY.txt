@@ -5,6 +5,9 @@ Changelog
 1.0a9
 -----
 
+* Table styling for zug.ch, person view styling
+  [fsprenger]
+
 * Fixed some annoying layout bugs in IE7
   [fsprenger]
 

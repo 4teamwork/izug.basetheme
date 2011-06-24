@@ -1,4 +1,11 @@
 /* <dtml-with base_properties> */
+/* base styling */
+.isAnon h1.documentFirstHeading {
+    margin-bottom: 0.625em !important;
+}
+.isAnon .documentActions {
+    margin-top: -3em;
+}
 /* listing pages */
 .listing-column-right, .listing-column-left {
     width: 23.636em; // 260px
@@ -77,4 +84,59 @@ ul.subelements-listing {
     top: 50%;
     width: 20px;
 }
+/* zugmitglied */
+.zugMitglied-portrait {
+    float: left; 
+    padding-right: 1.818em;
+}
+
+.zugMitglied-details {
+    float: left;
+    width: 30.454em;
+}
+
+.zugMitglied-bio {
+    clear: both;
+    padding-top: 2.727em;
+}
+
+
+/* default table style */
+table,
+table.grid,
+table.invisible,
+table.vertical {
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+table th,
+table.grid th,
+table.invisible th,
+table.vertical th {
+    padding: 1.091em 0.454em 0.909em 0;
+    text-align: left;
+    vertical-align: top;
+}
+table td,
+table.grid td,
+table.invisible td,
+table.vertical td {
+    padding: 0.272em 0 0.272em;
+    vertical-align: top;
+}
+
+
+table {
+    background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
+}
+table td {
+    border-left: 0.272em &dtml-backgroundColor; solid;
+    border-bottom: 1px solid &dtml-zugblue;;
+    border-top:  1px solid &dtml-zugblue;;
+}
+table td:first-child,
+table th:first-child  {
+    border-left-style: none !important;
+}
+
 /* </dtml-with> */
