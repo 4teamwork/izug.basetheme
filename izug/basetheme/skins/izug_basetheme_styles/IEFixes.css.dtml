@@ -233,4 +233,8 @@ div.tabbedview-tabs ul.formTabs li a.selected {
     overflow: hidden;
 }
 
+/* ie 7 doesnt support hidding with positioning on thead elements */
+thead.hiddenStructureAFAthead {
+    display: none;
+}
 /* </dtml-with> */
