@@ -164,7 +164,8 @@ table.eShop td.right a img {
 }
 
 /* login / pwreset / registration ... */
-.template-login_form div#portal-column-content {
+.template-login_form div#portal-column-content,
+.template-join_form div#portal-column-content {
     /* right and left column: 96em - 18em - 25em */
     margin-left: -71em;
     width: 53em;
@@ -172,5 +173,20 @@ table.eShop td.right a img {
 #forgotten-password {
     float: none;
     margin: 0;
+}
+
+.template-join_form label {
+    width: 14em;
+    display: block;
+    float: left;
+}
+.template-join_form input[type=text] {
+    float: left;
+    margin-right: 0.7em;
+}
+.template-join_form input[type=submit] {
+    float: none;
+    clear: both;
+    display: block;
 }
 /* </dtml-with> */
