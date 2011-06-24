@@ -286,9 +286,8 @@
 
 
       <div class="formControls">
-        <input class="formSubmit"
+        <input class="formSubmit context"
                type="submit"
-               class="context"
                name="form.button.Register"
                value="Register"
                i18n:attributes="value label_register;" />
