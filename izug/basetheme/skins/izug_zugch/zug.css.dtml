@@ -21,11 +21,11 @@
     text-decoration: none;
     color: &dtml-grey5;;
 }
-ul.subelements-listing {
+.documentContent ul.subelements-listing {
     text-indent: 0;
     margin-left: 0;
 }
-.subelements-listing li {
+.documentContent .subelements-listing li {
     display: inline;
     margin: 0 !important;
 }
@@ -102,46 +102,61 @@ ul.subelements-listing {
 
 
 /* default table style */
-#content table {
+table {
     border-collapse: collapse;
     margin-bottom: 1em;
     background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
     width: 100%;
 }
-#content table caption {
+table caption {
     font-weight: normal;
     font-size: 1.182em;
     padding: 0.923em 0.385em 0.769em 0;
 }
-#content table th {
+table th {
     padding: 1.091em 0.454em 0.909em 0;
     text-align: left;
     vertical-align: top;
 }
-#content table td {
+table td {
     padding: 0.272em 0 0.272em;
     vertical-align: top;
     border-left: 0.272em &dtml-backgroundColor; solid;
     border-bottom: 1px solid &dtml-zugblue;;
     border-top:  1px solid &dtml-zugblue;;
 }
-#content table td:first-child,
-#content table th:first-child  {
+table td:first-child,
+table th:first-child  {
     border-left-style: none !important;
 }
-
-/* table styles - ie overrides */
-*+html #content table {
+table.invisible {
     background-image: none;
 }
-#content table td  {
+/* table styles - ie overrides */
+*+html table {
+    background-image: none;
+}
+table td  {
     border-top-style: none\9
 }
-*+html #content table th {
+*+html table th {
     border-left: 0.272em transparent solid;
     border-bottom: 1px solid &dtml-zugblue;;
 }
 
-
-
+/* shop */
+ul.file-download {
+    margin-left: 0;
+    list-style:none;
+    text-indent: 0;
+}
+table.eShop caption {
+    font-weight: bold;
+}
+table.eShop td.column1 {
+    width: 42.909em;
+}
+table.eShop td.right a img {
+    padding: 0 0 0 1em;
+}
 /* </dtml-with> */
