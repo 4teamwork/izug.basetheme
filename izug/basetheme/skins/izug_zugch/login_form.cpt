@@ -14,7 +14,7 @@
     </metal:js>
     <metal:block fill-slot="top_slot"
                  tal:define="dummy python:request.set('disable_border',1)" />
-
+    <metal:block fill-slot="column_one_slot" />
     <metal:block fill-slot="column_two_slot" />
 </head>
 
@@ -29,7 +29,6 @@
                  ac_password auth/pw_cookie|string:__ac_password;
                  ac_persist auth/persist_cookie|nothing;
                  login_name python:request.get('login_name', request.get(ac_name, ''));">
-
 
 <h1 i18n:translate="">mein Konto: Anmelden</h1>
 <metal:login define-macro="login">
@@ -135,7 +134,7 @@
 
         <div class="formControls">
 
-            <input class="formSubmit"
+            <input class="formSubmit context"
                    type="submit"
                    name="submit"
                    value="Log in"
