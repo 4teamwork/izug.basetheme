@@ -6,6 +6,9 @@
 .isAnon .documentActions {
     margin-top: -3em;
 }
+#portal-personaltools-wrapper {
+    width: 80%;
+}
 /* listing pages */
 .listing-column-right, .listing-column-left {
     width: 23.636em; // 260px
