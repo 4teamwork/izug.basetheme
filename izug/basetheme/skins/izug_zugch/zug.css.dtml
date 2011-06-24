@@ -97,46 +97,49 @@ ul.subelements-listing {
 
 .zugMitglied-bio {
     clear: both;
-    padding-top: 2.727em;
+    padding-top: 0.91em;
 }
 
 
 /* default table style */
-table,
-table.grid,
-table.invisible,
-table.vertical {
+#content table {
     border-collapse: collapse;
     margin-bottom: 1em;
+    background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
 }
-table th,
-table.grid th,
-table.invisible th,
-table.vertical th {
+#content table caption {
+    font-weight: normal;
+    padding: 1.091em 0.454em 0.909em 0;
+}
+#content table th {
     padding: 1.091em 0.454em 0.909em 0;
     text-align: left;
     vertical-align: top;
 }
-table td,
-table.grid td,
-table.invisible td,
-table.vertical td {
+#content table td {
     padding: 0.272em 0 0.272em;
     vertical-align: top;
-}
-
-
-table {
-    background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
-}
-table td {
     border-left: 0.272em &dtml-backgroundColor; solid;
     border-bottom: 1px solid &dtml-zugblue;;
     border-top:  1px solid &dtml-zugblue;;
 }
-table td:first-child,
-table th:first-child  {
+#content table td:first-child,
+#content table th:first-child  {
     border-left-style: none !important;
 }
+
+/* table styles - ie overrides */
+*+html #content table {
+    background-image: none;
+}
+#content table td  {
+    border-top-style: none\9
+}
+*+html #content table th {
+    border-left: 0.272em transparent solid;
+    border-bottom: 1px solid &dtml-zugblue;;
+}
+
+
 
 /* </dtml-with> */
