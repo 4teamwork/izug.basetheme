@@ -193,4 +193,31 @@ table.eShop td.right a img {
     clear: both;
     display: block;
 }
+
+/* sitemap */
+.template-sitemap div#portal-column-content {
+    margin-left: -71em;
+    width: 53em;
+}
+
+#sitemap li a {
+    line-height: 1.4em;
+    background-image: none;
+    padding-left: 0;
+}
+#sitemap>li>div>a {
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE;
+    display: block;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+#sitemap ul.navTreeLevel2 {
+    padding-left: 0;
+    margin-left:0;
+    text-indent:0;
+}
 /* </dtml-with> */
