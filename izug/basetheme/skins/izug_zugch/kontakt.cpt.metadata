@@ -1,0 +1,12 @@
+[default]
+title= Kontaktformular
+
+[security]
+View=0:Anonymous
+
+[validators]
+validators=validate_kontakt
+
+[actions]
+action.success=traverse_to:string:kontakt_send
+action.failure=traverse_to:string:kontakt

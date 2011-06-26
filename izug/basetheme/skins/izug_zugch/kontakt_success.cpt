@@ -1,0 +1,66 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="zug">
+
+<head>
+    <metal:noborder fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+</head>
+
+<body>
+
+ <metal:block fill-slot="portlets_one_slot">
+       <tal:block condition="python: not hasattr(context.aq_inner.aq_explicit, 'tabs')" 
+                  replace="structure provider:plone.leftcolumn" />
+ </metal:block>
+
+<div metal:fill-slot="main">
+
+	<h1 class="documentFirstHeading"
+		i18n:translate="heading_contact_form"
+		i18n:domain="plone">Contact form</h1>
+	
+	<p i18n:translate="kontakt_message_success">
+		Your Message has been sent. Thank you.
+	</p>
+
+    <p>
+        <b i18n:translate="">Ihre Angaben</b>
+    </p>
+
+    <div class="SenderInfos">
+        <b i18n:translate="kontakt_label_sender_prename">Vorname</b>
+        <span tal:content="request/infos/sender_prename | nothing">Name</span>
+        <br />
+        <b i18n:translate="kontakt_label_sender_surname">Nachname</b>
+        <span tal:content="request/infos/sender_surname | nothing">Name</span>
+        <br />
+        <b i18n:translate="kontakt_label_sender_from_address">Email</b>
+        <span tal:content="request/infos/sender_from_address | nothing">email</span>
+        <br />
+        <br />
+	    <b i18n:translate="contact_message_label">Nachricht</b>
+	    <pre tal:content="request/infos/message | nothing">message</pre>
+	    <br />
+	    <br />
+	    <b i18n:translate="kontakt_label_sender_address">Adresse</b>
+        <span tal:replace="request/infos/sender_address | nothing">address</span>
+        <br />
+        <b i18n:translate="kontakt_label_sender_zip">PLZ</b>
+        <b i18n:translate="kontakt_label_sender_residence">Ort</b>
+        <span tal:replace="request/infos/sender_zip | nothing">zip</span> <span tal:replace="request/infos/sender_residence | nothing">city</span>
+        <br />
+        <b i18n:translate="kontakt_label_sender_phone">Telefon</b>
+        <span tal:content="request/infos/sender_phone | nothing">phone</span>
+    </div>
+    <br />
+    <p>
+    <button class="contactPrintButton" onClick="javascript:print();" name="form.button.print" class="formSubmit">Drucken</button>
+    </p>
+</div>
+</body>
+</html>

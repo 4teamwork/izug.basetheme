@@ -1,0 +1,21 @@
+<div i18n:domain="zug" 
+     tal:omit-tag=""
+     tal:define="utool nocall:here/portal_url;
+                 portal utool/getPortalObject;
+                 charset portal/email_charset|string:utf-8;
+                 dummy python:request.RESPONSE.setHeader('Content-Type', 'text/plain;;charset=%s' % charset);"
+				 >
+<div i18n:translate="kontakt_mail_body" tal:omit-tag="">
+This message was sent to you by <span i18n:name="fullname" tal:omit-tag="" tal:content="options/sender_fullname|nothing" /> (<span i18n:name="from_address" tal:omit-tag="" tal:content="options/sender_from_address|nothing" />) from the contact-form at <span i18n:name="url" tal:replace="options/url" />.
+
+Senders address:
+	<span i18n:name="fullname" tal:omit-tag="" tal:content="options/sender_fullname|nothing" />
+	<span i18n:name="address" tal:omit-tag="" tal:content="options/sender_address|nothing" />
+	<span i18n:name="zip" tal:omit-tag="" tal:content="options/sender_zip|nothing" /> <span i18n:name="residence" tal:omit-tag="" tal:content="options/sender_residence|nothing" />
+	<span i18n:name="phone" tal:omit-tag="" tal:content="options/sender_phone|nothing" />
+
+Nessage:
+
+<span i18n:name="message" tal:omit-tag="" tal:content="options/message|nothing" />
+</div>
+</div>

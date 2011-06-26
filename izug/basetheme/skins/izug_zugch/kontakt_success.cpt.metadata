@@ -1,0 +1,5 @@
+[default]
+title= Kontakt Success
+
+[security]
+View=0:Anonymous
