@@ -189,7 +189,7 @@
 			</fieldset>
 
       		<div class="formControls">
-				<input class="formSubmit"
+				<input class="formSubmit context"
 					type="submit"
 					name="form.button.Send"
 					value="Send"
