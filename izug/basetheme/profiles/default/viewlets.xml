@@ -52,7 +52,7 @@
         <viewlet name="plone.nextprevious"/>
         <viewlet name="plone.site_actions"/>
     </order>
-
+    
     <!-- below content body -->
     <hidden manager="plone.belowcontentbody" skinname="iZug Base Theme">
         <viewlet name="plone.abovecontenttitle.documentactions"/>

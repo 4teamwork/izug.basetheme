@@ -1,0 +1,35 @@
+<taL:block i18n:domain="izug.basetheme">
+  <div class="to_top">
+    <a href="#" i18n:translate="label_to_top">To Top</a>
+  </div>
+</tal:block>
+<ul id="portal-siteactions"
+    tal:define="accesskeys python: {'sitemap' : '3', 'accessibility' : '0', 'contact' : '9'};"
+    tal:condition="view/site_actions"
+    i18n:domain="plone">
+
+    <li tal:repeat="saction view/site_actions"
+        tal:attributes="id string:siteaction-${saction/id}"><a
+           href=""
+           tal:define="title saction/title;
+                       id saction/id;
+                       accesskey python: accesskeys.get(id, '');"
+           i18n:attributes="title"
+           i18n:translate=""
+           tal:content="title"
+           tal:attributes="href saction/url;
+                           title title;
+                           accesskey accesskey;"
+           >Site action</a>
+	</li>
+    <tal:block define="backtoparent_link view/backtoparent_link;
+                       backtoparent_title view/backtoparent_title">
+	    <li tal:condition="backtoparent_link">
+            <a tal:attributes="href backtoparent_link;
+                               title backtoparent_title"
+               tal:content="backtoparent_title">
+               Back to parent
+            </a>                   
+        </li>
+    </tal:block>
+</ul>

@@ -1,0 +1,5 @@
+<layers>
+ <layer
+     name="izug.basetheme"
+     interface="izug.basetheme.browser.interfaces.IZugWebsiteSpecific" />
+</layers>

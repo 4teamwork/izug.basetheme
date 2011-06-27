@@ -56,6 +56,15 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <!-- zug.ch need a customized site_actions-viewlet -->
+  <browser:viewlet
+      name="plone.site_actions"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+      class=".viewlets.ZugSiteActions"
+      permission="zope2.View"
+      layer=".interfaces.IZugWebsiteSpecific"
+      />
+      
   <browser:viewlet
       name="plone.abovecontenttitle.documentactions"
       manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"

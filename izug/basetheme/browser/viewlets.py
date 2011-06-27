@@ -1,8 +1,10 @@
 from AccessControl import getSecurityManager
-from Acquisition import aq_inner
+from Acquisition import aq_inner, aq_parent
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Products.CMFCore.utils import getToolByName
 from izug.basetheme.utils import get_version_and_config
 from pkg_resources import iter_entry_points
+from plone.app.layout.navigation.root import getNavigationRoot
 from plone.app.layout.viewlets import common, content
 from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.memoize import ram
@@ -34,6 +36,25 @@ class SiteActions(common.SiteActionsViewlet):
             if len(data):
                 return data[0]
         return ''
+
+class ZugSiteActions(common.SiteActionsViewlet):
+    """Custom site actions viewlet for zug.ch
+    """
+    index = ViewPageTemplateFile('viewlets_templates/zug_siteactions.pt')
+    
+    def update(self):
+        super(ZugSiteActions, self).update()
+        portal_root = getToolByName(self.context,'portal_url').getPortalObject()
+        nav_root = getNavigationRoot(self.context)
+        
+        if nav_root != '/'.join(portal_root.getPhysicalPath()):
+            parent_nav_root = getNavigationRoot(aq_parent(self.context.restrictedTraverse(nav_root)))
+            parent_obj = self.context.restrictedTraverse(parent_nav_root)
+        else:
+            parent_obj = portal_root
+            
+        self.backtoparent_link = parent_obj.absolute_url()
+        self.backtoparent_title = getattr(parent_obj,'title',',Kanton Zug')
 
 
 class DocumentActions(content.DocumentActionsViewlet):
