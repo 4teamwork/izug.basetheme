@@ -6,6 +6,7 @@ Changelog
 -----
 
 * Implemented izug.theme navigation (zug behavior). 
+  UPDATE: import profile (it will install a custom property sheet)
   [27.06.2011, mathias.leimgruber]
 
 * Moved ftw.mail.mail FTI from default to opengever profile
