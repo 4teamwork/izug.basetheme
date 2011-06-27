@@ -5,6 +5,9 @@ Changelog
 1.0a9
 -----
 
+* Implemented izug.theme navigation (zug behavior). 
+  [27.06.2011, mathias.leimgruber]
+
 * Moved ftw.mail.mail FTI from default to opengever profile
   [lgraf]
 
