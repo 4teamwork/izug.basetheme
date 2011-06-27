@@ -232,8 +232,7 @@ table.eShop td.right a img {
     padding-left: 1em;
 }
 /* XXX disable sprites until we get rid of all icon expressions in types / actions .... */
-.icons-on [class*="contenttype-"], .icons-on [class*="mimetype-"], .icons-on [class*="wf-"], .icons-on [class*="function-"], .icons-on [class*="actionicon-"], .icons-on [class*="icon-"] {
+.icons-on [class*="contenttype-"], .icons-on [class*="mimetype-"], .icons-on [class*="wf-"], .icons-on [class*="actionicon-"],  .icons-on [class*="icon-"] {
     background-image: none;
     padding-left: 0;
-}
-/* </dtml-with> */
+}/* </dtml-with> */
