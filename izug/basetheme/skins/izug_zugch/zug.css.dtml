@@ -226,9 +226,14 @@ table.eShop td.right a img {
     width: 100%;
 }
 
-/* kantonsratvorlagen like lis */
+/* kantonsratvorlagen like lists */
 .template-zugkantonsratsvorlagenordner_view .eShop td.searchResult a {
-background: url(&dtml-portal_url;/icon_list.gif) transparent no-repeat 0 60% ;
-padding-left: 1em;
+    background: url(&dtml-portal_url;/icon_list.gif) transparent no-repeat 0 60% ;
+    padding-left: 1em;
+}
+/* XXX disable sprites until we get rid of all icon expressions in types / actions .... */
+.icons-on [class*="contenttype-"], .icons-on [class*="mimetype-"], .icons-on [class*="wf-"], .icons-on [class*="function-"], .icons-on [class*="actionicon-"], .icons-on [class*="icon-"] {
+    background-image: none;
+    padding-left: 0;
 }
 /* </dtml-with> */
