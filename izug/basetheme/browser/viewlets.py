@@ -19,6 +19,9 @@ class PathBar(common.PathBarViewlet):
 class PersonalBar(common.PersonalBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
+class ZugPersonalBar(common.PersonalBarViewlet):
+    index = ViewPageTemplateFile('viewlets_templates/zug_personal_bar.pt')
+
 class SiteActions(common.SiteActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/siteactions.pt')
 

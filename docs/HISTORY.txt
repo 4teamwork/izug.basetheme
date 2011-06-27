@@ -5,7 +5,7 @@ Changelog
 1.0a9
 -----
 
-* Added browserlayer for zug.ch, customized site actions viewlet for zug.ch
+* customized site actions and personal tools viewlet for zug.ch
   [27.06.2011, fsprenger]
 
 * Added sortAttribut and sortOrder to metadata. 

@@ -1,0 +1,32 @@
+<div id="portal-personaltools-wrapper"
+     i18n:domain="plone">
+<h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>
+
+<ul id="portal-personaltools"
+    tal:condition="python:view.user_actions or not view.anonymous"
+    class="visualInline">
+    <tal:actions tal:repeat="action view/user_actions">
+        <li>
+            <tal:if tal:condition="python: action['id'] in ['logout', 'login']">
+            	<tal:block i18n:translate="">myZug</tal:block>:
+            </tal:if>
+            <a href=""
+               tal:attributes="href action/url"
+            ><tal:actionname i18n:translate="" 
+                             tal:content="action/title">dummy</tal:actionname
+            ></a>
+        </li>
+    </tal:actions>
+
+   <tal:block condition="not: view/anonymous">
+       <li><a 
+           id="user-name"
+           tal:attributes="href string:${view/portal_url}/logout"
+          ><span class="visualCaseSensitive"
+                 tal:content="view/user_name">
+                John
+           </span
+       > <span i18n:translate="Log out" tal:omit-tag="">Logout</span></a></li>
+   </tal:block>
+</ul>
+</div>
