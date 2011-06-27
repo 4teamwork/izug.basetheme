@@ -11,6 +11,7 @@ from plone.memoize import ram
 from plone.memoize.instance import memoize
 from zope.component import getMultiAdapter
 from random import randrange
+from izug.basetheme.browser.helper import css_class_from_obj
 
 
 class PathBar(common.PathBarViewlet):
@@ -66,6 +67,10 @@ class DocumentActions(content.DocumentActionsViewlet):
 
 class Byline(content.DocumentBylineViewlet):
     index = ViewPageTemplateFile('viewlets_templates/byline.pt')
+    
+    def css_class_from_obj(self):
+        return css_class_from_obj(self.context)
+
     @memoize
     def workflow_state(self):
         context = aq_inner(self.context)

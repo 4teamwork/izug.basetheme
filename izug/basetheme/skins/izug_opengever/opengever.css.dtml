@@ -551,56 +551,19 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
     background-color: &dtml-yellow;;
 
 }
+.byline-icon{
+	display: block;
+    float: left;
+    height: 1.454em;
+    margin-right: 0.454em;
+    width: 1.454em;
+}
 
 /* icons for byline */
 /* TODO: spritify */
 .documentByLine {
-    padding-left: 3em !important;
-    background-repeat: no-repeat;
-    background-position: 1em 0.1em;
+    padding-left: 1em !important;
 }
-.portaltype-opengever-dossier-businesscasedossier .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_dossier.gif);
-}
-
-/* Custom dossier types */
-.portaltype-opengever-zug-bdarp-casedossier1 .documentByLine,
-.portaltype-opengever-zug-bdarp-casedossier2 .documentByLine,
-.portaltype-opengever-zug-bdbds-bdbdscasedossier1 .documentByLine,
-.portaltype-opengever-zug-bdbds-bdbdscasedossier2 .documentByLine,
-.portaltype-opengever-zug-digva-orderdossier .documentByLine,
-.portaltype-opengever-zug-skakr-businesscasedossier .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_dossier.gif);
-}
-
-.portaltype-opengever-document-document .documentByLine {
-    background-image: url(&dtml-portal_url;/document_icon.gif);
-}
-.portaltype-opengever-inbox-inbox .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_eingangskorb.gif);
-}
-.portaltype-opengever-inbox-forwarding .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_eingangskorb.gif);
-}
-.portaltype-opengever-task-task .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_aufgabe.gif);
-}
-.portaltype-opengever-repository-repositoryfolder .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_ordnungsposition.gif);
-}
-.portaltype-opengever-dossier-templatedossier .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_dossier.gif);
-}
-.portaltype-opengever-contact-contactfolder .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_ordner.gif);
-}
-.portaltype-opengever-repository-repositoryroot .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_ordnungssystem.gif);
-}
-.portaltype-opengever-contact-contact  .documentByLine {
-    background-image: url(&dtml-portal_url;/icon_objekt_kontakt.gif);
-}
-
 
 /* workflow items */
 /* TODO: spritify */

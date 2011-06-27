@@ -1443,11 +1443,10 @@ div.to_top a:hover {
 .icons-on *[class*=function-],
 .icons-on *[class*=actionicon-],
 .icons-on *[class*=icon-] {
-    background-image: url(&dtml-portal_url;/zugsprite.png);
+	background-image: url(&dtml-portal_url;/zugsprite.png);
     background-repeat: no-repeat;
     padding: 0.1em 0 0.1em 2em;
 }
-
 
 /* generated css */
 .actionicon-folder_factories-add_participant, .contenttype-opengever-contact-contact, .contenttype-zugmitglied, .function-user{ background-position: 0 0;  } 

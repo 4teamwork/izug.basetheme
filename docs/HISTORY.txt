@@ -18,6 +18,10 @@ Changelog
 * Moved ftw.mail.mail FTI from default to opengever profile
   [lgraf]
 
+* Issue #1052 Byline icons durch sprite icons ersetzen
+  Added ByLine modifications
+  [ttschanz]
+
 * Added login / join / register templates from ZugSkin
   [fsprenger]
   
