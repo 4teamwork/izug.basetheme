@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<object name="portal_properties" meta_type="Plone Properties Tool">
+ <object name="zug_navi_properties" meta_type="Plone Property Sheet">
+  <property name="sitemapDepth" type="int">6</property>
+  <property name="zugTypesNotToListInNavigation" type="lines">
+   <element value="Block"/>
+   <element value="Blog"/>
+   <element value="Blog Category" />
+   <element value="Blog Entry"/>
+   <element value="Buch"/>
+   <element value="Content Page"/>
+   <element value="News"/>2
+   <element value="Meeting"/>
+   <element value="Mitglied"/>
+   <element value="Table"/>
+   <element value="VernehmlassungsOrdner"/>
+  </property>
+  <property name="navigation_hide_types_if_not_current" type="lines">
+   <element value="Arbeitsraum"/>
+   <element value="Meeting"/>
+   <element value="BillboardCategory"/>
+  </property>
+  <property name="zugBottomLevel" type="string">4</property>
+ </object>
+</object>
