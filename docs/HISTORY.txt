@@ -8,6 +8,9 @@ Changelog
 * Added browserlayer for zug.ch, customized site actions viewlet for zug.ch
   [27.06.2011, fsprenger]
 
+* Added sortAttribut and sortOrder to metadata. 
+  [27.06.2011, mathias.leimgruber]
+
 * Implemented izug.theme navigation (zug behavior). 
   UPDATE: import profile (it will install a custom property sheet)
   [27.06.2011, mathias.leimgruber]

@@ -18,7 +18,7 @@ class ZugNavigationRenderer(plone_navigation.Renderer):
             'effective': 'effective',
             'modified': 'modified'}
 
-    @memoize
+#    @memoize
     def getNavTree(self, _marker=None):
         tree = super(ZugNavigationRenderer, self).getNavTree(_marker)
         tree['children'] = self.cleanup_nodes(tree['children'])
@@ -52,7 +52,7 @@ class ZugNavigationRenderer(plone_navigation.Renderer):
 
         def subSorter(node):
             sortAttribute = node.get('sortAttribute', '')
-            if sortAttribute=='getObjPositionInParent' \
+            if sortAttribute or sortAttribute=='getObjPositionInParent' \
                 or sortAttribute not in self.sort_attributes.keys():
                 # already sorted by catalog or no valid sortAttribute
                 return node
@@ -119,17 +119,26 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
 
     def decoratorFactory(self, node):
         node = super(ZugNavtreeStrategy, self).decoratorFactory(node)
-        node['sortAttribute'] = node['item'].sortAttribute
-        node['sortOrder'] = node['item'].sortOrder
+        
+        # sortAttribute and sortOrder should be stored on the brain
+        node['sortAttribute'] = getattr(
+            node['item'],
+            'sortAttribute',
+            'getPositionInParent')
+        node['sortOrder'] = getattr(
+            node['item'],
+            'sortOrder',
+            '')
+            
         node['link_remote'] = node['link_remote'] and \
             node['getRemoteUrl'] != 'http://'
         return node
 
-    @memoize
+#    @memoize
     def get_excluded_types(self):
         portal_properties = getToolByName(self.context, 'portal_properties')
         excluded_types = list(
-            portal_properties.zug_navi_properties.getProperty(
+            portal_properties.navtree_properties.getProperty(
                 'metaTypesNotToList',
                 []))
         excluded_types += list(
@@ -138,7 +147,7 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
                 []))
         return excluded_types
 
-    @memoize
+#    @memoize
     def get_excluded_sibling_types(self):
         """
         These types should be shown if they are currentItem or currentParent,
