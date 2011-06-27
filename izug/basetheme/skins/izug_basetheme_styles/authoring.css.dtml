@@ -212,7 +212,8 @@ body.template-manage-dashboard .contentViews li a:hover {
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-export_pdf,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-pdf_dossierdetails,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-properties,
-.actionMenu .actionMenuContent li a.actionicon-object_buttons-local_roles {
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-local_roles,
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-paste {
     background-image: none;
     padding-left: 0.2em !important;
 }
