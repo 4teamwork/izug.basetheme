@@ -52,7 +52,7 @@ class ZugNavigationRenderer(plone_navigation.Renderer):
 
         def subSorter(node):
             sortAttribute = node.get('sortAttribute', '')
-            if sortAttribute or sortAttribute=='getObjPositionInParent' \
+            if sortAttribute=='getObjPositionInParent' \
                 or sortAttribute not in self.sort_attributes.keys():
                 # already sorted by catalog or no valid sortAttribute
                 return node
