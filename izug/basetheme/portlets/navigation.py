@@ -18,7 +18,7 @@ class ZugNavigationRenderer(plone_navigation.Renderer):
             'effective': 'effective',
             'modified': 'modified'}
 
-#    @memoize
+    @memoize
     def getNavTree(self, _marker=None):
         tree = super(ZugNavigationRenderer, self).getNavTree(_marker)
         tree['children'] = self.cleanup_nodes(tree['children'])
@@ -134,7 +134,7 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
             node['getRemoteUrl'] != 'http://'
         return node
 
-#    @memoize
+    @memoize
     def get_excluded_types(self):
         portal_properties = getToolByName(self.context, 'portal_properties')
         excluded_types = list(
@@ -147,7 +147,7 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
                 []))
         return excluded_types
 
-#    @memoize
+    @memoize
     def get_excluded_sibling_types(self):
         """
         These types should be shown if they are currentItem or currentParent,
