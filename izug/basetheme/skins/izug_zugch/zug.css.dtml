@@ -225,4 +225,10 @@ table.eShop td.right a img {
 .googleMapActive.googleMapLocation {
     width: 100%;
 }
+
+/* kantonsratvorlagen like lis */
+.template-zugkantonsratsvorlagenordner_view .eShop td.searchResult a {
+background: url(&dtml-portal_url;/icon_list.gif) transparent no-repeat 0 60% ;
+padding-left: 1em;
+}
 /* </dtml-with> */
