@@ -220,4 +220,9 @@ table.eShop td.right a img {
     margin-left:0;
     text-indent:0;
 }
+
+/* map */
+.googleMapActive.googleMapLocation {
+    width: 100%;
+}
 /* </dtml-with> */
