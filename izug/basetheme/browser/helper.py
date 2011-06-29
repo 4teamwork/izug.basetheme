@@ -1,4 +1,3 @@
-from opengever.ogds.base.interfaces import IContactInformation
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from zope.component import getUtility
 
