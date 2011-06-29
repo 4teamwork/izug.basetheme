@@ -95,15 +95,18 @@ h3, h4, h5, h6 {
 }
 /* Links with differently colored link underlines - only for content */
 .documentContent p a {
-    text-decoration: underline;
+    text-decoration: none;
+    border-bottom: 1px solid &dtml-linkColor;;
 }
 .documentContent p a:visited {
     color: &dtml-linkVisitedColor;;
     background-color: transparent;
+    border-bottom: 1px solid &dtml-linkVisitedColor;;
 }
 .documentContent p a:active {
     color: &dtml-linkActiveColor;;
     background-color: transparent;
+    border-bottom: 1px solid &dtml-linkActiveColor;;
 }
 
 #content a:target {
@@ -111,13 +114,15 @@ h3, h4, h5, h6 {
 }
 .documentContent li a {
     text-decoration: none;
+    border-bottom: 1px solid white;
 }
 .documentContent li a:visited {
     color: &dtml-linkVisitedColor;;
-    text-decoration: underline;
+    border-bottom: 1px solid &dtml-linkVisitedColor;;
 }
 .documentContent li a:active {
     color: &dtml-linkActiveColor;;
+    border-bottom: 1px solid &dtml-linkActiveColor;;
 }
 
 .documentContent dd a {

@@ -66,6 +66,7 @@ h5 a,
 h6 a {
     color: &dtml-fontColor; ! important;
     text-decoration: none;
+    border-bottom-style: none;
 }*/
 h1 {
     background-color: &dtml-globalBackgroundColor;;
