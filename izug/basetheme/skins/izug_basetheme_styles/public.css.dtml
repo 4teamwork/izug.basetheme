@@ -1534,25 +1534,27 @@ div.to_top a:hover {
 .function-watch-inverse{ background-position: 0 -5397px;  } 
 .function-watch{ background-position: 0 -5463px;  } 
 .function-watchlist{ background-position: 0 -5529px;  } 
-.icon-dokument_email, .mimetype-rfc822{ background-position: 0 -5595px;  } 
-.icon-dokument_excel, .mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel{ background-position: 0 -5661px;  } 
-.icon-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -5727px;  } 
-.icon-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -5793px;  } 
-.icon-dokument_text, .icon-text, .mimetype-plain{ background-position: 0 -5859px;  } 
-.icon-dokument_visio, .mimetype-vnd-visio{ background-position: 0 -5925px;  } 
-.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -5991px;  } 
-.icon-dokument_word, .mimetype-msword{ background-position: 0 -6057px;  } 
-.icon-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -6123px;  } 
-.mimetype-vnd-sun-xml-calc{ background-position: 0 -6189px;  } 
-.mimetype-vnd-sun-xml-draw{ background-position: 0 -6255px;  } 
-.mimetype-vnd-sun-xml-impress{ background-position: 0 -6321px;  } 
-.mimetype-vnd-sun-xml-writer{ background-position: 0 -6387px;  } 
-.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6453px;  } 
-.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -6518px;  } 
-.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -6584px;  } 
-.wf-task-state-in-progress{ background-position: 0 -6650px;  } 
-.wf-task-state-new-successor{ background-position: 0 -6716px;  } 
-.wf-task-state-resolved{ background-position: 0 -6782px;  } 
+.icon-application{ background-position: 0 -5595px;  } 
+.icon-dokument_email, .mimetype-rfc822{ background-position: 0 -5661px;  } 
+.icon-dokument_excel, .mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel{ background-position: 0 -5727px;  } 
+.icon-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -5793px;  } 
+.icon-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -5859px;  } 
+.icon-dokument_text, .icon-text, .mimetype-plain{ background-position: 0 -5925px;  } 
+.icon-dokument_visio, .mimetype-vnd-visio{ background-position: 0 -5991px;  } 
+.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -6057px;  } 
+.icon-dokument_word, .mimetype-msword{ background-position: 0 -6123px;  } 
+.icon-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -6189px;  } 
+.mimetype-vnd-sun-xml-calc{ background-position: 0 -6255px;  } 
+.mimetype-vnd-sun-xml-draw{ background-position: 0 -6321px;  } 
+.mimetype-vnd-sun-xml-impress{ background-position: 0 -6387px;  } 
+.mimetype-vnd-sun-xml-writer{ background-position: 0 -6453px;  } 
+.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6519px;  } 
+.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -6584px;  } 
+.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -6650px;  } 
+.wf-task-state-in-progress{ background-position: 0 -6716px;  } 
+.wf-task-state-new-successor{ background-position: 0 -6782px;  } 
+.wf-task-state-resolved{ background-position: 0 -6848px;  } 
+
 
 
 /* </dtml-with> */

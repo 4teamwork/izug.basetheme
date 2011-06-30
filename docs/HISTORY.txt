@@ -5,6 +5,12 @@ Changelog
 1.0a9
 -----
 
+* Added generic application icon as fallback for application/* mimetypes
+  [lgraf]
+
+* Added mimetype for *.docx to mimetypes_registry
+  [lgraf]
+
 * customized site actions and personal tools viewlet for zug.ch
   [27.06.2011, fsprenger]
 
