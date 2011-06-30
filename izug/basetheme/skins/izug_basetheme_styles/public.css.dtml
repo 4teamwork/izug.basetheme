@@ -475,6 +475,8 @@ h3, h4, h5, h6 {
 .breadcrumbSeparator {
     background: url(&dtml-portal_url;/breadcrumbs_separator.gif) no-repeat scroll 0 45% transparent;
     margin: 0 0.3em;
+    margin: 0 0 0 0.3em;
+    padding: 0 0.3em 0 0;
 }
 .addFavorite {
     vertical-align: bottom;
