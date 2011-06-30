@@ -32,7 +32,8 @@
            icon_path="icon_dokument_visio.gif" />
  <mimetype mimetypes="text/html" 
            icon_path="icon_dokument_webdokument.gif" />
- <mimetype mimetypes="application/msword" 
+ <mimetype mimetypes="application/msword
+                      application/vnd.openxmlformats-officedocument.wordprocessingml.document" 
            icon_path="icon_dokument_word.gif" />
  <mimetype mimetypes="application/zip
                       application/x-zip-compressed" 
