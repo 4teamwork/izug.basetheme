@@ -226,6 +226,18 @@ body.template-manage-dashboard .contentViews li a:hover {
     padding-left: 0.2em !important;
 }
 
+
+/* Disable icon in byline for plone site */
+body.portaltype-plone-site .byline-icon{
+    display: none;
+}
+
+/* Disable seperator since there's no icon to the left of it */
+div.documentByLine span:nth-child(2) {
+    border-left: none;
+}
+
+
 .actionMenu .actionMenuContent .selected {
     display: block;
     white-space: nowrap;

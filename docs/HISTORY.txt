@@ -5,6 +5,9 @@ Changelog
 1.0a9
 -----
 
+* Fixed byline icon for overview tab
+  [lgraf]
+
 * Added generic application icon as fallback for application/* mimetypes
   [lgraf]
 
