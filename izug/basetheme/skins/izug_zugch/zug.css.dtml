@@ -29,8 +29,8 @@
     margin-left: 0;
 }
 .documentContent .subelements-listing li {
-    display: inline;
-    margin: 0 !important;   
+    display: inline-block;
+    margin: 0 0 0.364em 0 !important;   
 }
 .divider {
     background-image: url(&dtml-portal_url;/icon_list_vertical.gif);

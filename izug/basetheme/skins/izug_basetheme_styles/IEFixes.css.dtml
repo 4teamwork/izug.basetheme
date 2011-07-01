@@ -237,4 +237,10 @@ div.tabbedview-tabs ul.formTabs li a.selected {
 thead.hiddenStructureAFAthead {
     display: none;
 }
+/* ie 7 doesnt support inline-block */
+*+html .documentContent .subelements-listing li {
+    display: inline;
+    margin: 0 0.364em 0.364em 0 !important;   
+}
+
 /* </dtml-with> */

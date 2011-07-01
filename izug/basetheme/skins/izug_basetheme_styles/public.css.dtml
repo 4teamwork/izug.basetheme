@@ -62,9 +62,9 @@ h3, h4, h5, h6 {
     list-style-image: url(&dtml-portal_url;/icon_list.gif);
     list-style-type: square;
     line-height: 1.454em;
-    margin: 0 0 1.091em 1.818em;
+    margin: 0 0 1.091em 1.363em;
     color: &dtml-grey5;;
-    text-indent: -0.454em;
+    text-indent: 0.182em;
 }
 .documentContent ol {
     line-height: 1.454em;
@@ -76,7 +76,8 @@ h3, h4, h5, h6 {
 .documentContent ul ol,
 .documentContent ol ul,
 .documentContent ol ol {
-    margin-left: 1.364em;
+    margin-left: 0;
+    padding-left: 1.818em;
 }
 .documentContent ul li,
 .documentContent ol li {
