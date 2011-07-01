@@ -6,7 +6,7 @@
     tal:condition="python:view.user_actions or not view.anonymous"
     class="visualInline">
     <tal:actions tal:repeat="action view/user_actions">
-        <li>
+        <li tal:condition="python:action['id']!='join'">
             <tal:if tal:condition="python: action['id'] in ['logout', 'login']">
             	<span><tal:block i18n:translate="">myZug</tal:block>:</span>
             </tal:if>
