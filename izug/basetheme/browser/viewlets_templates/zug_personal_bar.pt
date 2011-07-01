@@ -8,7 +8,7 @@
     <tal:actions tal:repeat="action view/user_actions">
         <li>
             <tal:if tal:condition="python: action['id'] in ['logout', 'login']">
-            	<tal:block i18n:translate="">myZug</tal:block>:
+            	<span><tal:block i18n:translate="">myZug</tal:block>:</span>
             </tal:if>
             <a href=""
                tal:attributes="href action/url"

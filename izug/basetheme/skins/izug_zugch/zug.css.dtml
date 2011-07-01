@@ -9,6 +9,9 @@
 #portal-personaltools-wrapper {
     width: 80%;
 }
+#portal-personaltools li span {
+    font-size: 1.1em;
+}
 /* listing pages */
 .listing-column-right, .listing-column-left {
     width: 23.636em; // 260px
