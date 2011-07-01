@@ -150,6 +150,13 @@ table td  {
     border-left: 0.272em transparent solid;
     border-bottom: 1px solid &dtml-zugblue;;
 }
+table[border="0"],
+table[border="0"] td {
+    background-image: none !important;
+    border-style: none !important;
+}
+
+
 
 /* shop */
 ul.file-download {
@@ -228,6 +235,7 @@ table.eShop td.right a img {
 /* map */
 .googleMapActive.googleMapLocation {
     width: 100%;
+    margin-bottom: 0.909em;
 }
 
 /* kantonsratvorlagen like lists */
