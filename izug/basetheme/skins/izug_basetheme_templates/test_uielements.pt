@@ -93,6 +93,7 @@ example <a href="irc://some.network/#channel">IRC link</a>.
     <li>Unordered list element 1
         <ul>
             <li>Unordered list subelement 1</li>
+            <li>Unordered list subelement 2 with <br>line break</li>
         </ul>
     </li>
     <li>Unordered list element 2</li>
@@ -101,7 +102,10 @@ example <a href="irc://some.network/#channel">IRC link</a>.
 
 <ol>
     <li>Ordered list element 1
-        <ol><li>Ordered list subelement 1</li></ol>
+        <ol>
+            <li>Ordered list subelement 1</li>
+            <li>Ordered list subelement 2 with <br>line break</li>
+        </ol>
     </li>
     <li>Ordered list element 2</li>
     <li>Ordered list element 3</li>
