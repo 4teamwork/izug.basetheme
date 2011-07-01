@@ -239,4 +239,17 @@ table.eShop td.right a img {
 .icons-on [class*="contenttype-"], .icons-on [class*="mimetype-"], .icons-on [class*="wf-"], .icons-on [class*="actionicon-"],  .icons-on [class*="icon-"] {
     background-image: none;
     padding-left: 0;
-}/* </dtml-with> */
+}
+
+/* simplelayout */
+#content .sl-img-half .sl-img-wrapper, 
+#content .sl-img-squarish .sl-img-wrapper, 
+#content .sl-img-thumbnail .sl-img-wrapper {
+	margin-right: 1.818em;
+	margin-bottom: 0.909em;
+}
+#content .sl-img-full .sl-img-wrapper {
+	margin-right: 0;
+	margin-bottom: 0.909em;
+}
+/* </dtml-with> */
