@@ -285,4 +285,19 @@ form#login_form .formControls {
 	margin-right: 0;
 	margin-bottom: 0.909em;
 }
+
+/* hide banner on certain pages */
+.template-search #visual,
+.template-login_form #visual,
+.template-logged_out #visual,
+.template-join_form #visual,
+.template-login_success #visual,
+.template-login_failed #visual,
+.template-mail_password_form #visual,
+.template-personalize_form #visual,
+.template-kontakt #visual,
+.template-plone_control_panel #visual,
+.template-sitemap #visual {
+    display: none;
+}
 /* </dtml-with> */
