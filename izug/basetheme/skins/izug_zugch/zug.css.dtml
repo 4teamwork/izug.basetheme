@@ -176,6 +176,7 @@ table.eShop td.right a img {
 
 /* login / pwreset / registration ... */
 .template-login_form div#portal-column-content,
+.template-logged_out div#portal-column-content,
 .template-join_form div#portal-column-content,
 .template-login_success div#portal-column-content,
 .template-login_failed div#portal-column-content,
