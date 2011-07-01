@@ -188,10 +188,12 @@ table.eShop td.right a img {
 }
 #forgotten-password {
     float: none;
-    margin: 0;
+    margin: 3.636em 0 0 0;
 }
 
-.template-join_form label {
+.template-join_form label,
+.template-login_form label,
+.template-logged_out label {
     width: 14em;
     display: block;
     float: left;
@@ -205,7 +207,17 @@ table.eShop td.right a img {
     clear: both;
     display: block;
 }
-
+form#login_form  {
+    margin-top: 2.727em;
+}
+form#login_form input[type=text],
+form#login_form input[type=password] {
+    width: 20em;
+}
+form#login_form .formControls {
+    margin-top: 3.636em;
+    margin-bottom: 0.909em;
+}
 /* sitemap */
 .template-sitemap div#portal-column-content {
     margin-left: -71em;
