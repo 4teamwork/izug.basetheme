@@ -76,7 +76,7 @@ h3, h4, h5, h6 {
 .documentContent ul ol,
 .documentContent ol ul,
 .documentContent ol ol {
-    margin-left: 0;
+    margin: 0;
     padding-left: 1.818em;
 }
 .documentContent ul li,

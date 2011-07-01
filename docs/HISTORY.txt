@@ -4,7 +4,9 @@ Changelog
 
 1.0a9
 -----
-
+* styling changes according to df 2.1v7
+  [fsprenger]
+  
 * Fixed byline icon for overview tab
   [lgraf]
 
