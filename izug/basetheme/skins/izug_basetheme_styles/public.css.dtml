@@ -99,7 +99,7 @@ h3, h4, h5, h6 {
     text-decoration: underline;
 }
 .documentContent p a:visited {
-    color: &dtml-linkVisitedColor;;
+    color: &dtml-grey5;;
     background-color: transparent;
 }
 .documentContent p a:active {
