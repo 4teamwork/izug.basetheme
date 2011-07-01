@@ -60,7 +60,13 @@
 				<legend i18n:translate="kontakt_legend_mandatory">Mandatory Fields</legend>
 				<table class="invisible">
 					<tr>
-						<td class="formLeftColum"><label for="sender_prename" i18n:translate="kontakt_label_sender_prename">Prename</label></td>
+						<td class="formLeftColum">
+						    <label for="sender_prename" i18n:translate="kontakt_label_sender_prename">Prename</label>
+                            <span class="fieldRequired" title="Required"
+                                  i18n:domain="plone"
+                                  i18n:attributes="title title_required;"
+                                  i18n:translate="label_required">(Required)</span>
+						</td>
 						<td>
 						   <div	class="field"
 									tal:define="error errors/sender_prename|nothing"
@@ -76,7 +82,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td  class="formLeftColum"><label for="sender_surname" i18n:translate="kontakt_label_sender_surname">Surname</label></td>
+						<td  class="formLeftColum">
+						    <label for="sender_surname" i18n:translate="kontakt_label_sender_surname">Surname</label>
+                            <span class="fieldRequired" title="Required"
+                                  i18n:domain="plone"
+                                  i18n:attributes="title title_required;"
+                                  i18n:translate="label_required">(Required)</span>
+						</td>
 						<td>
 						   <div	class="field"
 									tal:define="error errors/sender_surname|nothing"
@@ -92,7 +104,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td  class="formLeftColum"><label for="sender_from_address" i18n:translate="kontakt_label_sender_from_address">E-Mail</label></td>
+						<td  class="formLeftColum">
+						    <label for="sender_from_address" i18n:translate="kontakt_label_sender_from_address">E-Mail</label>
+						    <span class="fieldRequired" title="Required"
+                                  i18n:domain="plone"
+                                  i18n:attributes="title title_required;"
+                                  i18n:translate="label_required">(Required)</span>
+						</td>
 						<td>
 						   <div	class="field"
 									tal:define="error errors/sender_from_address|nothing"
@@ -108,7 +126,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td  class="formLeftColum"><label for="message" i18n:translate="kontakt_label_message">Message</label></td>
+						<td  class="formLeftColum">
+						    <label for="message" i18n:translate="kontakt_label_message">Message</label>
+						    <span class="fieldRequired" title="Required"
+                                  i18n:domain="plone"
+                                  i18n:attributes="title title_required;"
+                                  i18n:translate="label_required">(Required)</span>
+						</td>
 						<td>
 						   <div	class="field"
 									tal:define="error errors/message|nothing"

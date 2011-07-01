@@ -4,6 +4,9 @@ Changelog
 
 1.0a9
 -----
+* contact form required fields, required style
+  [fsprenger]
+  
 * styling changes according to df 2.1v7
   [fsprenger]
   

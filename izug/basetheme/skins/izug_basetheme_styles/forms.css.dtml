@@ -203,9 +203,12 @@ input#form-buttons-button_archive  {
   margin: 0;
 }
 .fieldRequired {
-  background: url(&dtml-portal_url;/required.gif) center left no-repeat;
-  padding: 0 0 0 8px;
   color: &dtml-backgroundColor;;
+}
+.fieldRequired:before{
+    content:"*";
+    color: #000000;
+    font-weight: bold;
 }
 .fieldUploadFile {
   text-align: right;

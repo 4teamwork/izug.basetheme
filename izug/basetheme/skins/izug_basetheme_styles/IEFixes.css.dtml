@@ -245,5 +245,10 @@ thead.hiddenStructureAFAthead {
     display: inline;
     margin: 0 0.364em 0.364em 0 !important;   
 }
+*+html .fieldRequired {
+  background: url(&dtml-portal_url;/required_ie7.png) center left no-repeat;
+  padding: 0 0 0 8px;
+}
+
 
 /* </dtml-with> */
