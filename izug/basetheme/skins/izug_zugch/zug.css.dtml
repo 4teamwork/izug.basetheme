@@ -11,6 +11,7 @@
 }
 #portal-personaltools li span {
     font-size: 1.1em;
+    color: &dtml-grey4;;
 }
 /* listing pages */
 .listing-column-right, .listing-column-left {
