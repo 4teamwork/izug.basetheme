@@ -159,6 +159,14 @@ table[border="0"] td {
     background-image: none !important;
     border-style: none !important;
 }
+/* zug.ch has paragraphs in table captions -> another stupid css fix */
+table caption p {
+    font-size: 0.846em;
+    margin-bottom: 0;
+}
+table caption p strong {
+    font-size: 1.182em;
+}
 
 
 
