@@ -35,6 +35,7 @@
 }
 
 .portletItem ul {
+    margin-top: 0;
     list-style-type: none
 }
 
