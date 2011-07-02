@@ -539,14 +539,15 @@ h3, h4, h5, h6 {
     margin: 0 1em 0 0;
 }
 .documentActions {
-    margin: -2em 0.272em 0 0;
+    position: relative;
+    margin: 0;
     padding: 0;
-    text-align: right;
-    float: right;
     background-color: transparent;
 }
 .documentActions ul {
-    margin: 0;
+position: absolute;
+    right: 0;
+    margin: 0.363em 0 0;
     display: block;
     list-style-type: none;
     list-style-image: none;

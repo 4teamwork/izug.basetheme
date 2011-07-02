@@ -84,7 +84,7 @@
       
   <browser:viewlet
       name="plone.abovecontenttitle.documentactions"
-      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
       class=".viewlets.DocumentActions"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"

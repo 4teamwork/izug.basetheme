@@ -4,6 +4,10 @@ Changelog
 
 1.0a9
 -----
+* moved documentactions to abovecontenttitle (vertical position when title
+  has a line break). import viewlets.xml form default profile
+  [fsprenger]
+
 * contact form required fields, required style
   [fsprenger]
   

@@ -3,9 +3,6 @@
 .isAnon h1.documentFirstHeading {
     margin-bottom: 0.625em !important;
 }
-.isAnon .documentActions {
-    margin-top: -3em;
-}
 #portal-personaltools-wrapper {
     width: 80%;
 }
