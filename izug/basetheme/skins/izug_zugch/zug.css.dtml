@@ -260,8 +260,9 @@ form#login_form .formControls {
 
 /* kantonsratvorlagen like lists */
 .template-zugkantonsratsvorlagenordner_view .eShop td.searchResult a {
-    background: url(&dtml-portal_url;/icon_list.gif) transparent no-repeat 0 60% ;
-    padding-left: 1em;
+    background: url(&dtml-portal_url;/icon_list.gif) transparent no-repeat 0 0.636em;
+    display:block;
+    padding-left: 1.636em;
 }
 /* XXX disable sprites until we get rid of all icon expressions in types / actions .... */
 .icons-on [class*="contenttype-"], .icons-on [class*="mimetype-"], .icons-on [class*="wf-"], .icons-on [class*="actionicon-"],  .icons-on [class*="icon-"] {
