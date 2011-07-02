@@ -33,19 +33,20 @@
 
     <tal:if condition="here/getAdresse | nothing">
   	<h2 i18n:domain="plone" i18n:translate="">Adresse</h2>
-        <tal:c condition="context/getAddressTitle"><span tal:content="context/getAddressTitle| nothing" /><br /></tal:c>
-        <span tal:define="address_title python:context.getContextByFunc(context.getAdresse).Title()" tal:content="address_title | nothing" /><br />
-        <span tal:replace="structure python: here.getAdresse() and str(here.getAdresse()).replace('\n', '<br />') or ''" /><br />
-        <span tal:replace="structure python: here.getAdresse_zusatz() and str(here.getAdresse_zusatz()).replace('\n', '<br />')+'<br/>' or ''" />
-        <span tal:content="context/getPlz | nothing" />
-        <span tal:content="context/getOrt | nothing" /><br />
-        Tel. <span tal:content="context/getTelefon_nr | nothing" /><br />
-        Fax <span tal:content="context/getFax_nr | nothing" /><br />
-
-        <span tal:define="email context/getEmail | nothing" tal:condition="email">
-            <a href="" tal:attributes="href string:mailto:${email}" tal:content="email" />
-        </span>
-        <br /><br />
+  	    <p>
+            <tal:c condition="context/getAddressTitle"><span tal:content="context/getAddressTitle| nothing" /><br /></tal:c>
+            <span tal:define="address_title python:context.getContextByFunc(context.getAdresse).Title()" tal:content="address_title | nothing" /><br />
+            <span tal:replace="structure python: here.getAdresse() and str(here.getAdresse()).replace('\n', '<br />') or ''" /><br />
+            <span tal:replace="structure python: here.getAdresse_zusatz() and str(here.getAdresse_zusatz()).replace('\n', '<br />')+'<br/>' or ''" />
+            <span tal:content="context/getPlz | nothing" />
+            <span tal:content="context/getOrt | nothing" /><br />
+            Tel. <span tal:content="context/getTelefon_nr | nothing" /><br />
+            Fax <span tal:content="context/getFax_nr | nothing" /><br />
+            
+            <span tal:define="email context/getEmail | nothing" tal:condition="email">
+                <a href="" tal:attributes="href string:mailto:${email}" tal:content="email" />
+            </span>
+        </p>
     </tal:if>
 
         <form name="feedback_form"
@@ -56,161 +57,153 @@
 	            tal:define="errors options/state/getErrors"
 	            tal:attributes="action string:$here_url/$template_id">
 
-			<fieldset>
-				<legend i18n:translate="kontakt_legend_mandatory">Mandatory Fields</legend>
-				<table class="invisible">
-					<tr>
-						<td class="formLeftColum">
-						    <label for="sender_prename" i18n:translate="kontakt_label_sender_prename">Prename</label>
-                            <span class="fieldRequired" title="Required"
-                                  i18n:domain="plone"
-                                  i18n:attributes="title title_required;"
-                                  i18n:translate="label_required">(Required)</span>
-						</td>
-						<td>
-						   <div	class="field"
-									tal:define="error errors/sender_prename|nothing"
-									tal:attributes="class python:test(error, 'field error', 'field')">
-								<input type="text"
-										id="sender_prename"
-										name="sender_prename"
-										size="40"
-										value=""
-										tal:attributes="value request/sender_prename|nothing" />
-								<div tal:content="error">Validation error output</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td  class="formLeftColum">
-						    <label for="sender_surname" i18n:translate="kontakt_label_sender_surname">Surname</label>
-                            <span class="fieldRequired" title="Required"
-                                  i18n:domain="plone"
-                                  i18n:attributes="title title_required;"
-                                  i18n:translate="label_required">(Required)</span>
-						</td>
-						<td>
-						   <div	class="field"
-									tal:define="error errors/sender_surname|nothing"
-									tal:attributes="class python:test(error, 'field error', 'field')">
-								<input type="text"
-										id="sender_surname"
-										name="sender_surname"
-										size="40"
-										value=""
-										tal:attributes="value request/sender_surname|nothing" />
-								<div tal:content="error">Validation error output</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td  class="formLeftColum">
-						    <label for="sender_from_address" i18n:translate="kontakt_label_sender_from_address">E-Mail</label>
-						    <span class="fieldRequired" title="Required"
-                                  i18n:domain="plone"
-                                  i18n:attributes="title title_required;"
-                                  i18n:translate="label_required">(Required)</span>
-						</td>
-						<td>
-						   <div	class="field"
-									tal:define="error errors/sender_from_address|nothing"
-									tal:attributes="class python:test(error, 'field error', 'field')">
-								<input type="text"
-										id="sender_from_address"
-										name="sender_from_address"
-										size="40"
-										value=""
-										tal:attributes="value request/sender_from_address|nothing" />
-								<div tal:content="error">Validation error output</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td  class="formLeftColum">
-						    <label for="message" i18n:translate="kontakt_label_message">Message</label>
-						    <span class="fieldRequired" title="Required"
-                                  i18n:domain="plone"
-                                  i18n:attributes="title title_required;"
-                                  i18n:translate="label_required">(Required)</span>
-						</td>
-						<td>
-						   <div	class="field"
-									tal:define="error errors/message|nothing"
-									tal:attributes="class python:test(error, 'field error', 'field')">
-								<textarea
-										id="message"
-										name="message"
-										rows="5"
-										tal:content="request/message|nothing"></textarea><br />
-								<div tal:content="error">Validation error output</div>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</fieldset>
 
-			<fieldset>
-				<legend i18n:translate="kontakt_legend_optional">Optional Fields</legend>
-				<table class="invisible">
-					<tr>
-						<td  class="formLeftColum"><label for="sender_address" i18n:translate="kontakt_label_sender_address">Address</label></td>
-						<td>
-						   <div	class="field"
-									tal:define="error errors/sender_address|nothing"
+			<table class="invisible">
+				<tr>
+					<td class="formLeftColum">
+					    <label for="sender_prename" i18n:translate="kontakt_label_sender_prename">Prename</label>
+                        <span class="fieldRequired" title="Required"
+                              i18n:domain="plone"
+                              i18n:attributes="title title_required;"
+                              i18n:translate="label_required">(Required)</span>
+					</td>
+					<td>
+					   <div	class="field"
+								tal:define="error errors/sender_prename|nothing"
+								tal:attributes="class python:test(error, 'field error', 'field')">
+							<input type="text"
+									id="sender_prename"
+									name="sender_prename"
+									size="40"
+									value=""
+									tal:attributes="value request/sender_prename|nothing" />
+							<div tal:content="error">Validation error output</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td  class="formLeftColum">
+					    <label for="sender_surname" i18n:translate="kontakt_label_sender_surname">Surname</label>
+                        <span class="fieldRequired" title="Required"
+                              i18n:domain="plone"
+                              i18n:attributes="title title_required;"
+                              i18n:translate="label_required">(Required)</span>
+					</td>
+					<td>
+					   <div	class="field"
+								tal:define="error errors/sender_surname|nothing"
+								tal:attributes="class python:test(error, 'field error', 'field')">
+							<input type="text"
+									id="sender_surname"
+									name="sender_surname"
+									size="40"
+									value=""
+									tal:attributes="value request/sender_surname|nothing" />
+							<div tal:content="error">Validation error output</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td  class="formLeftColum">
+					    <label for="sender_from_address" i18n:translate="kontakt_label_sender_from_address">E-Mail</label>
+					    <span class="fieldRequired" title="Required"
+                              i18n:domain="plone"
+                              i18n:attributes="title title_required;"
+                              i18n:translate="label_required">(Required)</span>
+					</td>
+					<td>
+					   <div	class="field"
+								tal:define="error errors/sender_from_address|nothing"
+								tal:attributes="class python:test(error, 'field error', 'field')">
+							<input type="text"
+									id="sender_from_address"
+									name="sender_from_address"
+									size="40"
+									value=""
+									tal:attributes="value request/sender_from_address|nothing" />
+							<div tal:content="error">Validation error output</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td  class="formLeftColum">
+					    <label for="message" i18n:translate="kontakt_label_message">Message</label>
+					    <span class="fieldRequired" title="Required"
+                              i18n:domain="plone"
+                              i18n:attributes="title title_required;"
+                              i18n:translate="label_required">(Required)</span>
+					</td>
+					<td>
+					   <div	class="field"
+								tal:define="error errors/message|nothing"
+								tal:attributes="class python:test(error, 'field error', 'field')">
+							<textarea
+									id="message"
+									name="message"
+									rows="5"
+									tal:content="request/message|nothing"></textarea><br />
+							<div tal:content="error">Validation error output</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td  class="formLeftColum"><label for="sender_address" i18n:translate="kontakt_label_sender_address">Address</label></td>
+					<td>
+					   <div	class="field"
+								tal:define="error errors/sender_address|nothing"
+								tal:attributes="class python:test(error, 'field error', 'field')">
+							<input type="text"
+									id="sender_address"
+									name="sender_address"
+									size="40"
+									value=""
+									tal:attributes="value request/sender_address|nothing" />
+								<div tal:content="error">Validation error output</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="formLeftColum"><label for="sender_zip" i18n:translate="kontakt_label_sender_zip">Zip code / </label><label for="sender_residence" style="margin:0em;" i18n:translate="kontakt_label_sender_residence">Residence</label></td>
+					<td>
+					   <div	class="field"
+							tal:define="errorZip errors/sender_zip|nothing;
+										errorResidence errors/sender_residence|nothing"
+							tal:attributes="class python:test(errorZip or errorResidence, 'field error', 'field')">
+							<input type="text"
+								   id="sender_zip"
+								   name="sender_zip"
+								   size="4"
+								   maxlength="5"
+								   value=""
+								   tal:attributes="value request/sender_zip|nothing" />
+							<input type="text"
+								   id="sender_residence"
+								   name="sender_residence"
+								   size="32"
+								   value=""
+								   tal:attributes="value request/sender_residence|nothing" />
+							<div tal:content="errorZip">Validation error output</div>
+							<div tal:content="errorResidence">Validation error output</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="formLeftColum"><label for="sender_phone" i18n:translate="kontakt_label_sender_phone">Phone</label></td>
+					<td>
+					   <div	class="field"
+									tal:define="error errors/sender_phone|nothing"
 									tal:attributes="class python:test(error, 'field error', 'field')">
 								<input type="text"
-										id="sender_address"
-										name="sender_address"
-										size="40"
-										value=""
-										tal:attributes="value request/sender_address|nothing" />
-									<div tal:content="error">Validation error output</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="formLeftColum"><label for="sender_zip" i18n:translate="kontakt_label_sender_zip">Zip code / </label><label for="sender_residence" style="margin:0em;" i18n:translate="kontakt_label_sender_residence">Residence</label></td>
-						<td>
-						   <div	class="field"
-								tal:define="errorZip errors/sender_zip|nothing;
-											errorResidence errors/sender_residence|nothing"
-								tal:attributes="class python:test(errorZip or errorResidence, 'field error', 'field')">
-								<input type="text"
-									   id="sender_zip"
-									   name="sender_zip"
-									   size="4"
-									   maxlength="5"
-									   value=""
-									   tal:attributes="value request/sender_zip|nothing" />
-								<input type="text"
-									   id="sender_residence"
-									   name="sender_residence"
-									   size="32"
-									   value=""
-									   tal:attributes="value request/sender_residence|nothing" />
-								<div tal:content="errorZip">Validation error output</div>
-								<div tal:content="errorResidence">Validation error output</div>
-							</div>
-						</td>
-					</tr>
-					<tr>
-						<td class="formLeftColum"><label for="sender_phone" i18n:translate="kontakt_label_sender_phone">Phone</label></td>
-						<td>
-						   <div	class="field"
-										tal:define="error errors/sender_phone|nothing"
-										tal:attributes="class python:test(error, 'field error', 'field')">
-									<input type="text"
-										id="sender_phone"
-										name="sender_phone"
-										size="40"
-										value=""
-										tal:attributes="value request/sender_phone|nothing" />
-								<div tal:content="error">Validation error output</div>
-							</div>
-						</td>
-					</tr>
-				</table>
-			</fieldset>
+									id="sender_phone"
+									name="sender_phone"
+									size="40"
+									value=""
+									tal:attributes="value request/sender_phone|nothing" />
+							<div tal:content="error">Validation error output</div>
+						</div>
+					</td>
+				</tr>
+			</table>
 
       		<div class="formControls">
 				<input class="formSubmit context"
