@@ -171,10 +171,8 @@ table caption p strong {
 
 
 /* shop */
-ul.file-download {
-    margin-left: 0;
-    list-style:none;
-    text-indent: 0;
+.file-download {
+    white-space: nowrap;
 }
 table.eShop caption {
     font-weight: bold;
