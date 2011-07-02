@@ -298,4 +298,11 @@ form#login_form .formControls {
 .template-sitemap #visual {
     display: none;
 }
+
+/* override font-tag overrides */
+font {
+    font-size: 1em; 
+    font-family: &dtml-fontFamily;;
+    color: &dtml-fontColor;;
+}
 /* </dtml-with> */
