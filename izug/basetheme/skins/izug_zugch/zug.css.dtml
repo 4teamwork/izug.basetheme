@@ -209,18 +209,20 @@ table.eShop td.right a img {
     padding: 0 0 0 1em;
 }
 
-/* login / pwreset / registration ... */
+/* pages that should display an empty left slot */
 .template-login_form div#portal-column-content,
 .template-logged_out div#portal-column-content,
 .template-join_form div#portal-column-content,
 .template-login_success div#portal-column-content,
 .template-login_failed div#portal-column-content,
 .template-mail_password_form div#portal-column-content,
-.template-personalize_form div#portal-column-content {
+.template-personalize_form div#portal-column-content,
+.section-impressum div#portal-column-content {
     /* right and left column: 96em - 18em - 25em */
     margin-left: -71em;
     width: 53em;
 }
+/* login / pwreset / registration ... */
 #forgotten-password {
     float: none;
     margin: 3.636em 0 0 0;
