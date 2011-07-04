@@ -43,6 +43,12 @@
     padding-left: 0;
     padding-right: 0;
 }
+.portletCollection .divider {
+    display: none;
+}
+.column2 .portletCollection .divider {
+    display: inline;
+}
 
 /* accessibility elements */
 .hiddenStructureAFAthead {
