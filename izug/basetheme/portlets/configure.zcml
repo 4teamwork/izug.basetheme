@@ -4,20 +4,22 @@
     xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="izug.basetheme">
-    
-    <!-- Register a new view for portlet navigation -->
-    <plone:portletRenderer
-        portlet="plone.app.portlets.portlets.navigation.INavigationPortlet"
-        class=".navigation.ZugNavigationRenderer"
-        for="*"
-        layer="..browser.interfaces.IThemeSpecific"
-        />
-    <!-- New strategy for our navigation portlet -->
-    <adapter
-        for="Products.Archetypes.interfaces.IBaseObject
-             plone.app.portlets.portlets.navigation.INavigationPortlet"
-        provides="plone.app.layout.navigation.interfaces.INavtreeStrategy"
-        factory=".navigation.ZugNavtreeStrategy"
-        />
-        
+
+    <configure zcml:condition="not-have opengever">
+        <!-- Register a new view for portlet navigation -->
+        <plone:portletRenderer
+            portlet="plone.app.portlets.portlets.navigation.INavigationPortlet"
+            class=".navigation.ZugNavigationRenderer"
+            for="*"
+            layer="..browser.interfaces.IThemeSpecific"
+            />
+        <!-- New strategy for our navigation portlet -->
+        <adapter
+            for="Products.Archetypes.interfaces.IBaseObject
+                 plone.app.portlets.portlets.navigation.INavigationPortlet"
+            provides="plone.app.layout.navigation.interfaces.INavtreeStrategy"
+            factory=".navigation.ZugNavtreeStrategy"
+            />
+    </configure>
+
 </configure>
