@@ -28,10 +28,13 @@
 .documentContent ul.subelements-listing {
     text-indent: 0;
     margin-left: 0;
+    /* solution for bottom-margin on inline-elements: increase line-height and 
+    move content up */
+    line-height: 1.818em;
+    margin-top: -0.364em;
 }
 .documentContent .subelements-listing li {
-    display: inline-block;
-    margin: 0 0 0.364em 0 !important;   
+    display: inline;  
 }
 .divider {
     background-image: url(&dtml-portal_url;/icon_list_vertical.gif);
