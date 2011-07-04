@@ -5,6 +5,10 @@ Changelog
 1.0a9
 -----
 
+* Added sprite icon for attach_remote_document action.
+  Sprite image and CSS has NOT been regenerated yet (service down)!
+  [lgraf]
+
 * Don't override navigation portlet for opengever
   [lgraf]
 
