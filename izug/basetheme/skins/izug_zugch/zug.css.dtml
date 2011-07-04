@@ -202,7 +202,7 @@ table.eShop caption {
     font-weight: bold;
 }
 table.eShop td.column1 {
-    width: 42.909em;
+    min-width: 35em;
 }
 table.eShop td.right a img {
     padding: 0 0 0 1em;
