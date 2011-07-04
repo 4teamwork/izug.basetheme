@@ -96,7 +96,7 @@ div.column2 ul li {
 div.column2 ul li a { 
     display: inline;
 }
-div.column2 .portletItemDetails {
+div.column .portletItemDetails {
     display: inline;
 }
 
