@@ -85,15 +85,7 @@ div.column2 ul {
     margin-top: -0.364em;
 }
 div.column2 ul li {
-    background: transparent url(&dtml-portal_url;/icon_list_vertical.gif) bottom right no-repeat;
     display: inline;
-    padding: 0 0.363em 0 0.545em;
-}
-div.column2 ul li:first-child {
-    padding-left: 0;
-}
-div.column2 ul li:last-child {
-    background-image: none;
 }
 div.column2 ul li a { 
     display: inline;
