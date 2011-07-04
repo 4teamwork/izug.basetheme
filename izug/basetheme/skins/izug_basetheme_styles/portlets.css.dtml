@@ -36,7 +36,8 @@
 
 .portletItem ul {
     margin-top: 0;
-    list-style-type: none
+    list-style-type: none;
+    line-height: 1.454em;
 }
 
 /* XXX: The two below rules should really be in the rule above, but that makes the items grow/shrink on :hover (navtree) - need to investigate how to make it not do that. ~limi, Dec 2005 */
