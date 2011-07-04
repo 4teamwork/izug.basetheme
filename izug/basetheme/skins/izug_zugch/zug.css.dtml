@@ -159,6 +159,7 @@ table td {
     border-right: 0 transparent none;
     border-bottom: 1px solid &dtml-zugblue;;
     border-top:  1px solid &dtml-zugblue;;
+    line-height: 1.454em;
 }
 table td:first-child,
 table th:first-child  {

@@ -436,6 +436,9 @@ h3, h4, h5, h6 {
     padding-right:0.4em;
     text-decoration:none;
 }
+#portal-personaltools li:last-child a {
+    background-image: none;
+}
 #portal-personaltools li a:hover {
     text-decoration: underline;
     color: &dtml-red;;
