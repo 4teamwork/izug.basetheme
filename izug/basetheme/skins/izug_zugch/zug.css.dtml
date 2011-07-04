@@ -138,6 +138,7 @@ table {
     margin-bottom: 1em;
     background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
     width: 100%;
+    border-style: none;
 }
 table caption {
     font-weight: normal;
@@ -148,12 +149,14 @@ table th {
     padding: 1.091em 0.454em 0.909em 0;
     text-align: left;
     vertical-align: top;
+    border-style: none;
 }
 table td {
     padding: 0.272em 0 0.272em;
     vertical-align: top;
     /*border-left: 0.272em &dtml-backgroundColor; solid;*/
     border-left: 0.272em transparent solid;
+    border-right: 0 transparent none;
     border-bottom: 1px solid &dtml-zugblue;;
     border-top:  1px solid &dtml-zugblue;;
 }
