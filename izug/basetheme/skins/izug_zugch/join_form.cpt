@@ -295,6 +295,7 @@
         
     </fieldset>
 
+    <input tal:replace="structure context/@@authenticator/authenticator" /> 
     <input type="hidden" name="form.submitted" value="1" />
 
   </form>
