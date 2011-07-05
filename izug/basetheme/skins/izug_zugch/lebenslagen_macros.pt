@@ -56,14 +56,12 @@
                             <a href="" tal:attributes="href string:${portal_url}/resolveUid/${inhaltsseite/UID}" tal:content="inhaltsseite/Title" />
                         </td>
                     </tr>
-                    <tr tal:condition="python: not context.REQUEST.has_key('show')">
-                        <td>
-                            <a class="link" tal:attributes="href string:${here_url}?show=${lebenslage/UID}&part=Content Page" 
-                               i18n:translate="">Alle Informationen</a>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
+            <tal:if condition="python: not context.REQUEST.has_key('show')">
+                <a class="link" tal:attributes="href string:${here_url}?show=${lebenslage/UID}&part=Content Page" 
+                   i18n:translate="">Alle Informationen</a>
+            </tal:if>
         </tal:block>
     </metal:block>
 
