@@ -1,0 +1,72 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+
+<body>
+
+    <metal:block define-macro="downloads_macro">
+        <metal:listing define-slot="listing">
+            <table class="eShop invisible" tal:condition="shopitems">
+      			<caption i18n:translate="">
+			    Dokumente
+			    </caption>  
+			    <metal:above define-slot="above-listing" />
+			    <tal:items repeat="result shopitems">
+			        <metal:item define-macro="shop-listing-part-without-header">
+			            <tr>
+                          	<td class="column1" 
+                          	    tal:attributes="id string:${result/id}"
+                          	    tal:define="title result/Title;
+                          	                showresults result/getShowdetails;
+                          	                showresults python: showresults == '1';
+                          	                art result/getArt;
+                          	                art python: art and art.capitalize() or None;
+                          	                ">
+                          		<a class="toggler collapsed" 
+                          		   tal:attributes="title title;
+                          		                   onclick python:showresults and 'showDetails.toggleShopInfo(this)'" 
+                          		   tal:omit-tag="not: showresults"
+                          		   rel="1" > 
+                          		   <tal:block content="title" /></a>,
+                          		<span i18n:translate="" i18n:domain="plone" tal:content="python:art" />
+                          	</td>
+                      		<td class="right"
+                      		    tal:define="
+                          		    preis result/getPreis;
+                  	                preis_string python: context.round5rp(str(preis)) + ' CHF';">
+                      			<span tal:condition="preis" tal:content="preis_string" />
+        				    </td>
+			            </tr>
+			        </metal:item>
+			    </tal:items>
+                <metal:below define-slot="below-listing" /> 
+            </table>
+        </metal:listing>
+    </metal:block>
+
+    <metal:block define-macro="information_macro">
+        <tal:block tal:condition="inhaltsseiten">
+            <table class="eShop invisible">
+                <caption i18n:translate="">Information</caption>
+                <tbody>
+                    <tr tal:repeat="inhaltsseite inhaltsseiten">
+                        <td>
+                            <a href="" tal:attributes="href string:${portal_url}/resolveUid/${inhaltsseite/UID}" tal:content="inhaltsseite/Title" />
+                        </td>
+                    </tr>
+                    <tr tal:condition="python: not context.REQUEST.has_key('show')">
+                        <td>
+                            <a class="link" tal:attributes="href string:${here_url}?show=${lebenslage/UID}&part=Content Page" 
+                               i18n:translate="">Alle Informationen</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </tal:block>
+    </metal:block>
+
+
+</body>
+</html>
