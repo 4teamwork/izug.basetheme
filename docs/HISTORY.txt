@@ -4,6 +4,9 @@ Changelog
 
 1.0a9
 -----
+* Enabled icons again
+  [fsprenger]
+
 * Restyled sitemap
   [fsprenger]
   
