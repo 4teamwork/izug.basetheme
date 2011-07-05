@@ -93,6 +93,7 @@ content: " [" attr(href) "] ";
 
 /* Hide all the elements that are irrelevant for printing */
 div.top,
+div.to_top,
 #portal-siteactions,
 .hiddenStructure,
 #portal-searchbox,
