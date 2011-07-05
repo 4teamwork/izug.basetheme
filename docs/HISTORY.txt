@@ -4,6 +4,9 @@ Changelog
 
 1.0a9
 -----
+* Restyled sitemap
+  [fsprenger]
+  
 * Handling special links
   [fsprenger]
   

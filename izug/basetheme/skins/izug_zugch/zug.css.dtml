@@ -260,26 +260,16 @@ form#login_form .formControls {
     margin-left: -71em;
     width: 53em;
 }
-
-#sitemap li a {
-    line-height: 1.4em;
-    background-image: none;
-    padding-left: 0;
+#sitemap {
+    border-top-style:none;
 }
-#sitemap>li>div>a {
-    background-color: #EFEFEF;
-    border-bottom: 1px solid #DEDEDE;
-    border-top: 1px solid #DEDEDE;
-    display: block;
-    padding: 0.5em 1em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
+#sitemap .navTreeItem {
+    display: list-item;
 }
-
-#sitemap ul.navTreeLevel2 {
+#sitemap ul {
     padding-left: 0;
-    margin-left:0;
-    text-indent:0;
+    margin-top: 0.363em;
+
 }
 
 /* map */
