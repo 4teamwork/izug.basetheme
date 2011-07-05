@@ -1061,10 +1061,14 @@ a.link-parent {
 
 /* Handling external links */
 #content span.link-external a,
-#content a.link,
-.portlet span.link-external a,
-.portlet a.link {
+.portlet span.link-external a {
     background: transparent url(&dtml-portal_url;/link_icon.gif) 100% 2px no-repeat;
+    padding: 0 16px 0 0;
+}
+/* Handling special links */
+#content a.link,
+.portlet a.link {
+    background: transparent url(&dtml-portal_url;/icon_arrow_right.gif) 100% 0 no-repeat;
     padding: 0 16px 0 0;
 }
 #content span.link-https a {

@@ -4,6 +4,9 @@ Changelog
 
 1.0a9
 -----
+* Handling special links
+  [fsprenger]
+  
 * Customized global_statusmessage.pt in order to allow html in message
   [fsprenger]
 
