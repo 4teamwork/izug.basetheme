@@ -4,6 +4,9 @@ Changelog
 
 1.0a9
 -----
+* Added UID to redirect url in addZugMerklisteToHomeFolder.py to avoid
+  caching
+  [fsprenger]
 
 * Added sprite icon for attach_remote_document action.
   [lgraf]
