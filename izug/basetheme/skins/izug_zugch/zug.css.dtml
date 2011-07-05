@@ -209,18 +209,6 @@ table.eShop td.right a img {
     padding: 0 0 0 1em;
 }
 
-/* pages that should display an empty left slot 
-.template-login_form div#portal-column-content,
-.template-logged_out div#portal-column-content,
-.template-join_form div#portal-column-content,
-.template-login_success div#portal-column-content,
-.template-login_failed div#portal-column-content,
-.template-mail_password_form div#portal-column-content,
-.template-personalize_form div#portal-column-content,
-.section-impressum div#portal-column-content {
-    margin-left: -71em;
-    width: 53em;
-}*/
 #visual-portal-wrapper div#portal-column-content {
     /* right and left column: 96em - 18em - 25em */
     margin-left: -71em;
@@ -240,14 +228,13 @@ table.eShop td.right a img {
     margin: 3.636em 0 0 0;
 }
 
-.template-join_form label,
 .template-login_form label,
 .template-logged_out label {
     width: 14em;
     display: block;
     float: left;
 }
-.template-join_form input[type=text] {
+/*.template-join_form input[type=text] {
     float: left;
     margin-right: 0.7em;
 }
@@ -255,7 +242,7 @@ table.eShop td.right a img {
     float: none;
     clear: both;
     display: block;
-}
+}*/
 form#login_form  {
     margin-top: 2.727em;
 }

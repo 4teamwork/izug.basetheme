@@ -4,6 +4,9 @@ Changelog
 
 1.0a9
 -----
+* Refactored join form
+  [fsprenger]
+
 * Enabled icons again
   [fsprenger]
 
