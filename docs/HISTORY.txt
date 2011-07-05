@@ -4,6 +4,9 @@ Changelog
 
 1.0a9
 -----
+* Customized global_statusmessage.pt in order to allow html in message
+  [fsprenger]
+
 * Added UID to redirect url in addZugMerklisteToHomeFolder.py to avoid
   caching
   [fsprenger]
