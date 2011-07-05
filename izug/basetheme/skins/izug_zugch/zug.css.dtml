@@ -226,12 +226,14 @@ table.eShop td.right a img {
     margin-left: -71em;
     width: 53em;
 }
-.template-subsite_front #visual-portal-wrapper div#portal-column-content.sr,
-.section-veranstaltungen #visual-portal-wrapper div#portal-column-content.sr {
-    margin-left: -100%;
-    width: 78em;
+.template-subsite_front #visual-portal-wrapper div#portal-column-content {
+    margin-left: -100% !important;
+    width: 78em !important;
 }
-
+.section-veranstaltungen #visual-portal-wrapper div#portal-column-content {
+    margin-left: -100% !important;
+    width: 100% !important;
+}
 /* login / pwreset / registration ... */
 #forgotten-password {
     float: none;
