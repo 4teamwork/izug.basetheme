@@ -221,7 +221,7 @@ table.eShop td.right a img {
     margin-left: -71em;
     width: 53em;
 }*/
-div#portal-column-content {
+#visual-portal-wrapper div#portal-column-content {
     /* right and left column: 96em - 18em - 25em */
     margin-left: -71em;
     width: 53em;
