@@ -35,7 +35,6 @@ function scanforlinks() {
       contentarea.find(
           'a[href^=http]:not(.link-plain):not([href^=' + url + ']):not(:has(img))')
           .wrap('<span></span>').parent().addClass('link-external');
-      console.log(contentarea);
       // All links without an http href (without the link-plain class), not within this site,
       // and no img children should be wrapped in a link-[protocol] span
       contentarea.find(
