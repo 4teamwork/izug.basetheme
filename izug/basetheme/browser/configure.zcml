@@ -49,11 +49,9 @@
       layer=".interfaces.IThemeSpecific"
       />
 
-  <!-- zug.ch-specific personal bar viewlet
-  XXX: should depend on a browserlayer instead of plone version
-   -->
+  <!-- zug.ch-specific personal bar viewlet -->
   <browser:viewlet
-	  zcml:condition="not-installed plone.app.upgrade"
+      zcml:condition="not-have opengever"
       name="plone.personal_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.ZugPersonalBar"
@@ -70,11 +68,9 @@
       layer=".interfaces.IThemeSpecific"
       />
 
-  <!-- zug.ch need a customized site_actions-viewlet 
-  XXX: should depend on a browserlayer instead of plone version
-  -->
+  <!-- zug.ch need a customized site_actions-viewlet -->
   <browser:viewlet
-	  zcml:condition="not-installed plone.app.upgrade"
+      zcml:condition="not-have opengever"
       name="plone.site_actions"
       manager="plone.app.layout.viewlets.interfaces.IBelowContent"
       class=".viewlets.ZugSiteActions"
