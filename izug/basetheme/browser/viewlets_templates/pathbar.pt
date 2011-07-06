@@ -21,5 +21,10 @@
             </span>
          </tal:last>
     </span>
-
+    <span tal:define="show_template_name view/template_text" 
+          tal:condition="show_template_name"
+          tal:omit-tag="">
+        <span class="breadcrumbSeparator">&nbsp;</span>
+        <span tal:content="show_template_name">crumb</span>
+    </span>
 </div>

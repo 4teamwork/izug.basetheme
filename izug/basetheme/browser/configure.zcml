@@ -23,7 +23,7 @@
      permission="zope2.View"
      layer=".interfaces.IThemeSpecific"
      />
-  
+
   <browser:page
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       name="test_icons"
@@ -38,6 +38,7 @@
       class=".viewlets.PathBar"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
+      for="*"
       />
 
   <browser:viewlet

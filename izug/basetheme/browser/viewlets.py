@@ -16,7 +16,19 @@ from izug.basetheme.browser.helper import css_class_from_obj
 
 class PathBar(common.PathBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/pathbar.pt')
-
+    
+    def update(self):
+        super(PathBar, self).update()
+        template_info = None
+        translation = None
+        if 'PUBLISHED' in self.context.REQUEST and hasattr(self.context.REQUEST['PUBLISHED'], 'getId'):
+            template_info = self.context.REQUEST['PUBLISHED'].getId()
+            translation = self.context.translate(msgid=template_info,mapping=None,context=self.context)
+        if template_info==translation:
+            self.template_text = None
+        else:
+            self.template_text = translation
+            
 class PersonalBar(common.PersonalBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
