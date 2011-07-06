@@ -265,6 +265,10 @@ form#login_form .formControls {
 #sitemap .navTreeItem {
     display: list-item;
 }
+#sitemap .navTreeItem a {
+    background-image: none;
+    padding-left: 0;
+}
 #sitemap ul {
     padding-left: 0;
     margin-top: 0.363em;
