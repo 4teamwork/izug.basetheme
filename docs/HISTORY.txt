@@ -5,9 +5,12 @@ Changelog
 1.0a9
 -----
 
+* Added a customized version of portal_tabs_view. Displays actions after 
+  content instead of before (mein konto, zug.ch only)
+  [fsprenger]
+
 * Modified Formstyling
   [ttschanz]
-
 
 * Display template name in breadcrumbs (copied from ZugSkin)
   [fsprenger]

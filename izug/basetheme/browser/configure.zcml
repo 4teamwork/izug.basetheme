@@ -23,7 +23,18 @@
      permission="zope2.View"
      layer=".interfaces.IThemeSpecific"
      />
-
+     
+  <!-- we have to override portal_tabs_view here because if we need actions 
+  displayed in the global navigation they have to be last instead of first -->
+  <browser:page
+      zcml:condition="not-have opengever"
+      for="*"
+      name="portal_tabs_view"
+      class=".navigation.CatalogNavigationTabs"
+      permission="zope.Public"
+      allowed_attributes="topLevelTabs"
+      layer=".interfaces.IThemeSpecific"
+      />
   <browser:page
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
       name="test_icons"
