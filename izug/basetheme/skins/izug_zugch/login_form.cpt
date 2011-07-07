@@ -50,42 +50,70 @@
         <input type="hidden" name="cookies_enabled" id="cookies_enabled" value="" />
         <input type="hidden" name="login_name" id="login_name" value="" />
         <input type="hidden" name="pwd_empty" id="pwd_empty" value="0" />
-
+		<table class="invisible">
+			<colgroup>
+              <col width="250" />
+              <col width="*" />
+			</colgroup>
+		<tr>
+			<td class="formLeftColum">
+				<label for="ac_name"
+                       i18n:translate="label_login_name">Login Name</label>
+                 <span class="fieldRequired" title="Required"
+                       i18n:domain="plone"
+                       i18n:attributes="title title_required;"
+                       i18n:translate="label_required">(Required)</span>
+             </td>
+			 <td>
         <div class="field"
              tal:define="error python:errors.get(ac_name, None);"
              tal:attributes="class python:test(error, 'field error', 'field')">
 
-            <label i18n:domain="zug" i18n:translate="label_login_name"
-                   tal:attributes="for ac_name">Login Name</label>
-
-            <div tal:content="error">Validation error output</div>
-
             <input type="text"
-                   size="15"
+                   size="40"
                    tal:attributes="name ac_name;
                                    id ac_name;
                                    value login_name;"
                    />
 
+            <div tal:content="error">Validation error output</div>
     </div>
-
+	</td>
+	</tr>
+	<tr>
+		<td class="formLeftColum">
+            <label i18n:translate="label_password"
+                   tal:attributes="for ac_password">Password</label>
+			<span class="fieldRequired" title="Required"
+                    i18n:domain="plone"
+                    i18n:attributes="title title_required;"
+                    i18n:translate="label_required">(Required)</span>
+		</td>
+		<td>
     <div class="field"
              tal:define="error python:errors.get(ac_password, None);"
              tal:attributes="class python:test(error, 'field error', 'field')">
 
-            <label i18n:translate="label_password"
-                   tal:attributes="for ac_password">Password</label>
-
-            <div tal:content="error">Validation error output</div>
 
             <input type="password"
-                   size="15"
+                   size="40"
                    tal:attributes="name ac_password;
                                    id ac_password;"
                    />
+            <div tal:content="error">Validation error output</div>
     </div>
-
-        <div class="field" tal:condition="ac_persist">
+		</td>
+		</tr>
+		<tr tal:condition="ac_persist">
+		<td class="formLeftColum">
+            <label for="cb_remember" i18n:translate="label_remember_my_name">Remember my name.</label>
+        </td>
+		<td>
+		<div class="field">
+			<div i18n:translate="help_remember_my_name"
+                 class="formHelp">
+                Check this to have your user name filled in automatically when you log in later.
+            </div>
 
             <input type="checkbox"
                    class="noborder formRememberName"
@@ -95,16 +123,10 @@
                    tal:attributes="name ac_persist;
                                    checked python:request.get(ac_name, '') and 'checked' or None;"
                    />
-
-            <label for="cb_remember" i18n:translate="label_remember_my_name">Remember my name.</label>
-
-            <div i18n:translate="help_remember_my_name"
-                 class="formHelp">
-                Check this to have your user name filled in automatically when you log in later.
-            </div>
-
         </div>
-
+		</td>
+		</tr>
+		</table>
         <div id="forgotten-password"
              tal:condition="python:checkPermission('Mail forgotten password', here)">
 

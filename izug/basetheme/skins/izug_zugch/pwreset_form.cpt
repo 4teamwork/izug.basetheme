@@ -19,49 +19,67 @@
                        name="randomstring" 
                        value=""
                        tal:attributes="value options/randomstring | request/randomstring | nothing" />
-
-                <div class="field" 
-                     tal:define="error errors/userid | nothing;"
-	                   tal:attributes="class python:test(error, 'field error', 'field')"
-	                   tal:condition="here/portal_password_reset/checkUser | nothing">
-                     
+				<table class="invisible">
+					<colgroup>
+      					<col width="250" />
+              			<col width="*" />
+					</colgroup>
+				<tr 	                   tal:condition="here/portal_password_reset/checkUser | nothing">
+					<td class="formLeftColum">                     
                     <label for="userid" 
                            i18n:translate="label_login_name" i18n:domain="zug">My user name is</label>
-	                   <div tal:content="error">Validation error output</div>
+				</td>
+				<td>
+           			<div class="field" 
+                     tal:define="error errors/userid | nothing;"
+	                   tal:attributes="class python:test(error, 'field error', 'field')">
 
                     <input name="userid"
                            tal:attributes="value request/userid|nothing;" size="30" />
+	                   <div tal:content="error">Validation error output</div>
                 </div>
-	  
+	  			</td>
+				</tr>
+				<tr>
+				<td class="formLeftColum">
+                    <label for="password" i18n:domain="zug"
+                    	i18n:translate="label_new_password">New password</label>
+				</td>
+				<td>
                 <div class="field" 
                      tal:define="error errors/password | nothing;"
                      tal:attributes="class python:test(error, 'field error', 'field')">
-    
-                    <label for="password" i18n:domain="zug"
-                           i18n:translate="label_new_password">New password</label>
-	                   <div tal:content="error">Validation error output</div>
-
+ 
                     <input type="password"
                            id="password"
                            name="password"
                            size="30" />
-                </div>
-
+                   <div tal:content="error">Validation error output</div>
+ 				
+               </div>
+				</td>
+				</tr>
+				<tr>
+				<td class="formLeftColum">
+                    <label for="confirm"
+                           i18n:translate="label_confirm_password">Confirm password</label>
+				</td>
+				<td>	
                 <div class="field" 
                      tal:define="error errors/password | nothing;"
                      tal:attributes="class python:test(error, 'field error', 'field')">
-                     
-                    <label for="confirm"
-                           i18n:translate="label_confirm_password">Confirm password</label>
-                    <div tal:content="error">Validation error output</div>
-
+                   
                     <input type="password"
                            id="password2"
                            name="password2"
                            size="30"
                            />
-                </div>
+                 <div tal:content="error">Validation error output</div>
 
+				</div>
+				</td>
+				</tr>
+				</table>
                 <div class="row">
                     <div class="label">&nbsp;</div>
                     

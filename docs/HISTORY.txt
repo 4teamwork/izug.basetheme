@@ -4,6 +4,11 @@ Changelog
 
 1.0a9
 -----
+
+* Modified Formstyling
+  [ttschanz]
+
+
 * Display template name in breadcrumbs (copied from ZugSkin)
   [fsprenger]
   
