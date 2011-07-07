@@ -241,5 +241,13 @@ thead.hiddenStructureAFAthead {
   padding: 0 0 0 8px;
 }
 
-
+/* IE needs some more padding */
+.icons-on *[class*=contenttype-],
+.icons-on *[class*=mimetype-],
+.icons-on *[class*=wf-],
+.icons-on *[class*=function-],
+.icons-on *[class*=actionicon-],
+.icons-on *[class*=icon-] {
+    padding: 0.091em 0 0.182em 2em;
+}
 /* </dtml-with> */
