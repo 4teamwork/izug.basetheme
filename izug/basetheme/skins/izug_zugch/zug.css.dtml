@@ -222,6 +222,10 @@ table.eShop td.right a img {
     margin-left: -100% !important;
     width: 100% !important;
 }
+.template-plone_memberprefs_panel #visual-portal-wrapper div#portal-column-content {
+    margin-left: -100%;
+    width: 78em;
+}
 /* login / pwreset / registration ... */
 #forgotten-password {
     float: none;
@@ -325,5 +329,12 @@ font {
     font-size: 1em; 
     font-family: &dtml-fontFamily;;
     color: &dtml-fontColor;;
+}
+
+/* captions in shoplistings should look like h3 */
+table.eShop caption {
+    font-size: 1em;
+    line-height: 1.455em;
+    margin: 0 0 0.363em;
 }
 /* </dtml-with> */
