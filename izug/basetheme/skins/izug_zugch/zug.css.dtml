@@ -330,4 +330,11 @@ font {
     font-family: &dtml-fontFamily;;
     color: &dtml-fontColor;;
 }
+
+/* captions in shoplistings should look like h3 */
+table.eShop caption {
+    font-size: 1em;
+    line-height: 1.455em;
+    margin: 0 0 0.363em;
+}
 /* </dtml-with> */
