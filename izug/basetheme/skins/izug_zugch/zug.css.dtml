@@ -222,6 +222,10 @@ table.eShop td.right a img {
     margin-left: -100% !important;
     width: 100% !important;
 }
+.template-plone_memberprefs_panel #visual-portal-wrapper div#portal-column-content {
+    margin-left: -100%;
+    width: 78em;
+}
 /* login / pwreset / registration ... */
 #forgotten-password {
     float: none;
