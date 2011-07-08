@@ -53,10 +53,10 @@ Changelog
 * Fixed byline icon for overview tab
   [lgraf]
 
-* Added generic application icon as fallback for application/* mimetypes
+* Added generic application icon as fallback for application mimetypes
   [lgraf]
 
-* Added mimetype for *.docx to mimetypes_registry
+* Added mimetype for docx to mimetypes_registry
   [lgraf]
 
 * customized site actions and personal tools viewlet for zug.ch
