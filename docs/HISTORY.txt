@@ -5,6 +5,10 @@ Changelog
 1.0a9
 -----
 
+* Issue #1075 Test Rot 2.0.3: Falsches Icon fuer Anhaenge speichern
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1075
+  [ttschanz]
+
 * Fixed border color according to DF2.1
   [fsprenger]
 
