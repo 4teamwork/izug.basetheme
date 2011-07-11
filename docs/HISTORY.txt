@@ -5,6 +5,9 @@ Changelog
 1.0a9
 -----
 
+* Fixed border color according to DF2.1
+  [fsprenger]
+
 * Added a customized version of portal_tabs_view. Displays actions after 
   content instead of before (mein konto, zug.ch only)
   [fsprenger]

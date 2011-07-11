@@ -737,8 +737,8 @@ table.listing {
 }
 table.listing td {
     border-left: 0.272em &dtml-backgroundColor; solid;
-    border-bottom: 1px solid &dtml-zugblue;;
-    border-top:  1px solid &dtml-zugblue;;
+    border-bottom: 1px solid &dtml-borderblue;;
+    border-top:  1px solid &dtml-borderblue; ;
 }
 table.listing td:first-child,
 table.listing th:first-child  {
@@ -750,8 +750,8 @@ table.vertical {
     background-image: none;
 }
 table.vertical th {
-    border-top: 1px solid &dtml-zugblue;;
-    border-bottom: 1px solid &dtml-zugblue;;
+    border-top: 1px solid &dtml-borderblue;;
+    border-bottom: 1px solid &dtml-borderblue;;
     padding-top: 0.272em;
 }
 
@@ -771,7 +771,7 @@ table.grid {
 table.grid td,
 table.grid th {
     border-style: solid solid solid solid;
-    border-color: &dtml-zugblue;;
+    border-color: &dtml-borderblue;;
     border-width: 1px;
     padding: 0.272em;
 }

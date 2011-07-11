@@ -53,7 +53,7 @@ highlightColor:string=#DEE7EC
 zugblue:string=#006FBA
 darkblue:string=#00538C
 lightblue:string=#EBF4FA
-borderblue:string=#99BAD1
+borderblue:string=#99C5E3
 red:string=#AE1E00
 green:string=#0E6700
 yellow:string=#FFF0B2
@@ -63,4 +63,4 @@ grey3:string=#BBBBBB
 grey4:string=#454545
 grey5:string=#111111
 
-borderblue:string=#99BAD1
+borderblue:string=#99C5E3
