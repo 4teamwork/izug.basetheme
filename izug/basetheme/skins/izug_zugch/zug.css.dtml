@@ -199,7 +199,9 @@ table caption p strong {
 .file-download {
     white-space: nowrap;
 }
-
+.template-lebenslage_summary_view h3 {
+    padding: 0.923em 0.385em 0.769em 0;
+}
 /*table.eShop {
     margin-top: 1.091em;
 }*/
