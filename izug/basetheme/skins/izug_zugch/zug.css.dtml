@@ -199,6 +199,10 @@ table caption p strong {
 .file-download {
     white-space: nowrap;
 }
+
+/*table.eShop {
+    margin-top: 1.091em;
+}*/
 table.eShop caption {
     font-weight: bold;
 }
@@ -335,6 +339,6 @@ font {
 table.eShop caption {
     font-size: 1em;
     line-height: 1.455em;
-    margin: 0 0 0.363em;
+    margin: 0;
 }
 /* </dtml-with> */
