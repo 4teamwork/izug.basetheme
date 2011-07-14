@@ -19,12 +19,12 @@ input[type=submit],
 }
 /* grau-weiss*/
 #portal-globalnav li.selected,
-button:focus,
-input[type=button]:focus,
-input[type=submit]:focus,
-button:hover,
-input[type=button]:hover,
-input[type=submit]:hover,
+#content button:focus,
+#content input[type=button]:focus,
+#content input[type=submit]:focus,
+#content button:hover,
+#content input[type=button]:hover,
+#content input[type=submit]:hover,
 #content div.tabbedview-tabs ul.formTabs li a.selected {
     background: -moz-linear-gradient(top ,#DEDEDE, #FFFFFF);
     background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#FFFFFF));
