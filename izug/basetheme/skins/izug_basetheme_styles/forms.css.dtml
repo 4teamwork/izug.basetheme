@@ -25,10 +25,11 @@ textarea {
   width: 100%;
 }
 #feedback-form textarea {
-    width: 19.6em;
+    width: 25em;
 }
 #feedback-form input {
     margin-right: 0.2em;
+    width: 25em;
 }
 input {
   font-family: <dtml-var fontFamily>;
