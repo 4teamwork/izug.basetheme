@@ -28,7 +28,7 @@
     background-color: &dtml-backgroundColor;;
 }
 .portlet a:hover {
-    text-decoration: underline !important;
+    text-decoration: underline;
 }
 .portlet a {
     text-decoration: none;
