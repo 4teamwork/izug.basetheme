@@ -134,6 +134,7 @@ h3, h4, h5, h6 {
 }
 .documentContent a:hover {
     color: #D52000;
+    text-decoration: underline;
 }
 /* End links */
 
