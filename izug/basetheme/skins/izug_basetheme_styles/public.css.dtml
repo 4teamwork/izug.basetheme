@@ -109,12 +109,12 @@ h3, h4, h5, h6 {
 #content a:target {
     background-color: #fd7 !important;
 }
-.documentContent li a {
-    text-decoration: none;
-}
 #content .documentContent li a:visited {
     color: &dtml-linkVisitedColor;;
     text-decoration: underline !important;
+}
+.documentContent li a {
+    text-decoration: none;
 }
 .documentContent li a:hover {
     color: &dtml-red;;
