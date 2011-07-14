@@ -1080,7 +1080,7 @@ a.link-parent {
 /* Protocol-specific links */
 #content span.link-mailto  a {
     background: transparent url(&dtml-portal_url;/mail_icon.gif) 0px 1px no-repeat;
-    padding: 1px 0px 1px 16px;
+    padding: 1px 0px 1px 17px;
 }
 #content span.link-news a {
     background: transparent url(&dtml-portal_url;/topic_icon.gif) 0px 1px no-repeat;
