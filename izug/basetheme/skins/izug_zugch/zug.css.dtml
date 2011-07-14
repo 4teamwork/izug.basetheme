@@ -67,11 +67,12 @@
     border-color: &dtml-fontColor;;
 }
 .portletSearch .portlet-search-gadget {
-    width: 13.4em;
+    padding-left: 0.1em;
+    width: 13.3em;
 }
 .portletSearch .Submit {
     float: right;
-    margin: 0.4em 0.1em 1.2em 0;
+    margin: 0.4em 0.1em 0.9em 0;
 }
 
 /* subsite */
