@@ -9,6 +9,9 @@ Changelog
 1.0a9
 -----
 
+* Fixed distance between external links and their icon according to DF2.1
+  [lgraf]
+
 * Issue #1075 Test Rot 2.0.3: Falsches Icon fuer Anhaenge speichern
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1075
   [ttschanz]

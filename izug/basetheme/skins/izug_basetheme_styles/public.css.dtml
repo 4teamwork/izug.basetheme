@@ -1064,7 +1064,7 @@ a.link-parent {
 #content span.link-external a,
 .portlet span.link-external a {
     background: transparent url(&dtml-portal_url;/link_icon.gif) 100% 2px no-repeat;
-    padding: 0 16px 0 0;
+    padding: 0 12px 0 0;
 }
 /* Handling special links */
 #content a.link,
