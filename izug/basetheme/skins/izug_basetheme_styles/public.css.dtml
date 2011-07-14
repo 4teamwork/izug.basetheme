@@ -114,7 +114,7 @@ h3, h4, h5, h6 {
 }
 .documentContent li a:visited {
     color: &dtml-linkVisitedColor;;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 .documentContent li a:hover {
     color: &dtml-red;;
