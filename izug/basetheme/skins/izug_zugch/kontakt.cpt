@@ -172,14 +172,14 @@
 							<input type="text"
 								   id="sender_zip"
 								   name="sender_zip"
-								   size="4"
+								   size="8"
 								   maxlength="5"
 								   value=""
 								   tal:attributes="value request/sender_zip|nothing" />
 							<input type="text"
 								   id="sender_residence"
 								   name="sender_residence"
-								   size="32"
+								   size="48"
 								   value=""
 								   tal:attributes="value request/sender_residence|nothing" />
 							<div tal:content="errorZip">Validation error output</div>
