@@ -58,7 +58,15 @@ body.template-member-registration #edit-bar {
     color: white !important;
 }
 
-#portal-siteactions,
+.to_top {
+    font-size: 1em;
+}
+
+#portal-siteactions {
+    font-size: 1em;
+}
+
+div.documentContent #portal-siteactions,
 .to_top,
 #portal-breadcrumbs {
     font-size: 0.909em;

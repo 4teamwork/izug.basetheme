@@ -1432,8 +1432,13 @@ div.to_top {
   margin-bottom: 1em;
   clear: both;
 }
+
+div.documentContent div.to_top a {
+    font-size: 1em;
+}
+
 div.to_top a {
-  font-size:1.1em;
+  font-size: 1.1em;
   line-height:2.6em;
   text-decoration:none;
   color: &dtml-grey4;;
