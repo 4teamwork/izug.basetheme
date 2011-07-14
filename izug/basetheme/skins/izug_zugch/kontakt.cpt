@@ -74,7 +74,7 @@
 							<input type="text"
 									id="sender_prename"
 									name="sender_prename"
-									size="40"
+									size="60"
 									value=""
 									tal:attributes="value request/sender_prename|nothing" />
 							<div tal:content="error">Validation error output</div>
@@ -96,7 +96,7 @@
 							<input type="text"
 									id="sender_surname"
 									name="sender_surname"
-									size="40"
+									size="60"
 									value=""
 									tal:attributes="value request/sender_surname|nothing" />
 							<div tal:content="error">Validation error output</div>
@@ -118,7 +118,7 @@
 							<input type="text"
 									id="sender_from_address"
 									name="sender_from_address"
-									size="40"
+									size="60"
 									value=""
 									tal:attributes="value request/sender_from_address|nothing" />
 							<div tal:content="error">Validation error output</div>
@@ -155,7 +155,7 @@
 							<input type="text"
 									id="sender_address"
 									name="sender_address"
-									size="40"
+									size="60"
 									value=""
 									tal:attributes="value request/sender_address|nothing" />
 								<div tal:content="error">Validation error output</div>
@@ -196,7 +196,7 @@
 								<input type="text"
 									id="sender_phone"
 									name="sender_phone"
-									size="40"
+									size="60"
 									value=""
 									tal:attributes="value request/sender_phone|nothing" />
 							<div tal:content="error">Validation error output</div>
