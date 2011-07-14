@@ -1,14 +1,17 @@
 /* <dtml-with base_properties> */
 /* base styling */
+
+
+/* jadda */
+
 .isAnon h1.documentFirstHeading {
     margin-bottom: 0.625em !important;
 }
+.isAnon .documentActions {
+    margin-top: -3em;
+}
 #portal-personaltools-wrapper {
     width: 80%;
-}
-#portal-personaltools li span {
-    font-size: 1.1em;
-    color: &dtml-grey4;;
 }
 /* listing pages */
 .listing-column-right, .listing-column-left {
@@ -28,13 +31,10 @@
 .documentContent ul.subelements-listing {
     text-indent: 0;
     margin-left: 0;
-    /* solution for bottom-margin on inline-elements: increase line-height and 
-    move content up */
-    line-height: 1.818em;
-    margin-top: -0.364em;
 }
 .documentContent .subelements-listing li {
-    display: inline;  
+    display: inline;
+    margin: 0 !important;   
 }
 .divider {
     background-image: url(&dtml-portal_url;/icon_list_vertical.gif);
@@ -42,12 +42,6 @@
     background-repeat: no-repeat;
     padding-left: 0;
     padding-right: 0;
-}
-.portletCollection .divider {
-    display: none;
-}
-.column2 .portletCollection .divider {
-    display: inline;
 }
 
 /* accessibility elements */
@@ -67,11 +61,17 @@
     border-color: &dtml-fontColor;;
 }
 .portletSearch .portlet-search-gadget {
-    width: 100%;
+    width: 13.4em;
 }
 .portletSearch .Submit {
     float: right;
-    margin-right: -0.2em;
+    margin: 0.4em 0.1em 1.2em 0;
+}
+
+.portletSearch .Submit:hover {
+    color: &dtml-red;;
+    border-color: &dtml-red;;
+    border-width: 0.2em 0.1em 0.1em 0.2em;
 }
 
 /* subsite */
@@ -83,21 +83,6 @@
 #portal-column-content .portletHeader {
     border-width: 0.2em 0 0;
     border-color: &dtml-globalBorderColor;;
-}
-/* display portlet content in column 2 like link listings */
-div.column2 ul {
-    line-height: 1.818em;
-    margin-left: 0;
-    margin-top: -0.364em;
-}
-div.column2 ul li {
-    display: inline;
-}
-div.column2 ul li a { 
-    display: inline;
-}
-div.column .portletItemDetails {
-    display: inline;
 }
 
 /* kss spinner */
@@ -122,9 +107,6 @@ div.column .portletItemDetails {
     float: left;
     width: 30.454em;
 }
-.zugMitglied-details h2 {
-    margin-top: 0;
-}
 
 .zugMitglied-bio {
     clear: both;
@@ -138,7 +120,6 @@ table {
     margin-bottom: 1em;
     background: transparent url(&dtml-portal_url;/table_top.gif) top left repeat-x;
     width: 100%;
-    border-style: none;
 }
 table caption {
     font-weight: normal;
@@ -149,17 +130,13 @@ table th {
     padding: 1.091em 0.454em 0.909em 0;
     text-align: left;
     vertical-align: top;
-    border-style: none;
 }
 table td {
     padding: 0.272em 0 0.272em;
     vertical-align: top;
-    /*border-left: 0.272em &dtml-backgroundColor; solid;*/
-    border-left: 0.272em transparent solid;
-    border-right: 0 transparent none;
-    border-bottom: 1px solid &dtml-borderblue;;
-    border-top:  1px solid &dtml-borderblue;;
-    line-height: 1.454em;
+    border-left: 0.272em &dtml-backgroundColor; solid;
+    border-bottom: 1px solid &dtml-zugblue;;
+    border-top:  1px solid &dtml-zugblue;;
 }
 table td:first-child,
 table th:first-child  {
@@ -179,72 +156,45 @@ table td  {
     border-left: 0.272em transparent solid;
     border-bottom: 1px solid &dtml-zugblue;;
 }
-table[border="0"],
-table[border="0"] td {
-    background-image: none !important;
-    border-style: none !important;
-}
-/* zug.ch has paragraphs in table captions -> another stupid css fix */
-table caption p {
-    font-size: 0.846em;
-    margin-bottom: 0;
-}
-table caption p strong {
-    font-size: 1.182em;
-}
-
-
 
 /* shop */
-.file-download {
-    white-space: nowrap;
+ul.file-download {
+    margin-left: 0;
+    list-style:none;
+    text-indent: 0;
 }
-.template-lebenslage_summary_view h3 {
-    padding: 0.923em 0.385em 0.769em 0;
-}
-/*table.eShop {
-    margin-top: 1.091em;
-}*/
 table.eShop caption {
     font-weight: bold;
 }
 table.eShop td.column1 {
-    min-width: 35em;
+    width: 42.909em;
 }
 table.eShop td.right a img {
     padding: 0 0 0 1em;
 }
 
-#visual-portal-wrapper div#portal-column-content {
+/* login / pwreset / registration ... */
+.template-login_form div#portal-column-content,
+.template-join_form div#portal-column-content,
+.template-login_success div#portal-column-content,
+.template-login_failed div#portal-column-content,
+.template-mail_password_form div#portal-column-content,
+.template-personalize_form div#portal-column-content {
     /* right and left column: 96em - 18em - 25em */
     margin-left: -71em;
     width: 53em;
 }
-.template-subsite_front #visual-portal-wrapper div#portal-column-content {
-    margin-left: -100% !important;
-    width: 78em !important;
-}
-.section-veranstaltungen #visual-portal-wrapper div#portal-column-content {
-    margin-left: -100% !important;
-    width: 100% !important;
-}
-.template-plone_memberprefs_panel #visual-portal-wrapper div#portal-column-content {
-    margin-left: -100%;
-    width: 78em;
-}
-/* login / pwreset / registration ... */
 #forgotten-password {
     float: none;
-    margin: 3.636em 0 0 0;
+    margin: 0;
 }
 
-/*.template-login_form label,
-.template-logged_out label {
+.template-join_form label {
     width: 14em;
     display: block;
     float: left;
-} */
-/*.template-join_form input[type=text] {
+}
+.template-join_form input[type=text] {
     float: left;
     margin-right: 0.7em;
 }
@@ -252,95 +202,47 @@ table.eShop td.right a img {
     float: none;
     clear: both;
     display: block;
-}*/
-form#login_form  {
-    margin-top: 2.727em;
 }
-form#login_form input[type=text],
-form#login_form input[type=password] {
-    width: 20em;
-}
-form#login_form .formControls {
-    margin-top: 3.636em;
-    margin-bottom: 0.909em;
-}
+
 /* sitemap */
 .template-sitemap div#portal-column-content {
     margin-left: -71em;
     width: 53em;
 }
-#sitemap {
-    border-top-style:none;
-}
-#sitemap .navTreeItem {
-    display: list-item;
-}
-#sitemap .navTreeItem a {
+
+#sitemap li a {
+    line-height: 1.4em;
     background-image: none;
     padding-left: 0;
 }
-#sitemap ul {
-    padding-left: 0;
-    margin-top: 0.363em;
+#sitemap>li>div>a {
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #DEDEDE;
+    border-top: 1px solid #DEDEDE;
+    display: block;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
 
+#sitemap ul.navTreeLevel2 {
+    padding-left: 0;
+    margin-left:0;
+    text-indent:0;
 }
 
 /* map */
 .googleMapActive.googleMapLocation {
     width: 100%;
-    margin-bottom: 0.909em;
 }
 
 /* kantonsratvorlagen like lists */
 .template-zugkantonsratsvorlagenordner_view .eShop td.searchResult a {
-    background: url(&dtml-portal_url;/icon_list.gif) transparent no-repeat 0 0.636em;
-    display:block;
-    padding-left: 1.636em;
+    background: url(&dtml-portal_url;/icon_list.gif) transparent no-repeat 0 60% ;
+    padding-left: 1em;
 }
 /* XXX disable sprites until we get rid of all icon expressions in types / actions .... */
-/*.icons-on [class*="contenttype-"], .icons-on [class*="mimetype-"], .icons-on [class*="wf-"], .icons-on [class*="actionicon-"],  .icons-on [class*="icon-"] {
+.icons-on [class*="contenttype-"], .icons-on [class*="mimetype-"], .icons-on [class*="wf-"], .icons-on [class*="actionicon-"],  .icons-on [class*="icon-"] {
     background-image: none;
     padding-left: 0;
-}*/
-
-/* simplelayout */
-#content .sl-img-half .sl-img-wrapper, 
-#content .sl-img-squarish .sl-img-wrapper, 
-#content .sl-img-thumbnail .sl-img-wrapper {
-	margin-right: 1.818em;
-	margin-bottom: 0.909em;
-}
-#content .sl-img-full .sl-img-wrapper {
-	margin-right: 0;
-	margin-bottom: 0.909em;
-}
-
-/* hide banner on certain pages */
-.template-search #visual,
-.template-login_form #visual,
-.template-logged_out #visual,
-.template-join_form #visual,
-.template-login_success #visual,
-.template-login_failed #visual,
-.template-mail_password_form #visual,
-.template-personalize_form #visual,
-.template-kontakt #visual,
-.template-plone_control_panel #visual,
-.template-sitemap #visual {
-    display: none;
-}
-
-/* override font-tag overrides */
-font {
-    font-size: 1em; 
-    font-family: &dtml-fontFamily;;
-    color: &dtml-fontColor;;
-}
-
-/* captions in shoplistings should look like h3 */
-table.eShop caption {
-    font-size: 1em;
-    line-height: 1.455em;
-    margin: 0;
-}
-/* </dtml-with> */
+}/* </dtml-with> */
