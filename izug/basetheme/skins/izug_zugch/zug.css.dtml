@@ -69,7 +69,7 @@
 .portletSearch .portlet-search-gadget {
     padding-left: 0.4em;
     margin-left: 0.1em;
-    width: 13.2em;
+    width: 12.9em;
 }
 .portletSearch .Submit {
     float: right;
