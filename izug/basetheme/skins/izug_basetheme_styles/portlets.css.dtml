@@ -27,7 +27,7 @@
     border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
     background-color: &dtml-backgroundColor;;
 }
-.portlet a:hover {
+#portal-columns .portlet a:hover {
     text-decoration: underline;
 }
 .portlet a {
