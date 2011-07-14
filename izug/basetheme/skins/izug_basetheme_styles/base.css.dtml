@@ -80,7 +80,7 @@ h1 {
     color: &dtml-backgroundColor;;
     font-size: 1.454em;
     margin:0 0 0.625em 0;
-    padding:0.25em 1.875em 0.312em 0.937em;
+    padding:0.25em 1.875em 0.312em 0.9em;
     font-weight: normal;
     line-height: 1.125em;
 }
