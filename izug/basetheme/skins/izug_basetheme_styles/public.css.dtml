@@ -62,21 +62,21 @@ h3, h4, h5, h6 {
     list-style-image: url(&dtml-portal_url;/icon_list.gif);
     list-style-type: square;
     line-height: 1.454em;
-    margin: 0 0 1.091em 1.818em;
+    margin: 0 0 1.091em 1.636em;
     color: &dtml-grey5;;
-    text-indent: -0.454em;
+    text-indent: 0;
 }
 .documentContent ol {
     line-height: 1.454em;
-    margin: 0 0 1.091em 2.272em;
+    margin: 0 0 1.091em 1.636em;
     color: &dtml-grey5;;
-    text-indent: -0.454em;
+    text-indent: 0;
 }
 .documentContent ul ul,
 .documentContent ul ol,
 .documentContent ol ul,
 .documentContent ol ol {
-    margin-left: 1.364em;
+    margin: 0 0 0 1.636em;
 }
 .documentContent ul li,
 .documentContent ol li {
@@ -98,7 +98,7 @@ h3, h4, h5, h6 {
     text-decoration: underline;
 }
 .documentContent p a:visited {
-    color: &dtml-linkVisitedColor;;
+    color: &dtml-grey5;;
     background-color: transparent;
 }
 .documentContent p a:active {
@@ -113,7 +113,7 @@ h3, h4, h5, h6 {
     text-decoration: none;
 }
 .documentContent li a:visited {
-    color: &dtml-grey4;;
+    color: &dtml-linkVisitedColor;;
     text-decoration: underline;
 }
 .documentContent li a:active {
@@ -122,11 +122,11 @@ h3, h4, h5, h6 {
 
 .documentContent dd a {
     text-decoration: none;
-    border-bottom: 1px #cccccc solid;
 }
 .documentContent dd a:visited {
     color: &dtml-linkVisitedColor;;
     background-color: transparent;
+    text-decoration: underline;
 }
 .documentContent dd a:active {
     color: &dtml-linkActiveColor;;
@@ -134,7 +134,6 @@ h3, h4, h5, h6 {
 }
 .documentContent a:hover {
     color: #D52000;
-    text-decoration: underline;
 }
 /* End links */
 
@@ -437,6 +436,9 @@ h3, h4, h5, h6 {
     padding-right:0.4em;
     text-decoration:none;
 }
+#portal-personaltools li:last-child a {
+    background-image: none;
+}
 #portal-personaltools li a:hover {
     text-decoration: underline;
     color: &dtml-red;;
@@ -476,6 +478,8 @@ h3, h4, h5, h6 {
 .breadcrumbSeparator {
     background: url(&dtml-portal_url;/breadcrumbs_separator.gif) no-repeat scroll 0 45% transparent;
     margin: 0 0.3em;
+    margin: 0 0 0 0.3em;
+    padding: 0 0.3em 0 0;
 }
 .addFavorite {
     vertical-align: bottom;
@@ -538,14 +542,15 @@ h3, h4, h5, h6 {
     margin: 0 1em 0 0;
 }
 .documentActions {
-    margin: -2em 0.272em 0 0;
+    position: relative;
+    margin: 0;
     padding: 0;
-    text-align: right;
-    float: right;
     background-color: transparent;
 }
 .documentActions ul {
-    margin: 0;
+position: absolute;
+    right: 0;
+    margin: 0.363em 0 0;
     display: block;
     list-style-type: none;
     list-style-image: none;
@@ -732,8 +737,8 @@ table.listing {
 }
 table.listing td {
     border-left: 0.272em &dtml-backgroundColor; solid;
-    border-bottom: 1px solid &dtml-zugblue;;
-    border-top:  1px solid &dtml-zugblue;;
+    border-bottom: 1px solid &dtml-borderblue;;
+    border-top:  1px solid &dtml-borderblue; ;
 }
 table.listing td:first-child,
 table.listing th:first-child  {
@@ -745,8 +750,8 @@ table.vertical {
     background-image: none;
 }
 table.vertical th {
-    border-top: 1px solid &dtml-zugblue;;
-    border-bottom: 1px solid &dtml-zugblue;;
+    border-top: 1px solid &dtml-borderblue;;
+    border-bottom: 1px solid &dtml-borderblue;;
     padding-top: 0.272em;
 }
 
@@ -766,7 +771,7 @@ table.grid {
 table.grid td,
 table.grid th {
     border-style: solid solid solid solid;
-    border-color: &dtml-zugblue;;
+    border-color: &dtml-borderblue;;
     border-width: 1px;
     padding: 0.272em;
 }
@@ -1056,9 +1061,15 @@ a.link-parent {
 
 /* Handling external links */
 #content span.link-external a,
-#content a.link {
+.portlet span.link-external a {
     background: transparent url(&dtml-portal_url;/link_icon.gif) 100% 2px no-repeat;
     padding: 0 16px 0 0;
+}
+/* Handling special links */
+#content a.link,
+.portlet a.link {
+    background: transparent url(&dtml-portal_url;/icon_arrow_right.gif) 100% 0 no-repeat;
+    padding: 0 20px 0 0;
 }
 #content span.link-https a {
     background: transparent url(&dtml-portal_url;/lock_icon.gif) 0px 1px no-repeat;
@@ -1393,18 +1404,15 @@ div.overlay #createGroup fieldset { border: none; }
 .wizard .wizardSteps li.selected a {
     font-weight: bold;
 }
-
 .wizard .wizardContent {
     display: block;
     clear: both;
 }
-
 #debug_info {
     clear: both;
     position: absolute;
     top: 10.7em;
 }
-
 .collapsibleLegend {
     float: left;
     width: 1em;
@@ -1413,7 +1421,6 @@ div.overlay #createGroup fieldset { border: none; }
     background: url(&dtml-portal_url;/icon_open.gif) no-repeat scroll 50% 50% transparent;
     cursor: pointer;
 }
-
 .collapsibleLegend.closed {
     background: url(&dtml-portal_url;/icon_closed.gif) no-repeat scroll 50% 50% transparent;
 }
@@ -1424,20 +1431,14 @@ div.to_top {
   margin-bottom: 1em;
   clear: both;
 }
-
-div.documentContent div.to_top a {
-    font-size: 1em;
-}
-
 div.to_top a {
-  font-size: 1.1em;
+  font-size:1.1em;
   line-height:2.6em;
   text-decoration:none;
   color: &dtml-grey4;;
   background: transparent url(&dtml-portal_url;/to_top.gif) no-repeat 100% 50%;
   padding-right: 1em;
 }
-
 div.to_top a:hover {
   color: #D52000;
   text-decoration: underline;
@@ -1454,117 +1455,119 @@ div.to_top a:hover {
 .icons-on *[class*=function-],
 .icons-on *[class*=actionicon-],
 .icons-on *[class*=icon-] {
-    background-image: url(&dtml-portal_url;/zugsprite.png);
+	background-image: url(&dtml-portal_url;/zugsprite.png);
     background-repeat: no-repeat;
     padding: 0.1em 0 0.1em 2em;
 }
-
 
 /* generated css */
 .actionicon-folder_factories-add_participant, .contenttype-opengever-contact-contact, .contenttype-zugmitglied, .function-user{ background-position: 0 0;  } 
 .actionicon-folder_factories-add_tasktemplate, .contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -66px;  } 
 .actionicon-folder_factories-addresponse, .contenttype-poiresponse, .contenttype-remark{ background-position: 0 -132px;  } 
-.actionicon-folder_factories-document_with_docucomposer, .actionicon-folder_factories-document_with_template, .contenttype-content-page, .contenttype-document, .contenttype-zugeventlandingpage, .contenttype-zugimmolandingpage, .contenttype-zuginhaltsseite{ background-position: 0 -198px;  } 
-.contenttype-arbeitsraum-inverse{ background-position: 0 -264px;  } 
-.contenttype-arbeitsraum{ background-position: 0 -330px;  } 
-.contenttype-banner, .contenttype-image, .contenttype-zugbanner, .icon-dokument_bilddatei, .mimetype-bmp, .mimetype-gif, .mimetype-jpeg, .mimetype-png{ background-position: 0 -396px;  } 
-.contenttype-billboardad{ background-position: 0 -462px;  } 
-.contenttype-block, .contenttype-buchblock, .contenttype-zugalbumblock, .contenttype-zughtmlblock, .contenttype-zuginhaltsblock{ background-position: 0 -528px;  } 
-.contenttype-blog-category, .contenttype-blog{ background-position: 0 -594px;  } 
-.contenttype-blog-entry{ background-position: 0 -660px;  } 
-.contenttype-buch{ background-position: 0 -726px;  } 
-.contenttype-changeset{ background-position: 0 -792px;  } 
-.contenttype-course, .contenttype-file, .contenttype-flowplayerblock, .function-download{ background-position: 0 -853px;  } 
-.contenttype-coursecategory, .contenttype-folder, .contenttype-kita-folder, .contenttype-large-plone-folder, .contenttype-newsordner, .contenttype-opengever-dossier-projectdossier, .contenttype-opengever-inbox-yearfolder, .contenttype-stellenordner, .contenttype-topic, .contenttype-vernehmlassungsordner, .contenttype-zugeventfolder, .contenttype-zuggemeinde, .contenttype-zughomefolder, .contenttype-zugimmofolder, .contenttype-zugkantonsratsvorlage, .contenttype-zugkantonsratsvorlagenordner, .contenttype-zugmedienmitteilungsordner, .contenttype-zugorgeinheit, .contenttype-zugstellenordner, .contenttype-zugsubmissionfolder, .contenttype-zugvernehmlassungsordner{ background-position: 0 -919px;  } 
-.contenttype-event, .contenttype-meeting, .contenttype-zugevent{ background-position: 0 -985px;  } 
-.contenttype-favorite, .function-favorites{ background-position: 0 -1051px;  } 
-.contenttype-fieldsetfolder{ background-position: 0 -1117px;  } 
-.contenttype-formbooleanfield{ background-position: 0 -1183px;  } 
-.contenttype-formcustomscriptadapter{ background-position: 0 -1249px;  } 
-.contenttype-formdatefield{ background-position: 0 -1315px;  } 
-.contenttype-formfilefield{ background-position: 0 -1381px;  } 
-.contenttype-formfixedpointfield{ background-position: 0 -1447px;  } 
-.contenttype-formfolder{ background-position: 0 -1513px;  } 
-.contenttype-formintegerfield{ background-position: 0 -1579px;  } 
-.contenttype-formlabelfield{ background-position: 0 -1645px;  } 
-.contenttype-formlinesfield{ background-position: 0 -1711px;  } 
-.contenttype-formmaileradapter{ background-position: 0 -1777px;  } 
-.contenttype-formmultiselectionfield{ background-position: 0 -1843px;  } 
-.contenttype-formpasswordfield{ background-position: 0 -1909px;  } 
-.contenttype-formrichlabelfield{ background-position: 0 -1975px;  } 
-.contenttype-formrichtextfield{ background-position: 0 -2041px;  } 
-.contenttype-formsavedataadapter{ background-position: 0 -2107px;  } 
-.contenttype-formselectionfield{ background-position: 0 -2173px;  } 
-.contenttype-formstringfield{ background-position: 0 -2239px;  } 
-.contenttype-formtextfield{ background-position: 0 -2305px;  } 
-.contenttype-formthankspage{ background-position: 0 -2371px;  } 
-.contenttype-ftw-mail-mail{ background-position: 0 -2437px;  } 
-.contenttype-geolocation{ background-position: 0 -2503px;  } 
-.contenttype-kapitel{ background-position: 0 -2569px;  } 
-.contenttype-lebenslage, .contenttype-opengever-repository-repositoryfolder{ background-position: 0 -2635px;  } 
-.contenttype-lebenslagealias, .contenttype-link, .contenttype-refegovservice, .contenttype-zuglink, .function-arrow-right{ background-position: 0 -2701px;  } 
-.contenttype-medienmitteilung, .contenttype-zugmedienmitteilung, .contenttype-zugnews, .contenttype-zugnewsletter, .contenttype-zugnewsseite, .contenttype-zugvernehmlassung{ background-position: 0 -2767px;  } 
-.contenttype-news-item, .contenttype-news{ background-position: 0 -2833px;  } 
-.contenttype-opengever-contact-contactfolder, .contenttype-orgunit, .contenttype-subsite{ background-position: 0 -2899px;  } 
-.contenttype-opengever-document-document, .contenttype-zugshopitem{ background-position: 0 -2965px;  } 
-.contenttype-opengever-dossier-businesscasedossier, .contenttype-opengever-dossier-templatedossier, .contenttype-opengever-zug-bdarp-casedossier1, .contenttype-opengever-zug-bdarp-casedossier2, .contenttype-opengever-zug-bdbds-bdbdscasedossier1, .contenttype-opengever-zug-bdbds-bdbdscasedossier2, .contenttype-opengever-zug-digva-orderdossier, .contenttype-opengever-zug-skakr-businesscasedossier{ background-position: 0 -3031px;  } 
-.contenttype-opengever-inbox-forwarding, .contenttype-opengever-inbox-inbox{ background-position: 0 -3097px;  } 
-.contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -3163px;  } 
-.contenttype-opengever-repository-repositoryroot{ background-position: 0 -3229px;  } 
-.contenttype-opengever-task-task-inverse{ background-position: 0 -3295px;  } 
-.contenttype-opengever-task-task, .contenttype-opengever-tasktemplates-tasktemplate{ background-position: 0 -3361px;  } 
-.contenttype-poiissue, .contenttype-poipsctracker, .contenttype-poitracker, .contenttype-ticketbox{ background-position: 0 -3427px;  } 
-.contenttype-remark-inverse{ background-position: 0 -3493px;  } 
-.contenttype-table{ background-position: 0 -3559px;  } 
-.contenttype-zugmerkliste, .function-todolist{ background-position: 0 -3625px;  } 
-.function-add{ background-position: 0 -3691px;  } 
-.function-addtofavorites-inverse, .function-favorites-inverse{ background-position: 0 -3757px;  } 
-.function-basket{ background-position: 0 -3823px;  } 
-.function-collapsible-closed{ background-position: 0 -3889px;  } 
-.function-collapsible-open{ background-position: 0 -3950px;  } 
-.function-delete{ background-position: 0 -4011px;  } 
-.function-edit-inverse, .function-extedit-inverse, .function-togglesledit-inverse{ background-position: 0 -4077px;  } 
-.function-edit{ background-position: 0 -4143px;  } 
-.function-export-outlook{ background-position: 0 -4209px;  } 
-.function-export-pdf-inverse{ background-position: 0 -4275px;  } 
-.function-export-pdf{ background-position: 0 -4341px;  } 
-.function-information{ background-position: 0 -4407px;  } 
-.function-internet-inverse{ background-position: 0 -4473px;  } 
-.function-internet{ background-position: 0 -4539px;  } 
-.function-journal-inverse{ background-position: 0 -4605px;  } 
-.function-journal{ background-position: 0 -4671px;  } 
-.function-ok{ background-position: 0 -4737px;  } 
-.function-print-inverse{ background-position: 0 -4803px;  } 
-.function-print{ background-position: 0 -4869px;  } 
-.function-rss{ background-position: 0 -4935px;  } 
-.function-settings-inverse{ background-position: 0 -5001px;  } 
-.function-settings{ background-position: 0 -5067px;  } 
-.function-site{ background-position: 0 -5133px;  } 
-.function-start{ background-position: 0 -5199px;  } 
-.function-subscribe-newsletter{ background-position: 0 -5265px;  } 
-.function-upload{ background-position: 0 -5331px;  } 
+.actionicon-folder_factories-attach_remote_document, .function-upload{ background-position: 0 -198px;  } 
+.actionicon-folder_factories-document_with_docucomposer, .actionicon-folder_factories-document_with_template, .contenttype-content-page, .contenttype-document, .contenttype-zugeventlandingpage, .contenttype-zugimmolandingpage, .contenttype-zuginhaltsseite{ background-position: 0 -264px;  } 
+.contenttype-arbeitsraum-inverse{ background-position: 0 -330px;  } 
+.contenttype-arbeitsraum{ background-position: 0 -396px;  } 
+.contenttype-banner, .contenttype-image, .contenttype-zugbanner, .icon-dokument_bilddatei, .mimetype-bmp, .mimetype-gif, .mimetype-jpeg, .mimetype-png{ background-position: 0 -462px;  } 
+.contenttype-billboardad{ background-position: 0 -528px;  } 
+.contenttype-block, .contenttype-buchblock, .contenttype-zugalbumblock, .contenttype-zughtmlblock, .contenttype-zuginhaltsblock{ background-position: 0 -594px;  } 
+.contenttype-blog-category, .contenttype-blog{ background-position: 0 -660px;  } 
+.contenttype-blog-entry{ background-position: 0 -726px;  } 
+.contenttype-buch{ background-position: 0 -792px;  } 
+.contenttype-changeset{ background-position: 0 -858px;  } 
+.contenttype-course, .contenttype-file, .contenttype-flowplayerblock, .function-download{ background-position: 0 -919px;  } 
+.contenttype-coursecategory, .contenttype-folder, .contenttype-kita-folder, .contenttype-large-plone-folder, .contenttype-newsordner, .contenttype-opengever-dossier-projectdossier, .contenttype-opengever-inbox-yearfolder, .contenttype-stellenordner, .contenttype-topic, .contenttype-vernehmlassungsordner, .contenttype-zugeventfolder, .contenttype-zuggemeinde, .contenttype-zughomefolder, .contenttype-zugimmofolder, .contenttype-zugkantonsratsvorlage, .contenttype-zugkantonsratsvorlagenordner, .contenttype-zugmedienmitteilungsordner, .contenttype-zugorgeinheit, .contenttype-zugstellenordner, .contenttype-zugsubmissionfolder, .contenttype-zugvernehmlassungsordner{ background-position: 0 -985px;  } 
+.contenttype-event, .contenttype-meeting, .contenttype-zugevent{ background-position: 0 -1051px;  } 
+.contenttype-favorite, .function-favorites{ background-position: 0 -1117px;  } 
+.contenttype-fieldsetfolder{ background-position: 0 -1183px;  } 
+.contenttype-formbooleanfield{ background-position: 0 -1249px;  } 
+.contenttype-formcustomscriptadapter{ background-position: 0 -1315px;  } 
+.contenttype-formdatefield{ background-position: 0 -1381px;  } 
+.contenttype-formfilefield{ background-position: 0 -1447px;  } 
+.contenttype-formfixedpointfield{ background-position: 0 -1513px;  } 
+.contenttype-formfolder{ background-position: 0 -1579px;  } 
+.contenttype-formintegerfield{ background-position: 0 -1645px;  } 
+.contenttype-formlabelfield{ background-position: 0 -1711px;  } 
+.contenttype-formlinesfield{ background-position: 0 -1777px;  } 
+.contenttype-formmaileradapter{ background-position: 0 -1843px;  } 
+.contenttype-formmultiselectionfield{ background-position: 0 -1909px;  } 
+.contenttype-formpasswordfield{ background-position: 0 -1975px;  } 
+.contenttype-formrichlabelfield{ background-position: 0 -2041px;  } 
+.contenttype-formrichtextfield{ background-position: 0 -2107px;  } 
+.contenttype-formsavedataadapter{ background-position: 0 -2173px;  } 
+.contenttype-formselectionfield{ background-position: 0 -2239px;  } 
+.contenttype-formstringfield{ background-position: 0 -2305px;  } 
+.contenttype-formtextfield{ background-position: 0 -2371px;  } 
+.contenttype-formthankspage{ background-position: 0 -2437px;  } 
+.contenttype-ftw-mail-mail{ background-position: 0 -2503px;  } 
+.contenttype-geolocation{ background-position: 0 -2569px;  } 
+.contenttype-kapitel{ background-position: 0 -2635px;  } 
+.contenttype-lebenslage, .contenttype-opengever-repository-repositoryfolder{ background-position: 0 -2701px;  } 
+.contenttype-lebenslagealias, .contenttype-link, .contenttype-refegovservice, .contenttype-zuglink, .function-arrow-right{ background-position: 0 -2767px;  } 
+.contenttype-medienmitteilung, .contenttype-zugmedienmitteilung, .contenttype-zugnews, .contenttype-zugnewsletter, .contenttype-zugnewsseite, .contenttype-zugvernehmlassung{ background-position: 0 -2833px;  } 
+.contenttype-news-item, .contenttype-news{ background-position: 0 -2899px;  } 
+.contenttype-opengever-contact-contactfolder, .contenttype-orgunit, .contenttype-subsite{ background-position: 0 -2965px;  } 
+.contenttype-opengever-document-document, .contenttype-zugshopitem{ background-position: 0 -3031px;  } 
+.contenttype-opengever-dossier-businesscasedossier, .contenttype-opengever-dossier-templatedossier, .contenttype-opengever-zug-bdarp-casedossier1, .contenttype-opengever-zug-bdarp-casedossier2, .contenttype-opengever-zug-bdbds-bdbdscasedossier1, .contenttype-opengever-zug-bdbds-bdbdscasedossier2, .contenttype-opengever-zug-digva-orderdossier, .contenttype-opengever-zug-skakr-businesscasedossier{ background-position: 0 -3097px;  } 
+.contenttype-opengever-inbox-forwarding, .contenttype-opengever-inbox-inbox{ background-position: 0 -3163px;  } 
+.contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -3229px;  } 
+.contenttype-opengever-repository-repositoryroot{ background-position: 0 -3295px;  } 
+.contenttype-opengever-task-task-inverse{ background-position: 0 -3361px;  } 
+.contenttype-opengever-task-task, .contenttype-opengever-tasktemplates-tasktemplate{ background-position: 0 -3427px;  } 
+.contenttype-poiissue, .contenttype-poipsctracker, .contenttype-poitracker, .contenttype-ticketbox{ background-position: 0 -3493px;  } 
+.contenttype-remark-inverse{ background-position: 0 -3559px;  } 
+.contenttype-table{ background-position: 0 -3625px;  } 
+.contenttype-zugmerkliste, .function-todolist{ background-position: 0 -3691px;  } 
+.function-add{ background-position: 0 -3757px;  } 
+.function-addtofavorites-inverse, .function-favorites-inverse{ background-position: 0 -3823px;  } 
+.function-basket{ background-position: 0 -3889px;  } 
+.function-collapsible-closed{ background-position: 0 -3955px;  } 
+.function-collapsible-open{ background-position: 0 -4016px;  } 
+.function-delete{ background-position: 0 -4077px;  } 
+.function-edit-inverse, .function-extedit-inverse, .function-togglesledit-inverse{ background-position: 0 -4143px;  } 
+.function-edit{ background-position: 0 -4209px;  } 
+.function-export-outlook{ background-position: 0 -4275px;  } 
+.function-export-pdf-inverse{ background-position: 0 -4341px;  } 
+.function-export-pdf{ background-position: 0 -4407px;  } 
+.function-information{ background-position: 0 -4473px;  } 
+.function-internet-inverse{ background-position: 0 -4539px;  } 
+.function-internet{ background-position: 0 -4605px;  } 
+.function-journal-inverse{ background-position: 0 -4671px;  } 
+.function-journal{ background-position: 0 -4737px;  } 
+.function-ok{ background-position: 0 -4803px;  } 
+.function-print-inverse{ background-position: 0 -4869px;  } 
+.function-print{ background-position: 0 -4935px;  } 
+.function-rss{ background-position: 0 -5001px;  } 
+.function-settings-inverse{ background-position: 0 -5067px;  } 
+.function-settings{ background-position: 0 -5133px;  } 
+.function-site{ background-position: 0 -5199px;  } 
+.function-start{ background-position: 0 -5265px;  } 
+.function-subscribe-newsletter{ background-position: 0 -5331px;  } 
 .function-watch-inverse{ background-position: 0 -5397px;  } 
 .function-watch{ background-position: 0 -5463px;  } 
 .function-watchlist{ background-position: 0 -5529px;  } 
-.icon-dokument_email, .mimetype-rfc822{ background-position: 0 -5595px;  } 
-.icon-dokument_excel, .mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel{ background-position: 0 -5661px;  } 
-.icon-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -5727px;  } 
-.icon-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -5793px;  } 
-.icon-dokument_text, .icon-text, .mimetype-plain{ background-position: 0 -5859px;  } 
-.icon-dokument_visio, .mimetype-vnd-visio{ background-position: 0 -5925px;  } 
-.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -5991px;  } 
-.icon-dokument_word, .mimetype-msword{ background-position: 0 -6057px;  } 
-.icon-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -6123px;  } 
-.mimetype-vnd-sun-xml-calc{ background-position: 0 -6189px;  } 
-.mimetype-vnd-sun-xml-draw{ background-position: 0 -6255px;  } 
-.mimetype-vnd-sun-xml-impress{ background-position: 0 -6321px;  } 
-.mimetype-vnd-sun-xml-writer{ background-position: 0 -6387px;  } 
-.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6453px;  } 
-.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -6518px;  } 
-.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -6584px;  } 
-.wf-task-state-in-progress{ background-position: 0 -6650px;  } 
-.wf-task-state-new-successor{ background-position: 0 -6716px;  } 
-.wf-task-state-resolved{ background-position: 0 -6782px;  } 
+.icon-application{ background-position: 0 -5595px;  } 
+.icon-dokument_email, .mimetype-rfc822{ background-position: 0 -5661px;  } 
+.icon-dokument_excel, .mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel{ background-position: 0 -5727px;  } 
+.icon-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -5793px;  } 
+.icon-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -5859px;  } 
+.icon-dokument_text, .icon-text, .mimetype-plain{ background-position: 0 -5925px;  } 
+.icon-dokument_visio, .mimetype-vnd-visio{ background-position: 0 -5991px;  } 
+.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -6057px;  } 
+.icon-dokument_word, .mimetype-msword{ background-position: 0 -6123px;  } 
+.icon-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -6189px;  } 
+.mimetype-vnd-sun-xml-calc{ background-position: 0 -6255px;  } 
+.mimetype-vnd-sun-xml-draw{ background-position: 0 -6321px;  } 
+.mimetype-vnd-sun-xml-impress{ background-position: 0 -6387px;  } 
+.mimetype-vnd-sun-xml-writer{ background-position: 0 -6453px;  } 
+.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6519px;  } 
+.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -6584px;  } 
+.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -6650px;  } 
+.wf-task-state-in-progress{ background-position: 0 -6716px;  } 
+.wf-task-state-new-successor{ background-position: 0 -6782px;  } 
+.wf-task-state-resolved{ background-position: 0 -6848px;  } 
+
+
 
 
 /* </dtml-with> */

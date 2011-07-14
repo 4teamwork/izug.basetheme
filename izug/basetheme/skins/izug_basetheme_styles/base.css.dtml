@@ -23,25 +23,18 @@ body {
     margin: 0;
     padding: 0;
 }
-
 table {
     font-size: 100%;
 }
-
 a {
     color: &dtml-linkColor;;
     background-color: transparent;
     outline: none;
 }
-a:hover {
-    color: &dtml-linkActiveColor;;
-    text-decoration: underline;
-}
 img {
     border: none;
     vertical-align: middle;
 }
-
 p {
     margin: 0 0 1.091em 0;
     line-height: 1.455em;
@@ -73,6 +66,7 @@ h5 a,
 h6 a {
     color: &dtml-fontColor; ! important;
     text-decoration: none;
+    border-bottom-style: none;
 }*/
 h1 {
     background-color: &dtml-globalBackgroundColor;;
@@ -89,13 +83,9 @@ h1 a {
     text-decoration: none;
 }
 h2 {
-/*    font-size: 1.182em;
-*/
-    font-size: 1.3em;
+    font-size: 1.182em;
     font-weight: bold;
-/*    line-height: 1.154em;
-*/
-    line-height: 1.5em;
+    line-height: 1.154em;
     margin: 1.538em 0 0.615em 0;
 }
 h3 {
@@ -103,7 +93,7 @@ h3 {
     border-bottom: none;
     font-weight: bold;
     line-height: 1.455em;
-    margin: 0;
+    margin: 0 0 0.363em 0;
 }
 h4 {
     font-size: 1.1em;
