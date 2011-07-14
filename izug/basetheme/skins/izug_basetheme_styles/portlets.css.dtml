@@ -27,10 +27,10 @@
     border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
     background-color: &dtml-backgroundColor;;
 }
-.portlet a {
-    text-decoration: none;
-}
 .portlet a:hover {
+    text-decoration: underline;
+}
+.portlet a {
     text-decoration: none;
 }
 .portlet a.tile {
