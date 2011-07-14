@@ -35,6 +35,9 @@ a:hover {
     color: &dtml-linkActiveColor;;
     text-decoration: underline;
 }
+a:visited {
+    color: &dtml-grey5;;
+}
 img {
     border: none;
     vertical-align: middle;
