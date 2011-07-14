@@ -1433,10 +1433,6 @@ div.to_top {
   clear: both;
 }
 
-div.documentContent div.to_top a {
-    font-size: 1em;
-}
-
 div.to_top a {
   font-size: 1.1em;
   line-height:2.6em;
