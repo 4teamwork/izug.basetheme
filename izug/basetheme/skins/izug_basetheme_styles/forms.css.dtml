@@ -24,10 +24,10 @@ textarea {
   background: White url(&dtml-portal_url;/input_background.gif) repeat-x;
   width: 100%;
 }
-.feedback-form textarea {
+#feedback-form textarea {
     width: 19.6em;
 }
-.feedback-form input {
+#feedback-form input {
     margin-right: 0.2em;
 }
 input {
