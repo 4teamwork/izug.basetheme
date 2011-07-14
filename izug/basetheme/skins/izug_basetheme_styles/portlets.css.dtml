@@ -30,6 +30,9 @@
 .portlet a {
     text-decoration: none;
 }
+.portlet a:hover {
+    text-decoration: none;
+}
 .portlet a.tile {
     display: block;
 }
