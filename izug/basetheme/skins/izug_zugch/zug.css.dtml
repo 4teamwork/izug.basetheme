@@ -67,7 +67,7 @@
     border-color: &dtml-fontColor;;
 }
 .portletSearch .portlet-search-gadget {
-    padding-left: 0.1em;
+    padding-left: 0.4em;
     margin-left: 0.1em;
     width: 13.2em;
 }
