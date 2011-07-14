@@ -31,12 +31,12 @@ a {
     background-color: transparent;
     outline: none;
 }
+a:visited {
+    color: &dtml-grey5;;
+}
 a:hover {
     color: &dtml-linkActiveColor;;
     text-decoration: underline;
-}
-a:visited {
-    color: &dtml-grey5;;
 }
 img {
     border: none;
