@@ -792,6 +792,17 @@ table caption {
     font-weight: bold;
 }
 
+listingBar span.first {
+    display: block;
+    float: left;
+    border-style: none;
+}
+.listingBar span.last {
+    display: block;
+    float:right;
+    border-style: none;
+}
+
 /* Batch selector */
 .listingBar {
     text-align: center;
@@ -1070,6 +1081,11 @@ a.link-parent {
     background: transparent url(&dtml-portal_url;/link_icon.gif) 100% 2px no-repeat;
     padding: 0 12px 0 0;
 }
+
+.portlet span.link-external a.specialExternalLink {
+   padding: 0 7px 0 0;
+}
+
 /* Handling special links */
 #content a.link,
 .portlet a.link {
