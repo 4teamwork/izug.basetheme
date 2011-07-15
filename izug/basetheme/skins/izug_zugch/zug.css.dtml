@@ -204,12 +204,15 @@ table caption p strong {
 .template-lebenslage_summary_view h3 {
     padding: 0.923em 0.385em 0.769em 0;
 }
-/*table.eShop {
+table.eShop {
     margin-top: 1.091em;
-}*/
-table.eShop caption {
-    font-weight: bold;
+    margin-bottom: 0em;
 }
+
+ table.eShop caption {
+     font-weight: bold;
+    padding: 0 0 0 0;
+
 table.eShop td.column1 {
     min-width: 35em;
 }
