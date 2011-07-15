@@ -16,15 +16,15 @@
                 crumb
             </a>
             <span class="breadcrumbSeparator" tal:condition="not: is_last">
-                <tal:ltr condition="not: view/is_rtl">&nbsp;</tal:ltr>
-                <tal:rtl condition="view/is_rtl">&nbsp;</tal:rtl>
+                <tal:ltr condition="not: view/is_rtl"><img tal:attributes="src string: ${context/portal_url}/breadcrumb_teiler.png" src="" class="breadcrumb-divider" alt="" /></tal:ltr>
+                <tal:rtl condition="view/is_rtl"><img tal:attributes="src string: ${context/portal_url}/breadcrumb_teiler.png" src="" class="breadcrumb-divider" alt="" /></tal:rtl>
             </span>
          </tal:last>
     </span>
     <span tal:define="show_template_name view/template_text" 
           tal:condition="show_template_name"
           tal:omit-tag="">
-        <span class="breadcrumbSeparator">&nbsp;</span>
+        <span class="breadcrumbSeparator"><img tal:attributes="src string: ${context/portal_url}/breadcrumb_teiler.png" src="" class="breadcrumb-divider" alt="" /></span>
         <span tal:content="show_template_name">crumb</span>
     </span>
 </div>
