@@ -357,7 +357,7 @@ table.eShop caption {
 	display: inline;
 }
 
-a.function-print-inverse:hover,
+.documentContent li a.function-print-inverse:hover,
 .file_download a:hover {
 	text-decoration: none;
 }
