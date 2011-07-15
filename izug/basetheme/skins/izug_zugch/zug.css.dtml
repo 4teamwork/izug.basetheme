@@ -211,6 +211,7 @@ table.eShop {
  table.eShop caption {
      font-weight: bold;
     padding: 0 0 0 0;
+}
 
 table.eShop td.column1 {
     min-width: 35em;
