@@ -1090,7 +1090,7 @@ a.link-parent {
 #content a.link,
 .portlet a.link {
     background: transparent url(&dtml-portal_url;/icon_arrow_right.gif) 100% 0 no-repeat;
-    padding: 0 20px 0 0;
+    padding: 1px 20px 0 0;
 }
 #content span.link-https a {
     background: transparent url(&dtml-portal_url;/lock_icon.gif) 0px 1px no-repeat;
