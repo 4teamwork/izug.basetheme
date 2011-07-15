@@ -1082,10 +1082,6 @@ a.link-parent {
     padding: 0 12px 0 0;
 }
 
-.portlet span.link-external a.specialExternalLink {
-   padding: 0 7px 0 0;
-}
-
 /* Handling special links */
 #content a.link,
 .portlet a.link {

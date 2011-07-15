@@ -358,7 +358,7 @@ table.eShop caption {
 }
 
 .documentContent li a.function-print-inverse:hover,
-.file_download a:hover {
+table.eShop .file_download a:hover {
 	text-decoration: none;
 }
 	
