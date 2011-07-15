@@ -356,4 +356,10 @@ table.eShop caption {
     padding: 0 !important;
 	display: inline;
 }
+
+a.function-print-inverse:hover,
+.file_download a:hover {
+	text-decoration: none;
+}
+	
 /* </dtml-with> */
