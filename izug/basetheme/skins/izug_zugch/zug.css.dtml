@@ -160,7 +160,6 @@ table td {
     border-left: 0.272em transparent solid;
     border-right: 0 transparent none;
     border-bottom: 1px solid &dtml-borderblue;;
-    border-top:  1px solid &dtml-borderblue;;
     line-height: 1.454em;
 }
 table td:first-child,
