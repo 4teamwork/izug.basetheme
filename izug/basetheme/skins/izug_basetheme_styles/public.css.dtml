@@ -486,6 +486,7 @@ h3, h4, h5, h6 {
     margin: 0 0 0 0.3em;
     padding: 0 0.3em 0 0;
 }
+
 .addFavorite {
     vertical-align: bottom;
 }
@@ -1585,6 +1586,13 @@ div.to_top a:hover {
 .wf-task-state-new-successor{ background-position: 0 -6782px;  } 
 .wf-task-state-resolved{ background-position: 0 -6848px;  } 
 
+.breadcrumb-divider {
+	width: 0.8em;
+	height: 0.8em;
+	margin: 0 !important;
+    padding: 0 !important;
+	display: inline;
+}
 
 
 

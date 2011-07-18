@@ -349,14 +349,6 @@ table.eShop caption {
     margin: 0;
 }
 
-.breadcrumb-divider {
-	width: 0.8em;
-	height: 0.8em;
-	margin: 0 !important;
-    padding: 0 !important;
-	display: inline;
-}
-
 .documentContent li a.function-print-inverse:hover,
 .documentContent div.file-download a:hover {
 	text-decoration: none;
