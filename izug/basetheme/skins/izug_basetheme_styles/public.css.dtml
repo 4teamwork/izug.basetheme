@@ -472,6 +472,10 @@ h3, h4, h5, h6 {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+#portal-breadcrumbs img{
+	vertical-align: baseline;
+}
 #portal-breadcrumbs a {
     text-decoration: none;
     color: &dtml-grey4;;
@@ -479,12 +483,6 @@ h3, h4, h5, h6 {
 #portal-breadcrumbs a:hover {
     text-decoration: underline;
     color: &dtml-red;;
-}
-.breadcrumbSeparator {
-    background: url(&dtml-portal_url;/breadcrumbs_separator.gif) no-repeat scroll 0 45% transparent;
-    margin: 0 0.3em;
-    margin: 0 0 0 0.3em;
-    padding: 0 0.3em 0 0;
 }
 
 .addFavorite {
