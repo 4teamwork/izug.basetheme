@@ -625,6 +625,9 @@ ul.member_listing {
     background-image: none;
     border-style: none;
 }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    padding: 0;
+}
 #ui-datepicker-div table.ui-datepicker-calendar {
     border-top: 2px solid &dtml-zugblue;;
     border-bottom: 1px solid &dtml-borderblue;;
