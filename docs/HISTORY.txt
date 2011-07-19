@@ -5,7 +5,7 @@ Changelog
 1.0a10
 ------
 * Fixed ftw.datepicker. Sprite-icon style caused prev / next icons to be too
-  large
+  large, slight style improvements
   [fsprenger]
 
 1.0a9

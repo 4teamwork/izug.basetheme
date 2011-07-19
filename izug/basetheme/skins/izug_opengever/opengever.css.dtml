@@ -620,13 +620,22 @@ ul.member_listing {
 
 
 /* jquery calendar widget */
+.ui-datepicker {
+    width: auto;
+}
 #ui-datepicker-div div.ui-datepicker-header {
     background-color: white;
     background-image: none;
     border-style: none;
 }
-.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+.ui-datepicker .ui-datepicker-prev span, 
+.ui-datepicker .ui-datepicker-next span {
     padding: 0;
+}
+.ui-datepicker .ui-datepicker-prev.ui-state-hover, 
+.ui-datepicker .ui-datepicker-next.ui-state-hover {
+    background-image: none !important;
+    background-color: transparent;
 }
 #ui-datepicker-div table.ui-datepicker-calendar {
     border-top: 2px solid &dtml-zugblue;;
@@ -650,6 +659,9 @@ ul.member_listing {
     color: &dtml-grey5; !important;
     border-style: none;
     text-align: center;
+    padding: 0;
+    width: 2.727em;
+    line-height: 2.727em;
 }
 #ui-datepicker-div table.ui-datepicker-calendar td a.ui-state-highlight {
     background-color: &dtml-zugblue; !important;
