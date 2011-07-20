@@ -4,9 +4,16 @@ Changelog
 
 1.0a10
 ------
+
+* Fixed bug where document icons appear twice in ContentTreeWidget
+  Issue #1069 Test Rot 2.0.3: Fehlende Icons bei Verweis-Baum u.ae.
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069
+  [lgraf]
+
 * Fixed ftw.datepicker. Sprite-icon style caused prev / next icons to be too
   large, slight style improvements
   [fsprenger]
+
 
 1.0a9
 -----
