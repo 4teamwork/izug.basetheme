@@ -702,4 +702,16 @@ body.template-login_form #portal-breadcrumbs {
     text-indent: 0;
 }
 
+
+/* Disable sprites for opengever.document.document objects in 
+ContentTreeWidget so icons don't appear twice.
+See Issue #1069 Test Rot 2.0.3: Fehlende Icons bei Verweis-Baum u.ae.
+https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069 
+*/
+
+.contenttreeWidget .contenttype-opengever-document-document {
+    background-image: none;
+    padding-left: 0.2em !important;
+}
+
 /* </dtml-with> */
