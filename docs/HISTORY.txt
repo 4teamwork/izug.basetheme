@@ -14,6 +14,31 @@ Changelog
   large, slight style improvements
   [fsprenger]
 
+* moved breadcrumb-divider from zug.css to public.css
+  updated icon for breadcrumbs
+  fixed default table listing
+  [ttschanz]
+
+* Fixed visited links in portlet
+  No underline in hovered images
+  [jinfanger]
+
+* Fixed indent of menu point
+  Fixed contact form layout
+  Added visited style
+  Fixed text padding
+  Added base.css a:hover
+  Added text-decoration underline to public.css
+  Added hover to gradients
+  Added hover to forms
+  Fixed Search button borders
+  Added font size fix for siteactions and to_top
+  Removed wrong to_top definition
+  [acki]
+
+* Fixed distance between external links and their icon according to DF2.1
+  [lgraf]
+
 
 1.0a9
 -----
