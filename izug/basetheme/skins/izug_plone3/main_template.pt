@@ -93,7 +93,7 @@
                       condition="ico">
       <style type="text/css" 
              media="all" 
-             tal:content="string:.navTreeItem .navTreeCurrentItem {background-image: url(navigation_ico);}">
+             tal:content="string:.navTreeItem .navTreeCurrentItem {background-image: url(navigation_ico) !important;}">
       </style>
     </tal:isSubsiteCSS>
 

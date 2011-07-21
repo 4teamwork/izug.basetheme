@@ -4,7 +4,8 @@ Changelog
 
 1.0a11
 ------
-
+* Make sure the right navigation background image appears in subsites
+  [fsprenger]
 
 1.0a10
 ------
