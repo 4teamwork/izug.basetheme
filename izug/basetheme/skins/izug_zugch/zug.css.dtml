@@ -201,6 +201,9 @@ table caption p strong {
 .file-download {
     white-space: nowrap;
 }
+.file-download img {
+    margin-right: -0.182em;
+}
 .template-lebenslage_summary_view h3 {
     padding: 0.923em 0.385em 0.769em 0;
 }
