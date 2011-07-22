@@ -229,7 +229,8 @@ table.eShop td.right a img {
     margin-left: -100% !important;
     width: 78em !important;
 }
-.section-veranstaltungen #visual-portal-wrapper div#portal-column-content {
+.section-veranstaltungen #visual-portal-wrapper div#portal-column-content,
+.template-search #visual-portal-wrapper div#portal-column-content {
     margin-left: -100% !important;
     width: 100% !important;
 }
