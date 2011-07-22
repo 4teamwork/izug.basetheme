@@ -6,6 +6,9 @@ Changelog
 ------
 * Make sure the right navigation background image appears in subsites
   [fsprenger]
+  
+* Remove heading font in print.css
+  [fsprenger]
 
 1.0a10
 ------
