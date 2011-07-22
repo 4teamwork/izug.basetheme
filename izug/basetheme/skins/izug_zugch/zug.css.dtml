@@ -358,5 +358,23 @@ table.eShop caption {
 .documentContent div.file-download a:hover {
 	text-decoration: none;
 }
+
+/* fix for pseudo-navigation portlet in meinkonto */
+#areaNav ul {
+    margin-bottom: 0;
+}
+#areaNav li {
+    margin-bottom: -1px;
+}
+#areaNav a {
+    background-image: none;
+    border-bottom: 1px solid &dtml-globalBorderColor;;
+    color: &dtml-grey4;;
+    display: block;
+    font-size: 1.1em;
+    line-height: 1.454em;
+    padding: 0.454em 0.909em 0.454em 1.454em;
+    text-decoration: none;
+}
 	
 /* </dtml-with> */

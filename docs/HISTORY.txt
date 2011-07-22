@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Styling for nav portlet in mein konto
+  [fsprenger]
+  
 * Make sure the right navigation background image appears in subsites
   [fsprenger]
   
