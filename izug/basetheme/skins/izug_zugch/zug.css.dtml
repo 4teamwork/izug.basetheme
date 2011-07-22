@@ -91,6 +91,7 @@ div.column2 ul {
     line-height: 1.818em;
     margin-left: 0;
     margin-top: -0.364em;
+    margin-right: 1em;
 }
 div.column2 ul li {
     display: inline;
