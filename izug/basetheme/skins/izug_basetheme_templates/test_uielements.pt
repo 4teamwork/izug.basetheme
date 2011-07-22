@@ -715,6 +715,37 @@ Table of class vertical listing
 </div>
 -->
 </div>
+<h1>Batching</h1>
+<div class="listingBar">
+    <span class="first">
+        <a href="#">&laquo;</a>
+    </span>
+    <span class="previous">
+        <a href="#">&lsaquo;</a>
+    </span>
+    <span>
+        <a href="#">1</a>
+    </span>
+    <span>
+        <a href="#">2</a>
+    </span>
+    <span class="current">3</span>
+    <span>
+        <a href="#">4</a>
+    </span>
+    <span>
+        <a href="#">5</a>
+    </span>
+    <span>
+        <a href="#">6</a>
+    </span>
+    <span class="next">
+        <a href="#">&rsaquo;</a>
+    </span>
+    <span class="last">
+        <a href="#">&raquo;</a>
+    </span>
+</div>
 </metal:main>
 
 </body>

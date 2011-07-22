@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Refactored batching
+  [fsprenger]
+
 * Styling for nav portlet in mein konto
   [fsprenger]
   

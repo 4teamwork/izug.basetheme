@@ -791,17 +791,6 @@ table caption {
     font-weight: bold;
 }
 
-listingBar span.first {
-    display: block;
-    float: left;
-    border-style: none;
-}
-.listingBar span.last {
-    display: block;
-    float:right;
-    border-style: none;
-}
-
 /* Batch selector */
 .listingBar {
     text-align: center;
@@ -811,47 +800,35 @@ listingBar span.first {
     color: &dtml-grey5;;
     display: inline-block;
 }
-.listingBar a,
-.listingBar>span {
+.listingBar span a,
+.listingBar span span,
+.listingBar span.current {
+    display: block;
+    float: left;
+    margin: 0 0.363em 0 0;
+    padding: 0 0.363em;
     text-decoration: none;
     border-color: &dtml-grey5;;
     border-style: solid;
     border-width: 0.091em 0.182em 0.182em 0.091em;
-    padding: 0 0.182em;
-    margin: 0;
     color: &dtml-grey5;;
-}
-.listingBar span {
-    display: none;
-}
-.listingBar span.gap {
-    border-style:none;
-    background: transparent none !important;
-    display: inline;
 }
 .listingBar span.current {
     background: &dtml-zugblue; none !important;
     border-color: &dtml-zugblue; !important;
     color: white;
-    display: inline;
 }
-.listingBar span.previous,
-.listingPrevious {
-    display: block;
-    text-align: left;
-    float: left;
-    border-style: none;
-    margin-right: 0;
+.listingBar a:hover {
+    text-decoration: none;
+    border-color: &dtml-red;;
+    color: &dtml-red;;
 }
-.listingBar span.next,
-.listingNext {
-    display: block;
-    text-align: right;
-    float: right;
-    border-style: none;
-    margin-right: 0;
+.listingBar span.first a,
+.listingBar span.last a {
+    padding: 0 0.272em;
 }
 
+*/
 
 /* tile items */
 .tileItem {
