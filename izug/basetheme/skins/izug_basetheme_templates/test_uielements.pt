@@ -21,7 +21,7 @@
 </head>
 <body>
 <metal:main fill-slot="main">
-<h1 class="documentFirstHeading">Opengever User Interface Elemente</h1>
+<h1 class="documentFirstHeading">Design Fundamentals Kanton Zug</h1>
 
 <div class="documentDescription">
 Auf dieser Seite werden im izugtheme verwendete UI-Elemente aufgelistet. Die Seite kann als Referenz genommen werden, wie einzelne
