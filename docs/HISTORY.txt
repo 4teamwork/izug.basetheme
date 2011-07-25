@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Fixed contact form column and field widths
+  [fsprenger]
+
 * Changed zip label in join_form
   [fsprenger]
 

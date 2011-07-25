@@ -248,7 +248,22 @@ table.eShop td.right a img {
     float: none;
     margin: 3.636em 0 0 0;
 }
-
+#feedback-form .formLeftColum {
+    width: 22em;
+}
+#feedback-form textarea {
+    width: 22.727em;
+}
+#feedback-form input[type=text] {
+    margin-right: 0.2em;
+    width: 25em;
+}
+#feedback-form input#sender_zip {
+    width: 5em;
+}
+#feedback-form input#sender_residence {
+    width: 19.3em;
+}
 /*.template-login_form label,
 .template-logged_out label {
     width: 14em;
@@ -264,6 +279,7 @@ table.eShop td.right a img {
     clear: both;
     display: block;
 }*/
+
 form#login_form  {
     margin-top: 2.727em;
 }
