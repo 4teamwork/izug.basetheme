@@ -65,6 +65,7 @@
 .portletSearch .portletItem,
 .portletSearch .portletHeader {
     border-color: &dtml-fontColor;;
+    overflow: hidden;
 }
 .portletSearch .portlet-search-gadget {
     padding-left: 0.4em;

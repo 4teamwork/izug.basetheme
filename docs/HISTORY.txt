@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Make sure portlets dont get a scrollbar if content is too wide
+  [fsprenger]
+
 * More space before footer
   [fsprenger]
 

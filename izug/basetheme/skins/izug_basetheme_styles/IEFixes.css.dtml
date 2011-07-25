@@ -228,9 +228,6 @@ div.tabbedview-tabs ul.formTabs li a.selected {
 .portletSearch {
     margin-top: 0;
 }
-.portletSearch .portletItem {
-    overflow: hidden;
-}
 
 /* ie 7 doesnt support hidding with positioning on thead elements */
 thead.hiddenStructureAFAthead {
