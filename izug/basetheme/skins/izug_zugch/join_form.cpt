@@ -302,7 +302,7 @@
           <tr>
               <td>
                   <label for="zip"
-                         i18n:translate="label_city_zip">Ort / PLZ</label>
+                         i18n:translate="label_city_plz">Ort / PLZ</label>
               </td>
               <td>
                   <div class="field"

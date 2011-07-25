@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Changed zip label in join_form
+  [fsprenger]
+
 * Line-height in lebenslage_summary_view more link
   [fsprenger]
 
