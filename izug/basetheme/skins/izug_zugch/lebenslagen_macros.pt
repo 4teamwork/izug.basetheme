@@ -59,8 +59,8 @@
                 </tbody>
             </table>
             <tal:if condition="python: not context.REQUEST.has_key('show')">
-                <a class="link" tal:attributes="href string:${here_url}?show=${lebenslage/UID}&part=Content Page" 
-                   i18n:translate="">Alle Informationen</a>
+                <p><a class="link" tal:attributes="href string:${here_url}?show=${lebenslage/UID}&part=Content Page" 
+                   i18n:translate="">Alle Informationen</a></p>
             </tal:if>
         </tal:block>
     </metal:block>

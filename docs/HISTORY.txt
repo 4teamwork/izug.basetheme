@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Line-height in lebenslage_summary_view more link
+  [fsprenger]
+
 * Make sure portlets dont get a scrollbar if content is too wide
   [fsprenger]
 
