@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Border style for special portlet on zug frontpage
+  [fsprenger]
+
 * Fixed contact form column and field widths
   [fsprenger]
 

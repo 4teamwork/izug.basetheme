@@ -393,5 +393,13 @@ table.eShop caption {
     padding: 0.454em 0.909em 0.454em 1.454em;
     text-decoration: none;
 }
-	
+
+/* special portlet on frontpage */
+#strategie-portlet {
+    border-bottom: 0.2em solid &dtml-globalBorderColor;;
+}
+#strategie-portlet .portletItem,
+#strategie-portlet .portletHeader {
+    border-style: none !important;
+}
 /* </dtml-with> */
