@@ -1420,7 +1420,7 @@ div.overlay #createGroup fieldset { border: none; }
 /* to top link */
 
 div.to_top {
-  margin-top: 4em;
+  padding-top: 4em;
   display:block;
   margin-bottom: 1em;
   clear: both;
