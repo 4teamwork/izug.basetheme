@@ -84,7 +84,7 @@
                     <div class="label">&nbsp;</div>
                     
                     <div class="field">
-                        <input class="formSubmit"
+                        <input class="formSubmit context"
                                type="submit" 
                                value="Set my password"
                                i18n:domain="zug"
