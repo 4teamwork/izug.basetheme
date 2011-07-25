@@ -396,6 +396,7 @@ table.eShop caption {
 
 /* special portlet on frontpage */
 #strategie-portlet {
+    margin-top: 0 !important;
     border-bottom: 0.2em solid &dtml-globalBorderColor;;
 }
 #strategie-portlet .portletItem,
