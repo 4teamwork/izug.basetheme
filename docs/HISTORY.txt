@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Changed background color for overlays
+  [fsprenger]
+
 * Border style for special portlet on zug frontpage
   [fsprenger]
 
