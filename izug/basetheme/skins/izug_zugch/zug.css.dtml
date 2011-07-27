@@ -403,4 +403,9 @@ table.eShop caption {
 #strategie-portlet .portletHeader {
     border-style: none !important;
 }
+
+/* overlays */
+#GB_overlay {
+    background-color: black !important;
+}
 /* </dtml-with> */
