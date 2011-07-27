@@ -117,7 +117,7 @@ h3, h4, h5, h6 {
     text-decoration: none;
 }
 .documentContent li a:hover {
-    color: &dtml-red;;
+    color: &dtml-red; !important;
     text-decoration: underline;
 }
 .documentContent li a:active {
@@ -137,7 +137,7 @@ h3, h4, h5, h6 {
     background-color: transparent;
 }
 .documentContent a:hover {
-    color: &dtml-red;;
+    color: &dtml-red; !important;
     text-decoration: underline;
 }
 /* End links */
