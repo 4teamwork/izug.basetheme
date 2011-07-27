@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* No list-style in shoping cart portlet
+  [fsprenger]
+
 * Changed background color for overlays
   [fsprenger]
 

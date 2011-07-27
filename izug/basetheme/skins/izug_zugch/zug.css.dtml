@@ -224,6 +224,11 @@ table.eShop td.column1 {
 table.eShop td.right a img {
     padding: 0 0 0 1em;
 }
+.shoppingCart ul,
+.shoppingCart ul li {
+    list-style: none;
+}
+
 
 #visual-portal-wrapper div#portal-column-content {
     /* right and left column: 96em - 18em - 25em */
