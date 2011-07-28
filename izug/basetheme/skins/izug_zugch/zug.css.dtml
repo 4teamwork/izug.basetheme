@@ -268,6 +268,7 @@ table.eShop td.right a img {
 }
 #feedback-form input#sender_residence {
     width: 19.3em;
+    margin-right: -0.1em;
 }
 /*.template-login_form label,
 .template-logged_out label {
