@@ -86,7 +86,7 @@ h1 {
 }
 h1 a {
     background-color: &dtml-globalBackgroundColor;;
-    color: &dtml-backgroundColor;;
+    color: &dtml-backgroundColor; !important;
     text-decoration: none;
 }
 h2 {
