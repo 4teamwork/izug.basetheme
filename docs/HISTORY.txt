@@ -4,6 +4,10 @@ Changelog
 
 1.0a11
 ------
+
+* Fixed accesskeys
+  [fsprenger]
+
 * Kita-specific styling
   [fsprenger]
 

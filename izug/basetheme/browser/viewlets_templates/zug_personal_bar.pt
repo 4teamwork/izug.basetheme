@@ -3,6 +3,7 @@
 <h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>
 
 <ul id="portal-personaltools"
+    tal:define="accesskeys python: {'contact' : '3'};"
     tal:condition="python:view.user_actions or not view.anonymous"
     class="visualInline">
     <tal:actions tal:repeat="action view/user_actions">
@@ -11,7 +12,9 @@
             	<span><tal:block i18n:translate="">myZug</tal:block>:</span>
             </tal:if>
             <a href=""
-               tal:attributes="href action/url"
+               tal:define="accesskey python: accesskeys.get(action['id'], '');"
+               tal:attributes="href action/url;
+                               accesskey accesskey;"
             ><tal:actionname i18n:translate="" 
                              tal:content="action/title">dummy</tal:actionname
             ></a>
