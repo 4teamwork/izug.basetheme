@@ -155,7 +155,7 @@ ul.formTabs li a.selected {
 display: block !important;
 font-size: 17pt;
 font-weight: bold;
-font-color: #111111;
+color: #111111;
 border-style: none;
 outline: none;
 }

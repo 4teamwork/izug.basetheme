@@ -51,7 +51,7 @@
 
 .portletItem a:visited,
 .portletFooter a:visited {
-    color:&linkVisitedColor; !important;
+    color: &dtml-linkVisitedColor; !important;
     text-decoration: underline !important;
 }
 .portletHeader, .managedPortlet .portletHeader {
