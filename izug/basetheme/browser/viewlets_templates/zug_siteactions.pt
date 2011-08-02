@@ -4,7 +4,7 @@
   </div>
 </tal:block>
 <ul id="portal-siteactions"
-    tal:define="accesskeys python: {'sitemap' : '3', 'accessibility' : '0', 'contact' : '9'};"
+    tal:define="accesskeys python: {'sitemap' : '4', 'accessibility' : '9', 'contact' : '3'};"
     tal:condition="view/site_actions"
     i18n:domain="plone">
 

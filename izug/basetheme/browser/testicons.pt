@@ -9,6 +9,13 @@
 <head>
   <metal:css fill-slot="css_slot">
     <style type="text/css">
+    #portal-column-two {
+        display: none;
+    }
+    div#portal-column-content {
+        margin-left: -100% !important;
+        width: 100% !important;
+    }
     code {
         margin: 0 0 1em;
         display: none;

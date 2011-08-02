@@ -111,7 +111,9 @@
       <div id="portal-top" i18n:domain="plone">
         <div tal:replace="structure provider:plone.portaltop" />
       </div>
-
+      <a class="hiddenStructure" 
+         tal:attributes="href string:${context/absolute_url}#portal-globalnav"
+         accesskey="1">Navigation</a>
       <div class="visualClear" id="clear-space-before-wrapper-table"><!-- --></div>
 
       <div id="portal-columns">
