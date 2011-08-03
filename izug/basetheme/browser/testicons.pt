@@ -73,6 +73,7 @@
 <div class="documentDescription">
 Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle Icons korrekt sind.
 </div>
+<p><span class="contenttype-000noicon"/>&mdash; kein Icon definiert</p>
 <div id="toggler">
     <div class="field"><input type="checkbox" id="code" name="code"/>&nbsp;<label for="code">CSS-Klassen anzeigen</label></div>
     <div class="field"><input type="checkbox" id="show_icons" name="show_icons"/>&nbsp;<label for="show_icons">Anzeige von Icons aktivieren (wie in Plone Settings)</label></div>
