@@ -82,7 +82,20 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <h2>alle &lt;img ...&gt;-Icons anzeigen</h2>
     <code>jq("[class*=contenttype-] img, [class*=mimetype-] img, [class*=wf-] img, [class*=function-] img").css("outline", "5px dotted green")</code>
 </div>
+
 <div id="dashboard-portlets1">
+    <h2>Content types (static)</h2>
+    <tal:block define="types view/other_content_types"
+               repeat="type types">
+            <p tal:attributes="class python:type[0]">
+                <span tal:replace="python:type[1]">Type title</span>
+            </p>
+            <code tal:content="python:type[0]"/>  
+
+    </tal:block>
+</div>
+
+<div id="dashboard-portlets2">
     <h2>Content Types (generated)</h2>
     <tal:block define="types view/content_types"
                repeat="item types">
@@ -94,20 +107,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
             <code tal:content="string:contenttype-${item/extra/id}"/>  
     </tal:block>
 </div>
-<div id="dashboard-portlets2">
-    <h2>Content types (static)</h2>
-    <tal:block define="types view/other_content_types;
-                       type_ids python:types.keys();
-                       dummy python:type_ids.sort()"
-               repeat="type_id type_ids">
-            <p tal:attributes="class type_id">
-                <span tal:replace="python:types[type_id]">Type title</span>
-            </p>
-            <code tal:content="type_id"/>  
-    
-    </tal:block>
 
-</div>
 <div id="dashboard-portlets3">
     <h2>Workflow States (static)</h2>
     <p class="wf-task-state-cancelled">Abgebrochen</p>
