@@ -4,6 +4,8 @@ Changelog
 
 1.0a11
 ------
+* added izug icons in test_icons, changed icon order
+  [fsprenger]
 
 * Fixed accesskeys
   [fsprenger]
