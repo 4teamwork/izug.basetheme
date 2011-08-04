@@ -2,7 +2,7 @@
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
    default_skin="iZug Base Theme">
 
- <object name="izug_zugch"
+ <object name="izug_izug"
     meta_type="Filesystem Directory View"
     directory="izug.basetheme:skins/izug_izug"/>
 

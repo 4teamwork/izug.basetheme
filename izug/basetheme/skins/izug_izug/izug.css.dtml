@@ -1,4 +1,7 @@
 /* <dtml-with base_properties> */
 
+a.arbeitsraum_delete_item:hover {
+    text-decoration: none;
+}
 
 /* </dtml-with> */
