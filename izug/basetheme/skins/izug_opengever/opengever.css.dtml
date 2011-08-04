@@ -120,86 +120,6 @@ fieldset {
 }
 
 
-/* Tabbedview
-   ----------------------------------*/
-.tabbedview_select {
-  padding: 0.5em 1em;
-}
-.tabbedview_search {
-  display:block;
-  float:left;
-  padding:0 0 0 1em;
-  position:absolute;
-  z-index:10;
-}
-
-.tabbedview-tabs .listing td,
-.tabbedview-tabs .journal-listing td {
-  empty-cells:show;
-}
-
-.tabbedview-tabs .listing a,
-.tabbedview-tabs .journal-listing a {
-  overflow:hidden;
-}
-div.tabbedview-tabs {
-  padding-top: 1em;
-  background:transparent none repeat scroll 0 0;
-  clear: both;
-}
-
-div.tabbedview-tabs ul.formTabs {
-  padding: 0.5em 0;
-  margin: 0;
-}
-div.tabbedview-tabs ul.formTabs li {
-  display:inline;
-  list-style-image:none;
-  list-style-position:outside;
-  list-style-type:none;
-  margin:0;
-  width:auto;
-  padding:0;
-}
-div.tabbedview-tabs ul.formTabs li a {
-  border-top:1px solid &dtml-grey4;;
-  border-right:1px solid &dtml-grey4;;
-  border-left:1px solid &dtml-grey4;;
-  border-bottom:1px solid &dtml-grey4;;
-  color: &dtml-grey4;;
-  display:inline;
-  text-decoration:none;
-  margin-top: 0.455em;
-  padding:0.272em 1.363em;
-  background-color:&dtml-grey2;;
-  margin-right: -1px;
-  float: left;
-}
-div.tabbedview-tabs ul.formTabs li a.selected {
-  background-color: &dtml-backgroundColor;;
-  color: &dtml-grey5;;
-  padding-top: 0.545em;
-  padding-bottom: 0.545em;
-  margin-top: -0.091em;
-  border-bottom: 1px solid &dtml-backgroundColor;;
-}
-div.tabbedview-tabs ul.formTabs li a:hover {
-  color: &dtml-red;;
-  text-decoration: underline;
-}
-div.tabbedview_view div#tabbedview-body {
-  padding: 1.363em;
-  display: block;
-  border: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey4;;
-  background: none;
-  margin-top: -1px;
-  min-height: 15em;
-}
-.ui-tabs .ui-tabs-hide { display: none !important; }
-span.draggable{
-  cursor:move;
-}
-
 .draglocked .draggable{
   cursor:not-allowed;
 }
@@ -250,12 +170,15 @@ a:target {
   position:relative;
 }
 
-input#tabbedview-searchbox {
-  border:1px solid #6F9CBC;
-  margin:0;
-  color:grey;
-  padding-left:1.5em;
-  background: white url(&dtml-portal_url;/search_icon.gif) no-repeat 0% 40%;
+/* XXX: not sure if .tabbedview-tabs .listing is still used */
+.tabbedview-tabs .listing td,
+.tabbedview-tabs .journal-listing td {
+  empty-cells:show;
+}
+
+.tabbedview-tabs .listing a,
+.tabbedview-tabs .journal-listing a {
+  overflow:hidden;
 }
 
 .tabbedview-tabs .listing .sortable{
