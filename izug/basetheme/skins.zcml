@@ -13,5 +13,6 @@
   <cmf:registerDirectory name="izug_opengever"/>
   <cmf:registerDirectory name="izug_plone3"/>
   <cmf:registerDirectory name="izug_zugch"/>
-  
+  <cmf:registerDirectory name="izug_izug"/>
+
 </configure>

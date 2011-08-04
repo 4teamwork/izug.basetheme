@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* Added a new generic setup profile and skin layer for izug
+  [fsprenger]
+
 * Moved tabbedview styling from opengever.css to public.css in order to use it
   in izug
   [fsprenger]
