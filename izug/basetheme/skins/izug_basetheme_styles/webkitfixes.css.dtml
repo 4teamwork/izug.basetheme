@@ -6,7 +6,8 @@ body.largeText #portal-globalnav li {
 body.largeText div.tabbedview-tabs ul.formTabs li a {
     margin-top: 0.545em;
 }
-body.largeText div.tabbedview-tabs ul.formTabs li a.selected {
+body.largeText div.tabbedview-tabs ul.formTabs li a.selected,
+body.largeText div.tabbedview-tabs ul.formTabs li.ui-tabs-selected a {
     margin-top: -0.091em;
 }
 .LSBox {

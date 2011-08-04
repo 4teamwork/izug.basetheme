@@ -1630,7 +1630,7 @@ div.tabbedview-tabs ul.formTabs li a {
 div.tabbedview-tabs ul.formTabs li a.selected,
 div.tabbedview-tabs ul.formTabs li.ui-tabs-selected  a {
   background-color: &dtml-backgroundColor;;
-  color: &dtml-grey5;;
+  color: &dtml-grey5; !important;
   padding-top: 0.545em;
   padding-bottom: 0.545em;
   margin-top: -0.091em;
