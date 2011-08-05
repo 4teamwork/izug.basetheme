@@ -3,19 +3,23 @@
 a.arbeitsraum_delete_item:hover {
     text-decoration: none;
 }
-
+.tooltip-wrapper {
+    background: transparent url(&dtml-portal_url;/tooltip_bottom.png) no-repeat bottom center;
+    padding-bottom: 18px;
+    
+}
 .tooltip {
-    /* background: &dtml-backgroundColor; url(&dtml-portal_url;/tooltip_bottom.png) no-repeat bottom center;*/
-    background-color: white;
+    background-color: &dtml-backgroundColor;;
     color: &dtml-grey5; !important;
     border: 0.091em solid &dtml-zugblue;;
-    box-shadow: 0.091em 0.091em &dtml-zugblue;;
+    border-bottom-style: none;
+/*    box-shadow: 0.091em 0.091em &dtml-zugblue;;*/
+    box-shadow: 0.091em 0 &dtml-zugblue;;
     font-size: 1.1em;
     padding: 0.454em 0.909em;
     position: absolute;
     width: 25em;
     z-index: 3000;
-
 }
 
 /* tabbedview */

@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* tooltip styling
+  [fsprenger]
+
 * izug dashboard styling
   [fsprenger]
   
