@@ -51,11 +51,17 @@ a.arbeitsraum_delete_item:hover {
 .template-dashboard #portal-column-content {
     margin-left: -100% !important;
     width: 78em !important;
+    margin-top: 37px;
 }
-#dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4 {
+#dashboard-portlets1, 
+#dashboard-portlets2,
+#dashboard-portlets3 {
     float: left;
-    margin-right: 1%;
-    width: 32.3%;
+    margin-right: 1.363em;
+    width: 22.727em;
+}
+#dashboard-portlets3 {
+    margin-right: 0;
 }
 #dashboard .portlet {
     border-color: &dtml-borderblue;;
