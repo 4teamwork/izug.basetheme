@@ -116,4 +116,24 @@ a.arbeitsraum_delete_item:hover {
 #dashboard-add-portlet form .submit {
     float: right;
 }
+
+/* izug edit menu */
+div#zug_edit_menu a,
+div#zug_edit_menu span.divider,
+div#zug_edit_menu span.state {
+    background: transparent url(&dtml-portal_url;/zug_menu_bg.png) repeat-x top left;
+    float: right;
+    position: relative;
+    z-index: 10000;
+    padding:0.4em 1em;
+    height: 16px;
+    color: white;
+    margin-top: -2.3em;
+    text-decoration: none;
+}
+div#zug_edit_menu span.divider {
+    background: transparent url(&dtml-portal_url;/zug_menu_divider.png) no-repeat 0px 0px;
+    padding:0.4em 0.2em;
+}
+
 /* </dtml-with> */

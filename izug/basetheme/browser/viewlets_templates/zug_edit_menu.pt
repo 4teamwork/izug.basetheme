@@ -1,0 +1,10 @@
+<tal:hide_in_arbeitsplatz
+   tal:condition="python: here.restrictedTraverse('within_book')() or 'arbeitsplatz' not in here.getPhysicalPath()">
+  <div id="zug_edit_menu" i18n:domain="plone" tal:condition="context/@@plone/showEditableBorder">
+    <a href="javascript:load_dropdown()"><span class="function-settings-inverse">&nbsp;</span></a>
+    <span class="divider"></span>
+    <span class="state">
+      <strong i18n:translate="">State</strong>:<span tal:replace="view/getWorkflowState" i18n:translate=""/>
+    </span>
+  </div>
+</tal:hide_in_arbeitsplatz>

@@ -72,6 +72,21 @@ class ZugSiteActions(common.SiteActionsViewlet):
         self.backtoparent_link = parent_obj.absolute_url()
         self.backtoparent_title = getattr(parent_obj,'title',',Kanton Zug')
 
+class ZugEditMenu(common.ViewletBase):
+    render = ViewPageTemplateFile('viewlets_templates/zug_edit_menu.pt')
+
+    def getWorkflowState(self):
+        context = self.context
+        request = context.request
+        context_state = getMultiAdapter((context, request), name='plone_context_state')
+        plone_tools = getMultiAdapter((context, request), name='plone_tools')
+        state = context_state.workflow_state()
+        workflows = plone_tools.workflow().getWorkflowsFor(self.context)
+        if workflows:
+            for w in workflows:
+                if w.states.has_key(state):
+                    return w.states[state].title or state
+
 
 class DocumentActions(content.DocumentActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/documentactions.pt')

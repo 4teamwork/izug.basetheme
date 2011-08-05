@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<object>
+    <order manager="plone.portaltop" skinname="iZug Base Theme">
+        <viewlet name="izug.editmenu" insert-before="*"/>
+    </order>
+    <hidden manager="plone.portaltop" skinname="iZug Base Theme">
+        <viewlet name="plone.path_bar"/>
+        <viewlet name="plone.personal_bar"/>
+    </hidden>
+</object>

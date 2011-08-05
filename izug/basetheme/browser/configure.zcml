@@ -122,7 +122,19 @@
       layer=".interfaces.IThemeSpecific"
       for="*"
       />
-      
+
+  <!-- izug specific -->
+  <!-- new edit menu on top of the page -->
+  <browser:viewlet
+      name="izug.editmenu"
+      zcml:condition="not-have opengever"
+  	  for="*"
+      manager="plone.app.layout.viewlets.interfaces.IPortalTop"
+      class=".viewlets.ZugEditMenu"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
   <!-- for plone 3 only -->
   <browser:viewlet
       name="ftw.contentviews"
