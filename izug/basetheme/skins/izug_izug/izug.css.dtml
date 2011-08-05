@@ -4,4 +4,17 @@ a.arbeitsraum_delete_item:hover {
     text-decoration: none;
 }
 
+.tooltip {
+    /* background: &dtml-backgroundColor; url(&dtml-portal_url;/tooltip_bottom.png) no-repeat bottom center;*/
+    background-color: white;
+    color: &dtml-grey5; !important;
+    border: 0.091em solid &dtml-zugblue;;
+    box-shadow: 0.091em 0.091em &dtml-zugblue;;
+    font-size: 1.1em;
+    padding: 0.454em 0.909em;
+    position: absolute;
+    width: 25em;
+    z-index: 3000;
+
+}
 /* </dtml-with> */
