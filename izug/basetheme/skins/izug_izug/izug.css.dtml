@@ -65,6 +65,7 @@ a.arbeitsraum_delete_item:hover {
 }
 #dashboard .portlet {
     border-color: &dtml-borderblue;;
+    margin-bottom: 0.909em !important;
 }
 #dashboard .portletHeader {
     color: &dtml-darkblue;;
