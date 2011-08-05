@@ -43,4 +43,67 @@ a.arbeitsraum_delete_item:hover {
     border-bottom: 0.182em solid #EFEFEF;
 }
 
+/* dashboard - not sure if it should be in izug or general styling */
+.template-dashboard #portal-column-content {
+    margin-left: -100% !important;
+    width: 78em !important;
+}
+#dashboard-portlets1, #dashboard-portlets2, #dashboard-portlets3, #dashboard-portlets4 {
+    float: left;
+    margin-right: 1%;
+    width: 32.3%;
+}
+#dashboard .portlet {
+    border-color: &dtml-borderblue;;
+}
+#dashboard .portletHeader {
+    color: &dtml-darkblue;;
+    font-size: 1em;
+    margin: 0;
+    padding: 0 0.818em;
+    border-color: &dtml-borderblue;;
+}
+#dashboard .portletItem {
+    font-size: 1em;
+    margin: 0;
+    border-color: &dtml-borderblue;;
+}
+/* special case: postit */
+#dashboard .portletPostIt .portletHeader,
+#dashboard .portletPostIt .portletItem,
+#dashboard .portletPostIt {
+    border-color: #DCC126 !important;
+}
+#dashboard .portletHeader a.close {
+    float: right;
+}
+/* it looks a bit different in ie7 but at least it looks ok... */
+*+html #dashboard .portletHeader a.close {
+    float: none;
+}
+#dashboard .portletHeader a.fold:hover,
+#dashboard .portletHeader a.close:hover,
+#dashboard .portletHeader a.edit:hover {
+    text-decoration: none;
+}
+#dashboard .portletHeader span[class*="function-"] {
+    padding-left: 1.2em;
+    padding-top: 0;
+}
+
+#dashboard-add-portlet {
+    overflow: hidden;
+}
+
+#dashboard-add-portlet form {
+    float: right;
+    padding-right: 0.91em;
+}
+#dashboard-add-portlet form select {
+    width: 20em;
+    margin-right: 0.91em;
+}
+#dashboard-add-portlet form .submit {
+    float: right;
+}
 /* </dtml-with> */

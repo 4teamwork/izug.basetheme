@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* izug dashboard styling
+  [fsprenger]
+  
 * Added a new generic setup profile and skin layer for izug
   [fsprenger]
 
