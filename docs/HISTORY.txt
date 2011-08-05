@@ -4,6 +4,9 @@ Changelog
 
 1.0a11
 ------
+* added izug edit menu. Import of viewlet.xml required.
+  [fsprenger]
+
 * tooltip styling
   [fsprenger]
 
