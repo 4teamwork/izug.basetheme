@@ -17,4 +17,30 @@ a.arbeitsraum_delete_item:hover {
     z-index: 3000;
 
 }
+
+/* tabbedview */
+#tabbedview-body {
+    line-height: 1.454em; 
+}
+.overview-left-column {
+    float: left;
+    width: 25.454em;
+}
+.overview-right-column {
+    float: right;
+    width: 33.636em;
+}
+#overview_overview table {
+    width: 100%;
+    margin: 0 0 0.909em;
+    padding: 0 0 0.909em;
+    border-bottom: 0.182em solid #EFEFEF
+}
+#overview_overview ul {
+    list-style: none inside none;
+    margin: 0 0 0.909em;
+    padding: 0 0 0.909em;
+    border-bottom: 0.182em solid #EFEFEF;
+}
+
 /* </dtml-with> */

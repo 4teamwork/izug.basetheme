@@ -1641,7 +1641,7 @@ div.tabbedview-tabs ul.formTabs li a:hover {
   text-decoration: underline;
 }
 div.tabbedview_view div#tabbedview-body {
-  padding: 1.363em;
+  padding: 1.363em 1.818em;
   display: block;
   border: &dtml-borderWidth; &dtml-borderStyle; &dtml-grey4;;
   background: none;
