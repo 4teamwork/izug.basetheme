@@ -1612,6 +1612,8 @@ div.tabbedview-tabs ul.formTabs li {
   margin:0;
   width:auto;
   padding:0;
+  display:block;
+  float: left;
 }
 div.tabbedview-tabs ul.formTabs li a {
   border-top:1px solid &dtml-grey4;;
