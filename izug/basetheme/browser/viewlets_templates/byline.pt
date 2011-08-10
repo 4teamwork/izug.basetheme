@@ -7,7 +7,7 @@
 ></span>
 <span id="lock-icon" class="function-lock"
       tal:define="lock_icon view/locked_icon"
-      tal:condition="lock_icon">
+      tal:condition="lock_icon">&nbsp;
 </span>
   <span class="created" i18n:translate="byline_created">
     Created:

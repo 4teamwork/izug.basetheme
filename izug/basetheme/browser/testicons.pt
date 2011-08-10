@@ -250,7 +250,9 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <code>function-journal-inverse</code>
     <p class="function-todolist">Traktandenliste</p>
     <code>function-todolist</code>
-    
+    <p class="function-lock">Gesperrt</p>
+    <code>function-lock</code>
+
 </div>
 <div class="visualClear"><!-- IE Fix --></div>
 </metal:main>
