@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* added default icon for missing icons, added arrow up and arrow down in sprites
+  [fsprenger]
+
 * added opengever specific browserlayer: izug.basetheme.opengever
   [eschmutz]
 

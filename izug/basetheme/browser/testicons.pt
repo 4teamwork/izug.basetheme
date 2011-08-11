@@ -257,7 +257,10 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <code>function-todolist</code>
     <p class="function-lock">Gesperrt</p>
     <code>function-lock</code>
-
+    <p class="function-arrow-down">Pfeil nach unten</p>
+    <code>function-arrow-down</code>
+    <p class="function-arrow-up">Pfeil nach oben</p>
+    <code>function-arrow-up</code>
 </div>
 <div class="visualClear"><!-- IE Fix --></div>
 </metal:main>
