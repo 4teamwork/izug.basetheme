@@ -23,6 +23,10 @@ a.arbeitsraum_delete_item:hover {
 }
 
 /* tabbedview */
+.template-arbeitsraum_view #visual-portal-wrapper div#portal-column-content {
+    margin-left: -71em;
+    width: 71em;
+}
 #tabbedview-body {
     line-height: 1.454em; 
 }
