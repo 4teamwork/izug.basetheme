@@ -224,4 +224,9 @@ div#zug_byline {
     color: &dtml-contentViewFontColor; !important;
 }
 
+#dropdown-contentmenu #contentActionMenus .actionMenuContent a {
+    background-image: none !important;
+    padding: 0.1em 0 0.1em 0.1em !important;
+}
+
 /* </dtml-with> */
