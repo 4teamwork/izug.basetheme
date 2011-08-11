@@ -118,6 +118,9 @@ a.arbeitsraum_delete_item:hover {
 #dashboard .portlet a.close {
     float: right;
 }
+#dashboard .portlet a:hover {
+    text-decoration: none !important;
+}
 /* it looks a bit different in ie7 but at least it looks ok... */
 *+html #dashboard .portletHeader a.close {
     float: none;
