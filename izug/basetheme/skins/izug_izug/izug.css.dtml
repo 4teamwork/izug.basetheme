@@ -232,5 +232,30 @@ div#zug_byline {
     background-image: none !important;
     padding: 0.1em 0 0.1em 0.1em !important;
 }
-
+div.factoryWrapper {
+    background-color: #DEDEDE;
+    overflow: hidden;
+    border-color: #99BAD1;
+    border-style: none solid solid solid;
+    border-width: 1px 1px 1px 1px;
+}
+div.factoryWrapper ul {
+    float: right;
+    clear:both;
+}
+div.factoryWrapper ul li {
+    display: block !important;
+    float:left;
+    margin: 1em 0.4em 0 0;
+}
+#arbeitsraum-searchbox {
+    position: absolute;
+    margin-top: -4em;
+    margin-left: 1em;
+}
+#tabbedview-searchbox {
+    position: absolute;
+    margin-top: -3em !important;
+    margin-left: 1em !important;
+}
 /* </dtml-with> */
