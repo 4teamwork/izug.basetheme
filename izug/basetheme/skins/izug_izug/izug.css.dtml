@@ -258,4 +258,13 @@ div.factoryWrapper ul li {
     margin-top: -3em !important;
     margin-left: 1em !important;
 }
+
+
+fieldset#relatedItemBox {
+    border-style: solid none none none;
+}
+
+fieldset#relatedItemBox legend {
+    border-style:none;
+}
 /* </dtml-with> */
