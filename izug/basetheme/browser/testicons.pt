@@ -23,6 +23,11 @@
     p {
         display: block !important;
     }
+    .testicons_column {
+        float: left;
+        margin-right: 1%;
+        width: 24%;
+    }
     /* img-tags deaktivieren */
     .hide-img-icons *[class*=contenttype-] img,
     .hide-img-icons *[class*=mimetype-] img,
@@ -84,7 +89,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <code>jq("[class*=contenttype-] img, [class*=mimetype-] img, [class*=wf-] img, [class*=function-] img").css("outline", "5px dotted green")</code>
 </div>
 
-<div id="dashboard-portlets1">
+<div class="testicons_column">
     <h2>Content types (static)</h2>
     <tal:block define="types view/other_content_types"
                repeat="type types">
@@ -96,7 +101,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     </tal:block>
 </div>
 
-<div id="dashboard-portlets2">
+<div class="testicons_column">
     <h2>Content Types (generated)</h2>
     <tal:block define="types view/content_types"
                repeat="item types">
@@ -109,7 +114,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     </tal:block>
 </div>
 
-<div id="dashboard-portlets3">
+<div class="testicons_column">
     <h2>Workflow States (static)</h2>
     <p class="wf-task-state-cancelled">Abgebrochen</p>
     <code>wf-task-state-cancelled</code>
@@ -180,7 +185,7 @@ Hier werden alle Icons angezeigt. Die Seite soll helfen, zu überprüfen ob alle
     <p class="mimetype-zip"><img src="icon_dokument_zip.gif" width="16" height="16" alt="Icon Dokument Zip"> ZIP</p>
     <code>mimetype-zip</code>
 </div>
-<div id="dashboard-portlets4">
+<div class="testicons_column">
     <h2>Sonstige Icons (static)</h2>
     <p class="function-add">Hinzufügen</p>
     <code>function-add</code>
