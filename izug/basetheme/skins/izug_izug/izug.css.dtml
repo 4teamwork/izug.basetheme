@@ -85,6 +85,7 @@ a.arbeitsraum_delete_item:hover {
     margin: 0;
     padding: 0 0.818em;
     border-color: &dtml-borderblue;;
+    border-width: 0.091em;
 }
 #dashboard .portletItem {
     font-size: 1em;
