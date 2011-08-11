@@ -1509,11 +1509,11 @@ div.to_top a:hover {
 .contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -3295px;  }
 .contenttype-opengever-repository-repositoryroot{ background-position: 0 -3361px;  }
 .contenttype-opengever-task-task-inverse{ background-position: 0 -3427px;  }
-.contenttype-opengever-task-task{ background-position: 0 -3493px;  }
+.contenttype-opengever-task-task, .contenttype-task, .contenttype-ticket{ background-position: 0 -3493px;  }
 .contenttype-poiissue, .contenttype-poipsctracker, .contenttype-poitracker{ background-position: 0 -3559px;  }
 .contenttype-remark-inverse{ background-position: 0 -3625px;  }
 .contenttype-table{ background-position: 0 -3691px;  }
-.contenttype-ticketbox{ background-position: 0 -3757px;  }
+.contenttype-ticket-box{ background-position: 0 -3757px;  }
 .contenttype-zugmerkliste, .function-todolist{ background-position: 0 -3823px;  }
 .function-add{ background-position: 0 -3889px;  }
 .function-addtofavorites-inverse, .function-favorites-inverse{ background-position: 0 -3955px;  }
