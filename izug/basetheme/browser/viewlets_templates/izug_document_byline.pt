@@ -1,0 +1,4 @@
+<div id="zug_byline"
+     tal:condition="view/show">
+    <span>Internet: letzte &Auml;nderung <span tal:replace="python:view.toLocalizedTime(here.ModificationDate(),long_format=1)"/> <span tal:replace="view/authorname"/></span>
+</div>

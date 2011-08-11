@@ -1,10 +1,18 @@
 <?xml version="1.0"?>
 <object>
     <order manager="plone.portaltop" skinname="iZug Base Theme">
-        <viewlet name="izug.editmenu" insert-before="*"/>
+        <viewlet name="izug.editmenu" insert-before="plone.header"/>
+    </order>
+    <order manager="plone.belowcontenttitle" skinname="iZug Base Theme">
+        <viewlet name="izug.dropdowncontentmenu"/>
+        <viewlet name="izug.documentbyline" insert-before="izug.dropdowncontentmenu"/>
     </order>
     <hidden manager="plone.portaltop" skinname="iZug Base Theme">
         <viewlet name="plone.path_bar"/>
         <viewlet name="plone.personal_bar"/>
+    </hidden>
+    <hidden manager="plone.belowcontenttitle" skinname="iZug Base Theme">
+        <viewlet name="plone.belowcontenttitle.documentbyline"/>
+        <viewlet name="ftw.contentviews"/>
     </hidden>
 </object>

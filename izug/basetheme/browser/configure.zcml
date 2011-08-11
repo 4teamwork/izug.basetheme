@@ -132,8 +132,25 @@
       manager="plone.app.layout.viewlets.interfaces.IPortalTop"
       class=".viewlets.ZugEditMenu"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
+      layer="izug.basetheme.browser.interfaces.IIzugSpecific"
       />
+
+  <browser:viewlet
+      name="izug.documentbyline"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      class=".viewlets.ZugBylineViewlet"
+      permission="zope2.View"
+  	  layer="izug.basetheme.browser.interfaces.IIzugSpecific"
+      />
+
+
+  <browser:viewlet
+      name="izug.dropdowncontentmenu"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      class=".viewlets.ContentMenuViewlet"
+      permission="zope2.View"
+      layer="izug.basetheme.browser.interfaces.IIzugSpecific"
+      />  
 
   <!-- for plone 3 only -->
   <browser:viewlet

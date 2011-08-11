@@ -247,4 +247,8 @@ thead.hiddenStructureAFAthead {
 .icons-on *[class*=icon-] {
     padding: 0.091em 0 0.182em 2em;
 }
+/* edit takes too much space in ie7 */
+*+html div#zug_edit_menu {
+    height: 0;
+}
 /* </dtml-with> */

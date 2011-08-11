@@ -1,0 +1,10 @@
+<tal:edit_mode_off
+   condition="view/show_menu">
+  <div id="dropdown-contentmenu"
+       tal:content="structure here/@@dropdown_content_menu" />
+</tal:edit_mode_off>
+
+<tal:edit_mode_on
+   condition="not:view/show_menu">
+  <div id="dropdown-contentmenu" style="display:none;"></div>
+</tal:edit_mode_on>

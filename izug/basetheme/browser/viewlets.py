@@ -163,3 +163,43 @@ class Banner(common.ViewletBase):
                 randomized = randrange(1,int(counted)+1,1)
                 self.img_path = all_imgs[randomized-1].getURL()
                 self.img_title = all_imgs[randomized-1].Title
+
+# for izug only
+class ZugBylineViewlet(content.DocumentBylineViewlet):
+    @memoize
+    def show(self):
+        if self.getWorkflowState() not in ["published_internet", "revision"] or "behoerden" not in self.context.getPhysicalPath():
+            return False
+        properties = self.tools.properties()
+        site_properties = getattr(properties, 'site_properties')
+        anonymous = self.portal_state.anonymous()
+        allowAnonymousViewAbout = site_properties.getProperty('allowAnonymousViewAbout', True)
+        return not anonymous or allowAnonymousViewAbout
+        
+    @memoize
+    def effective(self):
+        effective = self.context.effective()
+        if effective.year() > 1900:
+            return self.context.effective()
+        
+    def getWorkflowState(self):
+        context = self.context
+        request = context.request
+        context_state = getMultiAdapter((context, request), name='plone_context_state')
+        plone_tools = getMultiAdapter((context, request), name='plone_tools')
+        state = context_state.workflow_state()
+        workflows = plone_tools.workflow().getWorkflowsFor(self.context)
+        if workflows:
+            for w in workflows:
+                if w.states.has_key(state):
+                    return w.states[state].title or state
+    index = ViewPageTemplateFile("viewlets_templates/izug_document_byline.pt")
+
+class ContentMenuViewlet(common.ViewletBase):
+    render = ViewPageTemplateFile('viewlets_templates/izug_dropdown_content_menu.pt')
+    def show_menu(self):
+        if 'arbeitsplatz' in self.context.getPhysicalPath() and not self.context.restrictedTraverse('within_book')():
+            return True
+        if not self.context.restrictedTraverse('@@plone').showEditableBorder():
+            return False
+        return int(self.context.request.get('izug_edit_mode', 0))

@@ -172,5 +172,56 @@ div#zug_edit_menu span.divider {
 #zug_edit_menu a span {
     padding-left:1.3em;
 }
+div#zug_byline {
+    background-color: &dtml-contentViewBackgroundColor;;
+    border-bottom: 1px solid &dtml-contentViewBorderColor;;
+    border-left: 1px solid &dtml-contentViewBorderColor;;
+    border-right: 1px solid &dtml-contentViewBorderColor;;
+    padding: 0.5em;
+    position: relative;
+}
+
+
+#dropdown-contentmenu {
+    background-color: &dtml-contentViewBackgroundColor; !important;
+    color: &dtml-contentViewFontColor; !important;
+    text-align: right;
+    text-transform: &dtml-textTransform;;
+    padding: 0 0 1em 1em;
+    z-index: 2;
+    position:relative;
+    height: 1.6em !important;
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor; !important;
+    border-style: none solid solid solid !important;
+    min-height: 1.6em !important;
+    margin-top: -1px;
+}
+#dropdown-contentmenu ul,
+#dropdown-contentmenu li {
+    margin: 0;
+    list-style: none;
+    list-style-image: none;
+    font-size:1em !important;
+    text-align: left;
+    line-height: 2.5em;
+    text-indent: 0;
+}
+#dropdown-contentmenu dl {
+    line-height: 2.5em;
+    margin-bottom: 0 !important;
+}
+#dropdown-contentmenu li {
+    float: right;
+    z-index: 4;
+    border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;;
+}
+
+#dropdown-contentmenu a {
+    text-decoration: none;
+    padding: 0 0.5em;
+    cursor: pointer;
+    border-bottom-style: none !important;
+    color: &dtml-contentViewFontColor; !important;
+}
 
 /* </dtml-with> */

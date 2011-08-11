@@ -5,6 +5,12 @@ Changelog
 1.0a11
 ------
 
+* replacing ftw.contentmenu with izug menu in izug layer 
+  [fsprenger]
+
+* added izug specific browserlayer: izug.basetheme.izug
+  [fsprenger]
+
 * added default icon for missing icons, added arrow up and arrow down in sprites
   [fsprenger]
 
