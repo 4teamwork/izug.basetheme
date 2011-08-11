@@ -1525,8 +1525,8 @@ div.to_top a:hover {
 .function-edit-inverse, .function-extedit-inverse, .function-togglesledit-inverse{ background-position: 0 -4336px;  }
 .function-edit{ background-position: 0 -4402px;  }
 .function-export-outlook{ background-position: 0 -4468px;  }
-.function-export-pdf-inverse{ background-position: 0 -4534px;  }
-.function-export-pdf{ background-position: 0 -4600px;  }
+.function-export-pdf-inverse, .function-pdf_export-inverse{ background-position: 0 -4534px;  }
+.function-export-pdf, .function-pdf_export{ background-position: 0 -4600px;  }
 .function-information{ background-position: 0 -4666px;  }
 .function-internet-inverse{ background-position: 0 -4732px;  }
 .function-internet{ background-position: 0 -4798px;  }
@@ -1565,6 +1565,7 @@ div.to_top a:hover {
 .wf-task-state-in-progress{ background-position: 0 -6975px;  }
 .wf-task-state-new-successor{ background-position: 0 -7041px;  }
 .wf-task-state-resolved{ background-position: 0 -7107px;  }
+
 
 .breadcrumb-divider {
 	width: 0.8em;
