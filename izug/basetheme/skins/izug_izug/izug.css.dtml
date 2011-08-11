@@ -267,4 +267,10 @@ fieldset#relatedItemBox {
 fieldset#relatedItemBox legend {
     border-style:none;
 }
+fieldset#relatedItemBox img {
+    display: none;
+}
+fieldset#relatedItemBox ul {
+    line-height: 1.454em;
+}
 /* </dtml-with> */
