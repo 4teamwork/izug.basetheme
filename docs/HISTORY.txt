@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* added opengever specific browserlayer: izug.basetheme.opengever
+  [eschmutz]
+
 * adding zug.ch skin layer (not izug profile) when importing izug.basetheme for
   zug.ch. 'Behoerden' is styled now.
   [fsprenger]
