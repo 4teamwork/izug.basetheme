@@ -1463,7 +1463,7 @@ div.to_top a:hover {
 .actionicon-folder_factories-attach_remote_document, .function-upload{ background-position: 0 -264px;  }
 .actionicon-folder_factories-document_with_docucomposer, .actionicon-folder_factories-document_with_template, .contenttype-content-page, .contenttype-document, .contenttype-zugeventlandingpage, .contenttype-zugimmolandingpage, .contenttype-zuginhaltsseite{ background-position: 0 -330px;  }
 .contenttype-arbeitsraum-inverse{ background-position: 0 -396px;  }
-.contenttype-arbeitsraum{ background-position: 0 -462px;  }
+.contenttype-arbeitsraum, .contenttype-subarbeitsraum{ background-position: 0 -462px;  }
 .contenttype-banner, .contenttype-image, .contenttype-zugbanner, .icon-dokument_bilddatei, .mimetype-bmp, .mimetype-gif, .mimetype-jpeg, .mimetype-png{ background-position: 0 -528px;  }
 .contenttype-billboardad{ background-position: 0 -594px;  }
 .contenttype-block, .contenttype-buchblock, .contenttype-zugalbumblock, .contenttype-zughtmlblock, .contenttype-zuginhaltsblock{ background-position: 0 -660px;  }
