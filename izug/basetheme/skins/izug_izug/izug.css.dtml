@@ -50,7 +50,12 @@ a.arbeitsraum_delete_item:hover {
     width: 100%;
     margin: 0 0 0.909em;
     padding: 0 0 0.909em;
-    border-bottom: 0.182em solid #EFEFEF
+    border-style: none;
+    border-bottom: 0.182em solid #EFEFEF;
+    background-image: none;
+}
+#overview_overview table td {
+    border-style:none;
 }
 #overview_overview ul {
     list-style: none inside none;
@@ -180,7 +185,6 @@ div#zug_byline {
     padding: 0.5em;
     position: relative;
 }
-
 
 #dropdown-contentmenu {
     background-color: &dtml-contentViewBackgroundColor; !important;
