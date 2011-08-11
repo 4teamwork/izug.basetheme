@@ -5,7 +5,8 @@ Changelog
 1.0a11
 ------
 
-* replacing ftw.contentmenu with izug menu in izug layer 
+* replacing ftw.contentmenu with izug menu in izug layer - import step and
+  manual verification of viewlet order required!
   [fsprenger]
 
 * added izug specific browserlayer: izug.basetheme.izug
