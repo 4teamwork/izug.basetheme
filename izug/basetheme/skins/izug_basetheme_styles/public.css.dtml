@@ -109,9 +109,9 @@ h3, h4, h5, h6 {
 #content a:target {
     background-color: #fd7 !important;
 }
-#content .documentContent li a:visited {
+.documentContent #content li a:visited {
     color: &dtml-linkVisitedColor;;
-    text-decoration: underline !important;
+    text-decoration: underline !important; /* only works in IE */
 }
 .documentContent li a {
     text-decoration: none;
