@@ -78,6 +78,8 @@ a.arbeitsraum_delete_item:hover {
 #dashboard .portlet {
     border-color: &dtml-borderblue;;
     margin-bottom: 0.909em !important;
+    border-style: none none solid;
+    border-width: 0.091em;
 }
 #dashboard .portletHeader {
     color: &dtml-darkblue;;
@@ -91,6 +93,8 @@ a.arbeitsraum_delete_item:hover {
     font-size: 1em;
     margin: 0;
     border-color: &dtml-borderblue;;
+    border-style: none solid;
+    border-width: 0.091em;
 }
 /* special case: postit */
 #dashboard .portletPostIt .portletHeader,
