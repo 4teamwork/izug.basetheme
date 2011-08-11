@@ -102,7 +102,20 @@ a.arbeitsraum_delete_item:hover {
 #dashboard .portletPostIt {
     border-color: #DCC126 !important;
 }
-#dashboard .portletHeader a.close {
+#dashboard .portletPostIt{
+    background-color: #fffdf4;
+}
+#dashboard .portletPostIt .portletItem {
+    font-family: courier;
+    background-color: #fef3c6;
+}
+#dashboard .portletPostIt .portletItem.odd {
+    background-color: #feeead;
+}
+#dashboard .portletPostIt .portletItem a.close span {
+    padding: 0.3em 0.454em !important;
+}
+#dashboard .portlet a.close {
     float: right;
 }
 /* it looks a bit different in ie7 but at least it looks ok... */
