@@ -1,5 +1,17 @@
 /* <dtml-with base_properties> */
-
+/* column settings - overriding zug.ch settings */
+#visual-portal-wrapper div#portal-column-content.sl {
+    margin-left: -71em;
+    width: 71em;
+}
+#visual-portal-wrapper div#portal-column-content.sr {
+    margin-left: -100%;
+    width: 78em;
+}
+#visual-portal-wrapper div#portal-column-content.sr.sl {
+    margin-left: -71em;
+    width: 53em;
+}
 a.arbeitsraum_delete_item:hover {
     text-decoration: none;
 }
@@ -23,11 +35,6 @@ a.arbeitsraum_delete_item:hover {
 }
 
 /* tabbedview */
-.template-arbeitsraum_view #visual-portal-wrapper div#portal-column-content,
-.template-arbeitsraeume_view #visual-portal-wrapper div#portal-column-content {
-    margin-left: -71em;
-    width: 71em;
-}
 #tabbedview-body {
     line-height: 1.454em; 
 }
