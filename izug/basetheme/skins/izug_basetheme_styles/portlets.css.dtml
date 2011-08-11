@@ -94,6 +94,11 @@
     text-align: right;
 }
 
+/* Newspaper-Portlet css */
+.portlet.newspaper dd.portletItem a.title {
+    display:block;
+}
+
 /* Elements that enable layout with rounded corners */
 .portletTopLeft {}
 .portletTopRight {}

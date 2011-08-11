@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* added specific css for newspaper portlet
+  [eschmutz]
+
 * replacing ftw.contentmenu with izug menu in izug layer - import step and
   manual verification of viewlet order required!
   [fsprenger]
