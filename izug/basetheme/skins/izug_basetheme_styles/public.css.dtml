@@ -589,11 +589,13 @@ dl.portalMessage dd {
     margin: 0;
     padding: 0.5em 1em 0.5em 2.5em;
 }
+dl.information,
 dl.info {
     background: transparent url(&dtml-portal_url;/icon_status_erledigt.gif) no-repeat 0.3em 0.3em;
     border-color: &dtml-green;; 
     color: &dtml-green;;
 }
+
 dl.info dt {
     display: none;
 }

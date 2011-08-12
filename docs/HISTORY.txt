@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Added styles for globalstatusmessage in izug.css
+  [eschmutz]
+
 * Styling for calendar in tabbedview
   [12.08.2011, florian.sprenger]
 
