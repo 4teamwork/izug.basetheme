@@ -341,4 +341,12 @@ fieldset#relatedItemBox ul {
     background-color:white;
 }
 
+
+/* Actionbar on book, using simplelayout view */
+
+body.template-simplelayout div.actionsBar {
+    background-color:#DEDEDE;
+
+}
+
 /* </dtml-with> */
