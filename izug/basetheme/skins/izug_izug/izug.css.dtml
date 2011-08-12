@@ -102,14 +102,17 @@ a.arbeitsraum_delete_item:hover {
     border-width: 0.091em;
     padding: 0.454em 0.818em;
 }
-#dashboard .portletItem {
+
+/* Recent portlet special behaviour */
+#dashboard .portletRecent .portletItem {
     padding-left: 2.4em;
 }
-#dashboard .portletItem span[class*="mimetype-"],
-#dashboard .portletItem span[class*="contenttype-"] {
+#dashboard .portletRecent .portletItem span[class*="mimetype-"],
+#dashboard .portletRecent .portletItem span[class*="contenttype-"] {
     margin-left: -2em;
     padding: 0.2em 0.7em 0.2em 0.6em;
 }
+
 
 #dashboard .portletRecent .portletItem .portletItemDetails{
     display:inline;
