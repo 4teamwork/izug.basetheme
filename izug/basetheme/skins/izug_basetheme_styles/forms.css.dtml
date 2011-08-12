@@ -184,11 +184,6 @@ input#form-buttons-button_archive  {
   background-color: &dtml-globalBackgroundColor;;
 }
 
-.destructive,
-.documentEditable * .destructive {
-  background: &dtml-notifyBackgroundColor;;
-  color: &dtml-fontColor;;
-}
 .searchSection {
   display: none;
 }
