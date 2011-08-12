@@ -298,4 +298,14 @@ fieldset#relatedItemBox img {
 fieldset#relatedItemBox ul {
     line-height: 1.454em;
 }
+
+/* AR calendar view */
+.arbeitsraum_view .portletCalendar dd {
+    margin: 0;
+}
+
+.arbeitsraum_view .portletCalendar dt {
+    background-color:white;
+}
+
 /* </dtml-with> */
