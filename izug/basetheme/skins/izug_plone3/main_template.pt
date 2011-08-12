@@ -9,7 +9,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xml:lang="en"
       lang="en"
-      tal:define="lang language"
+      tal:define="lang language;
+                  withinBook context/@@within_book | nothing"
       tal:attributes="lang lang;
                       xml:lang lang">
 
@@ -104,7 +105,8 @@
                     sl python:plone_view.have_portlets('plone.leftcolumn', view);
                     sr python:plone_view.have_portlets('plone.rightcolumn', view);
                     isAnon python:isAnon and 'isAnon' or '';
-                    class_expr string:${context/getSectionFromURL} template-${template_id} ${isAnon} icons-on;"
+                    special_book_class python:withinBook and 'withinBook' or '';
+                    class_expr string:${context/getSectionFromURL} template-${template_id} ${isAnon} icons-on ${special_book_class};"
         tal:attributes="class python:class_expr.strip();
                         dir python:test(isRTL, 'rtl', 'ltr')">
     <div id="visual-portal-wrapper">

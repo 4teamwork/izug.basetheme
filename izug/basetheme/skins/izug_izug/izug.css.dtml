@@ -349,4 +349,14 @@ body.template-simplelayout div.actionsBar {
 
 }
 
+
+/* special condition within a book */
+body.withinBook #portal-header {
+    display: none;
+}
+body.withinBook #portal-top {
+    height: auto;
+}
+
+
 /* </dtml-with> */
