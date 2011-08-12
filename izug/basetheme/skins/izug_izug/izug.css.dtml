@@ -349,4 +349,24 @@ body.template-simplelayout div.actionsBar {
 
 }
 
+/* ftw.globalstatusmessage */
+div#globalstatusmessage{
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+
+}
+div#globalstatusmessage p{
+    line-height: 12.5px;
+    
+}
+div#globalstatusmessage dl{
+    padding: 0.5em 0;
+}
+div#globalstatusmessage p,
+div#globalstatusmessage dt,
+div#globalstatusmessage dd{
+    display: inline;
+}
+
 /* </dtml-with> */
