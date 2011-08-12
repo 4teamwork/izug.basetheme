@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Styling for calendar in tabbedview
+  [12.08.2011, florian.sprenger]
+
 * removed css styling for destructive css class and removed backgroundimage for comments
   [eschmutz]
 

@@ -34,6 +34,39 @@ a.arbeitsraum_delete_item:hover {
     z-index: 3000;
 }
 
+
+.tabbedview_view .portletCalendar .portletHeader {
+    background-color: transparent;
+    font-weight: bold;
+    border-style: none;
+    font-size: 1em;
+}
+.tabbedview_view .portletCalendar .portletItem {
+    margin-left: 0;
+    font-size: 1em;
+}
+.tabbedview_view .portletCalendar .ploneCalendar {
+    border-collapse: separate;
+    border-style: none;
+    background-image: none;
+}
+.tabbedview_view .portletCalendar .ploneCalendar th {
+    padding: 1.091em 0;
+    text-align: center;
+    border-color: &dtml-globalBorderColor; !important;
+    border-width: 1px 0;
+    border-style: solid none;
+}
+.tabbedview_view .portletCalendar .ploneCalendar td {
+    border-width: 1px;
+    border-color: white;
+}
+.tabbedview_view .portletCalendar .ploneCalendar td.todaynoevent,
+.tabbedview_view .portletCalendar .ploneCalendar td.todayevent {
+    border: 2px solid #FFA500 !important;
+}
+
+
 /* tabbedview */
 #tabbedview-body {
     line-height: 1.454em; 
