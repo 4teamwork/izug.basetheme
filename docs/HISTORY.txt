@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Fixed specific css for newspaper portlet. 
+  [12.08.2011, mathias.leimgruber]
+
 * added specific css for newspaper portlet
   [eschmutz]
 

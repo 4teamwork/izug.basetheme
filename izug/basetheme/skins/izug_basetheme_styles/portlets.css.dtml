@@ -96,7 +96,12 @@
 
 /* Newspaper-Portlet css */
 .portlet.newspaper dd.portletItem a.title {
-    display:block;
+    background-image: url("icon_list.gif");
+    background-position: left 0.9em;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 0 0 0.25em;
+    padding: 0.1em 1.5em 0.4em;
 }
 
 /* Elements that enable layout with rounded corners */
