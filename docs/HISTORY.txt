@@ -5,6 +5,10 @@ Changelog
 1.0a11
 ------
 
+* Customized plone collection portlet with z3c.jbot in order to remove the image
+  tag
+  [fsprenger]
+
 * Added 'navTreeItem' class to first navigation element if navigation is set to show
   the top element
   [fsprenger]
