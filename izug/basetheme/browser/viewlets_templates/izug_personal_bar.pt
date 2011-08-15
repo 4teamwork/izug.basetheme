@@ -1,0 +1,33 @@
+<div id="portal-personaltools-wrapper"
+     i18n:domain="plone">
+<h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>
+asdfasdfadsfsdf
+<ul id="portal-personaltools"
+    tal:define="accesskeys python: {'contact' : '3'};"
+    tal:condition="python:view.user_actions or not view.anonymous"
+    class="visualInline">
+    <tal:actions tal:repeat="action view/user_actions">
+        <li tal:condition="python:action['id'] not in ['join', 'logout']">
+			
+            <a href=""
+               tal:define="accesskey python: accesskeys.get(action['id'], '');"
+               tal:attributes="href action/url;
+                               accesskey accesskey;"
+            ><tal:actionname i18n:translate="" 
+                             tal:content="action/title">dummy</tal:actionname
+            ></a>
+        </li>
+		<li tal:condition="python: action['id'] == 'logout'">
+            <span tal:content="view/user_name" />
+            <a href=""
+               tal:define="accesskey python: accesskeys.get(action['id'], '');"
+               tal:attributes="href action/url;
+                               accesskey accesskey;"
+            ><tal:actionname i18n:translate="">: iZug Verlassen</tal:actionname
+            ></a>
+
+        </li>
+
+    </tal:actions>
+</ul>
+</div>

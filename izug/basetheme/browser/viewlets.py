@@ -28,12 +28,15 @@ class PathBar(common.PathBarViewlet):
             self.template_text = None
         else:
             self.template_text = translation
-            
+
 class PersonalBar(common.PersonalBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
 
 class ZugPersonalBar(common.PersonalBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/zug_personal_bar.pt')
+
+class IZugPersonalBar(common.PersonalBarViewlet):
+    index = ViewPageTemplateFile('viewlets_templates/izug_personal_bar.pt')
 
 class SiteActions(common.SiteActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/siteactions.pt')

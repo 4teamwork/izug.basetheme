@@ -61,15 +61,24 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <browser:viewlet
+	  zcml:condition="not-have opengever"
+      name="plone.personal_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.IZugPersonalBar"
+      permission="zope2.View"
+      layer=".interfaces.IIzugSpecific"
+      />
+
   <!-- zug.ch-specific personal bar viewlet -->
   <browser:viewlet
-      zcml:condition="not-have opengever"
       name="plone.personal_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.ZugPersonalBar"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
+
 
   <browser:viewlet
 	  zcml:condition="installed plone.app.upgrade"
