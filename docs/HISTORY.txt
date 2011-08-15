@@ -5,6 +5,10 @@ Changelog
 1.0a11
 ------
 
+* Added zug specific collapsible style with reference implementation in 
+  test_uielements
+  [fsprenger]
+
 * Added styles for izug.meeting add-form
   [eschmutz]
 

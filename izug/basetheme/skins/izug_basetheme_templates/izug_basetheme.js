@@ -19,4 +19,19 @@ jq(document).ready(function() {
     if (window.Ext != undefined) {
         Ext.BLANK_IMAGE_URL= jq("#portal-logo").url() + "/s.gif";
     }
+    
+    /* zug collapsible */
+    jq('dl.zugCollapsible dd').hide();
+    jq('dl.zugCollapsible dt').prepend('<span class="function-collapsible-closed">&nbsp;</span>');
+    jq('dl.zugCollapsible dt').click(function() {
+        jq(this).find('span').toggleClass('function-collapsible-closed').toggleClass('function-collapsible-open');
+        var content = jq(this).next('dd');
+        content.toggleClass('visible');
+        if(content.hasClass('visible')) {
+            content.slideDown('slow');
+        } else {
+            content.slideUp('slow');
+        }
+
+    });
 });

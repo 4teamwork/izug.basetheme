@@ -1665,4 +1665,33 @@ span.draggable{
   cursor:move;
 }
 
+/* collapsible boxes - zug styling */
+dl.zugCollapsible {
+    
+}
+dl.zugCollapsible {
+}
+dl.zugCollapsible dt .function-collapsible-closed,
+dl.zugCollapsible dt .function-collapsible-open {
+    line-height: 0.6em !important;
+    margin: 0.455em 0 0 0 !important;
+    display: block;
+    float: left;
+    padding-left: 1em;
+}
+dl.zugCollapsible dt {
+    cursor: pointer;
+    border: 0.091em solid &dtml-borderblue;;
+    color: &dtml-darkblue;;
+    padding: 0 0.818em 0 0.454em;
+    line-height: 2em;
+    margin: 0;
+}
+dl.zugCollapsible dd {
+    border: 0.091em solid &dtml-borderblue;;
+    border-style: none solid solid;
+    margin: 0;
+    padding: 0.455em 0.909em 0.455em 1.818em;
+}
+
 /* </dtml-with> */
