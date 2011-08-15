@@ -5,6 +5,10 @@ Changelog
 1.0a11
 ------
 
+* Issue #1553 Behoerden - Anzeige Prozesslandkarte     
+  https://extranet.4teamwork.ch/support/zug/maintlog/1553
+  [ttschanz]
+
 * Customized plone collection portlet with z3c.jbot in order to remove the image
   tag
   [fsprenger]
