@@ -57,7 +57,7 @@ ALL_CONTENT_TYPES = {
             'contenttype-table': 'Tabelle',
             'contenttype-task': 'Aufgabe',
             'contenttype-ticket': 'Auftrag',
-            'contenttype-ticketbox': 'Auftragsbox',}
+            'contenttype-ticket-box': 'Auftragsbox',}
 
 class TestIconsView(BrowserView):
     all_content_types = ALL_CONTENT_TYPES
