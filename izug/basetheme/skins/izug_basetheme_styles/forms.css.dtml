@@ -24,7 +24,8 @@ textarea {
   background: White url(&dtml-portal_url;/input_background.gif) repeat-x;
   width: 100%;
 }
-input {
+input,
+form#meeting-base-edit a.datagridwidget-add-button {
   font-family: <dtml-var fontFamily>;
   visibility: visible;
   border: 1px solid &dtml-inputFontColor;;
@@ -76,7 +77,8 @@ input[type=checkbox] {
 }
 button,
 input[type=button],
-input[type=submit] {
+input[type=submit],
+form#meeting-base-edit a.datagridwidget-add-button {
   color: &dtml-grey5;;
   border-color: &dtml-grey5;;
   border-width: 0.1em 0.2em 0.2em 0.1em;
@@ -90,7 +92,8 @@ input[type=button]:focus,
 input[type=submit]:focus,
 button:hover,
 input[type=button]:hover,
-input[type=submit]:hover {
+input[type=submit]:hover,
+form#meeting-base-edit a.datagridwidget-add-button:hover {
   color: &dtml-red;;
   border-color: &dtml-red;;
   border-width: 0.2em 0.1em 0.1em 0.2em

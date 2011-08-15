@@ -377,5 +377,4 @@ div#globalstatusmessage dt,
 div#globalstatusmessage dd{
     display: inline;
 }
-
 /* </dtml-with> */
