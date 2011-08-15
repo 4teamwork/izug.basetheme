@@ -357,6 +357,20 @@ body.withinBook #portal-header {
 body.withinBook #portal-top {
     height: auto;
 }
+.withinBook .searchForm .factory-enabled {
+    float: left;
+    margin-top: -4em;
+    padding-left: 1em;
+}
+.withinBook div.factory-disabled {
+    background-color: &dtml-grey2;;
+    border-color: &dtml-borderblue;;
+    border-style: none solid solid;
+    border-width: 1px;
+    overflow: hidden;
+    margin: -1em 0 1em !important;
+    padding: 0.727em 1em 1em;
+}
 
 /* ftw.globalstatusmessage */
 div#globalstatusmessage{
