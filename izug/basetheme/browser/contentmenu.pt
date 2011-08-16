@@ -7,7 +7,7 @@
 
     <li tal:repeat="menuItem menu">
 
-        <dl class="actionMenu"
+        <dl class="actionMenu izugSpecific"
             tal:attributes="id menuItem/extra/id"
             tal:define="submenu menuItem/submenu"
             tal:omit-tag="menuItem/extra/hideChildren | nothing">

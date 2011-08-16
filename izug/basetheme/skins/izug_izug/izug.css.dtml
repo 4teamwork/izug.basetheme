@@ -396,4 +396,8 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
 	width: 72em !important;
 
 }
+
+#contentActionMenus dl.izugSpecific a:hover{
+    color: &dtml-linkActiveColor; !important;
+}
 /* </dtml-with> */

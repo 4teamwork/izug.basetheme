@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Added izugspecifig contentmenu link-hover color
+  [eschmutz]
+
 * Added better comment for contentmenu-adapter-class
   [eschmutz]
 
