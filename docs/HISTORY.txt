@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Changed interface for folder_overview-view from Products.Archetypes.interfaces._base.IBaseObject to Products.Archetypes.interfaces.IBaseObject"
+  [eschmutz]
+
 * Added view folder_overview for izug-specific skin-layer to handle sprites in collections
   [eschmutz]
 

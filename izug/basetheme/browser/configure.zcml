@@ -44,7 +44,7 @@
       />
       
     <browser:page
-        for="Products.Archetypes.interfaces._base.IBaseObject"
+        for="Products.Archetypes.interfaces.IBaseObject"
         name="folder_overview"
 		permission="zope2.View"
         template="folder_overview.pt"
