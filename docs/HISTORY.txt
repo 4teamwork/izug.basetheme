@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Added better comment for contentmenu-adapter-class
+  [eschmutz]
+
 * IIzugSpecific inherits now from IThemeSpecific and no longer from IDefaultPloneLayer and added zcml condition for ZugPersonalBar-Viewlet
   [eschmutz]
 
