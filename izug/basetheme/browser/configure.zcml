@@ -43,6 +43,14 @@
       permission="zope2.Public"
       />
       
+    <browser:page
+        for="Products.Archetypes.interfaces._base.IBaseObject"
+        name="folder_overview"
+		permission="zope2.View"
+        template="folder_overview.pt"
+		layer=".interfaces.IIzugSpecific"
+        />
+
   <browser:viewlet
       name="izug.path_bar"
       manager="plone.app.layout.viewlets.interfaces.IAboveContent"

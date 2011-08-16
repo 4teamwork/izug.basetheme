@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Added view folder_overview for izug-specific skin-layer to handle sprites in collections
+  [eschmutz]
+
 * Added izugspecifig contentmenu link-hover color
   [eschmutz]
 
