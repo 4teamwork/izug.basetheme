@@ -16,7 +16,7 @@ from izug.basetheme.browser.helper import css_class_from_obj
 
 class PathBar(common.PathBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/pathbar.pt')
-    
+
     def update(self):
         super(PathBar, self).update()
         template_info = None
@@ -60,18 +60,18 @@ class ZugSiteActions(common.SiteActionsViewlet):
     """Custom site actions viewlet for zug.ch
     """
     index = ViewPageTemplateFile('viewlets_templates/zug_siteactions.pt')
-    
+
     def update(self):
         super(ZugSiteActions, self).update()
         portal_root = getToolByName(self.context,'portal_url').getPortalObject()
         nav_root = getNavigationRoot(self.context)
-        
+
         if nav_root != '/'.join(portal_root.getPhysicalPath()):
             parent_nav_root = getNavigationRoot(aq_parent(self.context.restrictedTraverse(nav_root)))
             parent_obj = self.context.restrictedTraverse(parent_nav_root)
         else:
             parent_obj = portal_root
-            
+
         self.backtoparent_link = parent_obj.absolute_url()
         self.backtoparent_title = getattr(parent_obj,'title',',Kanton Zug')
 
@@ -97,7 +97,7 @@ class DocumentActions(content.DocumentActionsViewlet):
 
 class Byline(content.DocumentBylineViewlet):
     index = ViewPageTemplateFile('viewlets_templates/byline.pt')
-    
+
     def css_class_from_obj(self):
         return css_class_from_obj(self.context)
 
@@ -147,10 +147,10 @@ class Banner(common.ViewletBase):
         if INavigationRoot.providedBy(context) and getattr(context, 'bannerbilder', None):
             return True
         return False
-        
+
     def update(self):
         if not self.available:
-            return 
+            return
         context = aq_inner(self.context)
         self.img_path = '%s/default_banner.jpg' % context.portal_url()
         self.img_title = context.Title
@@ -160,7 +160,7 @@ class Banner(common.ViewletBase):
             all_imgs = context.portal_catalog({'portal_type':['Banner',],
                                                'path':'/'.join(bannerfolder.getPhysicalPath()),
                                                'review_state':['published_internet','published']})
-                                               
+
             counted = len(all_imgs)
             if counted:
                 randomized = randrange(1,int(counted)+1,1)
@@ -178,13 +178,13 @@ class ZugBylineViewlet(content.DocumentBylineViewlet):
         anonymous = self.portal_state.anonymous()
         allowAnonymousViewAbout = site_properties.getProperty('allowAnonymousViewAbout', True)
         return not anonymous or allowAnonymousViewAbout
-        
+
     @memoize
     def effective(self):
         effective = self.context.effective()
         if effective.year() > 1900:
             return self.context.effective()
-        
+
     def getWorkflowState(self):
         context = self.context
         request = context.request

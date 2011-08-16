@@ -1,7 +1,6 @@
 <div id="portal-personaltools-wrapper"
      i18n:domain="plone">
 <h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>
-asdfasdfadsfsdf
 <ul id="portal-personaltools"
     tal:define="accesskeys python: {'contact' : '3'};"
     tal:condition="python:view.user_actions or not view.anonymous"

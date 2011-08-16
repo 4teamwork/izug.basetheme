@@ -72,6 +72,7 @@
 
   <!-- zug.ch-specific personal bar viewlet -->
   <browser:viewlet
+      zcml:condition="not-installed plone.app.upgrade"
       name="plone.personal_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.ZugPersonalBar"
@@ -164,7 +165,7 @@
   <!-- A content provider showing the menu customised for izug -->
   <adapter
       for="Products.ATContentTypes.interface.interfaces.IATContentType
-           zope.publisher.interfaces.browser.IDefaultBrowserLayer
+           .interfaces.IIzugSpecific
            *"
       factory=".contentmenu.ContentMenuProvider"
       name="plone.contentmenu"

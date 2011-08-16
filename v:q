@@ -1,0 +1,134 @@
+[1mdiff --git a/docs/HISTORY.txt b/docs/HISTORY.txt[m
+[1mindex 8819271..d9162ce 100644[m
+[1m--- a/docs/HISTORY.txt[m
+[1m+++ b/docs/HISTORY.txt[m
+[36m@@ -5,6 +5,9 @@[m [mChangelog[m
+ 1.0a11[m
+ ------[m
+ [m
+[32m+[m[32m* IIzugSpecific inherits now from IThemeSpecific and no longer from IDefaultPloneLayer[m
+[32m+[m[32m  [eschmutz][m
+[32m+[m
+ * Added adapter for plone.contentmenu to handle sprites in the contentmenu[m
+   [eschmutz][m
+ [m
+[1mdiff --git a/izug/basetheme/browser/configure.zcml b/izug/basetheme/browser/configure.zcml[m
+[1mindex c1af6a9..5d48eed 100644[m
+[1m--- a/izug/basetheme/browser/configure.zcml[m
+[1m+++ b/izug/basetheme/browser/configure.zcml[m
+[36m@@ -164,7 +164,7 @@[m
+   <!-- A content provider showing the menu customised for izug -->[m
+   <adapter[m
+       for="Products.ATContentTypes.interface.interfaces.IATContentType[m
+[31m-           zope.publisher.interfaces.browser.IDefaultBrowserLayer[m
+[32m+[m[32m           .interfaces.IIzugSpecific[m
+            *"[m
+       factory=".contentmenu.ContentMenuProvider"[m
+       name="plone.contentmenu"[m
+[1mdiff --git a/izug/basetheme/browser/interfaces.py b/izug/basetheme/browser/interfaces.py[m
+[1mindex 9d31e09..ff10c0a 100644[m
+[1m--- a/izug/basetheme/browser/interfaces.py[m
+[1m+++ b/izug/basetheme/browser/interfaces.py[m
+[36m@@ -8,7 +8,7 @@[m [mclass IOpengeverSpecific(IDefaultPloneLayer):[m
+     """Marker interface that defines a Zope 3 browser layer specific for OpenGever.[m
+     """[m
+ [m
+[31m-class IIzugSpecific(IDefaultPloneLayer):[m
+[32m+[m[32mclass IIzugSpecific(IThemeSpecific):[m
+     """Marker interface that defines a Zope 3 browser layer specific for izug.[m
+     """[m
+ [m
+[1mdiff --git a/izug/basetheme/browser/viewlets.py b/izug/basetheme/browser/viewlets.py[m
+[1mindex 5ee432f..b6949ef 100644[m
+[1m--- a/izug/basetheme/browser/viewlets.py[m
+[1m+++ b/izug/basetheme/browser/viewlets.py[m
+[36m@@ -16,7 +16,7 @@[m [mfrom izug.basetheme.browser.helper import css_class_from_obj[m
+ [m
+ class PathBar(common.PathBarViewlet):[m
+     index = ViewPageTemplateFile('viewlets_templates/pathbar.pt')[m
+[31m-    [m
+[32m+[m
+     def update(self):[m
+         super(PathBar, self).update()[m
+         template_info = None[m
+[36m@@ -60,18 +60,18 @@[m [mclass ZugSiteActions(common.SiteActionsViewlet):[m
+     """Custom site actions viewlet for zug.ch[m
+     """[m
+     index = ViewPageTemplateFile('viewlets_templates/zug_siteactions.pt')[m
+[31m-    [m
+[32m+[m
+     def update(self):[m
+         super(ZugSiteActions, self).update()[m
+         portal_root = getToolByName(self.context,'portal_url').getPortalObject()[m
+         nav_root = getNavigationRoot(self.context)[m
+[31m-        [m
+[32m+[m
+         if nav_root != '/'.join(portal_root.getPhysicalPath()):[m
+             parent_nav_root = getNavigationRoot(aq_parent(self.context.restrictedTraverse(nav_root)))[m
+             parent_obj = self.context.restrictedTraverse(parent_nav_root)[m
+         else:[m
+             parent_obj = portal_root[m
+[31m-            [m
+[32m+[m
+         self.backtoparent_link = parent_obj.absolute_url()[m
+         self.backtoparent_title = getattr(parent_obj,'title',',Kanton Zug')[m
+ [m
+[36m@@ -97,7 +97,7 @@[m [mclass DocumentActions(content.DocumentActionsViewlet):[m
+ [m
+ class Byline(content.DocumentBylineViewlet):[m
+     index = ViewPageTemplateFile('viewlets_templates/byline.pt')[m
+[31m-    [m
+[32m+[m
+     def css_class_from_obj(self):[m
+         return css_class_from_obj(self.context)[m
+ [m
+[36m@@ -147,10 +147,10 @@[m [mclass Banner(common.ViewletBase):[m
+         if INavigationRoot.providedBy(context) and getattr(context, 'bannerbilder', None):[m
+             return True[m
+         return False[m
+[31m-        [m
+[32m+[m
+     def update(self):[m
+         if not self.available:[m
+[31m-            return [m
+[32m+[m[32m            return[m
+         context = aq_inner(self.context)[m
+         self.img_path = '%s/default_banner.jpg' % context.portal_url()[m
+         self.img_title = context.Title[m
+[36m@@ -160,7 +160,7 @@[m [mclass Banner(common.ViewletBase):[m
+             all_imgs = context.portal_catalog({'portal_type':['Banner',],[m
+                                                'path':'/'.join(bannerfolder.getPhysicalPath()),[m
+                                                'review_state':['published_internet','published']})[m
+[31m-                                               [m
+[32m+[m
+             counted = len(all_imgs)[m
+             if counted:[m
+                 randomized = randrange(1,int(counted)+1,1)[m
+[36m@@ -178,13 +178,13 @@[m [mclass ZugBylineViewlet(content.DocumentBylineViewlet):[m
+         anonymous = self.portal_state.anonymous()[m
+         allowAnonymousViewAbout = site_properties.getProperty('allowAnonymousViewAbout', True)[m
+         return not anonymous or allowAnonymousViewAbout[m
+[31m-        [m
+[32m+[m
+     @memoize[m
+     def effective(self):[m
+         effective = self.context.effective()[m
+         if effective.year() > 1900:[m
+             return self.context.effective()[m
+[31m-        [m
+[32m+[m
+     def getWorkflowState(self):[m
+         context = self.context[m
+         request = context.request[m
+[1mdiff --git a/izug/basetheme/browser/viewlets_templates/izug_personal_bar.pt b/izug/basetheme/browser/viewlets_templates/izug_personal_bar.pt[m
+[1mindex 71b462c..6b92978 100644[m
+[1m--- a/izug/basetheme/browser/viewlets_templates/izug_personal_bar.pt[m
+[1m+++ b/izug/basetheme/browser/viewlets_templates/izug_personal_bar.pt[m
+[36m@@ -1,7 +1,6 @@[m
+ <div id="portal-personaltools-wrapper"[m
+      i18n:domain="plone">[m
+ <h5 class="hiddenStructure" i18n:translate="heading_personal_tools">Personal tools</h5>[m
+[31m-asdfasdfadsfsdf[m
+ <ul id="portal-personaltools"[m
+     tal:define="accesskeys python: {'contact' : '3'};"[m
+     tal:condition="python:view.user_actions or not view.anonymous"[m

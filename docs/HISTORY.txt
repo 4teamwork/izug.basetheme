@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* IIzugSpecific inherits now from IThemeSpecific and no longer from IDefaultPloneLayer and added zcml condition for ZugPersonalBar-Viewlet
+  [eschmutz]
+
 * Added adapter for plone.contentmenu to handle sprites in the contentmenu
   [eschmutz]
 
