@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Changed margin for div zug_byline
+  [eschmutz]
+
 * Changed layout for dashboard-portlets
   [eschmutz]
 

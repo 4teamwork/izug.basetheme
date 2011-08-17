@@ -246,6 +246,7 @@ div#zug_byline {
     border-right: 1px solid &dtml-contentViewBorderColor;;
     padding: 0.5em;
     position: relative;
+    margin-bottom: 0.909em;
 }
 
 #dropdown-contentmenu {
