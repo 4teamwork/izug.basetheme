@@ -249,7 +249,7 @@ div#zug_byline {
     color: &dtml-contentViewFontColor; !important;
     text-align: right;
     text-transform: &dtml-textTransform;;
-    padding: 0 0 1em 1em;
+    padding: 0 0 0em 1em;
     z-index: 2;
     position:relative;
     height: 1.6em !important;
@@ -265,11 +265,11 @@ div#zug_byline {
     list-style-image: none;
     font-size:1em !important;
     text-align: left;
-    line-height: 2.5em;
+    line-height: 1.6em;
     text-indent: 0;
 }
 #dropdown-contentmenu dl {
-    line-height: 2.5em;
+    line-height: 1.6em;
     margin-bottom: 0 !important;
 }
 #dropdown-contentmenu li {
