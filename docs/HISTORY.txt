@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Changed layout for dashboard-portlets
+  [eschmutz]
+
 * Changed layout for function-/info-bar
   [eschmutz]
 

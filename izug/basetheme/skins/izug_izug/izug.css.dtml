@@ -133,7 +133,7 @@ a.arbeitsraum_delete_item:hover {
     border-color: &dtml-borderblue;;
     border-style: none solid;
     border-width: 0.091em;
-    padding: 0.454em 0.818em;
+    padding: 0.45em 0.818em;
 }
 
 /* Recent portlet special behaviour */
@@ -145,7 +145,11 @@ a.arbeitsraum_delete_item:hover {
     margin-left: -2em;
     padding: 0.2em 0.7em 0.2em 0.6em;
 }
-
+#dashboard .portletItem > ul,
+#dashboard .portletItem > p,
+#dashboard .portletItem > table{
+    margin-bottom:0;
+}
 
 #dashboard .portletRecent .portletItem .portletItemDetails{
     display:inline;
