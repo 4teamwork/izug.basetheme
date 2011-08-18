@@ -61,16 +61,14 @@
       />
 
   <browser:viewlet
-	  zcml:condition="installed plone.app.upgrade"
       name="plone.personal_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.PersonalBar"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IOpengeverSpecific"
       />
 
   <browser:viewlet
-	  zcml:condition="not-have opengever"
       name="plone.personal_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.IZugPersonalBar"
@@ -80,22 +78,20 @@
 
   <!-- zug.ch-specific personal bar viewlet -->
   <browser:viewlet
-      zcml:condition="not-installed plone.app.upgrade"
       name="plone.personal_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.ZugPersonalBar"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IZugSpecific"
       />
 
 
   <browser:viewlet
-	  zcml:condition="installed plone.app.upgrade"
       name="plone.site_actions"
       manager="plone.app.layout.viewlets.interfaces.IBelowContent"
       class=".viewlets.SiteActions"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IOpengeverSpecific"
       />
 
   <!-- zug.ch need a customized site_actions-viewlet -->
@@ -145,7 +141,6 @@
   <!-- new edit menu on top of the page -->
   <browser:viewlet
       name="izug.editmenu"
-      zcml:condition="not-have opengever"
   	  for="*"
       manager="plone.app.layout.viewlets.interfaces.IPortalTop"
       class=".viewlets.ZugEditMenu"
@@ -179,6 +174,7 @@
       name="plone.contentmenu"
       provides="zope.contentprovider.interfaces.IContentProvider"
       />
+
   <!-- for plone 3 only -->
   <browser:viewlet
       name="ftw.contentviews"

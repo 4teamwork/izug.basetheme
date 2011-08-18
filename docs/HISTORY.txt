@@ -5,6 +5,9 @@ Changelog
 1.0a11
 ------
 
+* Better browserlayer/skinlayer handling in configure.zcml
+  [eschmutz]
+
 * Changed margin for div zug_byline
   [eschmutz]
 
