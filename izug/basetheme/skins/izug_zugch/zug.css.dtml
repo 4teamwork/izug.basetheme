@@ -221,6 +221,10 @@ table.eShop {
 table.eShop td.column1 {
     min-width: 35em;
 }
+
+table.eShop input[id*="count"] {
+width: 3em;
+}
 table.eShop td.right a img {
     padding: 0 0 0 1em;
 }
