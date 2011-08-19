@@ -401,6 +401,9 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
 	width: 72em !important;
 
 }
+body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content div.simplelayout-block-wrapper{
+		overflow: visible;
+}
 
 #contentActionMenus dl.izugSpecific a:hover{
     color: &dtml-linkActiveColor; !important;
