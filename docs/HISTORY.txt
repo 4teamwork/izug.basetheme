@@ -5,6 +5,12 @@ Changelog
 1.0a11
 ------
 
+* Added content-wrapper to template
+  [eschmutz]
+
+* Added new css-class "content-wrapper" to add a gab between content and header
+  [eschmutz]
+
 * Better browserlayer/skinlayer handling in configure.zcml
   [eschmutz]
 

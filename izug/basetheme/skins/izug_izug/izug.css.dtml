@@ -246,7 +246,6 @@ div#zug_byline {
     border-right: 1px solid &dtml-contentViewBorderColor;;
     padding: 0.5em;
     position: relative;
-    margin-bottom: 0.909em;
 }
 
 #dropdown-contentmenu {
@@ -407,5 +406,8 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
 
 #contentActionMenus dl.izugSpecific a:hover{
     color: &dtml-linkActiveColor; !important;
+}
+.content-wrapper{
+    margin-top:0.909em;
 }
 /* </dtml-with> */

@@ -36,6 +36,7 @@
                                                 show_about python:not isAnon or site_properties.allowAnonymousViewAbout;">
                         <tal:listing condition="folderContents">
 
+						<div class="content-wrapper">
                             <dl>
                                 <tal:entry tal:repeat="item folderContents">
                                     <tal:block tal:define="item_url item/getURL|item/absolute_url;
@@ -138,7 +139,7 @@
                                     </tal:block>
                                 </tal:entry>
                             </dl>
-
+							</div>
                             <!-- Navigation -->
                             <tal:block condition="python:not is_a_topic and not batch">
                                 <div metal:use-macro="here/batch_macros/macros/navigation" />
