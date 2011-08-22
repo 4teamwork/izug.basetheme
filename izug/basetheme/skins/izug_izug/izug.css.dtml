@@ -289,7 +289,9 @@ div#zug_byline {
     border-bottom-style: none !important;
     color: &dtml-contentViewFontColor; !important;
 }
-
+#dropdown-contentmenu #contentActionMenus .actionMenuContent {
+    margin-top: -0.909em;
+}
 #dropdown-contentmenu #contentActionMenus .actionMenuContent a {
     background-image: none !important;
     padding: 0.1em 0 0.1em 0.1em !important;
