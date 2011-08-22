@@ -426,5 +426,5 @@ table.eShop caption {
 }
 .GB_header {
     z-index: 10010 !important;
-
+}
 /* </dtml-with> */
