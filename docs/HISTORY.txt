@@ -5,6 +5,9 @@ Changelog
 1.0a12
 ------
 
+* Added authenticator to delete_confirmation template
+  [ttschanz]
+
 
 1.0a11
 ------
