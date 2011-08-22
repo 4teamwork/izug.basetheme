@@ -152,7 +152,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     display: none;
     z-index: 5;
     position: absolute;
-    top: 2.7em;
+    top: 2.5em;
     right: 0;
     height: auto;
     padding: 0;
@@ -178,7 +178,7 @@ body.template-manage-dashboard .contentViews li a:hover {
     background: &dtml-contentViewBackgroundColor;;
     border: &dtml-borderWidth; &dtml-contentViewBorderColor;;
     border-style: none &dtml-borderStyle; &dtml-borderStyle; &dtml-borderStyle;;
-    margin: -1em 0 0 0 !important;
+    margin: 0 0 0 0 !important;
     padding: 0;
     overflow: hidden;
 }
