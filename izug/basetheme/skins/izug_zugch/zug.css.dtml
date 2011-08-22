@@ -419,5 +419,12 @@ table.eShop caption {
 /* overlays */
 #GB_overlay {
     background-color: black !important;
+    z-index: 10001 !important;
 }
+#GB_window {
+    z-index: 10005 !important;
+}
+.GB_header {
+    z-index: 10010 !important;
+
 /* </dtml-with> */
