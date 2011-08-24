@@ -5,6 +5,11 @@ Changelog
 1.0a15
 ------
 
+* fixed menu position
+  [fsprenger]
+
+* fixed contentmenu position
+  [fsprenger]
 
 1.0a14
 ------
