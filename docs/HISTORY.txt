@@ -5,6 +5,11 @@ Changelog
 1.0a16
 ------
 
+* Issue #1581 Termin Typ Sitzung: Traktandum bearbeiten
+  Added new event for a-tags in zugCollapsible
+  https://extranet.4teamwork.ch/support/zug/maintlog/1581
+  [eschmutz]
+
 
 1.0a15
 ------

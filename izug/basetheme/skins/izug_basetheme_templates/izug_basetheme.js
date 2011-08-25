@@ -34,4 +34,7 @@ jq(document).ready(function() {
         }
 
     });
+    jq('dl.zugCollapsible dt a').click(function(e) {
+         e.stopPropagation(); 
+    });
 });
