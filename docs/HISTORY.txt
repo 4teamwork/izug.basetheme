@@ -5,6 +5,11 @@ Changelog
 1.0a16
 ------
 
+* Issue #1582 Wartung: das Hauptfenster laesst sich nicht mehr vergroessern
+  Added  ui-icon-gripsmall-diagonal-se class to zugsprites.png
+  https://extranet.4teamwork.ch/support/zug/maintlog/1582
+  [eschmutz]
+ 
 * Issue #1581 Termin Typ Sitzung: Traktandum bearbeiten
   Added new event for a-tags in zugCollapsible
   https://extranet.4teamwork.ch/support/zug/maintlog/1581

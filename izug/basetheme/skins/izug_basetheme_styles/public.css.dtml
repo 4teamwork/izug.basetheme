@@ -1562,12 +1562,13 @@ div.to_top a:hover {
 .mimetype-vnd-sun-xml-draw{ background-position: 0 -6646px;  } 
 .mimetype-vnd-sun-xml-impress{ background-position: 0 -6712px;  } 
 .mimetype-vnd-sun-xml-writer{ background-position: 0 -6778px;  } 
-.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6844px;  } 
-.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -6909px;  } 
-.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -6975px;  } 
-.wf-task-state-in-progress{ background-position: 0 -7041px;  } 
-.wf-task-state-new-successor{ background-position: 0 -7107px;  } 
-.wf-task-state-resolved{ background-position: 0 -7173px;  } 
+.ui-icon-gripsmall-diagonal-se{ background-position: 0 -6844px;  } 
+.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6905px;  } 
+.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -6970px;  } 
+.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -7036px;  } 
+.wf-task-state-in-progress{ background-position: 0 -7102px;  } 
+.wf-task-state-new-successor{ background-position: 0 -7168px;  } 
+.wf-task-state-resolved{ background-position: 0 -7234px;  } 
 
 
 .breadcrumb-divider {
