@@ -5,6 +5,9 @@ Changelog
 1.0a16
 ------
 
+* Added cssstyle for search.pt
+  [eschmutz]
+
 * Modified livesearch_reply to handel sprites
   [eschmutz]
 

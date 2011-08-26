@@ -429,3 +429,54 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
 
 /* </dtml-with> */
 
+/* -------------------------------------------------------------------------------------
+ SEARCHRESULT
+ ======================================================================================*/
+.searchResults {
+	margin-top:1em;
+}
+.searchResults dt {
+	display:block;
+	padding:0 1em;
+}
+.searchResults dt a {
+	font-size:1.1em;
+}
+.searchResults dd {
+	margin-bottom:0.9091em;
+}
+.highlightedSearchTerm {
+	font-weight:bold;
+}
+
+/* -------------------------------------------------------------------------------------
+ PAGER
+ ======================================================================================*/
+ 
+.pager {
+	background-color:#DEDEDE;
+}
+.pager .paging {
+	float:left;
+}
+.pager .display {
+	float:right;
+}
+.pager ul {
+	margin:0;
+    padding:0;
+}
+.pager ul li {
+	float:left;
+    display:block;
+    line-height:2em;
+    padding:0 0.5em;
+}
+.pager ul li.divider {
+    border-right:1px solid #FFFFFF;
+    background-position: 100% 0.25em;
+}
+.pager ul li a, .pager ul li span {
+	font-size:1.1em;
+	
+}
