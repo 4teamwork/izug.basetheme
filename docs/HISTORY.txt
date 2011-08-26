@@ -5,6 +5,9 @@ Changelog
 1.0a16
 ------
 
+* Modified livesearch_reply to handel sprites
+  [eschmutz]
+
 * Added div. templates and scrips from izug.theme to skins/izug_izug
   [eschmutz]
 
