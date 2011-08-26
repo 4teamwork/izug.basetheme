@@ -1,0 +1,117 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      i18n:domain="plone">
+<body>
+
+<!-- Navigation -->
+<div class="searchInfo pager clearfix"
+        metal:define-macro="navigation"
+        tal:define="request request|here/request|container/request|nothing;
+                    batch batch|nothing;
+                    template_id template_id|template/getId;
+                    mq python:modules['ZTUtils'].make_query;
+                    url batch_base_url | string:${here/absolute_url}/${template_id};
+                    currentpage batch/pagenumber;"
+                    tal:condition="python:batch.sequence_length > batch.size"
+
+>
+
+    <ul class="paging">
+
+        <!-- Link to first -->
+        <li tal:define="isFirst python: 1 not in batch.navlist" class="divider">
+            <a href="" title="direkt zur ersten Seite"
+                    tal:attributes="href python: '%s?%s' % (url, batch.pageurl(request.form,1));" 
+                    tal:omit-tag="not:isFirst"
+                    class="batch-link-page"
+>
+                &laquo;
+            </a>
+        </li>
+
+        <!-- prev -->
+        <li tal:define="p batch/previous | nothing" class="divider">
+            <tal:if condition="p">
+                <a href="" title="zur vorhergehenden Seite"
+                           class="batch-link-page"
+                        tal:attributes="href python: '%s?%s' % (url , mq( request.form, {batch.b_start_str:p.first} ))">
+                    &lt;
+                </a>
+            </tal:if>
+            <tal:if condition="not:p">
+                &lt;
+            </tal:if>
+        </li>
+
+        <!-- Pagelist with links to previous pages for quick navigation -->
+  	    <tal:block repeat="linklist python:batch.prevurls(request.form)"
+	            tal:condition="batch/prevlist">
+            <li class="divider"> 
+                <a href=""
+                        tal:define="page python:linklist[0];
+                                    query python:linklist[1];"
+                        tal:content="page"
+						class="batch-link-page"
+                        tal:attributes="href python: '%s?%s' % (url,query)" >
+                </a>
+            </li>
+        </tal:block>
+
+        <!-- Current page -->
+        <li class="divider">
+            <span class="actual" tal:content="batch/pagenumber">Current page number</span>
+        </li>
+
+        <!-- Pagelist with links to next pages for quick navigation -->
+
+        <tal:block repeat="linklist python:batch.nexturls(request.form)"
+                tal:condition="batch/nextlist">
+            <li class="divider">
+                <a href=""
+                        tal:define="page python:linklist[0];
+                                    query python:linklist[1];"
+                        tal:content="page"
+						class="batch-link-page"
+                        tal:attributes="href python: '%s?%s' % (url,query)" 
+>
+                </a>
+            </li>
+        </tal:block>	    
+
+        <!-- next -->
+        <li tal:define="n batch/next | nothing" class="divider">
+            <tal:if condition="n">
+                <a href="" title="zur nächsten Seite"
+                        tal:attributes="href python: '%s?%s' % (url , mq( request.form, {batch.b_start_str:n.first} ))"
+                         class="batch-link-page"
+>
+                    &gt;
+                </a>
+            </tal:if>
+            <tal:if condition="not:n">
+                &gt;
+            </tal:if>
+        </li>
+
+        <!-- Link to last -->
+        <li tal:define="isLast python:batch.numpages not in batch.navlist" class="divider">
+        
+            <a href="" title="direkt zur letzten Seite"
+                    tal:attributes="href python: '%s?%s' % (url,batch.pageurl(request.form,batch.numpages));"
+                    tal:omit-tag="not:isLast"
+                    class="batch-link-page"
+>
+                &raquo;
+            </a>
+        </li>
+
+    </ul>
+
+
+
+</div>
+
+</body>
+</html>

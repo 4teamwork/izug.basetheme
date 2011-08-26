@@ -1,0 +1,103 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+<head>
+
+    <metal:block fill-slot="top_slot"
+                 tal:define="dummy python:request.set('disable_border',1)" />
+</head>
+
+<body>
+<div metal:fill-slot="main"
+     tal:define="use_types_blacklist request/use_types_blacklist | python:True;
+                 use_navigation_root request/use_navigation_root | python:True;
+                 results python:here.queryCatalog(REQUEST=request,use_types_blacklist=use_types_blacklist, use_navigation_root=use_navigation_root);
+                 Batch python:modules['Products.CMFPlone'].Batch;
+                 b_size python:50;
+                 b_size request/b_size | b_size;
+                 b_size python:same_type(b_size ,[]) and b_size[-1] or b_size;
+                 b_start python:0;b_start request/b_start | b_start;
+                 b_range python: b_start==0 and 5 or 3;
+                 desc_length site_properties/search_results_description_length;
+                 desc_ellipsis site_properties/ellipsis;
+                 searchterm request/SearchableText|nothing;
+                 use_view_action site_properties/typesUseViewActionInListings|python:();
+                 batch python:Batch(results, b_size, int(b_start), orphan=1);">
+
+
+    <!--- XXX /-->
+    <style type="text/css" rel="stylesheet">
+        .XXX {
+            border: 2px dotted red;
+        }
+        .COPIED {
+            opacity: 0.3;
+            border: 2px dotted green;
+        }
+        .REMOVE {
+            opacity: 0.3;
+            border: 2px dotted blue;
+        }
+    </style>
+    <!--- /XXX /-->
+
+    <div class="actionsBar clearfix">
+        <h1>Suchresultate</h1>
+        <!-- begin:  actionsBar -->
+        <div class="actionsBarContent clearfix">
+            <!-- begin: pager -->
+            <div metal:use-macro="here/batch_macros_search/macros/navigation" />
+            <!-- end: pager -->
+
+        </div>
+        <!-- end:  actionsBar -->
+        <!-- begin: actionsSubBar -->
+        <div class="actionsSubBar">
+            <p>Ergebnisse <span tal:replace="python:'%s-%s von %s' % (b_start+1,b_start+len(batch),len(results))" /></p>
+        </div>
+        <!-- end: actionsSubBar -->
+        <!-- begin:page -->
+        <div id="page">
+            <h2>Suchergebnis Intranet</h2>
+            <!-- begin: searchResults -->
+            <div tal:condition="not: results">
+                <p><strong i18n:translate="description_no_results_found">No results were found.</strong></p>
+            </div>
+
+            <div tal:condition="results"
+                    tal:define="batch python:Batch(results, b_size, int(b_start), orphan=1);">
+                <dl class="searchResults">
+                    <tal:results repeat="result batch">
+                        <tal:entry define="result_url result/getURL;
+                                           result_type result/portal_type;
+                                           item_icon python:plone_view.getIcon(result);
+                                           url python:'%s?searchterm=%s'%(test(result_type in use_view_action, result_url+'/view', result_url+'/'), searchterm);">
+                            <dt tal:define="item_wf_state_class string:state-${result/review_state};"
+                                    tal:attributes="class python:'contenttype-' + normalizeString(result.portal_type)">
+                                <a href="#" 
+                                        tal:attributes="href url;
+                                                        class string:$item_wf_state_class"
+                                        tal:content="result/pretty_title_or_id" />
+                            </dt>
+                            <dd tal:content="python:plone_view.cropText(result.Description, desc_length, desc_ellipsis)">
+                                    Cropped description
+                            </dd>
+                        </tal:entry>
+                    </tal:results>
+                </dl>
+
+            </div>
+            <!-- end: searchResults -->
+        </div>
+        <!-- end:page -->
+    </div>
+
+
+</div>
+</body>
+</html>
+

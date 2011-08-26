@@ -5,6 +5,9 @@ Changelog
 1.0a16
 ------
 
+* Added div. templates and scrips from izug.theme to skins/izug_izug
+  [eschmutz]
+
 * Issue #1582 Wartung: das Hauptfenster laesst sich nicht mehr vergroessern
   Added  ui-icon-gripsmall-diagonal-se class to zugsprites.png
   https://extranet.4teamwork.ch/support/zug/maintlog/1582
