@@ -17,12 +17,12 @@
             ></a>
         </li>
 		<li tal:condition="python: action['id'] == 'logout'">
-            <span tal:content="view/user_name" />
+            <span tal:content="view/user_name" />:
             <a href=""
                tal:define="accesskey python: accesskeys.get(action['id'], '');"
                tal:attributes="href action/url;
                                accesskey accesskey;"
-            ><tal:actionname i18n:translate="">: iZug Verlassen</tal:actionname
+            ><tal:actionname i18n:translate="">iZug Verlassen</tal:actionname
             ></a>
 
         </li>
