@@ -18,7 +18,7 @@
    <tal:block condition="not: view/anonymous">
        <li><a 
            id="user-name"
-           tal:attributes="href string:${view/portal_url}/logout"
+           tal:attributes="href string:${view/site_url}/logout"
           ><span class="visualCaseSensitive"
                  tal:content="view/user_name">
                 John
