@@ -196,8 +196,8 @@
                 </div>
               </div>
 
-              <!-- display folder_functions and date functions only for managers -->
-              <tal:block tal:condition="python:python:checkPermission('Modify portal content', here) or checkPermission('Review portal content', here)">
+              <!-- back to plone default behaviour -->
+              <tal:block tal:condition="python:checkPermission('Modify portal content', here) or checkPermission('Review portal content', here)">
                   <div class="field formSingleCheckbox"
                         tal:condition="folders_in_publishing|nothing">
 
