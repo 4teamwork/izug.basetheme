@@ -5,6 +5,10 @@ Changelog
 1.0a17
 ------
 
+* #1585 eShop - Layoutanpassungen
+  Removed Portlet in cartoverview and improved eShop listing
+  https://extranet.4teamwork.ch/support/zug/maintlog/1585
+  [ttschanz]
 
 1.0a16
 ------

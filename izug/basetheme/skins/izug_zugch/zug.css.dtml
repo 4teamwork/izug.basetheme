@@ -427,4 +427,12 @@ table.eShop caption {
 .GB_header {
     z-index: 10010 !important;
 }
+
+body.template-shop_checkout div.portal-column-two div.shoppingCart {
+	display: none;
+}
+
+table.eShop td.right span.nowrap {
+	white-space: nowrap;
+}
 /* </dtml-with> */
