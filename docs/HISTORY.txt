@@ -4,7 +4,8 @@ Changelog
 
 1.0a17
 ------
-
+* Fixed styling for kantonsratsvorlagen (Issue #1598)
+  [fsprenger]
 
 1.0a16
 ------
