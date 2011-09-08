@@ -10,6 +10,9 @@ Changelog
   https://extranet.4teamwork.ch/support/zug/maintlog/1585
   [ttschanz]
 
+* Fixed styling for kantonsratsvorlagen (Issue #1598)
+  [fsprenger]
+
 1.0a16
 ------
 

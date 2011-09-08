@@ -336,6 +336,17 @@ form#login_form .formControls {
     display:block;
     padding-left: 1.636em;
 }
+.template-zugkantonsratsvorlagenordner_view .eShop td.searchResult ul a {
+background-image: none;
+    padding-left: 0;
+}
+.template-zugkantonsratsvorlagenordner_view .eShop td.searchResult ul {
+    margin-bottom: 0;
+}
+.template-zugkantonsratsvorlagenordner_view .eShop td.searchResult ul li {
+    margin-bottom: 0;
+}
+
 /* XXX disable sprites until we get rid of all icon expressions in types / actions .... */
 /*.icons-on [class*="contenttype-"], .icons-on [class*="mimetype-"], .icons-on [class*="wf-"], .icons-on [class*="actionicon-"],  .icons-on [class*="icon-"] {
     background-image: none;
