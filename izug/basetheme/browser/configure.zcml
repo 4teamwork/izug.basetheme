@@ -165,6 +165,25 @@
       layer="izug.basetheme.browser.interfaces.IIzugSpecific"
       />  
 
+
+  <!-- izug special folder_contents -->
+  <browser:page
+      for="Products.Archetypes.interfaces.IBaseObject"
+      class=".foldercontents.IzugFolderContentsView"
+      name="folder_contents"
+      template="foldercontents.pt"
+      layer="izug.basetheme.browser.interfaces.IIzugSpecific"
+      permission="cmf.ListFolderContents" />
+
+  <browser:page
+       for="Products.Archetypes.interfaces.IBaseObject"
+       class=".foldercontents.FolderContentsKSSView"
+       attribute="update_table"
+       name="foldercontents_update_table"
+       layer="izug.basetheme.browser.interfaces.IIzugSpecific"       
+       permission="cmf.ListFolderContents" />
+
+
   <!-- A content provider showing the menu customised for izug -->
   <adapter
       for="Products.ATContentTypes.interface.interfaces.IATContentType
