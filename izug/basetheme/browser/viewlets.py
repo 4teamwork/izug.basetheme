@@ -12,6 +12,7 @@ from plone.memoize.instance import memoize
 from zope.component import getMultiAdapter
 from random import randrange
 from izug.basetheme.browser.helper import css_class_from_obj
+from Products.CMFPlone.interfaces import IPloneSiteRoot
 
 
 class PathBar(common.PathBarViewlet):
@@ -201,6 +202,8 @@ class ZugBylineViewlet(content.DocumentBylineViewlet):
 class ContentMenuViewlet(common.ViewletBase):
     render = ViewPageTemplateFile('viewlets_templates/izug_dropdown_content_menu.pt')
     def show_menu(self):
+        if IPloneSiteRoot.providedBy(self.context):
+            return False
         if 'arbeitsplatz' in self.context.getPhysicalPath() and not self.context.restrictedTraverse('within_book')():
             return True
         if not self.context.restrictedTraverse('@@plone').showEditableBorder():
