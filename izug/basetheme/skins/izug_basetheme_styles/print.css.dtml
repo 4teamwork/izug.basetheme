@@ -159,3 +159,46 @@ color: #111111;
 border-style: none;
 outline: none;
 }
+/* ticketbox stuff */
+div#ticket-content table {
+	width: 650px;
+	margin-bottom: 2em;
+}
+div#zug_edit_menu{
+    display:none;
+}
+div#ticket-content table tr td:first-child{
+    width:180px;
+}
+
+div.response-reply {
+    margin-bottom: 2em;
+    border: 1px dashed #454545;
+    padding: 1em;
+	width: 650px;
+}
+
+/*div.response-reply div.response-actions form {
+    float: left;
+    margin-right: 1em;
+}*/
+div.response-reply div.response-actions form {
+    display:none;
+}
+div.response-reply div.response-info{
+	font-size: 10px;
+	margin-bottom: 1em;
+	font-color: #76797C
+}
+div.response-reply p{
+	font-size: 11px;
+}
+dl#addResponse{
+	display: none;
+}
+div.issue-attachment{
+    font-size: 11px;
+}
+body.template-ticket_view ul.arbeitsraum-types {
+    display:none;
+}

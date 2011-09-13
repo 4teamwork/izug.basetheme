@@ -5,6 +5,11 @@ Changelog
 1.0a17
 ------
 
+* Issue #1603 Auftragsbox - Printlayout Auftrag fehlerhaft
+  https://extranet.4teamwork.ch/support/zug/maintlog/1603
+  Added printlayout for ticket view
+  [eschmutz]
+
 * Issue #1601 Webdokument: Falsches Dokumentsymbol PDF
   https://extranet.4teamwork.ch/support/zug/maintlog/1601
   added icon_dokument_pdf.gif to zugsprite and added new widget-template
