@@ -59,17 +59,16 @@
 
         <tr>
           <th class="nosort">&nbsp;</th>
-          <th class="nosort column"
+          <th class="sort column"
               id="foldercontents-title-column">&nbsp;<tal:title i18n:translate="listingheader_title"
               >Title</tal:title>&nbsp;</th>
           <th class="nosort column"
-              id="foldercontents-type-column">&nbsp;<tal:size i18n:translate="listingheader_type"
+              id="foldercontents-portal_type-column">&nbsp;<tal:size i18n:translate="listingheader_type"
               >Typ</tal:size>&nbsp;</th>
-
           <th class="nosort column"
               id="foldercontents-size-column">&nbsp;<tal:size i18n:translate="listingheader_size"
               >Size</tal:size>&nbsp;</th>
-          <th class="nosort column"
+          <th class="sort column"
               id="foldercontents-modified-column">&nbsp;<tal:modified i18n:translate="listingheader_modified"
               >Modified</tal:modified>&nbsp;</th>
           <th class="nosort column"

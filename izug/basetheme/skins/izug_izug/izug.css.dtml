@@ -427,6 +427,13 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
 .ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
 .ui-state-highlight, .ui-widget-content .ui-state-highlight {border: 1px solid #fcefa1; background: #fbf9ee url(images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x; color: #363636; }
 
+
+/* folder_contents styles for izug
+----------------------------------*/
+#listing-table th.sort.column {
+    cursor:pointer;
+}
+
 /* </dtml-with> */
 
 /* -------------------------------------------------------------------------------------

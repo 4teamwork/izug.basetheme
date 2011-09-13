@@ -59,9 +59,12 @@ class IzugFolderContentsTable(FolderContentsTable):
         sort_order = self.context.aq_explicit.get('sortOrder', None)
         if sort_on:
             content_filter['sort_on'] = sort_on
-        if sort_on:
+        if sort_order:
             content_filter['sort_order'] = sort_order
         self.contentFilter.update(content_filter)
+        # Fix for kss update_table - THIS SHOULD BE DONE BY PLONE!!
+        if sort_on:
+            self.request.set('sort_on', sort_on)
         
     @property
     def orderable(self):
