@@ -5,6 +5,12 @@ Changelog
 1.0a17
 ------
 
+* Issue #1601 Webdokument: Falsches Dokumentsymbol PDF
+  https://extranet.4teamwork.ch/support/zug/maintlog/1601
+  added icon_dokument_pdf.gif to zugsprite and added new widget-template
+  for FileWidget
+  [eschmutz]
+
 * #1585 eShop - Layoutanpassungen
   Removed Portlet in cartoverview and improved eShop listing
   https://extranet.4teamwork.ch/support/zug/maintlog/1585
