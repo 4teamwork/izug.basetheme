@@ -12,11 +12,11 @@ class IzugFolderContentsView(FolderContentsView):
     Behaviour:
     * Default sort-order is alphabetical (sortable_title)
     * Use sortAttribute and sortOrder, if available
-    * Plone-root is using plone-default folder_contents 
+    * Plone-root is using plone-default folder_contents
       (Registred on IBaseObject)
     * Columntitle is clickable and triggers js-sort
-    * The sortable row is only available if sortAttribute is manuall 
-      (getObjPositionInParent), on plone root or on some explicit configuered 
+    * The sortable row is only available if sortAttribute is manuall
+      (getObjPositionInParent), on plone root or on some explicit configuered
       types (Default: Folder)
     * Batchsize is 50
     * Column type: show title not the icon.
@@ -26,12 +26,12 @@ class IzugFolderContentsView(FolderContentsView):
         table = IzugFolderContentsTable(aq_inner(self.context), self.request)
         return table.render()
 
-        
+
 class IzugFolderContentsTable(FolderContentsTable):
-    """   
+    """
     The foldercontents table renders the table and its actions.
     """
-    
+
     def __init__(self, context, request, contentFilter={}):
         self.context = context
         self.request = request
@@ -43,15 +43,14 @@ class IzugFolderContentsTable(FolderContentsTable):
         self.table = IzugTable(request, url, view_url, self.items,
                            show_sort_column=self.show_sort_column,
                            buttons=self.buttons)
-        
-    
+
     def update_filter(self):
         content_filter = {}
-        
+
         # Huck for js sort on table
         if 'sort_on' in self.contentFilter:
             return
-        
+
         # Default is sortable_title
         content_filter['sort_on'] = 'sortable_title'
         # Look for available sort attr.
@@ -65,7 +64,7 @@ class IzugFolderContentsTable(FolderContentsTable):
         # Fix for kss update_table - THIS SHOULD BE DONE BY PLONE!!
         if sort_on:
             self.request.set('sort_on', sort_on)
-        
+
     @property
     def orderable(self):
         """
@@ -80,7 +79,7 @@ class IzugFolderContentsTable(FolderContentsTable):
 
 class FolderContentsKSSView(TableKSSView):
     table = IzugFolderContentsTable
-    
-    
+
+
 class IzugTable(Table):
-    render = ViewPageTemplateFile("table.pt")    
+    render = ViewPageTemplateFile("table.pt")
