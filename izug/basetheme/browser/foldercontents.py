@@ -59,9 +59,14 @@ class IzugFolderContentsTable(FolderContentsTable):
 
         url = context.absolute_url()
         view_url = url + '/@@folder_contents'
-        self.table = IzugTable(request, url, view_url, self.items,
-                           show_sort_column=self.show_sort_column,
-                           buttons=self.buttons)
+        self.table = IzugTable(
+            request,
+            url,
+            view_url,
+            self.items,
+            pagesize=50,
+            show_sort_column=self.show_sort_column,
+            buttons=self.buttons)
 
     def is_special_type(self):
         # Content of some types should be always orderable

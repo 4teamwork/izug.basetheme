@@ -5,6 +5,11 @@ Changelog
 1.0a17
 ------
 
+* #1583 Wartung: Aktionen-Inhalte optimieren
+  https://extranet.4teamwork.ch/support/zug/maintlog/1583
+  For zug.ch/iZug
+  [13.09.2011, mathias.leimgruber]
+
 * Issue #1603 Auftragsbox - Printlayout Auftrag fehlerhaft
   https://extranet.4teamwork.ch/support/zug/maintlog/1603
   Added printlayout for ticket view
