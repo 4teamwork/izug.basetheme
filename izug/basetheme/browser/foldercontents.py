@@ -69,7 +69,14 @@ class IzugFolderContentsTable(FolderContentsTable):
     def orderable(self):
         """
         """
+
         iface = IOrderedContainer.providedBy(aq_inner(self.context))
+
+        # Some types should be always orderable
+        # XXX: Use a propertysheet
+        if self.context.Type() in ['Folder', ] and iface:
+            return True
+
         attr = self.context.aq_explicit\
             .get('sortAttribute', '') == 'getObjPositionInParent'
         if self.contentFilter.get('sort_on', '') != 'getObjPositionInParent':
