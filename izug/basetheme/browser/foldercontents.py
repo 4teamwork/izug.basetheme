@@ -43,6 +43,10 @@ class IzugFolderContentsTable(FolderContentsTable):
             # Look for available sort attr.
             sort_on = self.context.aq_explicit.get('sortAttribute', None)
             sort_order = self.context.aq_explicit.get('sortOrder', None)
+
+            if self.is_special_type():
+                sort_on = 'getObjPositionInParent'
+
             if sort_on:
                 contentFilter['sort_on'] = sort_on
             if sort_order:
@@ -59,17 +63,19 @@ class IzugFolderContentsTable(FolderContentsTable):
                            show_sort_column=self.show_sort_column,
                            buttons=self.buttons)
 
+    def is_special_type(self):
+        # Content of some types should be always orderable
+        # XXX: Use a propertysheet
+        return self.context.Type() in ['Folder', ]
+
     @property
     def orderable(self):
         """
         """
+        if self.is_special_type():
+            return True
 
         iface = IOrderedContainer.providedBy(aq_inner(self.context))
-
-        # Some types should be always orderable
-        # XXX: Use a propertysheet
-        if self.context.Type() in ['Folder', ] and iface:
-            return True
 
         attr = self.context.aq_explicit\
             .get('sortAttribute', '') == 'getObjPositionInParent'
