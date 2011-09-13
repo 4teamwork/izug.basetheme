@@ -39,7 +39,6 @@
          i18n:translate="go_to_parent_url">
           Up one level
       </a>
-
       <p class="documentDescription" tal:condition="exists:here/aq_explicit/widget">
           <metal:field use-macro="python:here.widget('description', mode='view')">
               Description

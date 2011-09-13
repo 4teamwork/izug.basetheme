@@ -16,11 +16,6 @@
      layer=".interfaces.IThemeSpecific"
      />
 
-   <browser:jbot
-     directory="customized_izug"
-     layer=".interfaces.IIzugSpecific"
-     />
-
   <browser:page
      for="Products.CMFCore.interfaces.IContentish"
      name="breadcrumbs_view"

@@ -3,6 +3,7 @@ from plone.app.content.browser.foldercontents import FolderContentsTable
 from plone.app.content.browser.tableview import Table, TableKSSView
 from Acquisition import aq_inner
 from OFS.interfaces import IOrderedContainer
+from zope.app.pagetemplate import ViewPageTemplateFile
 
 
 class IzugFolderContentsView(FolderContentsView):
@@ -22,7 +23,6 @@ class IzugFolderContentsView(FolderContentsView):
     """
 
     def contents_table(self):
-        
         table = IzugFolderContentsTable(aq_inner(self.context), self.request)
         return table.render()
 
@@ -40,10 +40,10 @@ class IzugFolderContentsTable(FolderContentsTable):
 
         url = context.absolute_url()
         view_url = url + '/@@folder_contents'
-        self.table = Table(request, url, view_url, self.items,
+        self.table = IzugTable(request, url, view_url, self.items,
                            show_sort_column=self.show_sort_column,
                            buttons=self.buttons)
-            
+        
     
     def update_filter(self):
         content_filter = {}
@@ -70,8 +70,14 @@ class IzugFolderContentsTable(FolderContentsTable):
         iface = IOrderedContainer.providedBy(aq_inner(self.context))
         attr = self.context.aq_explicit\
             .get('sortAttribute', '') == 'getObjPositionInParent'
+        if self.contentFilter.get('sort_on', '') != 'getObjPositionInParent':
+            return False
         return iface and attr
 
 
 class FolderContentsKSSView(TableKSSView):
     table = IzugFolderContentsTable
+    
+    
+class IzugTable(Table):
+    render = ViewPageTemplateFile("table.pt")    
