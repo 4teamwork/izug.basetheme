@@ -52,10 +52,11 @@ jq(function() {
     // all listing tables not explicitly nosort, all sortable th cells
     // give them a pointer cursor and  blank cell and click event handler
     // the first one of the cells gets a up arrow instead.
-    jq('table.listing:not(.nosort) thead th:not(.nosort)')
-        .append(blankarrow.clone())
+    jq('table.listing:not(.nosort) thead th:not(.nosort)').each(function(i, o){
+        jq(o).append(blankarrow.clone())
         .css('cursor', 'pointer')
         .click(sort)
         .slice(0, 1)
         .find('img.sortdirection').attr('src', portal_url + '/arrowUp.gif');
+      });
 });
