@@ -5,6 +5,11 @@ Changelog
 1.0a17
 ------
 
+* Issue #1463 Buch - Inhaltsobjekt Dokument mit Verweis ergaenzen
+  https://extranet.4teamwork.ch/support/zug/maintlog/1463
+  extended computeRelatedItems.py
+  [13.09.2011, eschmutz]
+
 * #1583 Wartung: Aktionen-Inhalte optimieren
   https://extranet.4teamwork.ch/support/zug/maintlog/1583
   For zug.ch/iZug
