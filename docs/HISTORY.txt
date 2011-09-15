@@ -5,6 +5,11 @@ Changelog
 1.0a17
 ------
 
+* Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
+  https://extranet.4teamwork.ch/support/zug/maintlog/1606
+  override template calendar_macros.pt
+  [eschmutz]
+
 * Issue #1463 Buch - Inhaltsobjekt Dokument mit Verweis ergaenzen
   https://extranet.4teamwork.ch/support/zug/maintlog/1463
   extended computeRelatedItems.py
