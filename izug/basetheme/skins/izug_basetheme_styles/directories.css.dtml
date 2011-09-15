@@ -20,7 +20,7 @@
 .directorySearchFormButtons {
     float: left;
     width: 16em;
-    margin-top: 1.6em;
+    margin-top: 1.5em;
 }
 #directorySearchButton {
     padding-top: 2.6em;
