@@ -220,6 +220,7 @@ table.eShop {
 
 table.eShop td.column1 {
     width: 40em;
+    overflow: hidden;
 }
 
 table.eShop input[id*="count"] {
