@@ -1,0 +1,188 @@
+/* general styles */
+.visualMarginRight {
+    margin-right: 1.909em;
+}
+
+/* header area with search */
+#directorySearch {
+    background-color: #DEDEDE;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+#directorySearchSubmitDirectoryInvitation {
+    float: right;
+    text-align: right;
+    width: 27.818em;
+    padding-right: 1em;
+    margin-top: 1em;
+}
+
+#directorySearchButton {
+    padding-top: 2.6em
+}
+#directorySearchForm {
+    margin-left: 1em;
+}
+.directorySearchFormSelection {
+    float: left;
+    width: 16em;
+}
+#directorySearchForm .directorySearchFormSelection label {
+    display: block;
+    font-weight: normal;
+    margin: 0.6em 0 1em
+}
+#directorySearchForm .visualMarginRight select {
+    width: 100%;
+}
+div#landingPageImage {
+  float: right;
+  clear: right;
+  margin-left: 1em;
+}
+
+/* directory listing */
+#landingPageText {
+    overflow: hidden;
+    margin: 0 0 4.363em 0;
+    padding-top: 4.363em;
+    border-top: 0.091em solid #99BAD1;
+}
+#directoryInfo,
+#directoryDetails {
+    overflow: hidden;
+    margin: 0 0 4.363em 0;
+    padding-top: 2.272em;
+    border-top: 0.091em solid #99BAD1;
+}
+#landingPageText h2, 
+#directoryInfo h2,
+#directoryDetails h2 {
+    clear: none;
+    margin-top: 0;
+}
+#landingPageDashboardSection .landingPageDashboard {
+    width: 27.818em;
+    float: left;
+}
+
+#landingPageDashboardSection .landingPageDashboard .portletHeader,
+#landingPageDashboardSection .landingPageDashboard .portletbody,
+#landingPageDashboardSection .landingPageDashboard .zugdirectorylink,
+#landingPageDashboardSubSection .portletItem.zugdirectorylink {
+    border-color: #EFEFEF;
+    border-width: 0 0 0.182em;
+    border-style: none none solid;
+    font-size: 1em;
+    padding-bottom: 0.454em;
+}
+#landingPageDashboardSection .landingPageDashboard .portletHeader {
+   padding: 0.454em 0;
+}
+.landingPageDashboard .zugdirectorylink:last-child {
+    border-bottom-style: none !important;
+}
+.landingPageDashboard .zugdirectorylink,
+#landingPageDashboardSubSection .zugdirectorylink  {
+    padding: 0.909em 0 0.909em !important;
+}
+.landingPageDashboard .zugdirectorylink img,
+#landingPageDashboardSubSection .zugdirectorylink img {
+    float: right;
+    margin: 0 0 0.909em 0.909em !important;
+}
+.landingPageDashboard .zugdirectorylink a,
+.landingPageDashboard .zugdirectorylink .portletItemDetails,
+#landingPageDashboardSubSection .zugdirectorylink .portletItemDetails,
+#landingPageDashboardSubSection .zugdirectorylink a {
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+}
+#landingPageDashboardSection .landingPageDashboard .portletItem {
+    font-size: 1em; 
+    padding: 0.363em 0 0;;
+}
+
+/* directory listing by location */
+#directoryResultList {
+    float: left;
+    width: 42.909em;
+}
+#directoryResultList .directoryInfoText {
+    overflow: hidden;
+    border-bottom: 0.191em solid #EFEFEF;
+    padding: 0 0 0.454em;
+    margin: 0 0 0.454em;        
+}
+#directoryResultList .directoryInfoText a {
+    font-weight: bold;
+    text-decoration: none;
+}
+#directoryResultList .directoryInfoImage {
+    float: right;
+    
+}
+#directoryResultList .directoryInfoText a,
+#directoryResultList .documentDescription,
+#directoryResultList .directoryTypes,
+#directoryResultList .directoryDates {
+    padding-left: 2em;
+    display: block;
+    margin: 0.191em 0;
+}
+#directoryResultList img.directoryListIcon {
+    margin-left: -1.8em;
+}
+
+#directoryInfoMap .googleMapActive.googleMapLocation {
+    width: 42.909em;
+    height: 42.909em;
+}
+#directoryInfoMap .googleMapLocation .googleMapPane {
+    height: 42.909em; 
+}
+/* sub landing page */
+#landingPageSub #landingPageText {
+    width: 57.545em;
+    float: left;
+}
+#landingPageDashboardSubSection {
+    width: 27.818em;
+    float: right;
+    padding: 4.363em 0 0 1.909em !important;
+    border-top: 0.091em solid #99BAD1;
+
+}
+#landingPageDashboardSubSection .portletHeader {
+    border-top-style: none;
+    padding-top: 0;
+    font-size: 1.182em;
+}
+#landingPageDashboardSubSection .portletItem {
+    font-size: 1em;
+}
+/* directory detail view */
+.directoryDetailsBlock {
+    width: 20.363em;
+    margin-right: 1.909em;
+    float: left;
+    border-top: 0.191em solid #EFEFEF;
+    padding-top: 0.454em;
+    line-height: 1.454em;
+}
+.directoryDetailsBlock.last {
+    margin-right: 0 !important;
+}
+#directoryInfoPage .directoryFormControls {
+    float: right;
+    margin-left: 0.909em;
+}
+#directoryResultList {
+    border-top: 0.191em solid #EFEFEF;
+    padding-top: 0.909em;
+    line-height: 1.454em;
+}
+#directoryResultList .backToSearchResults {
+    margin: 1.091em 0;
+}
