@@ -20,8 +20,11 @@
 .directorySearchFormButtons {
     float: left;
     width: 16em;
-    margin-top: 1.5em;
 }
+.directorySearchFormButtons input {
+    margin-top: 3em;
+}
+
 #directorySearchButton {
     padding-top: 2.6em;
 }
@@ -31,6 +34,7 @@
 }
 #directorySearchForm form {
     clear: both;
+    overflow: hidden;
 }
 .directorySearchFormSelection {
     float: left;
