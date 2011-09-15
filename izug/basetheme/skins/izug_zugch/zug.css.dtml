@@ -219,7 +219,7 @@ table.eShop {
 }
 
 table.eShop td.column1 {
-    min-width: 35em;
+    width: 40em;
 }
 
 table.eShop input[id*="count"] {
