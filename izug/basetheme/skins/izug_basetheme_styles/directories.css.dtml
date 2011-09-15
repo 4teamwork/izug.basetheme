@@ -29,6 +29,9 @@
 #directorySearchForm {
     margin-left: 1em;
 }
+#directorySearchForm form {
+    clear: both;
+}
 .directorySearchFormSelection {
     float: left;
     width: 16em;
