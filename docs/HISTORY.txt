@@ -5,6 +5,11 @@ Changelog
 1.0a19
 ------
 
+* Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
+  https://extranet.4teamwork.ch/support/zug/maintlog/1606
+  added recursive skinsregistry for izug_izug in skins.zcml
+  [eschmutz]
+
 
 1.0a18
 ------
