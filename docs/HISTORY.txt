@@ -5,6 +5,11 @@ Changelog
 1.0a18
 ------
 
+* Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
+  https://extranet.4teamwork.ch/support/zug/maintlog/1606
+  show skins/izug_izug/jscalendar/README.txt
+  [eschmutz]
+
 
 1.0a17
 ------
