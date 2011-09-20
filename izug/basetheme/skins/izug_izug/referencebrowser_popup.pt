@@ -27,7 +27,7 @@
          }
     </script>
 </head>
-    <body class="popup atrefbrowser" onload="focus();self.name='referencebrowser_popup'" style="margin: 4px;padding:0.5em;" 
+    <body class="popup atrefbrowser" onload="focus();self.name='referencebrowser_popup'" style="margin: 4px;padding:0.5em;"
           tal:define="border_color here/base_properties/globalBorderColor;
                       at_url python:here.REQUEST.get('at_url');
                       fieldName python:here.REQUEST.get('fieldName');
@@ -90,22 +90,22 @@
                    <input type="hidden" name="clear:int" value="1" />
                    <label for="path" i18n:translate="referencebrowser_history">History</label>
                    <select name="path" size="1">
-                       <option value="" i18n:translate="" /> 
+                       <option value="" i18n:translate="" />
                        <option tal:repeat="tp history"
                                tal:content="python: tp[1]"
-                               tal:attributes="value python: tp[0]" 
+                               tal:attributes="value python: tp[0]"
                        />
                    </select>
-                   <input class="context" type="button" value="Go" 
+                   <input class="context" type="button" value="Go"
                           onclick="submitHistoryForm()"
                           i18n:attributes="value label_go;" />
-               </form>             
+               </form>
                <div tal:condition="history">
                   <a tal:attributes="href string:${request/ACTUAL_URL}?${request/QUERY_STRING}&amp;clearHistory=1" i18n:translate="referencebrowser_clearhistory">Clear history</a>
                </div>
            </div>
         </div>
-    
+
         <h2 class="documentFirstHeading"
             tal:content="title" />
         <p class="formHelp"
@@ -125,7 +125,7 @@
 
             <div class="field" tal:condition="show_indexes">
                 <label i18n:translate="referencebrowser_search_index_label">Search index</label><br/>
-                <select name="search_index" 
+                <select name="search_index"
                         style=""
                         id="indexSelector"
                         tal:attributes="style string:font-family:${here/base_properties/fontFamily};;font-size:100%;">
@@ -143,7 +143,7 @@
                                     tal:attributes="value index;
                                                     selected python:test(index==search_index, 'selected', '')"
                                     tal:content=   "index"
-                                    tal:condition= "python:not available_indexes.has_key(index)"/>                                        
+                                    tal:condition= "python:not available_indexes.has_key(index)"/>
                         </tal:filter>
                     </tal:indexes>
                 </select>
@@ -163,7 +163,7 @@
                        value="Search"
                        i18n:domain="plone"
                        i18n:attributes="value label_search;"
-                       />                       
+                       />
             </div>
             <!-- add these to make sure that after a search result, we still have these paremeters -->
             <input type="hidden" name="fieldName" value="" tal:attributes="value fieldName" />
@@ -192,13 +192,13 @@
                      tal:define=    "portal here/portal_url/getPortalObject;
                                      putils nocall:portal/plone_utils;
                                      crumbs python:putils.createBreadCrumbs(here);
-                                     crumbs python: test(True, context.referencebrowser_filterBreadCrumbs(crumbs, widget.startup_directory), crumbs); 
+                                     crumbs python: test(True, context.referencebrowser_filterBreadCrumbs(crumbs, widget.startup_directory), crumbs);
                                      isRTL python:portal.restrictedTraverse('@@plone_portal_state').is_rtl();
                                      parents request/PARENTS;
                                      nil python: parents.reverse();
                                      navroot context/@@plone_portal_state/navigation_root_url
                                      ">
-                                     
+
                 <img tal:attributes="src string:${here/portal_url}/logoIcon.gif"/>
                 <tal:if condition="not: restrict_browsing_to_startup_directory">
                     <a i18n:translate="tabs_home"
@@ -207,13 +207,13 @@
                     </a>
 
                     <span tal:condition="crumbs" class="breadcrumbSeparator">
-                        <tal:ltr condition="not: isRTL">&rarr;</tal:ltr> 
-                        <tal:rtl condition="isRTL">&larr;</tal:rtl> 
-                    </span>                
+                        <tal:ltr condition="not: isRTL">&rarr;</tal:ltr>
+                        <tal:rtl condition="isRTL">&larr;</tal:rtl>
+                    </span>
                 </tal:if>
 
- 
-                <tal:crums tal:repeat="crumb crumbs">            
+
+                <tal:crums tal:repeat="crumb crumbs">
 
                     <a tal:attributes="href string:${crumb/absolute_url}/${template/getId}?fieldName=${fieldName}&amp;fieldRealName=${fieldRealName}&amp;at_url=${at_url}&amp;at_uid=${at_uid}">
                         <span tal:content="string:${crumb/Title}">
@@ -223,26 +223,26 @@
 
                     <span tal:condition="not: repeat/crumb/end"
                           class="breadcrumbSeparator">
-                        <tal:ltr condition="not: isRTL">&rarr;</tal:ltr> 
-                        <tal:rtl condition="isRTL">&larr;</tal:rtl> 
-                    </span>                                 
+                        <tal:ltr condition="not: isRTL">&rarr;</tal:ltr>
+                        <tal:rtl condition="isRTL">&larr;</tal:rtl>
+                    </span>
 
                 </tal:crums>
-             
+
 
             </div>
-        
+
            <!-- object list -->
            <tal:noresults tal:condition="python:(search_text!='' or not allow_browse) and query_results==[]">
                <p i18n:translate="referencebrowser_no_items_found">No items found.</p>
            </tal:noresults>
            <tal:list tal:define="checkPermission python: here.portal_membership.checkPermission;
                                  folder_contents here/listFolderContents|python:[];
-                                 results python: test(search_text!='' or not allow_browse, query_results, test(allow_browse, [item for item in folder_contents if checkPermission('View',item)], [])); 
+                                 results python: test(search_text!='' or not allow_browse, query_results, test(allow_browse, [item for item in folder_contents if checkPermission('View',item)], []));
                                  batch python: Batch(results, b_size, int(b_start), orphan=1);">
-                <table class="group" 
-                          width="100%" 
-                          cellspacing="0" 
+                <table class="group"
+                          width="100%"
+                          cellspacing="0"
                           cellpadding="2"
                           tal:condition="batch">
                     <tbody>
@@ -256,7 +256,7 @@
                                                   referenceable python:has_uid and item_referenceable and review_state_allows and item!=at_obj;
                                                   color here/base_properties/discreetColor;">
 
-                                <tr tal:define="oddrow repeat/item/odd" 
+                                <tr tal:define="oddrow repeat/item/odd"
                                     tal:attributes="class python:test(oddrow, 'even', 'odd')">
                                     <td tal:condition="image_portal_types">
                                       <tal:if condition="python: item.getTypeInfo().Title() in image_portal_types" >
@@ -269,24 +269,24 @@
                                            tal:attributes="href python:item.absolute_url() + '/' + template.getId() + '?fieldName='+ fieldName + '&amp;fieldRealName=' + fieldRealName + '&amp;at_url='+at_url + '&amp;at_uid='+at_uid">
                                             <strong tal:condition="referenceable"
                                                     tal:content="item/title_or_id">Title</strong>
-                                            <span style="" 
-                                                  tal:condition="not: referenceable" 
+                                            <span style=""
+                                                  tal:condition="not: referenceable"
                                                   tal:content="item/title_or_id"/>
                                         </a>
                                         <tal:foldercheck tal:condition="python: not ((item.isPrincipiaFolderish and allow_browse) and item &lt;&gt; here)" >
                                             <strong tal:condition="referenceable"
                                                tal:content="item/title_or_id">Title
                                             </strong>
-                                            <span style="" 
-                                                  tal:condition="python:not referenceable" 
+                                            <span style=""
+                                                  tal:condition="python:not referenceable"
                                                   tal:content="item/title_or_id"
                                                   tal:attributes="style string:color:${color}" />
                                         </tal:foldercheck>
 
                                         <div tal:condition="show_review_state">
                                             <span tal:define="state python: getInfoFor(item, 'review_state', None)"
-                                                  tal:attributes="class string:state-$state" 
-                                                  i18n:translate="" i18n:domain="plone" tal:content="state" 
+                                                  tal:attributes="class string:state-$state"
+                                                  i18n:translate="" i18n:domain="plone" tal:content="state"
                                             />
                                         </div>
 
@@ -301,8 +301,8 @@
                                         tal:content="python:item.getTypeInfo().Title()">
                                         Title
                                     </td>
-                                    <td width="25%" 
-                                        nowrap="nowrap" 
+                                    <td width="25%"
+                                        nowrap="nowrap"
                                         style="text-align:right"
                                         tal:define="title python:item.title_or_id().replace('\'', '\\\'')">
                                         <tal:referenceable tal:condition="referenceable">
@@ -331,6 +331,6 @@
            <a href="javascript:history.back()" i18n:translate="referencebrowser_back">Back</a>
            |
            <a href="javascript:window.close()" i18n:translate="referencebrowser_close">Close window</a>
-        </div>        
+        </div>
     </body>
 </html>
