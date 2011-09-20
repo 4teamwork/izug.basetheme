@@ -5,6 +5,10 @@ Changelog
 1.0a110
 -------
 
+* Issue #1602 Wartung: Integrationstypen koennen keine internen Links setzen
+  https://extranet.4teamwork.ch/support/zug/maintlog/1602
+  Fix "Home" link bugs in referencebrowser_popup.pt
+
 * Issue #1172 Feedback aus Pilotphase: Website durchsuchen umbenennen
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1172
   Changed translation
@@ -84,7 +88,7 @@ Changelog
   Added  ui-icon-gripsmall-diagonal-se class to zugsprites.png
   https://extranet.4teamwork.ch/support/zug/maintlog/1582
   [eschmutz]
- 
+
 * Issue #1581 Termin Typ Sitzung: Traktandum bearbeiten
   Added new event for a-tags in zugCollapsible
   https://extranet.4teamwork.ch/support/zug/maintlog/1581
@@ -162,7 +166,7 @@ Changelog
 * Added adapter for plone.contentmenu to handle sprites in the contentmenu
   [eschmutz]
 
-* Issue #1553 Behoerden - Anzeige Prozesslandkarte     
+* Issue #1553 Behoerden - Anzeige Prozesslandkarte
   https://extranet.4teamwork.ch/support/zug/maintlog/1553
   [ttschanz]
 
@@ -190,7 +194,7 @@ Changelog
 * removed css styling for destructive css class and removed backgroundimage for comments
   [eschmutz]
 
-* Fixed specific css for newspaper portlet. 
+* Fixed specific css for newspaper portlet.
   [12.08.2011, mathias.leimgruber]
 
 * added specific css for newspaper portlet
@@ -227,7 +231,7 @@ Changelog
 
 * izug dashboard styling
   [fsprenger]
-  
+
 * Added a new generic setup profile and skin layer for izug
   [fsprenger]
 
@@ -273,10 +277,10 @@ Changelog
 
 * Styling for nav portlet in mein konto
   [fsprenger]
-  
+
 * Make sure the right navigation background image appears in subsites
   [fsprenger]
-  
+
 * Remove heading font in print.css
   [fsprenger]
 
@@ -331,7 +335,7 @@ Changelog
 * Fixed border color according to DF2.1
   [fsprenger]
 
-* Added a customized version of portal_tabs_view. Displays actions after 
+* Added a customized version of portal_tabs_view. Displays actions after
   content instead of before (mein konto, zug.ch only)
   [fsprenger]
 
@@ -340,7 +344,7 @@ Changelog
 
 * Display template name in breadcrumbs (copied from ZugSkin)
   [fsprenger]
-  
+
 * Refactored join form
   [fsprenger]
 
@@ -349,10 +353,10 @@ Changelog
 
 * Restyled sitemap
   [fsprenger]
-  
+
 * Handling special links
   [fsprenger]
-  
+
 * Customized global_statusmessage.pt in order to allow html in message
   [fsprenger]
 
@@ -372,10 +376,10 @@ Changelog
 
 * contact form required fields, required style
   [fsprenger]
-  
+
 * styling changes according to df 2.1v7
   [fsprenger]
-  
+
 * Fixed byline icon for overview tab
   [lgraf]
 
@@ -388,10 +392,10 @@ Changelog
 * customized site actions and personal tools viewlet for zug.ch
   [27.06.2011, fsprenger]
 
-* Added sortAttribut and sortOrder to metadata. 
+* Added sortAttribut and sortOrder to metadata.
   [27.06.2011, mathias.leimgruber]
 
-* Implemented izug.theme navigation (zug behavior). 
+* Implemented izug.theme navigation (zug behavior).
   UPDATE: import profile (it will install a custom property sheet)
   [27.06.2011, mathias.leimgruber]
 
@@ -404,7 +408,7 @@ Changelog
 
 * Added login / join / register templates from ZugSkin
   [fsprenger]
-  
+
 * Table styling for zug.ch, person view styling
   [fsprenger]
 
@@ -417,32 +421,32 @@ Changelog
 * Added more icons, changed news icon, added unused content types
   [fsprenger]
 
-* Improved markup on test_icon page, made the page public, improved code 
+* Improved markup on test_icon page, made the page public, improved code
   listing style
   [fsprenger]
-  
+
 * Updated sprite icons for mimetypes
   [lgraf]
 
-* Disabled locales for plone 3. Plone translation customization break all 
+* Disabled locales for plone 3. Plone translation customization break all
   translations in the plone domain.
   [fsprenger]
 
 * Removed font size switch.
   [fsprenger]
-    
+
 * Removed icon_expr for print action (now done with sprites)
   [lgraf]
 
 * Added banner image functionality like in zug.ch. Banner is hidden per default
-  unless a folder 'bannerbilder' exists in the current location which has to 
+  unless a folder 'bannerbilder' exists in the current location which has to
   be an INavigationRoot
   [fsprenger]
 
-* Compatibility with plone 3; added a new import step for plone 3 sites, a new 
+* Compatibility with plone 3; added a new import step for plone 3 sites, a new
   skin layer for plone 3 and a customized stylessheet for compatibility
   [fsprenger]
-  
+
 * Issue #934 Fehler bei den Falldossiers 1 und 2 BD.ARP
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/934/
   Added icons for custom dossier portal types
@@ -457,23 +461,23 @@ Changelog
 * W3C compatiblity for fontsize switch
   [fsprenger]
 
-* Added a customized version of formUnload.js due to IEs problem with 
+* Added a customized version of formUnload.js due to IEs problem with
   the variable name 'form'
   [fsprenger]
-  
+
 * Corrected wizard tab text indent
   [fsprenger]
 
-* Added margin to form controls 
+* Added margin to form controls
   [fsprenger]
-  
-* Reactivated the custom code for breadcrumbs; if the current user has no 
+
+* Reactivated the custom code for breadcrumbs; if the current user has no
   rights to view an item, it is not clickable
   [fsprenger]
-  
+
 * Using the same styles on treeitems without a link as with normal treeitems
   [fsprenger]
-  
+
 * Styling: Added new active button ("assign")
   [phabegger]
 

@@ -202,7 +202,7 @@
                 <img tal:attributes="src string:${here/portal_url}/logoIcon.gif"/>
                 <tal:if condition="not: restrict_browsing_to_startup_directory">
                     <a i18n:translate="tabs_home"
-                       tal:attributes="href string:${navroot}/${template/getId}?fieldName=${fieldName}&amp;fieldRealName=${fieldRealName}&amp;at_url=${at_uid}}&amp;at_url=${at_uid}">
+                       tal:attributes="href string:${navroot}/${template/getId}?fieldName=${fieldName}&amp;fieldRealName=${fieldRealName}&amp;at_url=${at_url}&amp;at_uid=${at_uid}">
                         Home
                     </a>
 
