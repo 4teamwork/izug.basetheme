@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a110
+1.0a20
 -------
 
 * Issue #1602 Wartung: Integrationstypen koennen keine internen Links setzen
