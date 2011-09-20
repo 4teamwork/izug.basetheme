@@ -17,6 +17,7 @@
                value=""
                title="Search Site"
                accesskey="4"
+               i18n:domain="izug.basetheme"
                i18n:attributes="title title_search_site;"
                tal:attributes="value request/form/SearchableText|nothing;
                                id search_input_id"

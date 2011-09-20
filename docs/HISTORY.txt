@@ -5,6 +5,10 @@ Changelog
 1.0a110
 -------
 
+* Issue #1172 Feedback aus Pilotphase: Website durchsuchen umbenennen
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1172
+  Changed translation
+  [fsprenger]
 
 1.0a19
 ------
