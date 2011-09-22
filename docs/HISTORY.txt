@@ -5,6 +5,10 @@ Changelog
 1.0a21
 ------
 
+* Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
+  https://extranet.4teamwork.ch/support/zug/maintlog/1606
+  moved web_document_file_wdiget.pt to izug.webcontent as file_field_widget.pt
+  [eschmutz]
 
 1.0a20
 -------
