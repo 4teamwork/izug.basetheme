@@ -5,6 +5,10 @@ Changelog
 1.0a21
 ------
 
+* Added an opengever-specific main_template in the izug_opengever skin layer, 
+  removed og-specific code from main_template in izug_basetheme_templates
+  [fsprenger]
+
 * Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
   https://extranet.4teamwork.ch/support/zug/maintlog/1606
   moved web_document_file_wdiget.pt to izug.webcontent as file_field_widget.pt
