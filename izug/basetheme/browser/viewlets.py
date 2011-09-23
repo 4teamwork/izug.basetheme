@@ -10,6 +10,7 @@ from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.memoize import ram
 from plone.memoize.instance import memoize
 from zope.component import getMultiAdapter
+from zope.i18n import translate
 from random import randrange
 from izug.basetheme.browser.helper import css_class_from_obj
 from Products.CMFPlone.interfaces import IPloneSiteRoot
@@ -24,7 +25,7 @@ class PathBar(common.PathBarViewlet):
         translation = None
         if 'PUBLISHED' in self.context.REQUEST and hasattr(self.context.REQUEST['PUBLISHED'], 'getId'):
             template_info = self.context.REQUEST['PUBLISHED'].getId()
-            translation = self.context.translate(msgid=template_info,mapping=None,context=self.context)
+            translation = translate(msgid=template_info,mapping=None,context=self.request)
         if template_info==translation:
             self.template_text = None
         else:

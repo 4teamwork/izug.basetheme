@@ -10,9 +10,13 @@ Changelog
   Updated po files replaced OpenGever with Gever
   [ttschanz]
 
-* Added an opengever-specific main_template in the izug_opengever skin layer, 
+* Added an opengever-specific main_template in the izug_opengever skin layer,
   removed og-specific code from main_template in izug_basetheme_templates
   [fsprenger]
+
+* Issue #1176 alle translatinos mit from zope.i18n import translate
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1176
+  [eschmutz]
 
 * Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
   https://extranet.4teamwork.ch/support/zug/maintlog/1606
