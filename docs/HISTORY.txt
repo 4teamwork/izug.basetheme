@@ -2,37 +2,37 @@ Changelog
 =========
 
 
-1.0a21
-------
+1.0a21 (unreleased)
+-------------------
 
-* Make sure links are not underlined in tables #1640
+- Make sure links are not underlined in tables #1640
   [fsprenger]
 
-* removed translation-changes from issue #1606
+- removed translation-changes from issue #1606
   [eschmutz]
 
-* #1154 Umstellung OpenGever in GEVER
+- #1154 Umstellung OpenGever in GEVER
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1154
   Updated po files replaced OpenGever with Gever
   [ttschanz]
 
-* Added an opengever-specific main_template in the izug_opengever skin layer,
+- Added an opengever-specific main_template in the izug_opengever skin layer,
   removed og-specific code from main_template in izug_basetheme_templates
   [fsprenger]
 
-* Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
+- Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
   https://extranet.4teamwork.ch/support/zug/maintlog/1606
   moved web_document_file_wdiget.pt to izug.webcontent as file_field_widget.pt
   [eschmutz]
 
-1.0a20
--------
+1.0a20 (2011-09-20)
+-------------------
 
-* Issue #1602 Wartung: Integrationstypen koennen keine internen Links setzen
+- Issue #1602 Wartung: Integrationstypen koennen keine internen Links setzen
   https://extranet.4teamwork.ch/support/zug/maintlog/1602
   Fix "Home" link bugs in referencebrowser_popup.pt
 
-* Issue #1172 Feedback aus Pilotphase: Website durchsuchen umbenennen
+- Issue #1172 Feedback aus Pilotphase: Website durchsuchen umbenennen
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1172
   Changed translation
   [fsprenger]
@@ -40,7 +40,7 @@ Changelog
 1.0a19
 ------
 
-* Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
+- Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
   https://extranet.4teamwork.ch/support/zug/maintlog/1606
   added recursive skinsregistry for izug_izug in skins.zcml
   [eschmutz]
@@ -49,7 +49,7 @@ Changelog
 1.0a18
 ------
 
-* Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
+- Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
   https://extranet.4teamwork.ch/support/zug/maintlog/1606
   show skins/izug_izug/jscalendar/README.txt
   [eschmutz]
@@ -58,61 +58,61 @@ Changelog
 1.0a17
 ------
 
-* Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
+- Issue #1606 Arbeitsraum - Fehlendes Kalenderwidget beim Termin
   https://extranet.4teamwork.ch/support/zug/maintlog/1606
   override template calendar_macros.pt
   [eschmutz]
 
-* Issue #1463 Buch - Inhaltsobjekt Dokument mit Verweis ergaenzen
+- Issue #1463 Buch - Inhaltsobjekt Dokument mit Verweis ergaenzen
   https://extranet.4teamwork.ch/support/zug/maintlog/1463
   extended computeRelatedItems.py
   [13.09.2011, eschmutz]
 
-* #1583 Wartung: Aktionen-Inhalte optimieren
+- #1583 Wartung: Aktionen-Inhalte optimieren
   https://extranet.4teamwork.ch/support/zug/maintlog/1583
   For zug.ch/iZug
   [13.09.2011, mathias.leimgruber]
 
-* Issue #1603 Auftragsbox - Printlayout Auftrag fehlerhaft
+- Issue #1603 Auftragsbox - Printlayout Auftrag fehlerhaft
   https://extranet.4teamwork.ch/support/zug/maintlog/1603
   Added printlayout for ticket view
   [eschmutz]
 
-* Issue #1601 Webdokument: Falsches Dokumentsymbol PDF
+- Issue #1601 Webdokument: Falsches Dokumentsymbol PDF
   https://extranet.4teamwork.ch/support/zug/maintlog/1601
   added icon_dokument_pdf.gif to zugsprite and added new widget-template
   for FileWidget
   [eschmutz]
 
-* #1585 eShop - Layoutanpassungen
+- #1585 eShop - Layoutanpassungen
   Removed Portlet in cartoverview and improved eShop listing
   https://extranet.4teamwork.ch/support/zug/maintlog/1585
   [ttschanz]
 
-* Fixed styling for kantonsratsvorlagen (Issue #1598)
+- Fixed styling for kantonsratsvorlagen (Issue #1598)
   [fsprenger]
 
 1.0a16
 ------
 
-* Replaced ViewletBase.portal_url (deprecated in Plone 4) with site_url
+- Replaced ViewletBase.portal_url (deprecated in Plone 4) with site_url
   [lgraf]
 
-* Added cssstyle for search.pt
+- Added cssstyle for search.pt
   [eschmutz]
 
-* Modified livesearch_reply to handel sprites
+- Modified livesearch_reply to handel sprites
   [eschmutz]
 
-* Added div. templates and scrips from izug.theme to skins/izug_izug
+- Added div. templates and scrips from izug.theme to skins/izug_izug
   [eschmutz]
 
-* Issue #1582 Wartung: das Hauptfenster laesst sich nicht mehr vergroessern
+- Issue #1582 Wartung: das Hauptfenster laesst sich nicht mehr vergroessern
   Added  ui-icon-gripsmall-diagonal-se class to zugsprites.png
   https://extranet.4teamwork.ch/support/zug/maintlog/1582
   [eschmutz]
 
-* Issue #1581 Termin Typ Sitzung: Traktandum bearbeiten
+- Issue #1581 Termin Typ Sitzung: Traktandum bearbeiten
   Added new event for a-tags in zugCollapsible
   https://extranet.4teamwork.ch/support/zug/maintlog/1581
   [eschmutz]
@@ -121,214 +121,214 @@ Changelog
 1.0a15
 ------
 
-* fixed menu position
+- fixed menu position
   [fsprenger]
 
-* fixed contentmenu position
+- fixed contentmenu position
   [fsprenger]
 
 1.0a14
 ------
 
-* Fixed broken css
+- Fixed broken css
   [eschmutz]
 
 1.0a13
 ------
 
-* Added z-index for greybox overlay
+- Added z-index for greybox overlay
   [eschmutz]
 
 1.0a12
 ------
 
-* Added authenticator to delete_confirmation template
+- Added authenticator to delete_confirmation template
   [ttschanz]
 
 
 1.0a11
 ------
 
-* Updated CSS and zugsprite.png now contains all izug icons
+- Updated CSS and zugsprite.png now contains all izug icons
   [ttschanz]
 
-* Added content-wrapper to template
+- Added content-wrapper to template
   [eschmutz]
 
-* Added new css-class "content-wrapper" to add a gab between content and header
+- Added new css-class "content-wrapper" to add a gab between content and header
   [eschmutz]
 
-* Better browserlayer/skinlayer handling in configure.zcml
+- Better browserlayer/skinlayer handling in configure.zcml
   [eschmutz]
 
-* Changed margin for div zug_byline
+- Changed margin for div zug_byline
   [eschmutz]
 
-* Changed layout for dashboard-portlets
+- Changed layout for dashboard-portlets
   [eschmutz]
 
-* Changed layout for function-/info-bar
+- Changed layout for function-/info-bar
   [eschmutz]
 
-* Changed interface for folder_overview-view from Products.Archetypes.interfaces._base.IBaseObject to
+- Changed interface for folder_overview-view from Products.Archetypes.interfaces._base.IBaseObject to
   Products.Archetypes.interfaces.IBaseObject"
   [eschmutz]
 
-* Added view folder_overview for izug-specific skin-layer to handle sprites in collections
+- Added view folder_overview for izug-specific skin-layer to handle sprites in collections
   [eschmutz]
 
-* Added izugspecifig contentmenu link-hover color
+- Added izugspecifig contentmenu link-hover color
   [eschmutz]
 
-* Added better comment for contentmenu-adapter-class
+- Added better comment for contentmenu-adapter-class
   [eschmutz]
 
-* IIzugSpecific inherits now from IThemeSpecific and no longer from IDefaultPloneLayer and added zcml condition for ZugPersonalBar-Viewlet
+- IIzugSpecific inherits now from IThemeSpecific and no longer from IDefaultPloneLayer and added zcml condition for ZugPersonalBar-Viewlet
   [eschmutz]
 
-* Added adapter for plone.contentmenu to handle sprites in the contentmenu
+- Added adapter for plone.contentmenu to handle sprites in the contentmenu
   [eschmutz]
 
-* Issue #1553 Behoerden - Anzeige Prozesslandkarte
+- Issue #1553 Behoerden - Anzeige Prozesslandkarte
   https://extranet.4teamwork.ch/support/zug/maintlog/1553
   [ttschanz]
 
-* Customized plone collection portlet with z3c.jbot in order to remove the image
+- Customized plone collection portlet with z3c.jbot in order to remove the image
   tag
   [fsprenger]
 
-* Added 'navTreeItem' class to first navigation element if navigation is set to show
+- Added 'navTreeItem' class to first navigation element if navigation is set to show
   the top element
   [fsprenger]
 
-* Added zug specific collapsible style with reference implementation in
+- Added zug specific collapsible style with reference implementation in
   test_uielements
   [fsprenger]
 
-* Added styles for izug.meeting add-form
+- Added styles for izug.meeting add-form
   [eschmutz]
 
-* Added styles for globalstatusmessage in izug.css
+- Added styles for globalstatusmessage in izug.css
   [eschmutz]
 
-* Styling for calendar in tabbedview
+- Styling for calendar in tabbedview
   [12.08.2011, florian.sprenger]
 
-* removed css styling for destructive css class and removed backgroundimage for comments
+- removed css styling for destructive css class and removed backgroundimage for comments
   [eschmutz]
 
-* Fixed specific css for newspaper portlet.
+- Fixed specific css for newspaper portlet.
   [12.08.2011, mathias.leimgruber]
 
-* added specific css for newspaper portlet
+- added specific css for newspaper portlet
   [eschmutz]
 
-* replacing ftw.contentmenu with izug menu in izug layer - import step and
+- replacing ftw.contentmenu with izug menu in izug layer - import step and
   manual verification of viewlet order required!
   [fsprenger]
 
-* added izug specific browserlayer: izug.basetheme.izug
+- added izug specific browserlayer: izug.basetheme.izug
   [fsprenger]
 
-* added default icon for missing icons, added arrow up and arrow down in sprites
+- added default icon for missing icons, added arrow up and arrow down in sprites
   [fsprenger]
 
-* added opengever specific browserlayer: izug.basetheme.opengever
+- added opengever specific browserlayer: izug.basetheme.opengever
   [eschmutz]
 
-* adding zug.ch skin layer (not izug profile) when importing izug.basetheme for
+- adding zug.ch skin layer (not izug profile) when importing izug.basetheme for
   zug.ch. 'Behoerden' is styled now.
   [fsprenger]
 
-* added new sprite icon function-lock.gif
+- added new sprite icon function-lock.gif
   [eschmutz]
 
-* added sprite function-lock in byline.pt
+- added sprite function-lock in byline.pt
   [eschmutz]
 
-* added izug edit menu. Import of viewlet.xml required.
+- added izug edit menu. Import of viewlet.xml required.
   [fsprenger]
 
-* tooltip styling
+- tooltip styling
   [fsprenger]
 
-* izug dashboard styling
+- izug dashboard styling
   [fsprenger]
 
-* Added a new generic setup profile and skin layer for izug
+- Added a new generic setup profile and skin layer for izug
   [fsprenger]
 
-* Moved tabbedview styling from opengever.css to public.css in order to use it
+- Moved tabbedview styling from opengever.css to public.css in order to use it
   in izug
   [fsprenger]
 
-* added izug icons in test_icons, changed icon order
+- added izug icons in test_icons, changed icon order
   [fsprenger]
 
-* Fixed accesskeys
+- Fixed accesskeys
   [fsprenger]
 
-* Kita-specific styling
+- Kita-specific styling
   [fsprenger]
 
-* No list-style in shoping cart portlet
+- No list-style in shoping cart portlet
   [fsprenger]
 
-* Changed background color for overlays
+- Changed background color for overlays
   [fsprenger]
 
-* Border style for special portlet on zug frontpage
+- Border style for special portlet on zug frontpage
   [fsprenger]
 
-* Fixed contact form column and field widths
+- Fixed contact form column and field widths
   [fsprenger]
 
-* Changed zip label in join_form
+- Changed zip label in join_form
   [fsprenger]
 
-* Line-height in lebenslage_summary_view more link
+- Line-height in lebenslage_summary_view more link
   [fsprenger]
 
-* Make sure portlets dont get a scrollbar if content is too wide
+- Make sure portlets dont get a scrollbar if content is too wide
   [fsprenger]
 
-* More space before footer
+- More space before footer
   [fsprenger]
 
-* Refactored batching
+- Refactored batching
   [fsprenger]
 
-* Styling for nav portlet in mein konto
+- Styling for nav portlet in mein konto
   [fsprenger]
 
-* Make sure the right navigation background image appears in subsites
+- Make sure the right navigation background image appears in subsites
   [fsprenger]
 
-* Remove heading font in print.css
+- Remove heading font in print.css
   [fsprenger]
 
 1.0a10
 ------
 
-* Fixed bug where document icons appear twice in ContentTreeWidget
+- Fixed bug where document icons appear twice in ContentTreeWidget
   Issue #1069 Test Rot 2.0.3: Fehlende Icons bei Verweis-Baum u.ae.
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069
   [lgraf]
 
-* Fixed ftw.datepicker. Sprite-icon style caused prev / next icons to be too
+- Fixed ftw.datepicker. Sprite-icon style caused prev / next icons to be too
   large, slight style improvements
   [fsprenger]
 
-* moved breadcrumb-divider from zug.css to public.css
+- moved breadcrumb-divider from zug.css to public.css
   updated icon for breadcrumbs
   fixed default table listing
   [ttschanz]
 
-* Fixed visited links in portlet
+- Fixed visited links in portlet
   No underline in hovered images
   [jinfanger]
 
-* Fixed indent of menu point
+- Fixed indent of menu point
   Fixed contact form layout
   Added visited style
   Fixed text padding
@@ -341,193 +341,193 @@ Changelog
   Removed wrong to_top definition
   [acki]
 
-* Fixed distance between external links and their icon according to DF2.1
+- Fixed distance between external links and their icon according to DF2.1
   [lgraf]
 
 
 1.0a9
 -----
 
-* Fixed distance between external links and their icon according to DF2.1
+- Fixed distance between external links and their icon according to DF2.1
   [lgraf]
 
-* Issue #1075 Test Rot 2.0.3: Falsches Icon fuer Anhaenge speichern
+- Issue #1075 Test Rot 2.0.3: Falsches Icon fuer Anhaenge speichern
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1075
   [ttschanz]
 
-* Fixed border color according to DF2.1
+- Fixed border color according to DF2.1
   [fsprenger]
 
-* Added a customized version of portal_tabs_view. Displays actions after
+- Added a customized version of portal_tabs_view. Displays actions after
   content instead of before (mein konto, zug.ch only)
   [fsprenger]
 
-* Modified Formstyling
+- Modified Formstyling
   [ttschanz]
 
-* Display template name in breadcrumbs (copied from ZugSkin)
+- Display template name in breadcrumbs (copied from ZugSkin)
   [fsprenger]
 
-* Refactored join form
+- Refactored join form
   [fsprenger]
 
-* Enabled icons again
+- Enabled icons again
   [fsprenger]
 
-* Restyled sitemap
+- Restyled sitemap
   [fsprenger]
 
-* Handling special links
+- Handling special links
   [fsprenger]
 
-* Customized global_statusmessage.pt in order to allow html in message
+- Customized global_statusmessage.pt in order to allow html in message
   [fsprenger]
 
-* Added UID to redirect url in addZugMerklisteToHomeFolder.py to avoid
+- Added UID to redirect url in addZugMerklisteToHomeFolder.py to avoid
   caching
   [fsprenger]
 
-* Added sprite icon for attach_remote_document action.
+- Added sprite icon for attach_remote_document action.
   [lgraf]
 
-* Don't override navigation portlet for opengever
+- Don't override navigation portlet for opengever
   [lgraf]
 
-* moved documentactions to abovecontenttitle (vertical position when title
+- moved documentactions to abovecontenttitle (vertical position when title
   has a line break). import viewlets.xml form default profile
   [fsprenger]
 
-* contact form required fields, required style
+- contact form required fields, required style
   [fsprenger]
 
-* styling changes according to df 2.1v7
+- styling changes according to df 2.1v7
   [fsprenger]
 
-* Fixed byline icon for overview tab
+- Fixed byline icon for overview tab
   [lgraf]
 
-* Added generic application icon as fallback for application mimetypes
+- Added generic application icon as fallback for application mimetypes
   [lgraf]
 
-* Added mimetype for docx to mimetypes_registry
+- Added mimetype for docx to mimetypes_registry
   [lgraf]
 
-* customized site actions and personal tools viewlet for zug.ch
+- customized site actions and personal tools viewlet for zug.ch
   [27.06.2011, fsprenger]
 
-* Added sortAttribut and sortOrder to metadata.
+- Added sortAttribut and sortOrder to metadata.
   [27.06.2011, mathias.leimgruber]
 
-* Implemented izug.theme navigation (zug behavior).
+- Implemented izug.theme navigation (zug behavior).
   UPDATE: import profile (it will install a custom property sheet)
   [27.06.2011, mathias.leimgruber]
 
-* Moved ftw.mail.mail FTI from default to opengever profile
+- Moved ftw.mail.mail FTI from default to opengever profile
   [lgraf]
 
-* Issue #1052 Byline icons durch sprite icons ersetzen
+- Issue #1052 Byline icons durch sprite icons ersetzen
   Added ByLine modifications
   [ttschanz]
 
-* Added login / join / register templates from ZugSkin
+- Added login / join / register templates from ZugSkin
   [fsprenger]
 
-* Table styling for zug.ch, person view styling
+- Table styling for zug.ch, person view styling
   [fsprenger]
 
-* Fixed some annoying layout bugs in IE7
+- Fixed some annoying layout bugs in IE7
   [fsprenger]
 
-* Added sprite icon for response action
+- Added sprite icon for response action
   [lgraf]
 
-* Added more icons, changed news icon, added unused content types
+- Added more icons, changed news icon, added unused content types
   [fsprenger]
 
-* Improved markup on test_icon page, made the page public, improved code
+- Improved markup on test_icon page, made the page public, improved code
   listing style
   [fsprenger]
 
-* Updated sprite icons for mimetypes
+- Updated sprite icons for mimetypes
   [lgraf]
 
-* Disabled locales for plone 3. Plone translation customization break all
+- Disabled locales for plone 3. Plone translation customization break all
   translations in the plone domain.
   [fsprenger]
 
-* Removed font size switch.
+- Removed font size switch.
   [fsprenger]
 
-* Removed icon_expr for print action (now done with sprites)
+- Removed icon_expr for print action (now done with sprites)
   [lgraf]
 
-* Added banner image functionality like in zug.ch. Banner is hidden per default
+- Added banner image functionality like in zug.ch. Banner is hidden per default
   unless a folder 'bannerbilder' exists in the current location which has to
   be an INavigationRoot
   [fsprenger]
 
-* Compatibility with plone 3; added a new import step for plone 3 sites, a new
+- Compatibility with plone 3; added a new import step for plone 3 sites, a new
   skin layer for plone 3 and a customized stylessheet for compatibility
   [fsprenger]
 
-* Issue #934 Fehler bei den Falldossiers 1 und 2 BD.ARP
+- Issue #934 Fehler bei den Falldossiers 1 und 2 BD.ARP
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/934/
   Added icons for custom dossier portal types
   [lgraf]
 
-* Hide breadcrumbs on login page so it doesn't obstruct site title
+- Hide breadcrumbs on login page so it doesn't obstruct site title
   [lukasg]
 
 
 1.0a8
 -----
-* W3C compatiblity for fontsize switch
+- W3C compatiblity for fontsize switch
   [fsprenger]
 
-* Added a customized version of formUnload.js due to IEs problem with
+- Added a customized version of formUnload.js due to IEs problem with
   the variable name 'form'
   [fsprenger]
 
-* Corrected wizard tab text indent
+- Corrected wizard tab text indent
   [fsprenger]
 
-* Added margin to form controls
+- Added margin to form controls
   [fsprenger]
 
-* Reactivated the custom code for breadcrumbs; if the current user has no
+- Reactivated the custom code for breadcrumbs; if the current user has no
   rights to view an item, it is not clickable
   [fsprenger]
 
-* Using the same styles on treeitems without a link as with normal treeitems
+- Using the same styles on treeitems without a link as with normal treeitems
   [fsprenger]
 
-* Styling: Added new active button ("assign")
+- Styling: Added new active button ("assign")
   [phabegger]
 
 
 1.0a7
 -----
 
-* Margin for navigation items
+- Margin for navigation items
   [fsprenger]
 
-* Fixed menu position for IE8
+- Fixed menu position for IE8
   [fsprenger]
 
-* Bigger small font size
+- Bigger small font size
   [fsprenger]
 
-* Added iZug logo
+- Added iZug logo
   [fsprenger]
 
-* Issue #873 Anzeige Menuebaum eingerueckt angezeigt
+- Issue #873 Anzeige Menuebaum eingerueckt angezeigt
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/873
   [fsprenger]
 
-* Fixed searchbox
+- Fixed searchbox
   [fsprenger]
 
-* Issue #865 Styling-Anpassen
+- Issue #865 Styling-Anpassen
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/865
   Added styling for selected button ids.
   [fsprenger]
@@ -536,44 +536,44 @@ Changelog
 1.0a6
 -----
 
-* fixed image url
+- fixed image url
   [fsprenger]
 
 
 1.0a5
 -----
 
-* several style fixes
+- several style fixes
   [fsprenger]
 
-* added icons for several workflowstates
+- added icons for several workflowstates
   [fsprenger]
 
-* enabled caching for column width scripts when used outside of opengever
+- enabled caching for column width scripts when used outside of opengever
   [fsprenger]
 
-* fixed overdue icon
+- fixed overdue icon
   [fsprenger]
 
-* fix for ie
+- fix for ie
   [fsprenger]
 
 
 1.0a4
 -----
 
-* Various improvements for styling in IE
+- Various improvements for styling in IE
   [fsprenger]
 
-* Various CSS improvements
+- Various CSS improvements
   [fsprenger]
 
 
-* OpenGever task response listing: make label big enough for the longer
+- OpenGever task response listing: make label big enough for the longer
   label texts such as "Responsible client"
   [jbaumann]
 
-* On personal request of Dr. Pascal Habegger and Mr. Olivier Debenath:
+- On personal request of Dr. Pascal Habegger and Mr. Olivier Debenath:
   Show the borders always!
   [jbaumann]
 
@@ -582,25 +582,25 @@ Changelog
 1.0a3
 -----
 
-* Fixed translations
+- Fixed translations
   [jbaumann]
 
 
 1.0a2
 -----
 
-* Made Tree portlet usable in ie
+- Made Tree portlet usable in ie
   [fsprenger]
 
-* Fixed tabbedview
+- Fixed tabbedview
   [fsprenger]
 
-* Fixed debug info viewlet and version in siteactions
+- Fixed debug info viewlet and version in siteactions
   [jbaumann]
 
 
 1.0a1
 -----
 
-* Initial release
+- Initial release
 
