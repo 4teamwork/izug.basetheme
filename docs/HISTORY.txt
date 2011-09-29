@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a21 (unreleased)
+1.0a21 (2011-09-29)
 -------------------
 
 - Make sure links are not underlined in tables #1640
