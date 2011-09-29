@@ -733,7 +733,8 @@ table.vertical td {
     padding: 0.272em 0 0.272em;
     vertical-align: top;
 }
-table a {
+table a,
+.documentContent table p a {
     text-decoration: none;
 }
 
