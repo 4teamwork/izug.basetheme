@@ -214,7 +214,7 @@ a:target {
 }
 
 #listing_container a.rollover-breadcrumb {
-  padding-left: 2em;
+    padding: 0.090909091em 0 0.181818em 2em;
 }
 
 /*XXX*/

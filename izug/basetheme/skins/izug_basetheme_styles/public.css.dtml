@@ -1455,7 +1455,11 @@ div.to_top a:hover {
 .icons-on *[class*=icon-] {
 	background-image: url(&dtml-portal_url;/zugsprite.png);
     background-repeat: no-repeat;
-    padding: 0.1em 0 0.1em 2em;
+    padding: 0.090909091em 0 0.090909091em 2em;
+}
+/* special case wf icons: need more space */
+.icons-on *[class*=wf-] {
+    padding: 0.090909091em 0 0.181818em 2em;
 }
 
 /* generated css */
