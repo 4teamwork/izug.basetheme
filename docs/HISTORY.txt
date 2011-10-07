@@ -5,7 +5,10 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
-- More space for icons
+- Issue #1184 Abgeschnittene Icons
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1184
+  More space for icons
+  [fsprenger]
 
 
 1.0a21 (2011-09-29)
