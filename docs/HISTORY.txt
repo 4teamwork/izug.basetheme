@@ -5,6 +5,11 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- Issue #1229 Kontaktformular stylen
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1229
+  Customized popupforms.js in order to disable overlay contact form
+  [fsprenger]
+  
 - Issue #1184 Abgeschnittene Icons
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1184
   More space for icons
