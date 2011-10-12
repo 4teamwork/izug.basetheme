@@ -5,6 +5,11 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- Issue #1613 Wartung: Weltkugel in iZug wieder einblenden
+  https://extranet.4teamwork.ch/support/zug/maintlog/1613
+  adding a globe icon to published shopitems in izug
+  [fsprenger]
+
 - folder_contents: "Form Folder"s should be orderable by default.
   Issue #1653 Frage: Reihenfolge der Objekte in einem Formularordner
   https://extranet.4teamwork.ch/support/zug/maintlog/1653

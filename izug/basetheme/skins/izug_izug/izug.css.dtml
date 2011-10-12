@@ -434,6 +434,13 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
     cursor:pointer;
 }
 
+/* Issue #1613
+   https://extranet.4teamwork.ch/support/zug/maintlog/1613
+   adding a globe icon to published shopitems */
+tr.state_published_internet td.column1 {
+    background: transparent url(&dtml-portal_url;/globe_icon.gif) no-repeat 0 40%;
+    padding-left: 1.4545em;
+}
 /* </dtml-with> */
 
 /* -------------------------------------------------------------------------------------
