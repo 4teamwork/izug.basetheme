@@ -30,9 +30,6 @@ class PathBar(common.PathBarViewlet):
         else:
             self.template_text = translation
 
-class PersonalBar(common.PersonalBarViewlet):
-    index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
-
 class ZugPersonalBar(common.PersonalBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/zug_personal_bar.pt')
 
