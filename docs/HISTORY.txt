@@ -5,6 +5,10 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- modified geverpersonalbar use izug template
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1241/
+  [ttschanz]
+
 - Issue #1613 Wartung: Weltkugel in iZug wieder einblenden
   https://extranet.4teamwork.ch/support/zug/maintlog/1613
   adding a globe icon to published shopitems in izug
