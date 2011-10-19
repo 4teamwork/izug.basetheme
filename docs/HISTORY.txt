@@ -5,6 +5,9 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- Changed visited link color and removed underline (Issue #1565, 
+  https://extranet.4teamwork.ch/support/zug/maintlog/). 
+
 - modified geverpersonalbar use izug template
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1241/
   [ttschanz]

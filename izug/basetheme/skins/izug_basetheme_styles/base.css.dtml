@@ -32,7 +32,7 @@ a {
     outline: none;
 }
 a:visited {
-    color: &dtml-grey5;;
+    color: &dtml-linkVisitedColor;;
 }
 a:hover {
     color: &dtml-linkActiveColor;;

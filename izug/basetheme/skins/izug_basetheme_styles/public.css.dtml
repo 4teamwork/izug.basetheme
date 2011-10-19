@@ -98,7 +98,7 @@ h3, h4, h5, h6 {
     text-decoration: underline;
 }
 .documentContent p a:visited {
-    color: &dtml-grey5;;
+    color: &dtml-linkVisitedColor;;
     background-color: transparent;
 }
 .documentContent p a:active {
@@ -111,7 +111,6 @@ h3, h4, h5, h6 {
 }
 .documentContent #content li a:visited {
     color: &dtml-linkVisitedColor;;
-    text-decoration: underline !important; /* only works in IE */
 }
 .documentContent li a {
     text-decoration: none;
@@ -130,7 +129,6 @@ h3, h4, h5, h6 {
 .documentContent dd a:visited {
     color: &dtml-linkVisitedColor;;
     background-color: transparent;
-    text-decoration: underline;
 }
 .documentContent dd a:active {
     color: &dtml-linkActiveColor;;
@@ -736,6 +734,10 @@ table.vertical td {
 table a,
 .documentContent table p a {
     text-decoration: none;
+}
+#content table a:visited,
+#content .documentContent table p a:visited {
+    color: &dtml-linkVisitedColor; !important;
 }
 
 /* listing table style - default table with borders */
@@ -1375,7 +1377,8 @@ div.overlay #createGroup fieldset { border: none; }
     margin: 0 0 0 0;
     text-indent: 0;
 }
-.wizard .wizardSteps li a {
+.wizard .wizardSteps li a,
+.wizard .wizardSteps li a:visited {
     line-height: 1.8181em;
     list-style: inline;
     border-style: solid none;
@@ -1386,7 +1389,7 @@ div.overlay #createGroup fieldset { border: none; }
     padding-right: 2em;
     margin-left: -0.909em;
     display: block;
-    color: #bbbbbb;
+    color: #bbbbbb !important;
 }
 .wizard .wizardSteps li.selected,
 .wizard .wizardSteps li.visited  {
@@ -1395,7 +1398,7 @@ div.overlay #createGroup fieldset { border: none; }
 .wizard .wizardSteps li.selected a,
 .wizard .wizardSteps li.visited a {
     border-color: #111111;
-    color: #111111;
+    color: #111111 !important;
 }
 .wizard .wizardSteps li.selected a {
     font-weight: bold;

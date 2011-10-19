@@ -13,7 +13,7 @@ backgroundColor:string=White
 
 linkColor:string=#00538C
 linkActiveColor:string=#D52000
-linkVisitedColor:string=#454545
+linkVisitedColor:string=#AE1E00
 
 borderWidth:string=1px
 borderStyle:string=solid
