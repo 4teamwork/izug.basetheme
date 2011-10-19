@@ -1635,7 +1635,7 @@ div.tabbedview-tabs ul.formTabs li a {
   border-right:1px solid &dtml-grey4;;
   border-left:1px solid &dtml-grey4;;
   border-bottom:1px solid &dtml-grey4;;
-  color: &dtml-grey4;;
+  color: &dtml-grey4; !important;
   display:inline;
   text-decoration:none;
   margin-top: 0.455em;
