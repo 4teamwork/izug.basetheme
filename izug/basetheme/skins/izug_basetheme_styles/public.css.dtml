@@ -1702,4 +1702,20 @@ dl.zugCollapsible dd {
     padding: 0.455em 0.909em 0.455em 1.818em;
 }
 
+/* autocomplete search */
+/* autocomlete search */
+div.ac_results {
+    border-color: #454545;
+}
+div.ac_results li {
+    font-size: 1.1em;
+}
+div.ac_results .ac_odd {
+    background-color: &dtml-globalBorderColor;;
+}
+div.ac_results .ac_over {
+    background-color: #feefb5;
+    color: &dtml-grey4;;
+}
+
 /* </dtml-with> */
