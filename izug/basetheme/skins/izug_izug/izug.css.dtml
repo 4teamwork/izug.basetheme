@@ -151,7 +151,8 @@ a.arbeitsraum_delete_item:hover {
     margin-bottom:0;
 }
 
-#dashboard .portletRecent .portletItem .portletItemDetails{
+#dashboard .portletRecent .portletItem .portletItemDetails,
+#dashboard .portletOGWatcher .portletItem .portletItemDetails{
     display:inline;
 }
 
