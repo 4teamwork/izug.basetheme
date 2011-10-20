@@ -5,12 +5,17 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
-- Styling for autocomplete search (Issue #1382, 
+- Show "Arbeitsraum" in navigation.
+  Issue #1667 Arbeitsraum - fehlende Navigationsstufe
+  https://extranet.4teamwork.ch/support/zug/maintlog/1667/
+  [jone]
+
+- Styling for autocomplete search (Issue #1382,
   https://extranet.4teamwork.ch/support/zug/maintlog/1382)
   [fsprenger]
 
-- Changed visited link color and removed underline (Issue #1565, 
-  https://extranet.4teamwork.ch/support/zug/maintlog/). 
+- Changed visited link color and removed underline (Issue #1565,
+  https://extranet.4teamwork.ch/support/zug/maintlog/).
   [fsprenger]
 
 - modified geverpersonalbar use izug template
