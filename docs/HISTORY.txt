@@ -5,6 +5,11 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- Stling for Opengever Watch portlet on iZug dashboard.
+  Issue #1055 Integration mit iZug: Funktionalitaet "Auge"
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1055/
+  [jone]
+
 - Show "Arbeitsraum" in navigation.
   Issue #1667 Arbeitsraum - fehlende Navigationsstufe
   https://extranet.4teamwork.ch/support/zug/maintlog/1667/
