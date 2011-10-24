@@ -161,6 +161,11 @@ a.arbeitsraum_delete_item:hover {
     text-indent: -2em;
 }
 
+#dashboard .portletOGWatcher .portletItem .error {
+    display: block;
+    text-indent: 0;
+}
+
 #dashboard .portletRss .portletItemDetails  {
     display: inline;
 }

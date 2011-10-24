@@ -5,7 +5,7 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
-- Stling for Opengever Watch portlet on iZug dashboard.
+- Styling for Opengever Watch portlet on iZug dashboard.
   Issue #1055 Integration mit iZug: Funktionalitaet "Auge"
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1055/
   [jone]
