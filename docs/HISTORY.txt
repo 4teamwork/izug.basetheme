@@ -5,6 +5,11 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- Issue #1665 Besitzer wechseln: Fehler beim Suchen von Benutzern
+  https://extranet.4teamwork.ch/support/zug/maintlog/1665
+  Translate corrupt translation from plone domain: Benuzter to Benutzer
+  [eschmutz]
+  
 - Styling for Opengever Watch portlet on iZug dashboard.
   Issue #1055 Integration mit iZug: Funktionalitaet "Auge"
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1055/
