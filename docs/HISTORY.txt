@@ -5,7 +5,10 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Added styling for tabbedview state filters
+  Issue #1070  Abgeschlossene Aufgaben nicht immer einblenden
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1070
+  [phgross]
 
 
 1.0a21 (2011-09-29)
