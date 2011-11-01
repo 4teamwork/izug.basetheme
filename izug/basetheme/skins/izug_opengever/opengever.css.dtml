@@ -217,6 +217,14 @@ a:target {
     padding: 0.090909091em 0 0.181818em 2em;
 }
 
+.tabbedview_select a:visited{
+  color: &dtml-linkColor;;
+}
+
+.tabbedview_select a.active{
+  color: &dtml-red;;
+}
+
 /*XXX*/
 #content a:target {
   background-color:transparent !important;
@@ -551,11 +559,11 @@ ul.member_listing {
     background-image: none;
     border-style: none;
 }
-.ui-datepicker .ui-datepicker-prev span, 
+.ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
     padding: 0;
 }
-.ui-datepicker .ui-datepicker-prev.ui-state-hover, 
+.ui-datepicker .ui-datepicker-prev.ui-state-hover,
 .ui-datepicker .ui-datepicker-next.ui-state-hover {
     background-image: none !important;
     background-color: transparent;
@@ -626,10 +634,10 @@ body.template-login_form #portal-breadcrumbs {
 }
 
 
-/* Disable sprites for opengever.document.document objects in 
+/* Disable sprites for opengever.document.document objects in
 ContentTreeWidget so icons don't appear twice.
 See Issue #1069 Test Rot 2.0.3: Fehlende Icons bei Verweis-Baum u.ae.
-https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069 
+https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069
 */
 
 .contenttreeWidget .contenttype-opengever-document-document {
