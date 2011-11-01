@@ -1468,7 +1468,7 @@ div.to_top a:hover {
 /* generated css */
 .000no-icon{ background-position: 0 0;  } 
 .actionicon-folder_factories-add_participant, .contenttype-contact, .contenttype-mitglied, .contenttype-opengever-contact-contact, .contenttype-stelle, .contenttype-zugmitglied, .function-user{ background-position: 0 -66px;  } 
-.actionicon-folder_factories-add_tasktemplate, .contenttype-opengever-tasktemplates-tasktemplate, .contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -132px;  } 
+.actionicon-folder_factories-add_tasktemplate, .contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -132px;  } 
 .actionicon-folder_factories-addresponse, .contenttype-poiresponse, .contenttype-remark{ background-position: 0 -198px;  } 
 .actionicon-folder_factories-attach_remote_document, .contenttype-shopitem, .contenttype-ticketattachment, .contenttype-webdocument, .function-upload{ background-position: 0 -264px;  } 
 .actionicon-folder_factories-document_with_docucomposer, .actionicon-folder_factories-document_with_template, .contenttype-content-page, .contenttype-document, .contenttype-zugeventlandingpage, .contenttype-zugimmolandingpage, .contenttype-zuginhaltsseite{ background-position: 0 -330px;  } 
@@ -1519,7 +1519,7 @@ div.to_top a:hover {
 .contenttype-opengever-inbox-inbox-inverse{ background-position: 0 -3295px;  } 
 .contenttype-opengever-repository-repositoryroot{ background-position: 0 -3361px;  } 
 .contenttype-opengever-task-task-inverse{ background-position: 0 -3427px;  } 
-.contenttype-opengever-task-task, .contenttype-task, .contenttype-ticket{ background-position: 0 -3493px;  } 
+.contenttype-opengever-task-task, .contenttype-opengever-tasktemplates-tasktemplate, .contenttype-task, .contenttype-ticket{ background-position: 0 -3493px;  } 
 .contenttype-poiissue, .contenttype-poipsctracker, .contenttype-poitracker{ background-position: 0 -3559px;  } 
 .contenttype-remark-inverse{ background-position: 0 -3625px;  } 
 .contenttype-table{ background-position: 0 -3691px;  } 

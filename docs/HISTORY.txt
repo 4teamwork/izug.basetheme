@@ -5,6 +5,10 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- changed old tasktamplatefolder icon of a tasktemplate with new icon of a task
+  Issue #1268 Falsches Icon bei Aufgabe unter Standardablauf
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1268/
+
 - Added styling for tabbedview state filters
   Issue #1070  Abgeschlossene Aufgaben nicht immer einblenden
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1070
