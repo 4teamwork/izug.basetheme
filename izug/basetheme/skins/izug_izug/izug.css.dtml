@@ -18,7 +18,7 @@ a.arbeitsraum_delete_item:hover {
 .tooltip-wrapper {
     background: transparent url(&dtml-portal_url;/tooltip_bottom.png) no-repeat bottom center;
     padding-bottom: 18px;
-    
+
 }
 .tooltip {
     background-color: &dtml-backgroundColor;;
@@ -69,7 +69,7 @@ a.arbeitsraum_delete_item:hover {
 
 /* tabbedview */
 #tabbedview-body {
-    line-height: 1.454em; 
+    line-height: 1.454em;
 }
 .overview-left-column {
     float: left;
@@ -103,7 +103,7 @@ a.arbeitsraum_delete_item:hover {
     width: 78em !important;
     margin-top: 37px;
 }
-#dashboard-portlets1, 
+#dashboard-portlets1,
 #dashboard-portlets2,
 #dashboard-portlets3 {
     float: left;
@@ -151,8 +151,19 @@ a.arbeitsraum_delete_item:hover {
     margin-bottom:0;
 }
 
-#dashboard .portletRecent .portletItem .portletItemDetails{
+#dashboard .portletRecent .portletItem .portletItemDetails,
+#dashboard .portletOGWatcher .portletItem .portletItemDetails{
     display:inline;
+}
+
+#dashboard .portletOGWatcher .portletItem {
+    padding-left: 2.4em;
+    text-indent: -2em;
+}
+
+#dashboard .portletOGWatcher .portletItem .error {
+    display: block;
+    text-indent: 0;
 }
 
 #dashboard .portletRss .portletItemDetails  {
@@ -387,7 +398,7 @@ div#globalstatusmessage{
 }
 div#globalstatusmessage p{
     line-height: 12.5px;
-    
+
 }
 div#globalstatusmessage dl{
     padding: 0.5em 0;
@@ -434,6 +445,13 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
     cursor:pointer;
 }
 
+/* Issue #1613
+   https://extranet.4teamwork.ch/support/zug/maintlog/1613
+   adding a globe icon to published shopitems */
+tr.state_published_internet td.column1 {
+    background: transparent url(&dtml-portal_url;/globe_icon.gif) no-repeat 0 40%;
+    padding-left: 1.4545em;
+}
 /* </dtml-with> */
 
 /* -------------------------------------------------------------------------------------
@@ -459,7 +477,7 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
 /* -------------------------------------------------------------------------------------
  PAGER
  ======================================================================================*/
- 
+
 .pager {
 	background-color:#DEDEDE;
 }
@@ -485,5 +503,5 @@ body.template-simplelayout_2row #visual-portal-wrapper div#portal-column-content
 }
 .pager ul li a, .pager ul li span {
 	font-size:1.1em;
-	
+
 }

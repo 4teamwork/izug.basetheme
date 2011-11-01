@@ -214,7 +214,7 @@ a:target {
 }
 
 #listing_container a.rollover-breadcrumb {
-  padding-left: 2em;
+    padding: 0.090909091em 0 0.181818em 2em;
 }
 
 .tabbedview_select a:visited{
@@ -238,7 +238,7 @@ a.ui-state-highlight {
 #plone-contentmenu-tabbedview-actions a {
     border-bottom-style: none;
     padding: 0.454em;
-    color: &dtml-grey5;;
+    color: &dtml-grey5; !important;
 }
 #plone-contentmenu-tabbedview-actions dd.actionMenuContent {
     border: 1px solid &dtml-contentViewBorderColor; !important;

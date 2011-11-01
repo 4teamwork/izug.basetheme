@@ -10,6 +10,53 @@ Changelog
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1070
   [phgross]
 
+- Issue #1665 Besitzer wechseln: Fehler beim Suchen von Benutzern
+  https://extranet.4teamwork.ch/support/zug/maintlog/1665
+  Translate corrupt translation from plone domain: Benuzter to Benutzer
+  [eschmutz]
+
+- Styling for Opengever Watch portlet on iZug dashboard.
+  Issue #1055 Integration mit iZug: Funktionalitaet "Auge"
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1055/
+  [jone]
+
+- Show "Arbeitsraum" in navigation.
+  Issue #1667 Arbeitsraum - fehlende Navigationsstufe
+  https://extranet.4teamwork.ch/support/zug/maintlog/1667/
+  [jone]
+
+- Styling for autocomplete search (Issue #1382,
+  https://extranet.4teamwork.ch/support/zug/maintlog/1382)
+  [fsprenger]
+
+- Changed visited link color and removed underline (Issue #1565,
+  https://extranet.4teamwork.ch/support/zug/maintlog/).
+  [fsprenger]
+
+- modified geverpersonalbar use izug template
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1241/
+  [ttschanz]
+
+- Issue #1613 Wartung: Weltkugel in iZug wieder einblenden
+  https://extranet.4teamwork.ch/support/zug/maintlog/1613
+  adding a globe icon to published shopitems in izug
+  [fsprenger]
+
+- folder_contents: "Form Folder"s should be orderable by default.
+  Issue #1653 Frage: Reihenfolge der Objekte in einem Formularordner
+  https://extranet.4teamwork.ch/support/zug/maintlog/1653
+  [jone]
+
+- Issue #1229 Kontaktformular stylen
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1229
+  Customized popupforms.js in order to disable overlay contact form
+  [fsprenger]
+
+- Issue #1184 Abgeschnittene Icons
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1184
+  More space for icons
+  [fsprenger]
+
 
 1.0a21 (2011-09-29)
 -------------------

@@ -71,7 +71,7 @@ class IzugFolderContentsTable(FolderContentsTable):
     def is_special_type(self):
         # Content of some types should be always orderable
         # XXX: Use a propertysheet
-        return self.context.Type() in ['Folder', ]
+        return self.context.Type() in ['Folder', 'Form Folder']
 
     @property
     def orderable(self):

@@ -98,7 +98,7 @@ h3, h4, h5, h6 {
     text-decoration: underline;
 }
 .documentContent p a:visited {
-    color: &dtml-grey5;;
+    color: &dtml-linkVisitedColor;;
     background-color: transparent;
 }
 .documentContent p a:active {
@@ -111,7 +111,6 @@ h3, h4, h5, h6 {
 }
 .documentContent #content li a:visited {
     color: &dtml-linkVisitedColor;;
-    text-decoration: underline !important; /* only works in IE */
 }
 .documentContent li a {
     text-decoration: none;
@@ -130,7 +129,6 @@ h3, h4, h5, h6 {
 .documentContent dd a:visited {
     color: &dtml-linkVisitedColor;;
     background-color: transparent;
-    text-decoration: underline;
 }
 .documentContent dd a:active {
     color: &dtml-linkActiveColor;;
@@ -736,6 +734,10 @@ table.vertical td {
 table a,
 .documentContent table p a {
     text-decoration: none;
+}
+#content table a:visited,
+#content .documentContent table p a:visited {
+    color: &dtml-linkVisitedColor; !important;
 }
 
 /* listing table style - default table with borders */
@@ -1375,7 +1377,8 @@ div.overlay #createGroup fieldset { border: none; }
     margin: 0 0 0 0;
     text-indent: 0;
 }
-.wizard .wizardSteps li a {
+.wizard .wizardSteps li a,
+.wizard .wizardSteps li a:visited {
     line-height: 1.8181em;
     list-style: inline;
     border-style: solid none;
@@ -1386,7 +1389,7 @@ div.overlay #createGroup fieldset { border: none; }
     padding-right: 2em;
     margin-left: -0.909em;
     display: block;
-    color: #bbbbbb;
+    color: #bbbbbb !important;
 }
 .wizard .wizardSteps li.selected,
 .wizard .wizardSteps li.visited  {
@@ -1395,7 +1398,7 @@ div.overlay #createGroup fieldset { border: none; }
 .wizard .wizardSteps li.selected a,
 .wizard .wizardSteps li.visited a {
     border-color: #111111;
-    color: #111111;
+    color: #111111 !important;
 }
 .wizard .wizardSteps li.selected a {
     font-weight: bold;
@@ -1455,7 +1458,11 @@ div.to_top a:hover {
 .icons-on *[class*=icon-] {
 	background-image: url(&dtml-portal_url;/zugsprite.png);
     background-repeat: no-repeat;
-    padding: 0.1em 0 0.1em 2em;
+    padding: 0.090909091em 0 0.090909091em 2em;
+}
+/* special case wf icons: need more space */
+.icons-on *[class*=wf-] {
+    padding: 0.090909091em 0 0.181818em 2em;
 }
 
 /* generated css */
@@ -1628,7 +1635,7 @@ div.tabbedview-tabs ul.formTabs li a {
   border-right:1px solid &dtml-grey4;;
   border-left:1px solid &dtml-grey4;;
   border-bottom:1px solid &dtml-grey4;;
-  color: &dtml-grey4;;
+  color: &dtml-grey4; !important;
   display:inline;
   text-decoration:none;
   margin-top: 0.455em;
@@ -1693,6 +1700,22 @@ dl.zugCollapsible dd {
     border-style: none solid solid;
     margin: 0;
     padding: 0.455em 0.909em 0.455em 1.818em;
+}
+
+/* autocomplete search */
+/* autocomlete search */
+div.ac_results {
+    border-color: #454545;
+}
+div.ac_results li {
+    font-size: 1.1em;
+}
+div.ac_results .ac_odd {
+    background-color: &dtml-globalBorderColor;;
+}
+div.ac_results .ac_over {
+    background-color: #feefb5;
+    color: &dtml-grey4;;
 }
 
 /* </dtml-with> */

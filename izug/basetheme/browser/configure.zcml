@@ -63,7 +63,7 @@
   <browser:viewlet
       name="plone.personal_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".viewlets.PersonalBar"
+      class=".viewlets.IZugPersonalBar"
       permission="zope2.View"
       layer=".interfaces.IOpengeverSpecific"
       />

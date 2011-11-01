@@ -238,3 +238,8 @@ msgstr ""
 msgid "link_advanced_search"
 msgstr ""
 
+#. Default: "No users were found using your search criteria."
+#: CMFPlone/skins/plone_deprecated/folder_localrole_form.pt:230
+#: CMFPlone/skins/plone_forms/ownership_form.cpt:172
+msgid "no_users_found"
+msgstr ""
