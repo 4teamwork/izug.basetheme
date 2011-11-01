@@ -222,3 +222,9 @@ msgstr ""
 #: ./izug/basetheme/browser/customized/plone.app.layout.viewlets.searchbox.pt:51
 msgid "link_advanced_search"
 msgstr "Erweiterte Suche"
+
+#. Default: "No users were found using your search criteria."
+#: CMFPlone/skins/plone_deprecated/folder_localrole_form.pt:230
+#: CMFPlone/skins/plone_forms/ownership_form.cpt:172
+msgid "no_users_found"
+msgstr "Es wurden keine Benutzer gefunden, die auf Ihre Suchkriterien passen."

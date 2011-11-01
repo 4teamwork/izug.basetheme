@@ -199,3 +199,15 @@ div#landingPageImage {
 #directoryResultList .backToSearchResults {
     margin: 1.091em 0;
 }
+
+/* styles sent by fabian reinhard */
+.seantis-directory-filter {
+    width: 60%;
+    float: left;
+    clear: none !important;
+}
+
+.seantis-directory-search {
+    width: 40%;
+    float: right;
+}

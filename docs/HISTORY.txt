@@ -5,9 +5,18 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
-- Issue #1268 Falsches Icon bei Aufgabe unter Standardablauf
+- changed old tasktamplatefolder icon of a tasktemplate with new icon of a task
+  Issue #1268 Falsches Icon bei Aufgabe unter Standardablauf
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1268/
-  changed old tasktamplatefolder icon of a tasktemplate with new icon of a task
+
+- Added styling for tabbedview state filters
+  Issue #1070  Abgeschlossene Aufgaben nicht immer einblenden
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1070
+  [phgross]
+
+- Issue #1665 Besitzer wechseln: Fehler beim Suchen von Benutzern
+  https://extranet.4teamwork.ch/support/zug/maintlog/1665
+  Translate corrupt translation from plone domain: Benuzter to Benutzer
   [eschmutz]
 
 - Styling for Opengever Watch portlet on iZug dashboard.
