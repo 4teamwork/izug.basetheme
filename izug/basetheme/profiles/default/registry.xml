@@ -1,0 +1,3 @@
+<registry>
+  <records interface="izug.basetheme.browser.interfaces.ISearchText" />
+</registry>
