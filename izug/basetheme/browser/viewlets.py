@@ -220,7 +220,8 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
 
     def get_search_string(self):
         registry = getUtility(IRegistry)
-        searchtext = _(u'${text} search through',
+        searchtext = _("searchbox_title",
+                    default=u'${text} search through',
                 mapping={'text': registry.forInterface(ISearchText).searchtext})
 
-        return translate(searchtext)
+        return translate(searchtext, context=self.request)
