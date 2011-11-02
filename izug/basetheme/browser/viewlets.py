@@ -219,9 +219,17 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
 
     def get_search_string(self):
         registry = getUtility(IRegistry)
+
+        # If the Registrykey is not available we need a fallback.
+        # In this case you have to run the registry.xml
+        try:
+            first_part = registry.forInterface(ISearchText)
+        except KeyError:
+            first_part = "Website"
+
         searchtext = _(
             u"searchbox_title",
             default=u'${text} search through',
-            mapping={'text': registry.forInterface(ISearchText).searchtext})
+            mapping={'text': first_part})
 
         return searchtext
