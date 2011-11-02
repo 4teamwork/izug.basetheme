@@ -223,7 +223,7 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
         # If the Registrykey is not available we need a fallback.
         # In this case you have to run the registry.xml
         try:
-            first_part = registry.forInterface(ISearchText)
+            first_part = registry.forInterface(ISearchText).searchtext
         except KeyError:
             first_part = "Website"
 

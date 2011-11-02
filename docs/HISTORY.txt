@@ -5,6 +5,11 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- Issue #17 Suchtext fuer Suchportlet muss einfacher angepasst werden koennen
+  https://extranet.4teamwork.ch/projects/verein-plonegov/tracker-verein-plonegov.ch/17
+  Added viewlet to get a searchstring from the registry
+  [eschmutz]
+
 - changed old tasktamplatefolder icon of a tasktemplate with new icon of a task
   Issue #1268 Falsches Icon bei Aufgabe unter Standardablauf
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1268/
