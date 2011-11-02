@@ -267,14 +267,8 @@ msgstr "LiveSearch &#8595;"
 msgid "responsible"
 msgstr "Verantwortlich"
 
-#. Default: "Search Site"
-#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:7
-msgid "text_search"
-msgstr "Gever durchsuchen"
-
-#. Default: "Search Site"
-#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:11
-msgid "title_search_site"
-msgstr "Gever durchsuchen"
-
+#. Default: "${text} search through"
+#: ./izug/basetheme/browser/viewlets.py:
+msgid "searchbox_title"
+msgstr "${text} durchsuchen"
 

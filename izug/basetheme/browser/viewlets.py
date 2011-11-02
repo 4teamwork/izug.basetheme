@@ -17,7 +17,6 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from random import randrange
 from zope.component import getMultiAdapter
 from zope.component import getUtility
-from zope.i18n import translate
 
 
 class PathBar(common.PathBarViewlet):
@@ -220,8 +219,9 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
 
     def get_search_string(self):
         registry = getUtility(IRegistry)
-        searchtext = _("searchbox_title",
-                    default=u'${text} search through',
-                mapping={'text': registry.forInterface(ISearchText).searchtext})
+        searchtext = _(
+            u"searchbox_title",
+            default=u'${text} search through',
+            mapping={'text': registry.forInterface(ISearchText).searchtext})
 
-        return translate(searchtext, context=self.request)
+        return searchtext
