@@ -76,6 +76,15 @@
       layer=".interfaces.IIzugSpecific"
       />
 
+  <!-- override for searchbox title-translation-->
+  <browser:viewlet
+      name="plone.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.SearchBoxViewlet"
+      permission="zope2.View" 
+      layer=".interfaces.IThemeSpecific"
+      />
+
   <!-- zug.ch-specific personal bar viewlet -->
   <browser:viewlet
       name="plone.personal_bar"

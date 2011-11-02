@@ -1,7 +1,8 @@
 <div id="portal-searchbox"
      i18n:domain="plone"
      tal:define="navigation_root_url view/navigation_root_url;
-                 search_input_id view/search_input_id;">
+                 search_input_id view/search_input_id;
+                 searchstring view/get_search_string;">
     <form name="searchform"
           action="search"
           tal:attributes="action string:${navigation_root_url}/search">
@@ -17,10 +18,9 @@
                value=""
                title="Search Site"
                accesskey="4"
-               i18n:domain="izug.basetheme"
-               i18n:attributes="title title_search_site;"
                tal:attributes="value request/form/SearchableText|nothing;
-                               id search_input_id"
+                               id search_input_id;
+                               title searchstring;"
                class="searchField inputLabel" />
 
         <input class="searchButton"

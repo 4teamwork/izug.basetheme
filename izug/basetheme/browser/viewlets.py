@@ -1,18 +1,23 @@
 from AccessControl import getSecurityManager
 from Acquisition import aq_inner, aq_parent
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-from Products.CMFCore.utils import getToolByName
+from izug.basetheme import MessageFactory as _
+from izug.basetheme.browser.helper import css_class_from_obj
+from izug.basetheme.browser.interfaces import ISearchText
 from izug.basetheme.utils import get_version_and_config
 from pkg_resources import iter_entry_points
+from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.layout.navigation.root import getNavigationRoot
 from plone.app.layout.viewlets import common, content
-from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.memoize import ram
 from plone.memoize.instance import memoize
-from zope.component import getMultiAdapter
-from random import randrange
-from izug.basetheme.browser.helper import css_class_from_obj
+from plone.registry.interfaces import IRegistry
+from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.interfaces import IPloneSiteRoot
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from random import randrange
+from zope.component import getMultiAdapter
+from zope.component import getUtility
+from zope.i18n import translate
 
 
 class PathBar(common.PathBarViewlet):
@@ -209,3 +214,13 @@ class ContentMenuViewlet(common.ViewletBase):
         if not self.context.restrictedTraverse('@@plone').showEditableBorder():
             return False
         return int(self.context.request.get('izug_edit_mode', 0))
+
+class SearchBoxViewlet(common.SearchBoxViewlet):
+    render = ViewPageTemplateFile('viewlets_templates/searchbox.pt')
+
+    def get_search_string(self):
+        registry = getUtility(IRegistry)
+        searchtext = _(u'${text} search through',
+                mapping={'text': registry.forInterface(ISearchText).searchtext})
+
+        return translate(searchtext)
