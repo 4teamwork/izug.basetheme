@@ -2,7 +2,7 @@
      i18n:domain="plone"
      tal:define="navigation_root_url view/navigation_root_url;
                  search_input_id view/search_input_id;
-                 searchstring view/get_search_string;">
+                 searchtitle view/get_search_title;">
     <form name="searchform"
           action="search"
           tal:attributes="action string:${navigation_root_url}/search">
@@ -20,7 +20,7 @@
                accesskey="4"
                tal:attributes="value request/form/SearchableText|nothing;
                                id search_input_id;
-                               title searchstring;"
+                               title searchtitle;"
                class="searchField inputLabel" />
 
         <input class="searchButton"

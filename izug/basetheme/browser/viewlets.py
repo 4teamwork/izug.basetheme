@@ -2,7 +2,7 @@ from AccessControl import getSecurityManager
 from Acquisition import aq_inner, aq_parent
 from izug.basetheme import MessageFactory as _
 from izug.basetheme.browser.helper import css_class_from_obj
-from izug.basetheme.browser.interfaces import ISearchText
+from izug.basetheme.interfaces import ISiteProperties
 from izug.basetheme.utils import get_version_and_config
 from pkg_resources import iter_entry_points
 from plone.app.layout.navigation.interfaces import INavigationRoot
@@ -217,19 +217,19 @@ class ContentMenuViewlet(common.ViewletBase):
 class SearchBoxViewlet(common.SearchBoxViewlet):
     render = ViewPageTemplateFile('viewlets_templates/searchbox.pt')
 
-    def get_search_string(self):
+    def get_search_title(self):
         registry = getUtility(IRegistry)
 
         # If the Registrykey is not available we need a fallback.
         # In this case you have to run the registry.xml
         try:
-            first_part = registry.forInterface(ISearchText).searchtext
+            app_title = registry.forInterface(ISiteProperties).application_title
         except KeyError:
-            first_part = "Website"
+            app_title = "Website"
 
         searchtext = _(
             u"searchbox_title",
-            default=u'${text} search through',
-            mapping={'text': first_part})
+            default=u'Search ${text}',
+            mapping={'text': app_title})
 
         return searchtext

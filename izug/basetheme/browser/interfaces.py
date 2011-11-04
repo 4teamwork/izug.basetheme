@@ -1,6 +1,6 @@
 from plone.theme.interfaces import IDefaultPloneLayer
 from zope.interface import Interface
-from zope import schema
+
 
 class IThemeSpecific(IDefaultPloneLayer):
     """Marker interface that defines a Zope 3 skin layer.
@@ -17,9 +17,3 @@ class IIzugSpecific(Interface):
 class IZugSpecific(Interface):
     """Marker interface that defines a Zope 3 browser layer specific for zug.
     """
-
-class ISearchText(Interface):
-    """The first part of the searchtext in the pone searchbox viewlet
-    """
-    searchtext = schema.TextLine(
-        title=u"First part of searchtext", default=u"Webseite")
