@@ -5,6 +5,11 @@ Changelog
 1.0a22 (unreleased)
 -------------------
 
+- Add Styling for the dynamic batchbox.
+  Issue #1262 Listenfoermige Ausdrucke
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1262/
+  [phgross]
+
 - Issue #17 Suchtext fuer Suchportlet muss einfacher angepasst werden koennen
   https://extranet.4teamwork.ch/projects/verein-plonegov/tracker-verein-plonegov.ch/17
   Added viewlet to get a searchstring from the registry
