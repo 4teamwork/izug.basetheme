@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a22 (unreleased)
+1.0a22 (2011-11-09)
 -------------------
 
 - Add Styling for the dynamic batchbox.
