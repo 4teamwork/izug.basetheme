@@ -1730,4 +1730,7 @@ div.ac_results .ac_over {
     color: &dtml-grey4;;
 }
 
+#message_no_contents {
+    padding: 0em 0em 2em 0em;
+}
 /* </dtml-with> */
