@@ -5,7 +5,11 @@ Changelog
 1.0a25 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Removed 'enable_border' hack, because it's not longer necessary,
+  the viewlet is now correctly overwritten in opengever.base.
+  Issue #1178 OG-Spezifische Anpassungen in main_template
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1178/
+  [phgross]
 
 
 1.0a24 (2011-11-14)
