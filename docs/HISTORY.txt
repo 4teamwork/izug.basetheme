@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a24 (unreleased)
+1.0a24 (2011-11-14)
 -------------------
 
 - Include mo-files in git repository and in dist.
