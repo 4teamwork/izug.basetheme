@@ -1477,6 +1477,12 @@ div.to_top a:hover {
     padding: 0.090909091em 0 0.181818em 2em;
 }
 
+/* special case task icons: need more space */
+.icons-on .contenttype-opengever-task-task {
+    padding: 0.090909091em 0 0.181818em 2em;
+}
+
+
 /* generated css */
 .000no-icon{ background-position: 0 0;  }
 .actionicon-folder_factories-add_participant, .contenttype-contact, .contenttype-mitglied, .contenttype-opengever-contact-contact, .contenttype-stelle, .contenttype-zugmitglied, .function-user{ background-position: 0 -66px;  }

@@ -5,6 +5,11 @@ Changelog
 1.0a25 (unreleased)
 -------------------
 
+- Added special css handling for the task icon in listings
+  Issue #1184 Abgeschnittene Icons
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1184
+  [phgross]
+
 - Removed 'enable_border' hack, because it's not longer necessary,
   the viewlet is now correctly overwritten in opengever.base.
   Issue #1178 OG-Spezifische Anpassungen in main_template
