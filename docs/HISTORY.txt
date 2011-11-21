@@ -11,6 +11,9 @@ Changelog
 1.0 (2011-11-17)
 ----------------
 
+- Updated sprite icon and css: Activate dossier icon for the two new bdbds special dossiers.
+  [phgross]
+
 - Added special css handling for the task icon in listings
   Issue #1184 Abgeschnittene Icons
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1184
