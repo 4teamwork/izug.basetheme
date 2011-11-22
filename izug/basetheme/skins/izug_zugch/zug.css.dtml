@@ -247,7 +247,8 @@ table.eShop td.right a img {
 .section-veranstaltungen #visual-portal-wrapper div#portal-column-content,
 .template-search #visual-portal-wrapper div#portal-column-content,
 .template-kita_search  #visual-portal-wrapper div#portal-column-content,
-.template-kita_view #visual-portal-wrapper div#portal-column-content {
+.template-kita_view #visual-portal-wrapper div#portal-column-content,
+.section-immobilienliste #visual-portal-wrapper div#portal-column-content {
     margin-left: -100% !important;
     width: 100% !important;
 }
