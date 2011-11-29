@@ -5,7 +5,8 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Updated sprite icon and css: Activate dossier icon for the two new bdbds special dossiers.
+  [phgross]
 
 
 1.0 (2011-11-17)
