@@ -17,6 +17,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from random import randrange
 from zope.component import getMultiAdapter
 from zope.component import getUtility
+from zope.component.interfaces import ComponentLookupError
 
 
 class PathBar(common.PathBarViewlet):
@@ -218,13 +219,13 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
     render = ViewPageTemplateFile('viewlets_templates/searchbox.pt')
 
     def get_search_title(self):
-        registry = getUtility(IRegistry)
 
-        # If the Registrykey is not available we need a fallback.
-        # In this case you have to run the registry.xml
+        # If the Registrykey or the registry itself is not available we
+        # need a fallback. In this case you have to run the registry.xml
         try:
+            registry = getUtility(IRegistry)
             app_title = registry.forInterface(ISiteProperties).application_title
-        except KeyError:
+        except (ComponentLookupError, KeyError):
             app_title = "Website"
 
         searchtext = _(
