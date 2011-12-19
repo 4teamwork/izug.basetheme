@@ -82,6 +82,10 @@ therefore we have to simulate a left column */
 body.template-folder_contents input[name="folder_delete:method"] {
     color:Black;
     background:-moz-linear-gradient(center top , #FFFFFF, #DEDEDE) repeat scroll 0 0 transparent;
+    background: -moz-linear-gradient(top ,#FFFFFF, #DEDEDE);
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DEDEDE));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFFFFF, endColorstr=#DEDEDE);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFFFFF, endColorstr=#DEDEDE)";
 }
 
 
