@@ -77,4 +77,13 @@ therefore we have to simulate a left column */
     float: left;
 }
 
+
+/* Special css for delete button in folder_contents --> Issue #1594 */
+body.template-folder_contents input[name="folder_delete:method"] {
+    color:Black;
+    background:-moz-linear-gradient(center top , #FFFFFF, #DEDEDE) repeat scroll 0 0 transparent;
+}
+
+
+
 /* </dtml-with> */

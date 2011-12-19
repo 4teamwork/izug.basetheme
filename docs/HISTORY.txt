@@ -5,6 +5,10 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
+- Change delete button color for folder_contents. 
+  https://extranet.4teamwork.ch/support/zug/maintlog/1594
+  [mathias.leimgruber]
+
 - Fix error of searchbox viewlet when accessing manage-viewlets in zug.ch
   [eschmutz]
 
