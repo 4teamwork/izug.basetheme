@@ -32,7 +32,9 @@
 
 <h1 i18n:translate="">mein Konto: Anmelden</h1>
 <metal:login define-macro="login">
-
+<p>
+    Für das Abonnieren eines Newsletter klicken Sie bitte <a tal:attributes="href string:${portal_url}/newsletters_overview">hier</a>
+</p>
 <form tal:attributes="action python:context.absolute_url()+'/'+template.id"
       class="enableAutoFocus"
       method="post"
