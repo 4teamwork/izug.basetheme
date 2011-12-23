@@ -224,7 +224,7 @@ div#landingPageImage {
 
 #directoryDetails p a {
     display: inline !important;
-    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .directoryDetailsBlock .directoryInfoText {
