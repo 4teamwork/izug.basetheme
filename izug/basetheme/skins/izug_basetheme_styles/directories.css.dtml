@@ -144,6 +144,7 @@ div#landingPageImage {
     display: block;
     margin: 0.191em 0;
 }
+
 #directoryResultList img.directoryListIcon {
     margin-left: -1.8em;
 }
@@ -210,4 +211,18 @@ div#landingPageImage {
 .seantis-directory-search {
     width: 40%;
     float: right;
+}
+
+#directoryDetails .directoryTypes {
+    margin-bottom: 0.909em;
+}
+
+#portal-top {
+    background-color: white !important;
+    padding: 0 !important;
+}
+
+#directoryDetails p a {
+    display: inline !important;
+    padding: 0px !important;
 }
