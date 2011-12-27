@@ -27,6 +27,6 @@ jq(document).ready(function() {
         });
         jq(window).resize( function() {
             setColumnOneWidth(columnOne.width());
-        });
+        }).resize();
     }
 });
