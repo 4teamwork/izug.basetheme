@@ -5,13 +5,14 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- opengever slideColumns: resize on load for fixing space between left column and content.
+  [jone]
 
 
 1.0.2 (2011-12-21)
 ------------------
 
-- Change delete button color for folder_contents. 
+- Change delete button color for folder_contents.
   https://extranet.4teamwork.ch/support/zug/maintlog/1594
   [mathias.leimgruber]
 
