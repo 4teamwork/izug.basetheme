@@ -36,6 +36,9 @@
     clear: both;
     overflow: hidden;
 }
+#directorySearchForm fieldset {
+    border: none;
+}
 .directorySearchFormSelection {
     float: left;
     width: 16em;
