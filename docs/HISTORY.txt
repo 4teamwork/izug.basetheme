@@ -5,6 +5,11 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
+- Add a opengever own search template: including the dossiertitle and breadcrump in the searchResults.
+  Issue #1253 Darstellung Dossiertitel bei Suchresultaten (Subdossiers, Dokumente, Aufgaben)
+  https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1253
+  [phgross]
+
 - opengever slideColumns: resize on load for fixing space between left column and content.
   [jone]
 
@@ -18,7 +23,6 @@ Changelog
 
 - Fix error of searchbox viewlet when accessing manage-viewlets in zug.ch
   [eschmutz]
-
 
 1.0.1 (2011-11-29)
 ------------------
