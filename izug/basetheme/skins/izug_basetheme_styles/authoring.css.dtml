@@ -21,7 +21,7 @@
 .configlet .contentViews {
     font-size: 90%;
 }
-/* content views for dashboard */ 
+/* content views for dashboard */
 body.template-dashboard .contentViews,
 body.template-manage-dashboard .contentViews {
     background-color: transparent;
@@ -209,6 +209,7 @@ body.template-manage-dashboard .contentViews li a:hover {
 
 
 /* Disable sprite icons for these actions since they don't have an icon */
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-delegate_task,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-export_pdf,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-pdf_dossier_checklist,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-pdf_dossierdetails,
@@ -329,19 +330,19 @@ ul.configletDetails li.configletDescription {
 .reviewHistory,
 .contentHistory {
     display: inline;
-    font-size: 110% !important; 
+    font-size: 110% !important;
     color: Black;
 }
 .comment {
-    background: &dtml-evenRowBackgroundColor;; 
-    border: &dtml-borderWidth; &dtml-borderStyleAnnotations; &dtml-globalBorderColor;; 
+    background: &dtml-evenRowBackgroundColor;;
+    border: &dtml-borderWidth; &dtml-borderStyleAnnotations; &dtml-globalBorderColor;;
     padding: 0.25em 1em 0.5em 1em;
     margin-bottom: 1em;
 }
 .comment h1,
 .comment h2,
 .comment h3,
-.comment h4, 
+.comment h4,
 .comment h5,
 .comment h6 {
     border-bottom: &dtml-borderWidth; &dtml-borderStyleAnnotations; &dtml-discreetColor;;
@@ -355,7 +356,7 @@ ul.configletDetails li.configletDescription {
     margin-bottom: 1px;
     min-height: 1.6em;
     height: auto;
-    line-height: 1.6em;	
+    line-height: 1.6em;
 }
 .commentBody {
     margin: 0 1em 1em 1em;
@@ -456,7 +457,7 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     font-size: &dtml-fontSmallSize;;
 }
 /* Used on all descriptions relevant to those not logged in */
-.portalNotLoggedIn {} 
+.portalNotLoggedIn {}
 
 /* for highlighting of search terms */
 .highlightedSearchTerm {
@@ -511,7 +512,7 @@ li.formTab a {
     color: &dtml-linkColor;;
 }
 li.formTab a:visited {
-    color: &dtml-linkColor;;    
+    color: &dtml-linkColor;;
 }
 li.firstFormTab a {
     border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
@@ -541,7 +542,7 @@ li.formTab a.notify:hover {
     background-color: &dtml-notifyBorderColor;;
 }
 .formPanel {
-    padding: 1em 1em 1em 1em; 
+    padding: 1em 1em 1em 1em;
     border: 1px &dtml-borderStyle; &dtml-grey1; !important;
 }
 .formPanel.hidden {
@@ -595,7 +596,7 @@ div.formControls input.hidden {
 #content-history div.historyComment p {
 	color: &dtml-fontColor;;
 	margin: 0;
-	padding-top: 1px;	
+	padding-top: 1px;
 }
 
 #content-history a.historyComparePrevious {

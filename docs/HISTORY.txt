@@ -5,6 +5,9 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
+- Do not use an icon for delegate_task action (opengever).
+  [jone]
+
 - Add a opengever own search template: including the dossiertitle and breadcrump in the searchResults.
   Issue #1253 Darstellung Dossiertitel bei Suchresultaten (Subdossiers, Dokumente, Aufgaben)
   https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1253
@@ -733,4 +736,3 @@ Changelog
 -----
 
 - Initial release
-
