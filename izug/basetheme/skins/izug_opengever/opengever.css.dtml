@@ -286,32 +286,15 @@ div#overview_overview {
   padding: 0;
   overflow:hidden;
 }
-div#overview_overview .boxGroup0 {
-  width: 65%;
-  position: relative;
-  left: 100%;
-  margin-left: -100%;
-  float: left;
-}
-div#overview_overview .boxGroup1 {
-  width: 34%;
-  position: relative;
-  left: 100%;
-  margin-left: -34%;
-  float: left;
-}
+div#overview_overview .boxGroup {
+   float: left;
+ }
 div#overview_overview .box {
 }
 
 div#overview_overview .box h2 {
   font-size: 100%;
 }
-div#overview_overview .boxGroup0 .box {
-  width: 50%;
-  float: left;
-  position: relative;
-}
-
 div#overview_overview ul {
   list-style-image:none;
   list-style-type:none;

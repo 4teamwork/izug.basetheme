@@ -5,6 +5,9 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
+- Cleaned up the overview box styling. Now the spliting is realy dynamic.
+  [phgross]
+
 - Do not use an icon for delegate_task action (opengever).
   [jone]
 
