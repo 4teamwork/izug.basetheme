@@ -5,6 +5,9 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
+- Added sprite icon for KOM.SKO case dossier
+  [lgraf]
+
 - Cleaned up the overview box styling. Now the spliting is realy dynamic.
   [phgross]
 
