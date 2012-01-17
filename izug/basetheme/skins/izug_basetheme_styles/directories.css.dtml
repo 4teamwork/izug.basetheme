@@ -204,7 +204,7 @@ div#landingPageImage {
     margin: 1.091em 0;
 }
 
-/* styles sent by fabian reinhard */
+/* styles sent by fabian reinhard: TODO review and make them generic!; */
 .seantis-directory-filter {
     width: 60%;
     float: left;
@@ -232,4 +232,29 @@ div#landingPageImage {
 
 .directoryDetailsBlock .directoryInfoText {
     margin-left: 2em;
+}
+
+.seantis-directory-search fieldset, .seantis-directory-filter fieldset {
+    margin: 0 !important;
+}
+ 
+form.seantis-directory-search, form.seantis-directory-filter {
+    margin: 0 !important;
+}
+
+.seantis-directory-category, #searchtext {
+    width: auto;
+}
+
+.seantis-directory-filter .directorySearchFormSelection {
+    width: 16em;
+}
+
+#seantis-directory-description {
+    margin-left: 20px;
+}
+
+.seantis-directory-filter .visualMarginRight {
+    width: auto;
+    display: block;
 }
