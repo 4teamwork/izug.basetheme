@@ -5,6 +5,11 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
+- #1528 Behoerden - Kontaktformular mit aforms2web
+  https://extranet.4teamwork.ch/support/zug/maintlog/1528/
+  add new attribute 'target' for site_actions
+  [eschmutz]
+
 - Fix error of searchbox viewlet when accessing manage-viewlets in zug.ch
   [eschmutz]
 
