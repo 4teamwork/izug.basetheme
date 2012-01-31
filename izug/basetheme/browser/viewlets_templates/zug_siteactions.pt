@@ -18,7 +18,6 @@
             </a>
         </li>
     </tal:block>
-
 	<!-- HACK for target attribute. we need to open the contactform in a new
 	window. Thats not possible to set over the portal_actions. So we need
 	to do it in the template. -->
