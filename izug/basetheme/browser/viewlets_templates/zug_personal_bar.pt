@@ -17,7 +17,7 @@
 			to do it in the template. -->
             <a href=""
                tal:define="accesskey python: accesskeys.get(action['id'], '');
-                           target python: saction.get(
+                           target python: action.get(
 	                           'id', '') == 'contact' and '_blank' or '_self';"
                tal:attributes="href action/url;
                                accesskey accesskey;
