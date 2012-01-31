@@ -15,21 +15,26 @@
                                title backtoparent_title"
                tal:content="backtoparent_title">
                Back to parent
-            </a>                   
+            </a>
         </li>
     </tal:block>
-    
+
+	<!-- HACK for target attribute. we need to open the contactform in a new
+	window. Thats not possible to set over the portal_actions. So we need
+	to do it in the template. -->
     <li tal:repeat="saction view/site_actions"
         tal:attributes="id string:siteaction-${saction/id}"><a
            href=""
            tal:define="title saction/title;
                        id saction/id;
-                       accesskey python: accesskeys.get(id, '');"
+                       accesskey python: accesskeys.get(id, '');
+                       target python: saction.get(
+                           'id', '') == 'contact' and '_blank' or '_self';"
            i18n:attributes="title"
            i18n:translate=""
            tal:content="title"
            tal:attributes="href saction/url;
-                           target saction/target|string:_self;
+                           target target; 
                            title title;
                            accesskey accesskey;"
            >Site action</a>

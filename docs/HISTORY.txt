@@ -7,7 +7,8 @@ Changelog
 
 - #1528 Behoerden - Kontaktformular mit aforms2web
   https://extranet.4teamwork.ch/support/zug/maintlog/1528/
-  add new attribute 'target' for site_actions
+  hack in zug_siteactions.pt to open contactform in new window. see comment
+  in template for more infos.
   [eschmutz]
 
 - Fix error of searchbox viewlet when accessing manage-viewlets in zug.ch
