@@ -5,6 +5,11 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
+- #1739 Arbeitsplatz - Beschränkung folder_overview bei Fokus und Bibliothek
+  https://extranet.4teamwork.ch/support/zug/maintlog/1739/
+  remove condition which block the batching in topics
+  [eschmutz]
+
 - Added sprite icon for KOM.SKO case dossier
   [lgraf]
 

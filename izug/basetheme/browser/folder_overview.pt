@@ -141,7 +141,7 @@
                             </dl>
 							</div>
                             <!-- Navigation -->
-                            <tal:block condition="python:not is_a_topic and not batch">
+                            <tal:block>
                                 <div metal:use-macro="here/batch_macros/macros/navigation" />
                             </tal:block>
 
