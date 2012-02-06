@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.3 (unreleased)
+1.0.3 (2012-02-06)
 ------------------
 
 - #1739 Arbeitsplatz - Beschränkung folder_overview bei Fokus und Bibliothek
