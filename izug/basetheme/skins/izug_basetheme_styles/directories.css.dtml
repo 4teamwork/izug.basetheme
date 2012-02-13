@@ -62,21 +62,27 @@ div#landingPageImage {
     overflow: hidden;
     margin: 0 0 4.363em 0;
     padding-top: 4.363em;
-    border-top: 0.091em solid #99BAD1;
+    padding-left:20px;
 }
+
 #directoryInfo,
 #directoryDetails {
     overflow: hidden;
     margin: 0 0 4.363em 0;
     padding-top: 2.272em;
-    border-top: 0.091em solid #99BAD1;
 }
+
 #landingPageText h2, 
 #directoryInfo h2,
 #directoryDetails h2 {
     clear: none;
     margin-top: 0;
 }
+
+#landingPageText h2 {
+    padding-left: 0px;
+}
+
 #landingPageDashboardSection .landingPageDashboard {
     width: 27.818em;
     float: left;
