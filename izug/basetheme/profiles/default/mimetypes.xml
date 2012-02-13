@@ -38,4 +38,7 @@
  <mimetype mimetypes="application/zip
                       application/x-zip-compressed" 
            icon_path="icon_dokument_zip.gif" />
+ <mimetype name="Adobe Indesign Document" binary="False" extensions="indd ind"
+    globs="*.indd" icon_path="application.png"
+    mimetypes="application/x-indesign"/>
 </object>

@@ -5,6 +5,9 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
+- Add mimetype for adobe indesign
+  [eschmutz]
+
 - Added profiles for seantis directories service.
   [mathias.leimgruber]
 
