@@ -42,4 +42,12 @@
       description='Extension profile for the "iZug Base Theme" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
+
+  <genericsetup:registerProfile
+      name="zug_directories"
+      title="izug.basetheme extension profile for directories"
+      directory="profiles/directories"
+      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
 </configure>
