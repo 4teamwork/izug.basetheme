@@ -1579,22 +1579,24 @@ div.to_top a:hover {
 .icon-dokument_pdf, .icon_dokument_pdf, .mimetype-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -6052px;  } 
 .icon-dokument_powerpoint, .mimetype-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-ppt, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -6118px;  } 
 .icon-dokument_text, .icon-text, .mimetype-plain, .mimetype-text{ background-position: 0 -6184px;  } 
-.icon-dokument_visio, .mimetype-dokument_visio, .mimetype-visio, .mimetype-vnd-visio{ background-position: 0 -6250px;  } 
-.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -6316px;  } 
-.icon-dokument_word, .mimetype-doc, .mimetype-docx, .mimetype-dokument_word, .mimetype-msword{ background-position: 0 -6382px;  } 
-.icon-dokument_zip, .mimetype-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -6448px;  } 
-.mimetype-mpp{ background-position: 0 -6514px;  } 
-.mimetype-vnd-sun-xml-calc{ background-position: 0 -6580px;  } 
-.mimetype-vnd-sun-xml-draw{ background-position: 0 -6646px;  } 
-.mimetype-vnd-sun-xml-impress{ background-position: 0 -6712px;  } 
-.mimetype-vnd-sun-xml-writer{ background-position: 0 -6778px;  } 
-.ui-icon-gripsmall-diagonal-se{ background-position: 0 -6844px;  } 
-.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6905px;  } 
-.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -6970px;  } 
-.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -7036px;  } 
-.wf-task-state-in-progress{ background-position: 0 -7102px;  } 
-.wf-task-state-new-successor{ background-position: 0 -7168px;  } 
-.wf-task-state-resolved{ background-position: 0 -7234px;  } 
+.icon-dokument_verweis{ background-position: 0 -6250px;  } 
+.icon-dokument_visio, .mimetype-dokument_visio, .mimetype-visio, .mimetype-vnd-visio{ background-position: 0 -6316px;  } 
+.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -6382px;  } 
+.icon-dokument_word, .mimetype-doc, .mimetype-docx, .mimetype-dokument_word, .mimetype-msword{ background-position: 0 -6448px;  } 
+.icon-dokument_zip, .mimetype-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -6514px;  } 
+.mimetype-mpp{ background-position: 0 -6580px;  } 
+.mimetype-vnd-sun-xml-calc{ background-position: 0 -6646px;  } 
+.mimetype-vnd-sun-xml-draw{ background-position: 0 -6712px;  } 
+.mimetype-vnd-sun-xml-impress{ background-position: 0 -6778px;  } 
+.mimetype-vnd-sun-xml-writer{ background-position: 0 -6844px;  } 
+.ui-icon-gripsmall-diagonal-se{ background-position: 0 -6910px;  } 
+.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6971px;  } 
+.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -7036px;  } 
+.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -7102px;  } 
+.wf-task-state-in-progress{ background-position: 0 -7168px;  } 
+.wf-task-state-new-successor{ background-position: 0 -7234px;  } 
+.wf-task-state-resolved{ background-position: 0 -7300px;  } 
+
 
 
 
