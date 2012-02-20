@@ -30,7 +30,7 @@ msgstr ""
 #. Default: "Advanced search for content"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:57
 msgid "heading_advanced_search"
-msgstr "Erweitere Suche"
+msgstr "Erweiterte Suche"
 
 #. Default: "<div> <input id=\"checked_out\" name=\"checked_out\" type=\"text\" /> </div>"
 #: ./izug/basetheme/browser/document_search.pt:66
