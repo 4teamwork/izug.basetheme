@@ -5,6 +5,9 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
+- Fixed mime type for XLSX documents
+  [lgraf]
+
 - Added profiles for seantis directories service.
   [mathias.leimgruber]
 
