@@ -43,12 +43,12 @@ msgstr ""
 #. Default: "Give a range for the deadline."
 #: ./izug/basetheme/browser/task_search.pt:24
 msgid "help_search_deadline"
-msgstr "Délimitez les délais"
+msgstr "Délimitation des délais"
 
 #. Default: "Give a range for the deliver date."
 #: ./izug/basetheme/browser/document_search.pt:21
 msgid "help_search_delivery_date"
-msgstr "Délimitez les dates de transmission"
+msgstr "Délimitation des dates de transmission"
 
 #: ./izug/basetheme/browser/dossier_search.pt:5
 msgid "help_search_description"
@@ -61,12 +61,12 @@ msgstr ""
 #. Default: "Give a range for the document date."
 #: ./izug/basetheme/browser/document_search.pt:35
 msgid "help_search_document_date"
-msgstr "Délimitez les dates du document"
+msgstr "Délimitation des dates du document"
 
 #. Default: "Give a range for the end date."
 #: ./izug/basetheme/browser/dossier_search.pt:33
 msgid "help_search_end"
-msgstr "Délimitez les dates de clôture"
+msgstr "Délimitation de la date de clôture"
 
 #. Default: "Return the item wiht the expected reference Number"
 #: ./izug/basetheme/browser/dossier_search.pt:71
@@ -106,7 +106,7 @@ msgstr "Retourne l'élément avec le numéro de séquence"
 #. Default: "Give a range for the start date."
 #: ./izug/basetheme/browser/dossier_search.pt:19
 msgid "help_search_start"
-msgstr "Délimitez la date d'enregistrement"
+msgstr "Délimitation de la date d'enregistrement"
 
 #: ./izug/basetheme/browser/dossier_search.pt:89
 msgid "help_search_state"
@@ -123,7 +123,7 @@ msgstr "Pour une recherche simple, entrez votre critère de recherche ici. Plusi
 msgid "label_advanced_search"
 msgstr "Recherche avancée"
 
-#. Default: "All types"
+#. Default: "by ${author}"
 #: ./izug/basetheme/browser/task_search.pt:40
 #: ./izug/basetheme/browser/viewlets_templates/byline.pt:16
 #, fuzzy
@@ -152,7 +152,7 @@ msgstr "Checkout fait par"
 #. Default: "Creator"
 #: ./izug/basetheme/browser/document_search.pt:54
 msgid "label_search_creator"
-msgstr "Créateur / Auteur"
+msgstr "Créateur"
 
 #. Default: "Deadline"
 #: ./izug/basetheme/browser/task_search.pt:20
