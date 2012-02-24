@@ -5,6 +5,12 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
+- Added french translations.
+  [ttschanz]
+
+- Added specific task icons to sprites (remotetask, subtask).
+  [jone]
+
 - Fixed mime type for XLSX documents
   [lgraf]
 
