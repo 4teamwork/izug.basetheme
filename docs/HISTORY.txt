@@ -5,7 +5,10 @@ Changelog
 1.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- portal messages: add close icon.
+  Issue #1757 Arbeitsplatz - Inhalt verschiebt sich beim Verschwinden von Info-Meldungen
+  https://extranet.4teamwork.ch/support/zug/maintlog/1757
+  [jone]
 
 
 1.0.4 (2012-02-24)

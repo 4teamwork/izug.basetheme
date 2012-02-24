@@ -587,6 +587,18 @@ dl.portalMessage dd {
     margin: 0;
     padding: 0.5em 1em 0.5em 2.5em;
 }
+.portalMessage .messageClose {
+  float: right;
+  display: none;
+  position: relative;
+  top: -3px;
+  height: 15px;
+}
+.portalMessage:hover .messageClose {
+  display: inline-block;
+  cursor: pointer;
+}
+
 dl.information,
 dl.info {
     background: transparent url(&dtml-portal_url;/icon_status_erledigt.gif) no-repeat 0.3em 0.3em;
