@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.5 (unreleased)
+1.0.5 (2012-02-27)
 ------------------
 
 - portal messages: add close icon.
