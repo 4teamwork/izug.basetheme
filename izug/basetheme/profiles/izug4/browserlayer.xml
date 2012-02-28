@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- Register the package-specific browser layer, so that it will be activated
+when this profile is installed. -->
+<layers>
+    <layer name="izug.basetheme.izug4" 
+           interface="izug.basetheme.browser.interfaces.IIzug4Specific" />
+</layers>

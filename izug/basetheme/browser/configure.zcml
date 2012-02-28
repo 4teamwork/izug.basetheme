@@ -23,8 +23,8 @@
      permission="zope2.View"
      layer=".interfaces.IThemeSpecific"
      />
-     
-  <!-- we have to override portal_tabs_view here because if we need actions 
+
+  <!-- we have to override portal_tabs_view here because if we need actions
   displayed in the global navigation they have to be last instead of first -->
   <browser:page
       zcml:condition="not-have opengever"
@@ -42,7 +42,7 @@
       template="testicons.pt"
       permission="zope2.Public"
       />
-      
+
     <browser:page
         for="Products.Archetypes.interfaces.IBaseObject"
         name="folder_overview"
@@ -76,12 +76,21 @@
       layer=".interfaces.IIzugSpecific"
       />
 
+  <!-- izug4 specific personal bar viewlet -->
+  <browser:viewlet
+      name="plone.personal_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.IZugPersonalBar"
+      permission="zope2.View"
+      layer=".interfaces.IIzug4Specific"
+      />
+
   <!-- override for searchbox title-translation-->
   <browser:viewlet
       name="plone.searchbox"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.SearchBoxViewlet"
-      permission="zope2.View" 
+      permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
 
@@ -93,7 +102,6 @@
       permission="zope2.View"
       layer=".interfaces.IZugSpecific"
       />
-
 
   <browser:viewlet
       name="plone.site_actions"
@@ -112,7 +120,7 @@
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
-      
+
   <browser:viewlet
       name="plone.abovecontenttitle.documentactions"
       manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
@@ -172,7 +180,7 @@
       class=".viewlets.ContentMenuViewlet"
       permission="zope2.View"
       layer="izug.basetheme.browser.interfaces.IIzugSpecific"
-      />  
+      />
 
 
   <!-- izug/zug.ch special folder_contents -->
@@ -189,7 +197,7 @@
        class=".foldercontents.FolderContentsKSSView"
        attribute="update_table"
        name="foldercontents_update_table"
-       layer="izug.basetheme.browser.interfaces.IIzugSpecific"       
+       layer="izug.basetheme.browser.interfaces.IIzugSpecific"
        permission="cmf.ListFolderContents" />
 
    <browser:page
@@ -205,7 +213,7 @@
         class=".foldercontents.FolderContentsKSSView"
         attribute="update_table"
         name="foldercontents_update_table"
-        layer="izug.basetheme.browser.interfaces.IZugSpecific"       
+        layer="izug.basetheme.browser.interfaces.IZugSpecific"
         permission="cmf.ListFolderContents" />
 
 
