@@ -16,3 +16,53 @@ body.icons-on *[class*="actionicon-"] {
 .actionMenu .actionMenuContent li a {
     padding-left:0.5em !important;
 }
+
+
+
+/* TABBED VIEW */
+.tabbedview_view .tabbedview_search {
+    margin-top: 2em;
+}
+
+
+#tabbedview-body h2 {
+    font-size:1em;
+    line-height: 1.455em;
+    margin: 0 0 0.363em;
+}
+
+#tabbedview-body {
+    line-height: 1.454em;
+}
+.overview-left-column {
+    float: left;
+    width: 25.454em;
+}
+.overview-right-column {
+    float: right;
+    width: 33.636em;
+}
+
+#overview_overview table {
+    width: 100%;
+    margin: 0 0 0.909em;
+    padding: 0 0 0.909em;
+    border-style: none;
+    border-bottom: 0.182em solid #EFEFEF;
+    background-image: none;
+}
+#overview_overview table td {
+    border-style:none;
+}
+#overview_overview ul {
+    list-style: none inside none;
+    margin: 0 0 0.909em;
+    padding: 0 0 0.909em;
+    border-bottom: 0.182em solid #EFEFEF;
+}
+
+/* Blog styles (Fokus) */
+.blogView .actionsBarContent {
+    background-color: #DEDEDE ;
+    border: 1px solid #99BAD1;
+}

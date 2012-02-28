@@ -1905,13 +1905,12 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .x-menu-list {
     padding: 0;
     margin: 0;
-}
+}*/
 .x-menu-item-active a.x-menu-item {
     border-color:  &dtml-yellow;;
     background-color: &dtml-yellow;;
 
 }
-
 
 /* </dtml-with> */
 
