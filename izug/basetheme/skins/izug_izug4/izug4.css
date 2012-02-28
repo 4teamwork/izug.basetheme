@@ -66,3 +66,155 @@ body.icons-on *[class*="actionicon-"] {
     background-color: #DEDEDE ;
     border: 1px solid #99BAD1;
 }
+
+
+/* DASHBOARD */
+/* use four columns with limited width */
+.template-dashboard .documentFirstHeading,
+.template-dashboard #viewlet-above-content {
+  display: none;
+}
+
+.template-dashboard #portal-column-content {
+  margin-left: -100% !important;
+  width: 78em !important;
+}
+
+#dashboard-portlets1,
+#dashboard-portlets2,
+#dashboard-portlets3,
+#dashboard-portlets4 {
+  float: left;
+  margin-right: 1.363em;
+  width: 22.727em;
+}
+
+#dashboard-portlets3 {
+  margin-right: 0;
+}
+
+#dashboard .portletwrapper {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+#dashboard .portlet {
+  margin-bottom: 0.909em !important;
+  border-style: none none solid;
+  border-width: 0.091em;
+}
+
+#dashboard .portletHeader {
+  font-size: 1em;
+  margin: 0;
+  padding: 0 0.818em;
+  border-width: 0.091em;
+}
+
+#dashboard .portletHeader .fold,
+#dashboard .portletHeader .close,
+#dashboard .portletHeader .edit {
+  text-decoration: none;
+  margin-top: 0.2em;
+}
+
+/* move fold icon to the left of the header */
+.portletHeader .buttonClose,
+.portletHeader .buttonOpen {
+  float: left;
+  padding-right: 1em;
+}
+
+/* it looks a bit different in ie7 but at least it looks ok... */
+*+html #dashboard .portletHeader a.close {
+  float: none;
+}
+
+#dashboard .portletItem {
+  font-size: 1em;
+  margin: 0;
+  border-style: none solid;
+  border-width: 0.091em;
+  padding: 0.45em 0.818em;
+}
+
+#dashboard .portletFooter {
+  margin: 0em;
+}
+
+
+/* recently modified portlet */
+#dashboard .portletRecent .portletItem .portletItemDetails {
+  display:inline;
+}
+
+
+/* rss portlet */
+#dashboard .portletRss .portletItemDetails  {
+  display: inline;
+}
+
+#dashboard .portletRss span.link-external a {
+  padding: 0 8px 0 0;
+}
+
+
+/* postit portlet */
+#dashboard .portletPostIt .portletHeader,
+#dashboard .portletPostIt .portletItem,
+#dashboard .portletPostIt {
+  border-color: #DCC126 !important;
+}
+
+#dashboard .portletPostIt{
+  background-color: #fffdf4;
+}
+
+#dashboard .portletPostIt .portletItem {
+  font-family: courier;
+  background-color: #fef3c6;
+  padding: 0.5em;
+  padding-left: 1em;
+  margin: 0;
+}
+
+#dashboard .portletPostIt .portletItem span {
+  line-height: 1em;
+  padding: 0;
+}
+
+#dashboard .portletPostIt .portletItem.odd {
+  background-color: #feeead;
+}
+
+#dashboard .portletPostIt .portletItem.even {
+  background-color: #fffedd;
+}
+
+#dashboard .portletPostIt .portletItem a.close img {
+  /* padding: 0.3em 0.454em !important; */
+  padding: 0;
+  position: relative;
+  top: -0.2em;
+}
+
+/* add portlet form */
+#dashboard-add-portlet {
+  overflow: hidden;
+}
+
+#dashboard-add-portlet form {
+  float: right;
+  padding-right: 0.91em;
+  margin-top: 0em;
+}
+
+#dashboard-add-portlet form select {
+  float: left;
+  width: 20em;
+  margin-right: 0.91em;
+}
+
+#dashboard-add-portlet form .submit {
+  float: right;
+}
