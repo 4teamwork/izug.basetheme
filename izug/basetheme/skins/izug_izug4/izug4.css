@@ -29,7 +29,7 @@ body.icons-on *[class*="actionicon-"] {
     line-height: 1.455em;
     margin: 0 0 0.363em;
 }
-
+lo
 #tabbedview-body {
     line-height: 1.454em;
 }
@@ -42,17 +42,6 @@ body.icons-on *[class*="actionicon-"] {
     width: 33.636em;
 }
 
-#overview_overview table {
-    width: 100%;
-    margin: 0 0 0.909em;
-    padding: 0 0 0.909em;
-    border-style: none;
-    border-bottom: 0.182em solid #EFEFEF;
-    background-image: none;
-}
-#overview_overview table td {
-    border-style:none;
-}
 #overview_overview ul {
     list-style: none inside none;
     margin: 0 0 0.909em;
@@ -108,6 +97,7 @@ body.icons-on *[class*="actionicon-"] {
   margin: 0;
   padding: 0 0.818em;
   border-width: 0.091em;
+  border-color:#99C5E3;
 }
 
 #dashboard .portletHeader .fold,
@@ -135,10 +125,13 @@ body.icons-on *[class*="actionicon-"] {
   border-style: none solid;
   border-width: 0.091em;
   padding: 0.45em 0.818em;
+  border-left:1px solid #99C5E3;
+  border-right:1px solid #99C5E3;
 }
 
 #dashboard .portletFooter {
   margin: 0em;
+  border:1px solid #99C5E3;
 }
 
 
@@ -155,6 +148,12 @@ body.icons-on *[class*="actionicon-"] {
 
 #dashboard .portletRss span.link-external a {
   padding: 0 8px 0 0;
+}
+
+/* Favorite / Tasks portlet*/
+#dashboard .portlet.favorite,
+#dashboard .portlet.mytasks {
+    border-bottom: 1px solid #99C5E3;
 }
 
 
@@ -216,4 +215,15 @@ body.icons-on *[class*="actionicon-"] {
 
 #dashboard-add-portlet form .submit {
   float: right;
+}
+
+/* Table styling */
+
+table.vertical.fileListing td,
+table.vertical.fileListing th,
+table.vertical.taskListing td,
+table.vertical.taskListing th,
+table.vertical.MeetingListing td,
+table.vertical.MeetingListing th {
+    border:none;
 }
