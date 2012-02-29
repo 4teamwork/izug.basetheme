@@ -42,6 +42,14 @@ lo
     width: 33.636em;
 }
 
+#overview_overview table td {
+    border-style:none;
+}
+
+#overview_overview table.listing {
+    background:none;
+}
+
 #overview_overview ul {
     list-style: none inside none;
     margin: 0 0 0.909em;
@@ -224,6 +232,35 @@ table.vertical.fileListing th,
 table.vertical.taskListing td,
 table.vertical.taskListing th,
 table.vertical.MeetingListing td,
-table.vertical.MeetingListing th {
+table.vertical.MeetingListing th,
+.MeetingItemBody table.vertical td,
+.MeetingItemBody table.vertical th {
     border:none;
+}
+
+/* Meeting View */
+.MeetingItemWrapper div.MeetingItemHead {
+    border: 0.091em solid #99C5E3;
+    color: #00538C;
+    cursor: pointer;
+    line-height: 2em;
+    margin: 0;
+    padding: 0 0.818em 0 0.454em;
+}
+
+.MeetingItemWrapper .MeetingItemHead a {
+    font-size: 1em;
+    text-decoration:none;
+}
+
+.MeetingItemWrapper .MeetingItemHead img {
+    padding-right: 0;
+    margin-top:0.35em;
+    margin-left: -0.5em;
+}
+
+.MeetingItemBody {
+    border: 0.091em solid #99C5E3;
+    border-top:none;
+    padding: 0 1.5em;
 }
