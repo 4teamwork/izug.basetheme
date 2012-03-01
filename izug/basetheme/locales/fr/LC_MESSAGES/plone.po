@@ -56,22 +56,22 @@ msgstr "Pas de résultat trouvé"
 #. Default: "An item's status (also called its review state) determines who can see it. Another way to control the visibility of an item is with its <strong>Publishing Date</strong>. An item is not publicly searchable before its publishing date. This will prevent the item from showing up in portlets and folder listings, although the item will still be available if accessed directly via its URL."
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:52
 msgid "description_publishing_process_short"
-msgstr ""
+msgstr "Le statut de cet élément (appeler aussi état de révision) détermine la personne qui peut en voir le contenu. Une autre de façon de contrôler la visibilité de cet élément est  de travailler avec <strong>Date de publication</strong>. Un élément ne peut être recherché avant sa date de publication. Cette procédure empêche d'afficher les éléments sur la page d'accueil et dans les listes du classeur, même si ces derniers sont toujours visibles par un accès URL."
 
 #. Default: "Document Actions"
 #: ./izug/basetheme/browser/viewlets_templates/documentactions.pt:6
 msgid "heading_document_actions"
-msgstr ""
+msgstr "Actions pour ce document"
 
 #. Default: "Personal tools"
 #: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:4
 msgid "heading_personal_tools"
-msgstr ""
+msgstr "Outil personnel"
 
 #. Default: "Publishing process"
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:49
 msgid "heading_publishing_process"
-msgstr ""
+msgstr "Procédure de publication"
 
 #. Default: "Search results"
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:64
@@ -81,27 +81,27 @@ msgstr "Resultats de la recherche"
 #. Default: "Select the new state for the selected items."
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:168
 msgid "help_change_status"
-msgstr ""
+msgstr "Choix du nouveau statut pour les éléments séléctionnés"
 
 #. Default: "The date when the item will be published. If no date is selected the item will be published immediately."
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:100
 msgid "help_effective_date"
-msgstr ""
+msgstr "La date effective apparaît quand l'élément est publié. Si aucune date n'est séléctionnée, l'élément est publié immédiatement."
 
 #. Default: "The date when the item expires. This will automatically make the item invisible for others at the given date. If no date is chosen, it will never expire."
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:124
 msgid "help_expiration_date"
-msgstr ""
+msgstr "La date effective apparaît quand l'élément est expiré. Ce qui va automatiquement rendre l'élément invisible pour les autres à la date donnée. Si aucune date n'est choisie, l'élément n'expire jamais."
 
 #. Default: "If checked, this will attempt to modify the status of all content in any selected folders and their subfolders."
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:90
 msgid "help_include_contained_objects"
-msgstr ""
+msgstr "En cas de contrôle le logiciel va essayer de modifier le status de chaque élément dans tous les dossiers  et sous-dossiers séléctionnés."
 
 #. Default: "Will be added to the publishing history. If multiple items are selected, this comment will be attached to all of them."
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:152
 msgid "help_publishing_comments"
-msgstr ""
+msgstr "Va être ajouté dans l'historique des publications. Si de multiples éléments sont séléctionnés ce commentaire va être attaché à chacun d'entre eux."
 
 #. Default: "Advanced Search…"
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:84
@@ -146,12 +146,12 @@ msgstr "Date d'expiration"
 #. Default: "filed under:"
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:148
 msgid "label_filed_under"
-msgstr ""
+msgstr "Déposé sous:"
 
 #. Default: "Include contained items"
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:86
 msgid "label_include_contained_objects"
-msgstr ""
+msgstr "Inclus les éléments stockés"
 
 #. Default: "No change"
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:199
@@ -166,7 +166,7 @@ msgstr "Pas de résultat trouvé"
 #. Default: "Relevance: ${percentage}%"
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:165
 msgid "label_relevance_percentage"
-msgstr ""
+msgstr "Pertinence"
 
 #. Default: "Save"
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:229
@@ -186,7 +186,7 @@ msgstr "Afficher tout"
 #. Default: "LiveSearch &#8595;"
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:82
 msgid "legend_livesearch"
-msgstr ""
+msgstr "Recherche en direct: ${percentage}%"
 
 #. Default: "Advanced Search"
 #: ./izug/basetheme/browser/customized/plone.app.layout.viewlets.searchbox.pt:51
@@ -226,10 +226,11 @@ msgstr "Home"
 #. Default: "Subscribe to an always-updated feed of these search terms"
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:78
 msgid "title_rss_feed"
-msgstr ""
+msgstr "Souscrire à une mise à jour permanente sur ce critère de recherche."
 
 #. Default: "Search Site"
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:37
 msgid "title_search_title"
-msgstr ""
+msgstr "Recherche de site"
+
 
