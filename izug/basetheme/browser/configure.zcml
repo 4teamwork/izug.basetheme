@@ -85,6 +85,17 @@
       layer=".interfaces.IIzug4Specific"
       />
 
+  <!-- izug4 specific comment viewlet -->
+    <browser:viewlet
+        name="plone.comments"
+        for="Products.CMFCore.interfaces.IContentish"
+        layer=".interfaces.IIzug4Specific"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+        view="plone.app.layout.globals.interfaces.IViewView"
+        class="plone.app.layout.viewlets.comments.CommentsViewlet"
+        permission="zope2.View"
+        />
+
   <!-- override for searchbox title-translation-->
   <browser:viewlet
       name="plone.searchbox"
