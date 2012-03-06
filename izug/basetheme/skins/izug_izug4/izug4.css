@@ -50,6 +50,14 @@ lo
     background:none;
 }
 
+#overview_overview table.listing td:first-child {
+    width:25%;
+}
+
+#overview_overview table.listing td:last-child {
+    width:75%;
+}
+
 #overview_overview ul {
     list-style: none inside none;
     margin: 0 0 0.909em;
@@ -264,3 +272,11 @@ table.vertical.MeetingListing th,
     border-top:none;
     padding: 0 1.5em;
 }
+
+/* Fix icon position in several listings */
+#overview_overview .box ul li a img,
+#overview_overview table.listing td a img {
+    margin-top: -6px;
+    padding-right: 0.75em;
+}
+
