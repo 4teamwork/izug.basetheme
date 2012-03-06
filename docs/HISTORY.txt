@@ -5,7 +5,8 @@ Changelog
 1.0.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Custom navigation: indent first child nodes properly when navigation top is visible.
+  [jone]
 
 
 1.0.5 (2012-02-27)
