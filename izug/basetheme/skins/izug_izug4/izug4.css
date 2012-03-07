@@ -172,10 +172,16 @@ lo
     border-bottom: 1px solid #99C5E3;
 }
 
-/* clock portlet */
+/* Clock portlet */
 #dashboard .portlet.sbbclock {
    border-bottom:1px solid #99C5E3;
 }
+
+/* Weather portlet */
+#dashboard .portlet.weather {
+   border-bottom:1px solid #99C5E3;
+}
+
 
 
 /* postit portlet */
