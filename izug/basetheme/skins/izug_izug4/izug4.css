@@ -172,6 +172,11 @@ lo
     border-bottom: 1px solid #99C5E3;
 }
 
+/* clock portlet */
+#dashboard .portlet.sbbclock {
+   border-bottom:1px solid #99C5E3;
+}
+
 
 /* postit portlet */
 #dashboard .portletPostIt .portletHeader,
