@@ -5,6 +5,9 @@ Changelog
 1.0.6 (unreleased)
 ------------------
 
+- Hide listingBar on blog entries for izug.
+  [mathias.leimgruber]
+
 - Hide plone.comments for izug.
   [mathias.leimgruber]
 
