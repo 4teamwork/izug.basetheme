@@ -23,9 +23,11 @@ jq(document).ready(function() {
     });
 
     /* extjs loads a blank image from extjs.com - we want to prevent that */
-    if (window.Ext != undefined) {
-        Ext.BLANK_IMAGE_URL= jq("#portal-logo").url() + "/s.gif";
-    }
+    jQuery(function($){
+        if (window.Ext != undefined) {
+            Ext.BLANK_IMAGE_URL= $("#portal-logo").attr('href') + "/s.gif";
+        }
+    });
 
     /* zug collapsible */
     jq('dl.zugCollapsible dd').hide();
