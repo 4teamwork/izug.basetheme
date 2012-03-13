@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.6 (unreleased)
+1.0.6 (2012-03-13)
 ------------------
 
 - Hide listingBar on blog entries for izug.
