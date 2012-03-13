@@ -11,6 +11,12 @@ Changelog
 - Hide plone.comments for izug.
   [mathias.leimgruber]
 
+- #1528 Behoerden - Kontaktformular mit aforms2web
+  https://extranet.4teamwork.ch/support/zug/maintlog/1528/
+  hack in zug_siteactions.pt to open contactform in new window. see comment
+  in template for more infos.
+  [eschmutz]
+
 
 1.0.5 (2012-02-27)
 ------------------
@@ -46,6 +52,8 @@ Changelog
 - #1739 Arbeitsplatz - Beschränkung folder_overview bei Fokus und Bibliothek
   https://extranet.4teamwork.ch/support/zug/maintlog/1739/
   remove condition which block the batching in topics
+
+- Fix error of searchbox viewlet when accessing manage-viewlets in zug.ch
   [eschmutz]
 
 - Added sprite icon for KOM.SKO case dossier
