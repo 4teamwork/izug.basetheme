@@ -291,3 +291,30 @@ table.vertical.MeetingListing th,
     padding-right: 0.75em;
 }
 
+/* Tooltip CSS*/
+div.bottomImage {
+    background: url("tooltip_bottom.png") no-repeat scroll center bottom transparent;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 1.6em;
+    left:0em;
+}
+
+body div.tooltip {
+    background-color: #FFFFFF;
+    border-color: #006FBA;
+    border-style: solid solid none;
+    border-width: 0.091em;
+    box-shadow: 0.091em 0 #006FBA;
+    color: #111111 !important;
+    font-size: 1.1em;
+    padding: 0.454em 0.909em;
+    position: absolute;
+    width: 25em;
+    z-index: 3000;
+    display:block;
+    opacity:1 !important;
+}
+
+
