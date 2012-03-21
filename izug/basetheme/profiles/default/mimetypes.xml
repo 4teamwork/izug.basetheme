@@ -13,10 +13,16 @@
            icon_path="icon_dokument_bilddatei.gif" />
  <mimetype mimetypes="message/rfc822" 
            icon_path="icon_dokument_email.gif" />
- <mimetype mimetypes="application/vnd.ms-excel
-                      application/msexcel
-                      application/x-msexcel" 
-           icon_path="icon_dokument_excel.gif" />
+
+<mimetype name="Excel spreadsheet" binary="True"
+          extensions="xlm xlt xlb xlc xla xls xlw xlsx"
+          globs="*.xls *.xlc *.xll *.xlm *.xlw *.xla *.xlt *.xld *.xlsx"
+          icon_path="icon_dokument_excel.gif"
+          mimetypes="application/msexcel
+                     application/vnd.ms-excel
+                     application/x-msexcel
+                     application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+
  <mimetype mimetypes="application/pdf
                       application/x-pdf
                       image/pdf"

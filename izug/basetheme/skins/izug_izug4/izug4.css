@@ -1,0 +1,18 @@
+body.icons-on *[class*="contenttype-"],
+body.icons-on *[class*="actionicon-"] {
+    background-image:none;
+    padding:0;
+}
+
+.actionMenu .actionMenuContent li a[class*="actionicon-"],
+.actionMenu .actionMenuContent li a[class*="contenttype-"] {
+    padding:0 !important;
+}
+
+.actionMenu .actionMenuContent li a img {
+    display:none;
+}
+
+.actionMenu .actionMenuContent li a {
+    padding-left:0.5em !important;
+}

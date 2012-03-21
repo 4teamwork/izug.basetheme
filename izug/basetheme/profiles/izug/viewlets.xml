@@ -15,4 +15,7 @@
         <viewlet name="plone.belowcontenttitle.documentbyline"/>
         <viewlet name="ftw.contentviews"/>
     </hidden>
+    <hidden manager="plone.belowcontent" skinname="iZug Base Theme">
+        <viewlet name="plone.comments" />
+    </hidden>
 </object>

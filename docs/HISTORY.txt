@@ -2,8 +2,55 @@ Changelog
 =========
 
 
-1.0.4 (unreleased)
+1.0.8 (unreleased)
 ------------------
+
+- Nothing changed yet.
+
+
+1.0.7 (2012-03-13)
+------------------
+
+- Remove umlauts from changelog *grml*
+  [mathias.leimgruber]
+
+
+1.0.6 (2012-03-13)
+------------------
+
+- Hide listingBar on blog entries for izug.
+  [mathias.leimgruber]
+
+- Hide plone.comments for izug.
+  [mathias.leimgruber]
+
+- #1528 Behoerden - Kontaktformular mit aforms2web
+  https://extranet.4teamwork.ch/support/zug/maintlog/1528/
+  hack in zug_siteactions.pt to open contactform in new window. see comment
+  in template for more infos.
+  [eschmutz]
+
+
+1.0.5 (2012-02-27)
+------------------
+
+- portal messages: add close icon.
+  Issue #1757 Arbeitsplatz - Inhalt verschiebt sich beim Verschwinden von Info-Meldungen
+  https://extranet.4teamwork.ch/support/zug/maintlog/1757
+  [jone]
+
+
+1.0.4 (2012-02-24)
+------------------
+
+- Added french translations.
+  [ttschanz]
+
+- Added specific task icons to sprites (remotetask, subtask).
+  [jone]
+
+- Fixed mime type for XLSX documents
+  [lgraf]
 
 - Added profiles for seantis directories service.
   [mathias.leimgruber]
@@ -12,9 +59,14 @@ Changelog
 1.0.3 (2012-02-06)
 ------------------
 
-- #1739 Arbeitsplatz - Beschränkung folder_overview bei Fokus und Bibliothek
+- Added icon for related documents to CSS sprite
+  [lgraf]
+
+- #1739 Arbeitsplatz - Beschraenkung folder_overview bei Fokus und Bibliothek
   https://extranet.4teamwork.ch/support/zug/maintlog/1739/
   remove condition which block the batching in topics
+
+- Fix error of searchbox viewlet when accessing manage-viewlets in zug.ch
   [eschmutz]
 
 - Added sprite icon for KOM.SKO case dossier

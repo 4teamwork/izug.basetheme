@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-10-26 07:07+0000\n"
-"PO-Revision-Date: 2011-01-14 18:20+0100\n"
-"Last-Translator: Jonas Baumann <j.baumann@4teamwork.ch>\n"
-"Language-Team: 4teamwork <info@4teamwork.ch>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,29 +15,27 @@ msgstr ""
 #. Default: "last modified"
 #: ./izug/basetheme/browser/viewlets_templates/byline.pt:35
 msgid "box_last_modified"
-msgstr "Von: "
+msgstr "De :"
 
 #. Default: "Created: ${date}"
 #: ./izug/basetheme/browser/viewlets_templates/byline.pt:14
 msgid "byline_created"
-msgstr "Erstellt: ${date}"
+msgstr "Créé : "
 
 #. Default: "This search form enables you to find content on the site by specifying one or more search terms. <br /> Remember that you can use the quick search anytime, it's normally good enough, this search form is just if you want to be more specific."
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:60
 msgid "description_advanced_search"
-msgstr ""
+msgstr "La recherche avancée permet de spécifier un ou plusieurs critères de recherches. La recherche rapide est à disposition à tout moment et fournit des résultats pertinents."
 
 #. Default: "Advanced search for content"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:57
 msgid "heading_advanced_search"
-msgstr "Erweiterte Suche"
+msgstr "Recherche avancée"
 
-#. Default: "<div> <input id=\"checked_out\" name=\"checked_out\" type=\"text\" /> </div>"
 #: ./izug/basetheme/browser/document_search.pt:66
 msgid "help_search_checked_out"
 msgstr ""
 
-#. Default: "<input id=\"creator\" class=\"responsible_search\" name=\"creator\" type=\"text\" />"
 #: ./izug/basetheme/browser/document_search.pt:57
 msgid "help_search_creator"
 msgstr ""
@@ -45,18 +43,17 @@ msgstr ""
 #. Default: "Give a range for the deadline."
 #: ./izug/basetheme/browser/task_search.pt:24
 msgid "help_search_deadline"
-msgstr "Geben sie einen Datumsbereich an"
+msgstr "Délimitation des délais"
 
 #. Default: "Give a range for the deliver date."
 #: ./izug/basetheme/browser/document_search.pt:21
 msgid "help_search_delivery_date"
-msgstr ""
+msgstr "Délimitation des dates de transmission"
 
 #: ./izug/basetheme/browser/dossier_search.pt:5
 msgid "help_search_description"
 msgstr ""
 
-#. Default: "<input id=\"document_author\" name=\"document_author\" type=\"text\" />"
 #: ./izug/basetheme/browser/document_search.pt:48
 msgid "help_search_document_author"
 msgstr ""
@@ -64,19 +61,18 @@ msgstr ""
 #. Default: "Give a range for the document date."
 #: ./izug/basetheme/browser/document_search.pt:35
 msgid "help_search_document_date"
-msgstr ""
+msgstr "Délimitation des dates du document"
 
 #. Default: "Give a range for the end date."
 #: ./izug/basetheme/browser/dossier_search.pt:33
 msgid "help_search_end"
-msgstr ""
+msgstr "Délimitation de la date de clôture"
 
 #. Default: "Return the item wiht the expected reference Number"
 #: ./izug/basetheme/browser/dossier_search.pt:71
 msgid "help_search_filing_number"
-msgstr ""
+msgstr "Retourne l'élément avec le numéro d'inventaire"
 
-#. Default: "<input id=\"issuer\" class=\"responsible_search\" name=\"issuer\" type=\"text\" />"
 #: ./izug/basetheme/browser/task_search.pt:5
 msgid "help_search_issuer"
 msgstr ""
@@ -84,17 +80,17 @@ msgstr ""
 #. Default: "for the type specific fields, you have to select one ore more."
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:86
 msgid "help_search_portal_type"
-msgstr ""
+msgstr "Pour ce type ce champs spécifique, vous devez en séléctionner un ou plusieurs."
 
 #. Default: "Give a range for the receipt date."
 #: ./izug/basetheme/browser/document_search.pt:7
 msgid "help_search_receipt_date"
-msgstr ""
+msgstr "Délimitez les dates de réception"
 
 #. Default: "Return the item wiht the expected reference Number"
 #: ./izug/basetheme/browser/dossier_search.pt:47
 msgid "help_search_reference_number"
-msgstr ""
+msgstr "Retourne l'élément avec le numéro d'inventaire"
 
 #. Default: "<input class=\"responsible_search\" name=\"responsible\" type=\"text\" />"
 #: ./izug/basetheme/browser/dossier_search.pt:82
@@ -105,12 +101,12 @@ msgstr ""
 #. Default: "Return the item wiht the expected sequence Number"
 #: ./izug/basetheme/browser/dossier_search.pt:59
 msgid "help_search_sequence_number"
-msgstr ""
+msgstr "Retourne l'élément avec le numéro de séquence"
 
 #. Default: "Give a range for the start date."
 #: ./izug/basetheme/browser/dossier_search.pt:19
 msgid "help_search_start"
-msgstr ""
+msgstr "Délimitation de la date d'enregistrement"
 
 #: ./izug/basetheme/browser/dossier_search.pt:89
 msgid "help_search_state"
@@ -119,74 +115,74 @@ msgstr ""
 #. Default: "For a simple text search, enter your search term here. Multiple words may be found by combining them with <strong>AND</strong> and <strong>OR</strong>. The text in this field will be matched with items' contents, title and description."
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:99
 msgid "help_search_title"
-msgstr ""
+msgstr "Pour une recherche simple, entrez votre critère de recherche ici. Plusieurs mots peuvent être combinés en utilisant AND et OR. Le texte dans ce champ est accordé avec des éléments du contenu, du titre et de la description"
 
 #. Default: "Advanced Search…"
 #: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:47
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:84
 msgid "label_advanced_search"
-msgstr "Erweiterte Suche"
+msgstr "Recherche avancée"
 
 #. Default: "All types"
 #: ./izug/basetheme/browser/task_search.pt:40
 #: ./izug/basetheme/browser/viewlets_templates/byline.pt:16
+#, fuzzy
 msgid "label_by_authorlabel_all_types"
-msgstr ""
+msgstr "Par ${author}"
 
 #. Default: "Filing Number"
 #: ./izug/basetheme/browser/dossier_search.pt:67
 msgid "label_filling_number"
-msgstr "Ablagenummer"
+msgstr "Numéro d'inventaire"
 
 #. Default: "No matching results found."
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:83
 msgid "label_no_results_found"
-msgstr "Keine Treffer"
+msgstr "Pas de résultat"
 
-#. Default: "Search"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:121
 msgid "label_search"
-msgstr "Suchen"
+msgstr "Rechercher"
 
 #. Default: "Checked out by"
 #: ./izug/basetheme/browser/document_search.pt:63
 msgid "label_search_checked_out"
-msgstr "Ausgecheckt von"
+msgstr "Checkout fait par"
 
 #. Default: "Creator"
 #: ./izug/basetheme/browser/document_search.pt:54
 msgid "label_search_creator"
-msgstr "Ersteller"
+msgstr "Créateur"
 
 #. Default: "Deadline"
 #: ./izug/basetheme/browser/task_search.pt:20
 msgid "label_search_deadline"
-msgstr "Frist"
+msgstr "Délai"
 
 #. Default: "delivery date"
 #: ./izug/basetheme/browser/document_search.pt:17
 msgid "label_search_delivery_date"
-msgstr "Ausgangsdatum"
+msgstr "Date de remise"
 
 #. Default: "Description"
 #: ./izug/basetheme/browser/dossier_search.pt:3
 msgid "label_search_description"
-msgstr "Beschreibung"
+msgstr "Description"
 
 #. Default: "Document"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:92
 msgid "label_search_document"
-msgstr "Dokument"
+msgstr "Document"
 
 #. Default: "Document author"
 #: ./izug/basetheme/browser/document_search.pt:45
 msgid "label_search_document_author"
-msgstr "Autor"
+msgstr "Auteur"
 
 #. Default: "document date"
 #: ./izug/basetheme/browser/document_search.pt:31
 msgid "label_search_document_date"
-msgstr "Dokumentdatum"
+msgstr "Date du document"
 
 #. Default: "Dossier"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:90
@@ -196,76 +192,76 @@ msgstr "Dossier"
 #. Default: "End"
 #: ./izug/basetheme/browser/dossier_search.pt:29
 msgid "label_search_end"
-msgstr "Ende"
+msgstr "Fin"
 
 #. Default: "receipt_date"
 #: ./izug/basetheme/browser/document_search.pt:3
 msgid "label_search_receipt_date"
-msgstr "Eingangsdatum"
+msgstr "Date d'entrée"
 
 #. Default: "Start"
 #: ./izug/basetheme/browser/dossier_search.pt:16
 msgid "label_search_start"
-msgstr "Start"
+msgstr "Début"
 
 #. Default: "Review State"
 #: ./izug/basetheme/browser/dossier_search.pt:88
 msgid "label_search_state"
-msgstr "Status"
+msgstr "Etat"
 
 #. Default: "Task"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:94
 msgid "label_search_task"
-msgstr "Aufgabe"
+msgstr "Tâche"
 
 #. Default: "Task type"
 #: ./izug/basetheme/browser/task_search.pt:34
 msgid "label_search_tasktype"
-msgstr "Auftragstyp"
+msgstr "Type de mandat"
 
 #. Default: "Title"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:97
 msgid "label_search_title"
-msgstr "Titel"
+msgstr "Titre"
 
 #. Default: "Also display trashed items"
 #: ./izug/basetheme/browser/document_search.pt:76
 msgid "label_search_trashed"
-msgstr "Papierkorb auch durchsuchen"
+msgstr "Parcourir également la corbeille"
 
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:85
 msgid "label_search_type"
-msgstr "Suchen nach:"
+msgstr "Rechercher:"
 
 #. Default: "only in current section"
 #: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:34
 msgid "label_searchbox_currentfolder_only"
-msgstr "nur im momentanen Ordner"
+msgstr "Uniquement le répertoire actuel"
 
 #. Default: "Show all…"
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:85
 msgid "label_show_all"
-msgstr "Alle anzeigen"
+msgstr "Tout afficher"
 
 #. Default: "zum Seitenanfang"
 #: ./izug/basetheme/browser/viewlets_templates/siteactions.pt:3
 msgid "label_to_top"
-msgstr "zum Seitenanfang"
+msgstr "Vers le début de page"
 
 #. Default: "LiveSearch &#8595;"
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:82
 msgid "legend_livesearch"
-msgstr "LiveSearch &#8595;"
+msgstr "Recherche en direct"
 
 #. Default: "Responsible"
 #: ./izug/basetheme/browser/dossier_search.pt:79
 #: ./izug/basetheme/browser/task_search.pt:11
 msgid "responsible"
-msgstr "Verantwortlich"
+msgstr "Responsable"
 
 #. Default: "${text} search through"
 #: ./izug/basetheme/browser/viewlets.py:
 msgid "searchbox_title"
-msgstr "${text} durchsuchen"
+msgstr "${text} parcourir"
 
 

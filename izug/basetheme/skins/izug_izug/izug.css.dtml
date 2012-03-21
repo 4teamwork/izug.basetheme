@@ -505,3 +505,11 @@ tr.state_published_internet td.column1 {
 	font-size:1.1em;
 
 }
+
+/* -------------------------------------------------------------------------------------
+ Blog styles
+ ======================================================================================*/
+
+ body.template-blog_entry_view .listingBar {
+     display:none;
+ }
