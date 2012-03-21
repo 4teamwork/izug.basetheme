@@ -264,3 +264,11 @@ form.seantis-directory-search, form.seantis-directory-filter {
     width: auto;
     display: block;
 }
+
+
+/* Small fix in personal tools */
+
+#portal-personaltools li > span {
+    display:none;
+}
+
