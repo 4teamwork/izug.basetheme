@@ -71,6 +71,11 @@ lo
     border: 1px solid #99BAD1;
 }
 
+.blogView .actionsBar {
+    display:none;
+}
+
+
 
 /* DASHBOARD */
 /* use four columns with limited width */
