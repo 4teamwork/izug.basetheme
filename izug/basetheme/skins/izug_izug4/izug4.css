@@ -18,6 +18,17 @@ body.icons-on *[class*="actionicon-"] {
 }
 
 
+/* Search viewlet */
+.searchSection {
+    left: -29em;
+    position: relative;
+    top: -1.8em;
+    display:block;
+}
+
+.searchSection label {
+    display:none;
+}
 
 /* TABBED VIEW */
 .tabbedview_view .tabbedview_search {
