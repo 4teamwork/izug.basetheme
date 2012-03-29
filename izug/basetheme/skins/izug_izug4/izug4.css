@@ -178,6 +178,10 @@ lo
   display: inline;
 }
 
+#dashboard .portletRss .portletItem.brokenRss {
+    border-bottom:1px solid #99C5E3;
+}
+
 #dashboard .portletRss span.link-external a {
   padding: 0 8px 0 0;
 }
