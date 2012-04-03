@@ -6,6 +6,8 @@
   <stylesheet id="member.css" enabled="False"/>
   <!-- IE 8 still needs special care -->
   <stylesheet id="IEFixes.css" conditionalcomment="lt IE 9"/>
+  <!-- IE 9 still needs special care -->
+  <stylesheet id="IE9Fixes.css" conditionalcomment="IE 9"/>
   <!-- safari / chrome need some fixes too -->
   <stylesheet title=""
      cacheable="True" compression="safe" conditionalcomment="" cookable="True"
