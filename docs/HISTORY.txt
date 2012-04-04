@@ -5,7 +5,7 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
-- Add IE9 style-fixes for extjs table
+- Add fixes for extjs table styles
   [eschmutz]
 
 - Added browserlayer for directoryservice
