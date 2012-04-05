@@ -1755,4 +1755,9 @@ div.ac_results .ac_over {
 #message_no_contents p{
     padding: 2em 0em 0em 0em;
 }
+
+/* extjs-table */
+.x-menu li{
+	margin-bottom:0.5em;
+}
 /* </dtml-with> */
