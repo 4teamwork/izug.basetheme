@@ -30,6 +30,11 @@
 
   <head>
 
+      <tal:ie_on_edit condition="python:'template-atct_edit' in plone_view.bodyClass(template, view)">
+          <meta http-equiv="X-UA-Compatible" content="IE=8" />
+      </tal:ie_on_edit>
+
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <meta name="generator" content="Plone - http://plone.org" />

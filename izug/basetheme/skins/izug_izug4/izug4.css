@@ -90,6 +90,11 @@ lo
 
 /* DASHBOARD */
 /* use four columns with limited width */
+
+#dashboard {
+    float:left;
+}
+
 .template-dashboard .documentFirstHeading,
 .template-dashboard #viewlet-above-content {
   display: none;
@@ -106,7 +111,7 @@ lo
 #dashboard-portlets4 {
   float: left;
   margin-right: 1.363em;
-  width: 22.727em;
+  width: 22.7em;
 }
 
 #dashboard-portlets3 {
@@ -170,6 +175,10 @@ lo
 /* recently modified portlet */
 #dashboard .portletRecent .portletItem .portletItemDetails {
   display:inline;
+}
+
+#dashboard .dashboardButton.buttonMove {
+    display:none;
 }
 
 
