@@ -346,4 +346,9 @@ body div.tooltip {
     opacity:1 !important;
 }
 
+/* ExtJS table */
 
+.x-panel,
+.x-panel-body {
+    border: none;
+}
