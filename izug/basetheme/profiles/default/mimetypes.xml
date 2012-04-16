@@ -27,20 +27,30 @@
                       application/x-pdf
                       image/pdf"
            icon_path="icon_dokument_pdf.gif" />
- <mimetype mimetypes="application/vnd.ms-powerpoint
-                      application/powerpoint
-                      application/mspowerpoint
-                      application/x-mspowerpoint" 
-           icon_path="icon_dokument_powerpoint.gif" />
+     
+<mimetype name="Microsoft PowerPoint presentation" binary="True"
+          extensions="pwz ppt pps ppa pptx"
+          globs="*.ppz *.ppt *.pps *.pot *.pptx"
+          icon_path="icon_dokument_powerpoint.gif"
+          mimetypes="application/vnd.ms-powerpoint
+                     application/powerpoint
+                     application/mspowerpoint
+                     application/x-mspowerpoint"/>
+
  <mimetype mimetypes="text/plain" 
            icon_path="icon_dokument_text.gif" />
  <mimetype mimetypes="application/vnd.visio" 
            icon_path="icon_dokument_visio.gif" />
  <mimetype mimetypes="text/html" 
            icon_path="icon_dokument_webdokument.gif" />
- <mimetype mimetypes="application/msword
-                      application/vnd.openxmlformats-officedocument.wordprocessingml.document" 
-           icon_path="icon_dokument_word.gif" />
+           
+<mimetype name="Microsoft Word Document" binary="True"
+          extensions="doc wiz dot docx dotx"
+          globs="*.doc *.docx *.dotx"
+          icon_path="icon_dokument_word.gif"
+          mimetypes="application/msword
+                     application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+
  <mimetype mimetypes="application/zip
                       application/x-zip-compressed" 
            icon_path="icon_dokument_zip.gif" />
