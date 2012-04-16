@@ -12,6 +12,7 @@ class IOpengeverSpecific(Interface):
     OpenGever.
     """
 
+
 class IIzugSpecific(Interface):
     """Marker interface that defines a Zope 3 browser layer specific for izug.
     """
@@ -25,3 +26,7 @@ class IIzug4Specific(Interface):
 class IZugSpecific(Interface):
     """Marker interface that defines a Zope 3 browser layer specific for zug.
     """
+
+
+class IDirectorySpecific(Interface):
+    """Marker Interface for directories"""

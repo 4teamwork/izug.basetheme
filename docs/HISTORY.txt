@@ -2,11 +2,43 @@ Changelog
 =========
 
 
-1.0.6 (unreleased)
+1.0.8 (unreleased)
 ------------------
+
+- Added izug4 profile
+  [mathias.leimgruber]
 
 - Custom navigation: indent first child nodes properly when navigation top is visible.
   [jone]
+
+- Add fixes for extjs table styles
+  [eschmutz]
+
+- Added browserlayer for directoryservice
+  [mathias.leimgruber]
+
+
+1.0.7 (2012-03-13)
+------------------
+
+- Remove umlauts from changelog *grml*
+  [mathias.leimgruber]
+
+
+1.0.6 (2012-03-13)
+------------------
+
+- Hide listingBar on blog entries for izug.
+  [mathias.leimgruber]
+
+- Hide plone.comments for izug.
+  [mathias.leimgruber]
+
+- #1528 Behoerden - Kontaktformular mit aforms2web
+  https://extranet.4teamwork.ch/support/zug/maintlog/1528/
+  hack in zug_siteactions.pt to open contactform in new window. see comment
+  in template for more infos.
+  [eschmutz]
 
 
 1.0.5 (2012-02-27)
@@ -30,6 +62,10 @@ Changelog
 - Fixed mime type for XLSX documents
   [lgraf]
 
+
+- Add mimetype for adobe indesign
+  [eschmutz]
+
 - Added profiles for seantis directories service.
   [mathias.leimgruber]
 
@@ -40,9 +76,11 @@ Changelog
 - Added icon for related documents to CSS sprite
   [lgraf]
 
-- #1739 Arbeitsplatz - Beschränkung folder_overview bei Fokus und Bibliothek
+- #1739 Arbeitsplatz - Beschraenkung folder_overview bei Fokus und Bibliothek
   https://extranet.4teamwork.ch/support/zug/maintlog/1739/
   remove condition which block the batching in topics
+
+- Fix error of searchbox viewlet when accessing manage-viewlets in zug.ch
   [eschmutz]
 
 - Added sprite icon for KOM.SKO case dossier

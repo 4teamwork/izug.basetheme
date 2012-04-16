@@ -80,7 +80,7 @@ msgstr ""
 #. Default: "for the type specific fields, you have to select one ore more."
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:86
 msgid "help_search_portal_type"
-msgstr ""
+msgstr "Pour ce type ce champs spécifique, vous devez en séléctionner un ou plusieurs."
 
 #. Default: "Give a range for the receipt date."
 #: ./izug/basetheme/browser/document_search.pt:7
@@ -123,7 +123,7 @@ msgstr "Pour une recherche simple, entrez votre critère de recherche ici. Plusi
 msgid "label_advanced_search"
 msgstr "Recherche avancée"
 
-#. Default: "by ${author}"
+#. Default: "All types"
 #: ./izug/basetheme/browser/task_search.pt:40
 #: ./izug/basetheme/browser/viewlets_templates/byline.pt:16
 #, fuzzy
@@ -263,4 +263,5 @@ msgstr "Responsable"
 #: ./izug/basetheme/browser/viewlets.py:
 msgid "searchbox_title"
 msgstr "${text} parcourir"
+
 

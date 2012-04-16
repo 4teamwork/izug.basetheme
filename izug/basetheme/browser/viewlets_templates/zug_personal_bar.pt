@@ -7,14 +7,22 @@
     tal:condition="python:view.user_actions or not view.anonymous"
     class="visualInline">
     <tal:actions tal:repeat="action view/user_actions">
+
         <li tal:condition="python:action['id']!='join'">
             <tal:if tal:condition="python: action['id'] in ['logout', 'login']">
             	<span><tal:block i18n:translate="">myZug</tal:block>:</span>
             </tal:if>
+			<!-- HACK for target attribute. we need to open the contactform in a new
+			window. Thats not possible to set over the portal_actions. So we need
+			to do it in the template. -->
             <a href=""
-               tal:define="accesskey python: accesskeys.get(action['id'], '');"
+               tal:define="accesskey python: accesskeys.get(action['id'], '');
+                           target python: action.get(
+	                           'id', '') == 'contact' and '_blank' or '_self';"
                tal:attributes="href action/url;
-                               accesskey accesskey;"
+                               accesskey accesskey;
+                               target target;"
+
             ><tal:actionname i18n:translate="" 
                              tal:content="action/title">dummy</tal:actionname
             ></a>
