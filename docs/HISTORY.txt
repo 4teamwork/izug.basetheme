@@ -5,6 +5,9 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
+- Add mime type for DOCX and PPTX documents
+  [eschmutz]
+
 - Added CSS to override fonts for ExtJS tables
   [lgraf]
 
