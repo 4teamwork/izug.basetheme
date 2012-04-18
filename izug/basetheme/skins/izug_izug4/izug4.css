@@ -347,8 +347,45 @@ body div.tooltip {
 }
 
 /* ExtJS table */
-
 .x-panel,
 .x-panel-body {
     border: none;
+}
+
+/* Listing bars tabbedview */
+#tabbedview-body .listingBar {
+    background-color:transparent;
+    font-size:1.0em;
+}
+
+#tabbedview-body .listingBar a {
+    border-color: #111111;
+    border-style: solid;
+    border-width: 0.091em 0.182em 0.182em 0.091em;
+    color: #111111;
+    margin: 0 0 0 0;
+    padding: 0 0.363em;
+    text-decoration: none;
+}
+
+
+#tabbedview-body .listingBar span.next a span,
+#tabbedview-body .listingBar span.previous a span {
+    border:none;
+}
+
+#tabbedview-body .listingBar span a,
+#tabbedview-body .listingBar span span,
+#tabbedview-body .listingBar span.current {
+    display:inline;
+    float:none;
+}
+
+#tabbedview-body .listingBar span.current {
+    margin:0;
+}
+
+#tabbedview-body .listingBar .bracketstart,
+#tabbedview-body .listingBar .bracketclose {
+    display:none;
 }
