@@ -7,7 +7,7 @@
    <element value="Link"/>
   </property>
   <property name="navigation_hide_types_if_not_current" type="lines">
-   <element value="Arbeitsraum"/>
+   <element value="Workspace"/>
   </property>
   <property name="zugBottomLevel" type="string">4</property>
  </object>
