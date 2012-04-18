@@ -1495,6 +1495,26 @@ div.to_top a:hover {
 }
 
 
+/* The izug4.css does disable sprites in some cases. However,
+   in watcher portlet there may still be sprites used but it is
+   detected in the portlet and css classes are removed if there
+   are icons. Thus we can reenable sprites for this portlet.
+   We need to do it here for defining the background image
+   properly.
+*/
+body.icons-on .portletWatcher *[class*="contenttype-"],
+body.icons-on .portletWatcher *[class*="mimetype-"],
+body.icons-on .portletWatcher *[class*="wf-"],
+body.icons-on .portletWatcher *[class*="function-"],
+body.icons-on .portletWatcher *[class*="actionicon-"],
+body.icons-on .portletWatcher *[class*="icon-"] {
+  background-image: url(&dtml-portal_url;/zugsprite.png) !important;
+  padding: 0.2em 0.7em 0.2em 0.6em !important;
+  padding: 0.2em 0 0.2em 2em !important;
+  height: 17px;
+}
+
+
 .000no-icon{ background-position: 0 0;  }
 .actionicon-folder_factories-add_participant, .contenttype-contact, .contenttype-mitglied, .contenttype-opengever-contact-contact, .contenttype-stelle, .contenttype-zugmitglied, .function-user{ background-position: 0 -66px;  }
 .actionicon-folder_factories-add_tasktemplate, .contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -132px;  }
@@ -1918,5 +1938,3 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 }
 
 /* </dtml-with> */
-
-
