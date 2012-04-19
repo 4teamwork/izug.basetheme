@@ -1865,7 +1865,6 @@ div.ac_results .ac_over {
     padding: 2em 0em 0em 0em;
 }
 
-<<<<<<< HEAD
 /* extjs table */
 .x-panel-body {
     border-style: none;
