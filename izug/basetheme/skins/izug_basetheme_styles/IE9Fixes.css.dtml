@@ -22,4 +22,10 @@ div.x-grid3-viewport {
     min-height: 0%;
 }
 
+/* Fix for IE9 where external edit icon is cut off */
+/* Mainly relevant for OpenGever, shouldn't hurt iZug though */
+.x-grid3-col-external_edit_link a {
+  line-height: 15px !important;
+}
+
 /* </dtml-with> */

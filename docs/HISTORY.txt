@@ -5,6 +5,9 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
+- Added IE9 fix for cut off external editor icon in ExtJS enabled tabbedview
+  [lgraf]
+
 - Added IE9 fix for growing content when hovering over ftw table rows
   See http://blog.brianrichards.net/post/6721471926/ie9-hover-bug-workaround
   [lgraf]
