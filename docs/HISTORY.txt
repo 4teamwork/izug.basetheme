@@ -5,17 +5,18 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
-<<<<<<< HEAD
 - Added izug4 profile
   [mathias.leimgruber]
 
 - Custom navigation: indent first child nodes properly when navigation top is visible.
   [jone]
-=======
+
+- Added IE9 fix for cut off external editor icon in ExtJS enabled tabbedview
+  [lgraf]
+
 - Added IE9 fix for growing content when hovering over ftw table rows
   See http://blog.brianrichards.net/post/6721471926/ie9-hover-bug-workaround
   [lgraf]
->>>>>>> Added IE9 fix for growing content when hovering over ftw table rows
 
 - Add fixes for extjs table styles
   [eschmutz]
