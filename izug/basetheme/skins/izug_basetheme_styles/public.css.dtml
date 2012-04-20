@@ -1760,4 +1760,12 @@ div.ac_results .ac_over {
 .x-menu li{
 	margin-bottom:0.5em;
 }
+
+/* Override fonts for ExtJS tables */
+.x-grid3 td,
+.x-menu a,
+.x-grid-group-hd div.x-grid-group-title {
+  font-family: Verdana,Arial,Helvetica,sans-serif !important; 
+}
+
 /* </dtml-with> */
