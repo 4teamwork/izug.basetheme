@@ -11,6 +11,9 @@ Changelog
 - Custom navigation: indent first child nodes properly when navigation top is visible.
   [jone]
 
+- Added CSS to override fonts for ExtJS tables
+  [lgraf]
+
 - Added IE9 fix for cut off external editor icon in ExtJS enabled tabbedview
   [lgraf]
 
