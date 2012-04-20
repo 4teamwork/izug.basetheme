@@ -18,9 +18,8 @@ table.x-grid3-row-table div.x-grid3-cell-inner a {
 
 /* Fixes IE9 bug where content grows when hovering over dynamically generated content
    See http://blog.brianrichards.net/post/6721471926/ie9-hover-bug-workaround for details */
-div#listing_container {
+div.x-grid3-viewport {
     min-height: 0%;
 }
-
 
 /* </dtml-with> */
