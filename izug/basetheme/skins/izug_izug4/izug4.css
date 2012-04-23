@@ -76,6 +76,12 @@ lo
     border-bottom: 0.182em solid #EFEFEF;
 }
 
+
+#tabbedview-body span.linkWrapper a img {
+    padding-right:0.5em;
+}
+
+
 /* Blog styles (Fokus) */
 .blogView .actionsBarContent {
     background-color: #DEDEDE ;
