@@ -59,6 +59,7 @@ lo
 
 #overview_overview table.listing {
     background:none;
+    width:100%;
 }
 
 #overview_overview table.listing td:first-child {
