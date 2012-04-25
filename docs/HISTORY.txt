@@ -32,6 +32,9 @@ Changelog
 1.0.6 (2012-03-13)
 ------------------
 
+- Ajdust translation from the serach_results template.
+  [phgross]
+
 - Hide listingBar on blog entries for izug.
   [mathias.leimgruber]
 
