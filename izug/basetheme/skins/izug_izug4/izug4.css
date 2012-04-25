@@ -259,6 +259,15 @@ lo
   top: -0.2em;
 }
 
+/* watcher portlet */
+#dashboard .portletWatcher {
+  border-bottom: 1px solid #99C5E3;
+}
+
+#dashboard .portletWatcher .portletFooter {
+  border-bottom-width: 0px;
+}
+
 /* add portlet form */
 #dashboard-add-portlet {
   overflow: hidden;
