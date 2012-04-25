@@ -1,48 +1,58 @@
 <?xml version="1.0"?>
 <object name="mimetypes_registry" meta_type="MimeTypes Registry">
- <mimetype mimetypes="image/gif" 
+ <mimetype mimetypes="image/gif"
            icon_path="icon_dokument_bilddatei.gif" />
  <mimetype mimetypes="image/jpeg
-                      image/pjpeg" 
+                      image/pjpeg"
            icon_path="icon_dokument_bilddatei.gif" />
- <mimetype mimetypes="image/png" 
+ <mimetype mimetypes="image/png"
            icon_path="icon_dokument_bilddatei.gif" />
  <mimetype mimetypes="image/bmp
                       image/x-bmp
                       image/x-MS-bmp"
            icon_path="icon_dokument_bilddatei.gif" />
- <mimetype mimetypes="message/rfc822" 
+ <mimetype mimetypes="message/rfc822"
            icon_path="icon_dokument_email.gif" />
 
-<mimetype name="Excel spreadsheet" binary="True"
-          extensions="xlm xlt xlb xlc xla xls xlw xlsx"
-          globs="*.xls *.xlc *.xll *.xlm *.xlw *.xla *.xlt *.xld *.xlsx"
-          icon_path="icon_dokument_excel.gif"
-          mimetypes="application/msexcel
-                     application/vnd.ms-excel
-                     application/x-msexcel
-                     application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+ <mimetype name="Excel spreadsheet" binary="True"
+           extensions="xlm xlt xlb xlc xla xls xlw xlsx"
+           globs="*.xls *.xlc *.xll *.xlm *.xlw *.xla *.xlt *.xld *.xlsx"
+           icon_path="icon_dokument_excel.gif"
+           mimetypes="application/msexcel
+                      application/vnd.ms-excel
+                      application/x-msexcel
+                      application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
 
  <mimetype mimetypes="application/pdf
                       application/x-pdf
                       image/pdf"
            icon_path="icon_dokument_pdf.gif" />
- <mimetype mimetypes="application/vnd.ms-powerpoint
+
+ <mimetype name="Microsoft PowerPoint presentation" binary="True"
+           extensions="pwz ppt pps ppa pptx"
+           globs="*.ppz *.ppt *.pps *.pot *.pptx"
+           icon_path="icon_dokument_powerpoint.gif"
+           mimetypes="application/vnd.ms-powerpoint
                       application/powerpoint
                       application/mspowerpoint
-                      application/x-mspowerpoint" 
-           icon_path="icon_dokument_powerpoint.gif" />
- <mimetype mimetypes="text/plain" 
+                      application/x-mspowerpoint"/>
+
+ <mimetype mimetypes="text/plain"
            icon_path="icon_dokument_text.gif" />
- <mimetype mimetypes="application/vnd.visio" 
+ <mimetype mimetypes="application/vnd.visio"
            icon_path="icon_dokument_visio.gif" />
- <mimetype mimetypes="text/html" 
+ <mimetype mimetypes="text/html"
            icon_path="icon_dokument_webdokument.gif" />
- <mimetype mimetypes="application/msword
-                      application/vnd.openxmlformats-officedocument.wordprocessingml.document" 
-           icon_path="icon_dokument_word.gif" />
+
+ <mimetype name="Microsoft Word Document" binary="True"
+           extensions="doc wiz dot docx dotx"
+           globs="*.doc *.docx *.dotx"
+           icon_path="icon_dokument_word.gif"
+           mimetypes="application/msword
+                      application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+
  <mimetype mimetypes="application/zip
-                      application/x-zip-compressed" 
+                      application/x-zip-compressed"
            icon_path="icon_dokument_zip.gif" />
  <mimetype name="Adobe Indesign Document" binary="False" extensions="indd ind"
     globs="*.indd" icon_path="application.png"

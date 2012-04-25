@@ -5,6 +5,9 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
+- Add mime type for DOCX and PPTX documents
+  [eschmutz]
+
 - Added izug4 profile
   [mathias.leimgruber]
 
@@ -37,6 +40,9 @@ Changelog
 
 1.0.6 (2012-03-13)
 ------------------
+
+- Ajdust translation from the serach_results template.
+  [phgross]
 
 - Hide listingBar on blog entries for izug.
   [mathias.leimgruber]
