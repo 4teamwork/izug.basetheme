@@ -5,6 +5,9 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
+- Fix extjs blank image url.
+  [jone]
+
 - Add mime type for DOCX and PPTX documents
   [eschmutz]
 
