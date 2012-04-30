@@ -256,4 +256,12 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <browser:viewlet
+      name="izug.basetheme-colorization"
+      manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+      template="viewlets_templates/colorization.pt"
+      class=".colorization.ColorizationViewlet"
+      permission="zope2.View"
+      />
+
 </configure>
