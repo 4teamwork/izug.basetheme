@@ -1,3 +1,4 @@
 
 *.egg-info
 *.pyc
+/izug/basetheme/browser/viewlets_templates/colorization.pt

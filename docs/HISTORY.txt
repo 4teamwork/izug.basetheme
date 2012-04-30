@@ -5,6 +5,9 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
+- Add colorization with environment variable (izug_basetheme_colorization).
+  [jone]
+
 - Fix extjs blank image url.
   [jone]
 
