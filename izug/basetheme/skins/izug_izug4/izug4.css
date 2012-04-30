@@ -98,6 +98,12 @@ lo
 /* DASHBOARD */
 /* use four columns with limited width */
 
+body.template-dashboard #content-views,
+body.template-manage-dashboard #content-views,
+body.template-manage-dashboard #portal-breadcrumbs {
+    display:none;
+}
+
 #dashboard {
     float:left;
 }
