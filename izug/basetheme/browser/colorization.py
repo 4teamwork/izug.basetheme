@@ -1,5 +1,4 @@
 from plone.app.layout.viewlets.common import ViewletBase
-from plone.memoize import ram
 import os
 
 
@@ -13,14 +12,12 @@ ENVIRONMENT_KEY = 'izug_basetheme_colorization'
 
 class ColorizationViewlet(ViewletBase):
 
-    @ram.cache(lambda *a, **kw: 'cache for ever')
-    def available(self):
-        return self._get_color() is not None
-
     def update(self):
         color = self._get_color()
         if color is not None:
             self.css = self._generate_css(color)
+        else:
+            self.css = ''
 
     def _get_color(self):
         colorname = os.environ.get(ENVIRONMENT_KEY, None)
@@ -29,7 +26,6 @@ class ColorizationViewlet(ViewletBase):
         else:
             return None
 
-    @ram.cache(lambda *a, **kw: 'cache for ever')
     def _generate_css(self, color):
         return '\n'.join((
                 '#portal-top {',
