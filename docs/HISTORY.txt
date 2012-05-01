@@ -5,6 +5,9 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
+- Style all tables in content-core and reset strong (disabled by extjs).
+  [jone]
+
 - Add colorization with environment variable (izug_basetheme_colorization).
   [jone]
 

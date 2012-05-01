@@ -374,6 +374,15 @@ body div.tooltip {
     border: none;
 }
 
+/* make strong strong again */
+strong {
+  font-weight: bold;
+}
+
+.x-panel strong {
+  font-weight: normal;
+}
+
 /* Listing bars tabbedview */
 #tabbedview-body .listingBar {
     background-color:transparent;
@@ -410,4 +419,66 @@ body div.tooltip {
 #tabbedview-body .listingBar .bracketstart,
 #tabbedview-body .listingBar .bracketclose {
     display:none;
+}
+
+
+
+/* default table style */
+#content-core table {
+    border-collapse: collapse;
+    margin-bottom: 1em;
+    background: transparent url("table_top.gif") top left repeat-x;
+    width: 100%;
+    border-style: none;
+}
+#content-core table caption {
+    font-weight: normal;
+    font-size: 1.182em;
+    padding: 0.923em 0.385em 0.769em 0;
+}
+#content-core table th {
+    padding: 1.091em 0.454em 0.909em 0;
+    text-align: left;
+    vertical-align: top;
+    border-style: none;
+}
+#content-core table td {
+    padding: 0.272em 0 0.272em;
+    vertical-align: top;
+    /*border-left: 0.272em &dtml-backgroundColor; solid;*/
+    border-left: 0.272em transparent solid;
+    border-right: 0 transparent none;
+    border-bottom: 1px solid &dtml-borderblue;;
+    line-height: 1.454em;
+}
+#content-core table td:first-child,
+#content-core table th:first-child  {
+    border-left-style: none !important;
+}
+#content-core table.invisible {
+    background-image: none;
+}
+/* table styles - ie overrides */
+*+html #content-core table {
+    background-image: none;
+}
+#content-core table td  {
+    border-top-style: none\9
+}
+*+html #content-core table th {
+    border-left: 0.272em transparent solid;
+    border-bottom: 1px solid &dtml-zugblue;;
+}
+#content-core table[border="0"],
+#content-core table[border="0"] td {
+    background-image: none !important;
+    border-style: none !important;
+}
+/* zug.ch has paragraphs in table captions -> another stupid css fix */
+#content-core table caption p {
+    font-size: 0.846em;
+    margin-bottom: 0;
+}
+#content-core table caption p strong {
+    font-size: 1.182em;
 }
