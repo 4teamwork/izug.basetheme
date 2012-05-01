@@ -482,3 +482,14 @@ strong {
 #content-core table caption p strong {
     font-size: 1.182em;
 }
+
+/* contentHistory table from ftw.table */
+
+table.contentHistory {
+display: block;
+font-size: 100% !important;
+}
+
+table.contentHistory td {
+display: table-cell;
+}
