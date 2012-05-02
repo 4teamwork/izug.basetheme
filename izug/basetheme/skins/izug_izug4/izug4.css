@@ -422,65 +422,37 @@ strong {
 }
 
 
+/* Rereset Extjs reset css */
+table th {
+    font-weight:bold;
+}
 
-/* default table style */
-#content-core table {
-    border-collapse: collapse;
-    margin-bottom: 1em;
-    background: transparent url("table_top.gif") top left repeat-x;
-    width: 100%;
-    border-style: none;
+/* General table styles */
+table.plain {
+ background: url("table_top.gif") repeat-x scroll left top transparent;
 }
-#content-core table caption {
-    font-weight: normal;
-    font-size: 1.182em;
-    padding: 0.923em 0.385em 0.769em 0;
+
+table.vertical th,
+table.vertical td,
+table.invisible th,
+table.invisible td {
+    padding: 0.272em;
 }
-#content-core table th {
-    padding: 1.091em 0.454em 0.909em 0;
-    text-align: left;
-    vertical-align: top;
-    border-style: none;
+
+table.vertical th {
+    font-weight:normal;
 }
-#content-core table td {
-    padding: 0.272em 0 0.272em;
-    vertical-align: top;
-    /*border-left: 0.272em &dtml-backgroundColor; solid;*/
-    border-left: 0.272em transparent solid;
-    border-right: 0 transparent none;
-    border-bottom: 1px solid &dtml-borderblue;;
-    line-height: 1.454em;
+
+table.vertical th:first-child,
+table.vertical td:first-child {
+    font-weight:bold;
 }
-#content-core table td:first-child,
-#content-core table th:first-child  {
-    border-left-style: none !important;
-}
-#content-core table.invisible {
-    background-image: none;
-}
-/* table styles - ie overrides */
-*+html #content-core table {
-    background-image: none;
-}
-#content-core table td  {
-    border-top-style: none\9
-}
-*+html #content-core table th {
-    border-left: 0.272em transparent solid;
-    border-bottom: 1px solid &dtml-zugblue;;
-}
-#content-core table[border="0"],
-#content-core table[border="0"] td {
-    background-image: none !important;
-    border-style: none !important;
-}
-/* zug.ch has paragraphs in table captions -> another stupid css fix */
-#content-core table caption p {
-    font-size: 0.846em;
-    margin-bottom: 0;
-}
-#content-core table caption p strong {
-    font-size: 1.182em;
+
+/* Override TinyMCE table styles while editing - for invisible */
+table.mceItemVisualAid.invisible,
+table.mceItemTable.invisible td,
+table.mceItemTable.invisible th {
+    border: 1px dashed #BBBBBB;
 }
 
 /* contentHistory table from ftw.table */
