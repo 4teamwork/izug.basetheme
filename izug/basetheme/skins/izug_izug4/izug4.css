@@ -428,6 +428,12 @@ table th {
 }
 
 /* General table styles */
+
+.simplelayout-content table,
+table.mceItemTable {
+    width: 100%;
+}
+
 table.plain {
  background: url("table_top.gif") repeat-x scroll left top transparent;
 }
