@@ -477,9 +477,6 @@ table.raw-table td {
     vertical-align: top;
 }
 
-
-
-
 /* contentHistory table from ftw.table */
 
 table.contentHistory {
@@ -489,4 +486,10 @@ font-size: 100% !important;
 
 table.contentHistory td {
 display: table-cell;
+}
+
+/* Billboard custom styling */
+
+div.billboardAdDetail table.listing {
+    width:100%;
 }
