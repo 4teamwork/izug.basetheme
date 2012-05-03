@@ -461,6 +461,25 @@ table.mceItemTable.invisible th {
     border: 1px dashed #BBBBBB;
 }
 
+/* ftw.bookt table*/
+table.raw-table {
+    background: url("table_top.gif") repeat-x scroll left top transparent;
+}
+
+table.raw-table th {
+    padding: 1.091em 0.454em 0.909em 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.raw-table td {
+    padding: 0.272em 0;
+    vertical-align: top;
+}
+
+
+
+
 /* contentHistory table from ftw.table */
 
 table.contentHistory {
