@@ -508,3 +508,9 @@ div.billboardAdDetail table.listing {
 }
 /* @end */
 
+/* TinyMCE styles */
+body#content.mceContentBody {
+    font-size:11px !important;
+    font-family:Verdana,Arial,Helvetica,sans-serif !important;
+}
+
