@@ -493,3 +493,18 @@ display: table-cell;
 div.billboardAdDetail table.listing {
     width:100%;
 }
+
+
+/* Hide ReviewRole */
+#user-group-sharing-head th:nth-child(6),
+#user-group-sharing-head td:nth-child(6),
+#user-group-sharing-settings td:nth-child(6),
+#current-user-group-sharing-head th:nth-child(6),
+#current-user-group-sharing-head td:nth-child(6),
+#current-user-group-sharing td:nth-child(6),
+#permissionListingTable th:nth-child(6),
+#permissionListingTable td:nth-child(6) {
+  display:none;
+}
+/* @end */
+
