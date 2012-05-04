@@ -514,3 +514,6 @@ body#content.mceContentBody {
     font-family:Verdana,Arial,Helvetica,sans-serif !important;
 }
 
+div.discreet.suppressVisualEditor {
+    display:none;
+}
