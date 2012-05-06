@@ -427,6 +427,12 @@ table th {
     font-weight:bold;
 }
 
+ol {
+   list-style-type: decimal;
+}
+
+
+
 /* General table styles */
 
 .simplelayout-content table,
