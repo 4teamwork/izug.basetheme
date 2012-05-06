@@ -431,7 +431,10 @@ ol {
    list-style-type: decimal;
 }
 
-
+#content ol,
+#content ul {
+    list-style-position: outside;
+}
 
 /* General table styles */
 
