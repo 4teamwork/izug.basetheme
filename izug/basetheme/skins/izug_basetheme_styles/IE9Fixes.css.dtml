@@ -28,4 +28,13 @@ div.x-grid3-viewport {
   line-height: 15px !important;
 }
 
+
+/* Fix for IE9 - two columns behoerden/private listings */
+
+.listing-column-right, .listing-column-left {
+    width: 23.536em;
+}
+
+
+
 /* </dtml-with> */
