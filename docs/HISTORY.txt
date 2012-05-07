@@ -5,6 +5,9 @@ Changelog
 1.0.8 (unreleased)
 ------------------
 
+- Change the order of document_actions in document actions viewlet.
+  [jone]
+
 - Style all tables in content-core and reset strong (disabled by extjs).
   [jone]
 

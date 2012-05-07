@@ -1,5 +1,8 @@
 from AccessControl import getSecurityManager
 from Acquisition import aq_inner, aq_parent
+from Products.CMFCore.utils import getToolByName
+from Products.CMFPlone.interfaces import IPloneSiteRoot
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from izug.basetheme import MessageFactory as _
 from izug.basetheme.browser.helper import css_class_from_obj
 from izug.basetheme.interfaces import ISiteProperties
@@ -11,9 +14,6 @@ from plone.app.layout.viewlets import common, content
 from plone.memoize import ram
 from plone.memoize.instance import memoize
 from plone.registry.interfaces import IRegistry
-from Products.CMFCore.utils import getToolByName
-from Products.CMFPlone.interfaces import IPloneSiteRoot
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from random import randrange
 from zope.component import getMultiAdapter
 from zope.component import getUtility
@@ -99,6 +99,32 @@ class ZugEditMenu(common.ViewletBase):
 
 class DocumentActions(content.DocumentActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/documentactions.pt')
+
+    def update(self):
+        content.DocumentActionsViewlet.update(self)
+        self.actions = self.get_actions()
+
+    def get_actions(self):
+        """Returns all document actions but lists first those from the
+        actions tool, then those from the types tool.
+        The default document actions viewlet has the opposite order.
+        """
+        context = aq_inner(self.context)
+        atool = getToolByName(context, "portal_actions")
+        ttool = getToolByName(context, "portal_types")
+
+        category = 'document_actions'
+
+        actions = []
+        actions.extend(atool.listActionInfos(
+            object=context,
+            categories=(category, )))
+
+        actions.extend(ttool.listActionInfos(
+            object=context,
+            category=category))
+
+        return actions
 
 
 class Byline(content.DocumentBylineViewlet):
