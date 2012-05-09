@@ -405,6 +405,18 @@ strong {
     border:none;
 }
 
+#tabbedview-body .listingBar span.previous {
+    float: left;
+    margin-right: 0.363em;
+}
+
+#tabbedview-body .listingBar span.next {
+    float: right;
+    margin-left: 0.363em;
+
+}
+
+
 #tabbedview-body .listingBar span a,
 #tabbedview-body .listingBar span span,
 #tabbedview-body .listingBar span.current {
