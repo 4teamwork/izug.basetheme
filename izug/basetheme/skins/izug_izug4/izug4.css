@@ -31,8 +31,19 @@ body.icons-on *[class*="actionicon-"] {
 }
 
 /* TABBED VIEW */
+
+.tabbedview_view .documentByLine {
+    height:4em;
+}
+
+.tabbedview_view #tabbedview-header #ftw-edit-bar {
+    margin-top:-2.6em;
+}
+
 .tabbedview_view .tabbedview_search {
-    margin-top: 2em;
+    margin-top: 0;
+    position: absolute;
+    top: 7.7em;
 }
 
 #tabbedview-body h2 {
