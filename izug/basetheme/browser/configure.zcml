@@ -23,8 +23,8 @@
      permission="zope2.View"
      layer=".interfaces.IThemeSpecific"
      />
-     
-  <!-- we have to override portal_tabs_view here because if we need actions 
+
+  <!-- we have to override portal_tabs_view here because if we need actions
   displayed in the global navigation they have to be last instead of first -->
   <browser:page
       zcml:condition="not-have opengever"
@@ -42,7 +42,7 @@
       template="testicons.pt"
       permission="zope2.Public"
       />
-      
+
     <browser:page
         for="Products.Archetypes.interfaces.IBaseObject"
         name="folder_overview"
@@ -76,6 +76,36 @@
       layer=".interfaces.IIzugSpecific"
       />
 
+  <!-- izug4 refbrowser popup-->
+  <browser:page
+      name="refbrowser_popup"
+      permission="zope2.Public"
+      for="*"
+      layer=".interfaces.IIzug4Specific"
+      class=".custom_refbrowser.ReferenceBrowserPopup"
+      />
+
+
+  <!-- izug4 specific personal bar viewlet -->
+  <browser:viewlet
+      name="plone.personal_bar"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.IZugPersonalBar"
+      permission="zope2.View"
+      layer=".interfaces.IIzug4Specific"
+      />
+
+  <!-- izug4 specific comment viewlet -->
+    <browser:viewlet
+        name="plone.comments"
+        for="Products.CMFCore.interfaces.IContentish"
+        layer=".interfaces.IIzug4Specific"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+        view="plone.app.layout.globals.interfaces.IViewView"
+        class="plone.app.layout.viewlets.comments.CommentsViewlet"
+        permission="zope2.View"
+        />
+
   <browser:viewlet
       name="plone.personal_bar"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
@@ -84,13 +114,12 @@
       layer=".interfaces.IDirectorySpecific"
       />
 
-
   <!-- override for searchbox title-translation-->
   <browser:viewlet
       name="plone.searchbox"
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.SearchBoxViewlet"
-      permission="zope2.View" 
+      permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
 
@@ -102,7 +131,6 @@
       permission="zope2.View"
       layer=".interfaces.IZugSpecific"
       />
-
 
   <browser:viewlet
       name="plone.site_actions"
@@ -121,7 +149,7 @@
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
-      
+
   <browser:viewlet
       name="plone.abovecontenttitle.documentactions"
       manager="plone.app.layout.viewlets.interfaces.IAboveContentTitle"
@@ -181,7 +209,7 @@
       class=".viewlets.ContentMenuViewlet"
       permission="zope2.View"
       layer="izug.basetheme.browser.interfaces.IIzugSpecific"
-      />  
+      />
 
 
   <!-- izug/zug.ch special folder_contents -->
@@ -198,7 +226,7 @@
        class=".foldercontents.FolderContentsKSSView"
        attribute="update_table"
        name="foldercontents_update_table"
-       layer="izug.basetheme.browser.interfaces.IIzugSpecific"       
+       layer="izug.basetheme.browser.interfaces.IIzugSpecific"
        permission="cmf.ListFolderContents" />
 
    <browser:page
@@ -214,7 +242,7 @@
         class=".foldercontents.FolderContentsKSSView"
         attribute="update_table"
         name="foldercontents_update_table"
-        layer="izug.basetheme.browser.interfaces.IZugSpecific"       
+        layer="izug.basetheme.browser.interfaces.IZugSpecific"
         permission="cmf.ListFolderContents" />
 
 
@@ -236,6 +264,14 @@
       template="viewlets_templates/contentviews.pt"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:viewlet
+      name="izug.basetheme-colorization"
+      manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+      template="viewlets_templates/colorization.pt"
+      class=".colorization.ColorizationViewlet"
+      permission="zope2.View"
       />
 
 </configure>

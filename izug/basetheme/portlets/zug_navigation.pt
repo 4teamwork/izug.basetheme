@@ -19,8 +19,15 @@
                     tal:replace="root/Title">Root item title</span>
             </a>
           </div>
+          <ul class="navTree navTreeLevel1"
+              tal:define="level python:1">
+              <li tal:replace="structure view/createNavTree">
+                SUBTREE
+              </li>
+          </ul>
         </li>
-        <li tal:replace="structure view/createNavTree">
+        <li tal:condition="not:view/include_top"
+            tal:replace="structure view/createNavTree">
           SUBTREE
         </li>
       </ul>

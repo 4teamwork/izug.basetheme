@@ -8,11 +8,17 @@ class IThemeSpecific(IDefaultPloneLayer):
 
 
 class IOpengeverSpecific(Interface):
-    """Marker interface that defines a Zope 3 browser layer specific for OpenGever.
+    """Marker interface that defines a Zope 3 browser layer specific for
+    OpenGever.
     """
 
 
 class IIzugSpecific(Interface):
+    """Marker interface that defines a Zope 3 browser layer specific for izug.
+    """
+
+
+class IIzug4Specific(Interface):
     """Marker interface that defines a Zope 3 browser layer specific for izug.
     """
 

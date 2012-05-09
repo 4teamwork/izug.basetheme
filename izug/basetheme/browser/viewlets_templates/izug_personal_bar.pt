@@ -7,12 +7,12 @@
     class="visualInline">
     <tal:actions tal:repeat="action view/user_actions">
         <li tal:condition="python:action['id'] not in ['join', 'logout']">
-			
+
             <a href=""
                tal:define="accesskey python: accesskeys.get(action['id'], '');"
                tal:attributes="href action/url;
                                accesskey accesskey;"
-            ><tal:actionname i18n:translate="" 
+            ><tal:actionname i18n:translate=""
                              tal:content="action/title">dummy</tal:actionname
             ></a>
         </li>

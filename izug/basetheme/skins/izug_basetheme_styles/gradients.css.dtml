@@ -56,7 +56,8 @@ input#form-buttons-button_archive {
 }
 /* hellblau */
 .x-grid3-hd-row,
-dl.zugCollapsible dt  {
+dl.zugCollapsible dt,
+.MeetingItemWrapper div.MeetingItemHead  {
     background: -moz-linear-gradient(top ,#F7FAFD, #E0EEF7);
     background: -webkit-gradient(linear, left top, left bottom, from(#F7FAFD), to(#E0EEF7));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F7FAFD, endColorstr=#E0EEF7) !important;
