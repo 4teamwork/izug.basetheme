@@ -33,6 +33,18 @@ h6 > a:visited {
   color: #AE1E00 !important;
 }
 
+#portal-column-one .portletGoToParent dd {
+  border-top: 1px solid  #EFEFEF;
+  padding-bottom: 0.5em;
+}
+
+#portal-column-one .portletGoToParent a {
+  font-weight: bold;
+  color: black !important;
+  padding-left: 0.5em;
+}
+
+
 .template-book_reader_view h3 {
   text-decoration: none !important;
 }
