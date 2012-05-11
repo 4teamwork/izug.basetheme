@@ -25,6 +25,18 @@ h6 > a:visited {
   text-decoration: none;
 }
 
+.book-reader-navigation a {
+  color: black !important;
+}
+
+.book-reader-navigation a.active {
+  color: #AE1E00 !important;
+}
+
+.template-book_reader_view h3 {
+  text-decoration: none !important;
+}
+
 body.icons-on *[class*="contenttype-"],
 body.icons-on *[class*="actionicon-"] {
     background-image:none;
