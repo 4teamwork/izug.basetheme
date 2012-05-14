@@ -5,7 +5,8 @@ Changelog
 1.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Book read-mode css / book navigation css.
+  [jone]
 
 
 1.1.2 (2012-05-14)
