@@ -1,3 +1,54 @@
+/* FONTS */
+
+h4, h5, h6 {
+  font-size: 1em;
+  border-bottom: none;
+  font-weight: bold;
+  line-height: 1.455em;
+  margin: 0 0 0.363em 0;
+  color: black !important;
+}
+
+h1 > a,
+h1 > a:visited,
+h2 > a,
+h2 > a:visited,
+h3 > a,
+h3 > a:visited,
+h4 > a,
+h4 > a:visited,
+h5 > a,
+h5 > a:visited,
+h6 > a,
+h6 > a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.book-reader-navigation a {
+  color: black !important;
+}
+
+.book-reader-navigation a.active {
+  color: #AE1E00 !important;
+}
+
+#portal-column-one .portletGoToParent dd {
+  border-top: 1px solid  #EFEFEF;
+  padding-bottom: 0.5em;
+}
+
+#portal-column-one .portletGoToParent a {
+  font-weight: bold;
+  color: black !important;
+  padding-left: 0.5em;
+}
+
+
+.template-book_reader_view h3 {
+  text-decoration: none !important;
+}
+
 body.icons-on *[class*="contenttype-"],
 body.icons-on *[class*="actionicon-"] {
     background-image:none;
