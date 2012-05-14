@@ -100,6 +100,10 @@ class ZugEditMenu(common.ViewletBase):
 class DocumentActions(content.DocumentActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/documentactions.pt')
 
+
+class DocumentActionsIzug4(content.DocumentActionsViewlet):
+    index = ViewPageTemplateFile('viewlets_templates/documentactions.pt')
+
     def update(self):
         content.DocumentActionsViewlet.update(self)
         self.actions = self.get_actions()
