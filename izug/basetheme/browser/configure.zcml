@@ -78,13 +78,13 @@
 
   <!-- izug4 refbrowser popup-->
   <browser:page
+      zcml:condition="have plone-4"
       name="refbrowser_popup"
       permission="zope2.Public"
       for="*"
       layer=".interfaces.IIzug4Specific"
       class=".custom_refbrowser.ReferenceBrowserPopup"
       />
-
 
   <!-- izug4 specific personal bar viewlet -->
   <browser:viewlet
