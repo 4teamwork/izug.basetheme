@@ -549,3 +549,11 @@ body#content.mceContentBody {
 div.discreet.suppressVisualEditor {
     display:none;
 }
+
+
+/* Searcg result page */
+body.template-search #content a.link-feed,
+body.template-search #content form.searchPage p.discreet,
+.LSRow a[href*='advanced_search'] {
+    display: none;
+}
