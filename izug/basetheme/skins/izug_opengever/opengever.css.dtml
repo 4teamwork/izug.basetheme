@@ -487,4 +487,10 @@ https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069
     padding-left: 0.2em !important;
 }
 
+
+/* Disable line margins of mail bodies display.*/
+.mailBody p{
+   margin: 0px;
+}
+
 /* </dtml-with> */
