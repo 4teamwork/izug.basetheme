@@ -517,6 +517,6 @@ tr.state_published_internet td.column1 {
  /* Always use right column for blog */
 body.template-blog_view #visual-portal-wrapper div#portal-column-content.sr.sl,
 body.template-blog_entry_view #visual-portal-wrapper div#portal-column-content.sr.sl {
-    width: 78em;
+    width: 71em;
 }
 
