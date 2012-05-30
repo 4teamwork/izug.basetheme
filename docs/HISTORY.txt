@@ -11,6 +11,9 @@ Changelog
 1.1.5 (2012-05-16)
 ------------------
 
+- Adjust translation in the opengever search template: use izug.basetheme domain.
+  [phgross]
+
 - Disable line margins of mail bodies display in opengever.
   [phgross]
 
