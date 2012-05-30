@@ -285,3 +285,8 @@ msgstr ""
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:54
 msgid "search_results_advanced_link"
 msgstr ""
+
+#. Default: "${number} items matching your search terms"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:70
+msgid "batch_x_items_matching_your_criteria"
+msgstr ""

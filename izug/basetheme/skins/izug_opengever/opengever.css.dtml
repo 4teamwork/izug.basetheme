@@ -21,6 +21,17 @@
   margin-bottom: 2em;
 }
 
+.template-search #searchContent{
+  margin-top: 2em;
+}
+
+.template-search #portal-breadcrumbs{
+  display: None;
+}
+
+.template-search #portal-columns{
+  margin-top: 2em;
+}
 
 /* resize */
 div#portal-column-one .visualPadding {

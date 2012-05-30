@@ -5,7 +5,7 @@ Changelog
 1.1.6 (unreleased)
 ------------------
 
-- Adjust translation in the opengever search template: use izug.basetheme domain.
+- Adjust translation (use izug.basetheme domain) and styling for the opengever search template.
   [phgross]
 
 

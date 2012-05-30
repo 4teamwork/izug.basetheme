@@ -271,10 +271,15 @@ msgstr "${text} durchsuchen"
 #. Default: "Did you not find what you were looking for? Try the ${advanced_search} to refine your search."
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:53
 msgid "search_results_advanced"
-msgstr "Haben Sie nicht gefunden, wonach Sie gesucht haben? Die ${advanced_search} bietet ihnen präzisere Suchmöglichkeiten."
+msgstr "Haben Sie nicht gefunden, wonach Sie gesucht haben? Die ${advanced_search} bietet Ihnen präzisere Suchmöglichkeiten."
 
 #. Default: "Advanced Search"
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:54
 msgid "search_results_advanced_link"
 msgstr "erweiterte Suche"
+
+#. Default: "${number} items matching your search terms"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:70
+msgid "batch_x_items_matching_your_criteria"
+msgstr "${number} Artikel gefunden"
 
