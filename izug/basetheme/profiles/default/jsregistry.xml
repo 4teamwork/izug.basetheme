@@ -3,4 +3,7 @@
     <javascript cacheable="True" compression="safe" cookable="True" expression=""
                 enabled="True" id="izug_basetheme.js" inline="False"
                 />
+
+    <javascript enabled="False" id="++resource++kukit.js" />
+
 </object>

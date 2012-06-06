@@ -5,6 +5,9 @@ Changelog
 1.1.6 (unreleased)
 ------------------
 
+- Disable the kukit.js in the default profile.
+  [phgross]
+
 - Adjust translation (use izug.basetheme domain) and styling for the opengever search template.
   [phgross]
 
