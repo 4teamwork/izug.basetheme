@@ -504,4 +504,9 @@ https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069
    margin: 0px;
 }
 
+/* error message view */
+.template-default_error_message #portal-breadcrumbs {
+  margin-left: 20em;
+}
+
 /* </dtml-with> */

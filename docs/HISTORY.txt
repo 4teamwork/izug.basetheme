@@ -5,6 +5,9 @@ Changelog
 1.1.6 (unreleased)
 ------------------
 
+- Added styling for the error message view in opengever.
+  [phgross]
+
 - Disable the kukit.js in the default profile.
   [phgross]
 
