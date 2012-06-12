@@ -5,6 +5,9 @@ Changelog
 1.1.6 (unreleased)
 ------------------
 
+- Hide chapter description in izug4.
+  [mathias.leimgruber]
+
 - Added styling for the error message view in opengever.
   [phgross]
 

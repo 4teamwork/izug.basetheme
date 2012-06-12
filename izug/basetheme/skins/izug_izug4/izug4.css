@@ -25,6 +25,13 @@ h6 > a:visited {
   text-decoration: none;
 }
 
+/* book styles */
+
+body.template-simplelayout.portaltype-chapter p.documentDescription {
+    display:none;
+}
+
+
 .book-reader-navigation a {
   color: black !important;
 }
