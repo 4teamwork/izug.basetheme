@@ -57,4 +57,22 @@
  <mimetype name="Adobe Indesign Document" binary="False" extensions="indd ind"
     globs="*.indd" icon_path="application.png"
     mimetypes="application/x-indesign"/>
+
+ <mimetype name="MS Project File" binary="True"
+           extensions="mpp"
+           globs="*.mpp"
+           icon_path="icon_dokument_msproject.gif"
+           mimetypes="application/vnd.ms-project"/>
+
+ <mimetype name="MS Project File (generic)" binary="True"
+           extensions="mpt mpv mpx"
+           globs="*.mpt *.mpv *.mpx"
+           icon_path="icon_dokument_msproject.gif"
+           mimetypes="application/x-project"/>
+
+ <mimetype name="Mindjet MindManager File" binary="True"
+           extensions="mmap"
+           globs="*.mmap"
+           icon_path="icon_dokument_mindmanager.gif"
+           mimetypes="application/vnd.mindjet.mindmanager"/>
 </object>
