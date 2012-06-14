@@ -12,6 +12,11 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#. Default: "${number} items matching your search terms"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:70
+msgid "batch_x_items_matching_your_criteria"
+msgstr "${number} d'articles trouvés"
+
 #. Default: "last modified"
 #: ./izug/basetheme/browser/viewlets_templates/byline.pt:35
 msgid "box_last_modified"
@@ -258,6 +263,16 @@ msgstr "Recherche en direct"
 #: ./izug/basetheme/browser/task_search.pt:11
 msgid "responsible"
 msgstr "Responsable"
+
+#. Default: "Did you not find what you were looking for? Try the ${advanced_search} to refine your search."
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:53
+msgid "search_results_advanced"
+msgstr "Vous n'avez pas trouvé ce que vous avez cherché? La ${advanced_search} vous offre des possibilités de recherche précises"
+
+#. Default: "Advanced Search"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:54
+msgid "search_results_advanced_link"
+msgstr "Recherche avancée"
 
 #. Default: "${text} search through"
 #: ./izug/basetheme/browser/viewlets.py:
