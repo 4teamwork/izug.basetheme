@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.6 (unreleased)
+1.1.6 (2012-06-18)
 ------------------
 
 - Added mimetypes and icons for MS Visio, MS Project and MindManager files
