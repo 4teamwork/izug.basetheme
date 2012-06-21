@@ -5,6 +5,9 @@ Changelog
 1.1.7 (unreleased)
 ------------------
 
+- Added icons for Adobe file types (Illustrator, Indesign and Photoshop)
+  [lgraf]
+
 - Updated Mimetype definition for MS Visio
   [lgraf]
 
