@@ -59,9 +59,24 @@
  <mimetype mimetypes="application/zip
                       application/x-zip-compressed"
            icon_path="icon_dokument_zip.gif" />
- <mimetype name="Adobe Indesign Document" binary="False" extensions="indd ind"
-    globs="*.indd" icon_path="application.png"
-    mimetypes="application/x-indesign"/>
+
+ <mimetype name="Adobe Indesign Document" binary="True"
+           extensions="indd ind"
+           globs="*.indd *.ind"
+           icon_path="icon_dokument_indesign.gif"
+           mimetypes="application/x-indesign"/>
+
+ <mimetype name="Adobe Photoshop Document" binary="True"
+           extensions="psd"
+           globs="*.psd"
+           icon_path="icon_dokument_photoshop.gif"
+           mimetypes="image/vnd.adobe.photoshop"/>
+
+ <mimetype name="Adobe Illustrator Document" binary="True"
+           extensions="ai"
+           globs="*.ai"
+           icon_path="icon_dokument_illustrator.gif"
+           mimetypes="application/illustrator"/>
 
  <mimetype name="MS Project File" binary="True"
            extensions="mpp"
