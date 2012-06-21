@@ -2,19 +2,39 @@
 <object name="mimetypes_registry" meta_type="MimeTypes Registry">
  <mimetype mimetypes="image/gif"
            icon_path="icon_dokument_bilddatei.gif" />
+
  <mimetype mimetypes="image/jpeg
                       image/pjpeg"
            icon_path="icon_dokument_bilddatei.gif" />
+
  <mimetype mimetypes="image/png"
            icon_path="icon_dokument_bilddatei.gif" />
+
  <mimetype mimetypes="image/bmp
                       image/x-bmp
                       image/x-MS-bmp"
            icon_path="icon_dokument_bilddatei.gif" />
+
  <mimetype mimetypes="message/rfc822"
            icon_path="icon_dokument_email.gif" />
 
- <mimetype name="Excel spreadsheet" binary="True"
+ <mimetype mimetypes="text/plain"
+           icon_path="icon_dokument_text.gif" />
+
+ <mimetype mimetypes="text/html"
+           icon_path="icon_dokument_webdokument.gif" />
+
+ <mimetype mimetypes="application/zip
+                      application/x-zip-compressed"
+           icon_path="icon_dokument_zip.gif" />
+
+ <mimetype mimetypes="application/pdf
+                      application/x-pdf
+                      image/pdf"
+           icon_path="icon_dokument_pdf.gif" />
+
+ <mimetype name="Excel spreadsheet"
+           binary="True"
            extensions="xlm xlt xlb xlc xla xls xlw xlsx"
            globs="*.xls *.xlc *.xll *.xlm *.xlw *.xla *.xlt *.xld *.xlsx"
            icon_path="icon_dokument_excel.gif"
@@ -23,12 +43,16 @@
                       application/x-msexcel
                       application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
 
- <mimetype mimetypes="application/pdf
-                      application/x-pdf
-                      image/pdf"
-           icon_path="icon_dokument_pdf.gif" />
+ <mimetype name="Microsoft Word Document"
+           binary="True"
+           extensions="doc wiz dot docx dotx"
+           globs="*.doc *.docx *.dotx"
+           icon_path="icon_dokument_word.gif"
+           mimetypes="application/msword
+                      application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
 
- <mimetype name="Microsoft PowerPoint presentation" binary="True"
+ <mimetype name="Microsoft PowerPoint presentation"
+           binary="True"
            extensions="pwz ppt pps ppa pptx"
            globs="*.ppz *.ppt *.pps *.pot *.pptx"
            icon_path="icon_dokument_powerpoint.gif"
@@ -37,60 +61,50 @@
                       application/mspowerpoint
                       application/x-mspowerpoint"/>
 
- <mimetype mimetypes="text/plain"
-           icon_path="icon_dokument_text.gif" />
-
- <mimetype name="Microsoft Visio document" binary="True"
+ <mimetype name="Microsoft Visio document"
+           binary="True"
            extensions="vsd vss"
            globs="*.vsd *.vss"
            icon_path="icon_dokument_visio.gif"
            mimetypes="application/vnd.visio"/>
 
- <mimetype mimetypes="text/html"
-           icon_path="icon_dokument_webdokument.gif" />
-
- <mimetype name="Microsoft Word Document" binary="True"
-           extensions="doc wiz dot docx dotx"
-           globs="*.doc *.docx *.dotx"
-           icon_path="icon_dokument_word.gif"
-           mimetypes="application/msword
-                      application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
-
- <mimetype mimetypes="application/zip
-                      application/x-zip-compressed"
-           icon_path="icon_dokument_zip.gif" />
-
- <mimetype name="Adobe Indesign Document" binary="True"
+ <mimetype name="Adobe Indesign Document"
+           binary="True"
            extensions="indd ind"
            globs="*.indd *.ind"
            icon_path="icon_dokument_indesign.gif"
            mimetypes="application/x-indesign"/>
 
- <mimetype name="Adobe Photoshop Document" binary="True"
+ <mimetype name="Adobe Photoshop Document"
+           binary="True"
            extensions="psd"
            globs="*.psd"
            icon_path="icon_dokument_photoshop.gif"
            mimetypes="image/vnd.adobe.photoshop"/>
 
- <mimetype name="Adobe Illustrator Document" binary="True"
+ <mimetype name="Adobe Illustrator Document"
+           binary="True"
            extensions="ai"
            globs="*.ai"
            icon_path="icon_dokument_illustrator.gif"
            mimetypes="application/illustrator"/>
 
- <mimetype name="MS Project File" binary="True"
+ <mimetype name="MS Project File"
+           binary="True"
            extensions="mpp"
            globs="*.mpp"
            icon_path="icon_dokument_msproject.gif"
            mimetypes="application/vnd.ms-project"/>
 
- <mimetype name="MS Project File (generic)" binary="True"
+ <mimetype name="MS Project File (generic)"
+           binary="True"
            extensions="mpt mpv mpx"
            globs="*.mpt *.mpv *.mpx"
            icon_path="icon_dokument_msproject.gif"
            mimetypes="application/x-project"/>
 
- <mimetype name="Mindjet MindManager File" binary="True"
+ <mimetype name="Mindjet MindManager File"
+           binary="True"
            extensions="mmap"
            globs="*.mmap"
            icon_path="icon_dokument_mindmanager.gif"
