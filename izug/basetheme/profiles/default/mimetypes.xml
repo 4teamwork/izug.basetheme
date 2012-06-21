@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <object name="mimetypes_registry" meta_type="MimeTypes Registry">
+
+ <!-- Common file formats -->
  <mimetype mimetypes="image/gif"
            icon_path="icon_dokument_bilddatei.gif" />
 
@@ -33,40 +35,106 @@
                       image/pdf"
            icon_path="icon_dokument_pdf.gif" />
 
- <mimetype name="Excel spreadsheet"
-           binary="True"
-           extensions="xlm xlt xlb xlc xla xls xlw xlsx"
-           globs="*.xls *.xlc *.xll *.xlm *.xlw *.xla *.xlt *.xld *.xlsx"
-           icon_path="icon_dokument_excel.gif"
-           mimetypes="application/msexcel
-                      application/vnd.ms-excel
-                      application/x-msexcel
-                      application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
 
+ <!-- Microsoft Office Formats -->
+
+ <!-- MS Excel -->
+ <mimetype name="Microsoft Excel Spreadsheet"
+           binary="True"
+           extensions="xls xlt xla xlb xlc xld xll xlm xlw"
+           globs="*.xls *.xlt *.xla *.xlb *.xlc *.xld *.xll *.xlm *.xlw"
+           icon_path="icon_dokument_excel.gif"
+           mimetypes="application/vnd.ms-excel
+                      application/msexcel
+                      application/x-msexcel" />
+
+ <mimetype name="Microsoft Excel Spreadsheet (OOXML)"
+           binary="True"
+           extensions="xlsx"
+           globs="*.xlsx"
+           icon_path="icon_dokument_excel.gif"
+           mimetypes="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+
+ <mimetype name="Microsoft Excel Template (OOXML)"
+           binary="True"
+           extensions="xltx"
+           globs="*.xltx"
+           icon_path="icon_dokument_excel.gif"
+           mimetypes="application/vnd.openxmlformats-officedocument.spreadsheetml.template" />
+
+ <!-- MS Word -->
  <mimetype name="Microsoft Word Document"
            binary="True"
-           extensions="doc wiz dot docx dotx"
-           globs="*.doc *.docx *.dotx"
+           extensions="doc wiz dot"
+           globs="*.doc *.wiz *.dot"
            icon_path="icon_dokument_word.gif"
-           mimetypes="application/msword
-                      application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+           mimetypes="application/msword" />
 
- <mimetype name="Microsoft PowerPoint presentation"
+ <mimetype name="Microsoft Word Document (OOXML)"
            binary="True"
-           extensions="pwz ppt pps ppa pptx"
-           globs="*.ppz *.ppt *.pps *.pot *.pptx"
+           extensions="docx"
+           globs="*.docx"
+           icon_path="icon_dokument_word.gif"
+           mimetypes="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+
+ <mimetype name="Microsoft Word Template (OOXML)"
+           binary="True"
+           extensions="dotx"
+           globs="*.dotx"
+           icon_path="icon_dokument_word.gif"
+           mimetypes="application/vnd.openxmlformats-officedocument.wordprocessingml.template" />
+
+
+ <!-- MS Powerpoint -->
+ <mimetype name="Microsoft PowerPoint Presentation"
+           binary="True"
+           extensions="ppt pot pps ppa pwz ppz"
+           globs="*.ppt *.pot *.pps *.ppa *.pwz *.ppz"
            icon_path="icon_dokument_powerpoint.gif"
            mimetypes="application/vnd.ms-powerpoint
                       application/powerpoint
                       application/mspowerpoint
                       application/x-mspowerpoint"/>
 
+ <mimetype name="Microsoft PowerPoint Presentation (OOXML)"
+           binary="True"
+           extensions="pptx"
+           globs="*.pptx"
+           icon_path="icon_dokument_powerpoint.gif"
+           mimetypes="application/vnd.openxmlformats-officedocument.presentationml.presentation" />
+
+ <mimetype name="Microsoft PowerPoint Template (OOXML)"
+           binary="True"
+           extensions="potx"
+           globs="*.potx"
+           icon_path="icon_dokument_powerpoint.gif"
+           mimetypes="application/vnd.openxmlformats-officedocument.presentationml.template" />
+
+ <!-- MS Visio -->
  <mimetype name="Microsoft Visio document"
            binary="True"
-           extensions="vsd vss"
-           globs="*.vsd *.vss"
+           extensions="vsd vss vst vsw vdx vsx vtx vsl"
+           globs="*.vsd *.vss *.vst *.vsw *.vdx *.vsx *.vtx *.vsl"
            icon_path="icon_dokument_visio.gif"
            mimetypes="application/vnd.visio"/>
+
+ <!-- MS Project -->
+ <mimetype name="MS Project File"
+           binary="True"
+           extensions="mpp"
+           globs="*.mpp"
+           icon_path="icon_dokument_msproject.gif"
+           mimetypes="application/vnd.ms-project"/>
+
+ <mimetype name="MS Project File (generic)"
+           binary="True"
+           extensions="mpt mpv mpx"
+           globs="*.mpt *.mpv *.mpx"
+           icon_path="icon_dokument_msproject.gif"
+           mimetypes="application/x-project"/>
+
+
+ <!-- Adobe Formats -->
 
  <mimetype name="Adobe Indesign Document"
            binary="True"
@@ -89,19 +157,8 @@
            icon_path="icon_dokument_illustrator.gif"
            mimetypes="application/illustrator"/>
 
- <mimetype name="MS Project File"
-           binary="True"
-           extensions="mpp"
-           globs="*.mpp"
-           icon_path="icon_dokument_msproject.gif"
-           mimetypes="application/vnd.ms-project"/>
 
- <mimetype name="MS Project File (generic)"
-           binary="True"
-           extensions="mpt mpv mpx"
-           globs="*.mpt *.mpv *.mpx"
-           icon_path="icon_dokument_msproject.gif"
-           mimetypes="application/x-project"/>
+ <!-- Various other file formats -->
 
  <mimetype name="Mindjet MindManager File"
            binary="True"

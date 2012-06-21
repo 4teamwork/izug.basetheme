@@ -5,6 +5,9 @@ Changelog
 1.1.7 (unreleased)
 ------------------
 
+- Updated MIME types for Microsoft Office formats
+  [lgraf]
+
 - Updated MIME types for Adobe Photoshop, Illustrator and InDesign
   [lgraf]
 
