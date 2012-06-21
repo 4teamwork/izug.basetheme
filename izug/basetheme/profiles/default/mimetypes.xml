@@ -39,8 +39,13 @@
 
  <mimetype mimetypes="text/plain"
            icon_path="icon_dokument_text.gif" />
- <mimetype mimetypes="application/vnd.visio"
-           icon_path="icon_dokument_visio.gif" />
+
+ <mimetype name="Microsoft Visio document" binary="True"
+           extensions="vsd vss"
+           globs="*.vsd *.vss"
+           icon_path="icon_dokument_visio.gif"
+           mimetypes="application/vnd.visio"/>
+
  <mimetype mimetypes="text/html"
            icon_path="icon_dokument_webdokument.gif" />
 
