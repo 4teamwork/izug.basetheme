@@ -26,6 +26,13 @@
  <mimetype mimetypes="text/html"
            icon_path="icon_dokument_webdokument.gif" />
 
+ <mimetype name="Rich Text Format (RTF)"
+           mimetypes="application/rtf"
+           binary="True"
+           extensions="rtf"
+           globs="*.rtf"
+           icon_path="icon_dokument_text.gif" />
+
  <mimetype mimetypes="application/zip
                       application/x-zip-compressed"
            icon_path="icon_dokument_zip.gif" />
