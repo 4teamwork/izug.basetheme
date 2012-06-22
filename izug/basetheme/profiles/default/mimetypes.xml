@@ -35,6 +35,13 @@
                       image/pdf"
            icon_path="icon_dokument_pdf.gif" />
 
+ <!-- Remove .ai from postscript types, we want it to be associated only with Adobe Illustrator -->
+ <mimetype name="PS document"
+           binary="True"
+           extensions="ps eps"
+           globs="*.ps"
+           icon_path="ps.png"
+           mimetypes="application/postscript" />
 
  <!-- Microsoft Office Formats -->
 
