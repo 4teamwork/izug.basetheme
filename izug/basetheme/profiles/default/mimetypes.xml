@@ -171,8 +171,159 @@
            icon_path="icon_dokument_illustrator.gif"
            mimetypes="application/illustrator"/>
 
+ <!-- OpenOffice 1.0 Formats -->
 
- <!-- Various other file formats -->
+ <mimetype name="OpenOffice Calc spreadsheet"
+           binary="True"
+           extensions="sxc"
+           globs="*.sxc"
+           icon_path="icon_dokument_openoffice_calc.gif"
+           mimetypes="application/vnd.sun.xml.calc"/>
+
+ <mimetype name="OpenOffice Calc template"
+           binary="True"
+           extensions="stc"
+           globs="*.stc"
+           icon_path="icon_dokument_openoffice_calc.gif"
+           mimetypes="application/vnd.sun.xml.calc.template"/>
+
+ <mimetype name="OpenOffice Draw drawing"
+           binary="True"
+           extensions="sxd"
+           globs="*.sxd"
+           icon_path="icon_dokument_openoffice_draw.gif"
+           mimetypes="application/vnd.sun.xml.draw"/>
+
+ <mimetype name="OpenOffice Draw template"
+           binary="True"
+           extensions="std"
+           globs="*.std"
+           icon_path="icon_dokument_openoffice_draw.gif"
+           mimetypes="application/vnd.sun.xml.draw.template"/>
+
+ <mimetype name="OpenOffice Impress presentation"
+           binary="True"
+           extensions="sxi"
+           globs="*.sxi"
+           icon_path="icon_dokument_openoffice_impress.gif"
+           mimetypes="application/vnd.sun.xml.impress"/>
+
+ <mimetype name="OpenOffice Impress template"
+           binary="True"
+           extensions="sti"
+           globs="*.sti"
+           icon_path="icon_dokument_openoffice_impress.gif"
+           mimetypes="application/vnd.sun.xml.impress.template"/>
+
+ <mimetype name="OpenOffice Math formula"
+           binary="True"
+           extensions="sxm"
+           globs="*.sxm"
+           icon_path="icon_dokument_openoffice_math.gif"
+           mimetypes="application/vnd.sun.xml.math"/>
+
+ <mimetype name="OpenOffice Writer document"
+           binary="True"
+           extensions="sxw"
+           globs="*.sxw"
+           icon_path="icon_dokument_openoffice_writer.gif"
+           mimetypes="application/vnd.sun.xml.writer"/>
+
+ <mimetype name="OpenOffice Writer global document"
+           binary="True"
+           extensions="sxg"
+           globs="*.sxg"
+           icon_path="icon_dokument_openoffice_writer.gif"
+           mimetypes="application/vnd.sun.xml.writer.global"/>
+
+ <mimetype name="OpenOffice Writer template"
+           binary="True"
+           extensions="stw"
+           globs="*.stw"
+           icon_path="icon_dokument_openoffice_writer.gif"
+           mimetypes="application/vnd.sun.xml.writer.template"/>
+
+
+ <!-- ODF (OpenDocument Format) -->
+
+ <mimetype name="ODT document"
+           binary="True"
+           extensions="odt"
+           globs="*.odt"
+           icon_path="icon_dokument_openoffice_writer.gif"
+           mimetypes="application/vnd.oasis.opendocument.text"/>
+
+ <mimetype name="ODT template"
+           binary="True"
+           extensions="ott"
+           globs="*.ott"
+           icon_path="icon_dokument_openoffice_writer.gif"
+           mimetypes="application/vnd.oasis.opendocument.text-template"/>
+
+ <mimetype name="ODM document"
+           binary="True"
+           extensions="odm"
+           globs="*.odm"
+           icon_path="icon_dokument_openoffice_writer.gif"
+           mimetypes="application/vnd.oasis.opendocument.text-master"/>
+
+ <mimetype name="OTH template"
+           binary="True"
+           extensions="oth"
+           globs="*.oth"
+           icon_path="icon_dokument_openoffice_writer.gif"
+           mimetypes="application/vnd.oasis.opendocument.text-web"/> 
+
+ <mimetype name="ODS spreadsheet"
+           binary="True"
+           extensions="ods"
+           globs="*.ods"
+           icon_path="icon_dokument_openoffice_calc.gif"
+           mimetypes="application/vnd.oasis.opendocument.spreadsheet"/>
+
+ <mimetype name="ODS template"
+           binary="True"
+           extensions="ots"
+           globs="*.ots"
+           icon_path="icon_dokument_openoffice_calc.gif"
+           mimetypes="application/vnd.oasis.opendocument.spreadsheet-template"/>
+
+ <mimetype name="ODP presentation"
+           binary="True"
+           extensions="odp"
+           globs="*.odp"
+           icon_path="icon_dokument_openoffice_impress.gif"
+           mimetypes="application/vnd.oasis.opendocument.presentation"/>
+
+ <mimetype name="ODP template"
+           binary="True"
+           extensions="otp"
+           globs="*.otp"
+           icon_path="icon_dokument_openoffice_impress.gif"
+           mimetypes="application/vnd.oasis.opendocument.presentation-template"/>
+
+ <mimetype name="ODG drawing"
+           binary="True"
+           extensions="odg"
+           globs="*.odg"
+           icon_path="icon_dokument_openoffice_draw.gif"
+           mimetypes="application/vnd.oasis.opendocument.graphics"/>
+
+ <mimetype name="ODG template"
+           binary="True"
+           extensions="otg"
+           globs="*.otg"
+           icon_path="icon_dokument_openoffice_draw.gif"
+           mimetypes="application/vnd.oasis.opendocument.graphics-template"/>
+
+ <mimetype name="ODF formula"
+           binary="True"
+           extensions="odf"
+           globs="*.odf"
+           icon_path="icon_dokument_openoffice_math.gif"
+           mimetypes="application/vnd.oasis.opendocument.formula"/>
+
+<!-- Various other file formats -->
 
  <mimetype name="Mindjet MindManager File"
            binary="True"

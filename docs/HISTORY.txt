@@ -5,6 +5,9 @@ Changelog
 1.1.8 (unreleased)
 ------------------
 
+- Added ODF types to MIME types registry
+  [lgraf]
+
 - Added sprite icons for OpenOffice MIME types
   [lgraf]
 
