@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.8 (unreleased)
+1.1.8 (2012-06-25)
 ------------------
 
 - Added ODF types to MIME types registry
