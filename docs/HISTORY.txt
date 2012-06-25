@@ -5,7 +5,8 @@ Changelog
 1.1.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added sprite icons for OpenOffice MIME types
+  [lgraf]
 
 
 1.1.7 (2012-06-22)
