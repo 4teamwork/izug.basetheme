@@ -35,4 +35,8 @@ div.x-grid3-viewport {
     width: 23.536em;
 }
 
+span.function-ok{
+  line-height: 15px;
+}
+
 /* </dtml-with> */

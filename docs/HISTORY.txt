@@ -5,7 +5,8 @@ Changelog
 1.1.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added IE9 Fix for sharing tab in opengever.
+  [phgross]
 
 
 1.1.8 (2012-06-25)
