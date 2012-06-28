@@ -5,6 +5,9 @@ Changelog
 1.1.9 (unreleased)
 ------------------
 
+- Added IE9 fix for the participation roles field (list widget).
+  [phgross]
+
 - Added IE9 Fix for sharing tab in opengever.
   [phgross]
 

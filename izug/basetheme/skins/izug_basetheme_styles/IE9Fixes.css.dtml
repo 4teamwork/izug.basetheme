@@ -39,4 +39,8 @@ span.function-ok{
   line-height: 15px;
 }
 
+#form-widgets-roles-toDataContainer{
+  display: none;
+}
+
 /* </dtml-with> */
