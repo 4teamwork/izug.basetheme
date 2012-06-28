@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.9 (unreleased)
+1.1.9 (2012-06-28)
 ------------------
 
 - Added IE9 fix for the participation roles field (list widget).
