@@ -5,7 +5,8 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Added iZug specific UI style for Openlayers
+  [href]
 
 
 1.1.9 (2012-06-28)
