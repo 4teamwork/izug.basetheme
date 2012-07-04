@@ -1952,4 +1952,9 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
   font-family: Verdana,Arial,Helvetica,sans-serif !important; 
 }
 
+/* Change background color of Openlayers' base layer selection box */
+div.olControlLayerSwitcher .layersDiv {
+    background-color: #006fba;
+}
+
 /* </dtml-with> */
