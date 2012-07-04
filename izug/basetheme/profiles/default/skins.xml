@@ -14,6 +14,9 @@
  <object name="izug_basetheme_icons"
     meta_type="Filesystem Directory View"
     directory="izug.basetheme:skins/izug_basetheme_icons"/>
+ <object name="izug_basetheme_openlayers"
+    meta_type="Filesystem Directory View"
+    directory="izug.basetheme:skins/izug_basetheme_openlayers"/>
 
  <skin-path name="iZug Base Theme" based-on="Plone Classic Theme">
   <layer name="izug_basetheme_images"
@@ -24,6 +27,8 @@
      insert-after="izug_basetheme_templates"/>
   <layer name="izug_basetheme_icons"
      insert-after="izug_basetheme_styles"/>
+  <layer name="izug_basetheme_openlayers"
+     insert-after="izug_basetheme_icons"/>
  </skin-path>
 
 </object>
