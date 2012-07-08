@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Made Advanced Search link in searchbox point to @@search
+  [lgraf]
+
 - Added iZug specific UI style for Openlayers
   [href]
 
