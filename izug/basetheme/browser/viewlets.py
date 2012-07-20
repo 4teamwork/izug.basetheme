@@ -1,5 +1,6 @@
 from AccessControl import getSecurityManager
 from Acquisition import aq_inner, aq_parent
+from ftw.solr.browser import search
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
@@ -245,7 +246,7 @@ class ContentMenuViewlet(common.ViewletBase):
             return False
         return int(self.context.request.get('izug_edit_mode', 0))
 
-class SearchBoxViewlet(common.SearchBoxViewlet):
+class SearchBoxViewlet(search.SearchBoxViewlet):
     render = ViewPageTemplateFile('viewlets_templates/searchbox.pt')
 
     def get_search_title(self):
