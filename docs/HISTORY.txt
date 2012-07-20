@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Made search button in searchbox use the @@search view
+  [lgraf]
+
 - Made Advanced Search link in searchbox point to @@search
   [lgraf]
 
