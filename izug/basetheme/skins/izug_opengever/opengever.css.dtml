@@ -550,4 +550,8 @@ div#portal-column-content #search-results {
 }
 
 
+.facetRemoveItem {
+    font-size: 150%;
+}
+
 /* </dtml-with> */
