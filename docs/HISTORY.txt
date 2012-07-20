@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Added CSS fix to not highlight search terms outside search results
+  [lgraf]
+
 - Added some CSS to layout and style opengever search page similar to zug.ch
   [lgraf]
 

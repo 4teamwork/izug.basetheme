@@ -545,4 +545,9 @@ div#portal-column-content #search-results {
     margin-top: 1em;
 }
 
+.highlightedSearchTerm {
+    background-color: transparent !important
+}
+
+
 /* </dtml-with> */
