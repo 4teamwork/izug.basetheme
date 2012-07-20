@@ -28,6 +28,15 @@
                value="Search"
                i18n:attributes="value label_search;" />
 
+        <!--
+        <input name="facet" value="true" type="hidden">
+        <input name="facet.field" value="portal_type" type="hidden">
+        <input name="facet.field" value="review_state" type="hidden">
+        <input name="facet.field" value="trashed" type="hidden">
+        <input name="facet.field" value="site_section" type="hidden">
+        <input name="facet.field" value="repository_section" type="hidden">
+        -->
+        <div tal:replace="structure view/hiddenfields" />
         <div class="searchSection">
             <input id="searchbox_currentfolder_only"
                    class="noborder"

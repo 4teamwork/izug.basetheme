@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- searchbox: Insert hidden fields needed for faceting
+  [lgraf]
+
 - Let izug searchbox inherit from ftw.solr SearchBoxViewlet
   [lgraf]
 
