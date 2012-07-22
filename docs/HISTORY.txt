@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Layout and style the customized solr @@search view for OpenGever
+  [lgraf]
+
 - Redefine em and strong as italic and bold - override stupid ExtJS rules
   [lgraf]
 

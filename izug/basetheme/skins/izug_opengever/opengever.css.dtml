@@ -513,53 +513,86 @@ https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069
     color: #CCCCCC;
 }
 
+
+/* ==== Redefine em and strong (undo ExtJS styles) ==== */
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+
+/* =========================== */
+/* SOLR search page            */
+/* =========================== */
+
+/* ==== Layout ==== */
+
+body.template-search #content-core {
+    width: 95% !important;
+}
+
+div.searchBoxWrapper {
+    margin-left: 28.25em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#search-page-container {
+    overflow: hidden;
+    margin: 0 0;
+    padding-left: 25.25em; /* The width of the facets column */
+}
+
+* html #search-page-container {
+    height: 1%; /* So IE plays nice */
+}
+
+#search-page-content {
+    width: 100%;
+    border-left: 25.25em solid transparent; /* The width and color of the facets column */
+    margin-left: -25.25em;
+    float: right;
+}
+
+#facets-column {
+    width: 25.25em;
+    float: right;
+    margin-left: -25.25em;
+}
+
+/* ==== Facets styling ==== */
+
 #portal-searchfacets {
     background-color: white !important;
-    float: left !important;
-    left: 100%;
-    margin-left: -100%;
-    padding: 0;
-    position: relative;
-    width: 19.45em !important;
     font-size: 110%;
-    margin-top: -5.8em;
+    margin-top: 0.25em;
 }
-
-div#search-results-wrapper h1.documentFirstHeading {
-    margin-left: 18em;
-}
-
-div#content-core form.searchPage input.searchPage {
-    position: relative;
-    left: 26.25em;
-    margin-bottom: 2em;
-    margin-top: 1em;
-}
-
-div#portal-column-content #search-results {
-    float: left;
-    left: 100%;
-    margin-left: -55em;
-    position: relative;
-    width: 80em;
-    margin-top: 1em;
-}
-
-.highlightedSearchTerm {
-    background-color: transparent !important
-}
-
 
 .facetRemoveItem {
     font-size: 150%;
 }
 
-em {
-    font-style: italic;
+
+/* ==== Search results ==== */
+
+div#search-results-wrapper h1.documentFirstHeading {
+    margin-left: 2em;
 }
 
-strong {
-    font-weight: bold;
+div#search-results {
+    margin-top: 1em;
+    margin-left: 4em;
+}
+
+/* Disable sprites for opengever.document.document objects in search results so
+   the generic document icon doesn't show.
+   XXX Also see see results.pt where a generic document icon sprite is inserted */
+dt.contenttype-opengever-document-document {
+    background-image: none !important;
+    padding-left: 0.2em !important;
+}
+
+/* Make sure search terms outside search results don't get highlighted */
+.highlightedSearchTerm {
+    background-color: transparent !important
 }
 
 /* </dtml-with> */
