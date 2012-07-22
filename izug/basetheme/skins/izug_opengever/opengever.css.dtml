@@ -554,4 +554,12 @@ div#portal-column-content #search-results {
     font-size: 150%;
 }
 
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
 /* </dtml-with> */

@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Redefine em and strong as italic and bold - override stupid ExtJS rules
+  [lgraf]
+
 - Added CSS fix to not highlight search terms outside search results
   [lgraf]
 
