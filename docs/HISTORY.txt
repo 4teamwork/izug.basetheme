@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Remove link to pre-Solr advanced search form
+  [lgraf]
+
 - Layout and style the customized solr @@search view for OpenGever
   [lgraf]
 
