@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Data grid widget: style "add row" buttons.
+  [jone]
+
 - Added iZug specific UI style for Openlayers
   [href]
 
