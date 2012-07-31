@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Set IE8 mode on zug plone 3 sites.
+  [mathias.leimgruber]
+
 - Do not use style <q> as italic on headings (@@sharing).
   [jone]
 
