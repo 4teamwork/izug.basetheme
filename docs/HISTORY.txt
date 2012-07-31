@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- Do not use style <q> as italic on headings (@@sharing).
+  [jone]
+
 - Data grid widget: style "add row" buttons.
   [jone]
 

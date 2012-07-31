@@ -37,6 +37,9 @@ body.kssActive h1.formlibInlineEditable:hover {
     padding-bottom: 1px;
 }
 
+h1 q {
+    font-style: normal;
+}
 
 h3, h4, h5, h6 {
     border-bottom: none;
