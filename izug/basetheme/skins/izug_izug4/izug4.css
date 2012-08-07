@@ -609,9 +609,78 @@ div.discreet.suppressVisualEditor {
 }
 
 
-/* Searcg result page */
+/* Search result page */
 body.template-search #content a.link-feed,
 body.template-search #content form.searchPage p.discreet,
 .LSRow a[href*='advanced_search'] {
     display: none;
+}
+
+/* =========================== */
+/* SOLR search page            */
+/* =========================== */
+
+/* ==== Layout ==== */
+
+div.searchBoxWrapper {
+    margin-left: 22.45em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#search-page-container {
+    overflow: hidden;
+    margin: 0 0;
+    padding-left: 19.45em; /* The width of the facets column */
+}
+
+* html #search-page-container {
+    height: 1%; /* So IE plays nice */
+}
+
+#search-page-content {
+    width: 100%;
+    border-left: 19.45em solid transparent; /* The width and color of the facets column */
+    margin-left: -19.45em;
+    float: right;
+}
+
+#facets-column {
+    width: 19.45em;
+    float: right;
+    margin-left: -19.45em;
+}
+
+/* ==== Facets styling ==== */
+
+#portal-searchfacets {
+    background-color: white !important;
+    margin-top: 0.25em;
+}
+#available-facets dd {
+    margin-left: 0;
+}
+.facetRemoveItem {
+    font-size: 150%;
+}
+
+/* ==== Search results ==== */
+
+div#search-results-wrapper h1.documentFirstHeading {
+    margin-left: 2em;
+}
+#search-page-content .documentFirstHeading .discreet {
+    color: #ccc;
+}
+
+div#search-results {
+    margin-top: 1em;
+    margin-left: 4em;
+}
+#search-results dd {
+    margin-left: 0;
+}
+/* Make sure search terms outside search results don't get highlighted */
+.highlightedSearchTerm {
+    background-color: transparent !important
 }
