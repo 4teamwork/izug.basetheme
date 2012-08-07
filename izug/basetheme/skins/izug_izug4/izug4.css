@@ -621,6 +621,9 @@ body.template-search #content form.searchPage p.discreet,
 /* =========================== */
 
 /* ==== Layout ==== */
+.template-search #portal-breadcrumbs {
+    margin-left: 24.75em;
+}
 
 div.searchBoxWrapper {
     margin-left: 22.45em;
@@ -657,6 +660,15 @@ div.searchBoxWrapper {
     background-color: white !important;
     margin-top: 0.25em;
 }
+#portal-searchfacets h4 {
+    border-top: 2px solid #ccc;
+    padding-top: 1em;
+    font-size: 109.0909%;
+}
+#available-facets dt {
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+}
 #available-facets dd {
     margin-left: 0;
 }
@@ -676,6 +688,9 @@ div#search-results-wrapper h1.documentFirstHeading {
 div#search-results {
     margin-top: 1em;
     margin-left: 4em;
+}
+#search-results dt {
+    margin-top: 2em;
 }
 #search-results dd {
     margin-left: 0;
