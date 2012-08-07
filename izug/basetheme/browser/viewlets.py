@@ -264,3 +264,7 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
             mapping={'text': app_title})
 
         return searchtext
+
+
+class IZugSearchBoxViewlet(SearchBoxViewlet):
+    render = ViewPageTemplateFile('viewlets_templates/izug_searchbox.pt')
