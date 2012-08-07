@@ -42,7 +42,7 @@
             </label>
         </div>
 
-        <div tal:replace="structure context/@@search-facets/hiddenfields"></div>
+        <div tal:replace="structure context/@@search-facets/hiddenfields|nothing"></div>
 
         <div class="LSResult" id="LSResult" style=""><div class="LSShadow" id="LSShadow"></div></div>
         </div>
