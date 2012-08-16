@@ -104,6 +104,10 @@ body.icons-on *[class*="actionicon-"] {
     top: 7.7em;
 }
 
+.tabbedview_view .disabledSearchBox #tabbedview-searchbox {
+  display: none;
+}
+
 #tabbedview-body h2 {
     font-size:1em;
     line-height: 1.455em;
