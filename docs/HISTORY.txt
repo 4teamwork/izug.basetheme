@@ -5,6 +5,9 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
+- iZug 4: hide disabled tabbed view filter field.
+  [jone]
+
 - Set IE8 mode on zug plone 3 sites.
   [mathias.leimgruber]
 
