@@ -679,14 +679,14 @@ div.searchBoxWrapper {
     margin-left: 0;
 }
 .facetRemoveItem {
-    background: transparent url(&dtml-portal_url;/remove_filter.gif) no-repeat scroll 2px 2px;
+    background: transparent url(&dtml-portal_url;/remove_filter.gif) no-repeat scroll 2px 3px;
     color: transparent;
-    width: 16px;
+    width: 0px;
     height: 16px;
     display: inline-block;
-}
-.documentContent .facetRemoveItem:hover {
-    color: transparent !important;
+    overflow: hidden;
+    padding-left: 16px;
+    vertical-align: top;
 }
 
 /* ==== Search results ==== */
