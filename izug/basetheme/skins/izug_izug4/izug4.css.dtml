@@ -1,3 +1,5 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
 /* FONTS */
 
 h4, h5, h6 {
@@ -677,7 +679,14 @@ div.searchBoxWrapper {
     margin-left: 0;
 }
 .facetRemoveItem {
-    font-size: 150%;
+    background: transparent url(&dtml-portal_url;/remove_filter.gif) no-repeat scroll 2px 2px;
+    color: transparent;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+.documentContent .facetRemoveItem:hover {
+    color: transparent !important;
 }
 
 /* ==== Search results ==== */
@@ -703,3 +712,5 @@ div#search-results {
 .highlightedSearchTerm {
     background-color: transparent !important
 }
+
+/* </dtml-with> */
