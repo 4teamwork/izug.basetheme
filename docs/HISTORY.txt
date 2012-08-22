@@ -20,6 +20,9 @@ Changelog
 - Added iZug specific UI style for Openlayers
   [href]
 
+- Styled solr search page.
+  [buchi]
+
 
 1.1.9 (2012-06-28)
 ------------------

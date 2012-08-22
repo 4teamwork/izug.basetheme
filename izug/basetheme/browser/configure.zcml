@@ -120,7 +120,15 @@
       manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
       class=".viewlets.SearchBoxViewlet"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IIzugSpecific"
+      />
+
+  <browser:viewlet
+      name="plone.searchbox"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class=".viewlets.IZugSearchBoxViewlet"
+      permission="zope2.View"
+      layer=".interfaces.IIzug4Specific"
       />
 
   <!-- zug.ch-specific personal bar viewlet -->
