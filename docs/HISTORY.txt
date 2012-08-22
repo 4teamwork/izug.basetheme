@@ -2,8 +2,11 @@ Changelog
 =========
 
 
-1.1.10 (unreleased)
--------------------
+1.2 (unreleased)
+----------------
+
+- Styled solr search page.
+  [buchi]
 
 - iZug 4: hide disabled tabbed view filter field.
   [jone]
@@ -19,9 +22,6 @@ Changelog
 
 - Added iZug specific UI style for Openlayers
   [href]
-
-- Styled solr search page.
-  [buchi]
 
 
 1.1.9 (2012-06-28)
