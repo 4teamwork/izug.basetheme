@@ -271,6 +271,11 @@ form.seantis-directory-search, form.seantis-directory-filter {
     margin-left: 20px;
 }
 
+#directoryResultMap {
+    width: 50%;
+    float: right;
+}
+
 .seantis-directory-filter .visualMarginRight {
     width: auto;
     display: block;
