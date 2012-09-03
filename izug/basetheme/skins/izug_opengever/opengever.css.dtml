@@ -177,7 +177,8 @@ a.ui-state-highlight {
 }
 #plone-contentmenu-tabbedview-actions dd.actionMenuContent {
     border: 1px solid &dtml-contentViewBorderColor; !important;
-    right: 0;
+    left: 0;
+    margin: 0 0 0 0;
     border-top-style: none !important;
 }
 #plone-contentmenu-tabbedview-actions dd.actionMenuContent ul {
@@ -187,6 +188,7 @@ a.ui-state-highlight {
 }
 #plone-contentmenu-tabbedview-actions dd.actionMenuContent ul li a {
     margin-top: 0px;
+    padding-right: 1em !important;
 }
 #plone-contentmenu-tabbedview-actions dd.actionMenuContent ul li a:hover {
     color: &dtml-red; !important;
