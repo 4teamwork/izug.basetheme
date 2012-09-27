@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-10-29 15:16+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"PO-Revision-Date: 2012-09-27 17:05+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -188,7 +188,7 @@ msgstr "Afficher tout"
 #. Default: "LiveSearch &#8595;"
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:82
 msgid "legend_livesearch"
-msgstr "Recherche en direct: ${percentage}%"
+msgstr "Recherche en direct: &#8595;"
 
 #. Default: "Advanced Search"
 #: ./izug/basetheme/browser/customized/plone.app.layout.viewlets.searchbox.pt:51
