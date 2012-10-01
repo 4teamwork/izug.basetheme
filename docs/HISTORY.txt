@@ -5,6 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- Show arrow on external links.
+  [jone]
+
 - Change portlet folding icons according to "design fundamentals".
   [jone]
 
