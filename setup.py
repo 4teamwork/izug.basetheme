@@ -37,6 +37,7 @@ setup(name='izug.basetheme',
         'z3c.jbot',
         'collective.mtrsetup',
         'plone.browserlayer',
+        'ftw.upgrade',
         #'opengever.ogds.base',
         # -*- Extra requirements: -*-
         ],

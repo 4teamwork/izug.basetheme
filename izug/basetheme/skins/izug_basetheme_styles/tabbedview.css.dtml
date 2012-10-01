@@ -1,0 +1,116 @@
+
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+#content .tabbedview-tab-menu {
+  top: -1.2em;
+  left: 1.6em;
+  position: relative;
+}
+
+#content .tabbedview_view .pane {
+  top: -2em;
+  clear: both;
+  position: relative;
+}
+
+#content .tabbedview-tab-menu .actionMenuHeader a {
+  color: #777;
+  text-shadow: none;
+  background-image: url(&dtml-portal_url;/icon_funktion_einstellungen.gif);
+  height: 13px;
+  width: 13px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+#content .tabbedview-tab-menu.activated .actionMenuHeader {
+  background: none;
+}
+
+#content .tabbedview-tab-menu .actionMenuHeader a span {
+  display: none;
+}
+
+
+#content .tabbedview-tab-menu .actionMenuHeader a:hover,
+#content .tabbedview-tab-menu .actionMenuHeader .actionMenuSelected {
+  background-color: inherit;
+  text-decoration: none;
+}
+
+#content .tabbedview-tab-menu dd.actionMenuContent {
+  background-color: white;
+  border-radius: 0;
+  -webkit-border-radius 0;
+  -moz-border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: 1px solid #006FBA;
+  box-shadow: 0 0 3px 2px rgba(200, 200, 200, 0.5);
+  -webkit-box-shadow: 0 0 3px 2px rgba(200, 200, 200, 0.5);
+  -moz-box-shadow: 0 0 3px 2px rgba(200, 200, 200, 0.5);
+  top: 1.5em;
+  right: 0.5em;
+  padding: 0.2em !important;
+}
+
+#content .actionMenu.tabbedview-tab-menu.activated dd.actionMenuContent {
+  display: block !important;
+}
+
+#content .tabbedview-tab-menu dd.actionMenuContent ul {
+  display: block;
+  overflow: visible;
+  border-collapse: separate;
+  background: none;
+  border: none;
+}
+
+#content .tabbedview-tab-menu .actionMenuContent a {
+  color: black !important;
+  text-shadow: none;
+  line-height: 16px;
+  height: 16px;
+  padding-top: 3px !important;
+  padding-bottom: 2px !important;
+  padding-left: 9px !important;
+  padding-right: 9px !important;
+  margin: 0px !important;
+}
+
+#content .tabbedview-tab-menu .actionMenuContent li {
+  padding: 1px !important;
+  border-radius: 2px;
+  -webkit-border-radius 2px !important;
+  -moz-border-radius: 2px !important;
+}
+
+#content .tabbedview-tab-menu .actionMenuContent li:hover {
+  background-image: url(++resource++collective.js.extjs-resources/images/default/menu/item-over.gif);
+  background-color: #DBECF4;
+  border: 1px solid #AACCF6;
+  border-left-style: solid !important;
+  padding: 0px !important;
+}
+
+#content .tabbedview-tab-menu .actionMenuContent a:hover {
+  text-decoration: none;
+  color: #D52000 !important;
+  background: none;
+}
+
+#content .tabbedview-action-list {
+  list-style: none;
+  margin-left: 0em;
+  margin-top: 1em;
+}
+
+#content .tabbedview-action-list li {
+  float: left;
+  padding-right: 0.3em;
+}
+
+/* </dtml-with> */

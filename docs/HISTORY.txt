@@ -5,6 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- Add styling for new tabbedview menu to izug4 profile.
+  [jone]
+
 - Show arrow on external links.
   [jone]
 

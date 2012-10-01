@@ -10,15 +10,16 @@
   <include package="plone.browserlayer" />
 
   <!-- for plone 4 only -->
-  <i18n:registerTranslations 
+  <i18n:registerTranslations
       zcml:condition="installed plone.app.upgrade"
       directory="locales" />
 
   <include package="z3c.jbot" file="meta.zcml" />
-  
+
   <include package=".browser" />
   <include package=".portlets" />
   <include file="skins.zcml" />
   <include file="profiles.zcml" />
+  <include package=".upgrades" />
 
 </configure>

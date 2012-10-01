@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="izug.basetheme">
+
+    <!-- 0.1 -> 1200 -->
+    <genericsetup:upgradeStep
+        title="Add a tabbedview.css for styling the tabbedview menu."
+        description=""
+        source="0.1"
+        destination="1200"
+        handler="izug.basetheme.upgrades.izug4.to1200.AddTabbedviewCSS"
+        profile="izug.basetheme:izug4"
+        />
+
+    <genericsetup:registerProfile
+        name="1200"
+        title="izug.basetheme.izug4: upgrade profile 1200"
+        description=""
+        directory="profiles/1200"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+
+</configure>
