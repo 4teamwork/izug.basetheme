@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="izug.basetheme">
+
+    <browser:resource
+        name="icon_close_box.gif"
+        file="icon_close_box.gif"
+        layer="izug.basetheme.browser.interfaces.IThemeSpecific"
+        />
+
+    <browser:resource
+        name="icon_open_box.gif"
+        file="icon_open_box.gif"
+        layer="izug.basetheme.browser.interfaces.IThemeSpecific"
+        />
+
+</configure>

@@ -229,14 +229,14 @@ body.template-manage-dashboard #portal-breadcrumbs {
 #dashboard .portletHeader .close,
 #dashboard .portletHeader .edit {
   text-decoration: none;
-  margin-top: 0.2em;
+  margin-top: 0.5em;
 }
 
 /* move fold icon to the left of the header */
 .portletHeader .buttonClose,
 .portletHeader .buttonOpen {
   float: left;
-  padding-right: 1em;
+  padding-right: 0.6em;
 }
 
 /* it looks a bit different in ie7 but at least it looks ok... */
@@ -368,6 +368,10 @@ body.template-manage-dashboard #portal-breadcrumbs {
 
 #dashboard-add-portlet form .submit {
   float: right;
+}
+
+#dashboard .folded .portlet {
+  border-bottom: none;
 }
 
 /* Table styling */

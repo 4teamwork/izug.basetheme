@@ -4,6 +4,8 @@
     xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="izug.basetheme">
 
+    <include package=".dashboard_icons" />
+
   <!-- 'iZug Base Theme' Zope 3 browser layer -->
   <interface
       interface=".interfaces.IThemeSpecific"

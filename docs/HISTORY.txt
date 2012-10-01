@@ -5,6 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- Change portlet folding icons according to "design fundamentals".
+  [jone]
+
 - Fixed french livesearch legend translation.
   [phgross]
 
