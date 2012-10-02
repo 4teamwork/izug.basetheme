@@ -32,7 +32,9 @@
 .template-search #portal-columns{
   margin-top: 2em;
 }
-
+#livesearchLegend {
+  margin-top: 0;
+}
 /* resize */
 div#portal-column-one .visualPadding {
   margin-right: 5em;

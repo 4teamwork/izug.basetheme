@@ -5,6 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- Fixed french livesearch legend is over searchbox in opengever.
+  [Julian Infanger]
+
 - Add styling for new tabbedview menu to izug4 profile.
   [jone]
 
