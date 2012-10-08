@@ -422,8 +422,7 @@ table.vertical.MeetingListing th,
 }
 
 /* Fix icon position in several listings */
-#overview_overview .box ul li a img,
-#overview_overview table.listing td a img {
+#overview_overview .box ul li a img {
     margin-top: -6px;
     padding-right: 0.75em;
 }
