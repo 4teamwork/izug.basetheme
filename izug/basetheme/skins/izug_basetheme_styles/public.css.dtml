@@ -1091,6 +1091,11 @@ a.link-parent {
     padding: 0 12px 0 0;
 }
 
+a[target=_blank] {
+    background: transparent url(&dtml-portal_url;/link_icon.gif) 100% 2px no-repeat;
+    padding: 0 12px 0 0;
+}
+
 /* Handling special links */
 #content a.link,
 .portlet a.link {

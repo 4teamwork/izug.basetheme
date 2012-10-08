@@ -17,7 +17,7 @@ Changelog
 - Add styling for new tabbedview menu to izug4 profile.
   [jone]
 
-- Show arrow on external links.
+- Show arrow on external links or links with a _blank target.
   [jone]
 
 - Change portlet folding icons according to "design fundamentals".
