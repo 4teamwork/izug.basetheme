@@ -168,6 +168,13 @@ lo
     display:none;
 }
 
+.blogItem h2.clearfix a {
+  color: #00538C;
+}
+
+.blogItem .documentDescription {
+  font-weight: normal;
+}
 
 
 /* DASHBOARD */
@@ -716,5 +723,6 @@ div#search-results {
 .highlightedSearchTerm {
     background-color: transparent !important
 }
+
 
 /* </dtml-with> */
