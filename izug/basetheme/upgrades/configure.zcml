@@ -1,6 +1,9 @@
 <configure
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns="http://namespaces.zope.org/zope">
 
-    <include package=".izug4" />
+    <configure zcml:condition="installed ftw.upgrade">
+        <include package=".izug4" />
+    </configure>
 
 </configure>

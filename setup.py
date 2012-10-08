@@ -4,6 +4,10 @@ import os
 version = open('izug/basetheme/version.txt').read().strip()
 maintainer = 'Mathias Leimgruber'
 
+extras_require = {
+    'plone4': ['ftw.upgrade'],
+    }
+
 setup(name='izug.basetheme',
       version=version,
       description="An installable theme for Plone 4.0" + \
@@ -29,6 +33,7 @@ setup(name='izug.basetheme',
       namespace_packages=['izug'],
       include_package_data=True,
       zip_safe=False,
+
       install_requires=[
         'setuptools',
         'plonetheme.classic',
@@ -37,10 +42,9 @@ setup(name='izug.basetheme',
         'z3c.jbot',
         'collective.mtrsetup',
         'plone.browserlayer',
-        'ftw.upgrade',
-        #'opengever.ogds.base',
-        # -*- Extra requirements: -*-
         ],
+      extras_require=extras_require,
+
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
