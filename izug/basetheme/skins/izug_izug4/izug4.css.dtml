@@ -724,7 +724,11 @@ div#search-results {
 }
 
 li.ac_even {
-    margin-bottom: 0em;
     background-color: #FFFFFF;
+}
+li.ac_even,
+li.ac_odd
+{
+    margin-bottom: 0em;
 }
 /* </dtml-with> */
