@@ -723,5 +723,8 @@ div#search-results {
     background-color: transparent !important
 }
 
-
+li.ac_even {
+    margin-bottom: 0em;
+    background-color: #FFFFFF;
+}
 /* </dtml-with> */
