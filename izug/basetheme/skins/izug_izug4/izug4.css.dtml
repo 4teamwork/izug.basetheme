@@ -428,6 +428,10 @@ table.vertical.MeetingListing th,
     border:none;
 }
 
+.MeetingItemWrapper .meetingItemActions {
+  padding-top: 0.25em;
+}
+
 /* Meeting View */
 .MeetingItemWrapper div.MeetingItemHead {
     border: 0.091em solid #99C5E3;
@@ -436,6 +440,7 @@ table.vertical.MeetingListing th,
     line-height: 2em;
     margin: 0;
     padding: 0 0.818em 0 0.454em;
+    font-size:0.9em;
 }
 
 .MeetingItemWrapper .MeetingItemHead a {
@@ -445,7 +450,6 @@ table.vertical.MeetingListing th,
 
 .MeetingItemWrapper .MeetingItemHead img {
     padding-right: 0;
-    margin-top:0.35em;
     margin-left: -0.5em;
 }
 
@@ -454,6 +458,38 @@ table.vertical.MeetingListing th,
     border-top:none;
     padding: 0 1.5em;
 }
+
+.portletActionsWrapper a {
+  text-decoration:none !important;
+}
+.meetingItemActions a.buttonClose,
+.meetingItemActions a.buttonClose:hover {
+  background-image: url(&dtml-portal_url;/++resource++icon_close_box.gif);
+  background-position:center center;
+}
+
+.meetingItemActions a.buttonOpen,
+.meetingItemActions a.buttonOpen:hover {
+  background-image: url(&dtml-portal_url;/++resource++icon_open_box.gif);
+  background-position:center center;
+
+}
+
+.meetingItemActions a.buttonEdit,
+.meetingItemActions a.buttonEdit:hover {
+  background-image: url(&dtml-portal_url;/icon_funktion_editieren.gif);
+  background-position:0 0;
+}
+
+.meetingItemActions a.buttonRemove,
+.meetingItemActions a.buttonRemove:hover {
+  background-image: url(&dtml-portal_url;/icon_funktion_entfernen.gif);
+  background-position:0 0;
+
+}
+
+
+
 
 /* Fix icon position in several listings */
 #overview_overview .box ul li a img {

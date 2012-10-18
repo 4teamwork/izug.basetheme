@@ -5,6 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- Teamraum 3.0.2 style fixes.
+  [mathias.leimgruber]
+
 - GEVER: Added sprite icon for docugate action.
   [phgross]
 
