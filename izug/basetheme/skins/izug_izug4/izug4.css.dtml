@@ -239,6 +239,40 @@ body.template-manage-dashboard #portal-breadcrumbs {
   margin-top: 0.5em;
 }
 
+#dashboard .portletActionsWrapper {
+  padding: 0em 1em 0 0.5em;
+}
+
+.portletActionsWrapper a {
+  text-decoration:none !important;
+}
+.portletActionsWrapper a.buttonClose,
+.portletActionsWrapper a.buttonClose:hover {
+  background-image: url(&dtml-portal_url;/++resource++icon_close_box.gif);
+  background-position:center center;
+}
+
+.portletActionsWrapper a.buttonOpen,
+.portletActionsWrapper a.buttonOpen:hover {
+  background-image: url(&dtml-portal_url;/++resource++icon_open_box.gif);
+  background-position:center center;
+
+}
+
+.portletActionsWrapper a.buttonEdit,
+.portletActionsWrapper a.buttonEdit:hover {
+  background-image: url(&dtml-portal_url;/icon_funktion_editieren.gif);
+  background-position:0;
+}
+
+.portletActionsWrapper a.buttonRemove,
+.portletActionsWrapper a.buttonRemove:hover {
+  background-image: url(&dtml-portal_url;/icon_funktion_entfernen.gif);
+  background-position:0;
+
+}
+
+
 /* move fold icon to the left of the header */
 .portletHeader .buttonClose,
 .portletHeader .buttonOpen {
