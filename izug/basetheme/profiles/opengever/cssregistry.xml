@@ -3,13 +3,19 @@
   <stylesheet title="" cacheable="True" compression="safe"
      conditionalcomment="" cookable="True" enabled="on" expression=""
      id="opengever.css" media="screen" rel="stylesheet" rendering="import"/>
-  <!-- disabling jquery.treeview.css - in the new opengever the tree looks 
+
+  <stylesheet title="" cacheable="True" compression="safe"
+     conditionalcomment="" cookable="True" enabled="on" expression=""
+     id="tabbedview.css" media="screen" rel="stylesheet" rendering="import"/>
+
+  <!-- disabling jquery.treeview.css - in the new opengever the tree looks
        completely different -->
   <stylesheet id="jquery.treeview.css" enabled="False"/>
   <!-- not needed -->
   <stylesheet id="deprecated.css" enabled="False"/>
   <stylesheet id="RTL.css" enabled="False"/>
   <stylesheet id="ploneCustom.css" enabled="False"/>
+
   <!--
   <stylesheet id="++resource++collective.js.extjs-resources/css/ext-all.css"
      cacheable="True" cookable="True"/>

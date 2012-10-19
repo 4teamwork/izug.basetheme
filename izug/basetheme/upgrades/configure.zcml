@@ -6,4 +6,9 @@
         <include package=".izug4" />
     </configure>
 
+    <configure zcml:condition="installed ftw.upgrade">
+        <include package=".opengever" />
+    </configure>
+
+
 </configure>
