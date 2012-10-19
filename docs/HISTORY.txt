@@ -5,6 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- GEVER: Added better collapsible/expanded styling for the contenttreewidget.
+  [phgross]
+
 - Add styling for new tabbedview menu to opengever profile.
   [phgross]
 
