@@ -430,6 +430,7 @@ table.vertical.MeetingListing th,
 
 .MeetingItemWrapper .meetingItemActions {
   padding-top: 0.25em;
+  margin-bottom: -0.25em;
 }
 
 /* Meeting View */
