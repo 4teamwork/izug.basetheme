@@ -10,7 +10,7 @@
      <!-- Link to first -->
      <span class="first">
          <a href=""
-            tal:attributes="href string:${view/url}?pagenumber=1&amp;sort_on=${request/sort_on|string:getObjPositionInParent}">&laquo;</a>
+            tal:attributes="href string:${view/url}?pagenumber=1&amp;sort_on=${request/sort_on|getObjPositionInParent}">&laquo;</a>
      </span>
      
     <span class="previous">
@@ -24,7 +24,7 @@
     <!-- Pagelist with links to previous pages for quick navigation -->
     <span tal:repeat="pagenumber batch/previous_pages">
       <a href="" tal:content="pagenumber" 
-         tal:attributes="href string:${view/url}?pagenumber=$pagenumber&amp;sort_on=${request/sort_on|string:getObjPositionInParent}"/>
+         tal:attributes="href string:${view/url}?pagenumber=$pagenumber&amp;sort_on=${request/sort_on|getObjPositionInParent}"/>
     </span>
 
     <!-- Current page -->
@@ -36,13 +36,13 @@
     <!-- Pagelist with links to next pages for quick navigation -->
     <span tal:repeat="pagenumber batch/next_pages">
       <a href="" tal:content="pagenumber" 
-         tal:attributes="href string:${view/url}?pagenumber=$pagenumber&amp;sort_on=${request/sort_on|string:getObjPositionInParent}"/>
+         tal:attributes="href string:${view/url}?pagenumber=$pagenumber&amp;sort_on=${request/sort_on|getObjPositionInParent}"/>
     </span>
 
 
     <span class="next">
         <a tal:condition="batch/has_next"
-           tal:attributes="href string:${view/url}?pagenumber=${batch/nextpage}&amp;sort_on=${request/sort_on|string:getObjPositionInParent}">
+           tal:attributes="href string:${view/url}?pagenumber=${batch/nextpage}&amp;sort_on=${request/sort_on|getObjPositionInParent}">
            &rsaquo;
         </a>
         <a tal:condition="not:batch/has_next">&rsaquo;</a>
@@ -51,7 +51,7 @@
     <!-- Link to last -->
     <span class="last">
         <a href=""
-           tal:attributes="href string:${view/url}?pagenumber=${batch/lastpage}&amp;sort_on=${request/sort_on|string:getObjPositionInParent}">&raquo;</a>
+           tal:attributes="href string:${view/url}?pagenumber=${batch/lastpage}&amp;sort_on=${request/sort_on|getObjPositionInParent}">&raquo;</a>
     </span>
 </div>
 </div>

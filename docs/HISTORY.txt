@@ -5,6 +5,10 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- Fix izug batching customizations for plone 4.2.
+  See https://bugs.launchpad.net/zope.tales/+bug/1002242 for more infos.
+  [mathias.leimgruber]
+
 - GEVER: Added better collapsible/expanded styling for the contenttreewidget.
   [phgross]
 
