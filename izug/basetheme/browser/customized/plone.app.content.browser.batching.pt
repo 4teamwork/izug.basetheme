@@ -16,7 +16,7 @@
      
     <span class="previous">
         <a tal:condition="batch/has_previous"
-           tal:attributes="href string:${view/url}?pagenumber=${batch/previouspage}&amp;sort_on=${request/sort_on|string:getObjPositionInParent}">
+           tal:attributes="href string:${view/url}?pagenumber=${batch/previouspage}&amp;sort_on=${request/sort_on|getObjPositionInParent}">
            &lsaquo;
         </a>
         <a tal:condition="not:batch/has_previous" name="previous">&lsaquo;</a>
