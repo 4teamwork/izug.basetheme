@@ -5,6 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- GEVER: Adjust javscripts: Use $ instead of deprecated jq.
+  [phgross]
+
 - GEVER: Added better collapsible/expanded styling for the contenttreewidget.
   [phgross]
 
