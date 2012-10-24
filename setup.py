@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import os
 
 version = open('izug/basetheme/version.txt').read().strip()
-maintainer = 'Florian Sprenger'
+maintainer = 'Mathias Leimgruber'
 
 setup(name='izug.basetheme',
       version=version,

@@ -1,0 +1,716 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+/* FONTS */
+
+h4, h5, h6 {
+  font-size: 1em;
+  border-bottom: none;
+  font-weight: bold;
+  line-height: 1.455em;
+  margin: 0 0 0.363em 0;
+  color: black !important;
+}
+
+h1 > a,
+h1 > a:visited,
+h2 > a,
+h2 > a:visited,
+h3 > a,
+h3 > a:visited,
+h4 > a,
+h4 > a:visited,
+h5 > a,
+h5 > a:visited,
+h6 > a,
+h6 > a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* book styles */
+
+body.template-simplelayout.portaltype-chapter p.documentDescription {
+    display:none;
+}
+
+
+.book-reader-navigation a {
+  color: black !important;
+}
+
+.book-reader-navigation a.active {
+  color: #AE1E00 !important;
+}
+
+#portal-column-one .portletGoToParent dd {
+  border-top: 1px solid  #EFEFEF;
+  padding-bottom: 0.5em;
+}
+
+#portal-column-one .portletGoToParent a {
+  font-weight: bold;
+  color: black !important;
+  padding-left: 0.5em;
+}
+
+
+.template-book_reader_view h3 {
+  text-decoration: none !important;
+}
+
+body.icons-on *[class*="contenttype-"],
+body.icons-on *[class*="actionicon-"] {
+    background-image:none;
+    padding:0;
+}
+
+.actionMenu .actionMenuContent li a[class*="actionicon-"],
+.actionMenu .actionMenuContent li a[class*="contenttype-"] {
+    padding:0 !important;
+}
+
+.actionMenu .actionMenuContent li a img {
+    display:none;
+}
+
+.actionMenu .actionMenuContent li a {
+    padding-left:0.5em !important;
+}
+
+
+/* Search viewlet */
+.searchSection {
+    left: -29em;
+    position: relative;
+    top: -1.8em;
+    display:block;
+}
+
+.searchSection label {
+    display:none;
+}
+
+/* TABBED VIEW */
+
+.tabbedview_view .documentByLine {
+    height:4em;
+}
+
+.tabbedview_view #tabbedview-header #ftw-edit-bar {
+    margin-top:-2.6em;
+}
+
+.tabbedview_view .tabbedview_search {
+    margin-top: 0;
+    position: absolute;
+    top: 7.7em;
+}
+
+.tabbedview_view .disabledSearchBox #tabbedview-searchbox {
+  display: none;
+}
+
+#tabbedview-body h2 {
+    font-size:1em;
+    line-height: 1.455em;
+    margin: 0 0 0.363em;
+}
+lo
+#tabbedview-body {
+    line-height: 1.454em;
+}
+.overview-left-column {
+    float: left;
+    width: 25.454em;
+}
+.overview-right-column {
+    float: right;
+    width: 33.636em;
+}
+
+#overview_overview table td {
+    border-style:none;
+}
+
+#overview_overview table.listing {
+    background:none;
+    width:100%;
+}
+
+#overview_overview table.listing td:first-child {
+    width:25%;
+}
+
+#overview_overview table.listing td:last-child {
+    width:75%;
+}
+
+#overview_overview ul {
+    list-style: none inside none;
+    margin: 0 0 0.909em;
+    padding: 0 0 0.909em;
+    border-bottom: 0.182em solid #EFEFEF;
+}
+
+
+#tabbedview-body span.linkWrapper a img {
+    padding-right:0.5em;
+}
+
+
+/* Blog styles (Fokus) */
+.blogView .actionsBarContent {
+    background-color: #DEDEDE ;
+    border: 1px solid #99BAD1;
+}
+
+.blogView .actionsBar {
+    display:none;
+}
+
+
+
+/* DASHBOARD */
+/* use four columns with limited width */
+
+body.template-dashboard #content-views,
+body.template-manage-dashboard #content-views,
+body.template-manage-dashboard #portal-breadcrumbs {
+    display:none;
+}
+
+#dashboard {
+    float:left;
+}
+
+.template-dashboard .documentFirstHeading,
+.template-dashboard #viewlet-above-content {
+  display: none;
+}
+
+.template-dashboard #portal-column-content {
+  margin-left: -100% !important;
+  width: 78em !important;
+}
+
+#dashboard-portlets1,
+#dashboard-portlets2,
+#dashboard-portlets3,
+#dashboard-portlets4 {
+  float: left;
+  margin-right: 1.363em;
+  width: 22.7em;
+}
+
+#dashboard-portlets3 {
+  margin-right: 0;
+}
+
+#dashboard .portletwrapper {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+#dashboard .portlet {
+  margin-bottom: 0.909em !important;
+  border-style: none none solid;
+  border-width: 0.091em;
+}
+
+#dashboard .portletHeader {
+  font-size: 1em;
+  margin: 0;
+  padding: 0 0.818em;
+  border-width: 0.091em;
+  border-color:#99C5E3;
+}
+
+#dashboard .portletHeader .fold,
+#dashboard .portletHeader .close,
+#dashboard .portletHeader .edit {
+  text-decoration: none;
+  margin-top: 0.2em;
+}
+
+/* move fold icon to the left of the header */
+.portletHeader .buttonClose,
+.portletHeader .buttonOpen {
+  float: left;
+  padding-right: 1em;
+}
+
+/* it looks a bit different in ie7 but at least it looks ok... */
+*+html #dashboard .portletHeader a.close {
+  float: none;
+}
+
+#dashboard .portletItem {
+  font-size: 1em;
+  margin: 0;
+  border-style: none solid;
+  border-width: 0.091em;
+  padding: 0.45em 0.818em;
+  border-left:1px solid #99C5E3;
+  border-right:1px solid #99C5E3;
+}
+
+#dashboard .portletFooter {
+  margin: 0em;
+  border:1px solid #99C5E3;
+}
+
+
+/* recently modified portlet */
+#dashboard .portletRecent .portletItem .portletItemDetails {
+  display:inline;
+}
+
+#dashboard .dashboardButton.buttonMove {
+    display:none;
+}
+
+
+/* rss portlet */
+#dashboard .portletRss .portletItemDetails  {
+  display: inline;
+}
+
+#dashboard .portletRss .portletItem.brokenRss {
+    border-bottom:1px solid #99C5E3;
+}
+
+#dashboard .portletRss span.link-external a {
+  padding: 0 8px 0 0;
+}
+
+/* Favorite / Tasks portlet*/
+#dashboard .portlet.favorite,
+#dashboard .portlet.mytasks {
+    border-bottom: 1px solid #99C5E3;
+}
+
+/* Clock portlet */
+#dashboard .portlet.sbbclock {
+   border-bottom:1px solid #99C5E3;
+}
+
+/* Weather portlet */
+#dashboard .portlet.weather {
+   border-bottom:1px solid #99C5E3;
+}
+
+
+
+/* postit portlet */
+#dashboard .portletPostIt .portletHeader,
+#dashboard .portletPostIt .portletItem,
+#dashboard .portletPostIt {
+  border-color: #DCC126 !important;
+}
+
+#dashboard .portletPostIt{
+  background-color: #fffdf4;
+}
+
+#dashboard .portletPostIt .portletItem {
+  font-family: courier;
+  background-color: #fef3c6;
+  padding: 0.5em;
+  padding-left: 1em;
+  margin: 0;
+}
+
+#dashboard .portletPostIt .portletItem span {
+  line-height: 1em;
+  padding: 0;
+}
+
+#dashboard .portletPostIt .portletItem.odd {
+  background-color: #feeead;
+}
+
+#dashboard .portletPostIt .portletItem.even {
+  background-color: #fffedd;
+}
+
+#dashboard .portletPostIt .portletItem a.close img {
+  /* padding: 0.3em 0.454em !important; */
+  padding: 0;
+  position: relative;
+  top: -0.2em;
+}
+
+/* watcher portlet */
+#dashboard .portletWatcher {
+  border-bottom: 1px solid #99C5E3;
+}
+
+#dashboard .portletWatcher .portletFooter {
+  border-bottom-width: 0px;
+}
+
+/* add portlet form */
+#dashboard-add-portlet {
+  overflow: hidden;
+}
+
+#dashboard-add-portlet form {
+  float: right;
+  padding-right: 0.91em;
+  margin-top: 0em;
+}
+
+#dashboard-add-portlet form select {
+  float: left;
+  width: 20em;
+  margin-right: 0.91em;
+}
+
+#dashboard-add-portlet form .submit {
+  float: right;
+}
+
+/* Table styling */
+
+table.vertical.fileListing td,
+table.vertical.fileListing th,
+table.vertical.taskListing td,
+table.vertical.taskListing th,
+table.vertical.MeetingListing td,
+table.vertical.MeetingListing th,
+.MeetingItemBody table.vertical td,
+.MeetingItemBody table.vertical th {
+    border:none;
+}
+
+/* Meeting View */
+.MeetingItemWrapper div.MeetingItemHead {
+    border: 0.091em solid #99C5E3;
+    color: #00538C;
+    cursor: pointer;
+    line-height: 2em;
+    margin: 0;
+    padding: 0 0.818em 0 0.454em;
+}
+
+.MeetingItemWrapper .MeetingItemHead a {
+    font-size: 1em;
+    text-decoration:none;
+}
+
+.MeetingItemWrapper .MeetingItemHead img {
+    padding-right: 0;
+    margin-top:0.35em;
+    margin-left: -0.5em;
+}
+
+.MeetingItemBody {
+    border: 0.091em solid #99C5E3;
+    border-top:none;
+    padding: 0 1.5em;
+}
+
+/* Fix icon position in several listings */
+#overview_overview .box ul li a img,
+#overview_overview table.listing td a img {
+    margin-top: -6px;
+    padding-right: 0.75em;
+}
+
+/* Tooltip CSS*/
+div.bottomImage {
+    background: url("tooltip_bottom.png") no-repeat scroll center bottom transparent;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 1.6em;
+    left:0em;
+}
+
+body div.tooltip {
+    background-color: #FFFFFF;
+    border-color: #006FBA;
+    border-style: solid solid none;
+    border-width: 0.091em;
+    box-shadow: 0.091em 0 #006FBA;
+    color: #111111 !important;
+    font-size: 1.1em;
+    padding: 0.454em 0.909em;
+    position: absolute;
+    width: 25em;
+    z-index: 3000;
+    display:block;
+    opacity:1 !important;
+}
+
+/* ExtJS table */
+.x-panel,
+.x-panel-body {
+    border: none;
+}
+
+/* make strong strong again */
+strong {
+  font-weight: bold;
+}
+
+.x-panel strong {
+  font-weight: normal;
+}
+
+/* Listing bars tabbedview */
+#tabbedview-body .listingBar {
+    background-color:transparent;
+    font-size:1.0em;
+}
+
+#tabbedview-body .listingBar a {
+    border-color: #111111;
+    border-style: solid;
+    border-width: 0.091em 0.182em 0.182em 0.091em;
+    color: #111111;
+    margin: 0 0 0 0;
+    padding: 0 0.363em;
+    text-decoration: none;
+}
+
+
+#tabbedview-body .listingBar span.next a span,
+#tabbedview-body .listingBar span.previous a span {
+    border:none;
+}
+
+#tabbedview-body .listingBar span.previous {
+    float: left;
+    margin-right: 0.363em;
+}
+
+#tabbedview-body .listingBar span.next {
+    float: right;
+    margin-left: 0.363em;
+
+}
+
+
+#tabbedview-body .listingBar span a,
+#tabbedview-body .listingBar span span,
+#tabbedview-body .listingBar span.current {
+    display:inline;
+    float:none;
+}
+
+#tabbedview-body .listingBar span.current {
+    margin:0;
+}
+
+#tabbedview-body .listingBar .bracketstart,
+#tabbedview-body .listingBar .bracketclose {
+    display:none;
+}
+
+
+/* Rereset Extjs reset css */
+table th {
+    font-weight:bold;
+}
+
+ol {
+   list-style-type: decimal;
+}
+
+#content ol,
+#content ul {
+    list-style-position: outside;
+}
+
+/* General table styles */
+
+.simplelayout-content table,
+table.mceItemTable {
+    width: 100%;
+}
+
+table.plain {
+ background: url("table_top.gif") repeat-x scroll left top transparent;
+}
+
+table.vertical th,
+table.vertical td,
+table.invisible th,
+table.invisible td {
+    padding: 0.272em;
+}
+
+table.vertical th {
+    font-weight:normal;
+}
+
+table.vertical th:first-child,
+table.vertical td:first-child {
+    font-weight:bold;
+}
+
+/* Override TinyMCE table styles while editing - for invisible */
+table.mceItemVisualAid.invisible,
+table.mceItemTable.invisible td,
+table.mceItemTable.invisible th {
+    border: 1px dashed #BBBBBB;
+}
+
+/* ftw.bookt table*/
+table.raw-table {
+    background: url("table_top.gif") repeat-x scroll left top transparent;
+}
+
+table.raw-table th {
+    padding: 1.091em 0.454em 0.909em 0;
+    text-align: left;
+    vertical-align: top;
+}
+
+table.raw-table td {
+    padding: 0.272em 0;
+    vertical-align: top;
+}
+
+/* contentHistory table from ftw.table */
+
+table.contentHistory {
+display: block;
+font-size: 100% !important;
+}
+
+table.contentHistory td {
+display: table-cell;
+}
+
+/* Billboard custom styling */
+
+div.billboardAdDetail table.listing {
+    width:100%;
+}
+
+
+/* Hide ReviewRole */
+#user-group-sharing-head th:nth-child(6),
+#user-group-sharing-head td:nth-child(6),
+#user-group-sharing-settings td:nth-child(6),
+#current-user-group-sharing-head th:nth-child(6),
+#current-user-group-sharing-head td:nth-child(6),
+#current-user-group-sharing td:nth-child(6),
+#permissionListingTable th:nth-child(6),
+#permissionListingTable td:nth-child(6) {
+  display:none;
+}
+/* @end */
+
+/* TinyMCE styles */
+body#content.mceContentBody {
+    font-size:11px !important;
+    font-family:Verdana,Arial,Helvetica,sans-serif !important;
+}
+
+div.discreet.suppressVisualEditor {
+    display:none;
+}
+
+
+/* Search result page */
+body.template-search #content a.link-feed,
+body.template-search #content form.searchPage p.discreet,
+.LSRow a[href*='advanced_search'] {
+    display: none;
+}
+
+/* =========================== */
+/* SOLR search page            */
+/* =========================== */
+
+/* ==== Layout ==== */
+.template-search #portal-breadcrumbs {
+    margin-left: 24.75em;
+}
+
+div.searchBoxWrapper {
+    margin-left: 22.45em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#search-page-container {
+    overflow: hidden;
+    margin: 0 0;
+    padding-left: 19.45em; /* The width of the facets column */
+}
+
+* html #search-page-container {
+    height: 1%; /* So IE plays nice */
+}
+
+#search-page-content {
+    width: 100%;
+    border-left: 19.45em solid transparent; /* The width and color of the facets column */
+    margin-left: -19.45em;
+    float: right;
+}
+
+#facets-column {
+    width: 19.45em;
+    float: right;
+    margin-left: -19.45em;
+}
+
+/* ==== Facets styling ==== */
+
+#portal-searchfacets {
+    background-color: white !important;
+    margin-top: 0.25em;
+}
+#portal-searchfacets h4 {
+    border-top: 2px solid #ccc;
+    padding-top: 1em;
+    font-size: 109.0909%;
+}
+#available-facets dt {
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+}
+#available-facets dd {
+    margin-left: 0;
+}
+.facetRemoveItem {
+    background: transparent url(&dtml-portal_url;/remove_filter.gif) no-repeat scroll 2px 3px;
+    color: transparent;
+    width: 0px;
+    height: 16px;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 16px;
+    vertical-align: top;
+}
+
+/* ==== Search results ==== */
+
+div#search-results-wrapper h1.documentFirstHeading {
+    margin-left: 2em;
+}
+#search-page-content .documentFirstHeading .discreet {
+    color: #ccc;
+}
+
+div#search-results {
+    margin-top: 1em;
+    margin-left: 4em;
+}
+#search-results dt {
+    margin-top: 2em;
+}
+#search-results dd {
+    margin-left: 0;
+}
+/* Make sure search terms outside search results don't get highlighted */
+.highlightedSearchTerm {
+    background-color: transparent !important
+}
+
+/* </dtml-with> */

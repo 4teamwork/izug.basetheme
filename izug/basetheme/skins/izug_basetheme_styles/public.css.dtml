@@ -37,6 +37,9 @@ body.kssActive h1.formlibInlineEditable:hover {
     padding-bottom: 1px;
 }
 
+h1 q {
+    font-style: normal;
+}
 
 h3, h4, h5, h6 {
     border-bottom: none;
@@ -587,6 +590,18 @@ dl.portalMessage dd {
     margin: 0;
     padding: 0.5em 1em 0.5em 2.5em;
 }
+.portalMessage .messageClose {
+  float: right;
+  display: none;
+  position: relative;
+  top: -3px;
+  height: 15px;
+}
+.portalMessage:hover .messageClose {
+  display: inline-block;
+  cursor: pointer;
+}
+
 dl.information,
 dl.info {
     background: transparent url(&dtml-portal_url;/icon_status_erledigt.gif) no-repeat 0.3em 0.3em;
@@ -1483,7 +1498,26 @@ div.to_top a:hover {
 }
 
 
-/* generated css */
+/* The izug4.css does disable sprites in some cases. However,
+   in watcher portlet there may still be sprites used but it is
+   detected in the portlet and css classes are removed if there
+   are icons. Thus we can reenable sprites for this portlet.
+   We need to do it here for defining the background image
+   properly.
+*/
+body.icons-on .portletWatcher *[class*="contenttype-"],
+body.icons-on .portletWatcher *[class*="mimetype-"],
+body.icons-on .portletWatcher *[class*="wf-"],
+body.icons-on .portletWatcher *[class*="function-"],
+body.icons-on .portletWatcher *[class*="actionicon-"],
+body.icons-on .portletWatcher *[class*="icon-"] {
+  background-image: url(&dtml-portal_url;/zugsprite.png) !important;
+  padding: 0.2em 0.7em 0.2em 0.6em !important;
+  padding: 0.2em 0 0.2em 2em !important;
+  height: 17px;
+}
+
+
 .000no-icon{ background-position: 0 0;  } 
 .actionicon-folder_factories-add_participant, .contenttype-contact, .contenttype-mitglied, .contenttype-opengever-contact-contact, .contenttype-stelle, .contenttype-zugmitglied, .function-user{ background-position: 0 -66px;  } 
 .actionicon-folder_factories-add_tasktemplate, .contenttype-opengever-tasktemplates-tasktemplatefolder{ background-position: 0 -132px;  } 
@@ -1576,25 +1610,38 @@ div.to_top a:hover {
 .icon-application{ background-position: 0 -5854px;  } 
 .icon-dokument_email, .mimetype-rfc822{ background-position: 0 -5920px;  } 
 .icon-dokument_excel, .mimetype-dokument_excel, .mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel, .mimetype-xls, .mimetype-xlsx{ background-position: 0 -5986px;  } 
-.icon-dokument_pdf, .icon_dokument_pdf, .mimetype-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -6052px;  } 
-.icon-dokument_powerpoint, .mimetype-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-ppt, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -6118px;  } 
-.icon-dokument_text, .icon-text, .mimetype-plain, .mimetype-text{ background-position: 0 -6184px;  } 
-.icon-dokument_visio, .mimetype-dokument_visio, .mimetype-visio, .mimetype-vnd-visio{ background-position: 0 -6250px;  } 
-.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -6316px;  } 
-.icon-dokument_word, .mimetype-doc, .mimetype-docx, .mimetype-dokument_word, .mimetype-msword{ background-position: 0 -6382px;  } 
-.icon-dokument_zip, .mimetype-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -6448px;  } 
-.mimetype-mpp{ background-position: 0 -6514px;  } 
-.mimetype-vnd-sun-xml-calc{ background-position: 0 -6580px;  } 
-.mimetype-vnd-sun-xml-draw{ background-position: 0 -6646px;  } 
-.mimetype-vnd-sun-xml-impress{ background-position: 0 -6712px;  } 
-.mimetype-vnd-sun-xml-writer{ background-position: 0 -6778px;  } 
-.ui-icon-gripsmall-diagonal-se{ background-position: 0 -6844px;  } 
-.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -6905px;  } 
-.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -6970px;  } 
-.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -7036px;  } 
-.wf-task-state-in-progress{ background-position: 0 -7102px;  } 
-.wf-task-state-new-successor{ background-position: 0 -7168px;  } 
-.wf-task-state-resolved{ background-position: 0 -7234px;  } 
+.icon-dokument_illustrator{ background-position: 0 -6052px;  } 
+.icon-dokument_indesign{ background-position: 0 -6118px;  } 
+.icon-dokument_mindmanager{ background-position: 0 -6184px;  } 
+.icon-dokument_msproject{ background-position: 0 -6250px;  } 
+.icon-dokument_openoffice_calc{ background-position: 0 -6316px;  } 
+.icon-dokument_openoffice_draw{ background-position: 0 -6382px;  } 
+.icon-dokument_openoffice_impress{ background-position: 0 -6448px;  } 
+.icon-dokument_openoffice_math{ background-position: 0 -6514px;  } 
+.icon-dokument_openoffice_writer{ background-position: 0 -6580px;  } 
+.icon-dokument_pdf, .icon_dokument_pdf, .mimetype-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -6646px;  } 
+.icon-dokument_photoshop{ background-position: 0 -6712px;  } 
+.icon-dokument_powerpoint, .mimetype-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-ppt, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -6778px;  } 
+.icon-dokument_text, .icon-text, .mimetype-plain, .mimetype-text{ background-position: 0 -6844px;  } 
+.icon-dokument_verweis{ background-position: 0 -6910px;  } 
+.icon-dokument_visio, .mimetype-dokument_visio, .mimetype-visio, .mimetype-vnd-visio{ background-position: 0 -6976px;  } 
+.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -7042px;  } 
+.icon-dokument_word, .mimetype-doc, .mimetype-docx, .mimetype-dokument_word, .mimetype-msword{ background-position: 0 -7108px;  } 
+.icon-dokument_zip, .mimetype-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -7174px;  } 
+.icon-task-remote-task{ background-position: 0 -7240px;  } 
+.icon-task-subtask{ background-position: 0 -7306px;  } 
+.mimetype-mpp{ background-position: 0 -7372px;  } 
+.mimetype-vnd-sun-xml-calc{ background-position: 0 -7438px;  } 
+.mimetype-vnd-sun-xml-draw{ background-position: 0 -7504px;  } 
+.mimetype-vnd-sun-xml-impress{ background-position: 0 -7570px;  } 
+.mimetype-vnd-sun-xml-writer{ background-position: 0 -7636px;  } 
+.ui-icon-gripsmall-diagonal-se{ background-position: 0 -7702px;  } 
+.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -7763px;  } 
+.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -7828px;  } 
+.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -7894px;  } 
+.wf-task-state-in-progress{ background-position: 0 -7960px;  } 
+.wf-task-state-new-successor{ background-position: 0 -8026px;  } 
+.wf-task-state-resolved{ background-position: 0 -8092px;  } 
 
 
 
@@ -1692,6 +1739,95 @@ span.draggable{
   cursor:move;
 }
 
+
+.tabbedview-tabs .listing,
+.tabbedview-tabs .journal-listing {
+  border-style: none;
+  position:relative;
+  width:100%;
+  table-layout:fixed;
+}
+
+.tabbedview-tabs .listing th,
+.tabbedview-tabs .journal-listing th {
+  position:relative;
+  background-color:lightgrey;
+  top:0px;
+  left:0px;
+}
+
+.tabbedview-tabs .listing th.sort-selected
+.tabbedview-tabs .journal-listing th.sort-selected {
+  background-color:khaki;
+}
+
+.ui-selectable .ui-selected{
+  background-color:Khaki;
+}
+.ui-selectable .ui-selecting, .ui-selectable .ui-unselecting{
+  background-color:LavenderBlush ;
+}
+
+
+.tabbedview-tabs .ui-resizable-e{
+  border-right:2px dotted grey;
+  display:block;
+  float:right;
+  height:1.5em;
+  width:0.2em;
+  cursor:col-resize;
+}
+
+.ui-resizable-handle{
+  position:relative;
+}
+
+/* XXX: not sure if .tabbedview-tabs .listing is still used */
+.tabbedview-tabs .listing td,
+.tabbedview-tabs .journal-listing td {
+  empty-cells:show;
+}
+
+.tabbedview-tabs .listing a,
+.tabbedview-tabs .journal-listing a {
+  overflow:hidden;
+}
+
+.tabbedview-tabs .listing .sortable{
+  cursor:pointer;
+  white-space: nowrap;
+}
+
+.tabbedview-tabs .listing .sortable span {
+  padding-right:14px;
+  display:block;
+  float:left;
+}
+
+.tabbedview-tabs .listing .sortable.sort-asc span {
+  background: transparent url(&dtml-portal_url;/arrowUp.gif) no-repeat scroll center right;
+}
+
+.tabbedview-tabs .listing .sortable.sort-reverse span {
+  background: transparent url(&dtml-portal_url;/arrowDown.gif) no-repeat scroll right center;
+}
+
+.tabbedview-tabs span.linkWrapper {
+  display:block;
+  overflow:hidden;
+}
+
+.tabbedview-tabs .listing td,
+.tabbedview-tabs  .journal-listing td {
+  empty-cells: show;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 2em;
+}
+
+
+
+
 /* collapsible boxes - zug styling */
 dl.zugCollapsible {
 
@@ -1740,4 +1876,88 @@ div.ac_results .ac_over {
 #message_no_contents p{
     padding: 2em 0em 0em 0em;
 }
+
+/* extjs table */
+.x-panel-body {
+    border-style: none;
+}
+.x-grid3-header {
+    background-color: transparent;
+    background-image: none;
+}
+.x-grid-with-col-lines .x-grid3-row-selected {
+    background-color: &dtml-yellow; !important;
+}
+.x-grid3-row td, .x-grid3-summary-row td {
+    line-height: 1.545em;
+    padding: 0;
+}
+.x-grid3-row {
+    border-style:none;
+}
+.x-grid-with-col-lines .x-grid3-row td.x-grid3-cell {
+    border-bottom: 1px solid &dtml-borderblue;;
+}
+.x-grid3-row-alt {
+    background-color: transparent;
+}
+.x-grid3-hd-row td {
+    border-width: 1px  !important;
+    border-style: solid none solid solid  !important;
+    border-color: &dtml-borderblue; !important;
+    font-weight: bold;
+}
+.x-grid3-hd-row td:first-child {
+    border-left-style: none !important;
+}
+td.x-grid3-hd-over, td.sort-desc, td.sort-asc, td.x-grid3-hd-menu-open {
+    border-color: &dtml-borderblue;;
+}
+td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-asc .x-grid3-hd-inner, td.x-grid3-hd-menu-open .x-grid3-hd-inner {
+    background-image: none;
+    background-color: transparent;
+}
+.x-grid-with-col-lines .x-grid3-row td.x-grid3-cell {
+    border-right-style: none;
+}
+.x-menu-sep {
+    background-color: &dtml-borderblue;;
+    /*border-bottom-color: &dtml-borderblue;;*/
+    border-bottom-style: none;
+}
+
+/* extjs table menus */
+.x-menu-floating {
+    border-color: &dtml-zugblue;;
+}
+.x-menu {
+    background-image: none;
+    background-color: &dtml-backgroundColor;;
+}
+.x-menu-list {
+    padding: 0;
+    margin: 0;
+}*/
+.x-menu-item-active a.x-menu-item {
+    border-color:  &dtml-yellow;;
+    background-color: &dtml-yellow;;
+
+}
+
+.x-menu li{
+	margin-bottom:0.5em;
+}
+
+/* Override fonts for ExtJS tables */
+.x-grid3 td,
+.x-menu a,
+.x-grid-group-hd div.x-grid-group-title {
+  font-family: Verdana,Arial,Helvetica,sans-serif !important; 
+}
+
+/* Change background color of Openlayers' base layer selection box */
+div.olControlLayerSwitcher .layersDiv {
+    background-color: #006fba;
+}
+
 /* </dtml-with> */

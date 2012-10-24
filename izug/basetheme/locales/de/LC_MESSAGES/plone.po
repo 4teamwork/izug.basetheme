@@ -12,6 +12,18 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:33
+msgid "Fontsize large"
+msgstr ""
+
+#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:38
+msgid "Fontsize medium"
+msgstr ""
+
+#: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:43
+msgid "Fontsize small"
+msgstr ""
+
 #. Default: "Logout"
 #: ./izug/basetheme/browser/viewlets_templates/personalbar.pt:27
 msgid "Log out"
@@ -176,19 +188,14 @@ msgstr ""
 msgid "legend_livesearch"
 msgstr ""
 
+#. Default: "Advanced Search"
+#: ./izug/basetheme/browser/customized/plone.app.layout.viewlets.searchbox.pt:51
+msgid "link_advanced_search"
+msgstr "Erweiterte Suche"
+
 #. Default: "Titel"
 #: ./izug/basetheme/browser/ogds_view.pt:68
 msgid "listingheader_title"
-msgstr ""
-
-#. Default: "Did you not find what you were looking for? Try the ${advanced_search} to refine your search."
-#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:53
-msgid "search_results_advanced"
-msgstr ""
-
-#. Default: "Advanced Search"
-#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:54
-msgid "search_results_advanced_link"
 msgstr ""
 
 #. Default: "Affected content"
@@ -216,7 +223,3 @@ msgstr ""
 msgid "title_search_title"
 msgstr ""
 
-#. Default: "advanced Search"
-#: ./izug/basetheme/browser/customized/plone.app.layout.viewlets.searchbox.pt:51
-msgid "link_advanced_search"
-msgstr "Erweiterte Suche"

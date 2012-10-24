@@ -505,3 +505,18 @@ tr.state_published_internet td.column1 {
 	font-size:1.1em;
 
 }
+
+/* -------------------------------------------------------------------------------------
+ Blog styles
+ ======================================================================================*/
+
+ body.template-blog_entry_view .listingBar {
+     display:none;
+ }
+
+ /* Always use right column for blog */
+body.template-blog_view #visual-portal-wrapper div#portal-column-content.sr.sl,
+body.template-blog_entry_view #visual-portal-wrapper div#portal-column-content.sr.sl {
+    width: 71em;
+}
+

@@ -12,7 +12,7 @@ input[type=button],
 input[type=submit],
 #content div.tabbedview-tabs ul.formTabs li a ,
 .listingBar a,
-form#meeting-base-edit a.datagridwidget-add-button {
+#content a.datagridwidget-add-button {
     background: -moz-linear-gradient(top ,#FFFFFF, #DEDEDE);
     background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DEDEDE));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#FFFFFF, endColorstr=#DEDEDE);
@@ -28,7 +28,7 @@ form#meeting-base-edit a.datagridwidget-add-button {
 #content input[type=submit]:hover,
 #content div.tabbedview-tabs ul.formTabs li a.selected,
 #content div.tabbedview-tabs ul.formTabs li.ui-tabs-selected a,
-form#meeting-base-edit a.datagridwidget-add-button:hover  {
+#content a.datagridwidget-add-button:hover  {
     background: -moz-linear-gradient(top ,#DEDEDE, #FFFFFF);
     background: -webkit-gradient(linear, left top, left bottom, from(#EFEFEF), to(#FFFFFF));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#EFEFEF, endColorstr=#FFFFFF);
@@ -56,7 +56,8 @@ input#form-buttons-button_archive {
 }
 /* hellblau */
 .x-grid3-hd-row,
-dl.zugCollapsible dt  {
+dl.zugCollapsible dt,
+.MeetingItemWrapper div.MeetingItemHead  {
     background: -moz-linear-gradient(top ,#F7FAFD, #E0EEF7);
     background: -webkit-gradient(linear, left top, left bottom, from(#F7FAFD), to(#E0EEF7));
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#F7FAFD, endColorstr=#E0EEF7) !important;

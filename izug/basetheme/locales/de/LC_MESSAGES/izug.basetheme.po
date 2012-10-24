@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"POT-Creation-Date: 2010-10-26 07:07+0000\n"
 "PO-Revision-Date: 2011-01-14 18:20+0100\n"
 "Last-Translator: Jonas Baumann <j.baumann@4teamwork.ch>\n"
 "Language-Team: 4teamwork <info@4teamwork.ch>\n"
@@ -30,7 +30,7 @@ msgstr ""
 #. Default: "Advanced search for content"
 #: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:57
 msgid "heading_advanced_search"
-msgstr "Erweitere Suche"
+msgstr "Erweiterte Suche"
 
 #. Default: "<div> <input id=\"checked_out\" name=\"checked_out\" type=\"text\" /> </div>"
 #: ./izug/basetheme/browser/document_search.pt:66
@@ -127,15 +127,11 @@ msgstr ""
 msgid "label_advanced_search"
 msgstr "Erweiterte Suche"
 
-#. Default: "by ${author}"
-#: ./izug/basetheme/browser/viewlets_templates/byline.pt:16
-msgid "label_by_author"
-msgstr "Federführend: ${author}"
-
 #. Default: "All types"
 #: ./izug/basetheme/browser/task_search.pt:40
-msgid "label_all_types"
-msgstr "Alle Typen"
+#: ./izug/basetheme/browser/viewlets_templates/byline.pt:16
+msgid "label_by_authorlabel_all_types"
+msgstr ""
 
 #. Default: "Filing Number"
 #: ./izug/basetheme/browser/dossier_search.pt:67
@@ -148,7 +144,7 @@ msgid "label_no_results_found"
 msgstr "Keine Treffer"
 
 #. Default: "Search"
-#: ./izug/basetheme/browser/viewlets_templates/searchbox.pt:22
+#: ./izug/basetheme/skins/opengever_theme_templates/search_form.pt:121
 msgid "label_search"
 msgstr "Suchen"
 
@@ -271,4 +267,19 @@ msgstr "Verantwortlich"
 #: ./izug/basetheme/browser/viewlets.py:
 msgid "searchbox_title"
 msgstr "${text} durchsuchen"
+
+#. Default: "Did you not find what you were looking for? Try the ${advanced_search} to refine your search."
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:53
+msgid "search_results_advanced"
+msgstr "Haben Sie nicht gefunden, wonach Sie gesucht haben? Die ${advanced_search} bietet Ihnen präzisere Suchmöglichkeiten."
+
+#. Default: "Advanced Search"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:54
+msgid "search_results_advanced_link"
+msgstr "erweiterte Suche"
+
+#. Default: "${number} items matching your search terms"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:70
+msgid "batch_x_items_matching_your_criteria"
+msgstr "${number} Artikel gefunden"
 

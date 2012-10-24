@@ -8,11 +8,13 @@
   <cmf:registerDirectory name="izug_basetheme_templates"/>
   <cmf:registerDirectory name="izug_basetheme_styles"/>
   <cmf:registerDirectory name="izug_basetheme_icons"/>
+  <cmf:registerDirectory name="izug_basetheme_openlayers" recursive="True"/>
 
   <!-- site specific skin layers -->
   <cmf:registerDirectory name="izug_opengever"/>
   <cmf:registerDirectory name="izug_plone3"/>
   <cmf:registerDirectory name="izug_zugch"/>
   <cmf:registerDirectory name="izug_izug" recursive="True"/>
+  <cmf:registerDirectory name="izug_izug4" />
 
 </configure>

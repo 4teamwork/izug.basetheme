@@ -12,14 +12,14 @@
 }
 /* listing pages */
 .listing-column-right, .listing-column-left {
-    width: 23.636em; // 260px
+    width: 23.636em;
 }
 .listing-column-left {
     float: left;
 }
 .listing-column-right {
     float: right;
-    padding-left: 0.909em; // 10px
+    padding-left: 0.909em;
 }
 .listing-block h2 a {
     text-decoration: none;

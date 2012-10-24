@@ -275,3 +275,18 @@ msgstr ""
 #: ./izug/basetheme/browser/viewlets.py:
 msgid "searchbox_title"
 msgstr ""
+
+#. Default: "Did you not find what you were looking for? Try the ${advanced_search} to refine your search."
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:53
+msgid "search_results_advanced"
+msgstr ""
+
+#. Default: "Advanced Search"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:54
+msgid "search_results_advanced_link"
+msgstr ""
+
+#. Default: "${number} items matching your search terms"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:70
+msgid "batch_x_items_matching_your_criteria"
+msgstr ""

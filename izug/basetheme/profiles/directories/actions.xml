@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object name="portal_actions">
+ <object name="user">
+  <object name="dashboard">
+   <property name="visible">False</property>
+  </object>
+  <object name="preferences">
+   <property name="visible">False</property>
+  </object>
+
+ </object>
+</object>

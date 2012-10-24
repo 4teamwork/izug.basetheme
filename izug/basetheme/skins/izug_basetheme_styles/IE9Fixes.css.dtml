@@ -1,0 +1,46 @@
+/*
+** Stylesheet with Internet Explorer 9-specific workarounds.
+*/
+
+/* <dtml-with base_properties> */
+
+/* Used to display the edit-sprite correctly in a extjs-table*/
+table.x-grid3-row-table div.x-grid3-cell-inner a {
+    padding-bottom:2px;
+    padding-top:2px;
+}
+
+/* Used to display gradients in table rows*/
+.x-grid3-hd-row {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc1OTAiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiNGN0ZBRkQiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiNFMEVFRjciIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c1OTApIiAvPgo8L3N2Zz4=);
+}
+
+
+/* Fixes IE9 bug where content grows when hovering over dynamically generated content
+   See http://blog.brianrichards.net/post/6721471926/ie9-hover-bug-workaround for details */
+div.x-grid3-viewport {
+    min-height: 0%;
+}
+
+/* Fix for IE9 where external edit icon is cut off */
+/* Mainly relevant for OpenGever, shouldn't hurt iZug though */
+.x-grid3-col-external_edit_link a {
+  line-height: 15px !important;
+}
+
+
+/* Fix for IE9 - two columns behoerden/private listings */
+
+.listing-column-right, .listing-column-left {
+    width: 23.536em;
+}
+
+span.function-ok{
+  line-height: 15px;
+}
+
+#form-widgets-roles-toDataContainer{
+  display: none;
+}
+
+/* </dtml-with> */

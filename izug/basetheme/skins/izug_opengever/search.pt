@@ -48,10 +48,12 @@
                i18n:attributes="value label_search;"/>
 
         <p class="discreet"
+           i18n:domain="izug.basetheme"
            i18n:translate="search_results_advanced">
         Did you not find what you were looking for? Try the
         <span i18n:name="advanced_search">
         <a href=""
+           i18n:domain="izug.basetheme"
            i18n:translate="search_results_advanced_link"
            tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/advanced_search?SearchableText=${request/SearchableText|python:''}">Advanced Search</a>
         </span>
@@ -66,7 +68,7 @@
         </span>
 
         &mdash;
-        <span i18n:translate="batch_x_items_matching_your_criteria"
+        <span i18n:domain="izug.basetheme" i18n:translate="batch_x_items_matching_your_criteria"
         ><span i18n:name="number"
         tal:omit-tag=""
         tal:content="python:len(results)">234</span> items matching your search terms</span>

@@ -11,15 +11,22 @@ jq(document).ready(function() {
             jq(this).toggleClass("closed");
         }
     });*/
-    
+
     /* fading out info messages as defined in Design_Fundamentals_1_0_v7.pdf, page 24 */
-    setTimeout("jq('dl.info').fadeOut('slow')", 5000);
-    
+    jQuery(function($){
+        $('.portalMessage dd').append(
+            '<span class="messageClose function-delete">&nbsp;</span>').find(
+                '.messageClose').click(function(e){
+                    $(this).parents('.portalMessage:first').fadeOut(
+                        200, function() {$(this).remove();});
+                });
+    });
+
     /* extjs loads a blank image from extjs.com - we want to prevent that */
     if (window.Ext != undefined) {
-        Ext.BLANK_IMAGE_URL= jq("#portal-logo").url() + "/s.gif";
+        Ext.BLANK_IMAGE_URL= jq("base:first").attr('href') + "s.gif";
     }
-    
+
     /* zug collapsible */
     jq('dl.zugCollapsible dd').hide();
     jq('dl.zugCollapsible dt').prepend('<span class="function-collapsible-closed">&nbsp;</span>');
@@ -35,6 +42,6 @@ jq(document).ready(function() {
 
     });
     jq('dl.zugCollapsible dt a').click(function(e) {
-         e.stopPropagation(); 
+         e.stopPropagation();
     });
 });

@@ -2,8 +2,241 @@ Changelog
 =========
 
 
-1.0.3 (unreleased)
+1.2.2 (unreleased)
 ------------------
+
+- Nothing changed yet.
+
+
+1.2.1 (2012-09-12)
+------------------
+
+- Changed styling of tabbedview menu actions, they fold now to the right.
+  [phgross]
+
+
+1.2 (2012-08-22)
+----------------
+
+- Styled solr search page.
+  [buchi]
+
+- iZug 4: hide disabled tabbed view filter field.
+  [jone]
+
+- Set IE8 mode on zug plone 3 sites.
+  [mathias.leimgruber]
+
+- Do not use style <q> as italic on headings (@@sharing).
+  [jone]
+
+- Data grid widget: style "add row" buttons.
+  [jone]
+
+- Added iZug specific UI style for Openlayers
+  [href]
+
+
+1.1.9 (2012-06-28)
+------------------
+
+- Added IE9 fix for the participation roles field (list widget).
+  [phgross]
+
+- Added IE9 Fix for sharing tab in opengever.
+  [phgross]
+
+
+1.1.8 (2012-06-25)
+------------------
+
+- Added ODF types to MIME types registry
+  [lgraf]
+
+- Added sprite icons for OpenOffice MIME types
+  [lgraf]
+
+
+1.1.7 (2012-06-22)
+------------------
+
+- Updated MIME types for Microsoft Office formats
+  [lgraf]
+
+- Updated MIME types for Adobe Photoshop, Illustrator and InDesign
+  [lgraf]
+
+- Added icons for Adobe file types (Illustrator, Indesign and Photoshop)
+  [lgraf]
+
+- Updated Mimetype definition for MS Visio
+  [lgraf]
+
+
+1.1.6 (2012-06-18)
+------------------
+
+- Added mimetypes and icons for MS Visio, MS Project and MindManager files
+  [lgraf]
+
+- Hide chapter description in izug4.
+  [mathias.leimgruber]
+
+- Added styling for the error message view in opengever.
+  [phgross]
+
+- Disable the kukit.js in the default profile.
+  [phgross]
+
+- Adjust translation (use izug.basetheme domain) and styling for the opengever search template.
+  [phgross]
+
+
+1.1.5 (2012-05-16)
+------------------
+
+- Disable line margins of mail bodies display in opengever.
+  [phgross]
+
+
+1.1.4 (2012-05-14)
+------------------
+
+- Added zcml condition for ref browser patch.
+  [mathias.leimgruber]
+
+
+1.1.3 (2012-05-14)
+------------------
+
+- Book read-mode css / book navigation css.
+  [jone]
+
+
+1.1.2 (2012-05-14)
+------------------
+
+- Fix Blog listing in izug3.
+  [mathias.leimgruber]
+
+- Customize search form in izug4
+  [mathias.leimgruber]
+
+1.1.1 (2012-05-09)
+------------------
+
+
+1.1 (2012-05-09)
+----------------
+
+- Fix extjs blank image url.
+  [jone]
+
+- Change the order of document_actions in document actions viewlet.
+  [jone]
+
+- Style all tables in content-core and reset strong (disabled by extjs).
+  [jone]
+
+- Add colorization with environment variable (izug_basetheme_colorization).
+  [jone]
+
+- Add mime type for DOCX and PPTX documents
+  [eschmutz]
+
+- Added izug4 specific css
+  [mathias.leimgruber]
+
+- Added izug4 profile
+  [mathias.leimgruber]
+
+- Custom navigation: indent first child nodes properly when navigation top is visible.
+  [jone]
+
+- Added CSS to override fonts for ExtJS tables
+  [lgraf]
+
+- Added IE9 fix for cut off external editor icon in ExtJS enabled tabbedview
+  [lgraf]
+
+- Added IE9 fix for growing content when hovering over ftw table rows
+  See http://blog.brianrichards.net/post/6721471926/ie9-hover-bug-workaround
+  [lgraf]
+
+- Add fixes for extjs table styles
+  [eschmutz]
+
+- Added browserlayer for directoryservice
+  [mathias.leimgruber]
+
+
+1.0.7 (2012-03-13)
+------------------
+
+- Remove umlauts from changelog *grml*
+  [mathias.leimgruber]
+
+
+1.0.6 (2012-03-13)
+------------------
+
+- Ajdust translation from the serach_results template.
+  [phgross]
+
+- Hide listingBar on blog entries for izug.
+  [mathias.leimgruber]
+
+- Hide plone.comments for izug.
+  [mathias.leimgruber]
+
+- #1528 Behoerden - Kontaktformular mit aforms2web
+  https://extranet.4teamwork.ch/support/zug/maintlog/1528/
+  hack in zug_siteactions.pt to open contactform in new window. see comment
+  in template for more infos.
+  [eschmutz]
+
+
+1.0.5 (2012-02-27)
+------------------
+
+- portal messages: add close icon.
+  Issue #1757 Arbeitsplatz - Inhalt verschiebt sich beim Verschwinden von Info-Meldungen
+  https://extranet.4teamwork.ch/support/zug/maintlog/1757
+  [jone]
+
+
+1.0.4 (2012-02-24)
+------------------
+
+- Added french translations.
+  [ttschanz]
+
+- Added specific task icons to sprites (remotetask, subtask).
+  [jone]
+
+- Fixed mime type for XLSX documents
+  [lgraf]
+
+
+- Add mimetype for adobe indesign
+  [eschmutz]
+
+- Added profiles for seantis directories service.
+  [mathias.leimgruber]
+
+
+1.0.3 (2012-02-06)
+------------------
+
+- Added icon for related documents to CSS sprite
+  [lgraf]
+
+- #1739 Arbeitsplatz - Beschraenkung folder_overview bei Fokus und Bibliothek
+  https://extranet.4teamwork.ch/support/zug/maintlog/1739/
+  remove condition which block the batching in topics
+
+- Fix error of searchbox viewlet when accessing manage-viewlets in zug.ch
+  [eschmutz]
 
 - Added sprite icon for KOM.SKO case dossier
   [lgraf]
@@ -68,7 +301,8 @@ Changelog
 1.0a23 (2011-11-09)
 -------------------
 
-- Nothing changed yet.
+-
+  [philippegross]
 
 
 1.0a22 (2011-11-09)
