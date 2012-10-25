@@ -62,7 +62,7 @@ div#landingPageImage {
 #landingPageText {
     overflow: hidden;
     margin: 0 0 4.363em 0;
-    padding-top: 4.363em;
+    padding-top: 35px !important;
     padding-left:20px;
 }
 
@@ -132,6 +132,11 @@ div#landingPageImage {
     float: left;
     width: 42.909em;
 }
+
+#directoryResultList .directoryResult p {
+    padding-left: 2.75em
+}
+
 #directoryResultList .directoryInfoText {
     overflow: hidden;
     border-bottom: 0.191em solid #EFEFEF;
