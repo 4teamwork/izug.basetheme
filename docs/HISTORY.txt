@@ -5,6 +5,9 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
+- GEVER: Added default styling for tooltips.
+  [phgross]
+
 - GEVER: Fixed search customizations for plone 4.2
   [phgross]
 

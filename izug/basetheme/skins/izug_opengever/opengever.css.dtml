@@ -209,6 +209,57 @@ a.ui-state-highlight {
     margin-top: 1px;
 }
 
+ /* Tooltip CSS*/
+ div.tooltip div.bottomImage {
+     background: url("tooltip_bottom.png") no-repeat scroll center bottom transparent;
+     height: 18px;
+     position: relative;
+ }
+
+ body div.tooltip{
+     color: #111111 !important;
+     font-size: 1.1em;
+     position: absolute;
+     width: 37em;
+     display:none;
+     opacity:1 !important;
+     padding: 0;
+     background-color: transparent;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+ }
+
+ body div.tooltip .tooltip-content{
+     background-color: #FFFFFF;
+     padding: 0.454em 0.909em;
+     border-color: #006FBA;
+     border-style: solid solid none;
+     border-width: 2px;
+     z-index: 9999;
+     box-shadow:0 0 10px #789;
+    -moz-box-shadow:0 0 10px #789;
+    -webkit-box-shadow:0 0 10px #789;
+ }
+
+ body div.tooltip .tooltip-header{
+     font-weight: bold;
+     padding-bottom: 0.5em;
+ }
+
+ body div.tooltip .tooltip-links{
+     padding-top: 0.5em;
+     padding-bottom: 0.5em;
+ }
+
+ body div.tooltip .tooltip-links a{
+     background: none;
+     padding: 0 6px 0 0;
+ }
+
+ body div.tooltip .tooltip-breadcrumb{
+     font-size: 0.9em;
+ }
+
 
 /* dossier summary view */
 div#overview_overview {
@@ -272,23 +323,6 @@ div.issue-attachment {
 .response-actions form {
   padding-right: 0.5em;
   display: inline;
-}
-
-/* tooltip style */
-#tooltip {
-  background-color:&dtml-linkColor;;
-  padding:5px;
-  position:absolute;
-  z-index:3000;
-  width:25em;
-  color:white !important;
-  border-style: none;
-  opacity: 1;
-}
-
-#tooltip h3 {
-  color:white;
-  font-weight:normal;
 }
 
 /* client title viewlet in header */
