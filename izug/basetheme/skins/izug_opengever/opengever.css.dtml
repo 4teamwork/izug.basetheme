@@ -16,13 +16,22 @@
     clear: both;
 }
 
-#searchContent dl.searchResults dd{
+#search-results dl.searchResults dd{
   margin-left: 0;
   margin-bottom: 2em;
 }
 
-.template-search #searchContent{
+.template-search #search-results{
   margin-top: 2em;
+}
+
+.template-search #search-results-bar{
+  margin-top: 1em;
+}
+
+/* disable actionmenu */
+#search-results-bar .actionMenuHeader{
+  display: None;
 }
 
 .template-search #portal-breadcrumbs{
