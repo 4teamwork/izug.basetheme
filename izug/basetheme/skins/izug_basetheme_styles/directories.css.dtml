@@ -34,7 +34,6 @@
     margin-left: 1em;
 }
 #directorySearchForm form {
-    clear: both;
     overflow: hidden;
 }
 #directorySearchForm fieldset {
