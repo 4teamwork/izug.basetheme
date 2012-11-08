@@ -219,6 +219,11 @@ a.ui-state-highlight {
 }
 
  /* Tooltip CSS*/
+
+div.tabbedview-tooltip-data {
+    display: none;
+}
+ 
  div.tooltip div.bottomImage {
      background: url("tooltip_bottom.png") no-repeat scroll center bottom transparent;
      height: 18px;
