@@ -1,14 +1,14 @@
-jq(document).ready(function() {
-    /*var legends = jq("#content fieldset>legend");
+$(document).ready(function() {
+    /*var legends = $("#content fieldset>legend");
     legends.prepend("<div class='collapsibleLegend'");
     // attach a live event to the newly added handler
-    jq('.collapsibleLegend').bind('click', function() {
-        if (jq(this).hasClass("closed")) {
-            jq(this).closest("fieldset").children().not("legend").slideDown("slow");
-            jq(this).toggleClass("closed");
+    $('.collapsibleLegend').bind('click', function() {
+        if ($(this).hasClass("closed")) {
+            $(this).closest("fieldset").children().not("legend").slideDown("slow");
+            $(this).toggleClass("closed");
         } else {
-            jq(this).closest("fieldset").children().not("legend").slideUp("slow");
-            jq(this).toggleClass("closed");
+            $(this).closest("fieldset").children().not("legend").slideUp("slow");
+            $(this).toggleClass("closed");
         }
     });*/
 
@@ -24,15 +24,15 @@ jq(document).ready(function() {
 
     /* extjs loads a blank image from extjs.com - we want to prevent that */
     if (window.Ext != undefined) {
-        Ext.BLANK_IMAGE_URL= jq("base:first").attr('href') + "s.gif";
+        Ext.BLANK_IMAGE_URL= $("base:first").attr('href') + "s.gif";
     }
 
     /* zug collapsible */
-    jq('dl.zugCollapsible dd').hide();
-    jq('dl.zugCollapsible dt').prepend('<span class="function-collapsible-closed">&nbsp;</span>');
-    jq('dl.zugCollapsible dt').click(function() {
-        jq(this).find('span').toggleClass('function-collapsible-closed').toggleClass('function-collapsible-open');
-        var content = jq(this).next('dd');
+    $('dl.zugCollapsible dd').hide();
+    $('dl.zugCollapsible dt').prepend('<span class="function-collapsible-closed">&nbsp;</span>');
+    $('dl.zugCollapsible dt').click(function() {
+        $(this).find('span').toggleClass('function-collapsible-closed').toggleClass('function-collapsible-open');
+        var content = $(this).next('dd');
         content.toggleClass('visible');
         if(content.hasClass('visible')) {
             content.slideDown('slow');
@@ -41,7 +41,7 @@ jq(document).ready(function() {
         }
 
     });
-    jq('dl.zugCollapsible dt a').click(function(e) {
+    $('dl.zugCollapsible dt a').click(function(e) {
          e.stopPropagation();
     });
 });

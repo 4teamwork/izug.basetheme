@@ -2,10 +2,13 @@ Changelog
 =========
 
 
-1.2.2 (unreleased)
+1.3 (unreleased)
 ------------------
 
 - GEVER: Added default styling for tooltips.
+  [phgross]
+
+- GEVER: Adjust javscripts: Use $ instead of deprecated jq.
   [phgross]
 
 - GEVER: Fixed search customizations for plone 4.2

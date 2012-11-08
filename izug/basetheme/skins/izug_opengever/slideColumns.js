@@ -1,7 +1,7 @@
-jq(document).ready(function() {
-    var columnWrapper = jq("#portal-columns");
-    var columnOne = jq("#portal-column-one");
-    var columnContent = jq("#portal-column-content");
+$(document).ready(function() {
+    var columnWrapper = $("#portal-columns");
+    var columnOne = $("#portal-column-one");
+    var columnContent = $("#portal-column-content");
 
     function setColumnOneWidth(width) {
         var contentWrapperWidth = columnWrapper.width();
@@ -21,11 +21,11 @@ jq(document).ready(function() {
                 setColumnOneWidth(ui.size.width);
             },
             stop: function(event, ui) {
-                jq.get("setColumnsWidth?left="+ui.size.width+"px&content="+columnContent.width()+"px");
-                //jq("#state").load("setColumnsWidth?left="+ui.size.width+"px&content="+columnContent.width()+"px");
+                $.get("setColumnsWidth?left="+ui.size.width+"px&content="+columnContent.width()+"px");
+                //$("#state").load("setColumnsWidth?left="+ui.size.width+"px&content="+columnContent.width()+"px");
             }
         });
-        jq(window).resize( function() {
+        $(window).resize( function() {
             setColumnOneWidth(columnOne.width());
         }).resize();
     }

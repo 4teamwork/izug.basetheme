@@ -7,7 +7,7 @@
       name="default"
       title="izug.basetheme"
       directory="profiles/default"
-      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -15,7 +15,7 @@
       name="opengever"
       title="izug.basetheme for opengever"
       directory="profiles/opengever"
-      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -23,7 +23,7 @@
       name="plone3"
       title="izug.basetheme for plone3"
       directory="profiles/plone3"
-      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -31,7 +31,7 @@
       name="zug_ch"
       title="izug.basetheme for zug website"
       directory="profiles/zug_ch"
-      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -39,7 +39,7 @@
       name="izug"
       title="izug.basetheme for izug"
       directory="profiles/izug"
-      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -47,7 +47,7 @@
       name="izug4"
       title="izug.basetheme for izug plone4"
       directory="profiles/izug4"
-      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
@@ -55,7 +55,7 @@
       name="zug_directories"
       title="izug.basetheme extension profile for directories"
       directory="profiles/directories"
-      description='Extension profile for the "iZug Base Theme" Plone theme.'
+      description=""
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 </configure>
