@@ -41,12 +41,12 @@
 }
 .directorySearchFormSelection {
     float: left;
-    width: 16em;
+    width: 14.5em;
 }
 #directorySearchForm .directorySearchFormSelection label {
     display: block;
     font-weight: normal;
-    margin: 0.6em 0 1em
+    margin: 0.5em 0 1em
 }
 #directorySearchForm .visualMarginRight select {
     width: 100%;
