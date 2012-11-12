@@ -10,10 +10,10 @@ extras_require = {
 
 setup(name='izug.basetheme',
       version=version,
-      description="An installable theme for Plone 4.0" + \
-          " (Maintainer %s)" % maintainer,
+      description="An installable theme for Plone 4.0",
       long_description=open("README.txt").read() + "\n" + \
           open(os.path.join("docs", "HISTORY.txt")).read(),
+
       # Get more strings from
       # http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -23,12 +23,14 @@ setup(name='izug.basetheme',
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
         ],
+
       keywords='web zope plone theme',
-      author='%s, 4teamwork GmbH' % maintainer,
+      author='4teamwork GmbH',
       author_email='mailto:info@4teamwork.ch',
       maintainer=maintainer,
-      url='http://psc.4teamwork.ch/dist/izug-basetheme',
+      url='https://github.com/4teamwork/izug.basetheme',
       license='GPL2',
+
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['izug'],
       include_package_data=True,
