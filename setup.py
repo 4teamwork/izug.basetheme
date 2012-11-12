@@ -11,7 +11,7 @@ extras_require = {
 setup(name='izug.basetheme',
       version=version,
       description="An installable theme for Plone 4.0",
-      long_description=open("README.txt").read() + "\n" + \
+      long_description=open("README.rst").read() + "\n" + \
           open(os.path.join("docs", "HISTORY.txt")).read(),
 
       # Get more strings from
