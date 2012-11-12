@@ -223,7 +223,7 @@ a.ui-state-highlight {
 div.tabbedview-tooltip-data {
     display: none;
 }
- 
+
  div.tooltip div.bottomImage {
      background: url("tooltip_bottom.png") no-repeat scroll center bottom transparent;
      height: 18px;
@@ -302,6 +302,33 @@ div#overview_overview ul {
 div.querySelectSearch input.text-widget  {
   width: 30em;
 }
+
+/* already submitted button */
+input[type=button].context.submitting,
+input[type=submit].context.submitting,
+input#form-buttons-button_add.submitting,
+input#form-buttons-button_assign.submitting,
+input#form-buttons-button_search.submitting,
+input#form-buttons-button_checkin.submitting,
+input#form-buttons-save.submitting,
+input#form-buttons-button_submit.submitting,
+input#form-buttons-button_archive.submitting,
+input[type=button].context.submitting:hover,
+input[type=submit].context.submitting:hover,
+input#form-buttons-button_add.submitting:hover,
+input#form-buttons-button_assign.submitting:hover,
+input#form-buttons-button_search.submitting:hover,
+input#form-buttons-button_checkin.submitting:hover,
+input#form-buttons-save.submitting:hover,
+input#form-buttons-button_submit.submitting:hover,
+input#form-buttons-button_archive.submitting:hover
+{
+  color: &dtml-grey3;;
+  background-color: white;
+  background:none;
+  border: &dtml-grey3; 1px solid;
+}
+
 
 /* task style */
 table.task-listing th {
