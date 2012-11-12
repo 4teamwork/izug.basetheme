@@ -51,14 +51,14 @@ textarea {
   height: 0px !important;
   height /**/: 15px;
 }
-#ftw-edit-bar .actionMenu .actionMenuHeader a {
+#edit-bar .actionMenu .actionMenuHeader a {
   display: inline;
 }
 
-#ftw-edit-bar .actionMenu .actionMenuContent { /* IE8 */
+#edit-bar .actionMenu .actionMenuContent { /* IE8 */
     top: 2.6em;
 }
-*+html #ftw-edit-bar  .actionMenu .actionMenuContent { /* IE7 */
+*+html #edit-bar  .actionMenu .actionMenuContent { /* IE7 */
   top: 1.9em;
 }
 #menu_container .actionMenu .actionMenuContent {

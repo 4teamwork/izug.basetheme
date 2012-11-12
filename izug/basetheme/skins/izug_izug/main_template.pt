@@ -57,7 +57,7 @@
 
     <!-- Disable IE6 image toolbar -->
     <meta http-equiv="imagetoolbar" content="no" />
-    
+
     <tal:comment replace="nothing"> A slot where you can insert elements in the header from a template </tal:comment>
     <metal:headslot define-slot="head_slot" />
 
@@ -108,20 +108,18 @@
                      tal:define="show_border context/@@plone/showEditableBorder"
                      tal:attributes="class python:test(show_border,'documentEditable','')">
 
-                  <div tal:replace="structure provider:plone.contentviews" />
-
                   <div id="region-content"
                        class="documentContent">
 
                     <span id="contentTopLeft"></span>
                     <span id="contentTopRight"></span>
-                    
+
                     <a name="documentContent"></a>
 
                     <div metal:use-macro="here/global_statusmessage/macros/portal_message">
                       Portal status message
                     </div>
-                    
+
                     <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
 
                     <metal:slot metal:define-slot="body">
@@ -142,9 +140,9 @@
                     </metal:slot>
 
                     <metal:sub metal:define-slot="sub">
-                    
+
                       <div tal:replace="structure provider:plone.belowcontent" />
-                    
+
                     </metal:sub>
 
                     <span id="contentBottomLeft"></span>
@@ -175,7 +173,7 @@
       <tal:comment replace="nothing"> end column wrapper </tal:comment>
 
       <div class="visualClear" id="clear-space-before-footer"><!-- --></div>
-      
+
       <div tal:define="context_state context/@@plone_context_state;
                         portlet_assignable context_state/portlet_assignable"
             tal:condition="python:not sl and not sr and portlet_assignable and checkPermission('Portlets: Manage portlets', context)">
