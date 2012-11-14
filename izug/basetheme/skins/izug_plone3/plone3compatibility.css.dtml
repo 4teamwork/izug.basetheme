@@ -15,7 +15,7 @@ body.template-usergroup-controlpanel #edit-bar,
 body.template-member-registration #edit-bar {
     display: block !important;
 }
-#ftw-edit-bar {
+#edit-bar {
     background-color: #75ad0a;
     border: 0.25em solid #75ad0a;
     min-height: 2em;
@@ -30,19 +30,19 @@ body.template-member-registration #edit-bar {
     -moz-border-radius-topleft: 0.5em;
     -moz-border-radius-topright: 0.5em;
 }
-#ftw-edit-bar ul {
+#edit-bar ul {
     margin: 0;
     list-style-type: none;
 }
-#ftw-edit-bar dl {
+#edit-bar dl {
     margin-bottom: 0;
 }
-#ftw-edit-bar a:link,
-#ftw-edit-bar a:visited {
+#edit-bar a:link,
+#edit-bar a:visited {
     border-bottom: none;
     color: white;
 }
-#ftw-edit-bar dl.actionMenu.deactivated dt {
+#edit-bar dl.actionMenu.deactivated dt {
     margin: 0 0.25em;
 }
 #content-views li {

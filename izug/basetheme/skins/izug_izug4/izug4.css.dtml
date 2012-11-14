@@ -96,7 +96,7 @@ body.icons-on *[class*="actionicon-"] {
     height:4em;
 }
 
-.tabbedview_view #tabbedview-header #ftw-edit-bar {
+.tabbedview_view #tabbedview-header #edit-bar {
     margin-top:-2.6em;
 }
 

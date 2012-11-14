@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object>
+
+    <!-- ftw.contentmenu -->
+    <hidden manager="plone.contentviews" skinname="*">
+      <viewlet name="plone.contentviews" remove="True"/>
+      <viewlet name="plone.contentactions" remove="True"/>
+    </hidden>
+
+    <order manager="plone.contentviews" skinname="iZug Base Theme">
+      <viewlet name="plone.contentactions"/>
+      <viewlet name="plone.contentviews"/>
+    </order>
+
+</object>
