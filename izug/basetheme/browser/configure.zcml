@@ -284,6 +284,7 @@
         manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
         class=".contentviews.ContentViews"
         permission="zope2.View"
+        zcml:condition="have plone-4"
         />
 
     <!-- Register contentactions for the egov conteviews vielet-->
@@ -294,6 +295,7 @@
         manager="plone.app.layout.viewlets.interfaces.IContentViews"
         class="plone.app.layout.viewlets.common.ContentActionsViewlet"
         permission="zope2.View"
+        zcml:condition="have plone-4"
         />
 
   <!-- for plone 3 only -->
