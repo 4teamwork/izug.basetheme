@@ -276,6 +276,26 @@
       provides="zope.contentprovider.interfaces.IContentProvider"
       />
 
+  <!-- ftw.contentmenu adjustments -->
+
+    <browser:viewlet
+        name="izug.basethem.belowcontenttitle.contentviews"
+        layer="izug.basetheme.browser.interfaces.IThemeSpecific"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+        class=".contentviews.ContentViews"
+        permission="zope2.View"
+        />
+
+    <!-- Register contentactions for the egov conteviews vielet-->
+    <browser:viewlet
+        name="plone.contentactions"
+        layer="izug.basetheme.browser.interfaces.IThemeSpecific"
+        for="*"
+        manager="plone.app.layout.viewlets.interfaces.IContentViews"
+        class="plone.app.layout.viewlets.common.ContentActionsViewlet"
+        permission="zope2.View"
+        />
+
   <!-- for plone 3 only -->
   <browser:viewlet
       name="ftw.contentviews"
