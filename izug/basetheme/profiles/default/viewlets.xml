@@ -21,9 +21,9 @@
     <hidden manager="plone.abovecontent" skinname="iZug Base Theme">
         <viewlet name="plone.path_bar"/>
     </hidden>
-    
+
     <order manager="plone.abovecontenttitle" skinname="iZug Base Theme">
-        <viewlet name="plone.abovecontenttitle.documentactions"/>    
+        <viewlet name="plone.abovecontenttitle.documentactions"/>
     </order>
 
     <!-- below content title -->
@@ -35,9 +35,9 @@
         <viewlet name="plone.belowcontenttitle.keywords"/>
     </order>
     <hidden manager="plone.belowcontenttitle" skinname="iZug Base Theme">
-        <viewlet name="plone.abovecontenttitle.documentactions"/>    
+        <viewlet name="plone.abovecontenttitle.documentactions"/>
     </hidden>
-    
+
     <!-- portal top -->
     <order manager="plone.portaltop" skinname="iZug Base Theme">
         <viewlet name="plone.header"/>
@@ -48,15 +48,10 @@
         <viewlet name="plone.personal_bar"/>
     </hidden>
 
-    <!-- ftw.contentmenu -->
-    <hidden manager="plone.contentviews" skinname="*">
-      <viewlet name="plone.contentviews" remove="True"/>
-      <viewlet name="plone.contentactions" remove="True"/>
-    </hidden>
-
+    <!-- content views -->
     <order manager="plone.contentviews" skinname="iZug Base Theme">
-      <viewlet name="plone.contentactions"/>
-      <viewlet name="plone.contentviews"/>
+        <viewlet name="plone.contentviews"/>
+        <viewlet name="plone.contentactions"/>
     </order>
 
     <!-- below content -->
@@ -64,7 +59,7 @@
         <viewlet name="plone.nextprevious"/>
         <viewlet name="plone.site_actions"/>
     </order>
-    
+
     <!-- below content body -->
     <hidden manager="plone.belowcontentbody" skinname="iZug Base Theme">
         <viewlet name="plone.abovecontenttitle.documentactions"/>
