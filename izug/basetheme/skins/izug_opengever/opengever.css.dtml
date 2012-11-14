@@ -574,20 +574,23 @@ https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069
 
 .contenttreeWidget .contenttype-opengever-document-document {
     background-image: none;
-    padding-left: 0.2em !important;
+    padding: 0em;
 }
 
 /* TODO: Should maybe use sprite-icons instead.*/
-.contenttreeWidget li.expanded{
+.contenttreeWidget li.collapsed{
+    padding: 0 0 0 1.5em;
+}
+
+.contenttreeWidget li.expanded.navTreeFolderish {
     background: transparent url(&dtml-portal_url;/icon_open.gif) no-repeat 0 0.25em;
     padding: 0 0 0 1.5em;
 }
 
-.contenttreeWidget li.collapsed{
+.contenttreeWidget li.collapsed.navTreeFolderish {
     background: transparent url(&dtml-portal_url;/icon_closed.gif) no-repeat 0 0.25em;
     padding: 0 0 0 1.5em;
 }
-
 
 /* Disable line margins of mail bodies display.*/
 .mailBody p{

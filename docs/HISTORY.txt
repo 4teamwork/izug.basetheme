@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- GEVER: Fixed collapsible/expanded styling for nonfolderish types in contenttree.
+  [phgross]
+
 - Integrate newest version of the ftw.contentmenu.
   [phgross]
 
