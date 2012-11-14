@@ -22,5 +22,23 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <!-- 1200 -> 1201 -->
+    <genericsetup:upgradeStep
+        title="Integrate newest ftw.contentmenu change viewlet config"
+        description=""
+        source="1200"
+        destination="1201"
+        handler="izug.basetheme.upgrades.opengever.to1201.IntegrateNewestFtwContentmenu"
+        profile="izug.basetheme:opengever"
+        />
+
+    <genericsetup:registerProfile
+        name="1201"
+        title="izug.basetheme.opengever: upgrade profile 1201"
+        description=""
+        directory="profiles/1201"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
 
 </configure>
