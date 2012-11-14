@@ -2,7 +2,7 @@ from ftw.upgrade import UpgradeStep
 import logging
 
 
-LOG = logging.getLogger('izug.basetheme.upgrades.opengever')
+LOG = logging.getLogger('izug.basetheme.upgrades.izug4')
 
 
 class IntegrateNewestFtwContentmenu(UpgradeStep):
