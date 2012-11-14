@@ -7,7 +7,7 @@
       <viewlet name="plone.contentactions" remove="True"/>
     </hidden>
 
-    <order manager="plone.contentviews" skinname="iZug Base Theme">
+    <order manager="plone.contentviews" skinname="izug.basetheme.izug4">
       <viewlet name="plone.contentactions"/>
       <viewlet name="plone.contentviews"/>
     </order>
