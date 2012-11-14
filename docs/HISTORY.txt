@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Integrate newest version of the ftw.contentmenu.
+  [phgross]
+
 - GEVER: Added specific styling for submitting buttons.
   [phgross]
 

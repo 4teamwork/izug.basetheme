@@ -13,7 +13,7 @@ body.largeText div.tabbedview-tabs ul.formTabs li.ui-tabs-selected a {
 .LSBox {
     margin-bottom: -0.1em;
 }
-#ftw-edit-bar {
+#edit-bar {
     height: 1.9em !important;
 }
 /* </dtml-with> */

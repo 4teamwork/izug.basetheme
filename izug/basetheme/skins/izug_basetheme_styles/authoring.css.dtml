@@ -67,7 +67,7 @@ body.template-manage-dashboard .contentViews li a:hover {
 /*
 ** begin ECMAScript Content Action Menus
 */
-#ftw-edit-bar {
+#edit-bar {
     -moz-border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
     border-radius: 0 !important;
@@ -83,8 +83,8 @@ body.template-manage-dashboard .contentViews li a:hover {
     border-style: none none solid none !important;
     min-height: 1.6em !important;
 }
-#ftw-edit-bar ul,
-#ftw-edit-bar li {
+#edit-bar ul,
+#edit-bar li {
     margin: 0;
     list-style: none;
     list-style-image: none;
@@ -93,21 +93,26 @@ body.template-manage-dashboard .contentViews li a:hover {
     line-height: 2.5em;
     text-indent: 0;
 }
-#ftw-edit-bar dl {
+#edit-bar dl {
     line-height: 2.5em;
+    margin: 0px 0px 0px 0px;
 }
-#ftw-edit-bar li {
+#edit-bar li {
     float: right;
     z-index: 4;
     border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;;
 }
 
-#ftw-edit-bar a {
+#edit-bar a {
     text-decoration: none;
     padding: 0 0.5em;
     cursor: pointer;
     border-bottom-style: none !important;
     color: &dtml-contentViewFontColor; !important;
+}
+
+#edit-bar .hiddenStructure{
+    display:None;
 }
 
 .contentActions span.subMenuTitle {
@@ -255,8 +260,8 @@ div.documentByLine span:nth-child(2) {
 .contentActions li a:visited {
     color: &dtml-contentViewFontColor;;
 }
-#ftw-edit-bar #content-views li a:hover,
-#ftw-edit-bar #contentActionMenus li a:hover {
+#edit-bar #content-views li a:hover,
+#edit-bar #contentActionMenus li a:hover {
     color: &dtml-linkActiveColor; !important;
 }
 .actionMenu .actionMenuContent .actionSeparator {
