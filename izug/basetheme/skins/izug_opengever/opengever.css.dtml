@@ -149,6 +149,10 @@ fieldset {
   font-size: 1em;
 }
 
+#content a[target=_blank]{
+  background: none;
+  padding : 0px;
+}
 
 .draglocked .draggable{
   cursor:not-allowed;

@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- GEVER: Removed arrow on links with a _blank target for GEVER content.
+  [phgross]
+
 - GEVER: Fixed collapsible/expanded styling for nonfolderish types in contenttree.
   [phgross]
 
