@@ -11,7 +11,7 @@ fontSmallSize:string=1em
 
 backgroundColor:string=White
 
-linkColor:string=#00538C
+linkColor:string=#007C89
 linkActiveColor:string=#D52000
 linkVisitedColor:string=#AE1E00
 
@@ -20,7 +20,7 @@ borderStyle:string=solid
 borderStyleAnnotations:string=dashed
 
 globalBorderColor:string=#EFEFEF
-globalBackgroundColor:string=#006FBA
+globalBackgroundColor:string=#32444A
 globalFontColor:string=#436976
 
 headingFontFamily:string=Verdana,Arial,Helvetica,sans-serif
@@ -50,7 +50,7 @@ columnTwoWidth:string=18em
 highlightColor:string=#DEE7EC
 
 # zug colors:
-zugblue:string=#006FBA
+zugblue:string=#00616C
 darkblue:string=#00538C
 lightblue:string=#EBF4FA
 borderblue:string=#99C5E3

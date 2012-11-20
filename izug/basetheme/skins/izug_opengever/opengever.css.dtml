@@ -553,9 +553,12 @@ div.table-checkbox-overlay {
 }
 
 #portal-logo img {
-    height: 4em;
-    width: 9.6em;
+    height: auto;
+    width: auto;
+    margin-top: -20px;
 }
+
+
 
 /* Hide breadcrubs on login page so it doesn't obstruct site title */
 body.template-login_form #portal-breadcrumbs {
