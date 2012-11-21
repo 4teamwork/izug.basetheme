@@ -149,6 +149,13 @@ fieldset {
   font-size: 1em;
 }
 
+#content form span.required {
+    background-image: url(&dtml-portal_url;/required.gif);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 2px;
+}
+
 #content a[target=_blank]{
   background: none;
   padding : 0px;

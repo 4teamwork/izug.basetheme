@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- GEVER: Added special styling for required fields.
+  [phgross]
+
 - GEVER: Removed arrow on links with a _blank target for GEVER content.
   [phgross]
 
