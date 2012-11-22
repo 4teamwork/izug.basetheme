@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- Dropped izug.basetheme general search.pt.
+  [phgross]
+
 - GEVER: Added specific SearchboxViewlet with the newest template from p.a.layout.
   [phgross]
 
