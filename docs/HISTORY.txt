@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- GEVER: Added new icons and styling for new document overview.
+  [phgross]
+
 - Dropped izug.basetheme general search.pt.
   [phgross]
 

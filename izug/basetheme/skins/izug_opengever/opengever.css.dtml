@@ -309,6 +309,12 @@ div#overview_overview ul {
   text-indent: 0;
 }
 
+
+/* document download confirmation*/
+form#download_confirmation .details{
+   margin: 1em 0 2em 0;
+}
+
 /* autocomplete widget */
 div.querySelectSearch input.text-widget  {
   width: 30em;
