@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- GEVER: Added specific SearchboxViewlet with the newest template from p.a.layout.
+  [phgross]
+
 - GEVER: Added special styling for required fields.
   [phgross]
 
