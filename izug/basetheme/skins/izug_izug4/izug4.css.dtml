@@ -397,7 +397,7 @@ body.template-manage-dashboard #portal-breadcrumbs {
 
 #dashboard-add-portlet form {
   float: right;
-  padding-right: 0.91em;
+  padding-right: 0;
   margin-top: 0em;
 }
 
