@@ -51,13 +51,12 @@
         </div>
     </form>
 
-    <div id="portal-advanced-search"
-         class="hiddenStructure">
+    <div id="portal-advanced-search">
         <a href="#"
-           tal:attributes="href string:${navigation_root_url}/@@search"
-           i18n:translate="label_advanced_search"
+           tal:attributes="href string:${navigation_root_url}/@@advanced_search"
+           i18n:translate="link_advanced_search"
            accesskey="5">
-            Advanced Search&hellip;
+            Advanced Search
         </a>
     </div>
 
