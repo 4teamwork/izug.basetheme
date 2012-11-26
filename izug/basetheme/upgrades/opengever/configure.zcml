@@ -41,4 +41,24 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
+    <!-- 1201 -> 1202 -->
+    <genericsetup:upgradeStep
+        title="Add helper script for support placeholder attributes."
+        description=""
+        source="1201"
+        destination="1202"
+        handler="izug.basetheme.upgrades.opengever.to1202.AddPlaceholderHelperScript"
+        profile="izug.basetheme:opengever"
+        />
+
+    <genericsetup:registerProfile
+        name="1202"
+        title="izug.basetheme.opengever: upgrade profile 1202"
+        description=""
+        directory="profiles/1202"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+
 </configure>

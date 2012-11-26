@@ -5,6 +5,9 @@ Changelog
 1.4 (unreleased)
 ----------------
 
+- GEVER: Added helper script, which support placeholders for old browsers.
+  [phgross]
+
 - GEVER: Added new icons and styling for new document overview.
   [phgross]
 
