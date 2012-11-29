@@ -266,5 +266,9 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
         return searchtext
 
 
+class GeverSearchBoxViewlet(SearchBoxViewlet):
+    render = ViewPageTemplateFile('viewlets_templates/gever_searchbox.pt')
+
+
 class IZugSearchBoxViewlet(SearchBoxViewlet):
     render = ViewPageTemplateFile('viewlets_templates/izug_searchbox.pt')

@@ -149,6 +149,13 @@ fieldset {
   font-size: 1em;
 }
 
+#content form span.required {
+    background-image: url(&dtml-portal_url;/required.gif);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 2px;
+}
+
 #content a[target=_blank]{
   background: none;
   padding : 0px;
@@ -300,6 +307,12 @@ div#overview_overview ul {
   list-style-type:none;
   margin-left: 0;
   text-indent: 0;
+}
+
+
+/* document download confirmation*/
+form#download_confirmation .details{
+   margin: 1em 0 2em 0;
 }
 
 /* autocomplete widget */

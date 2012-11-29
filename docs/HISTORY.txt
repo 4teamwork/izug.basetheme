@@ -2,8 +2,29 @@ Changelog
 =========
 
 
-1.4 (unreleased)
+1.4.1 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+1.4 (2012-11-28)
 ----------------
+
+- GEVER: Added helper script, which support placeholders for old browsers.
+  [phgross]
+
+- GEVER: Added new icons and styling for new document overview.
+  [phgross]
+
+- Dropped izug.basetheme general search.pt.
+  [phgross]
+
+- GEVER: Added specific SearchboxViewlet with the newest template from p.a.layout.
+  [phgross]
+
+- GEVER: Added special styling for required fields.
+  [phgross]
 
 - GEVER: Removed arrow on links with a _blank target for GEVER content.
   [phgross]

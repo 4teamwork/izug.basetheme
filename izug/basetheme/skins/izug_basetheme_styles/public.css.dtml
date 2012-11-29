@@ -1570,7 +1570,7 @@ body.icons-on .portletWatcher *[class*="icon-"] {
 .contenttype-lebenslage, .contenttype-opengever-repository-repositoryfolder{ background-position: 0 -2833px;  }
 .contenttype-lebenslagealias, .contenttype-link, .contenttype-refegovservice, .contenttype-zuglink, .function-arrow-right{ background-position: 0 -2899px;  }
 .contenttype-medienmitteilung, .contenttype-zugmedienmitteilung, .contenttype-zugnews, .contenttype-zugnewsseite, .contenttype-zugvernehmlassung{ background-position: 0 -2965px;  }
-.contenttype-meeting-item, .contenttype-meetingitem, .contenttype-opengever-document-document, .contenttype-vernehmlassung, .contenttype-zugshopitem{ background-position: 0 -3031px;  }
+.contenttype-meeting-item, .contenttype-meetingitem, .contenttype-opengever-document-document, .contenttype-vernehmlassung, .contenttype-zugshopitem, .function-download-copy{ background-position: 0 -3031px;  }
 .contenttype-opengever-contact-contactfolder, .contenttype-orgunit, .contenttype-subsite{ background-position: 0 -3097px;  }
 .contenttype-opengever-dossier-businesscasedossier, .contenttype-opengever-dossier-templatedossier, .contenttype-opengever-zug-bdarp-casedossier1, .contenttype-opengever-zug-bdarp-casedossier2, .contenttype-opengever-zug-bdbds-bdbdscasebddossier, .contenttype-opengever-zug-bdbds-bdbdscasedossier2, .contenttype-opengever-zug-bdbds-bdbdscasevgbgdossier, .contenttype-opengever-zug-digva-orderdossier, .contenttype-opengever-zug-komsko-skocase, .contenttype-opengever-zug-skakr-businesscasedossier{ background-position: 0 -3163px;  }
 .contenttype-opengever-inbox-forwarding, .contenttype-opengever-inbox-inbox{ background-position: 0 -3229px;  }
@@ -1590,65 +1590,66 @@ body.icons-on .portletWatcher *[class*="icon-"] {
 .function-basket{ background-position: 0 -4143px;  }
 .function-collapsible-closed{ background-position: 0 -4209px;  }
 .function-delete{ background-position: 0 -4270px;  }
-.function-edit-inverse, .function-extedit-inverse, .function-togglesledit-inverse{ background-position: 0 -4336px;  }
-.function-edit{ background-position: 0 -4402px;  }
-.function-export-outlook{ background-position: 0 -4468px;  }
-.function-export-pdf-inverse, .function-pdf_export-inverse{ background-position: 0 -4534px;  }
-.function-export-pdf, .function-pdf_export{ background-position: 0 -4600px;  }
-.function-information{ background-position: 0 -4666px;  }
-.function-internet-inverse{ background-position: 0 -4732px;  }
-.function-internet{ background-position: 0 -4798px;  }
-.function-journal-inverse{ background-position: 0 -4864px;  }
-.function-journal{ background-position: 0 -4930px;  }
-.function-lock{ background-position: 0 -4996px;  }
-.function-ok{ background-position: 0 -5062px;  }
-.function-print-inverse{ background-position: 0 -5128px;  }
-.function-print{ background-position: 0 -5194px;  }
-.function-rss{ background-position: 0 -5260px;  }
-.function-settings-inverse{ background-position: 0 -5326px;  }
-.function-settings{ background-position: 0 -5392px;  }
-.function-site{ background-position: 0 -5458px;  }
-.function-start{ background-position: 0 -5524px;  }
-.function-subscribe-newsletter{ background-position: 0 -5590px;  }
-.function-watch-inverse{ background-position: 0 -5656px;  }
-.function-watch{ background-position: 0 -5722px;  }
-.function-watchlist{ background-position: 0 -5788px;  }
-.icon-application{ background-position: 0 -5854px;  }
-.icon-dokument_email, .mimetype-rfc822{ background-position: 0 -5920px;  }
-.icon-dokument_excel, .mimetype-dokument_excel, .mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel, .mimetype-xls, .mimetype-xlsx{ background-position: 0 -5986px;  }
-.icon-dokument_illustrator{ background-position: 0 -6052px;  }
-.icon-dokument_indesign{ background-position: 0 -6118px;  }
-.icon-dokument_mindmanager{ background-position: 0 -6184px;  }
-.icon-dokument_msproject{ background-position: 0 -6250px;  }
-.icon-dokument_openoffice_calc{ background-position: 0 -6316px;  }
-.icon-dokument_openoffice_draw{ background-position: 0 -6382px;  }
-.icon-dokument_openoffice_impress{ background-position: 0 -6448px;  }
-.icon-dokument_openoffice_math{ background-position: 0 -6514px;  }
-.icon-dokument_openoffice_writer{ background-position: 0 -6580px;  }
-.icon-dokument_pdf, .icon_dokument_pdf, .mimetype-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -6646px;  }
-.icon-dokument_photoshop{ background-position: 0 -6712px;  }
-.icon-dokument_powerpoint, .mimetype-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-ppt, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -6778px;  }
-.icon-dokument_text, .icon-text, .mimetype-plain, .mimetype-text{ background-position: 0 -6844px;  }
-.icon-dokument_verweis{ background-position: 0 -6910px;  }
-.icon-dokument_visio, .mimetype-dokument_visio, .mimetype-visio, .mimetype-vnd-visio{ background-position: 0 -6976px;  }
-.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -7042px;  }
-.icon-dokument_word, .mimetype-doc, .mimetype-docx, .mimetype-dokument_word, .mimetype-msword{ background-position: 0 -7108px;  }
-.icon-dokument_zip, .mimetype-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -7174px;  }
-.icon-task-remote-task{ background-position: 0 -7240px;  }
-.icon-task-subtask{ background-position: 0 -7306px;  }
-.mimetype-mpp{ background-position: 0 -7372px;  }
-.mimetype-vnd-sun-xml-calc{ background-position: 0 -7438px;  }
-.mimetype-vnd-sun-xml-draw{ background-position: 0 -7504px;  }
-.mimetype-vnd-sun-xml-impress{ background-position: 0 -7570px;  }
-.mimetype-vnd-sun-xml-writer{ background-position: 0 -7636px;  }
-.ui-icon-gripsmall-diagonal-se{ background-position: 0 -7702px;  }
-.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -7763px;  }
-.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -7828px;  }
-.wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -7894px;  }
-.wf-task-state-in-progress{ background-position: 0 -7960px;  }
-.wf-task-state-new-successor{ background-position: 0 -8026px;  }
-.wf-task-state-resolved{ background-position: 0 -8092px;  }
-
+.function-download-pdf-inactive{ background-position: 0 -4336px;  }
+.function-download-pdf, .icon-dokument_pdf, .icon_dokument_pdf, .mimetype-dokument_pdf, .mimetype-pdf, .mimetype-x-pdf{ background-position: 0 -4402px;  }
+.function-edit-inactive{ background-position: 0 -4468px;  }
+.function-edit-inverse, .function-extedit-inverse, .function-togglesledit-inverse{ background-position: 0 -4534px;  }
+.function-edit{ background-position: 0 -4600px;  }
+.function-export-outlook{ background-position: 0 -4666px;  }
+.function-export-pdf-inverse, .function-pdf_export-inverse{ background-position: 0 -4732px;  }
+.function-export-pdf, .function-pdf_export{ background-position: 0 -4798px;  }
+.function-information{ background-position: 0 -4864px;  }
+.function-internet-inverse{ background-position: 0 -4930px;  }
+.function-internet{ background-position: 0 -4996px;  }
+.function-journal-inverse{ background-position: 0 -5062px;  }
+.function-journal{ background-position: 0 -5128px;  }
+.function-lock{ background-position: 0 -5194px;  }
+.function-ok{ background-position: 0 -5260px;  }
+.function-print-inverse{ background-position: 0 -5326px;  }
+.function-print{ background-position: 0 -5392px;  }
+.function-revert, .wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -5458px;  }
+.function-rss{ background-position: 0 -5524px;  }
+.function-settings-inverse{ background-position: 0 -5590px;  }
+.function-settings{ background-position: 0 -5656px;  }
+.function-site{ background-position: 0 -5722px;  }
+.function-start{ background-position: 0 -5788px;  }
+.function-subscribe-newsletter{ background-position: 0 -5854px;  }
+.function-watch-inverse{ background-position: 0 -5920px;  }
+.function-watch{ background-position: 0 -5986px;  }
+.function-watchlist{ background-position: 0 -6052px;  }
+.icon-application{ background-position: 0 -6118px;  }
+.icon-dokument_email, .mimetype-rfc822{ background-position: 0 -6184px;  }
+.icon-dokument_excel, .mimetype-dokument_excel, .mimetype-msexcel, .mimetype-vnd-ms-excel, .mimetype-x-msexcel, .mimetype-xls, .mimetype-xlsx{ background-position: 0 -6250px;  }
+.icon-dokument_illustrator{ background-position: 0 -6316px;  }
+.icon-dokument_indesign{ background-position: 0 -6382px;  }
+.icon-dokument_mindmanager{ background-position: 0 -6448px;  }
+.icon-dokument_msproject{ background-position: 0 -6514px;  }
+.icon-dokument_openoffice_calc{ background-position: 0 -6580px;  }
+.icon-dokument_openoffice_draw{ background-position: 0 -6646px;  }
+.icon-dokument_openoffice_impress{ background-position: 0 -6712px;  }
+.icon-dokument_openoffice_math{ background-position: 0 -6778px;  }
+.icon-dokument_openoffice_writer{ background-position: 0 -6844px;  }
+.icon-dokument_photoshop{ background-position: 0 -6910px;  }
+.icon-dokument_powerpoint, .mimetype-dokument_powerpoint, .mimetype-mspowerpoint, .mimetype-powerpoint, .mimetype-ppt, .mimetype-vnd-ms-powerpoint, .mimetype-x-mspowerpoint{ background-position: 0 -6976px;  }
+.icon-dokument_text, .icon-text, .mimetype-plain, .mimetype-text{ background-position: 0 -7042px;  }
+.icon-dokument_verweis{ background-position: 0 -7108px;  }
+.icon-dokument_visio, .mimetype-dokument_visio, .mimetype-visio, .mimetype-vnd-visio{ background-position: 0 -7174px;  }
+.icon-dokument_webdokument, .mimetype-html{ background-position: 0 -7240px;  }
+.icon-dokument_word, .mimetype-doc, .mimetype-docx, .mimetype-dokument_word, .mimetype-msword{ background-position: 0 -7306px;  }
+.icon-dokument_zip, .mimetype-dokument_zip, .mimetype-x-zip-compressed, .mimetype-zip{ background-position: 0 -7372px;  }
+.icon-task-remote-task{ background-position: 0 -7438px;  }
+.icon-task-subtask{ background-position: 0 -7504px;  }
+.mimetype-mpp{ background-position: 0 -7570px;  }
+.mimetype-vnd-sun-xml-calc{ background-position: 0 -7636px;  }
+.mimetype-vnd-sun-xml-draw{ background-position: 0 -7702px;  }
+.mimetype-vnd-sun-xml-impress{ background-position: 0 -7768px;  }
+.mimetype-vnd-sun-xml-writer{ background-position: 0 -7834px;  }
+.ui-icon-gripsmall-diagonal-se{ background-position: 0 -7900px;  }
+.wf-forwarding-state-closed, .wf-task-state-tested-and-closed{ background-position: 0 -7961px;  }
+.wf-forwarding-state-open, .wf-task-state-open{ background-position: 0 -8026px;  }
+.wf-task-state-in-progress{ background-position: 0 -8092px;  }
+.wf-task-state-new-successor{ background-position: 0 -8158px;  }
+.wf-task-state-resolved{ background-position: 0 -8224px;  }
 
 
 .breadcrumb-divider {
@@ -1958,7 +1959,7 @@ td.x-grid3-hd-over .x-grid3-hd-inner, td.sort-desc .x-grid3-hd-inner, td.sort-as
 .x-grid3 td,
 .x-menu a,
 .x-grid-group-hd div.x-grid-group-title {
-  font-family: Verdana,Arial,Helvetica,sans-serif !important; 
+  font-family: Verdana,Arial,Helvetica,sans-serif !important;
 }
 
 /* Change background color of Openlayers' base layer selection box */
