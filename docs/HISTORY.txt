@@ -5,7 +5,8 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- GEVER: Added inactive-download icon to the sprite icons.
+  [phgross]
 
 
 1.4 (2012-11-28)
