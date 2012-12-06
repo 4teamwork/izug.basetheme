@@ -5,6 +5,9 @@ Changelog
 1.4.1 (unreleased)
 ------------------
 
+- GEVER: Removed arrow on links with a _blank target for whole GEVER.
+  [phgross]
+
 - GEVER: Added inactive-download icon to the sprite icons.
   [phgross]
 
