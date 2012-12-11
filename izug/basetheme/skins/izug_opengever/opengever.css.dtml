@@ -245,6 +245,7 @@ div.tabbedview-tooltip-data {
      color: #111111 !important;
      font-size: 1.1em;
      position: absolute;
+     z-index: 9999;
      width: 37em;
      display:none;
      opacity:1 !important;
