@@ -286,10 +286,14 @@ form.seantis-directory-search, form.seantis-directory-filter {
     display: block;
 }
 
-
 /* Small fix in personal tools */
 
 #portal-personaltools li > span {
     display:none;
 }
 
+/* Make sure the title link has no border below */
+
+#content a:link {
+    text-decoration: none;
+}
