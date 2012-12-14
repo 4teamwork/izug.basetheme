@@ -5,7 +5,8 @@ Changelog
 1.4.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Added timestamp to zugsprite.png to control caching.
+  [lukasg]
 
 
 1.4.2 (2012-12-11)

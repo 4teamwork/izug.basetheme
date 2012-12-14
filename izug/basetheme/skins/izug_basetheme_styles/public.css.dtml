@@ -1489,7 +1489,7 @@ div.to_top a:hover {
 .icons-on *[class*=function-],
 .icons-on *[class*=actionicon-],
 .icons-on *[class*=icon-] {
-	background-image: url(&dtml-portal_url;/zugsprite.png);
+	background-image: url(&dtml-portal_url;/zugsprite.png?ts=20121214);
     background-repeat: no-repeat;
     padding: 0.090909091em 0 0.090909091em 2em;
 }
@@ -1517,7 +1517,7 @@ body.icons-on .portletWatcher *[class*="wf-"],
 body.icons-on .portletWatcher *[class*="function-"],
 body.icons-on .portletWatcher *[class*="actionicon-"],
 body.icons-on .portletWatcher *[class*="icon-"] {
-  background-image: url(&dtml-portal_url;/zugsprite.png) !important;
+  background-image: url(&dtml-portal_url;/zugsprite.png?ts=20121214) !important;
   padding: 0.2em 0.7em 0.2em 0.6em !important;
   padding: 0.2em 0 0.2em 2em !important;
   height: 17px;
