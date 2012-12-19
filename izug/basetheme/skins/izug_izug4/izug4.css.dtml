@@ -802,4 +802,80 @@ li.ac_odd
 {
     margin-bottom: 0em;
 }
+
+
+/* Subsite styling */
+
+.template-subsite_view #portal-breadcrumbs {
+  display:none;
+}
+
+.template-subsite_view .column h2{
+  font-size:1.3em;
+}
+
+.colGroup {
+    clear: both;
+    margin: 0;
+    padding: 2.9em 0 0 2.4em;
+}
+
+#subsite-column-1.column,
+#subsite-column-2.column,
+#subsite-column-3.column,
+#subsite-column-4.column {
+  width: 17.5em;
+  padding-right:1.4em;
+}
+
+#subsite-column-5.column,
+#subsite-column-6.column {
+  position: relative;
+  width: 36.4em;
+}
+
+.colGroup .column h2 img {
+  padding: 0.27em 0 1em;
+}
+
+.template-subsite_view .column .portlet {
+  border:0;
+}
+
+.template-subsite_view .column .portletHeader {
+  border-color: rgb(239, 239, 239);
+  border-width: 0.2em 0 0 0;
+  padding-left:0;
+}
+.template-subsite_view .column .portletItem {
+  border-style: none;
+  padding: 0.454em 0 0.818em 0;
+}
+
+.colGroup .column .teaserDescription {
+  height: 9.091em;
+  overflow: hidden;
+  font-size: 1.1em;
+}
+
+.template-subsite_view .column .portletStaticText .portletItem ul {
+  line-height: 1.818em;
+  margin-left: 0px;
+  margin-top: -0.364em;
+  margin-right: 1em;
+}
+
+.template-subsite_view .column .portletStaticText .portletItem li {
+  display: inline;
+  background-image: url(icon_list_vertical.gif);
+  background-repeat: no-repeat;
+  background-position: right 0.25em;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+}
+
+.template-subsite_view .column .portletStaticText .portletItem li:last-child {
+  background-image:none;
+}
+
 /* </dtml-with> */
