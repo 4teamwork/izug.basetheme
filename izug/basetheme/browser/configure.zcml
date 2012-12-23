@@ -194,15 +194,6 @@
       layer=".interfaces.IThemeSpecific"
       />
 
-  <browser:viewlet
-      name="izug.banner"
-      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
-      class=".viewlets.Banner"
-      permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
-      for="*"
-      />
-
   <!-- izug specific -->
   <!-- new edit menu on top of the page -->
   <browser:viewlet

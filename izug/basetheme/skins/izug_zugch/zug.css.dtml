@@ -368,7 +368,7 @@ background-image: none;
 }
 
 /* hide banner on certain pages */
-.template-search #visual,
+/*.template-search #visual,
 .template-login_form #visual,
 .template-logged_out #visual,
 .template-join_form #visual,
@@ -380,7 +380,7 @@ background-image: none;
 .template-plone_control_panel #visual,
 .template-sitemap #visual {
     display: none;
-}
+}*/
 
 /* override font-tag overrides */
 font {

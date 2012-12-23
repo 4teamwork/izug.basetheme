@@ -173,36 +173,6 @@ class DebugInfo(common.TitleViewlet):
         else:
             return ''
 
-
-class Banner(common.ViewletBase):
-    render = ViewPageTemplateFile('viewlets_templates/banner.pt')
-
-    @property
-    def available(self):
-        context = aq_inner(self.context).aq_explicit
-        if INavigationRoot.providedBy(context) and getattr(context, 'bannerbilder', None):
-            return True
-        return False
-
-    def update(self):
-        if not self.available:
-            return
-        context = aq_inner(self.context)
-        self.img_path = '%s/default_banner.jpg' % context.portal_url()
-        self.img_title = context.Title
-        #check for folder 'bannerbilder'
-        bannerfolder = getattr(context.aq_explicit,'bannerbilder',False)
-        if bannerfolder:
-            all_imgs = context.portal_catalog({'portal_type':['Banner',],
-                                               'path':'/'.join(bannerfolder.getPhysicalPath()),
-                                               'review_state':['published_internet','published']})
-
-            counted = len(all_imgs)
-            if counted:
-                randomized = randrange(1,int(counted)+1,1)
-                self.img_path = all_imgs[randomized-1].getURL()
-                self.img_title = all_imgs[randomized-1].Title
-
 # for izug only
 class ZugBylineViewlet(content.DocumentBylineViewlet):
     @memoize
