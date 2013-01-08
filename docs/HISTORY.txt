@@ -5,7 +5,8 @@ Changelog
 1.4.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use IE8 mode for dexterity edit views (base main_template).
+  [jone]
 
 
 1.4.3 (2012-12-14)
