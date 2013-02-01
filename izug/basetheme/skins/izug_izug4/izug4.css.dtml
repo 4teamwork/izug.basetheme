@@ -879,6 +879,21 @@ li.ac_odd
   background-image:none;
 }
 
+/* General simplelayout styles */
+
+.sl-img-wrapper.SLPaddingRight {
+  padding-right: 1.8em;
+}
+
+#content .simplelayout-content.two-columns-design .twocolumn {
+  width: 253px;
+  float: left;
+  margin-right: 1.818em;
+}
+#content .simplelayout-content.two-columns-design #slotB.twocolumn {
+  margin-right:0;
+}
+
 /* Simplelayout portlet styles */
 
 .simplelayoutDropZonePortlet .portletItem {
