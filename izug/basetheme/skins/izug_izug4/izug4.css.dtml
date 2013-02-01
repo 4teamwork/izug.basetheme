@@ -879,4 +879,14 @@ li.ac_odd
   background-image:none;
 }
 
+/* Simplelayout portlet styles */
+
+.simplelayoutDropZonePortlet .portletItem {
+  overflow: visible;
+}
+
+.simplelayoutDropZonePortlet .simplelayout-block-wrapper h2{
+  font-size: 1.0em;
+}
+
 /* </dtml-with> */
