@@ -928,4 +928,25 @@ li.ac_odd
   margin-bottom:1em;
 }
 
+/* Contentpage contentlisting styles */
+ul.subelements-listing {
+  line-height: 1.818em;
+  margin-left: 0px;
+  margin-top: -0.364em;
+  margin-right: 1em;
+}
+
+ul.subelements-listing li {
+  display: inline;
+  background-image: url(icon_list_vertical.gif);
+  background-repeat: no-repeat;
+  background-position: right 0.25em;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
+}
+
+ul.subelements-listing li:last-child {
+  background-image:none;
+}
+
 /* </dtml-with> */
