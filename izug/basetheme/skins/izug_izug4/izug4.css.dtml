@@ -879,6 +879,17 @@ li.ac_odd
   background-image:none;
 }
 
+/* Subsite styling edit */
+
+.template-manage-subsiteview div#portal-column-content.sl.sr {
+  margin-left: -100%;
+  width: 100%;
+}
+
+.template-manage-subsiteview .column {
+  float:left;
+}
+
 /* General simplelayout styles */
 
 .sl-img-wrapper.SLPaddingRight {

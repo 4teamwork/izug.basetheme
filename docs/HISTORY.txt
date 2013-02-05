@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- IZUG4: manage subsite styling.
+  [mathias.leimgruber]
+
 - IZUG4: Simplelayout dropzone portlets styling.
   [mathias.leimgruber]
 
