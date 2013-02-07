@@ -101,7 +101,7 @@ msgstr "Retourne l'élément avec le numéro d'inventaire"
 #: ./izug/basetheme/browser/dossier_search.pt:82
 #: ./izug/basetheme/browser/task_search.pt:14
 msgid "help_search_responsible"
-msgstr ""
+msgstr "Champ de recherche d'aide"
 
 #. Default: "Return the item wiht the expected sequence Number"
 #: ./izug/basetheme/browser/dossier_search.pt:59
@@ -128,7 +128,7 @@ msgstr "Pour une recherche simple, entrez votre critère de recherche ici. Plusi
 msgid "label_advanced_search"
 msgstr "Recherche avancée"
 
-#. Default: "All types"
+#. Default: "by ${author}"
 #: ./izug/basetheme/browser/task_search.pt:40
 #: ./izug/basetheme/browser/viewlets_templates/byline.pt:16
 #, fuzzy
