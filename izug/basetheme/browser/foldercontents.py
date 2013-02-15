@@ -2,7 +2,7 @@ from Acquisition import aq_inner
 from OFS.interfaces import IOrderedContainer
 from plone.app.content.browser.foldercontents import FolderContentsTable
 from plone.app.content.browser.foldercontents import FolderContentsView
-from plone.app.content.browser.tableview import Table, TableKSSView
+from plone.app.content.browser.tableview import Table
 from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile
 
 
@@ -87,10 +87,6 @@ class IzugFolderContentsTable(FolderContentsTable):
         if self.contentFilter.get('sort_on', '') != 'getObjPositionInParent':
             return False
         return iface and attr
-
-
-class FolderContentsKSSView(TableKSSView):
-    table = IzugFolderContentsTable
 
 
 class IzugTable(Table):

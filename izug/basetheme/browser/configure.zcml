@@ -233,8 +233,9 @@
       permission="cmf.ListFolderContents" />
 
   <browser:page
+       zcml:condition="not-have plone-43"
        for="Products.Archetypes.interfaces.IBaseObject"
-       class=".foldercontents.FolderContentsKSSView"
+       class=".kssfoldercontents.FolderContentsKSSView"
        attribute="update_table"
        name="foldercontents_update_table"
        layer="izug.basetheme.browser.interfaces.IIzugSpecific"
@@ -249,8 +250,9 @@
        permission="cmf.ListFolderContents" />
 
    <browser:page
+        zcml:condition="not-have plone-43"
         for="Products.Archetypes.interfaces.IBaseObject"
-        class=".foldercontents.FolderContentsKSSView"
+        class=".kssfoldercontents.FolderContentsKSSView"
         attribute="update_table"
         name="foldercontents_update_table"
         layer="izug.basetheme.browser.interfaces.IZugSpecific"
