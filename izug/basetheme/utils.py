@@ -1,5 +1,5 @@
 from Products.CMFCore.utils import getToolByName
-from zope.app.component.hooks import getSite
+from zope.component.hooks import getSite
 import ConfigParser
 import os
 
@@ -75,4 +75,3 @@ def get_version_and_config(version_template='%(version)s'):
         infos.append(os.path.basename(effective_url))
 
     return infos
-

@@ -223,40 +223,6 @@
       />
 
 
-  <!-- izug/zug.ch special folder_contents -->
-  <browser:page
-      for="Products.Archetypes.interfaces.IBaseObject"
-      class=".foldercontents.IzugFolderContentsView"
-      name="folder_contents"
-      template="foldercontents.pt"
-      layer="izug.basetheme.browser.interfaces.IIzugSpecific"
-      permission="cmf.ListFolderContents" />
-
-  <browser:page
-       for="Products.Archetypes.interfaces.IBaseObject"
-       class=".foldercontents.FolderContentsKSSView"
-       attribute="update_table"
-       name="foldercontents_update_table"
-       layer="izug.basetheme.browser.interfaces.IIzugSpecific"
-       permission="cmf.ListFolderContents" />
-
-   <browser:page
-       for="Products.Archetypes.interfaces.IBaseObject"
-       class=".foldercontents.IzugFolderContentsView"
-       name="folder_contents"
-       template="foldercontents.pt"
-       layer="izug.basetheme.browser.interfaces.IZugSpecific"
-       permission="cmf.ListFolderContents" />
-
-   <browser:page
-        for="Products.Archetypes.interfaces.IBaseObject"
-        class=".foldercontents.FolderContentsKSSView"
-        attribute="update_table"
-        name="foldercontents_update_table"
-        layer="izug.basetheme.browser.interfaces.IZugSpecific"
-        permission="cmf.ListFolderContents" />
-
-
   <!-- A content provider showing the menu customised for izug -->
   <adapter
       for="Products.ATContentTypes.interface.interfaces.IATContentType
@@ -267,14 +233,21 @@
       provides="zope.contentprovider.interfaces.IContentProvider"
       />
 
-  <!-- for plone 3 only -->
   <browser:viewlet
       name="ftw.contentviews"
-	  zcml:condition="not-installed plone.app.upgrade"
       manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
       template="viewlets_templates/contentviews.pt"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:viewlet
+      name="plone.contentactions"
+      layer=".interfaces.IThemeSpecific"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IContentViews"
+      class="plone.app.layout.viewlets.common.ContentActionsViewlet"
+      permission="zope2.View"
       />
 
   <browser:viewlet
@@ -284,5 +257,6 @@
       class=".colorization.ColorizationViewlet"
       permission="zope2.View"
       />
+
 
 </configure>
