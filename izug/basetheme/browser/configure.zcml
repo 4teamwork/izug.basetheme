@@ -233,14 +233,21 @@
       provides="zope.contentprovider.interfaces.IContentProvider"
       />
 
-  <!-- for plone 3 only -->
   <browser:viewlet
       name="ftw.contentviews"
-	  zcml:condition="not-installed plone.app.upgrade"
       manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
       template="viewlets_templates/contentviews.pt"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
+      />
+
+  <browser:viewlet
+      name="plone.contentactions"
+      layer=".interfaces.IThemeSpecific"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IContentViews"
+      class="plone.app.layout.viewlets.common.ContentActionsViewlet"
+      permission="zope2.View"
       />
 
   <browser:viewlet
@@ -250,5 +257,6 @@
       class=".colorization.ColorizationViewlet"
       permission="zope2.View"
       />
+
 
 </configure>

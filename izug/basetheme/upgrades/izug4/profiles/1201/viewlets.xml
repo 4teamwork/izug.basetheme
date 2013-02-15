@@ -1,10 +1,6 @@
 <?xml version="1.0"?>
 <object>
 
-    <order manager="plone.belowcontent" skinname="*">
-        <viewlet name="plone.comments" insert-before="*"/>
-    </order>
-
     <order manager="plone.contentviews" skinname="*">
         <viewlet name="plone.contentactions" insert-before="*"/>
         <viewlet name="plone.contentviews" />

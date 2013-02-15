@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Support newest ftw.contentmenu version by moving the menu viewlet manager below the title.
+  [jone]
+
 - Remove folder contents customizations.
   [jone]
 
