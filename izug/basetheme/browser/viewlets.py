@@ -8,13 +8,11 @@ from izug.basetheme.browser.helper import css_class_from_obj
 from izug.basetheme.interfaces import ISiteProperties
 from izug.basetheme.utils import get_version_and_config
 from pkg_resources import iter_entry_points
-from plone.app.layout.navigation.interfaces import INavigationRoot
 from plone.app.layout.navigation.root import getNavigationRoot
 from plone.app.layout.viewlets import common, content
 from plone.memoize import ram
 from plone.memoize.instance import memoize
 from plone.registry.interfaces import IRegistry
-from random import randrange
 from zope.component import getMultiAdapter
 from zope.component import getUtility
 from zope.component.interfaces import ComponentLookupError
@@ -27,22 +25,29 @@ class PathBar(common.PathBarViewlet):
         super(PathBar, self).update()
         template_info = None
         translation = None
-        if 'PUBLISHED' in self.context.REQUEST and hasattr(self.context.REQUEST['PUBLISHED'], 'getId'):
+        if 'PUBLISHED' in self.context.REQUEST and hasattr(
+            self.context.REQUEST['PUBLISHED'], 'getId'):
             template_info = self.context.REQUEST['PUBLISHED'].getId()
-            translation = self.context.translate(msgid=template_info,mapping=None,context=self.context)
-        if template_info==translation:
+            translation = self.context.translate(msgid=template_info,
+                                                 mapping=None,
+                                                 context=self.context)
+        if template_info == translation:
             self.template_text = None
         else:
             self.template_text = translation
 
+
 class PersonalBar(common.PersonalBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/personal_bar.pt')
+
 
 class ZugPersonalBar(common.PersonalBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/zug_personal_bar.pt')
 
+
 class IZugPersonalBar(common.PersonalBarViewlet):
     index = ViewPageTemplateFile('viewlets_templates/izug_personal_bar.pt')
+
 
 class SiteActions(common.SiteActionsViewlet):
     index = ViewPageTemplateFile('viewlets_templates/siteactions.pt')
@@ -57,10 +62,12 @@ class SiteActions(common.SiteActionsViewlet):
                 break
 
         if package_version_string:
-            data = get_version_and_config(version_template=package_version_string)
+            data = get_version_and_config(
+                version_template=package_version_string)
             if len(data):
                 return data[0]
         return ''
+
 
 class ZugSiteActions(common.SiteActionsViewlet):
     """Custom site actions viewlet for zug.ch
@@ -69,17 +76,20 @@ class ZugSiteActions(common.SiteActionsViewlet):
 
     def update(self):
         super(ZugSiteActions, self).update()
-        portal_root = getToolByName(self.context,'portal_url').getPortalObject()
+        portal_root = getToolByName(
+            self.context, 'portal_url').getPortalObject()
         nav_root = getNavigationRoot(self.context)
 
         if nav_root != '/'.join(portal_root.getPhysicalPath()):
-            parent_nav_root = getNavigationRoot(aq_parent(self.context.restrictedTraverse(nav_root)))
+            parent_nav_root = getNavigationRoot(aq_parent(
+                    self.context.restrictedTraverse(nav_root)))
             parent_obj = self.context.restrictedTraverse(parent_nav_root)
         else:
             parent_obj = portal_root
 
         self.backtoparent_link = parent_obj.absolute_url()
-        self.backtoparent_title = getattr(parent_obj,'title',',Kanton Zug')
+        self.backtoparent_title = getattr(parent_obj, 'title', 'Kanton Zug')
+
 
 class ZugEditMenu(common.ViewletBase):
     render = ViewPageTemplateFile('viewlets_templates/zug_edit_menu.pt')
@@ -87,13 +97,15 @@ class ZugEditMenu(common.ViewletBase):
     def getWorkflowState(self):
         context = self.context
         request = context.request
-        context_state = getMultiAdapter((context, request), name='plone_context_state')
-        plone_tools = getMultiAdapter((context, request), name='plone_tools')
+        context_state = getMultiAdapter((context, request),
+                                        name='plone_context_state')
+        plone_tools = getMultiAdapter((context, request),
+                                      name='plone_tools')
         state = context_state.workflow_state()
         workflows = plone_tools.workflow().getWorkflowsFor(self.context)
         if workflows:
             for w in workflows:
-                if w.states.has_key(state):
+                if state in w.states:
                     return w.states[state].title or state
 
 
@@ -141,11 +153,13 @@ class Byline(content.DocumentBylineViewlet):
     def workflow_state(self):
         context = aq_inner(self.context)
         state = self.context_state.workflow_state()
-        self.tools = getMultiAdapter((context, context.REQUEST), name='plone_tools')
-        workflows = self.tools.workflow().getWorkflowsFor(self.context.aq_explicit)
+        self.tools = getMultiAdapter((context, context.REQUEST),
+                                     name='plone_tools')
+        workflows = self.tools.workflow().getWorkflowsFor(
+            self.context.aq_explicit)
         if workflows:
             for w in workflows:
-                if w.states.has_key(state):
+                if state in w.states:
                     return w.states[state].title or state
 
 
@@ -173,16 +187,19 @@ class DebugInfo(common.TitleViewlet):
         else:
             return ''
 
+
 # for izug only
 class ZugBylineViewlet(content.DocumentBylineViewlet):
     @memoize
     def show(self):
-        if self.getWorkflowState() not in ["published_internet", "revision"] or "behoerden" not in self.context.getPhysicalPath():
+        if (self.getWorkflowState() not in ["published_internet", "revision"]
+            or "behoerden" not in self.context.getPhysicalPath()):
             return False
         properties = self.tools.properties()
         site_properties = getattr(properties, 'site_properties')
         anonymous = self.portal_state.anonymous()
-        allowAnonymousViewAbout = site_properties.getProperty('allowAnonymousViewAbout', True)
+        allowAnonymousViewAbout = site_properties.getProperty(
+            'allowAnonymousViewAbout', True)
         return not anonymous or allowAnonymousViewAbout
 
     @memoize
@@ -194,26 +211,34 @@ class ZugBylineViewlet(content.DocumentBylineViewlet):
     def getWorkflowState(self):
         context = self.context
         request = context.request
-        context_state = getMultiAdapter((context, request), name='plone_context_state')
-        plone_tools = getMultiAdapter((context, request), name='plone_tools')
+        context_state = getMultiAdapter((context, request),
+                                        name='plone_context_state')
+        plone_tools = getMultiAdapter((context, request),
+                                      name='plone_tools')
         state = context_state.workflow_state()
         workflows = plone_tools.workflow().getWorkflowsFor(self.context)
         if workflows:
             for w in workflows:
-                if w.states.has_key(state):
+                if state in w.states:
                     return w.states[state].title or state
     index = ViewPageTemplateFile("viewlets_templates/izug_document_byline.pt")
 
+
 class ContentMenuViewlet(common.ViewletBase):
-    render = ViewPageTemplateFile('viewlets_templates/izug_dropdown_content_menu.pt')
+
+    render = ViewPageTemplateFile(
+        'viewlets_templates/izug_dropdown_content_menu.pt')
+
     def show_menu(self):
         if IPloneSiteRoot.providedBy(self.context):
             return False
-        if 'arbeitsplatz' in self.context.getPhysicalPath() and not self.context.restrictedTraverse('within_book')():
+        if ('arbeitsplatz' in self.context.getPhysicalPath()
+            and not self.context.restrictedTraverse('within_book')()):
             return True
         if not self.context.restrictedTraverse('@@plone').showEditableBorder():
             return False
         return int(self.context.request.get('izug_edit_mode', 0))
+
 
 class SearchBoxViewlet(common.SearchBoxViewlet):
     render = ViewPageTemplateFile('viewlets_templates/searchbox.pt')
@@ -224,7 +249,8 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
         # need a fallback. In this case you have to run the registry.xml
         try:
             registry = getUtility(IRegistry)
-            app_title = registry.forInterface(ISiteProperties).application_title
+            app_title = registry.forInterface(
+                ISiteProperties).application_title
         except (ComponentLookupError, KeyError):
             app_title = "Website"
 
