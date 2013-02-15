@@ -3,7 +3,7 @@ from OFS.interfaces import IOrderedContainer
 from plone.app.content.browser.foldercontents import FolderContentsTable
 from plone.app.content.browser.foldercontents import FolderContentsView
 from plone.app.content.browser.tableview import Table, TableKSSView
-from zope.app.pagetemplate import ViewPageTemplateFile
+from zope.browserpage.viewpagetemplatefile import ViewPageTemplateFile
 
 
 class IzugFolderContentsView(FolderContentsView):
