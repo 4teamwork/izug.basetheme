@@ -223,42 +223,6 @@
       />
 
 
-  <!-- izug/zug.ch special folder_contents -->
-  <browser:page
-      for="Products.Archetypes.interfaces.IBaseObject"
-      class=".foldercontents.IzugFolderContentsView"
-      name="folder_contents"
-      template="foldercontents.pt"
-      layer="izug.basetheme.browser.interfaces.IIzugSpecific"
-      permission="cmf.ListFolderContents" />
-
-  <browser:page
-       zcml:condition="not-have plone-43"
-       for="Products.Archetypes.interfaces.IBaseObject"
-       class=".kssfoldercontents.FolderContentsKSSView"
-       attribute="update_table"
-       name="foldercontents_update_table"
-       layer="izug.basetheme.browser.interfaces.IIzugSpecific"
-       permission="cmf.ListFolderContents" />
-
-   <browser:page
-       for="Products.Archetypes.interfaces.IBaseObject"
-       class=".foldercontents.IzugFolderContentsView"
-       name="folder_contents"
-       template="foldercontents.pt"
-       layer="izug.basetheme.browser.interfaces.IZugSpecific"
-       permission="cmf.ListFolderContents" />
-
-   <browser:page
-        zcml:condition="not-have plone-43"
-        for="Products.Archetypes.interfaces.IBaseObject"
-        class=".kssfoldercontents.FolderContentsKSSView"
-        attribute="update_table"
-        name="foldercontents_update_table"
-        layer="izug.basetheme.browser.interfaces.IZugSpecific"
-        permission="cmf.ListFolderContents" />
-
-
   <!-- A content provider showing the menu customised for izug -->
   <adapter
       for="Products.ATContentTypes.interface.interfaces.IATContentType
