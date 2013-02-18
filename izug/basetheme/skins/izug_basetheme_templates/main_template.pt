@@ -30,9 +30,13 @@
 
   <head>
 
-      <tal:ie_on_edit condition="python:'template-atct_edit' in plone_view.bodyClass(template, view)">
+      <tal:ie_on_edit__at condition="python:'template-atct_edit' in plone_view.bodyClass(template, view)">
           <meta http-equiv="X-UA-Compatible" content="IE=8" />
-      </tal:ie_on_edit>
+      </tal:ie_on_edit__at>
+
+      <tal:ie_on_edit__dx condition="python:'template-edit' in plone_view.bodyClass(template, view)">
+          <meta http-equiv="X-UA-Compatible" content="IE=8" />
+      </tal:ie_on_edit__dx>
 
       <tal:ie_on_edit condition="python:'template-ticket_view' in plone_view.bodyClass(template, view)">
           <meta http-equiv="X-UA-Compatible" content="IE=8" />
