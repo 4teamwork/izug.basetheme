@@ -949,4 +949,8 @@ ul.subelements-listing li:last-child {
   background-image:none;
 }
 
+#kss-spinner {
+  display: none;
+}
+
 /* </dtml-with> */

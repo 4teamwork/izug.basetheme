@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Hide KSS spinner.
+  [jone]
+
 - Support newest ftw.contentmenu version by moving the menu viewlet manager below the title.
   [jone]
 
