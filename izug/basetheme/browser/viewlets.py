@@ -5,17 +5,22 @@ from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from izug.basetheme import MessageFactory as _
 from izug.basetheme.browser.helper import css_class_from_obj
+from izug.basetheme.browser.interfaces import IContentViewsViewletWrapper
 from izug.basetheme.interfaces import ISiteProperties
 from izug.basetheme.utils import get_version_and_config
 from pkg_resources import iter_entry_points
 from plone.app.layout.navigation.root import getNavigationRoot
 from plone.app.layout.viewlets import common, content
+from plone.app.layout.viewlets.common import ContentActionsViewlet
+from plone.app.layout.viewlets.common import ContentViewsViewlet
+from plone.app.layout.viewlets.common import ViewletBase
 from plone.memoize import ram
 from plone.memoize.instance import memoize
 from plone.registry.interfaces import IRegistry
 from zope.component import getMultiAdapter
 from zope.component import getUtility
 from zope.component.interfaces import ComponentLookupError
+from zope.interface import implements
 
 
 class PathBar(common.PathBarViewlet):
@@ -264,3 +269,29 @@ class SearchBoxViewlet(common.SearchBoxViewlet):
 
 class IZugSearchBoxViewlet(SearchBoxViewlet):
     render = ViewPageTemplateFile('viewlets_templates/izug_searchbox.pt')
+
+
+class ContentViewsViewletWrapper(ViewletBase):
+    implements(IContentViewsViewletWrapper)
+
+
+class ZugContentActionsViewlet(ContentActionsViewlet):
+
+    def render(self):
+        # Only render the viewlet when its wrapped in the
+        # ftw.contentviews viewlet.
+        if IContentViewsViewletWrapper.providedBy(self.view):
+            return super(ZugContentActionsViewlet, self).render()
+        else:
+            return ''
+
+
+class ZugContentViewsViewlet(ContentViewsViewlet):
+
+    def render(self):
+        # Only render the viewlet when its wrapped in the
+        # ftw.contentviews viewlet.
+        if IContentViewsViewletWrapper.providedBy(self.view):
+            return super(ZugContentViewsViewlet, self).render()
+        else:
+            return ''

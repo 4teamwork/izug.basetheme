@@ -238,15 +238,25 @@
       manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
       template="viewlets_templates/contentviews.pt"
       permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
+      class=".viewlets.ContentViewsViewletWrapper"
+      layer=".interfaces.IIzug4Specific"
       />
 
   <browser:viewlet
       name="plone.contentactions"
-      layer=".interfaces.IThemeSpecific"
+      layer=".interfaces.IIzug4Specific"
       for="*"
       manager="plone.app.layout.viewlets.interfaces.IContentViews"
-      class="plone.app.layout.viewlets.common.ContentActionsViewlet"
+      class=".viewlets.ZugContentActionsViewlet"
+      permission="zope2.View"
+      />
+
+  <browser:viewlet
+      name="plone.contentviews"
+      layer=".interfaces.IIzug4Specific"
+      for="*"
+      manager="plone.app.layout.viewlets.interfaces.IContentViews"
+      class=".viewlets.ZugContentViewsViewlet"
       permission="zope2.View"
       />
 
