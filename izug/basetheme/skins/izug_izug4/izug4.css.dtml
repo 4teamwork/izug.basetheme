@@ -74,7 +74,8 @@ body.icons-on *[class*="actionicon-"] {
 }
 
 .actionMenu .actionMenuContent li a {
-    padding-left:0.5em !important;
+    padding-left:0em !important;
+    margin: 0.5em 0.4em;
 }
 
 
