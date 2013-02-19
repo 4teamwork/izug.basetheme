@@ -128,6 +128,10 @@
                              tal:define="show_border context/@@plone/showEditableBorder"
                              tal:attributes="class python:show_border and 'documentEditable documentContent' or 'documentContent'">
 
+                        <div id="edit-bar"
+                             tal:condition="show_border"
+                             tal:content="structure provider:plone.contentviews" />
+
                         <span id="contentTopLeft"></span>
                         <span id="contentTopRight"></span>
 
