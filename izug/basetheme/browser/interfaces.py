@@ -30,3 +30,8 @@ class IZugSpecific(Interface):
 
 class IDirectorySpecific(Interface):
     """Marker Interface for directories"""
+
+
+class IContentViewsViewletWrapper(Interface):
+    """Marker interface for custom ftw.contentviews viewlet.
+    """
