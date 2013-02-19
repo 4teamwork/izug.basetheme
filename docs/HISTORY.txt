@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Add patched global_statusmessage.pt, which also renders html.
+  [mathias.leimgruber]
+
 - Hide KSS spinner.
   [jone]
 
