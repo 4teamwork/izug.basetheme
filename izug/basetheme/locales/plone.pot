@@ -238,3 +238,5 @@ msgstr ""
 msgid "link_advanced_search"
 msgstr ""
 
+msgid "iZug Verlassen"
+msgstr ""

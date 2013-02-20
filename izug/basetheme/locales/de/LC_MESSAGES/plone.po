@@ -103,6 +103,9 @@ msgstr ""
 msgid "help_publishing_comments"
 msgstr ""
 
+msgid "iZug Verlassen"
+msgstr "Gever Verlassen"
+
 #. Default: "Advanced Search…"
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:84
 msgid "label_advanced_search"
@@ -198,6 +201,16 @@ msgstr "Erweiterte Suche"
 msgid "listingheader_title"
 msgstr ""
 
+#. Default: "Did you not find what you were looking for? Try the ${advanced_search} to refine your search."
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:53
+msgid "search_results_advanced"
+msgstr ""
+
+#. Default: "Advanced Search"
+#: ./izug/basetheme/skins/opengever_theme_templates/search.pt:54
+msgid "search_results_advanced_link"
+msgstr ""
+
 #. Default: "Affected content"
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:71
 msgid "summary_affected_content"
@@ -222,4 +235,5 @@ msgstr ""
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:37
 msgid "title_search_title"
 msgstr ""
+
 

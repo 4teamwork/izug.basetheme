@@ -9,8 +9,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
@@ -104,6 +102,9 @@ msgstr "En cas de contrôle le logiciel va essayer de modifier le status de chaq
 #: ./izug/basetheme/skins/opengever_theme_templates/content_status_history.cpt:152
 msgid "help_publishing_comments"
 msgstr "Va être ajouté dans l'historique des publications. Si de multiples éléments sont séléctionnés ce commentaire va être attaché à chacun d'entre eux."
+
+msgid "iZug Verlassen"
+msgstr "sortir Gever"
 
 #. Default: "Advanced Search…"
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:84
@@ -234,4 +235,5 @@ msgstr "Souscrire à une mise à jour permanente sur ce critère de recherche."
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:37
 msgid "title_search_title"
 msgstr "Recherche de site"
+
 
