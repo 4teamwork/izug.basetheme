@@ -104,7 +104,7 @@ msgid "help_publishing_comments"
 msgstr "Va être ajouté dans l'historique des publications. Si de multiples éléments sont séléctionnés ce commentaire va être attaché à chacun d'entre eux."
 
 msgid "iZug Verlassen"
-msgstr "sortir Gever"
+msgstr "Se déconnecter"
 
 #. Default: "Advanced Search…"
 #: ./izug/basetheme/skins/opengever_theme_templates/livesearch_reply.py:84
