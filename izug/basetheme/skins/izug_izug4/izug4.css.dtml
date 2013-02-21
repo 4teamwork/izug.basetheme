@@ -872,8 +872,11 @@ li.ac_odd
   background-image: url(icon_list_vertical.gif);
   background-repeat: no-repeat;
   background-position: right 0.25em;
-  padding-right: 0.5em;
   margin-right: 0.5em;
+}
+
+.template-subsite_view .column .portletStaticText .portletItem li a {
+  padding-right: 0.5em;
 }
 
 .template-subsite_view .column .portletStaticText .portletItem li:last-child {
