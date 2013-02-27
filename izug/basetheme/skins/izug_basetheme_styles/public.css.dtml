@@ -821,6 +821,7 @@ table caption {
     display: inline-block;
 }
 .listingBar span a,
+.listingBar a,
 .listingBar span span,
 .listingBar span.current {
     display: block;
