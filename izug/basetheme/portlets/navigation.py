@@ -119,7 +119,7 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
 
     def decoratorFactory(self, node):
         node = super(ZugNavtreeStrategy, self).decoratorFactory(node)
-        
+
         # sortAttribute and sortOrder should be stored on the brain
         node['sortAttribute'] = getattr(
             node['item'],
@@ -129,7 +129,7 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
             node['item'],
             'sortOrder',
             '')
-            
+
         node['link_remote'] = node['link_remote'] and \
             node['getRemoteUrl'] != 'http://'
         return node
