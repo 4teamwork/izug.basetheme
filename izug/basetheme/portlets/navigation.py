@@ -1,28 +1,45 @@
-from zope.interface import implements, Interface
-from zope.component import adapts
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
-
+from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
-from plone.memoize.instance import memoize
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from plone.app.layout.navigation.interfaces import INavigationQueryBuilder
+from plone.app.layout.navigation.interfaces import INavtreeStrategy
+from plone.app.layout.navigation.navtree import buildFolderTree
 from plone.app.portlets.portlets import navigation as plone_navigation
+from plone.memoize.instance import memoize
+from zope.component import adapts
+from zope.component import getMultiAdapter
+from zope.interface import Interface
+from zope.interface import implements
 
 
 class ZugNavigationRenderer(plone_navigation.Renderer):
     render = ViewPageTemplateFile('zug_navigation.pt')
     recurse = ViewPageTemplateFile('zug_navigation_recurse.pt')
 
-    sort_attributes = {
-            'sortable_title': 'Title',
-            'getObjPositionInParent': 'getObjPositionInParent',
-            'created': 'created',
-            'effective': 'effective',
-            'modified': 'modified'}
-
     @memoize
     def getNavTree(self, _marker=None):
-        tree = super(ZugNavigationRenderer, self).getNavTree(_marker)
+        if _marker is None:
+            _marker = []
+        context = aq_inner(self.context)
+        queryBuilder = getMultiAdapter((context, self.data),
+                                       INavigationQueryBuilder)
+        strategy = getMultiAdapter((context, self.data),
+                                   INavtreeStrategy)
+
+        # <custom>
+        # alyways sort by title
+        queryBuilder.query['sort_on'] = 'sortable_title'
+        queryBuilder.query['sort_order'] = ''
+        # </custom>
+
+        tree = buildFolderTree(context, obj=context,
+                               query=queryBuilder(),
+                               strategy=strategy)
+
+        # <custom>
         tree['children'] = self.cleanup_nodes(tree['children'])
         tree = self.cleanup_nodes([tree])[0]
+        # </custom>
         return tree
 
     def cleanup_nodes(self, nodes):
@@ -42,34 +59,9 @@ class ZugNavigationRenderer(plone_navigation.Renderer):
             if currentParent and currentParent \
                 and not any_child_is_currentParent:
                 node['currentItem'] = True
-            # sort children
-            node = self.sort_children(node)
             # walk down
             node['children'] = self.cleanup_nodes(node['children'])
         return nodes
-
-    def sort_children(self, node):
-
-        def subSorter(node):
-            sortAttribute = node.get('sortAttribute', '')
-            if sortAttribute=='getObjPositionInParent' \
-                or sortAttribute not in self.sort_attributes.keys():
-                # already sorted by catalog or no valid sortAttribute
-                return node
-            else:
-                sortAttribute = self.sort_attributes[sortAttribute]
-            children = list(node['children'])
-            children.sort(
-                lambda a, b: cmp(
-                    a.get(sortAttribute, ''),
-                    b.get(sortAttribute, '')))
-            if node.get('sortOrder', '') == 'descending':
-                children.reverse()
-            node['children'] = children
-            return node
-
-        node = subSorter(node)
-        return node
 
     def root_is_current(self):
         return 'navTreeCurrentItem' in self.root_item_class()
@@ -106,16 +98,6 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
 
     def decoratorFactory(self, node):
         node = super(ZugNavtreeStrategy, self).decoratorFactory(node)
-
-        # sortAttribute and sortOrder should be stored on the brain
-        node['sortAttribute'] = getattr(
-            node['item'],
-            'sortAttribute',
-            'getPositionInParent')
-        node['sortOrder'] = getattr(
-            node['item'],
-            'sortOrder',
-            '')
 
         node['link_remote'] = node['link_remote'] and \
             node['getRemoteUrl'] != 'http://'
