@@ -67,19 +67,8 @@ class ZugNavigationRenderer(plone_navigation.Renderer):
                 children.reverse()
             node['children'] = children
             return node
-        # ------------------
-        # remove aktuell, it should be always at the bottom
-        aktuell = None
-        for n in node['children']:
-            if n['item'].id=='aktuell':
-                aktuell = n
-                node['children'].remove(n)
-                break
-        # sort with subSorter
+
         node = subSorter(node)
-        # readd aktuell
-        if aktuell:
-            node['children'].append(aktuell)
         return node
 
     def root_is_current(self):
@@ -100,9 +89,7 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
         # we don't want to show elements that are to deep ..
         if self.bottomLevel!=0 and self.bottomLevel<node['depth']:
             return False
-        # we want to see objects with id "aktuell"
-        if node['item'].id=='aktuell':
-            return True
+
         # strictly do not display objects with "excludeFromNav" set
         if node['item'].exclude_from_nav:
             return False
