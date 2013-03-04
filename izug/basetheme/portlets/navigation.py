@@ -55,10 +55,11 @@ class ZugNavigationRenderer(plone_navigation.Renderer):
                 if n['currentItem'] or n['currentParent']:
                     any_child_is_currentParent = True
                     break
+
             currentParent = node.get('currentParent')
-            if currentParent and currentParent \
-                and not any_child_is_currentParent:
+            if currentParent and not any_child_is_currentParent:
                 node['currentItem'] = True
+
             # walk down
             node['children'] = self.cleanup_nodes(node['children'])
         return nodes
@@ -79,7 +80,7 @@ class ZugNavtreeStrategy(plone_navigation.NavtreeStrategy):
 
     def nodeFilter(self, node):
         # we don't want to show elements that are to deep ..
-        if self.bottomLevel!=0 and self.bottomLevel<node['depth']:
+        if self.bottomLevel != 0 and self.bottomLevel < node['depth']:
             return False
 
         # strictly do not display objects with "excludeFromNav" set
