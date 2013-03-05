@@ -15,7 +15,7 @@
             />
         <!-- New strategy for our navigation portlet -->
         <adapter
-            for="Products.Archetypes.interfaces.IBaseObject
+            for="OFS.interfaces.IItem
                  plone.app.portlets.portlets.navigation.INavigationPortlet"
             provides="plone.app.layout.navigation.interfaces.INavtreeStrategy"
             factory=".navigation.ZugNavtreeStrategy"
