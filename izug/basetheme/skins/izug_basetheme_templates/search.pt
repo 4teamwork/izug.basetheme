@@ -53,7 +53,7 @@
         <span i18n:name="advanced_search">
         <a href=""
            i18n:translate="search_results_advanced_link"
-           tal:attributes="href string:${context/@@plone_portal_state/navigation_root_url}/advanced_search?SearchableText=${request/SearchableText|python:''}">Advanced Search</a>
+           tal:attributes="href string:$${context/@@plone_portal_state/navigation_root_url}/advanced_search?SearchableText=$${request/SearchableText|python:''}">Advanced Search</a>
         </span>
         to refine your search.
         </p>
