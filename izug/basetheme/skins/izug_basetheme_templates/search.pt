@@ -74,7 +74,7 @@
     </h1>
 
     <p class="discreet"
-       tal:condition="context/portal_syndication/isSiteSyndicationAllowed">
+       tal:condition="context/portal_syndication/isSiteSyndicationAllowed|nothing">
         <a href=""
            class="link-feed"
            i18n:translate="title_rss_feed"
