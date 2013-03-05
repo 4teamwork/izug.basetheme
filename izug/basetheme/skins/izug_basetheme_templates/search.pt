@@ -31,7 +31,7 @@
                  searchterm request/SearchableText|nothing;
                  use_view_action site_properties/typesUseViewActionInListings|python:();">
 
-    <form name="searchform" 
+    <form name="searchform"
           action="search"
           class="searchPage">
         <input class="searchPage"
@@ -67,8 +67,8 @@
 
         &mdash;
         <span i18n:translate="batch_x_items_matching_your_criteria"
-        ><span i18n:name="number" 
-        tal:omit-tag="" 
+        ><span i18n:name="number"
+        tal:omit-tag=""
         tal:content="python:len(results)">234</span> items matching your search terms</span>
 
     </h1>
@@ -102,12 +102,12 @@
                             isAnon context/@@plone_portal_state/anonymous;"
                 tal:attributes="class python:'contenttype-' + normalizeString(result.portal_type)">
                <a
-                 href="#" 
+                 href="#"
                  tal:attributes="href url;
                                  class string:$item_wf_state_class"
                  tal:content="result/pretty_title_or_id" />
             </dt>
-            
+
             <dd>
                 <span tal:replace="python:plone_view.cropText(result.Description or '', desc_length, desc_ellipsis)">
                     Cropped description
@@ -129,7 +129,7 @@
 
                 </span>
 
-                <span tal:define="toLocalizedTime nocall: context/@@plone/toLocalizedTime;" 
+                <span tal:define="toLocalizedTime nocall: context/@@plone/toLocalizedTime;"
                 class="documentModified">
                   &mdash;
                     <span i18n:translate="box_last_modified">
@@ -154,7 +154,7 @@
                                Category
                             </a><tal:separator condition="not: repeat/category/end">,</tal:separator>
                         </span>
-                </span>    
+                </span>
             </span>
 
             </dd>
@@ -162,7 +162,7 @@
         </tal:entry>
         </tal:results>
         </dl>
-         
+
         <div metal:use-macro="here/batch_macros/macros/navigation" />
 
     </div>
@@ -170,4 +170,3 @@
 </div>
 </body>
 </html>
-
