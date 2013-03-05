@@ -921,8 +921,8 @@ li.ac_odd
 
 /* Specal izug contentpage listing view styles */
 
-.CustomlistingItem .date,
-.CustomlistingItem .title {
+.CustomlistingItem .itemDate,
+.CustomlistingItem .itemTitle {
   font-weight: bold;
 }
 
