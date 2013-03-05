@@ -5,6 +5,10 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Change item classes of CustomlistingItem, because it conflicts
+  with jqueryui datetime picker.
+  [mathias.leimgruber]
+
 - Better keywordwidget styles.
   [mathias.leimgruber]
 
