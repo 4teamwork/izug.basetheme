@@ -957,4 +957,19 @@ ul.subelements-listing li:last-child {
   display: none;
 }
 
+/* Keywordwidget styles */
+
+.tagsContainer .existingTagsSection {
+  margin-left:0;
+}
+
+.tagsContainer .newTagsSection {
+  width:100%;
+}
+
+.tagsContainer .newTagsHelp {
+  float: left;
+}
+
 /* </dtml-with> */
+
