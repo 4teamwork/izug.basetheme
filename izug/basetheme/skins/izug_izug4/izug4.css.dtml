@@ -971,5 +971,13 @@ ul.subelements-listing li:last-child {
   float: left;
 }
 
+/* ftw.topics brefs listing*/
+
+dl.searchResults dd{
+  margin-left:0;
+  margin-bottom:2em;
+
+}
+
 /* </dtml-with> */
 
