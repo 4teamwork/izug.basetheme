@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Fix simplelayout icon (collabs edit/layout actions).
+  [mathias.leimgruber]
+
 - Style topic references.
   [mathias.leimgruber]
 
