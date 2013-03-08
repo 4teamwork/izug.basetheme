@@ -630,14 +630,13 @@ dl.error dd:before {
     content: "- ";
 }
 
+/* The description is not visible in the izug/zug.ch environment.
+    This probably... no this will cause issues somewhere, so pls do not blame me for this commit.
+*/
 .documentDescription {
-    /* The summary text describing the document */
-    font-weight: bold;
-    display: block;
-    margin: 0 0 1.091em 0;
-    line-height: 1.455em;
-    color: &dtml-grey5;;
+    display: none;
 }
+
 div.documentByLine {
     background-color: &dtml-grey2;;
     font-weight: normal;
