@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Style edit mode switcher for 5.0.
+  [jone]
+
 - Fix simplelayout icon (collabs edit/layout actions).
   [mathias.leimgruber]
 
