@@ -989,5 +989,18 @@ dl.searchResults dd{
 }
 
 
-/* </dtml-with> */
+/* edit mode switchera */
+div#editmode-switcher {
+    background: transparent url(&dtml-portal_url;/editmodeswitcher_bg.png) repeat-x top left;
+    float: right;
+    position: relative;
+    z-index: 10000;
+    padding:0.4em 1em;
+    height: 16px;
+    color: white;
+    margin-top: -2.3em;
+    text-decoration: none;
+}
 
+
+/* </dtml-with> */
