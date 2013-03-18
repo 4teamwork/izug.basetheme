@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Fix simpllayout left floated images.
+  [mathias.leimgruber]
+
 - Style edit mode switcher for 5.0.
   [jone]
 
