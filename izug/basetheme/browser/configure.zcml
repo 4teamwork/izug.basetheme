@@ -176,16 +176,6 @@
       layer=".interfaces.IIzug4Specific"
       />
 
-
-
-  <browser:viewlet
-      name="plone.belowcontenttitle.documentbyline"
-      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
-      class=".viewlets.Byline"
-      permission="zope2.View"
-      layer=".interfaces.IThemeSpecific"
-      />
-
   <browser:viewlet
       name="debug-info"
       manager="plone.app.layout.viewlets.interfaces.IPortalTop"
@@ -204,15 +194,6 @@
       permission="zope2.View"
       layer="izug.basetheme.browser.interfaces.IIzugSpecific"
       />
-
-  <browser:viewlet
-      name="izug.documentbyline"
-      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
-      class=".viewlets.ZugBylineViewlet"
-      permission="zope2.View"
-  	  layer="izug.basetheme.browser.interfaces.IIzugSpecific"
-      />
-
 
   <browser:viewlet
       name="izug.dropdowncontentmenu"
