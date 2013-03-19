@@ -4,7 +4,6 @@ from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.interfaces import IPloneSiteRoot
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from izug.basetheme import MessageFactory as _
-from izug.basetheme.browser.helper import css_class_from_obj
 from izug.basetheme.browser.interfaces import IContentViewsViewletWrapper
 from izug.basetheme.interfaces import ISiteProperties
 from izug.basetheme.utils import get_version_and_config
@@ -15,7 +14,6 @@ from plone.app.layout.viewlets.common import ContentActionsViewlet
 from plone.app.layout.viewlets.common import ContentViewsViewlet
 from plone.app.layout.viewlets.common import ViewletBase
 from plone.memoize import ram
-from plone.memoize.instance import memoize
 from plone.registry.interfaces import IRegistry
 from zope.component import getMultiAdapter
 from zope.component import getUtility
@@ -148,26 +146,6 @@ class DocumentActionsIzug4(content.DocumentActionsViewlet):
         return actions
 
 
-class Byline(content.DocumentBylineViewlet):
-    index = ViewPageTemplateFile('viewlets_templates/byline.pt')
-
-    def css_class_from_obj(self):
-        return css_class_from_obj(self.context)
-
-    @memoize
-    def workflow_state(self):
-        context = aq_inner(self.context)
-        state = self.context_state.workflow_state()
-        self.tools = getMultiAdapter((context, context.REQUEST),
-                                     name='plone_tools')
-        workflows = self.tools.workflow().getWorkflowsFor(
-            self.context.aq_explicit)
-        if workflows:
-            for w in workflows:
-                if state in w.states:
-                    return w.states[state].title or state
-
-
 class DebugInfo(common.TitleViewlet):
 
     index = ViewPageTemplateFile('viewlets_templates/debug_info.pt')
@@ -191,42 +169,6 @@ class DebugInfo(common.TitleViewlet):
             return ', '.join(data)
         else:
             return ''
-
-
-# for izug only
-class ZugBylineViewlet(content.DocumentBylineViewlet):
-    @memoize
-    def show(self):
-        if (self.getWorkflowState() not in ["published_internet", "revision"]
-            or "behoerden" not in self.context.getPhysicalPath()):
-            return False
-        properties = self.tools.properties()
-        site_properties = getattr(properties, 'site_properties')
-        anonymous = self.portal_state.anonymous()
-        allowAnonymousViewAbout = site_properties.getProperty(
-            'allowAnonymousViewAbout', True)
-        return not anonymous or allowAnonymousViewAbout
-
-    @memoize
-    def effective(self):
-        effective = self.context.effective()
-        if effective.year() > 1900:
-            return self.context.effective()
-
-    def getWorkflowState(self):
-        context = self.context
-        request = context.request
-        context_state = getMultiAdapter((context, request),
-                                        name='plone_context_state')
-        plone_tools = getMultiAdapter((context, request),
-                                      name='plone_tools')
-        state = context_state.workflow_state()
-        workflows = plone_tools.workflow().getWorkflowsFor(self.context)
-        if workflows:
-            for w in workflows:
-                if state in w.states:
-                    return w.states[state].title or state
-    index = ViewPageTemplateFile("viewlets_templates/izug_document_byline.pt")
 
 
 class ContentMenuViewlet(common.ViewletBase):

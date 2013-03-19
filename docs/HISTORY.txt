@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Remove byline viewlet.
+  [mathias.leimgruber]
+
 - Style edit mode switcher for 5.0.
   [jone]
 
