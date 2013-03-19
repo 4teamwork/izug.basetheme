@@ -5,6 +5,9 @@ Changelog
 1.3 (unreleased)
 ------------------
 
+- Fix simpllayout left floated images.
+  [mathias.leimgruber]
+
 - Remove byline viewlet.
   [mathias.leimgruber]
 

@@ -919,6 +919,13 @@ li.ac_odd
   font-size: 1.0em;
 }
 
+.sl-img-small .sl-img-wrapper,
+.sl-img-middle .sl-img-wrapper {
+  float:left;
+  margin-bottom: 1em;
+  margin-right: 1.5em;
+}
+
 /* Specal izug contentpage listing view styles */
 
 .CustomlistingItem .itemDate,
