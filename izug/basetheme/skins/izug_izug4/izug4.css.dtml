@@ -107,6 +107,14 @@ body.icons-on *[class*="actionicon-"] {
     top: 7.7em;
 }
 
+.userrole-anonymous .tabbedview_view .tabbedview_search {
+    top:6em;
+}
+
+.userrole-anonymous div.tabbedview-tabs {
+  padding-top: 3em;
+}
+
 .tabbedview_view .disabledSearchBox #tabbedview-searchbox {
   display: none;
 }
@@ -161,7 +169,6 @@ lo
 #tabbedview-body th.sortable span {
   cursor:pointer;
 }
-
 
 /* Blog styles (Fokus) */
 .blogView .actionsBarContent {
