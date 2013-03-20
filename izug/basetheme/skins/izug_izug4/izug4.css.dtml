@@ -158,6 +158,10 @@ lo
     padding-right:0.5em;
 }
 
+#tabbedview-body th.sortable span {
+  cursor:pointer;
+}
+
 
 /* Blog styles (Fokus) */
 .blogView .actionsBarContent {
