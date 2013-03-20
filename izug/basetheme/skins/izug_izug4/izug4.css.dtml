@@ -115,6 +115,10 @@ body.icons-on *[class*="actionicon-"] {
   padding-top: 3em;
 }
 
+.userrole-anonymous .tabbedview_view #listing_container {
+  padding-top:0.75em;
+}
+
 .tabbedview_view .disabledSearchBox #tabbedview-searchbox {
   display: none;
 }
@@ -168,6 +172,14 @@ lo
 
 #tabbedview-body th.sortable span {
   cursor:pointer;
+}
+
+.template-directories_view #listing_container table {
+  width:100%;
+}
+
+.template-directories_view #listing_container th:first-child {
+  width:30%;
 }
 
 /* Blog styles (Fokus) */
