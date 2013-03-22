@@ -841,7 +841,7 @@ li.ac_odd
 .colGroup {
     clear: both;
     margin: 0;
-    padding: 2.9em 0 0 2.4em;
+    padding: 1em 0 0 2.4em;
 }
 
 #subsite-column-1.column,
@@ -875,12 +875,12 @@ li.ac_odd
 .template-subsite_view .column .portletItem {
   border-style: none;
   padding: 0.454em 0 0.818em 0;
+  font-size:1em;
 }
 
 .colGroup .column .teaserDescription {
   height: 9.091em;
   overflow: hidden;
-  font-size: 1.1em;
 }
 
 .template-subsite_view .column .portletStaticText .portletItem ul {
@@ -904,6 +904,10 @@ li.ac_odd
 
 .template-subsite_view .column .portletStaticText .portletItem li:last-child {
   background-image:none;
+}
+
+.template-subsite_view.userrole-anonymous .documentActions {
+  display:none;
 }
 
 /* Subsite styling edit */
