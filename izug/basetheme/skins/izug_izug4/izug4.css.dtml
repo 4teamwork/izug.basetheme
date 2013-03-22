@@ -107,6 +107,18 @@ body.icons-on *[class*="actionicon-"] {
     top: 7.7em;
 }
 
+.userrole-anonymous .tabbedview_view .tabbedview_search {
+    top:6em;
+}
+
+.userrole-anonymous div.tabbedview-tabs {
+  padding-top: 3em;
+}
+
+.userrole-anonymous .tabbedview_view #listing_container {
+  padding-top:0.75em;
+}
+
 .tabbedview_view .disabledSearchBox #tabbedview-searchbox {
   display: none;
 }
@@ -158,6 +170,17 @@ lo
     padding-right:0.5em;
 }
 
+#tabbedview-body th.sortable span {
+  cursor:pointer;
+}
+
+.template-directories_view #listing_container table {
+  width:100%;
+}
+
+.template-directories_view #listing_container th:first-child {
+  width:30%;
+}
 
 /* Blog styles (Fokus) */
 .blogView .actionsBarContent {
