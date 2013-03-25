@@ -5,6 +5,9 @@ Changelog
 1.4.4 (unreleased)
 ------------------
 
+- Added missing dependency on zope.app.component.
+  [deif]
+
 - Use IE8 mode for dexterity edit views (base main_template).
   [jone]
 

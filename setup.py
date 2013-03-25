@@ -44,6 +44,7 @@ setup(name='izug.basetheme',
         'z3c.jbot',
         'collective.mtrsetup',
         'plone.browserlayer',
+        'zope.app.component',
         ],
       extras_require=extras_require,
 
