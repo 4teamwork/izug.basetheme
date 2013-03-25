@@ -2,7 +2,13 @@ from Acquisition import aq_inner
 from OFS.interfaces import IOrderedContainer
 from plone.app.content.browser.foldercontents import FolderContentsTable
 from plone.app.content.browser.foldercontents import FolderContentsView
-from plone.app.content.browser.tableview import Table, TableKSSView
+from plone.app.content.browser.tableview import Table
+try:
+    from plone.app.content.browser.tableview import TableKSSView
+except ImportError:
+    # Plone 4.3 (KSS has been dropped)
+    from plone.app.content.browser.tableview import TableBrowserView \
+                                                                 as TableKSSView
 from zope.app.pagetemplate import ViewPageTemplateFile
 
 
