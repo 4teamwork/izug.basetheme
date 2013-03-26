@@ -644,7 +644,6 @@ div.documentByLine {
     padding: 0.25em 1em;
 }
 div.documentByLine a {
-    color: &dtml-grey5;;
     text-decoration: none;
 }
 div.documentByLine a:hover {
@@ -653,10 +652,6 @@ div.documentByLine a:hover {
 div.documentByLine span:first-child {
     border-left-style: none;
     padding-left: 0;
-}
-div.documentByLine span {
-    border-left: 1px solid &dtml-grey5;;
-    padding-left: 0.4em;
 }
 dl.searchResults span.documentByLine {
     display: block;
