@@ -834,14 +834,16 @@ li.ac_odd
   display:none;
 }
 
-.template-subsite_view .column h2{
+.template-subsite_view .column .teaser_portlet .portletHeader{
   font-size:1.3em;
+  margin:0;
+  border:0;
 }
 
 .colGroup {
     clear: both;
     margin: 0;
-    padding: 1em 0 0 2.4em;
+    padding: 2.4em 0 0 2.2em;
 }
 
 #subsite-column-1.column,
@@ -858,8 +860,8 @@ li.ac_odd
   width: 36.4em;
 }
 
-.colGroup .column h2 img {
-  padding: 0.27em 0 1em;
+.colGroup .column .teaser_portlet .portletHeader img{
+  padding: 0.27em 0 0.75em;
 }
 
 .template-subsite_view .column .portlet {
