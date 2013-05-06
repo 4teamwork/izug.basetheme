@@ -973,7 +973,7 @@ ul.subelements-listing {
   line-height: 1.818em;
   margin-left: 0px;
   margin-top: -0.364em;
-  margin-right: 1em;
+  margin-right: 0em;
 }
 
 ul.subelements-listing li {
@@ -981,8 +981,10 @@ ul.subelements-listing li {
   background-image: url(icon_list_vertical.gif);
   background-repeat: no-repeat;
   background-position: right 0.25em;
-  padding-right: 0.5em;
   margin-right: 0.5em;
+}
+ul.subelements-listing li a {
+  padding-right:0.5em;
 }
 
 ul.subelements-listing li:last-child {
@@ -1038,5 +1040,15 @@ div#editmode-switcher {
     text-decoration: none;
 }
 
+/* Two column styles */
+.listing-column-right, .listing-column-left {
+  width: 23.636em;
+}
+.listing-column-left {
+  float: left;
+}
+.listing-column-right {
+  float:right
+}
 
 /* </dtml-with> */
