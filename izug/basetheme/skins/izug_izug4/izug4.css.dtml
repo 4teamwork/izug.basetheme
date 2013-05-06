@@ -969,25 +969,29 @@ li.ac_odd
 }
 
 /* Contentpage contentlisting styles */
-ul.subelements-listing {
+ul.subelements-listing,
+ul.topic_listing {
   line-height: 1.818em;
   margin-left: 0px;
   margin-top: -0.364em;
   margin-right: 0em;
 }
 
-ul.subelements-listing li {
+ul.subelements-listing li,
+ul.topic_listing li {
   display: inline;
   background-image: url(icon_list_vertical.gif);
   background-repeat: no-repeat;
   background-position: right 0.25em;
   margin-right: 0.5em;
 }
-ul.subelements-listing li a {
+ul.subelements-listing li,
+ul.topic_listing li a {
   padding-right:0.5em;
 }
 
-ul.subelements-listing li:last-child {
+ul.subelements-listing li:last-child,
+ul.topic_listing li:last-child {
   background-image:none;
 }
 
@@ -1027,7 +1031,7 @@ dl.searchResults dd{
 }
 
 
-/* edit mode switchera */
+/* edit mode switcher */
 div#editmode-switcher {
     background: transparent url(&dtml-portal_url;/editmodeswitcher_bg.png) repeat-x top left;
     float: right;
@@ -1041,10 +1045,13 @@ div#editmode-switcher {
 }
 
 /* Two column styles */
-.listing-column-right, .listing-column-left {
+.listing-column-right,
+.listing-column-left,
+.listing-column {
   width: 23.636em;
 }
-.listing-column-left {
+.listing-column-left,
+.listing-column {
   float: left;
 }
 .listing-column-right {
