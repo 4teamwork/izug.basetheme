@@ -1058,4 +1058,24 @@ table.shopItemTable {
   text-align: left;
 }
 
+
+/* simplelayout dropzone portlet */
+.portlet.simplelayoutDropZonePortlet .portletFooter {
+  padding: 0;
+}
+
+.simplelayoutDropZonePortlet .portletItem {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.simplelayoutDropZonePortlet .BlockOverallWrapper {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-top: 1px solid #EFEFEF;
+}
+
+
+
 /* </dtml-with> */
