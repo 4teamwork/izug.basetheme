@@ -973,11 +973,11 @@ ul.topic_listing {
 
 ul.subelements-listing li,
 ul.topic_listing li {
-  display: inline;
+  display: inline-block;
   background-image: url(icon_list_vertical.gif);
   background-repeat: no-repeat;
   background-position: right 0.25em;
-  margin-right: 0.5em;
+  margin-right: 0em;
 }
 ul.subelements-listing li,
 ul.topic_listing li a {
