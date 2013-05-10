@@ -973,11 +973,11 @@ ul.topic_listing {
 
 ul.subelements-listing li,
 ul.topic_listing li {
-  display: inline;
+  display: inline-block;
   background-image: url(icon_list_vertical.gif);
   background-repeat: no-repeat;
   background-position: right 0.25em;
-  margin-right: 0.5em;
+  margin-right: 0em;
 }
 ul.subelements-listing li,
 ul.topic_listing li a {
@@ -1057,5 +1057,34 @@ div#editmode-switcher {
 table.shopItemTable {
   text-align: left;
 }
+
+
+/* simplelayout dropzone portlet */
+.portlet.simplelayoutDropZonePortlet .portletFooter {
+  padding: 0;
+}
+
+.simplelayoutDropZonePortlet .portletItem {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.simplelayoutDropZonePortlet .BlockOverallWrapper {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-top: 1px solid #EFEFEF;
+}
+
+
+
+/* accessibility elements */
+.hiddenStructureAFAthead {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+}
+
+
 
 /* </dtml-with> */
