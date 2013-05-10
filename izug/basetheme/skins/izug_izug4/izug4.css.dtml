@@ -1052,4 +1052,10 @@ div#editmode-switcher {
   float:right
 }
 
+/* ShopItem Block*/
+
+table.shopItemTable {
+  text-align: left;
+}
+
 /* </dtml-with> */
