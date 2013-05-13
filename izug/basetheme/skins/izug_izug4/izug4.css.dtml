@@ -973,13 +973,13 @@ ul.topic_listing {
 
 ul.subelements-listing li,
 ul.topic_listing li {
-  display: inline-block;
+  display: inline;
   background-image: url(icon_list_vertical.gif);
   background-repeat: no-repeat;
   background-position: right 0.25em;
-  margin-right: 0em;
+  margin-right: 0.5em;
 }
-ul.subelements-listing li,
+ul.subelements-listing li a,
 ul.topic_listing li a {
   padding-right:0.5em;
 }
