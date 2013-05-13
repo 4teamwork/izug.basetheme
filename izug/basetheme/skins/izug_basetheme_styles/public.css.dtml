@@ -461,8 +461,9 @@ h3, h4, h5, h6 {
     text-transform: none;
 }
 #portal-languageselector {
-    margin: 0 1em 0 1em;
+    margin: 1em 0em 1em 0em;
     float:right;
+    height:2.4em;
 }
 #portal-languageselector li {
     display: inline;
