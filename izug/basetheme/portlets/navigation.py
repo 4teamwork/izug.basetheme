@@ -1,6 +1,7 @@
 from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from ftw.book.interfaces import IWithinBookLayer
 from plone.app.layout.navigation.interfaces import INavigationQueryBuilder
 from plone.app.layout.navigation.interfaces import INavtreeStrategy
 from plone.app.layout.navigation.navtree import buildFolderTree
@@ -26,11 +27,12 @@ class ZugNavigationRenderer(plone_navigation.Renderer):
         strategy = getMultiAdapter((context, self.data),
                                    INavtreeStrategy)
 
-        # <custom>
-        # alyways sort by title
-        queryBuilder.query['sort_on'] = 'sortable_title'
-        queryBuilder.query['sort_order'] = ''
-        # </custom>
+        if not IWithinBookLayer.providedBy(self.request):
+            # <custom>
+            # alyways sort by title
+            queryBuilder.query['sort_on'] = 'sortable_title'
+            queryBuilder.query['sort_order'] = ''
+            # </custom>
 
         tree = buildFolderTree(context, obj=context,
                                query=queryBuilder(),
