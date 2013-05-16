@@ -1093,4 +1093,15 @@ table.shopItemTable {
 
 
 
+/* forms */
+
+div.field span.required {
+  background-image: url(required.gif);
+  background-position: center right;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 5px;
+  height: 1.2em;
+}
+
 /* </dtml-with> */
