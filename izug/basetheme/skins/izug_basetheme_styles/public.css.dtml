@@ -464,9 +464,18 @@ h3, h4, h5, h6 {
     margin: 1em 0em 1em 0em;
     float:right;
     height:2.4em;
+    font-size: 1.1em;
 }
 #portal-languageselector li {
     display: inline;
+    background-image: url(icon_list_vertical.gif);
+    background-repeat: no-repeat;
+    background-position: left 0.25em;
+    margin-left: 0.2em;
+}
+
+#portal-languageselector li a {
+    padding-left:0.5em;
 }
 
 #portal-breadcrumbs {
