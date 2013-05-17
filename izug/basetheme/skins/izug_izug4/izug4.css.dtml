@@ -200,6 +200,10 @@ lo
   font-weight: normal;
 }
 
+.portletTagcloud li {
+  padding-right:0.5em;
+  float:left;
+}
 
 /* DASHBOARD */
 /* use four columns with limited width */
