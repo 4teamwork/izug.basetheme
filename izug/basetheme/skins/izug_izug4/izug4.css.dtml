@@ -1115,6 +1115,10 @@ div.field span.required {
   float: right;
 }
 
+.zugMitglied-body .rightFloat {
+  padding-top: 2em;
+}
+
 .zugMitglied-details {
   float: left;
 }
