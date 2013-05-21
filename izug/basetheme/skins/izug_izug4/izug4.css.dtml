@@ -1108,4 +1108,16 @@ div.field span.required {
   height: 1.2em;
 }
 
+/* contact view */
+
+.contact_view .rightFloat,
+.zugMitglied-body .rightFloat {
+  float: right;
+}
+
+.zugMitglied-details {
+  float: left;
+}
+
+
 /* </dtml-with> */
