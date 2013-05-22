@@ -93,6 +93,10 @@ body.icons-on *[class*="actionicon-"] {
 
 /* TABBED VIEW */
 
+#content .tabbedview_view .pane {
+  margin-top: 0;
+}
+
 .tabbedview_view .documentByLine {
     height:4em;
 }
