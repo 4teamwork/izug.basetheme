@@ -1151,4 +1151,17 @@ div.field span.required {
   margin-left: 250px;
 }
 
+.userrole-anonymous h1.documentFirstHeading {
+  margin-bottom: 0.625em !important;
+}
+.documentEditable #ftw-edit-bar {
+  margin-bottom: 0.625em !important;
+}
+.documentByLine {
+  margin-bottom: 0.625em !important;
+}
+.documentEditable .documentByLine {
+  margin-bottom: 0 !important;
+}
+
 /* </dtml-with> */
