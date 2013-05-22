@@ -1134,11 +1134,14 @@ div.field span.required {
 
 /* sitemap */
 #portal-sitemap {
-  list-style-type: square;
-  list-style-image: url(http://localhost:8080/intra/icon_list.gif);
-  margin-left: 2em;
+  list-style-type: none;
   margin-top: 1em;
 }
+
+#portal-sitemap ul {
+  margin-left: 0.363em;
+}
+
 #portal-sitemap li {
   display: list-item;
 }
