@@ -97,6 +97,10 @@ body.icons-on *[class*="actionicon-"] {
   margin-top: 0;
 }
 
+.userrole-anonymous #content .tabbedview_view .pane {
+  top: 0;
+}
+
 .tabbedview_view .documentByLine {
     height:4em;
 }
