@@ -1131,4 +1131,23 @@ div.field span.required {
 }
 
 
+/* sitemap */
+#portal-sitemap {
+  list-style-type: square;
+  list-style-image: url(http://localhost:8080/intra/icon_list.gif);
+  margin-left: 2em;
+  margin-top: 1em;
+}
+#portal-sitemap li {
+  display: list-item;
+}
+#portal-sitemap li img {
+  display: none;
+}
+.template-sitemap #viewlet-above-content,
+.template-sitemap .documentContent,
+.template-sitemap #viewlet-below-content {
+  margin-left: 250px;
+}
+
 /* </dtml-with> */
