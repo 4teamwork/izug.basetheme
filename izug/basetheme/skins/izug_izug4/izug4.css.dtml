@@ -455,6 +455,9 @@ table.vertical.MeetingListing th,
 .MeetingItemBody table.vertical th {
     border:none;
 }
+table.listing td {
+  border-left: none;
+}
 
 .MeetingItemWrapper .meetingItemActions {
   padding-top: 0.25em;
