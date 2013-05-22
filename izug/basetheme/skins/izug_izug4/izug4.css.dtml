@@ -461,6 +461,7 @@ table.vertical.MeetingListing th,
 }
 table.listing td {
   border-left: none;
+  line-height: 1.6em;
 }
 
 .MeetingItemWrapper .meetingItemActions {
