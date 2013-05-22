@@ -93,6 +93,14 @@ body.icons-on *[class*="actionicon-"] {
 
 /* TABBED VIEW */
 
+#content .tabbedview_view .pane {
+  margin-top: 0;
+}
+
+.userrole-anonymous #content .tabbedview_view .pane {
+  top: 0;
+}
+
 .tabbedview_view .documentByLine {
     height:4em;
 }
@@ -454,6 +462,10 @@ table.vertical.MeetingListing th,
 .MeetingItemBody table.vertical td,
 .MeetingItemBody table.vertical th {
     border:none;
+}
+table.listing td {
+  border-left: none;
+  line-height: 1.6em;
 }
 
 .MeetingItemWrapper .meetingItemActions {
@@ -1123,5 +1135,40 @@ div.field span.required {
   float: left;
 }
 
+
+/* sitemap */
+#portal-sitemap {
+  list-style-type: none;
+  margin-top: 1em;
+}
+
+#portal-sitemap ul {
+  margin-left: 0.363em;
+}
+
+#portal-sitemap li {
+  display: list-item;
+}
+#portal-sitemap li img {
+  display: none;
+}
+.template-sitemap #viewlet-above-content,
+.template-sitemap .documentContent,
+.template-sitemap #viewlet-below-content {
+  margin-left: 250px;
+}
+
+.userrole-anonymous h1.documentFirstHeading {
+  margin-bottom: 0.625em !important;
+}
+.documentEditable #ftw-edit-bar {
+  margin-bottom: 0.625em !important;
+}
+.documentByLine {
+  margin-bottom: 0.625em !important;
+}
+.documentEditable .documentByLine {
+  margin-bottom: 0 !important;
+}
 
 /* </dtml-with> */
