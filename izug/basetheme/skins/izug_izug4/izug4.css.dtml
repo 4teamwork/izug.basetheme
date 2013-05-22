@@ -34,6 +34,11 @@ body.template-simplelayout.portaltype-chapter p.documentDescription {
 }
 
 
+.function-reader-inverse{ background-position: 0 -4864px;  }
+.function-pdf-inverse{ background-position: 0 -4534px;  }
+
+
+
 .book-reader-navigation a {
   color: black !important;
 }
