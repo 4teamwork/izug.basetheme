@@ -690,8 +690,11 @@ table.raw-table {
 
 table.raw-table th {
     padding: 1.091em 0.454em 0.909em 0;
-    text-align: left;
     vertical-align: top;
+}
+
+.simplelayout-content table .right {
+  text-align: right;
 }
 
 table.raw-table td {
