@@ -946,6 +946,9 @@ li.ac_odd
 .sl-img-wrapper.SLPaddingRight {
   padding-right: 1.8em;
 }
+.sl-img-wrapper {
+    margin-bottom: 1em;
+}
 
 #content .simplelayout-content.two-columns-design .twocolumn {
   width: 253px;
