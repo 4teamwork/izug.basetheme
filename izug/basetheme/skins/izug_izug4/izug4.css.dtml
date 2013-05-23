@@ -946,6 +946,9 @@ li.ac_odd
 .sl-img-wrapper.SLPaddingRight {
   padding-right: 1.8em;
 }
+.sl-img-wrapper {
+    margin-bottom: 1em;
+}
 
 #content .simplelayout-content.two-columns-design .twocolumn {
   width: 253px;
@@ -954,6 +957,12 @@ li.ac_odd
 }
 #content .simplelayout-content.two-columns-design #slotB.twocolumn {
   margin-right:0;
+}
+.sl-text-wrapper table caption {
+    font-size: 1.182em;
+    font-weight: bold;
+    line-height: 1.154em;
+    margin: 1.538em 0 0.615em;
 }
 
 /* Simplelayout portlet styles */
