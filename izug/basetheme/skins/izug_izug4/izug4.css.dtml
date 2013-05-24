@@ -767,6 +767,17 @@ body.template-search #content form.searchPage p.discreet,
     position: relative;
     width: 19.45em;
 }
+#content #portal-searchfacets ul {
+    list-style: none;
+    margin-left: 0;
+    padding: 0.5em;
+}
+#portal-searchfacets ul .facetItemValue {
+    font-weight: bold;
+}
+#portal-searchfacets #selected-facets {
+    background-color: #EFEFEF;
+}
 body.template-search #content #content-core {
     width: 100%;
 }
