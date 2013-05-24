@@ -1098,6 +1098,7 @@ dl.searchResults dd{
   font-weight: normal;
   padding: 1px 4px !important;
   border-radius: 2px;
+  line-height: 1.9em;
 }
 
 
