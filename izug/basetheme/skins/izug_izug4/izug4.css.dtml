@@ -744,6 +744,49 @@ body.template-search #content form.searchPage p.discreet,
 .LSRow a[href*='advanced_search'] {
     display: none;
 }
+#search-results-wrapper #search-results {
+    float: left;
+    left: 100%;
+    margin-left: -64.545em;
+    position: relative;
+    width: 64.545em;
+}
+#portal-searchfacets {
+    float: left !important;
+    left: 100%;
+    margin-left: -100%;
+    padding: 0;
+    position: relative;
+    width: 19.45em;
+}
+body.template-search #content #content-core {
+    width: 100%;
+}
+.searchPage div.searchBox {
+    border: 1px solid #000;
+    padding: 2em;
+    margin-top: 1em;
+}
+#content #portal-searchfacets h4 {
+    font-weight: bold;
+}
+#content #portal-searchfacets dt {
+    float: none;
+    clear: none;
+    font-weight: bold;
+    font-size: 100%;
+}
+#content #portal-searchfacets dd {
+    float: none;
+    font-size: 100%;
+    margin: 0;
+}
+#search-results h1 .discreet {
+    color: #CCCCCC;
+}
+div#search-results-wrapper h1.documentFirstHeading {
+    margin-left: 0 !important;
+}
 
 /* =========================== */
 /* SOLR search page            */
