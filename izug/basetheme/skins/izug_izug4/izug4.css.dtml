@@ -953,8 +953,17 @@ li.ac_odd
   border-width: 0.2em 0 0 0;
   padding-left:0;
   padding-right:0;
-  color: rgb(68, 68, 68);
 }
+.template-subsite_view .column .portletHeader a{
+  color: #00538C;
+  text-decoration: underline;
+}
+
+.template-subsite_view .column .portletHeader a:visited{
+  color: #AE1E00;
+  text-decoration: underline;
+}
+
 .template-subsite_view .column .portletItem {
   border-style: none;
   padding: 0.454em 0 0.818em 0;
