@@ -85,7 +85,6 @@
     color: &dtml-fontColor;;
 }
 .portletFooter {
-    background-color: &dtml-evenRowBackgroundColor;;
     margin: 0;
     padding: 0.25em 1em;
     border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
