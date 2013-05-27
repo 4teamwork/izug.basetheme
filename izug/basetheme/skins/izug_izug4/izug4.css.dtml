@@ -1251,6 +1251,23 @@ div.field span.required {
   margin-bottom: 0 !important;
 }
 
+/* seach portlet */
+.portletSearch {
+  border-top: 1px solid #EFEFEF;
+  margin-bottom: 2em;
+}
+.portletSearch dt {
+  display: none;
+}
+.portletSearch #searchGadget {
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.portletSearch #sendSearch {
+  float: right;
+  margin-right: -2px;
+}
 
 /* Folder contents */
 
