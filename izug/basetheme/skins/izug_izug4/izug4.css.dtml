@@ -1251,4 +1251,12 @@ div.field span.required {
   margin-bottom: 0 !important;
 }
 
+
+/* Folder contents */
+
+.template-folder_contents #folderlisting-main-table table td img {
+  display: none;
+}
+
+
 /* </dtml-with> */
