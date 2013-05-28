@@ -1281,6 +1281,11 @@ div.field label span.required {
   margin-right: -2px;
 }
 
+/* portlets */
+.portlet .portletFooter {
+  text-align: left;
+}
+
 /* manage portlets */
 .managedPortletActions form {
   display: inline;
