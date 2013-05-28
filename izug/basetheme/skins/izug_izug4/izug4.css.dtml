@@ -188,12 +188,14 @@ lo
 }
 
 .template-directories_view #listing_container table,
-.template-press_releases_view #listing_container table {
+.template-press_releases_view #listing_container table,
+.template-tabbed_view.portaltype-book #listing_container table{
   width:100%;
 }
 
 .template-directories_view #listing_container table td,
-.template-press_releases_view #listing_container table td{
+.template-press_releases_view #listing_container table td,
+.template-tabbed_view.portaltype-book #listing_container table td{
   padding-right:0.5em;
 }
 
