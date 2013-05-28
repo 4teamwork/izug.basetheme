@@ -1201,7 +1201,7 @@ table.shopItemTable {
 
 /* forms */
 
-div.field span.required {
+div.field label span.required {
   background-image: url(required.gif);
   background-position: center right;
   background-repeat: no-repeat;
