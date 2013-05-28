@@ -1295,9 +1295,11 @@ div.field label span.required {
 }
 
 /* Folder contents */
-
 .template-folder_contents #folderlisting-main-table table td img {
   display: none;
+}
+.template-folder_contents #listing-table {
+  width: 100%;
 }
 
 
