@@ -1203,7 +1203,7 @@ table.shopItemTable {
 
 /* forms */
 
-div.field span.required {
+div.field label span.required {
   background-image: url(required.gif);
   background-position: center right;
   background-repeat: no-repeat;
@@ -1279,6 +1279,19 @@ div.field span.required {
 .portletSearch #sendSearch {
   float: right;
   margin-right: -2px;
+}
+
+/* manage portlets */
+.managedPortletActions form {
+  display: inline;
+}
+.managedPortletActions button {
+  font-size: 75%;
+  padding: 0 0.75em !important;
+}
+.managedPortlet div.portletHeader {
+  border-bottom: 1px solid #EFEFEF;
+  background-color: #FDFDFD;
 }
 
 /* Folder contents */
