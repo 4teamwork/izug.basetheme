@@ -1311,4 +1311,14 @@ div.field label span.required {
   width: 100%;
 }
 
+/* IE 7 hacks */
+div.visualClear {
+  *max-height: 1px;
+}
+#content-core #subsite-column-1,
+#content-core #subsite-column-2,
+#content-core #subsite-column-3,
+#content-core #subsite-column-4 {
+  *width: 177px;
+}
 /* </dtml-with> */
