@@ -1227,6 +1227,10 @@ div.field label span.required {
   float: left;
 }
 
+/* category */
+#viewlet-below-content #category {
+  display: none;
+}
 
 /* sitemap */
 #portal-sitemap {
