@@ -1083,17 +1083,21 @@ ul.topic_listing li {
   display: inline;
   background-image: url(icon_list_vertical.gif);
   background-repeat: no-repeat;
-  background-position: right 0.25em;
-  margin-right: 0.5em;
+  background-position: left 0.25em;
+  margin-left: 0;
 }
 ul.subelements-listing li a,
 ul.topic_listing li a {
-  padding-right:0.5em;
+  padding-left:0.5em;
 }
 
-ul.subelements-listing li:last-child,
-ul.topic_listing li:last-child {
+ul.subelements-listing li:first-child,
+ul.topic_listing li:first-child {
   background-image:none;
+}
+ul.subelements-listing li:first-child a,
+ul.topic_listing li:first-child a {
+  padding-left: 0;
 }
 
 #kss-spinner {
@@ -1306,6 +1310,5 @@ div.field label span.required {
 .template-folder_contents #listing-table {
   width: 100%;
 }
-
 
 /* </dtml-with> */
