@@ -1344,5 +1344,9 @@ div#portal-column-content.sl {
   margin-left: -100% !important;
   width: 78em !important;
 }
+/* fixes empty subsite columns are not visible */
+#content-core .subsiteColumns .column {
+  min-height: 1px;
+}
 
 /* </dtml-with> */
