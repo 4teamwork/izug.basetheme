@@ -1334,6 +1334,7 @@ div#portal-column-content.sl {
   width: 53em !important;
 }
 .template-subsite_view div#portal-column-content.sr,
+.template-manage-subsiteview div#portal-column-content.sr,
 .template-search div#portal-column-content.sr {
   /* right column: 96em - 18em */
   margin-left: -100% !important;
