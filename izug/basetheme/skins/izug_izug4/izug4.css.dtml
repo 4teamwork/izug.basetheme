@@ -1321,4 +1321,23 @@ div.visualClear {
 #content-core #subsite-column-4 {
   *width: 177px;
 }
+
+/* fix for pages without a navigation */
+div#portal-column-content.sr {
+  /* right and left column: 96em - 18em - 25em */
+  margin-left: -71em !important;
+  width: 53em !important;
+}
+div#portal-column-content.sl {
+  /* right and left column: 96em - 18em - 25em */
+  margin-left: -71em !important;
+  width: 53em !important;
+}
+.template-subsite_view div#portal-column-content.sr,
+.template-search div#portal-column-content.sr {
+  /* right column: 96em - 18em */
+  margin-left: -100% !important;
+  width: 78em !important;
+}
+
 /* </dtml-with> */
