@@ -5,6 +5,9 @@ Changelog
 1.1.izug5 (unreleased)
 ----------------------
 
+- Fixes empty subsite columns are not visible.
+  [Julian Infanger]
+
 - Fix layout if there is no navigation portlet.
   [Julian Infanger]
 
