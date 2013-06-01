@@ -1335,8 +1335,14 @@ div#portal-column-content.sr {
 div#portal-column-content.sl {
   /* right and left column: 96em - 18em - 25em */
   margin-left: -71em !important;
+  width: 71em !important;
+}
+div#portal-column-content.sl.sr {
+  /* right and left column: 96em - 18em - 25em */
+  margin-left: -71em !important;
   width: 53em !important;
 }
+
 .template-subsite_view div#portal-column-content.sr,
 .template-manage-subsiteview div#portal-column-content.sr,
 .template-search div#portal-column-content.sr {
