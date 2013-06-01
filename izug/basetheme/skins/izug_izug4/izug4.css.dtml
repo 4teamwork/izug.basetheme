@@ -1355,4 +1355,19 @@ div#portal-column-content.sl.sr {
   min-height: 1px;
 }
 
+/* styles for autocomplete in search */
+.ui-autocomplete {
+  font-size: 1.1em;
+  font-family: Verdana,Arial,Helvetica,sans-serif !important;
+}
+.ui-autocomplete,
+.ui-autocomplete a {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+.ui-autocomplete a.ui-state-focus {
+  border-color: #DDDDDD;
+}
+
 /* </dtml-with> */
