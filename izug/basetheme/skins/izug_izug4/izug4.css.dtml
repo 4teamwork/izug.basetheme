@@ -1365,4 +1365,7 @@ div#portal-column-content.sl.sr {
   border-color: #DDDDDD;
 }
 
+dl.searchResults .highlightedSearchTerm {
+  background: silver !important;
+}
 /* </dtml-with> */
