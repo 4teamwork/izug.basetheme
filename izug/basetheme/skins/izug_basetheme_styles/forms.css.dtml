@@ -148,7 +148,7 @@ dl.enableFormTabbing dd {
 #login-form .field {
   clear: none;
 }
-#content-core #login-form label {
+#content #login-form label {
   display:block;
   float:left;
   line-height:2em;
