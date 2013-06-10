@@ -5,7 +5,8 @@ Changelog
 1.2.izug5 (unreleased)
 ----------------------
 
-- Nothing changed yet.
+- Open contact form in new window.
+  [jone]
 
 
 1.1.izug5 (2013-06-04)

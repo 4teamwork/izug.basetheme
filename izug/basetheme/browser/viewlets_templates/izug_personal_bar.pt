@@ -11,7 +11,8 @@
             <a href=""
                tal:define="accesskey python: accesskeys.get(action['id'], '');"
                tal:attributes="href action/url;
-                               accesskey accesskey;"
+                               accesskey accesskey;
+                               target python: action.get('id', '') == 'contact' and '_blank' or '';"
             ><tal:actionname i18n:translate=""
                              tal:content="action/title">dummy</tal:actionname
             ></a>
