@@ -5,6 +5,9 @@ Changelog
 1.2.izug5 (unreleased)
 ----------------------
 
+- Use silver as background for highlighted search terms.
+  [Julian Infanger]
+
 - Open contact form in new window.
   [jone]
 
