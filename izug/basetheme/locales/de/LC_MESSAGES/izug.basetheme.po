@@ -283,3 +283,5 @@ msgstr "erweiterte Suche"
 msgid "batch_x_items_matching_your_criteria"
 msgstr "${number} Artikel gefunden"
 
+msgid "Kanton Zug"
+msgstr "Kanton Zug"

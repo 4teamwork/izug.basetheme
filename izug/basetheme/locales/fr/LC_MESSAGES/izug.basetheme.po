@@ -279,4 +279,5 @@ msgstr "Recherche avancée"
 msgid "searchbox_title"
 msgstr "${text} parcourir"
 
-
+msgid "Kanton Zug"
+msgstr "Canton de Zoug"

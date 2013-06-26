@@ -91,7 +91,10 @@ class ZugSiteActions(common.SiteActionsViewlet):
             parent_obj = portal_root
 
         self.backtoparent_link = parent_obj.absolute_url()
-        self.backtoparent_title = getattr(parent_obj, 'title', 'Kanton Zug')
+
+        # Translating the default title too gives i18ndude a hint.
+        default_title = _(u'Kanton Zug')
+        self.backtoparent_title = _(getattr(parent_obj, 'title', default_title))
 
 
 class ZugEditMenu(common.ViewletBase):

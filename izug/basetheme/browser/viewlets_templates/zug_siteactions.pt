@@ -33,7 +33,7 @@
            i18n:translate=""
            tal:content="title"
            tal:attributes="href saction/url;
-                           target target; 
+                           target target;
                            title title;
                            accesskey accesskey;"
            >Site action</a>

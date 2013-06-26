@@ -290,3 +290,6 @@ msgstr ""
 #: ./izug/basetheme/skins/opengever_theme_templates/search.pt:70
 msgid "batch_x_items_matching_your_criteria"
 msgstr ""
+
+msgid "Kanton Zug"
+msgstr ""
