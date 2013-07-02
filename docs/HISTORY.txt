@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.izug5 (unreleased)
+1.2.izug5 (2013-07-02)
 ----------------------
 
 - Use silver as background for highlighted search terms.
