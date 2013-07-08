@@ -5,6 +5,9 @@ Changelog
 1.3.izug5 (unreleased)
 ----------------------
 
+- Add Italian translation for "To Top".
+  [jone]
+
 - Add "Content-Language" meta-tag for giving Chrome a translation hint.
   [jone]
 
