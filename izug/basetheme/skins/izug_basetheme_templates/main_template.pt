@@ -39,7 +39,7 @@
       </tal:ie_on_edit>
 
 
-
+    <meta http-equiv="Content-Language" tal:attributes="content lang" />
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 

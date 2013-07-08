@@ -5,7 +5,8 @@ Changelog
 1.3.izug5 (unreleased)
 ----------------------
 
-- Nothing changed yet.
+- Add "Content-Language" meta-tag for giving Chrome a translation hint.
+  [jone]
 
 
 1.2.izug5 (2013-07-02)
