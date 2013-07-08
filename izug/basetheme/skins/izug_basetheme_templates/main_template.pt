@@ -45,6 +45,7 @@
 
 
 
+    <meta http-equiv="Content-Language" tal:attributes="content lang" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <meta name="generator" content="Plone - http://plone.org" />
