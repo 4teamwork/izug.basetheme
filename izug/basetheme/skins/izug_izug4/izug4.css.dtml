@@ -1338,6 +1338,7 @@ div#portal-column-content.sl.sr {
   width: 53em !important;
 }
 
+.template-directories_view div#portal-column-content.sr,
 .template-subsite_view div#portal-column-content.sr,
 .template-manage-subsiteview div#portal-column-content.sr,
 .template-search div#portal-column-content.sr {
