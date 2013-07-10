@@ -202,7 +202,7 @@ lo
 
 .template-directories_view #listing_container th:first-child,
 .template-press_releases_view #listing_container th:first-child {
-  width:30%;
+  width:50%;
 }
 
 /* Blog styles (Fokus) */
