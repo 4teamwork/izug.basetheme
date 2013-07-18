@@ -648,4 +648,14 @@ div.documentByLine span {
 
 /* @end */
 
+/* @group document */
+
+.downloadActions {
+  margin-top: 0.5em;
+  padding-top: 0.5em;
+  border-top: 1px solid #DEDEDE;
+}
+
+/* @end */
+
 /* </dtml-with> */
