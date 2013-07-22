@@ -623,6 +623,9 @@ https://extranet.4teamwork.ch/projects/opengever-kanton-zug/sprint-backlog/1069
 
 /* @group byline */
 
+.documentByLine {
+  min-height: 1.5em;
+}
 .documentByLine ul {
   list-style: none outside none;
   margin: 0;
