@@ -658,4 +658,16 @@ div.documentByLine span {
 
 /* @end */
 
+/* @group repositoryroot overview */
+
+.portaltype-opengever-repository-repositoryroot table th {
+  border: none;
+  padding-right: 3em;
+}
+.portaltype-opengever-repository-repositoryroot table td {
+  border: none;
+}
+
+/* @end */
+
 /* </dtml-with> */
