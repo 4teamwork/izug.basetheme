@@ -17,4 +17,4 @@ msgstr "Canton Zugo"
 #. Default: "zum Seitenanfang"
 #: ./izug/basetheme/browser/viewlets_templates/siteactions.pt:3
 msgid "label_to_top"
-msgstr "all'insù"
+msgstr "vai all'inizio pagina"

@@ -5,8 +5,8 @@ Changelog
 1.4.izug5 (unreleased)
 ----------------------
 
-- Nothing changed yet.
-
+- Update Italian translation for "To Top".
+  [Linus]
 
 1.3.izug5 (2013-07-18)
 ----------------------
