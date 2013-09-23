@@ -5,6 +5,9 @@ Changelog
 1.4.5 (unreleased)
 ------------------
 
+- Dropped translation support for Plone 3.0 installations.
+  [phgross]
+
 - Fixed french translation for the live searchbox title.
   [phgross]
 
