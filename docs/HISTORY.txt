@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.5 (unreleased)
+1.4.5 (2013-09-24)
 ------------------
 
 - Dropped translation support for Plone 3.0 installations.
