@@ -5,7 +5,8 @@ Changelog
 1.4.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- GEVER: Disabled icon for deadline modification form.
+  [phgross]
 
 
 1.4.5 (2013-09-24)
