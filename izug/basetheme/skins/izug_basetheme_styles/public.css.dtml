@@ -1607,7 +1607,7 @@ body.icons-on .portletWatcher *[class*="icon-"] {
 .function-ok{ background-position: 0 -5326px;  }
 .function-print-inverse{ background-position: 0 -5392px;  }
 .function-print{ background-position: 0 -5458px;  }
-.function-revert, .wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -5524px;  }
+.function-revert, .wf-forwarding-state-refused, .wf-task-state-cancelled, .wf-task-state-rejected{ background-position: 0 -5524px;  }
 .function-rss{ background-position: 0 -5590px;  }
 .function-settings-inverse{ background-position: 0 -5656px;  }
 .function-settings{ background-position: 0 -5722px;  }
