@@ -216,6 +216,7 @@ body.template-manage-dashboard .contentViews li a:hover {
 /* Disable sprite icons for these actions since they don't have an icon */
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-delegate_task,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-export_pdf,
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-zipexport,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-pdf_dossier_checklist,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-pdf_dossierdetails,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-properties,
