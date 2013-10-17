@@ -225,6 +225,7 @@ body.template-manage-dashboard .contentViews li a:hover {
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-checkout_document,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-create_successor,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-modify_deadline,
+.actionMenu .actionMenuContent li a.actionicon-object_buttons-prefix_manager,
 .actionMenu .actionMenuContent li a.actionicon-object_buttons-save_attachments {
     background-image: none;
     padding-left: 0.2em !important;

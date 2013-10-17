@@ -5,8 +5,12 @@ Changelog
 1.4.6 (unreleased)
 ------------------
 
+- GEVER: Disabled icon for reference-prefix manage form.
+  [phgross]
+
 - GEVER: Disabled icon for zipexport action.
   [lknoepfel]
+
 - GEVER: Disabled icon for deadline modification form.
   [phgross]
 
