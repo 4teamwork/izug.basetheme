@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.6 (unreleased)
+1.4.6 (2013-10-22)
 ------------------
 
 - GEVER: Disabled icon for reference-prefix manage form.
