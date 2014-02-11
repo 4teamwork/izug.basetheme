@@ -22,30 +22,30 @@ function scanforlinks() {
 
     if (elonw)
         // all http links (without the link-plain class), not within this site
-        jq('a[href^=http]:not(.link-plain):not([href^=' + url + '])')
+        $('a[href^="http"]:not(.link-plain):not([href^="' + url + '"])')
             .attr('target', '_blank');
 
     if (mslinks) {
       var protocols = /^(mailto|ftp|news|irc|h323|sip|callto|https|feed|webcal)/;
       // overriding contentarea to also include portlet content
-      var contentarea = jq("#portal-columns");
-      
+      var contentarea = $("#portal-columns");
+
       // All links with an http href (without the link-plain class), not within this site,
       // and no img children should be wrapped in a link-external span
       contentarea.find(
-          'a[href^=http]:not(.link-plain):not([href^=' + url + ']):not(:has(img))')
+          'a[href^="http"]:not(.link-plain):not([href^="' + url + '"]):not(:has(img))')
           .wrap('<span></span>').parent().addClass('link-external');
       // All links without an http href (without the link-plain class), not within this site,
       // and no img children should be wrapped in a link-[protocol] span
       contentarea.find(
-          'a[href]:not([href^=http]):not(.link-plain):not([href^=' + url + ']):not(:has(img))')
+          'a[href]:not([href^="http"]):not(.link-plain):not([href^="' + url + '"]):not(:has(img))')
           .each(function() {
               // those without a http link may have another interesting protocol
               // wrap these in a link-[protocol] span
               if (res = protocols.exec(this.href)) {
-                    jq(this).wrap('<span></span>').parent().addClass('link-' + res[0]);
+                    $(this).wrap('<span></span>').parent().addClass('link-' + res[0]);
                   }
           });
     }
 };
-jq(scanforlinks);
+$(scanforlinks);
