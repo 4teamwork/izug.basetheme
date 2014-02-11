@@ -14,6 +14,10 @@
   position: relative;
 }
 
+.tabbedviewMenuHeader {
+  background-image: none;
+}
+
 #content .tabbedview-tab-menu .actionMenuHeader a {
   color: #777;
   text-shadow: none;
