@@ -21,7 +21,7 @@ textarea {
   border: 1px solid #ddd;
   border-color:#666 #ddd #ddd #666;
   color: &dtml-inputFontColor;;
-  background: White url(&dtml-portal_url;/input_background.gif) repeat-x;
+  background: White url(&dtml-portal_url;/input_background.png) repeat-x;
   width: 100%;
 }
 input,

@@ -1678,7 +1678,7 @@ input#tabbedview-searchbox {
   margin:0;
   color:grey;
   padding-left:1.5em;
-  background: white url(&dtml-portal_url;/search_icon.gif) no-repeat 0% 40%;
+  background: white url(&dtml-portal_url;/search_icon.png) no-repeat 0% 40%;
 }
 
 div.tabbedview-tabs {

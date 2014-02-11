@@ -541,7 +541,7 @@ li.formTab a.notify {
     color: &dtml-fontColor;;
 }
 li.formTab a.required span {
-    background-image: url(&dtml-portal_url;/required.gif);
+    background-image: url(&dtml-portal_url;/required.png);
     background-position: center right;
     background-repeat: no-repeat;
     padding-right: 8px;
