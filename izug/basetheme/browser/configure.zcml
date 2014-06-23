@@ -39,7 +39,7 @@
       />
   <browser:page
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      name="test_icons"
+      name="test_basetheme_icons"
       class=".testicons.TestIconsView"
       template="testicons.pt"
       permission="zope2.Public"
