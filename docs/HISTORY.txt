@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.4.7 (unreleased)
+1.4.7 (2014-07-28)
 ------------------
 
 - Renamed test_icons view to test_basetheme_icons to avoid conflicts.
