@@ -10,9 +10,9 @@ useable on a bare plone installation.
 Links
 -----
 
-- Main github project repository: https://github.com/4teamwork/izug.basetheme
-- Issue tracker: https://github.com/4teamwork/izug.basetheme/issues
-- Package on pypi: http://pypi.python.org/pypi/izug.basetheme
+- Github: https://github.com/4teamwork/izug.basetheme
+- Issues: https://github.com/4teamwork/izug.basetheme/issues
+- Pypi: http://pypi.python.org/pypi/izug.basetheme
 
 
 Copyright
